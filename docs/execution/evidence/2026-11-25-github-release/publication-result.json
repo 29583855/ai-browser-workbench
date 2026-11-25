@@ -1,0 +1,58 @@
+{
+  "date": "2026-11-25",
+  "result": "passed",
+  "repository": "https://github.com/29583855/ai-browser-workbench",
+  "release": "https://github.com/29583855/ai-browser-workbench/releases/tag/v0.1.13-poc",
+  "draft": false,
+  "prerelease": true,
+  "publishedAt": "2026-11-25T03:30:58Z",
+  "publicAssetMetadataMatchesLocal": true,
+  "assets": [
+    {
+      "id": 789894003,
+      "name": "AI-Browser-Workbench-0.1.13-win64-20261106.zip",
+      "size": 233874807,
+      "digest": "sha256:424d36c4d5cab0eea2d5f7717e56f6d7b5dd160019b0dad3fae59d03ec91d59b",
+      "browser_download_url": "https://github.com/29583855/ai-browser-workbench/releases/download/v0.1.13-poc/AI-Browser-Workbench-0.1.13-win64-20261106.zip",
+      "state": "uploaded"
+    },
+    {
+      "id": 789896425,
+      "name": "AI-Browser-Workbench-0.1.13-win64-20261106.zip.sha256",
+      "size": 113,
+      "digest": "sha256:f5342f4f498bb701a5496076d0edacf119121c47a6e4c298ccb0b158c8ae0e93",
+      "browser_download_url": "https://github.com/29583855/ai-browser-workbench/releases/download/v0.1.13-poc/AI-Browser-Workbench-0.1.13-win64-20261106.zip.sha256",
+      "state": "uploaded",
+      "anonymousDownloadVerified": true
+    },
+    {
+      "id": 789896336,
+      "name": "AI-Browser-Workbench-0.1.13-win64-20261106.zip.sha256.json",
+      "size": 165,
+      "digest": "sha256:89d46bd20588a0f257f118144d0bc6d1c777b0e3e95e4a7c3ce11c28be168c73",
+      "browser_download_url": "https://github.com/29583855/ai-browser-workbench/releases/download/v0.1.13-poc/AI-Browser-Workbench-0.1.13-win64-20261106.zip.sha256.json",
+      "state": "uploaded",
+      "anonymousDownloadVerified": true
+    },
+    {
+      "id": 789896518,
+      "name": "AI-Browser-Workbench-v0.1.13-poc-Release-Notes.md",
+      "size": 3809,
+      "digest": "sha256:45a4d3d2c9b3a324a3b8f7afdcdbbeb8001f03c5f47632929be16ec618ec149c",
+      "browser_download_url": "https://github.com/29583855/ai-browser-workbench/releases/download/v0.1.13-poc/AI-Browser-Workbench-v0.1.13-poc-Release-Notes.md",
+      "state": "uploaded",
+      "anonymousDownloadVerified": true
+    }
+  ],
+  "largeArchiveBrowserDownloadHeadHttpStatus": 200,
+  "scope": "Published repository, tag, release assets and provider digests; local package self-test passed separately.",
+  "archiveAnonymousDownloadVerification": {
+    "httpStatus": 200,
+    "contentLength": 233874807,
+    "fullReadbackCompleted": false,
+    "minimumBytesRead": 8388608,
+    "reason": "The local GitHub/CDN connection stalled or transferred slowly; optional full readback was stopped after public API, HTTP availability and all provider SHA-256 digests matched. This is not recorded as a full-download pass."
+  },
+  "releaseSourceCommit": "67c81145b0454ec513e4004b774c40eb66d108e7",
+  "localPrepublicationEvidence": "prepublication-report.json"
+}

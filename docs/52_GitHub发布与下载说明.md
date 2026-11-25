@@ -67,6 +67,12 @@ powershell.exe -NoLogo -NoProfile -ExecutionPolicy Bypass -File .\tools\build-vs
 
 发布前复核证据见[JSON 报告](execution/evidence/2026-11-25-github-release/prepublication-report.json)。
 
+- [x] 源码、`v0.1.13-poc` 标签与开发预览 Release 已公开发布，4 个附件均为 `uploaded` 状态，GitHub 返回的大小和 SHA-256 与本地全部一致。
+- [x] 公开 ZIP 链接 HTTP 200；两个校验文件和 Release Notes 已完成匿名下载与逐字节哈希验证。
+- [ ] 完整 ZIP 匿名下载回读：本机网络出现停滞，备用接口已读取至少 8 MiB 后停止，未将完整回读记为通过。包的全部本地清单哈希及 GitHub 端完整 SHA-256 已核对通过。
+
+最终发布回执见[公开发布验证记录](execution/evidence/2026-11-25-github-release/publication-result.json)。本记录明确区分已成功发布和当前网络下未完成的完整下载回读。
+
 发布验证结果和 Release 说明见[当前版本发布记录](releases/v0.1.13-poc.md)。源码编译与包内源码独立重建的历史验收日期是 2026-11-06，本次发布复用该不可变 ZIP。
 
 ## 5 后续更新约定
