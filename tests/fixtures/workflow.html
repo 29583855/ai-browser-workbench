@@ -1,0 +1,32 @@
+<!doctype html><meta charset="utf-8"><title>流程真实浏览器夹具</title>
+<input id="value"><input id="normalize">
+<select id="choice"><option value="a">A</option><option value="b">B</option></select>
+<button id="increment">增加一次</button><button id="slow">延迟提交一次</button>
+<button id="fault">提交后丢失回执</button><button class="duplicate">重复</button><button class="duplicate">重复</button>
+<output id="clicks">0</output><output id="ready">loading</output>
+<output id="selected">a</output><output id="slow-result">not-committed</output>
+<script>
+// 用途：提供真实事件计数，验证显式循环没有自动重放；日期：2026-11-04。
+document.querySelector('#increment').onclick = function () {
+ document.querySelector('#clicks').textContent = Number(document.querySelector('#clicks').textContent) + 1;
+};
+// 用途：选择结果只供当前测试断言，不进入流程状态检查点；日期：2026-11-04。
+document.querySelector('#choice').onchange = function () {
+ document.querySelector('#selected').textContent = this.value;
+};
+// 用途：模拟网站即时规范化输入导致填写后置条件不一致；日期：2026-11-04。
+document.querySelector('#normalize').oninput = function () { this.value = this.value.toUpperCase(); };
+// 用途：延迟产生业务结果，允许测试暂停/取消和检查点写入故障；日期：2026-11-04。
+document.querySelector('#slow').onclick = async function () {
+ const response = await fetch('/audit-delayed-commit');
+ document.querySelector('#slow-result').textContent = await response.text();
+};
+// 用途：真实提交后阻塞渲染线程，验证进程中断不能重放；日期：2026-11-04。
+document.querySelector('#fault').onmousedown = function () {
+ navigator.sendBeacon('/api/fault-commit', 'fixture-only');
+ const deadline = performance.now() + 12000;
+ while (performance.now() < deadline) { /* 故障注入仅作用于测试夹具。 */ }
+};
+// 用途：为暂停与取消提供确定的只读等待边界；日期：2026-11-04。
+setTimeout(function () { document.querySelector('#ready').textContent = 'ready'; }, 1500);
+</script>

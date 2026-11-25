@@ -1,0 +1,34 @@
+{
+  "date": "2026-11-04",
+  "version": "0.1.10-poc",
+  "result": "passed",
+  "commercialRelease": false,
+  "secondCleanMachineTested": false,
+  "archive": {
+    "path": "dist\\AI-Browser-Workbench-0.1.10-win64-review-r1.zip",
+    "file": "AI-Browser-Workbench-0.1.10-win64-review-r1.zip",
+    "sha256": "1cbd11efac1568982034ee4dafe20078beec92c538c4d9d3e805284af9548b9d",
+    "bytes": 230772160
+  },
+  "manifestFiles": 2692,
+  "originalDistributionPristine": true,
+  "privateDataPresent": false,
+  "releaseBinariesMatchTestedNative": true,
+  "codeSnapshotMatchesWorkspace": true,
+  "deployment": {
+    "report": "package-deployment/report.json",
+    "checks": 9,
+    "result": "passed"
+  },
+  "shutdown": {
+    "report": "package-shutdown/report.json",
+    "checks": 6,
+    "result": "passed"
+  },
+  "transports": {
+    "report": "package-transports/report.json",
+    "checks": 12,
+    "result": "passed"
+  },
+  "snapshotNote": "Packaged source/docs contain the pre-package test snapshot; final ZIP hash and post-package verification are recorded in the main workspace only."
+}

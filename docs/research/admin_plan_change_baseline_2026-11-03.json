@@ -1,0 +1,41 @@
+{
+  "date": "2026-11-03",
+  "scope": "Before management backend planning supplement; no product implementation.",
+  "files": [
+    {
+      "path": "README.md",
+      "sha256": "f34feb0c0198ea6e8eab23d85688af34d7d2708819a752865c8c3b0a221be774",
+      "bytes": 4424,
+      "encoding": "UTF-8 no BOM",
+      "newline": "LF"
+    },
+    {
+      "path": "docs/01_开发计划与技术方案.md",
+      "sha256": "85201b54b11f81a95abce8c29c22f1081986e4b6a8b035207add29720f72c3b0",
+      "bytes": 70829,
+      "encoding": "UTF-8 no BOM",
+      "newline": "LF"
+    },
+    {
+      "path": "docs/03_开发进度与任务清单.md",
+      "sha256": "8438832e0d616692e1b86169cb0b6e67745e0eca9af8ebbf4c8f706e358e1983",
+      "bytes": 33976,
+      "encoding": "UTF-8 no BOM",
+      "newline": "LF"
+    },
+    {
+      "path": "docs/06_功能边界与源码补全方案.md",
+      "sha256": "6f4a667fc0c642913011ab1d3e36f608cfd3431c812e1e8d1312d9a35fdd111c",
+      "bytes": 40062,
+      "encoding": "UTF-8 no BOM",
+      "newline": "LF"
+    },
+    {
+      "path": "docs/08_参考文档对照与功能增强.md",
+      "sha256": "f0dba24cdbe306de9dc22bb2f8b7e96bbc9a056f010b0bf7967b458821f8fc3e",
+      "bytes": 30261,
+      "encoding": "UTF-8 no BOM",
+      "newline": "LF"
+    }
+  ]
+}

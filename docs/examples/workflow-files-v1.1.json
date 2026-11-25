@@ -1,0 +1,206 @@
+{
+  "schemaVersion": "1.1",
+  "name": "文件与网页列表完整流程",
+  "version": 1,
+  "inputSchema": {
+    "type": "object",
+    "properties": {
+      "uploadPath": {
+        "type": "string",
+        "maxLength": 32768
+      },
+      "downloadDirectory": {
+        "type": "string",
+        "maxLength": 32768
+      }
+    },
+    "required": [
+      "uploadPath",
+      "downloadDirectory"
+    ],
+    "additionalProperties": false
+  },
+  "policy": {
+    "allowedOrigins": [
+      "http://127.0.0.1:3000"
+    ],
+    "maxSteps": 128,
+    "maxDurationMs": 60000
+  },
+  "entry": "open",
+  "steps": [
+    {
+      "id": "open",
+      "type": "navigate",
+      "url": "http://127.0.0.1:3000/extraction",
+      "next": "configure"
+    },
+    {
+      "id": "configure",
+      "type": "downloadConfig",
+      "directory": {
+        "input": "/downloadDirectory"
+      },
+      "next": "upload"
+    },
+    {
+      "id": "upload",
+      "type": "upload",
+      "selector": "#upload",
+      "path": {
+        "input": "/uploadPath"
+      },
+      "next": "uploaded"
+    },
+    {
+      "id": "uploaded",
+      "type": "assertText",
+      "selector": "#uploaded",
+      "expected": "fixture.txt",
+      "timeoutMs": 1000,
+      "next": "download"
+    },
+    {
+      "id": "download",
+      "type": "click",
+      "selector": "#download",
+      "postcondition": {
+        "selector": "#title",
+        "expected": "中文😀报告",
+        "timeoutMs": 1000
+      },
+      "next": "downloaded"
+    },
+    {
+      "id": "read",
+      "type": "readTexts",
+      "selector": ".duplicate",
+      "variable": "labels",
+      "maxItems": 2,
+      "next": "each"
+    },
+    {
+      "id": "each",
+      "type": "foreach",
+      "items": {
+        "var": "labels"
+      },
+      "item": "label",
+      "maxIterations": 2,
+      "flow": "body",
+      "next": "count"
+    },
+    {
+      "id": "count",
+      "type": "assert",
+      "assertion": {
+        "type": "elementCount",
+        "selector": ".duplicate",
+        "expected": 2
+      },
+      "next": "checked"
+    },
+    {
+      "id": "checked",
+      "type": "assert",
+      "assertion": {
+        "type": "elementState",
+        "selector": "#agree",
+        "state": "checked"
+      },
+      "next": "verify"
+    },
+    {
+      "id": "verify",
+      "type": "assertText",
+      "selector": "#clicks",
+      "expected": "2",
+      "timeoutMs": 1000,
+      "next": "echo"
+    },
+    {
+      "id": "echo",
+      "type": "assert",
+      "assertion": {
+        "type": "text",
+        "selector": "#echo",
+        "expected": "B"
+      },
+      "next": "done"
+    },
+    {
+      "id": "downloaded",
+      "type": "downloadWait",
+      "fileName": "fixture.csv",
+      "timeoutMs": 10000,
+      "next": "read"
+    },
+    {
+      "id": "done",
+      "type": "end"
+    }
+  ],
+  "subflows": {
+    "body": {
+      "entry": "fill",
+      "steps": [
+        {
+          "id": "fill",
+          "type": "fill",
+          "selector": "#field",
+          "value": {
+            "var": "label"
+          },
+          "next": "click"
+        },
+        {
+          "id": "click",
+          "type": "click",
+          "selector": "#increment",
+          "postcondition": {
+            "selector": "#title",
+            "expected": "中文😀报告",
+            "timeoutMs": 1000
+          },
+          "next": "done"
+        },
+        {
+          "id": "done",
+          "type": "end"
+        }
+      ]
+    }
+  },
+  "variables": {
+    "labels": {
+      "schema": {
+        "type": "array",
+        "items": {
+          "type": "string",
+          "maxLength": 4096
+        },
+        "maxItems": 2
+      },
+      "initial": {
+        "literal": [],
+        "schema": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "maxLength": 4096
+          },
+          "maxItems": 0
+        }
+      },
+      "sensitive": false
+    },
+    "label": {
+      "schema": {
+        "type": "string",
+        "maxLength": 4096
+      },
+      "initial": "",
+      "sensitive": false
+    }
+  }
+}

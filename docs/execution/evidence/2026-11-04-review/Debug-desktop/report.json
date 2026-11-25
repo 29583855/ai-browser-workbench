@@ -1,0 +1,136 @@
+{
+  "date": "2026-11-04T09:13:27.575795+08:00",
+  "result": "passed",
+  "steps": [
+    {
+      "buttonId": 101,
+      "outcome": "passed"
+    },
+    {
+      "buttonId": 101,
+      "outcome": "passed"
+    },
+    {
+      "buttonId": 101,
+      "outcome": "passed"
+    },
+    {
+      "buttonId": 101,
+      "outcome": "passed"
+    },
+    {
+      "buttonId": 101,
+      "outcome": "passed"
+    },
+    {
+      "buttonId": 101,
+      "outcome": "passed"
+    },
+    {
+      "buttonId": 101,
+      "outcome": "passed"
+    },
+    {
+      "buttonId": 101,
+      "outcome": "passed"
+    },
+    {
+      "buttonId": 102,
+      "outcome": "passed"
+    },
+    {
+      "buttonId": 104,
+      "outcome": "passed"
+    },
+    {
+      "buttonId": 108,
+      "outcome": "passed"
+    },
+    {
+      "buttonId": 108,
+      "outcome": "passed"
+    },
+    {
+      "buttonId": 109,
+      "outcome": "passed"
+    },
+    {
+      "buttonId": 110,
+      "outcome": "passed"
+    },
+    {
+      "buttonId": 109,
+      "outcome": "passed"
+    },
+    {
+      "buttonId": 110,
+      "outcome": "passed"
+    },
+    {
+      "buttonId": 105,
+      "outcome": "passed"
+    },
+    {
+      "buttonId": 107,
+      "outcome": "LOCATOR_AMBIGUOUS"
+    },
+    {
+      "buttonId": 110,
+      "outcome": "LEASE_REQUIRED"
+    },
+    {
+      "buttonId": 111,
+      "outcome": "passed"
+    },
+    {
+      "buttonId": 110,
+      "outcome": "passed"
+    },
+    {
+      "buttonId": 103,
+      "outcome": "passed"
+    },
+    {
+      "buttonId": 102,
+      "outcome": "passed"
+    },
+    {
+      "buttonId": 104,
+      "outcome": "passed"
+    },
+    {
+      "buttonId": 110,
+      "outcome": "passed"
+    },
+    {
+      "buttonId": 103,
+      "outcome": "passed"
+    },
+    {
+      "buttonId": 102,
+      "outcome": "passed"
+    },
+    {
+      "buttonId": 104,
+      "outcome": "passed"
+    },
+    {
+      "buttonId": 110,
+      "outcome": "passed"
+    },
+    {
+      "buttonId": 103,
+      "outcome": "passed"
+    }
+  ],
+  "checks": [
+    "eight-new-profiles-select-the-created-profile",
+    "register-login-fill-clear-snapshot-ambiguity-revoke-reacquire-stop",
+    "second-profile-isolated-first-profile-login-persists-after-restart"
+  ],
+  "binarySha256": "0f71fde11dfdba9ee7a3fbfab775a8d9be250987ec9b802cfc54ea63ee313f67",
+  "serverFacts": {
+    "registrationCount": 1,
+    "loginCount": 1
+  }
+}

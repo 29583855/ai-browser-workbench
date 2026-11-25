@@ -1,0 +1,10 @@
+{
+  "result": "failed",
+  "date": "2026-11-04T23:55:35+08:00",
+  "checks": [],
+  "errors": [
+    "Exception calling \"OpenRead\" with \"1\" argument(s): \"Could not find file 'E:\\project\\webexploer_codex\\build\\evidence\\review-0.1.10-package-deployment\\中文 空格部署\\AI-Browser-Workbench-0.1.10-win64-review-r1\\msvcp140.dll'.\""
+  ],
+  "root": "E:\\project\\webexploer_codex\\build\\evidence\\review-0.1.10-package-deployment\\中文 空格部署\\AI-Browser-Workbench-0.1.10-win64-review-r1",
+  "cleanMachine": false
+}

@@ -1,0 +1,8 @@
+{
+  "date": "2026-11-05",
+  "result": "failed",
+  "checks": [
+    "visible-bounded-ranked-candidates-labels-disabled-no-values-and-no-clicks"
+  ],
+  "executableSha256": "de7fd4df29f6e2f0bec305fa5811122b399a452997bd93758e4e8df9c77c69b3"
+}

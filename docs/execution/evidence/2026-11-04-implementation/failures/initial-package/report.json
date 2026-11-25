@@ -1,0 +1,13 @@
+{
+  "date": "2026-11-04T11:12:00.165000+08:00",
+  "result": "failed",
+  "checks": [
+    "archive-and-every-file-verified-pristine-data"
+  ],
+  "secondCleanMachineTested": false,
+  "archiveSha256": "546985f25d4ba376ad2e32b8e0657e2ad1379bf945ff30315d32494b769c72a7",
+  "copiedFolder": "E:\\project\\webexploer_codex\\build\\evidence\\implementation-20261104\\final-package\\中文 空格部署\\AI-Browser-Workbench-0.1.2-win64-features",
+  "version": "0.1.2-poc",
+  "manifestFiles": 798,
+  "error": "['CLI rejected browser_start : {\"error\":{\"automaticRetryAllowed\":false,\"code\":\"FILE_WRITE_FAILED\",\"message\":\"Cannot create managed temporary file\",\"outcomeUnknown\":false},\"id\":3,\"ok\":false}']"
+}

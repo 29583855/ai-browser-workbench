@@ -1,0 +1,221 @@
+{
+  "date": "2026-11-04T14:47:30.958258+08:00",
+  "version": "0.1.6-poc",
+  "result": "passed",
+  "scope": "Bounded diagnostic metadata and workflow step association; release gates remain open",
+  "nativeEvidence": "build/evidence/native-20261104-144023",
+  "cmakeEvidence": "build/evidence/run-20261104-144105",
+  "tools": 42,
+  "newCommands": [
+    "browser_diagnostics_start",
+    "browser_diagnostics_read",
+    "browser_diagnostics_stop"
+  ],
+  "completedWholePlanTasksThisIncrement": [
+    "T039"
+  ],
+  "configurations": {
+    "Debug": {
+      "browser": {
+        "result": "passed",
+        "source": "build/evidence/run-20261104-144105/Debug-browser/report.json",
+        "commands": 124
+      },
+      "proxy": {
+        "result": "passed",
+        "source": "build/evidence/run-20261104-144105/Debug-proxy/report.json",
+        "commands": 8
+      },
+      "lifecycle": {
+        "result": "passed",
+        "source": "build/evidence/run-20261104-144105/Debug-lifecycle/report.json",
+        "checks": 6
+      },
+      "recovery": {
+        "result": "passed",
+        "source": "build/evidence/run-20261104-144105/Debug-recovery/report.json",
+        "checks": 4
+      },
+      "socks": {
+        "result": "passed",
+        "source": "build/evidence/run-20261104-144105/Debug-socks/report.json",
+        "commands": 22
+      },
+      "runtime": {
+        "result": "passed",
+        "source": "build/evidence/run-20261104-144105/Debug-runtime/report.json"
+      },
+      "api": {
+        "result": "passed",
+        "source": "build/evidence/run-20261104-144105/Debug-api/report.json",
+        "requests": 85,
+        "rawRejections": 6
+      },
+      "pages": {
+        "result": "passed",
+        "source": "build/evidence/run-20261104-144105/Debug-pages/report.json",
+        "checks": 6,
+        "commands": 219
+      },
+      "inspector": {
+        "result": "passed",
+        "source": "build/evidence/run-20261104-144105/Debug-inspector/report.json",
+        "checks": 6,
+        "commands": 135
+      },
+      "workflow": {
+        "result": "passed",
+        "source": "build/evidence/run-20261104-144105/Debug-workflow/report.json",
+        "checks": 13,
+        "flows": 20,
+        "negatives": 34,
+        "commands": 1
+      },
+      "diagnostics": {
+        "result": "passed",
+        "source": "build/evidence/diagnostics-cmake-Debug-final/report.json",
+        "checks": 11,
+        "commands": 210
+      },
+      "protocol": {
+        "result": "passed",
+        "source": "build/evidence/run-20261104-144105/Debug-protocol/report.json",
+        "checks": 24
+      },
+      "mcp": {
+        "result": "passed",
+        "source": "build/evidence/run-20261104-144105/Debug-mcp/report.json",
+        "steps": 47,
+        "tools": 42
+      },
+      "desktop": {
+        "result": "passed",
+        "source": "build/evidence/diagnostics-delivery-Debug-desktop/report.json",
+        "checks": 9,
+        "steps": 89
+      }
+    },
+    "Release": {
+      "browser": {
+        "result": "passed",
+        "source": "build/evidence/run-20261104-144105/Release-browser/report.json",
+        "commands": 124
+      },
+      "proxy": {
+        "result": "passed",
+        "source": "build/evidence/run-20261104-144105/Release-proxy/report.json",
+        "commands": 8
+      },
+      "lifecycle": {
+        "result": "passed",
+        "source": "build/evidence/run-20261104-144105/Release-lifecycle/report.json",
+        "checks": 6
+      },
+      "recovery": {
+        "result": "passed",
+        "source": "build/evidence/run-20261104-144105/Release-recovery/report.json",
+        "checks": 4
+      },
+      "socks": {
+        "result": "passed",
+        "source": "build/evidence/run-20261104-144105/Release-socks/report.json",
+        "commands": 22
+      },
+      "runtime": {
+        "result": "passed",
+        "source": "build/evidence/run-20261104-144105/Release-runtime/report.json"
+      },
+      "api": {
+        "result": "passed",
+        "source": "build/evidence/run-20261104-144105/Release-api/report.json",
+        "requests": 85,
+        "rawRejections": 6
+      },
+      "pages": {
+        "result": "passed",
+        "source": "build/evidence/run-20261104-144105/Release-pages/report.json",
+        "checks": 6,
+        "commands": 220
+      },
+      "inspector": {
+        "result": "passed",
+        "source": "build/evidence/run-20261104-144105/Release-inspector/report.json",
+        "checks": 6,
+        "commands": 135
+      },
+      "workflow": {
+        "result": "passed",
+        "source": "build/evidence/run-20261104-144105/Release-workflow/report.json",
+        "checks": 13,
+        "flows": 20,
+        "negatives": 34,
+        "commands": 1
+      },
+      "diagnostics": {
+        "result": "passed",
+        "source": "build/evidence/run-20261104-144105/Release-diagnostics/report.json",
+        "checks": 11,
+        "commands": 212
+      },
+      "protocol": {
+        "result": "passed",
+        "source": "build/evidence/run-20261104-144105/Release-protocol/report.json",
+        "checks": 24
+      },
+      "mcp": {
+        "result": "passed",
+        "source": "build/evidence/run-20261104-144105/Release-mcp/report.json",
+        "steps": 48,
+        "tools": 42
+      },
+      "desktop": {
+        "result": "passed",
+        "source": "build/evidence/diagnostics-delivery-Release-desktop/report.json",
+        "checks": 9,
+        "steps": 108
+      }
+    }
+  },
+  "binaries": {
+    "Debug": {
+      "awb-core-tests.exe": "072d8ecf824a9064d9bc1a23d3d4d7780f2888073593ab3c35eff79410ec2c63",
+      "awb-storage-tests.exe": "567cf79d484377b5f1df5f723312c5cf1eb44e0cc8ac9ea0bdfe4c86baec2cf1",
+      "workbench-cli.exe": "d8cfac63d1a03d4235d33d12327fe45a7a7e32aff0f2ff14f26784626e019889",
+      "workbench-mcp.exe": "59aecbcb3acf9c0de0ab20967b918d5820899a0b9ea39bf2764b21ff36c4d033",
+      "workbench.exe": "b457edaca6ed46ed7f9cfee619ff578e4c06d2a8dfb57a5f62cf8d407aaa6b74"
+    },
+    "Release": {
+      "awb-core-tests.exe": "e87579bc51cfd6e6a9449123b2f791599cb9897888cd0ea1403036225eeb65de",
+      "awb-storage-tests.exe": "de8cdd814563832209741aee48ae3123ee060ea4df8fb110b9e72f0dd7232481",
+      "workbench-cli.exe": "ec523feb93297ac72f443bf3d003d9185100a4c6375b63bccce14cccdbeadb58",
+      "workbench-mcp.exe": "1b912ac9cce5579565509b24b6711ea68bad78a3e6028a56cbbbd83231d6c801",
+      "workbench.exe": "9787d48caeac2dc48200829a0c4ab9a01213d51221fc80943b9435a10837ac88"
+    }
+  },
+  "secondCleanMachineTested": false,
+  "commercialBackendImplemented": false,
+  "releaseReady": false,
+  "oldCandidateCdp12017CauseEstablished": false,
+  "finalArchiveAcceptance": "failed-desktop-observation",
+  "finalArchive": {
+    "date": "2026-11-04T15:20:55.053594+08:00",
+    "result": "failed",
+    "version": "0.1.6-poc",
+    "archive": {
+      "file": "AI-Browser-Workbench-0.1.6-win64-diagnostics-r2.zip",
+      "sha256": "468187b3844210f390459e2396f2f39a8676964a95523ebd0abc9f6d9d1b473c",
+      "bytes": 226139938
+    },
+    "deploymentChecksPassed": 9,
+    "packagedSuitesPassed": 13,
+    "desktopSuite": "failed",
+    "desktopError": "Expected desktop observation: desktop-review-user; observed: anonymous",
+    "causeEstablished": false,
+    "independentRepetitionsPassed": 10,
+    "independentRepetitionsDoNotResolveOriginalFailure": true,
+    "allOriginalFilesReverifiedAfterTests": true,
+    "manifestFiles": 1077,
+    "originalDataEmpty": true,
+    "commercialRelease": false
+  }
+}

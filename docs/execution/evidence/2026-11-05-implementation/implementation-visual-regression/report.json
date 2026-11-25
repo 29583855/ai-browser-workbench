@@ -1,0 +1,73 @@
+{
+  "date": "2026-11-05T09:31:55.350717+08:00",
+  "result": "failed",
+  "runs": [
+    {
+      "configuration": "Debug",
+      "round": 1,
+      "suite": "canvas",
+      "exitCode": 0,
+      "report": "build\\implementation-visual-regression\\Debug-canvas-1.json",
+      "binarySha256": "782e4a112a3e0137ce143a1084111512e8a89a11ef1fb5a41e498685c6e20f7a",
+      "checks": 19,
+      "paintP95Ms": 17.1684
+    },
+    {
+      "configuration": "Debug",
+      "round": 1,
+      "suite": "recovery",
+      "exitCode": 0,
+      "report": "build\\implementation-visual-regression\\Debug-recovery-1\\report.json",
+      "binarySha256": "782e4a112a3e0137ce143a1084111512e8a89a11ef1fb5a41e498685c6e20f7a",
+      "checks": 6
+    },
+    {
+      "configuration": "Debug",
+      "round": 1,
+      "suite": "shutdown",
+      "exitCode": 0,
+      "report": "build\\implementation-visual-regression\\Debug-shutdown-1\\report.json",
+      "binarySha256": "782e4a112a3e0137ce143a1084111512e8a89a11ef1fb5a41e498685c6e20f7a",
+      "checks": 6
+    },
+    {
+      "configuration": "Debug",
+      "round": 1,
+      "suite": "visual_desktop",
+      "exitCode": 0,
+      "report": "build\\implementation-visual-regression\\Debug-visual_desktop-1\\report.json",
+      "binarySha256": "782e4a112a3e0137ce143a1084111512e8a89a11ef1fb5a41e498685c6e20f7a",
+      "checks": 4
+    },
+    {
+      "configuration": "Debug",
+      "round": 1,
+      "suite": "recording",
+      "exitCode": 0,
+      "report": "build\\implementation-visual-regression\\Debug-recording-1\\report.json",
+      "binarySha256": "8bd88d3db99c9b5f2846f2e5a0fa7371df46a15e2952f941c51bbdfe5bd55549",
+      "checks": 11,
+      "commands": 101
+    },
+    {
+      "configuration": "Release",
+      "round": 1,
+      "suite": "canvas",
+      "exitCode": 0,
+      "report": "build\\implementation-visual-regression\\Release-canvas-1.json",
+      "binarySha256": "5c33c5f3ce25f762e0f716003e25472c55089348719e481ac9a440f2224dcb16",
+      "checks": 19,
+      "paintP95Ms": 17.4416
+    },
+    {
+      "configuration": "Release",
+      "round": 1,
+      "suite": "recovery",
+      "exitCode": 1,
+      "report": "build\\implementation-visual-regression\\Release-recovery-1\\report.json",
+      "binarySha256": "5c33c5f3ce25f762e0f716003e25472c55089348719e481ac9a440f2224dcb16"
+    }
+  ],
+  "scope": "Main-document recorder, picker, native canvas, desktop publication and recovery; not the full VR01-VR36 acceptance matrix",
+  "error": "Suite failed: Release/1/recovery"
+}

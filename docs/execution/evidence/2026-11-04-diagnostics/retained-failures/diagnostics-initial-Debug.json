@@ -1,0 +1,381 @@
+{
+  "date": "2026-11-04T14:36:05.194286+08:00",
+  "result": "failed",
+  "checks": [
+    "real-console-exception-http404-redirect-transport-failure-and-action-association",
+    "pagination-strict-sequence-and-invalid-cursor-rejection"
+  ],
+  "executableSha256": "51986a89af49d2fb52af7c0f0baabe5eb9a3cbd8f69f72704bbf422dd657648f",
+  "sampleEvents": [
+    {
+      "context": {
+        "actionId": "6bc70691ab8c2f844796d24c114ced9a",
+        "command": "browser_navigate"
+      },
+      "correlation": "observed-during-context",
+      "frameId": "EB201323EAC8EA5A674BA4969D7D547E",
+      "kind": "request-start",
+      "method": "GET",
+      "observedTickMs": 1853290000,
+      "origin": "http://127.0.0.1:62554",
+      "pageId": "19a71b0276c200143795191582ca5163",
+      "requestId": "28d0e8b30a7161295995f4b21208ebd8",
+      "resourceType": "Document",
+      "route": "[omitted]",
+      "sequence": 1
+    },
+    {
+      "context": {
+        "actionId": "6bc70691ab8c2f844796d24c114ced9a",
+        "command": "browser_navigate"
+      },
+      "correlation": "request-start-context-not-proven-cause",
+      "frameId": "EB201323EAC8EA5A674BA4969D7D547E",
+      "fromDiskCache": false,
+      "fromServiceWorker": false,
+      "httpError": false,
+      "kind": "response",
+      "method": "GET",
+      "observedTickMs": 1853290000,
+      "origin": "http://127.0.0.1:62554",
+      "pageId": "19a71b0276c200143795191582ca5163",
+      "requestId": "28d0e8b30a7161295995f4b21208ebd8",
+      "resourceType": "Document",
+      "route": "[omitted]",
+      "sequence": 2,
+      "status": 200
+    },
+    {
+      "context": {
+        "actionId": "6bc70691ab8c2f844796d24c114ced9a",
+        "command": "browser_navigate"
+      },
+      "correlation": "request-start-context-not-proven-cause",
+      "frameId": "EB201323EAC8EA5A674BA4969D7D547E",
+      "kind": "request-finished",
+      "method": "GET",
+      "observedTickMs": 1853290015,
+      "origin": "http://127.0.0.1:62554",
+      "pageId": "19a71b0276c200143795191582ca5163",
+      "requestId": "28d0e8b30a7161295995f4b21208ebd8",
+      "resourceType": "Document",
+      "route": "[omitted]",
+      "sequence": 3
+    },
+    {
+      "context": {
+        "actionId": "6bc70691ab8c2f844796d24c114ced9a",
+        "command": "browser_navigate"
+      },
+      "correlation": "observed-during-context",
+      "frameId": "EB201323EAC8EA5A674BA4969D7D547E",
+      "kind": "request-start",
+      "method": "GET",
+      "observedTickMs": 1853290015,
+      "origin": "http://127.0.0.1:62554",
+      "pageId": "19a71b0276c200143795191582ca5163",
+      "requestId": "74e5232d777e2474a522dd353af6afc9",
+      "resourceType": "Other",
+      "route": "[omitted]",
+      "sequence": 4
+    },
+    {
+      "context": {
+        "actionId": "6bc70691ab8c2f844796d24c114ced9a",
+        "command": "browser_navigate"
+      },
+      "correlation": "request-start-context-not-proven-cause",
+      "frameId": "EB201323EAC8EA5A674BA4969D7D547E",
+      "fromDiskCache": false,
+      "fromServiceWorker": false,
+      "httpError": true,
+      "kind": "response",
+      "method": "GET",
+      "observedTickMs": 1853290031,
+      "origin": "http://127.0.0.1:62554",
+      "pageId": "19a71b0276c200143795191582ca5163",
+      "requestId": "74e5232d777e2474a522dd353af6afc9",
+      "resourceType": "Other",
+      "route": "[omitted]",
+      "sequence": 5,
+      "status": 404
+    },
+    {
+      "context": {
+        "actionId": "6bc70691ab8c2f844796d24c114ced9a",
+        "command": "browser_navigate"
+      },
+      "correlation": "request-start-context-not-proven-cause",
+      "frameId": "EB201323EAC8EA5A674BA4969D7D547E",
+      "kind": "request-finished",
+      "method": "GET",
+      "observedTickMs": 1853290031,
+      "origin": "http://127.0.0.1:62554",
+      "pageId": "19a71b0276c200143795191582ca5163",
+      "requestId": "74e5232d777e2474a522dd353af6afc9",
+      "resourceType": "Other",
+      "route": "[omitted]",
+      "sequence": 6
+    },
+    {
+      "argumentCount": 2,
+      "argumentTypes": [
+        "string",
+        "object"
+      ],
+      "contentOmitted": true,
+      "context": {
+        "actionId": "6f8b9c329c097426835118482cb07f41",
+        "command": "page_click"
+      },
+      "correlation": "observed-during-context",
+      "kind": "console",
+      "level": "error",
+      "observedTickMs": 1853290140,
+      "pageId": "19a71b0276c200143795191582ca5163",
+      "sequence": 7
+    },
+    {
+      "context": {
+        "actionId": "6f8b9c329c097426835118482cb07f41",
+        "command": "page_click"
+      },
+      "correlation": "observed-during-context",
+      "frameId": "EB201323EAC8EA5A674BA4969D7D547E",
+      "kind": "request-start",
+      "method": "GET",
+      "observedTickMs": 1853290140,
+      "origin": "http://127.0.0.1:62554",
+      "pageId": "19a71b0276c200143795191582ca5163",
+      "requestId": "16a04d54aac3dcec5de2ba064d882b94",
+      "resourceType": "Fetch",
+      "route": "/diag404",
+      "sequence": 8
+    },
+    {
+      "context": {
+        "actionId": "6f8b9c329c097426835118482cb07f41",
+        "command": "page_click"
+      },
+      "correlation": "observed-during-context",
+      "frameId": "EB201323EAC8EA5A674BA4969D7D547E",
+      "kind": "request-start",
+      "method": "GET",
+      "observedTickMs": 1853290140,
+      "origin": "http://127.0.0.1:62554",
+      "pageId": "19a71b0276c200143795191582ca5163",
+      "requestId": "0e5d682c2938e243ee90a72afdcd32cd",
+      "resourceType": "Fetch",
+      "route": "/diag-redirect",
+      "sequence": 9
+    },
+    {
+      "context": {
+        "actionId": "6f8b9c329c097426835118482cb07f41",
+        "command": "page_click"
+      },
+      "correlation": "observed-during-context",
+      "frameId": "EB201323EAC8EA5A674BA4969D7D547E",
+      "kind": "request-start",
+      "method": "GET",
+      "observedTickMs": 1853290140,
+      "origin": "http://127.0.0.1:62554",
+      "pageId": "19a71b0276c200143795191582ca5163",
+      "requestId": "2f0d4ca9db9f9bf3e94ecb51f45c0f08",
+      "resourceType": "Fetch",
+      "route": "/diag-fail",
+      "sequence": 10
+    },
+    {
+      "columnNumber": 27,
+      "contentOmitted": true,
+      "context": {
+        "actionId": "02ffef92a6dbac75df0b3eff855b165f",
+        "command": "page_wait_text"
+      },
+      "correlation": "observed-during-context",
+      "exceptionClass": "TypeError",
+      "kind": "exception",
+      "lineNumber": 12,
+      "observedTickMs": 1853290156,
+      "pageId": "19a71b0276c200143795191582ca5163",
+      "sequence": 11
+    },
+    {
+      "context": {
+        "actionId": "6f8b9c329c097426835118482cb07f41",
+        "command": "page_click"
+      },
+      "correlation": "request-start-context-not-proven-cause",
+      "frameId": "EB201323EAC8EA5A674BA4969D7D547E",
+      "fromDiskCache": false,
+      "fromServiceWorker": false,
+      "httpError": true,
+      "kind": "response",
+      "method": "GET",
+      "observedTickMs": 1853290156,
+      "origin": "http://127.0.0.1:62554",
+      "pageId": "19a71b0276c200143795191582ca5163",
+      "requestId": "16a04d54aac3dcec5de2ba064d882b94",
+      "resourceType": "Fetch",
+      "route": "/diag404",
+      "sequence": 12,
+      "status": 404
+    },
+    {
+      "context": {
+        "actionId": "6f8b9c329c097426835118482cb07f41",
+        "command": "page_click"
+      },
+      "correlation": "observed-during-context",
+      "frameId": "EB201323EAC8EA5A674BA4969D7D547E",
+      "kind": "request-redirect",
+      "method": "GET",
+      "observedTickMs": 1853290156,
+      "origin": "http://127.0.0.1:62554",
+      "pageId": "19a71b0276c200143795191582ca5163",
+      "requestId": "0e5d682c2938e243ee90a72afdcd32cd",
+      "resourceType": "Fetch",
+      "route": "/diag-redirect",
+      "sequence": 13,
+      "status": 302
+    },
+    {
+      "context": {
+        "actionId": "02ffef92a6dbac75df0b3eff855b165f",
+        "command": "page_wait_text"
+      },
+      "correlation": "observed-during-context",
+      "frameId": "EB201323EAC8EA5A674BA4969D7D547E",
+      "kind": "request-start",
+      "method": "GET",
+      "observedTickMs": 1853290156,
+      "origin": "http://127.0.0.1:62554",
+      "pageId": "19a71b0276c200143795191582ca5163",
+      "redirectFrom": "0e5d682c2938e243ee90a72afdcd32cd",
+      "requestId": "0cbd9737d5b64f7485453ebd8f76e97f",
+      "resourceType": "Fetch",
+      "route": "/diag404",
+      "sequence": 14
+    },
+    {
+      "cancelled": false,
+      "context": {
+        "actionId": "6f8b9c329c097426835118482cb07f41",
+        "command": "page_click"
+      },
+      "correlation": "request-start-context-not-proven-cause",
+      "failure": "other",
+      "frameId": "EB201323EAC8EA5A674BA4969D7D547E",
+      "kind": "request-failed",
+      "method": "GET",
+      "observedTickMs": 1853290156,
+      "origin": "http://127.0.0.1:62554",
+      "pageId": "19a71b0276c200143795191582ca5163",
+      "requestId": "2f0d4ca9db9f9bf3e94ecb51f45c0f08",
+      "resourceType": "Fetch",
+      "route": "/diag-fail",
+      "sequence": 15
+    },
+    {
+      "context": {
+        "actionId": "02ffef92a6dbac75df0b3eff855b165f",
+        "command": "page_wait_text"
+      },
+      "correlation": "request-start-context-not-proven-cause",
+      "frameId": "EB201323EAC8EA5A674BA4969D7D547E",
+      "fromDiskCache": false,
+      "fromServiceWorker": false,
+      "httpError": true,
+      "kind": "response",
+      "method": "GET",
+      "observedTickMs": 1853290156,
+      "origin": "http://127.0.0.1:62554",
+      "pageId": "19a71b0276c200143795191582ca5163",
+      "redirectFrom": "0e5d682c2938e243ee90a72afdcd32cd",
+      "requestId": "0cbd9737d5b64f7485453ebd8f76e97f",
+      "resourceType": "Fetch",
+      "route": "/diag404",
+      "sequence": 16,
+      "status": 404
+    }
+  ],
+  "error": "{'errors': [{'code': 'WORKFLOW_GRAPH_INVALID', 'message': 'Step edge points to a missing node', 'path': '/flows/main'}], 'valid': False}",
+  "commands": [
+    {
+      "sequence": 1,
+      "command": "profile_create",
+      "outcome": "passed"
+    },
+    {
+      "sequence": 2,
+      "command": "browser_start",
+      "outcome": "passed"
+    },
+    {
+      "sequence": 3,
+      "command": "lease_acquire",
+      "outcome": "passed"
+    },
+    {
+      "sequence": 4,
+      "command": "browser_diagnostics_start",
+      "outcome": "INVALID_ARGUMENTS"
+    },
+    {
+      "sequence": 5,
+      "command": "browser_diagnostics_start",
+      "outcome": "passed"
+    },
+    {
+      "sequence": 6,
+      "command": "browser_diagnostics_start",
+      "outcome": "DIAGNOSTICS_ALREADY_ACTIVE"
+    },
+    {
+      "sequence": 7,
+      "command": "browser_navigate",
+      "outcome": "passed"
+    },
+    {
+      "sequence": 8,
+      "command": "page_locate",
+      "outcome": "passed"
+    },
+    {
+      "sequence": 9,
+      "command": "page_click",
+      "outcome": "passed"
+    },
+    {
+      "sequence": 10,
+      "command": "page_wait_text",
+      "outcome": "passed"
+    },
+    {
+      "sequence": 11,
+      "command": "browser_diagnostics_read",
+      "outcome": "passed"
+    },
+    {
+      "sequence": 12,
+      "command": "browser_diagnostics_read",
+      "outcome": "DIAGNOSTIC_CURSOR_INVALID"
+    },
+    {
+      "sequence": 13,
+      "command": "browser_diagnostics_read",
+      "outcome": "DIAGNOSTIC_CURSOR_INVALID"
+    },
+    {
+      "sequence": 14,
+      "command": "browser_navigate",
+      "outcome": "passed"
+    },
+    {
+      "sequence": 15,
+      "command": "workflow_validate",
+      "outcome": "passed"
+    }
+  ]
+}

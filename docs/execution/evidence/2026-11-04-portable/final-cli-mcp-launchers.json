@@ -1,0 +1,19 @@
+{
+  "result": "passed",
+  "date": "2026-11-04",
+  "cwd": "C:\\WINDOWS",
+  "launchers": [
+    {
+      "file": "Start-CLI.cmd",
+      "exitCode": 0,
+      "jsonReplies": 1,
+      "extraStdout": false
+    },
+    {
+      "file": "Start-MCP.cmd",
+      "exitCode": 0,
+      "jsonReplies": 2,
+      "extraStdout": false
+    }
+  ]
+}

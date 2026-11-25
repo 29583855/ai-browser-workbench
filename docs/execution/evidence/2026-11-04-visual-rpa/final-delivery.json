@@ -1,0 +1,67 @@
+{
+  "date": "2026-11-04",
+  "version": "0.1.9-poc",
+  "result": "passed",
+  "scope": "Implemented 0.1.9 preview increment and portable local Windows11 acceptance",
+  "archive": "dist/AI-Browser-Workbench-0.1.9-win64-visual-rpa-r2.zip",
+  "folder": "dist/AI-Browser-Workbench-0.1.9-win64-visual-rpa-r2",
+  "archiveSha256": "63d5a449a6d1e4cab4d0d6f858dd410103f6428692ebf13a224f7acd647598bd",
+  "archiveBytes": 228022976,
+  "manifestFiles": 1627,
+  "allManifestFilesVerified": true,
+  "noUnlistedFiles": true,
+  "pristineDataEmpty": true,
+  "pristineTestResultsAbsent": true,
+  "desktopBinarySha256": "3ae00ba8a6a6ca0819c83ec4802e223fa88be281ec47d5d4098ab611ca74352a",
+  "cliBinarySha256": "16cf501ded774faed02434fc9135d1e94b2985c9eea1fe47e76b726aec94639b",
+  "sourceSnapshot": "Frozen before post-package validation; final SHA/results are only appended in the main workspace",
+  "regressionRounds": 6,
+  "regressionChecks": 240,
+  "deploymentChecks": 9,
+  "transportChecks": 12,
+  "packagedBehaviorSuites": [
+    {
+      "suite": "flow_recovery",
+      "result": "passed",
+      "report": "build\\evidence\\visual-rpa-package-behavior-r2\\flow_recovery\\report.json",
+      "checks": 6
+    },
+    {
+      "suite": "visual_desktop",
+      "result": "passed",
+      "report": "build\\evidence\\visual-rpa-package-behavior-r2\\visual_desktop\\report.json",
+      "checks": 4
+    },
+    {
+      "suite": "recording",
+      "result": "passed",
+      "report": "build\\evidence\\visual-rpa-package-behavior-r2\\recording\\report.json",
+      "checks": 11
+    },
+    {
+      "suite": "mcp",
+      "result": "passed",
+      "report": "build\\evidence\\visual-rpa-package-behavior-r2\\mcp\\report.json",
+      "tools": 50
+    },
+    {
+      "suite": "protocol",
+      "result": "passed",
+      "report": "build\\evidence\\visual-rpa-package-behavior-r2\\protocol\\report.json",
+      "checks": 24
+    }
+  ],
+  "visualPlan": {
+    "completed": 4,
+    "inProgress": 11,
+    "unstarted": 13,
+    "total": 28
+  },
+  "sourceAudit": {
+    "files": 70,
+    "unfinishedMarkers": 0
+  },
+  "fullProductComplete": false,
+  "secondCleanMachineTested": false,
+  "commercialRelease": false
+}

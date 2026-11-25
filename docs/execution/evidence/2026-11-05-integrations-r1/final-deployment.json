@@ -1,0 +1,20 @@
+{
+  "date": "2026-11-05T17:05:34.777287+08:00",
+  "result": "passed",
+  "checks": [
+    "archive-and-every-file-verified-pristine-data",
+    "self-test-passes-with-desktop-open-and-keeps-user-catalog-unchanged",
+    "normal-gui-launcher-and-close",
+    "cli-mcp-launchers-no-extra-stdout-and-consistent-version",
+    "api-launcher-from-unrelated-cwd-authentication-and-shutdown",
+    "admin-start-restart-stop-launchers-with-endpoint-read-contention",
+    "double-click-self-test-cmd-full-hash-check",
+    "tampered-package-rejected",
+    "missing-crt-rejected-before-starting-executables"
+  ],
+  "secondCleanMachineTested": false,
+  "archiveSha256": "61ac436995d2f630be5d1fbd44dae616a5d474ad8a2bd91e4e42ee01d667c826",
+  "copiedFolder": "E:\\project\\webexploer_codex\\build\\integrations-final-deployment\\中文 空格部署\\AI-Browser-Workbench-0.1.13-win64-integrations-r1",
+  "version": "0.1.13-poc",
+  "manifestFiles": 2147
+}

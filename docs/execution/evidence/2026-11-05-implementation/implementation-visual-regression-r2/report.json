@@ -1,0 +1,26 @@
+{
+  "date": "2026-11-05T09:35:49.113612+08:00",
+  "result": "failed",
+  "runs": [
+    {
+      "configuration": "Debug",
+      "round": 1,
+      "suite": "canvas",
+      "exitCode": 0,
+      "report": "build\\implementation-visual-regression-r2\\Debug-canvas-1.json",
+      "binarySha256": "3fd6025405365b186c2a9b8c2c79ae25376574f5d4d65a00150e93570490b405",
+      "checks": 19,
+      "paintP95Ms": 17.4047
+    },
+    {
+      "configuration": "Debug",
+      "round": 1,
+      "suite": "recovery",
+      "exitCode": 1,
+      "report": "build\\implementation-visual-regression-r2\\Debug-recovery-1\\report.json",
+      "binarySha256": "3fd6025405365b186c2a9b8c2c79ae25376574f5d4d65a00150e93570490b405"
+    }
+  ],
+  "scope": "Main-document recorder, picker, native canvas, desktop publication and recovery; not the full VR01-VR36 acceptance matrix",
+  "error": "Suite failed: Debug/1/recovery"
+}

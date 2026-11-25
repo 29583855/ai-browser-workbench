@@ -1,0 +1,47 @@
+{
+  "date": "2026-11-05",
+  "result": "passed",
+  "steps": [
+    {
+      "menuId": 916,
+      "outcome": "passed"
+    },
+    {
+      "buttonId": 101,
+      "outcome": "passed"
+    },
+    {
+      "buttonId": 102,
+      "outcome": "passed"
+    },
+    {
+      "buttonId": 104,
+      "outcome": "passed"
+    },
+    {
+      "menuId": 914,
+      "outcome": "passed"
+    },
+    {
+      "buttonId": 128,
+      "outcome": "passed"
+    },
+    {
+      "buttonId": 129,
+      "outcome": "passed"
+    },
+    {
+      "buttonId": 103,
+      "outcome": "passed"
+    }
+  ],
+  "checks": [
+    "masked-secret-cleared-create-rotate-delete-real-dpapi-panel",
+    "desktop-real-page-function-discovery-and-doctor",
+    "desktop-pause-on-start-step-set-breakpoint-redacted-variables-resume-terminal-state"
+  ],
+  "executableSha256": "3fd6025405365b186c2a9b8c2c79ae25376574f5d4d65a00150e93570490b405",
+  "groupSwitches": [
+    503
+  ]
+}

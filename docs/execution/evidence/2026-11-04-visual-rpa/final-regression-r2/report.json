@@ -1,0 +1,236 @@
+{
+  "date": "2026-11-04T22:39:43.881490+08:00",
+  "result": "passed",
+  "runs": [
+    {
+      "configuration": "Debug",
+      "round": 1,
+      "suite": "canvas",
+      "exitCode": 0,
+      "report": "docs\\execution\\evidence\\2026-11-04-visual-rpa\\final-regression-r2\\Debug-canvas-1.json",
+      "binarySha256": "537bee76685a0d9312d823da02c399726c9511b222784a9b3be5e12e90712582",
+      "checks": 19,
+      "paintP95Ms": 17.1312
+    },
+    {
+      "configuration": "Debug",
+      "round": 1,
+      "suite": "recovery",
+      "exitCode": 0,
+      "report": "docs\\execution\\evidence\\2026-11-04-visual-rpa\\final-regression-r2\\Debug-recovery-1\\report.json",
+      "binarySha256": "537bee76685a0d9312d823da02c399726c9511b222784a9b3be5e12e90712582",
+      "checks": 6
+    },
+    {
+      "configuration": "Debug",
+      "round": 1,
+      "suite": "visual_desktop",
+      "exitCode": 0,
+      "report": "docs\\execution\\evidence\\2026-11-04-visual-rpa\\final-regression-r2\\Debug-visual_desktop-1\\report.json",
+      "binarySha256": "537bee76685a0d9312d823da02c399726c9511b222784a9b3be5e12e90712582",
+      "checks": 4
+    },
+    {
+      "configuration": "Debug",
+      "round": 1,
+      "suite": "recording",
+      "exitCode": 0,
+      "report": "docs\\execution\\evidence\\2026-11-04-visual-rpa\\final-regression-r2\\Debug-recording-1\\report.json",
+      "binarySha256": "7094d3669fddd417b31b828c1a0df22cdacf61f88d7114a68ce4fd39139bf051",
+      "checks": 11,
+      "commands": 102
+    },
+    {
+      "configuration": "Debug",
+      "round": 2,
+      "suite": "canvas",
+      "exitCode": 0,
+      "report": "docs\\execution\\evidence\\2026-11-04-visual-rpa\\final-regression-r2\\Debug-canvas-2.json",
+      "binarySha256": "537bee76685a0d9312d823da02c399726c9511b222784a9b3be5e12e90712582",
+      "checks": 19,
+      "paintP95Ms": 17.3435
+    },
+    {
+      "configuration": "Debug",
+      "round": 2,
+      "suite": "recovery",
+      "exitCode": 0,
+      "report": "docs\\execution\\evidence\\2026-11-04-visual-rpa\\final-regression-r2\\Debug-recovery-2\\report.json",
+      "binarySha256": "537bee76685a0d9312d823da02c399726c9511b222784a9b3be5e12e90712582",
+      "checks": 6
+    },
+    {
+      "configuration": "Debug",
+      "round": 2,
+      "suite": "visual_desktop",
+      "exitCode": 0,
+      "report": "docs\\execution\\evidence\\2026-11-04-visual-rpa\\final-regression-r2\\Debug-visual_desktop-2\\report.json",
+      "binarySha256": "537bee76685a0d9312d823da02c399726c9511b222784a9b3be5e12e90712582",
+      "checks": 4
+    },
+    {
+      "configuration": "Debug",
+      "round": 2,
+      "suite": "recording",
+      "exitCode": 0,
+      "report": "docs\\execution\\evidence\\2026-11-04-visual-rpa\\final-regression-r2\\Debug-recording-2\\report.json",
+      "binarySha256": "7094d3669fddd417b31b828c1a0df22cdacf61f88d7114a68ce4fd39139bf051",
+      "checks": 11,
+      "commands": 102
+    },
+    {
+      "configuration": "Debug",
+      "round": 3,
+      "suite": "canvas",
+      "exitCode": 0,
+      "report": "docs\\execution\\evidence\\2026-11-04-visual-rpa\\final-regression-r2\\Debug-canvas-3.json",
+      "binarySha256": "537bee76685a0d9312d823da02c399726c9511b222784a9b3be5e12e90712582",
+      "checks": 19,
+      "paintP95Ms": 17.4361
+    },
+    {
+      "configuration": "Debug",
+      "round": 3,
+      "suite": "recovery",
+      "exitCode": 0,
+      "report": "docs\\execution\\evidence\\2026-11-04-visual-rpa\\final-regression-r2\\Debug-recovery-3\\report.json",
+      "binarySha256": "537bee76685a0d9312d823da02c399726c9511b222784a9b3be5e12e90712582",
+      "checks": 6
+    },
+    {
+      "configuration": "Debug",
+      "round": 3,
+      "suite": "visual_desktop",
+      "exitCode": 0,
+      "report": "docs\\execution\\evidence\\2026-11-04-visual-rpa\\final-regression-r2\\Debug-visual_desktop-3\\report.json",
+      "binarySha256": "537bee76685a0d9312d823da02c399726c9511b222784a9b3be5e12e90712582",
+      "checks": 4
+    },
+    {
+      "configuration": "Debug",
+      "round": 3,
+      "suite": "recording",
+      "exitCode": 0,
+      "report": "docs\\execution\\evidence\\2026-11-04-visual-rpa\\final-regression-r2\\Debug-recording-3\\report.json",
+      "binarySha256": "7094d3669fddd417b31b828c1a0df22cdacf61f88d7114a68ce4fd39139bf051",
+      "checks": 11,
+      "commands": 102
+    },
+    {
+      "configuration": "Release",
+      "round": 1,
+      "suite": "canvas",
+      "exitCode": 0,
+      "report": "docs\\execution\\evidence\\2026-11-04-visual-rpa\\final-regression-r2\\Release-canvas-1.json",
+      "binarySha256": "3ae00ba8a6a6ca0819c83ec4802e223fa88be281ec47d5d4098ab611ca74352a",
+      "checks": 19,
+      "paintP95Ms": 17.338
+    },
+    {
+      "configuration": "Release",
+      "round": 1,
+      "suite": "recovery",
+      "exitCode": 0,
+      "report": "docs\\execution\\evidence\\2026-11-04-visual-rpa\\final-regression-r2\\Release-recovery-1\\report.json",
+      "binarySha256": "3ae00ba8a6a6ca0819c83ec4802e223fa88be281ec47d5d4098ab611ca74352a",
+      "checks": 6
+    },
+    {
+      "configuration": "Release",
+      "round": 1,
+      "suite": "visual_desktop",
+      "exitCode": 0,
+      "report": "docs\\execution\\evidence\\2026-11-04-visual-rpa\\final-regression-r2\\Release-visual_desktop-1\\report.json",
+      "binarySha256": "3ae00ba8a6a6ca0819c83ec4802e223fa88be281ec47d5d4098ab611ca74352a",
+      "checks": 4
+    },
+    {
+      "configuration": "Release",
+      "round": 1,
+      "suite": "recording",
+      "exitCode": 0,
+      "report": "docs\\execution\\evidence\\2026-11-04-visual-rpa\\final-regression-r2\\Release-recording-1\\report.json",
+      "binarySha256": "16cf501ded774faed02434fc9135d1e94b2985c9eea1fe47e76b726aec94639b",
+      "checks": 11,
+      "commands": 101
+    },
+    {
+      "configuration": "Release",
+      "round": 2,
+      "suite": "canvas",
+      "exitCode": 0,
+      "report": "docs\\execution\\evidence\\2026-11-04-visual-rpa\\final-regression-r2\\Release-canvas-2.json",
+      "binarySha256": "3ae00ba8a6a6ca0819c83ec4802e223fa88be281ec47d5d4098ab611ca74352a",
+      "checks": 19,
+      "paintP95Ms": 17.4171
+    },
+    {
+      "configuration": "Release",
+      "round": 2,
+      "suite": "recovery",
+      "exitCode": 0,
+      "report": "docs\\execution\\evidence\\2026-11-04-visual-rpa\\final-regression-r2\\Release-recovery-2\\report.json",
+      "binarySha256": "3ae00ba8a6a6ca0819c83ec4802e223fa88be281ec47d5d4098ab611ca74352a",
+      "checks": 6
+    },
+    {
+      "configuration": "Release",
+      "round": 2,
+      "suite": "visual_desktop",
+      "exitCode": 0,
+      "report": "docs\\execution\\evidence\\2026-11-04-visual-rpa\\final-regression-r2\\Release-visual_desktop-2\\report.json",
+      "binarySha256": "3ae00ba8a6a6ca0819c83ec4802e223fa88be281ec47d5d4098ab611ca74352a",
+      "checks": 4
+    },
+    {
+      "configuration": "Release",
+      "round": 2,
+      "suite": "recording",
+      "exitCode": 0,
+      "report": "docs\\execution\\evidence\\2026-11-04-visual-rpa\\final-regression-r2\\Release-recording-2\\report.json",
+      "binarySha256": "16cf501ded774faed02434fc9135d1e94b2985c9eea1fe47e76b726aec94639b",
+      "checks": 11,
+      "commands": 101
+    },
+    {
+      "configuration": "Release",
+      "round": 3,
+      "suite": "canvas",
+      "exitCode": 0,
+      "report": "docs\\execution\\evidence\\2026-11-04-visual-rpa\\final-regression-r2\\Release-canvas-3.json",
+      "binarySha256": "3ae00ba8a6a6ca0819c83ec4802e223fa88be281ec47d5d4098ab611ca74352a",
+      "checks": 19,
+      "paintP95Ms": 17.285
+    },
+    {
+      "configuration": "Release",
+      "round": 3,
+      "suite": "recovery",
+      "exitCode": 0,
+      "report": "docs\\execution\\evidence\\2026-11-04-visual-rpa\\final-regression-r2\\Release-recovery-3\\report.json",
+      "binarySha256": "3ae00ba8a6a6ca0819c83ec4802e223fa88be281ec47d5d4098ab611ca74352a",
+      "checks": 6
+    },
+    {
+      "configuration": "Release",
+      "round": 3,
+      "suite": "visual_desktop",
+      "exitCode": 0,
+      "report": "docs\\execution\\evidence\\2026-11-04-visual-rpa\\final-regression-r2\\Release-visual_desktop-3\\report.json",
+      "binarySha256": "3ae00ba8a6a6ca0819c83ec4802e223fa88be281ec47d5d4098ab611ca74352a",
+      "checks": 4
+    },
+    {
+      "configuration": "Release",
+      "round": 3,
+      "suite": "recording",
+      "exitCode": 0,
+      "report": "docs\\execution\\evidence\\2026-11-04-visual-rpa\\final-regression-r2\\Release-recording-3\\report.json",
+      "binarySha256": "16cf501ded774faed02434fc9135d1e94b2985c9eea1fe47e76b726aec94639b",
+      "checks": 11,
+      "commands": 101
+    }
+  ],
+  "scope": "Main-document recorder, picker, native canvas, desktop publication and recovery; not the full VR01-VR36 acceptance matrix",
+  "checks": 240
+}

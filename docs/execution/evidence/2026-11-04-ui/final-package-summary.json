@@ -1,0 +1,23 @@
+{
+  "date": "2026-11-04",
+  "version": "0.1.8-poc",
+  "result": "passed",
+  "archive": "dist/AI-Browser-Workbench-0.1.8-win64-ui-r1.zip",
+  "archiveBytes": 227195242,
+  "archiveSha256": "0e91a5906fe9cd212e8eb6f079ed94a7f6bf657eb6e83be77186f0dc216aa18b",
+  "pristineManifestFiles": 1443,
+  "manifestRechecked": true,
+  "noUnlistedFiles": true,
+  "pristineDataEmpty": true,
+  "pristineTestResultsAbsent": true,
+  "desktopBinarySha256": "1d43fc2fea305dfe3addb98070f38d10b1980ec04fc48075414e6c365c651596",
+  "deploymentChecks": 9,
+  "desktopChecks": 11,
+  "desktopSteps": 111,
+  "protocolChecks": 24,
+  "mcpToolCount": 44,
+  "copiedFolder": "E:\\project\\webexploer_codex\\build\\evidence\\ui-package-delivery-r1\\final-package\\中文 空格部署\\AI-Browser-Workbench-0.1.8-win64-ui-r1",
+  "sourceSnapshot": "captured before post-package validation; frozen archive is unchanged",
+  "secondCleanMachineTested": false,
+  "fullProductComplete": false
+}

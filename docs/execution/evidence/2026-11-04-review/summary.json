@@ -1,0 +1,91 @@
+{
+  "date": "2026-11-04",
+  "timezone": "Asia/Shanghai",
+  "version": "0.1.1-poc",
+  "result": "passed",
+  "scope": "Review of implemented desktop/CLI/MCP/CDP/storage features and portable development deployment",
+  "fixes": [
+    "R01-profile-selection",
+    "R02-protocol-envelope-validation",
+    "R03-self-test-live-root-isolation",
+    "R04-packager-checks-under-optimized-Python",
+    "R05-Unicode-selector-boundary",
+    "R06-version-hints-and-execution-dates"
+  ],
+  "baseline": {
+    "desktop": "failed",
+    "protocolChecks": 18,
+    "protocolFailures": 7,
+    "selfTestWhileDesktopOpen": "failed",
+    "unicodeSelector": "failed-contract-boundary",
+    "pythonOptimizedInvalidPe": "incorrectly-accepted"
+  },
+  "native": {
+    "projects": 7,
+    "configurations": [
+      "Debug",
+      "Release"
+    ],
+    "warnings": 0,
+    "errors": 0,
+    "storageChecksEach": 24
+  },
+  "cmake": {
+    "configurations": [
+      "Debug",
+      "Release"
+    ],
+    "testsEach": 3,
+    "failed": 0
+  },
+  "browser": {
+    "DebugCommands": 124,
+    "ReleaseCommands": 124,
+    "passed": true,
+    "serverRegistrationsEach": 2,
+    "serverLoginsEach": 2,
+    "faultCommitsEach": 1
+  },
+  "protocol": {
+    "checksPerConfiguration": 18,
+    "passed": true
+  },
+  "desktop": {
+    "newProfilesChecked": 8,
+    "serverRegistrationsEach": 1,
+    "serverLoginsEach": 1,
+    "passed": true,
+    "ReleaseSteps": 31,
+    "DebugSteps": 30
+  },
+  "proxy": "unauthenticated HTTP only; actual forwarding and fail-closed navigation passed",
+  "mcp": {
+    "officialSdk": "1.12.4",
+    "tools": 16,
+    "passed": true
+  },
+  "candidateDeployment": {
+    "checks": 8,
+    "passed": true,
+    "copiedSourceReleaseBuild": true,
+    "userDesktopCatalogUnchanged": true
+  },
+  "remainingGates": [
+    "second/three clean Windows machines",
+    "Windows10/ARM64/Server validation",
+    "full product acceptance",
+    "installer/signing/update/rollback",
+    "long-duration and capacity tests",
+    "central entitlement/commerce/backend/RPA implementation"
+  ],
+  "releaseReady": false,
+  "commercialRelease": false,
+  "secondCleanMachineTested": false,
+  "finalArtifactEvidence": "Final ZIP hash and deployment verification are appended after packaging; historical failed runs are preserved.",
+  "finalDeployment": {
+    "checks": 8,
+    "result": "passed",
+    "archiveSha256": "a0acb2fafb9b17fe04621777561e28a4f50bdb213d4768f3a2e3a9827f5668e1",
+    "manifestFilesVerified": 714
+  }
+}

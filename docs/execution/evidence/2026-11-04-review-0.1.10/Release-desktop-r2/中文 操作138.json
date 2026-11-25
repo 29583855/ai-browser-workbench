@@ -1,0 +1,38 @@
+{
+  "actions": [
+    {
+      "type": "fill",
+      "selector": "#field",
+      "value": "公开批次数据"
+    },
+    {
+      "type": "assertText",
+      "selector": "#echo",
+      "expected": "公开批次数据",
+      "timeoutMs": 500
+    },
+    {
+      "type": "select",
+      "selector": "#choice",
+      "values": [
+        "b"
+      ]
+    },
+    {
+      "type": "assertText",
+      "selector": "#selected",
+      "expected": "b",
+      "timeoutMs": 500
+    },
+    {
+      "type": "click",
+      "selector": "#increment",
+      "postcondition": {
+        "selector": "#clicks",
+        "expected": "1",
+        "timeoutMs": 500
+      }
+    }
+  ],
+  "onError": "stop"
+}

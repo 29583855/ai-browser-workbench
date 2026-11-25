@@ -1,0 +1,463 @@
+{
+  "date": "2026-11-04T14:57:08.508720+08:00",
+  "result": "failed",
+  "steps": [
+    {
+      "buttonId": 101,
+      "outcome": "passed"
+    },
+    {
+      "buttonId": 101,
+      "outcome": "passed"
+    },
+    {
+      "buttonId": 101,
+      "outcome": "passed"
+    },
+    {
+      "buttonId": 101,
+      "outcome": "passed"
+    },
+    {
+      "buttonId": 101,
+      "outcome": "passed"
+    },
+    {
+      "buttonId": 101,
+      "outcome": "passed"
+    },
+    {
+      "buttonId": 101,
+      "outcome": "passed"
+    },
+    {
+      "buttonId": 101,
+      "outcome": "passed"
+    },
+    {
+      "buttonId": 102,
+      "outcome": "passed"
+    },
+    {
+      "buttonId": 134,
+      "outcome": "passed"
+    },
+    {
+      "buttonId": 104,
+      "outcome": "passed"
+    },
+    {
+      "buttonId": 108,
+      "outcome": "passed"
+    },
+    {
+      "buttonId": 108,
+      "outcome": "passed"
+    },
+    {
+      "buttonId": 109,
+      "outcome": "passed"
+    },
+    {
+      "buttonId": 110,
+      "outcome": "passed"
+    },
+    {
+      "buttonId": 110,
+      "outcome": "passed"
+    },
+    {
+      "buttonId": 109,
+      "outcome": "passed"
+    },
+    {
+      "buttonId": 110,
+      "outcome": "passed"
+    },
+    {
+      "buttonId": 110,
+      "outcome": "passed"
+    },
+    {
+      "buttonId": 110,
+      "outcome": "passed"
+    },
+    {
+      "buttonId": 110,
+      "outcome": "passed"
+    },
+    {
+      "buttonId": 110,
+      "outcome": "passed"
+    },
+    {
+      "buttonId": 110,
+      "outcome": "passed"
+    },
+    {
+      "buttonId": 110,
+      "outcome": "passed"
+    },
+    {
+      "buttonId": 110,
+      "outcome": "passed"
+    },
+    {
+      "buttonId": 110,
+      "outcome": "passed"
+    },
+    {
+      "buttonId": 110,
+      "outcome": "passed"
+    },
+    {
+      "buttonId": 110,
+      "outcome": "passed"
+    },
+    {
+      "buttonId": 110,
+      "outcome": "passed"
+    },
+    {
+      "buttonId": 110,
+      "outcome": "passed"
+    },
+    {
+      "buttonId": 110,
+      "outcome": "passed"
+    },
+    {
+      "buttonId": 110,
+      "outcome": "passed"
+    },
+    {
+      "buttonId": 110,
+      "outcome": "passed"
+    },
+    {
+      "buttonId": 110,
+      "outcome": "passed"
+    },
+    {
+      "buttonId": 110,
+      "outcome": "passed"
+    },
+    {
+      "buttonId": 110,
+      "outcome": "passed"
+    },
+    {
+      "buttonId": 110,
+      "outcome": "passed"
+    },
+    {
+      "buttonId": 110,
+      "outcome": "passed"
+    },
+    {
+      "buttonId": 110,
+      "outcome": "passed"
+    },
+    {
+      "buttonId": 110,
+      "outcome": "passed"
+    },
+    {
+      "buttonId": 110,
+      "outcome": "passed"
+    },
+    {
+      "buttonId": 110,
+      "outcome": "passed"
+    },
+    {
+      "buttonId": 110,
+      "outcome": "passed"
+    },
+    {
+      "buttonId": 110,
+      "outcome": "passed"
+    },
+    {
+      "buttonId": 110,
+      "outcome": "passed"
+    },
+    {
+      "buttonId": 110,
+      "outcome": "passed"
+    },
+    {
+      "buttonId": 110,
+      "outcome": "passed"
+    },
+    {
+      "buttonId": 110,
+      "outcome": "passed"
+    },
+    {
+      "buttonId": 110,
+      "outcome": "passed"
+    },
+    {
+      "buttonId": 110,
+      "outcome": "passed"
+    },
+    {
+      "buttonId": 110,
+      "outcome": "passed"
+    },
+    {
+      "buttonId": 110,
+      "outcome": "passed"
+    },
+    {
+      "buttonId": 110,
+      "outcome": "passed"
+    },
+    {
+      "buttonId": 110,
+      "outcome": "passed"
+    },
+    {
+      "buttonId": 110,
+      "outcome": "passed"
+    },
+    {
+      "buttonId": 110,
+      "outcome": "passed"
+    },
+    {
+      "buttonId": 110,
+      "outcome": "passed"
+    },
+    {
+      "buttonId": 110,
+      "outcome": "passed"
+    },
+    {
+      "buttonId": 110,
+      "outcome": "passed"
+    },
+    {
+      "buttonId": 110,
+      "outcome": "passed"
+    },
+    {
+      "buttonId": 110,
+      "outcome": "passed"
+    },
+    {
+      "buttonId": 110,
+      "outcome": "passed"
+    },
+    {
+      "buttonId": 110,
+      "outcome": "passed"
+    },
+    {
+      "buttonId": 110,
+      "outcome": "passed"
+    },
+    {
+      "buttonId": 110,
+      "outcome": "passed"
+    },
+    {
+      "buttonId": 110,
+      "outcome": "passed"
+    },
+    {
+      "buttonId": 110,
+      "outcome": "passed"
+    },
+    {
+      "buttonId": 110,
+      "outcome": "passed"
+    },
+    {
+      "buttonId": 110,
+      "outcome": "passed"
+    },
+    {
+      "buttonId": 110,
+      "outcome": "passed"
+    },
+    {
+      "buttonId": 110,
+      "outcome": "passed"
+    },
+    {
+      "buttonId": 110,
+      "outcome": "passed"
+    },
+    {
+      "buttonId": 110,
+      "outcome": "passed"
+    },
+    {
+      "buttonId": 110,
+      "outcome": "passed"
+    },
+    {
+      "buttonId": 110,
+      "outcome": "passed"
+    },
+    {
+      "buttonId": 110,
+      "outcome": "passed"
+    },
+    {
+      "buttonId": 110,
+      "outcome": "passed"
+    },
+    {
+      "buttonId": 110,
+      "outcome": "passed"
+    },
+    {
+      "buttonId": 110,
+      "outcome": "passed"
+    },
+    {
+      "buttonId": 110,
+      "outcome": "passed"
+    },
+    {
+      "buttonId": 110,
+      "outcome": "passed"
+    },
+    {
+      "buttonId": 110,
+      "outcome": "passed"
+    },
+    {
+      "buttonId": 110,
+      "outcome": "passed"
+    },
+    {
+      "buttonId": 110,
+      "outcome": "passed"
+    },
+    {
+      "buttonId": 110,
+      "outcome": "passed"
+    },
+    {
+      "buttonId": 110,
+      "outcome": "passed"
+    },
+    {
+      "buttonId": 110,
+      "outcome": "passed"
+    },
+    {
+      "buttonId": 110,
+      "outcome": "passed"
+    },
+    {
+      "buttonId": 110,
+      "outcome": "passed"
+    },
+    {
+      "buttonId": 110,
+      "outcome": "passed"
+    },
+    {
+      "buttonId": 110,
+      "outcome": "passed"
+    },
+    {
+      "buttonId": 110,
+      "outcome": "passed"
+    },
+    {
+      "buttonId": 110,
+      "outcome": "passed"
+    },
+    {
+      "buttonId": 110,
+      "outcome": "passed"
+    },
+    {
+      "buttonId": 110,
+      "outcome": "passed"
+    },
+    {
+      "buttonId": 110,
+      "outcome": "passed"
+    },
+    {
+      "buttonId": 110,
+      "outcome": "passed"
+    },
+    {
+      "buttonId": 110,
+      "outcome": "passed"
+    },
+    {
+      "buttonId": 110,
+      "outcome": "passed"
+    },
+    {
+      "buttonId": 110,
+      "outcome": "passed"
+    },
+    {
+      "buttonId": 110,
+      "outcome": "passed"
+    },
+    {
+      "buttonId": 110,
+      "outcome": "passed"
+    },
+    {
+      "buttonId": 110,
+      "outcome": "passed"
+    },
+    {
+      "buttonId": 110,
+      "outcome": "passed"
+    },
+    {
+      "buttonId": 110,
+      "outcome": "passed"
+    },
+    {
+      "buttonId": 110,
+      "outcome": "passed"
+    },
+    {
+      "buttonId": 110,
+      "outcome": "passed"
+    },
+    {
+      "buttonId": 110,
+      "outcome": "passed"
+    },
+    {
+      "buttonId": 110,
+      "outcome": "passed"
+    },
+    {
+      "buttonId": 110,
+      "outcome": "passed"
+    },
+    {
+      "buttonId": 110,
+      "outcome": "passed"
+    },
+    {
+      "buttonId": 110,
+      "outcome": "passed"
+    }
+  ],
+  "checks": [
+    "eight-new-profiles-select-the-created-profile"
+  ],
+  "binarySha256": "9787d48caeac2dc48200829a0c4ab9a01213d51221fc80943b9435a10837ac88",
+  "error": "Expected desktop observation: desktop-review-user; observed: anonymous",
+  "serverFacts": {
+    "registrationCount": 1,
+    "loginCount": 1
+  }
+}

@@ -1,0 +1,321 @@
+{
+  "date": "2026-11-04T15:31:36.569615+08:00",
+  "result": "passed",
+  "checks": [
+    "strict-dialect-type-capability-graph-and-budget-rejections",
+    "twenty-real-flows-and-immutable-content-hashes",
+    "asynchronous-status-pause-drain-resume-and-profile-exclusion",
+    "cancellation-drains-current-observation-and-blocks-next-step",
+    "resumed-run-rechecks-original-lease-even-before-control-only-end",
+    "run-input-and-normalized-origin-scope-preflight",
+    "independent-closed-input-unicode-enum-array-and-required-boundaries",
+    "read-failure-versus-click-postcondition-unknown-no-retry",
+    "checkpoint-commit-failure-freezes-dispatch-and-preserves-prior-intent",
+    "process-kill-after-server-commit-restarts-unknown-without-replay",
+    "canary-secrets-leases-and-dom-values-absent-from-persistent-checkpoints",
+    "corrupt-published-version-and-hardlink-record-rejected-on-reopen",
+    "interrupted-atomic-write-temp-remains-evidence-and-is-not-imported"
+  ],
+  "flows": [
+    {
+      "name": "condition-0",
+      "steps": 5,
+      "state": "succeeded",
+      "runId": "ea932b130f4bd67429caacab9462aba5"
+    },
+    {
+      "name": "condition-1",
+      "steps": 5,
+      "state": "succeeded",
+      "runId": "e56de8cf80c45c827ae5edaef75d6757"
+    },
+    {
+      "name": "condition-2",
+      "steps": 5,
+      "state": "succeeded",
+      "runId": "a7453df242bfe14406123b9090c425c7"
+    },
+    {
+      "name": "condition-3",
+      "steps": 5,
+      "state": "succeeded",
+      "runId": "77ac34a99ac0a098b5d4491d2adb4033"
+    },
+    {
+      "name": "condition-4",
+      "steps": 5,
+      "state": "succeeded",
+      "runId": "51e35afa5936014e4390fa56d99d6631"
+    },
+    {
+      "name": "condition-5",
+      "steps": 5,
+      "state": "succeeded",
+      "runId": "2ca24d25fec86f5bb65031333640d4ce"
+    },
+    {
+      "name": "condition-6",
+      "steps": 5,
+      "state": "succeeded",
+      "runId": "13a38c86de7c440f782f0a00d3c29dbc"
+    },
+    {
+      "name": "loop-7",
+      "steps": 4,
+      "state": "succeeded",
+      "runId": "7c4a71431009cb48f2c9a5f53ce5d0bf"
+    },
+    {
+      "name": "loop-8",
+      "steps": 6,
+      "state": "succeeded",
+      "runId": "c47406eda39f7f9dc44370b4eb0ab71d"
+    },
+    {
+      "name": "loop-9",
+      "steps": 10,
+      "state": "succeeded",
+      "runId": "fd1b23ca80b03e22732372f673df38df"
+    },
+    {
+      "name": "loop-10",
+      "steps": 8,
+      "state": "succeeded",
+      "runId": "0f79bb54aa519b0bc6a63411e1906325"
+    },
+    {
+      "name": "nested-loops",
+      "steps": 16,
+      "state": "succeeded",
+      "runId": "95d77a26c4820cbb94354d71273897ad"
+    },
+    {
+      "name": "subflow-call",
+      "steps": 6,
+      "state": "succeeded",
+      "runId": "5ca1c225879d9ff0f158fcc615d3fb57"
+    },
+    {
+      "name": "diamond-join",
+      "steps": 6,
+      "state": "succeeded",
+      "runId": "7cd86ae94e2da0167f37fd5453ea6b82"
+    },
+    {
+      "name": "reused-subflow",
+      "steps": 9,
+      "state": "succeeded",
+      "runId": "4172e488fff7fb1e1776d0f794b5e790"
+    },
+    {
+      "name": "native-select",
+      "steps": 5,
+      "state": "succeeded",
+      "runId": "233af84a90dbc96abaf0daf8806dae7f"
+    },
+    {
+      "name": "secret-input-no-echo",
+      "steps": 4,
+      "state": "succeeded",
+      "runId": "7433c72723b249b8076b6e0a928e8637"
+    },
+    {
+      "name": "nested-input-pointer",
+      "steps": 4,
+      "state": "succeeded",
+      "runId": "8a6bdab9ccf9a5c717b0ff52671244af"
+    },
+    {
+      "name": "registration-login-logout",
+      "steps": 8,
+      "state": "succeeded",
+      "runId": "edc6ffb43748436d6a3a50dffcc99a2d"
+    },
+    {
+      "name": "sequential-read-only",
+      "steps": 3,
+      "state": "succeeded",
+      "runId": "646b2324dbfd5f930262ba9699f8b6b9"
+    }
+  ],
+  "negatives": [
+    {
+      "name": "missing-version",
+      "code": "WORKFLOW_SCHEMA_INVALID",
+      "result": "passed"
+    },
+    {
+      "name": "unknown-root-field",
+      "code": "WORKFLOW_SCHEMA_INVALID",
+      "result": "passed"
+    },
+    {
+      "name": "unsupported-version",
+      "code": "WORKFLOW_VERSION_UNSUPPORTED",
+      "result": "passed"
+    },
+    {
+      "name": "remote-ref",
+      "code": "WORKFLOW_SCHEMA_INVALID",
+      "result": "passed"
+    },
+    {
+      "name": "schema-allOf",
+      "code": "WORKFLOW_SCHEMA_INVALID",
+      "result": "passed"
+    },
+    {
+      "name": "open-input-object",
+      "code": "WORKFLOW_SCHEMA_INVALID",
+      "result": "passed"
+    },
+    {
+      "name": "unknown-input-type",
+      "code": "WORKFLOW_SCHEMA_INVALID",
+      "result": "passed"
+    },
+    {
+      "name": "unbounded-input-string",
+      "code": "WORKFLOW_SCHEMA_INVALID",
+      "result": "passed"
+    },
+    {
+      "name": "enum-type-mismatch",
+      "code": "WORKFLOW_SCHEMA_INVALID",
+      "result": "passed"
+    },
+    {
+      "name": "enum-duplicate",
+      "code": "WORKFLOW_SCHEMA_INVALID",
+      "result": "passed"
+    },
+    {
+      "name": "required-duplicate",
+      "code": "WORKFLOW_SCHEMA_INVALID",
+      "result": "passed"
+    },
+    {
+      "name": "step-unsupported",
+      "code": "WORKFLOW_CAPABILITY_UNSUPPORTED",
+      "result": "passed"
+    },
+    {
+      "name": "step-retry-unsupported",
+      "code": "WORKFLOW_SCHEMA_INVALID",
+      "result": "passed"
+    },
+    {
+      "name": "navigate-outside-scope",
+      "code": "WORKFLOW_ORIGIN_DENIED",
+      "result": "passed"
+    },
+    {
+      "name": "selector-too-long",
+      "code": "WORKFLOW_SCHEMA_INVALID",
+      "result": "passed"
+    },
+    {
+      "name": "assert-wrong-type",
+      "code": "WORKFLOW_TYPE_INVALID",
+      "result": "passed"
+    },
+    {
+      "name": "undefined-input-reference",
+      "code": "WORKFLOW_TYPE_INVALID",
+      "result": "passed"
+    },
+    {
+      "name": "duplicate-step",
+      "code": "WORKFLOW_GRAPH_INVALID",
+      "result": "passed"
+    },
+    {
+      "name": "missing-edge-target",
+      "code": "WORKFLOW_GRAPH_INVALID",
+      "result": "passed"
+    },
+    {
+      "name": "implicit-cycle",
+      "code": "WORKFLOW_GRAPH_INVALID",
+      "result": "passed"
+    },
+    {
+      "name": "unreachable-step",
+      "code": "WORKFLOW_GRAPH_INVALID",
+      "result": "passed"
+    },
+    {
+      "name": "unused-subflow",
+      "code": "WORKFLOW_GRAPH_INVALID",
+      "result": "passed"
+    },
+    {
+      "name": "budget-too-low",
+      "code": "WORKFLOW_BUDGET",
+      "result": "passed"
+    },
+    {
+      "name": "missing-click-postcondition",
+      "code": "WORKFLOW_SCHEMA_INVALID",
+      "result": "passed"
+    },
+    {
+      "name": "literal-fill-secret-forbidden",
+      "code": "WORKFLOW_SCHEMA_INVALID",
+      "result": "passed"
+    },
+    {
+      "name": "float-integer-policy",
+      "code": "WORKFLOW_SCHEMA_INVALID",
+      "result": "passed"
+    },
+    {
+      "name": "array-too-many-items",
+      "code": "WORKFLOW_SCHEMA_INVALID",
+      "result": "passed"
+    },
+    {
+      "name": "integer-out-of-range",
+      "code": "WORKFLOW_SCHEMA_INVALID",
+      "result": "passed"
+    },
+    {
+      "name": "optional-input-reference",
+      "code": "WORKFLOW_TYPE_INVALID",
+      "result": "passed"
+    },
+    {
+      "name": "unknown-expression-key",
+      "code": "WORKFLOW_SCHEMA_INVALID",
+      "result": "passed"
+    },
+    {
+      "name": "expression-host-eval",
+      "code": "WORKFLOW_SCHEMA_INVALID",
+      "result": "passed"
+    },
+    {
+      "name": "enum-boundary-length",
+      "code": "WORKFLOW_SCHEMA_INVALID",
+      "result": "passed"
+    },
+    {
+      "name": "recursive-subflow",
+      "code": "WORKFLOW_GRAPH_INVALID",
+      "result": "passed"
+    },
+    {
+      "name": "loop-count-exceeds-bound",
+      "code": "WORKFLOW_TYPE_INVALID",
+      "result": "passed"
+    }
+  ],
+  "executableSha256": "d3cb21b2921ce88b3f726c751fc2c1cd8c1c76e5771e16d22019d97fd4c62132",
+  "commands": [
+    {
+      "sequence": 1,
+      "command": "workflow_publish",
+      "outcome": "passed"
+    }
+  ]
+}

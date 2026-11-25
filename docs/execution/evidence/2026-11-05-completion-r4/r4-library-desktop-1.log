@@ -1,0 +1,6 @@
+Traceback (most recent call last):
+  File "E:\project\webexploer_codex\tests\integration_library_desktop.py", line 282, in <module>
+    main()
+  File "E:\project\webexploer_codex\tests\integration_library_desktop.py", line 151, in main
+    database.execute("INSERT INTO profile_batches(id,request_hash,record_json) VALUES(?,?,?)",
+sqlite3.IntegrityError: CHECK constraint failed: length(request_hash)=64

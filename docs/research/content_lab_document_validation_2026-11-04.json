@@ -1,0 +1,78 @@
+{
+  "date": "2026-11-04",
+  "result": "passed",
+  "markdownFiles": 53,
+  "localLinksChecked": 428,
+  "generatedTemplateMappings": [
+    {
+      "template": "tools/portable/使用说明.md",
+      "target": "文档入口.md",
+      "verifiedGeneratedFile": "dist/AI-Browser-Workbench-0.1.8-win64-ui-r1/文档入口.md"
+    }
+  ],
+  "errors": [],
+  "scope": "documentation, example source, encoding/comments, marker check, package identity; browser evidence separate",
+  "caCoverage": {
+    "localPassed": 6,
+    "partiallyVerified": 11,
+    "notExecuted": 3
+  },
+  "sourceFilesChecked": 13,
+  "unfinishedMarkers": 0,
+  "originalPortableZipUnchanged": true,
+  "exampleArchiveSha256": "e1b42cf999f3ec21998d7ade0d617e6346d92136ec76f8fa4469b5532d046d44",
+  "sourceHashes": [
+    {
+      "path": "examples/content-lab/.gitignore",
+      "sha256": "93c50e74baa5b933e9137560f2ef047e221c69579624b8a84544590921299356"
+    },
+    {
+      "path": "examples/content-lab/app.js",
+      "sha256": "e75aa0e3615b55f661348271602989eaf779acbce284e75e638c9da30d7342bd"
+    },
+    {
+      "path": "examples/content-lab/index.html",
+      "sha256": "650524be55e829d9dd5468f74991dc2cb2fa575b8d56abe67bba8bcdb3c79b0b"
+    },
+    {
+      "path": "examples/content-lab/inputs.example.json",
+      "sha256": "8494a0f7d74dcc5cfd4fefb4a81f2cdeaf9b7ecef2a60782e6ffe6acb1b19baf"
+    },
+    {
+      "path": "examples/content-lab/README.md",
+      "sha256": "3730049936efe2fed6b6a3f53bacce47a2b766113bdd804edc0a6cae07abee01"
+    },
+    {
+      "path": "examples/content-lab/runner.py",
+      "sha256": "830c7dbdd24ea03237b23c5c43a548c6b857e129e94c46e20b3f621ddc04e187"
+    },
+    {
+      "path": "examples/content-lab/server.py",
+      "sha256": "cd8196bfe1e9ba14fe0c607e7f1899fe3a7fc73aced7113175c480c717c0ecad"
+    },
+    {
+      "path": "examples/content-lab/Start-Automation.cmd",
+      "sha256": "35376cc7df5cbb4c10c81d85089f6100d0e797f8cd1e78205c2642528c11cc0b"
+    },
+    {
+      "path": "examples/content-lab/Start-Site.cmd",
+      "sha256": "ebe8d880758ac686606d83335feddc14bec9e30b5f198df22a14cda2ee0fd9b7"
+    },
+    {
+      "path": "examples/content-lab/style.css",
+      "sha256": "ee72ecbff99266677580015b396f81191cdf8c6db59984128a2540abb19f6468"
+    },
+    {
+      "path": "examples/content-lab/workflow-publish-search.json",
+      "sha256": "81b032c3ac5bbda9b3082a41efcbcb895073946d07e323136837a473e8a33913"
+    },
+    {
+      "path": "tests/integration_content_lab.py",
+      "sha256": "4a1ff75fba69f192f872520d15206a82015b71642ac95d8423bf7e65d48811af"
+    },
+    {
+      "path": "tools/package_content_lab.py",
+      "sha256": "b1868018c1d86082aca8bd39292933914f1b1a278c2eaf2d6268b8139c940030"
+    }
+  ]
+}

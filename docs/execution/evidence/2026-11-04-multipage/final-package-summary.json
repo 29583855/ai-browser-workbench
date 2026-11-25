@@ -1,0 +1,30 @@
+{
+  "date": "2026-11-04T11:52:26.920954+08:00",
+  "result": "passed",
+  "version": "0.1.3-poc",
+  "archive": {
+    "file": "AI-Browser-Workbench-0.1.3-win64-multipage.zip",
+    "sha256": "5a6968041514ad194740d073db6376eba306858a39d6cc406c1b13074ebad013",
+    "bytes": 225011044
+  },
+  "manifestFiles": 858,
+  "deploymentChecks": 9,
+  "packagedSuites": [
+    "browser",
+    "proxy",
+    "lifecycle",
+    "recovery",
+    "socks",
+    "runtime",
+    "api",
+    "pages",
+    "protocol",
+    "mcp",
+    "desktop"
+  ],
+  "allOriginalFilesReverifiedAfterTests": true,
+  "originalDataEmpty": true,
+  "originalTestResultsAbsent": true,
+  "secondCleanMachineTested": false,
+  "commercialRelease": false
+}

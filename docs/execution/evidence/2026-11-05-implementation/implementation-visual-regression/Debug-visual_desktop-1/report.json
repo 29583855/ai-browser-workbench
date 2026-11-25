@@ -1,0 +1,289 @@
+{
+  "date": "2026-11-04",
+  "result": "passed",
+  "checks": [
+    "desktop-record-stop-produces-parameterized-draft-with-one-submit",
+    "recorded-draft-opens-on-canvas-and-shared-validation-accepts-configuration",
+    "canvas-publication-binds-original-profile-even-after-selection-changes",
+    "main-window-runs-canvas-publication-with-cleared-input-and-one-submit"
+  ],
+  "steps": [
+    {
+      "buttonId": 101,
+      "outcome": "passed"
+    },
+    {
+      "buttonId": 101,
+      "outcome": "passed"
+    },
+    {
+      "buttonId": 102,
+      "outcome": "passed"
+    },
+    {
+      "buttonId": 104,
+      "outcome": "passed"
+    },
+    {
+      "menuId": 902,
+      "outcome": "passed"
+    },
+    {
+      "buttonId": 108,
+      "outcome": "passed"
+    },
+    {
+      "buttonId": 109,
+      "outcome": "passed"
+    },
+    {
+      "buttonId": 110,
+      "outcome": "passed"
+    },
+    {
+      "menuId": 906,
+      "outcome": "passed"
+    },
+    {
+      "buttonId": 129,
+      "outcome": "passed"
+    },
+    {
+      "buttonId": 130,
+      "outcome": "passed"
+    },
+    {
+      "buttonId": 130,
+      "outcome": "passed"
+    },
+    {
+      "buttonId": 130,
+      "outcome": "passed"
+    },
+    {
+      "buttonId": 130,
+      "outcome": "passed"
+    },
+    {
+      "buttonId": 130,
+      "outcome": "passed"
+    },
+    {
+      "buttonId": 130,
+      "outcome": "passed"
+    },
+    {
+      "buttonId": 130,
+      "outcome": "passed"
+    },
+    {
+      "buttonId": 130,
+      "outcome": "passed"
+    },
+    {
+      "buttonId": 130,
+      "outcome": "passed"
+    },
+    {
+      "buttonId": 130,
+      "outcome": "passed"
+    },
+    {
+      "buttonId": 130,
+      "outcome": "passed"
+    },
+    {
+      "buttonId": 130,
+      "outcome": "passed"
+    },
+    {
+      "buttonId": 130,
+      "outcome": "passed"
+    },
+    {
+      "buttonId": 130,
+      "outcome": "passed"
+    },
+    {
+      "buttonId": 130,
+      "outcome": "passed"
+    },
+    {
+      "buttonId": 130,
+      "outcome": "passed"
+    },
+    {
+      "buttonId": 130,
+      "outcome": "passed"
+    },
+    {
+      "buttonId": 130,
+      "outcome": "passed"
+    },
+    {
+      "buttonId": 130,
+      "outcome": "passed"
+    },
+    {
+      "buttonId": 130,
+      "outcome": "passed"
+    },
+    {
+      "buttonId": 130,
+      "outcome": "passed"
+    },
+    {
+      "buttonId": 130,
+      "outcome": "passed"
+    },
+    {
+      "buttonId": 130,
+      "outcome": "passed"
+    },
+    {
+      "buttonId": 130,
+      "outcome": "passed"
+    },
+    {
+      "buttonId": 130,
+      "outcome": "passed"
+    },
+    {
+      "buttonId": 130,
+      "outcome": "passed"
+    },
+    {
+      "buttonId": 130,
+      "outcome": "passed"
+    },
+    {
+      "buttonId": 130,
+      "outcome": "passed"
+    },
+    {
+      "buttonId": 130,
+      "outcome": "passed"
+    },
+    {
+      "buttonId": 130,
+      "outcome": "passed"
+    },
+    {
+      "buttonId": 130,
+      "outcome": "passed"
+    },
+    {
+      "buttonId": 130,
+      "outcome": "passed"
+    },
+    {
+      "buttonId": 130,
+      "outcome": "passed"
+    },
+    {
+      "buttonId": 130,
+      "outcome": "passed"
+    },
+    {
+      "buttonId": 130,
+      "outcome": "passed"
+    },
+    {
+      "buttonId": 130,
+      "outcome": "passed"
+    },
+    {
+      "buttonId": 130,
+      "outcome": "passed"
+    },
+    {
+      "buttonId": 130,
+      "outcome": "passed"
+    },
+    {
+      "buttonId": 130,
+      "outcome": "passed"
+    },
+    {
+      "buttonId": 130,
+      "outcome": "passed"
+    },
+    {
+      "buttonId": 130,
+      "outcome": "passed"
+    },
+    {
+      "buttonId": 130,
+      "outcome": "passed"
+    },
+    {
+      "buttonId": 130,
+      "outcome": "passed"
+    },
+    {
+      "buttonId": 130,
+      "outcome": "passed"
+    },
+    {
+      "buttonId": 130,
+      "outcome": "passed"
+    },
+    {
+      "buttonId": 130,
+      "outcome": "passed"
+    },
+    {
+      "buttonId": 130,
+      "outcome": "passed"
+    },
+    {
+      "buttonId": 130,
+      "outcome": "passed"
+    },
+    {
+      "buttonId": 130,
+      "outcome": "passed"
+    },
+    {
+      "buttonId": 130,
+      "outcome": "passed"
+    },
+    {
+      "buttonId": 130,
+      "outcome": "passed"
+    },
+    {
+      "buttonId": 130,
+      "outcome": "passed"
+    },
+    {
+      "buttonId": 130,
+      "outcome": "passed"
+    },
+    {
+      "buttonId": 130,
+      "outcome": "passed"
+    },
+    {
+      "buttonId": 130,
+      "outcome": "passed"
+    },
+    {
+      "buttonId": 130,
+      "outcome": "passed"
+    },
+    {
+      "buttonId": 110,
+      "outcome": "passed"
+    },
+    {
+      "buttonId": 103,
+      "outcome": "passed"
+    }
+  ],
+  "binarySha256": "782e4a112a3e0137ce143a1084111512e8a89a11ef1fb5a41e498685c6e20f7a",
+  "groupSwitches": [
+    503,
+    501
+  ]
+}

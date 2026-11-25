@@ -1,0 +1,129 @@
+{
+  "date": "2026-11-04",
+  "timezone": "Asia/Shanghai",
+  "result": "passed",
+  "version": "0.1.1-poc",
+  "folder": "E:\\project\\webexploer_codex\\dist\\AI-Browser-Workbench-0.1.1-win64-reviewed",
+  "archive": "E:\\project\\webexploer_codex\\dist\\AI-Browser-Workbench-0.1.1-win64-reviewed.zip",
+  "archiveBytes": 224405909,
+  "archiveSha256": "a0acb2fafb9b17fe04621777561e28a4f50bdb213d4768f3a2e3a9827f5668e1",
+  "manifestFilesVerified": 714,
+  "ownSourceFilesVerified": 33,
+  "binaryHashesMatchFunctionalTestEvidence": true,
+  "pristineData": true,
+  "noTestResultsInDelivery": true,
+  "packageMarkdownLinksVerified": 196,
+  "pe": [
+    {
+      "file": "awb-core-tests.exe",
+      "machine": "x64",
+      "ASLR": true,
+      "DEP": true,
+      "highEntropyVA": true
+    },
+    {
+      "file": "awb-storage-tests.exe",
+      "machine": "x64",
+      "ASLR": true,
+      "DEP": true,
+      "highEntropyVA": true
+    },
+    {
+      "file": "concrt140.dll",
+      "machine": "x64",
+      "ASLR": true,
+      "DEP": true,
+      "highEntropyVA": true
+    },
+    {
+      "file": "msvcp140.dll",
+      "machine": "x64",
+      "ASLR": true,
+      "DEP": true,
+      "highEntropyVA": true
+    },
+    {
+      "file": "msvcp140_1.dll",
+      "machine": "x64",
+      "ASLR": true,
+      "DEP": true,
+      "highEntropyVA": true
+    },
+    {
+      "file": "msvcp140_2.dll",
+      "machine": "x64",
+      "ASLR": true,
+      "DEP": true,
+      "highEntropyVA": true
+    },
+    {
+      "file": "msvcp140_atomic_wait.dll",
+      "machine": "x64",
+      "ASLR": true,
+      "DEP": true,
+      "highEntropyVA": true
+    },
+    {
+      "file": "msvcp140_codecvt_ids.dll",
+      "machine": "x64",
+      "ASLR": true,
+      "DEP": true,
+      "highEntropyVA": true
+    },
+    {
+      "file": "vccorlib140.dll",
+      "machine": "x64",
+      "ASLR": true,
+      "DEP": true,
+      "highEntropyVA": true
+    },
+    {
+      "file": "vcruntime140.dll",
+      "machine": "x64",
+      "ASLR": true,
+      "DEP": true,
+      "highEntropyVA": true
+    },
+    {
+      "file": "vcruntime140_1.dll",
+      "machine": "x64",
+      "ASLR": true,
+      "DEP": true,
+      "highEntropyVA": true
+    },
+    {
+      "file": "workbench-cli.exe",
+      "machine": "x64",
+      "ASLR": true,
+      "DEP": true,
+      "highEntropyVA": true
+    },
+    {
+      "file": "workbench-mcp.exe",
+      "machine": "x64",
+      "ASLR": true,
+      "DEP": true,
+      "highEntropyVA": true
+    },
+    {
+      "file": "workbench.exe",
+      "machine": "x64",
+      "ASLR": true,
+      "DEP": true,
+      "highEntropyVA": true
+    }
+  ],
+  "deploymentChecks": [
+    "archive-and-every-file-verified-pristine-data",
+    "self-test-passes-with-desktop-open-and-keeps-user-catalog-unchanged",
+    "normal-gui-launcher-and-close",
+    "cli-mcp-launchers-no-extra-stdout-and-consistent-version",
+    "double-click-self-test-cmd-full-hash-check",
+    "tampered-package-rejected",
+    "missing-crt-rejected-before-starting-executables",
+    "copied-source-vs2019-release-build-and-tests"
+  ],
+  "secondCleanMachineTested": false,
+  "commercialRelease": false,
+  "note": "Original ZIP is immutable. This post-packaging record and the final report appendix are outside its source snapshot."
+}

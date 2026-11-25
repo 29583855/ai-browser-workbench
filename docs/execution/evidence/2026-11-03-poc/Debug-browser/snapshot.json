@@ -1,0 +1,440 @@
+{
+  "frameScope": "main-frame-only",
+  "loaderId": "0DFE14BCD6084F8C72DD418073C53E7C",
+  "nodes": [
+    {
+      "name": "AI Browser Workbench 本地功能夹具",
+      "ref": "e0beb2b3e9c466e067b3be5b84d198d96-22",
+      "role": "RootWebArea",
+      "scope": "main-frame"
+    },
+    {
+      "name": "登录注册与浏览器隔离夹具",
+      "ref": "e0beb2b3e9c466e067b3be5b84d198d96-23",
+      "role": "heading",
+      "scope": "main-frame"
+    },
+    {
+      "name": "",
+      "ref": "e0beb2b3e9c466e067b3be5b84d198d96-24",
+      "role": "LabelText",
+      "scope": "main-frame"
+    },
+    {
+      "name": "用户名",
+      "ref": "e0beb2b3e9c466e067b3be5b84d198d96-25",
+      "role": "textbox",
+      "scope": "main-frame"
+    },
+    {
+      "name": "",
+      "ref": "e0beb2b3e9c466e067b3be5b84d198d96-26",
+      "role": "LabelText",
+      "scope": "main-frame"
+    },
+    {
+      "name": "密码",
+      "ref": "e0beb2b3e9c466e067b3be5b84d198d96-27",
+      "role": "textbox",
+      "scope": "main-frame"
+    },
+    {
+      "name": "",
+      "ref": "e0beb2b3e9c466e067b3be5b84d198d96-28",
+      "role": "paragraph",
+      "scope": "main-frame"
+    },
+    {
+      "name": "",
+      "ref": "e0beb2b3e9c466e067b3be5b84d198d96-29",
+      "role": "status",
+      "scope": "main-frame"
+    },
+    {
+      "name": "",
+      "ref": "e0beb2b3e9c466e067b3be5b84d198d96-30",
+      "role": "paragraph",
+      "scope": "main-frame"
+    },
+    {
+      "name": "",
+      "ref": "e0beb2b3e9c466e067b3be5b84d198d96-31",
+      "role": "paragraph",
+      "scope": "main-frame"
+    },
+    {
+      "name": "",
+      "ref": "e0beb2b3e9c466e067b3be5b84d198d96-32",
+      "role": "paragraph",
+      "scope": "main-frame"
+    },
+    {
+      "name": "",
+      "ref": "e0beb2b3e9c466e067b3be5b84d198d96-33",
+      "role": "LabelText",
+      "scope": "main-frame"
+    },
+    {
+      "name": "开始日期",
+      "ref": "e0beb2b3e9c466e067b3be5b84d198d96-34",
+      "role": "Date",
+      "scope": "main-frame"
+    },
+    {
+      "name": "筛选报表",
+      "ref": "e0beb2b3e9c466e067b3be5b84d198d96-35",
+      "role": "button",
+      "scope": "main-frame"
+    },
+    {
+      "name": "",
+      "ref": "e0beb2b3e9c466e067b3be5b84d198d96-36",
+      "role": "paragraph",
+      "scope": "main-frame"
+    },
+    {
+      "name": "下载报表",
+      "ref": "e0beb2b3e9c466e067b3be5b84d198d96-37",
+      "role": "link",
+      "scope": "main-frame"
+    },
+    {
+      "name": "重复按钮A",
+      "ref": "e0beb2b3e9c466e067b3be5b84d198d96-38",
+      "role": "button",
+      "scope": "main-frame"
+    },
+    {
+      "name": "重复按钮B",
+      "ref": "e0beb2b3e9c466e067b3be5b84d198d96-39",
+      "role": "button",
+      "scope": "main-frame"
+    },
+    {
+      "name": "禁用按钮",
+      "ref": "e0beb2b3e9c466e067b3be5b84d198d96-40",
+      "role": "button",
+      "scope": "main-frame"
+    },
+    {
+      "name": "",
+      "ref": "e0beb2b3e9c466e067b3be5b84d198d96-41",
+      "role": "textbox",
+      "scope": "main-frame"
+    },
+    {
+      "name": "测试提交后丢失回执",
+      "ref": "e0beb2b3e9c466e067b3be5b84d198d96-42",
+      "role": "button",
+      "scope": "main-frame"
+    },
+    {
+      "name": "替换DOM按钮",
+      "ref": "e0beb2b3e9c466e067b3be5b84d198d96-43",
+      "role": "button",
+      "scope": "main-frame"
+    },
+    {
+      "name": "",
+      "ref": "e0beb2b3e9c466e067b3be5b84d198d96-44",
+      "role": "generic",
+      "scope": "main-frame"
+    },
+    {
+      "name": "",
+      "ref": "e0beb2b3e9c466e067b3be5b84d198d96-45",
+      "role": "generic",
+      "scope": "main-frame"
+    },
+    {
+      "name": "",
+      "ref": "e0beb2b3e9c466e067b3be5b84d198d96-46",
+      "role": "generic",
+      "scope": "main-frame"
+    },
+    {
+      "name": "同源框架",
+      "ref": "e0beb2b3e9c466e067b3be5b84d198d96-47",
+      "role": "Iframe",
+      "scope": "main-frame"
+    },
+    {
+      "name": "跨站框架",
+      "ref": "e0beb2b3e9c466e067b3be5b84d198d96-48",
+      "role": "Iframe",
+      "scope": "main-frame"
+    },
+    {
+      "name": "登录注册与浏览器隔离夹具",
+      "ref": "e0beb2b3e9c466e067b3be5b84d198d96-49",
+      "role": "StaticText",
+      "scope": "main-frame"
+    },
+    {
+      "name": "用户名",
+      "ref": "e0beb2b3e9c466e067b3be5b84d198d96-50",
+      "role": "StaticText",
+      "scope": "main-frame"
+    },
+    {
+      "name": "",
+      "ref": "e0beb2b3e9c466e067b3be5b84d198d96-51",
+      "role": "generic",
+      "scope": "main-frame"
+    },
+    {
+      "name": "密码",
+      "ref": "e0beb2b3e9c466e067b3be5b84d198d96-52",
+      "role": "StaticText",
+      "scope": "main-frame"
+    },
+    {
+      "name": "",
+      "ref": "e0beb2b3e9c466e067b3be5b84d198d96-53",
+      "role": "generic",
+      "scope": "main-frame"
+    },
+    {
+      "name": "注册",
+      "ref": "e0beb2b3e9c466e067b3be5b84d198d96-54",
+      "role": "button",
+      "scope": "main-frame"
+    },
+    {
+      "name": "登录",
+      "ref": "e0beb2b3e9c466e067b3be5b84d198d96-55",
+      "role": "button",
+      "scope": "main-frame"
+    },
+    {
+      "name": "退出",
+      "ref": "e0beb2b3e9c466e067b3be5b84d198d96-56",
+      "role": "button",
+      "scope": "main-frame"
+    },
+    {
+      "name": "logged-in",
+      "ref": "e0beb2b3e9c466e067b3be5b84d198d96-57",
+      "role": "StaticText",
+      "scope": "main-frame"
+    },
+    {
+      "name": "alice-test",
+      "ref": "e0beb2b3e9c466e067b3be5b84d198d96-58",
+      "role": "StaticText",
+      "scope": "main-frame"
+    },
+    {
+      "name": "{\"local\":\"alice-test\",\"indexed\":\"alice-test\",\"cache\":[\"awb-alice-test\"]}",
+      "ref": "e0beb2b3e9c466e067b3be5b84d198d96-59",
+      "role": "StaticText",
+      "scope": "main-frame"
+    },
+    {
+      "name": "sw-ready",
+      "ref": "e0beb2b3e9c466e067b3be5b84d198d96-60",
+      "role": "StaticText",
+      "scope": "main-frame"
+    },
+    {
+      "name": "开始日期",
+      "ref": "e0beb2b3e9c466e067b3be5b84d198d96-61",
+      "role": "StaticText",
+      "scope": "main-frame"
+    },
+    {
+      "name": "",
+      "ref": "e0beb2b3e9c466e067b3be5b84d198d96-62",
+      "role": "generic",
+      "scope": "main-frame"
+    },
+    {
+      "name": "显示日期选择器 显示日期选择器",
+      "ref": "e0beb2b3e9c466e067b3be5b84d198d96-63",
+      "role": "button",
+      "scope": "main-frame"
+    },
+    {
+      "name": "筛选报表",
+      "ref": "e0beb2b3e9c466e067b3be5b84d198d96-64",
+      "role": "StaticText",
+      "scope": "main-frame"
+    },
+    {
+      "name": "report-empty",
+      "ref": "e0beb2b3e9c466e067b3be5b84d198d96-65",
+      "role": "StaticText",
+      "scope": "main-frame"
+    },
+    {
+      "name": "下载报表",
+      "ref": "e0beb2b3e9c466e067b3be5b84d198d96-66",
+      "role": "StaticText",
+      "scope": "main-frame"
+    },
+    {
+      "name": "重复按钮A",
+      "ref": "e0beb2b3e9c466e067b3be5b84d198d96-67",
+      "role": "StaticText",
+      "scope": "main-frame"
+    },
+    {
+      "name": "重复按钮B",
+      "ref": "e0beb2b3e9c466e067b3be5b84d198d96-68",
+      "role": "StaticText",
+      "scope": "main-frame"
+    },
+    {
+      "name": "禁用按钮",
+      "ref": "e0beb2b3e9c466e067b3be5b84d198d96-69",
+      "role": "StaticText",
+      "scope": "main-frame"
+    },
+    {
+      "name": "",
+      "ref": "e0beb2b3e9c466e067b3be5b84d198d96-70",
+      "role": "generic",
+      "scope": "main-frame"
+    },
+    {
+      "name": "测试提交后丢失回执",
+      "ref": "e0beb2b3e9c466e067b3be5b84d198d96-71",
+      "role": "StaticText",
+      "scope": "main-frame"
+    },
+    {
+      "name": "替换DOM按钮",
+      "ref": "e0beb2b3e9c466e067b3be5b84d198d96-72",
+      "role": "StaticText",
+      "scope": "main-frame"
+    },
+    {
+      "name": "旧节点",
+      "ref": "e0beb2b3e9c466e067b3be5b84d198d96-73",
+      "role": "button",
+      "scope": "main-frame"
+    },
+    {
+      "name": "Shadow按钮",
+      "ref": "e0beb2b3e9c466e067b3be5b84d198d96-74",
+      "role": "button",
+      "scope": "main-frame"
+    },
+    {
+      "name": "ClosedShadow按钮",
+      "ref": "e0beb2b3e9c466e067b3be5b84d198d96-75",
+      "role": "button",
+      "scope": "main-frame"
+    },
+    {
+      "name": "alice-test",
+      "ref": "e0beb2b3e9c466e067b3be5b84d198d96-76",
+      "role": "StaticText",
+      "scope": "main-frame"
+    },
+    {
+      "name": "••••••••••••••••••",
+      "ref": "e0beb2b3e9c466e067b3be5b84d198d96-77",
+      "role": "StaticText",
+      "scope": "main-frame"
+    },
+    {
+      "name": "注册",
+      "ref": "e0beb2b3e9c466e067b3be5b84d198d96-78",
+      "role": "StaticText",
+      "scope": "main-frame"
+    },
+    {
+      "name": "登录",
+      "ref": "e0beb2b3e9c466e067b3be5b84d198d96-79",
+      "role": "StaticText",
+      "scope": "main-frame"
+    },
+    {
+      "name": "退出",
+      "ref": "e0beb2b3e9c466e067b3be5b84d198d96-80",
+      "role": "StaticText",
+      "scope": "main-frame"
+    },
+    {
+      "name": "",
+      "ref": "e0beb2b3e9c466e067b3be5b84d198d96-81",
+      "role": "generic",
+      "scope": "main-frame"
+    },
+    {
+      "name": "immutable",
+      "ref": "e0beb2b3e9c466e067b3be5b84d198d96-82",
+      "role": "StaticText",
+      "scope": "main-frame"
+    },
+    {
+      "name": "旧节点",
+      "ref": "e0beb2b3e9c466e067b3be5b84d198d96-83",
+      "role": "StaticText",
+      "scope": "main-frame"
+    },
+    {
+      "name": "Shadow按钮",
+      "ref": "e0beb2b3e9c466e067b3be5b84d198d96-84",
+      "role": "StaticText",
+      "scope": "main-frame"
+    },
+    {
+      "name": "ClosedShadow按钮",
+      "ref": "e0beb2b3e9c466e067b3be5b84d198d96-85",
+      "role": "StaticText",
+      "scope": "main-frame"
+    },
+    {
+      "name": "年 年",
+      "ref": "e0beb2b3e9c466e067b3be5b84d198d96-86",
+      "role": "spinbutton",
+      "scope": "main-frame"
+    },
+    {
+      "name": "/",
+      "ref": "e0beb2b3e9c466e067b3be5b84d198d96-87",
+      "role": "StaticText",
+      "scope": "main-frame"
+    },
+    {
+      "name": "月 月",
+      "ref": "e0beb2b3e9c466e067b3be5b84d198d96-88",
+      "role": "spinbutton",
+      "scope": "main-frame"
+    },
+    {
+      "name": "/",
+      "ref": "e0beb2b3e9c466e067b3be5b84d198d96-89",
+      "role": "StaticText",
+      "scope": "main-frame"
+    },
+    {
+      "name": "日 日",
+      "ref": "e0beb2b3e9c466e067b3be5b84d198d96-90",
+      "role": "spinbutton",
+      "scope": "main-frame"
+    },
+    {
+      "name": "2026",
+      "ref": "e0beb2b3e9c466e067b3be5b84d198d96-91",
+      "role": "StaticText",
+      "scope": "main-frame"
+    },
+    {
+      "name": "11",
+      "ref": "e0beb2b3e9c466e067b3be5b84d198d96-92",
+      "role": "StaticText",
+      "scope": "main-frame"
+    },
+    {
+      "name": "03",
+      "ref": "e0beb2b3e9c466e067b3be5b84d198d96-93",
+      "role": "StaticText",
+      "scope": "main-frame"
+    }
+  ],
+  "truncated": false,
+  "url": "http://127.0.0.1:63223/login"
+}

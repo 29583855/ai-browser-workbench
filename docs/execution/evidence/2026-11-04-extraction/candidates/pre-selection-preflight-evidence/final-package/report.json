@@ -1,0 +1,20 @@
+{
+  "date": "2026-11-04T15:26:33.103989+08:00",
+  "result": "passed",
+  "checks": [
+    "archive-and-every-file-verified-pristine-data",
+    "self-test-passes-with-desktop-open-and-keeps-user-catalog-unchanged",
+    "normal-gui-launcher-and-close",
+    "cli-mcp-launchers-no-extra-stdout-and-consistent-version",
+    "api-launcher-from-unrelated-cwd-authentication-and-shutdown",
+    "double-click-self-test-cmd-full-hash-check",
+    "tampered-package-rejected",
+    "missing-crt-rejected-before-starting-executables",
+    "copied-source-vs2019-release-build-and-tests"
+  ],
+  "secondCleanMachineTested": false,
+  "archiveSha256": "385868ec197b1f014e3e894d1e1161a8da6120c6862bf901cd3b3d4d2cf054a9",
+  "copiedFolder": "E:\\project\\webexploer_codex\\build\\evidence\\extraction-package-delivery\\final-package\\中文 空格部署\\AI-Browser-Workbench-0.1.7-win64-extraction",
+  "version": "0.1.7-poc",
+  "manifestFiles": 1163
+}

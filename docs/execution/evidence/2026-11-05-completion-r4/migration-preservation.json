@@ -1,0 +1,16 @@
+{
+  "result": "passed",
+  "date": "2026-11-05",
+  "previousSchemaVersion": 6,
+  "currentSchemaVersion": 7,
+  "priorSixMigrationBytesUnchanged": true,
+  "currentHashes": [
+    "43526be70fad99767f0545df5408142bd9ba072af3d522cc5052f37a657bd2ee",
+    "3ea255f26cbb16394ea8e7a418d34adcca1bc8d8f14a468d665b143f3436c5a0",
+    "51c7eeddfc1e39269f99caf5e9f516216cca653b3ad9595dc926263bf257988f",
+    "344e9ddbfc91c502c5f5f116df42f6f9d00e7e0341c34b0307d9e8358fb2cb20",
+    "b4c43957fe04520996ea796c0ef1bf359a5efc20c51714ddc09e34918271aa8e",
+    "2ce118b4604471b014bd8c5dcbec2bbc410f889bb01dbc52c5f7542a2543e7aa",
+    "cd2ab8cc12240bf692beace3deeb971446c3a22c3152fbd29ebd60aaf62c6cf1"
+  ]
+}

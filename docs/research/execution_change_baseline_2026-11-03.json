@@ -1,0 +1,59 @@
+{
+  "date": "2026-11-03",
+  "files": [
+    {
+      "path": "README.md",
+      "sha256": "7f8aaf024528a223d43a9ba2908cc63c52db2b90605f27dc8bf486fdcd09c14c",
+      "encoding": "UTF-8 without BOM",
+      "newline": "LF"
+    },
+    {
+      "path": "docs/03_开发进度与任务清单.md",
+      "sha256": "725a31bec2b4e6461dbcdfcd77c6f2e3c94a07246e1472ace4d052ae8c72847a",
+      "encoding": "UTF-8 without BOM",
+      "newline": "LF"
+    },
+    {
+      "path": "docs/10_管理后台功能与开发计划.md",
+      "sha256": "a4561ca9157a4bb0e71521361906b03be2ed4d59b8d4622845b47e039da4e204",
+      "encoding": "UTF-8 without BOM",
+      "newline": "LF"
+    },
+    {
+      "path": "docs/11_环境销售计费与商业运营后台计划.md",
+      "sha256": "15152816d4bd92afe342cfd67cb8323d11a5e1c92ff79e0d513f81ad853e144d",
+      "encoding": "UTF-8 without BOM",
+      "newline": "LF"
+    },
+    {
+      "path": "docs/12_浏览器客户端与后台联动开发计划.md",
+      "sha256": "5f1c51996255d6951d7c349563d63be0880e6295e372d24eb49764d562f25cc6",
+      "encoding": "UTF-8 without BOM",
+      "newline": "LF"
+    },
+    {
+      "path": "docs/01_开发计划与技术方案.md",
+      "sha256": "f07002b2836ac8b3285db687f4ad3918f377ace55ed259bdc5c76782bcf5468a",
+      "encoding": "UTF-8 without BOM",
+      "newline": "LF"
+    },
+    {
+      "path": "docs/02_竞品分析与开源项目调研.md",
+      "sha256": "84b30ad6999c0535e6fd4d673311fb62dea3662d067e5587d638d199d4760a49",
+      "encoding": "UTF-8 without BOM",
+      "newline": "LF"
+    },
+    {
+      "path": "docs/07_补充源码选型与验证清单.md",
+      "sha256": "7c8687f4428e38cf0331f73454087564548d72e7bc215af7d58bf33519554981",
+      "encoding": "UTF-8 without BOM",
+      "newline": "LF"
+    },
+    {
+      "path": "docs/09_VC2019工程与依赖构建方案.md",
+      "sha256": "1d786c2c343c3015e9d57996ac0a35835ed99af0672956c4c885ae7f22edaa5b",
+      "encoding": "UTF-8 without BOM",
+      "newline": "LF"
+    }
+  ]
+}

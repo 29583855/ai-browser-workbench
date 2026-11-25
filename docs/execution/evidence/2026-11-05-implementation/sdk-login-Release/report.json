@@ -1,0 +1,25 @@
+{
+  "date": "2026-11-05",
+  "result": "passed",
+  "checks": [
+    "python-complete-schema-handshake-real-crud-and-business-errors",
+    "typescript-strict-compiled-contract-handshake-shared-state-and-business-errors",
+    "full-contract-drift-rejected",
+    "three-shipped-examples-separate-process-real-discovery-debug-and-package-import-export",
+    "python-and-typescript-login-examples-independent-profiles-secretref-server-identities-two-submits",
+    "redirect-both-clients-refuse-without-retry",
+    "large-both-clients-refuse-without-retry"
+  ],
+  "executableSha256": "cf4ac7726dca54c8b3e6085183cf63a237b6bcfe1bbb5b38e2d2df08a7067bd8",
+  "typescript": {
+    "result": "passed",
+    "contract": true,
+    "sharedProfile": true,
+    "businessError": true
+  },
+  "loginBusinessEvidence": {
+    "successfulLogins": 2,
+    "authenticatedSessions": 2,
+    "distinctProfiles": 2
+  }
+}

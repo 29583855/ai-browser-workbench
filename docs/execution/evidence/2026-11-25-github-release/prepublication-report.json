@@ -1,0 +1,87 @@
+{
+  "date": "2026-11-25",
+  "purpose": "GitHub development preview prepublication validation",
+  "result": "passed",
+  "repository": "https://github.com/29583855/ai-browser-workbench",
+  "tag": "v0.1.13-poc",
+  "productVersion": "0.1.13-poc",
+  "packageBuildDate": "2026-11-06",
+  "productRebuiltOnPublicationDate": false,
+  "archive": {
+    "name": "AI-Browser-Workbench-0.1.13-win64-20261106.zip",
+    "bytes": 233874807,
+    "sha256": "424d36c4d5cab0eea2d5f7717e56f6d7b5dd160019b0dad3fae59d03ec91d59b",
+    "zipCrc": "passed",
+    "manifestFilesVerified": 2157,
+    "initialDataDirectoryEmpty": true
+  },
+  "sourceSnapshot": {
+    "filesComparedBeforePublicationDocumentation": 1813,
+    "byteIdentical": true,
+    "productCodeModifiedForPublication": false
+  },
+  "sourceSensitivePatternReview": {
+    "result": "passed",
+    "matchesReviewed": 6,
+    "actualGithubTokensOrPrivateKeysFound": false,
+    "notes": "Matches are test canaries, public upstream proxy examples, and a PEM format marker in protocol code."
+  },
+  "selfTest": {
+    "result": "passed",
+    "date": "2026-11-25T11:24:45+08:00",
+    "checks": [
+      "package-sha256",
+      "awb-core-tests.exe",
+      "awb-storage-tests.exe",
+      "admin-account-orders-payments-entitlement-seats-ledger",
+      "workbench.exe",
+      "workbench.exe",
+      "native-flow-canvas-19-checks",
+      "capabilities",
+      "app-local-release-crt",
+      "profile_create",
+      "admin_policy",
+      "profile_export",
+      "profile_import",
+      "profile_group_create",
+      "profile_template_create",
+      "profile_template_history",
+      "profile_template_rollback",
+      "profile_template_instantiate",
+      "free-policy-groups-templates-config-import-export",
+      "profile_batch",
+      "profile_batch",
+      "profile_batch_get",
+      "immutable-template-history-and-durable-batch-deduplication",
+      "profile_batch_archive",
+      "profile_batch_list",
+      "profile_batch",
+      "batch-retention-paging-and-archived-request-deduplication",
+      "browser_start",
+      "lease_acquire",
+      "browser_navigate",
+      "page_locate",
+      "page_fill",
+      "page_locate",
+      "page_click",
+      "page_wait_text",
+      "offline-page-server-receipt",
+      "browser_stop",
+      "mcp-initialize-tools-list",
+      "capabilities",
+      "default-portable-root-from-unrelated-cwd",
+      "self-test-keeps-live-user-data-isolated"
+    ],
+    "errors": [],
+    "runtimeModules": [
+      "MSVCP140.dll",
+      "VCRUNTIME140.dll"
+    ],
+    "cleanMachine": false
+  },
+  "limits": [
+    "No second clean physical Windows machine tested.",
+    "No live merchant payment, enterprise identity provider or complete cross-machine TLS/mTLS acceptance in this publication.",
+    "This is a development preview; project-wide open-source license is not assigned."
+  ]
+}

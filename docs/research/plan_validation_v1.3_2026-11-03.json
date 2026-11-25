@@ -1,0 +1,142 @@
+{
+  "validationDate": "2026-11-03",
+  "planVersion": "1.3",
+  "scope": "Documentation consistency and read-only environment/reference inspection only. No product compilation, dependency build, runtime tests, or resource-level schedule proof.",
+  "checks": {
+    "markdownFiles": 10,
+    "codeFences": 27,
+    "jsonExamples": 18,
+    "markdownTables": 73,
+    "relativeLinks": 45,
+    "encoding": "UTF-8 no BOM / LF",
+    "taskCount": 122,
+    "localTaskCount": 110,
+    "followupTaskCount": 12,
+    "allProductTasksUnstarted": true,
+    "dependencyEdges": 327,
+    "acyclic": true,
+    "workdayGroups": {
+      "original": 154,
+      "webTesting": 24,
+      "gapFill": 97,
+      "referenceEnhancements": 42
+    },
+    "localNetDays": 317,
+    "plannedNetDays": [
+      343,
+      363
+    ],
+    "followupNetDays": [
+      224,
+      264
+    ],
+    "fullCustomKernelProductionIncluded": false,
+    "coverage": {
+      "features": 65,
+      "boundaries": 38,
+      "featureTrace": 65,
+      "webCases": 48,
+      "enhancementCases": 12,
+      "sourceEntries": 21,
+      "distinctRepoCandidates": 45
+    },
+    "scheduleWeeks": 29,
+    "referenceStart": "2026-11-09",
+    "referenceEnd": "2027-05-30",
+    "nominalCapacityDays": 536.5,
+    "effectiveCapacityDays": 402.375,
+    "remainingUpperEstimateCapacityDays": 39.375,
+    "referenceWrittenByThisTask": false,
+    "referenceChangedDuringReview": true,
+    "referenceCurrentMatchesReviewedSnapshot": true,
+    "referenceReviewedVersion": "v2.0",
+    "referenceReviewedSha256": "7d69dbb0e39a8f93997b0007b2af0156cdde3cffca516f6d64367622420af7be",
+    "referenceV1TaskCount": 153,
+    "referenceV1NetDays": 854,
+    "referenceV2TaskCount": 171,
+    "referenceV2NumericNetDays": 909,
+    "referenceV2WithQuotedKmAndBufferDays": 1159,
+    "researchJsonFilesParsed": 5
+  },
+  "checkedFiles": [
+    {
+      "path": "README.md",
+      "sha256": "f34feb0c0198ea6e8eab23d85688af34d7d2708819a752865c8c3b0a221be774",
+      "bytes": 4424
+    },
+    {
+      "path": "docs/01_开发计划与技术方案.md",
+      "sha256": "85201b54b11f81a95abce8c29c22f1081986e4b6a8b035207add29720f72c3b0",
+      "bytes": 70829
+    },
+    {
+      "path": "docs/02_竞品分析与开源项目调研.md",
+      "sha256": "2a6f50acc65e4b417c8b9ce3bee18dc3300070f03969ee7f429fb17e90c4987b",
+      "bytes": 30155
+    },
+    {
+      "path": "docs/03_开发进度与任务清单.md",
+      "sha256": "8438832e0d616692e1b86169cb0b6e67745e0eca9af8ebbf4c8f706e358e1983",
+      "bytes": 33976
+    },
+    {
+      "path": "docs/04_AI接口与流程设计样例.md",
+      "sha256": "d268083215c06f175eda3e27665b4af3fe8d1ea2a30fd0b57d1827a19ac1da00",
+      "bytes": 42252
+    },
+    {
+      "path": "docs/05_Web功能测试与便捷操作设计.md",
+      "sha256": "f1ba9b96ae9cebe98ae8c2232f97eb4d9b23c88baf4ed1f9593315bbba108731",
+      "bytes": 27460
+    },
+    {
+      "path": "docs/06_功能边界与源码补全方案.md",
+      "sha256": "6f4a667fc0c642913011ab1d3e36f608cfd3431c812e1e8d1312d9a35fdd111c",
+      "bytes": 40062
+    },
+    {
+      "path": "docs/07_补充源码选型与验证清单.md",
+      "sha256": "7c8687f4428e38cf0331f73454087564548d72e7bc215af7d58bf33519554981",
+      "bytes": 19214
+    },
+    {
+      "path": "docs/08_参考文档对照与功能增强.md",
+      "sha256": "f0dba24cdbe306de9dc22bb2f8b7e96bbc9a056f010b0bf7967b458821f8fc3e",
+      "bytes": 30261
+    },
+    {
+      "path": "docs/09_VC2019工程与依赖构建方案.md",
+      "sha256": "a2ff31867b1b525a0dd1dffde0bc8f693b748a7cf3320398666e037747869977",
+      "bytes": 17984
+    }
+  ],
+  "evidenceFiles": [
+    {
+      "path": "docs/research/plan_validation_2026-11-03.json",
+      "sha256": "e6116dd60331d4b7c9e4717e5d3deed96c1e98a02ff1db49b237b96282d00493",
+      "bytes": 2145
+    },
+    {
+      "path": "docs/research/reference_review_v1.3_2026-11-03.json",
+      "sha256": "3f0610aaedf70df8e3d783c314a7b8290038a631cb65d5af80ae1b4fa89dd0ed",
+      "bytes": 15779
+    },
+    {
+      "path": "docs/research/reference_v2_observed_2026-11-03.json",
+      "sha256": "62081fbb7bca1c0332ec279c46a24309d9d423c948e1627a5e39a1e5b4839f86",
+      "bytes": 173325
+    },
+    {
+      "path": "docs/research/research_gapfill_2026-11-03.json",
+      "sha256": "24d926ae17dc81609737d7dfa28f7569650684826fff390b4bf038e6b4b728bf",
+      "bytes": 4328681
+    },
+    {
+      "path": "docs/research/research_snapshot_2026-11-03.json",
+      "sha256": "de3e04b3483bbe7b5558bd9fa96c8fa7d7edfc18f70c926d1aa2eb853f0b3d95",
+      "bytes": 245870
+    }
+  ],
+  "errors": [],
+  "passed": true
+}

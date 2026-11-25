@@ -1,0 +1,38 @@
+{
+  "date": "2026-11-05T13:09:53.954636+08:00",
+  "result": "passed",
+  "checks": [
+    "observed-durable-dispatch-before-real-cli-termination",
+    "restart-marks-unconfirmed-action-unknown",
+    "same-request-is-receipt-only-and-unknown-details-cannot-be-compacted",
+    "explicit-browser-cleanup-after-recovery"
+  ],
+  "binarySha256": "e48a5dc0a3d79f17efc8d275e6e31c2a0b1712e70395218093ad5a46f6ce41f9",
+  "commands": [
+    {
+      "sequence": 1,
+      "command": "profile_batch_get",
+      "outcome": "passed"
+    },
+    {
+      "sequence": 2,
+      "command": "profile_batch",
+      "outcome": "passed"
+    },
+    {
+      "sequence": 3,
+      "command": "profile_batch_archive",
+      "outcome": "BATCH_RECONCILIATION_REQUIRED"
+    },
+    {
+      "sequence": 4,
+      "command": "profile_batch_get",
+      "outcome": "passed"
+    },
+    {
+      "sequence": 5,
+      "command": "browser_stop",
+      "outcome": "passed"
+    }
+  ]
+}

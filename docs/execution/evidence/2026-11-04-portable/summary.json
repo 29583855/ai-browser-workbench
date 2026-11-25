@@ -1,0 +1,50 @@
+{
+  "date": "2026-11-04",
+  "result": "passed",
+  "scope": "Native VS2019 solution and relocated portable development test package",
+  "compiler": {
+    "vs": "2019 16.11",
+    "toolset": "v142 14.29.30133",
+    "sdk": "10.0.19041.0",
+    "language": "C++14",
+    "platform": "x64"
+  },
+  "native": {
+    "projects": 7,
+    "configurations": [
+      "Debug",
+      "Release"
+    ],
+    "warnings": 0,
+    "errors": 0,
+    "coreStorageAndWindowPassed": true
+  },
+  "cmake": {
+    "configurations": [
+      "Debug",
+      "Release"
+    ],
+    "testsPerConfiguration": 3,
+    "passed": true
+  },
+  "relocation": {
+    "chineseAndSpacePath": true,
+    "unrelatedCwd": "C:/WINDOWS",
+    "sourceRebuildRelease": true,
+    "browserRequests": 122,
+    "mcpTools": 16,
+    "httpProxyPassed": true,
+    "offlineFormServerReceipt": true,
+    "appLocalMsvcRuntimeObserved": true,
+    "defaultPortableDataRoot": true,
+    "guiNormalLaunchAndClose": true
+  },
+  "package": "dist/AI-Browser-Workbench-0.1.0-win64-portable",
+  "releaseReady": false,
+  "secondCleanMachineTested": false,
+  "notes": [
+    "Self-test proof here precedes final immutable archive hashing; final archive verification is recorded separately.",
+    "Portable runtime package does not complete T003/T061 or commercial product gates.",
+    "No browser user directories, cookies or credentials are stored in this evidence."
+  ]
+}

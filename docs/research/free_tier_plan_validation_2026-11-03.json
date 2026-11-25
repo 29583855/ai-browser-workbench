@@ -1,0 +1,234 @@
+{
+  "validationDate": "2026-11-03",
+  "checkedAtUtc": "2026-11-03T09:24:21.179829+00:00",
+  "scope": "Documentation consistency and BitBrowser public-page evidence only; no product code/build/runtime test, financial action, notification or deployment performed.",
+  "versions": {
+    "main": "v1.3 free-tier supplement",
+    "admin": "1.2",
+    "commerce": "1.1",
+    "apiDraft": "0.5"
+  },
+  "result": "passed",
+  "errors": [],
+  "checks": {
+    "markdownFiles": 12,
+    "changedMarkdownFiles": 9,
+    "relativeLinks": 86,
+    "markdownTables": 129,
+    "codeFences": 68,
+    "jsonExamples": 22,
+    "encoding": "UTF-8 no BOM / LF preserved",
+    "freePolicyMatchesConfirmedRules": true,
+    "freeAcceptanceCases": 16,
+    "freeAcceptanceExecutionsPlanned": 48,
+    "commercialCaseExecutionsPlanned": 120,
+    "businessCaseExecutionsPlanned": 48,
+    "productAcceptanceExecutionsActuallyRun": 0,
+    "features": {
+      "MF": 36,
+      "CF": 32
+    },
+    "cases": {
+      "BT": 36,
+      "CT": 40,
+      "BA": 8,
+      "FG": 16
+    },
+    "allFreeCasesMappedToCFAndCOM": true,
+    "combinedTaskCount": 88,
+    "combinedDependencyEdges": 260,
+    "acyclic": true,
+    "adminGroupDays": [
+      37,
+      41,
+      47,
+      41,
+      38,
+      48
+    ],
+    "commercialGroupDays": [
+      40,
+      48,
+      45,
+      44,
+      46
+    ],
+    "adminBaselineDays": 252,
+    "commercialBaselineDays": 223,
+    "combinedBaselineDays": 475,
+    "combinedPlannedDays": [
+      540,
+      580
+    ],
+    "freeScopeEffortReestimateRequiredAtCG0": true,
+    "localTaskCount": 110,
+    "localBaselineDays": 317,
+    "localTaskInventory": 122,
+    "serialTaskAssumptionCriticalPaths": {
+      "admin": {
+        "effectiveDays": 104,
+        "path": [
+          "ADM001",
+          "ADM003",
+          "ADM005",
+          "ADM006",
+          "ADM007",
+          "ADM009",
+          "ADM010",
+          "ADM011",
+          "ADM013",
+          "ADM017",
+          "ADM020",
+          "ADM021",
+          "ADM019",
+          "ADM028",
+          "ADM029",
+          "ADM037",
+          "ADM040",
+          "ADM046",
+          "ADM048"
+        ]
+      },
+      "commercialADMAlreadyReady": {
+        "effectiveDays": 136,
+        "path": [
+          "COM001",
+          "COM003",
+          "COM004",
+          "COM005",
+          "COM006",
+          "COM007",
+          "COM008",
+          "COM009",
+          "COM010",
+          "COM011",
+          "COM012",
+          "COM014",
+          "COM015",
+          "COM016",
+          "COM017",
+          "COM018",
+          "COM020",
+          "COM021",
+          "COM022",
+          "COM023",
+          "COM026",
+          "COM035",
+          "COM038",
+          "COM040"
+        ]
+      },
+      "combinedLOCALAlreadyReady": {
+        "effectiveDays": 171,
+        "path": [
+          "ADM001",
+          "ADM003",
+          "ADM005",
+          "ADM006",
+          "ADM007",
+          "ADM009",
+          "ADM010",
+          "ADM011",
+          "ADM013",
+          "ADM017",
+          "ADM020",
+          "ADM021",
+          "ADM019",
+          "ADM023",
+          "COM010",
+          "COM011",
+          "COM012",
+          "COM014",
+          "COM015",
+          "COM016",
+          "COM017",
+          "COM018",
+          "COM020",
+          "COM021",
+          "COM022",
+          "COM023",
+          "COM026",
+          "COM035",
+          "COM038",
+          "COM040"
+        ]
+      }
+    },
+    "resourceBalancedScheduleProven": false,
+    "preEditHashesMatchPriorManifest": true,
+    "unrelatedMarkdownUnchanged": true,
+    "officialPagesFetched": 7,
+    "officialHttpSuccesses": 7,
+    "officialPagesWithSubstantiveText": 6,
+    "officialHelpPageShellExcluded": true,
+    "installedCompetitorTrialPerformed": false,
+    "sourceRepositoryCandidateCountUnchanged": 45,
+    "otherResearchJsonParsed": 12,
+    "referenceLabelCorrectionVerified": true
+  },
+  "checkedMarkdownFiles": [
+    {
+      "path": "docs/01_开发计划与技术方案.md",
+      "sha256": "ef4128ab2297be85e7ee56672b4f2cde7908ef92d6c62289c230a19c40d9beac",
+      "bytes": 74005
+    },
+    {
+      "path": "docs/02_竞品分析与开源项目调研.md",
+      "sha256": "bc023e1d136cc71ce550ad3d3e8a1e96cdf5233ec156919439be2c220326e660",
+      "bytes": 32342
+    },
+    {
+      "path": "docs/03_开发进度与任务清单.md",
+      "sha256": "d98981eec53a60e51c920474c8f7e4e79c56bb1a0c048a51bfb4974ad7b4a589",
+      "bytes": 38801
+    },
+    {
+      "path": "docs/04_AI接口与流程设计样例.md",
+      "sha256": "e4870cb3179e5e8b9c1df87d114f976fc18545ceb8178cb69172bd606e302a21",
+      "bytes": 43492
+    },
+    {
+      "path": "docs/05_Web功能测试与便捷操作设计.md",
+      "sha256": "e3865aefdfc89d73fd5db176db97ca1b9f87c8a136abc63870f0223510a5a1b7",
+      "bytes": 28925
+    },
+    {
+      "path": "docs/06_功能边界与源码补全方案.md",
+      "sha256": "c9d9c4f4eac00c4a7d70e2dd7bf44351795ea6ea791306791772a53948a39373",
+      "bytes": 42977
+    },
+    {
+      "path": "docs/07_补充源码选型与验证清单.md",
+      "sha256": "7c8687f4428e38cf0331f73454087564548d72e7bc215af7d58bf33519554981",
+      "bytes": 19214
+    },
+    {
+      "path": "docs/08_参考文档对照与功能增强.md",
+      "sha256": "6bb9a6c813c446910cb5ab00546db7aad765420b0c9341e168f9a4b615a59751",
+      "bytes": 30447
+    },
+    {
+      "path": "docs/09_VC2019工程与依赖构建方案.md",
+      "sha256": "a2ff31867b1b525a0dd1dffde0bc8f693b748a7cf3320398666e037747869977",
+      "bytes": 17984
+    },
+    {
+      "path": "docs/10_管理后台功能与开发计划.md",
+      "sha256": "8fb6dcbb784ab965a7454e7da2b67fd82a321df1a771e574515a92d640dd1fc6",
+      "bytes": 85969
+    },
+    {
+      "path": "docs/11_环境销售计费与商业运营后台计划.md",
+      "sha256": "c2a6d06d876d5a6256d9400e41d5452450e82f4a54cb36ce75c4d0ee120569de",
+      "bytes": 77479
+    },
+    {
+      "path": "README.md",
+      "sha256": "683e5d38f4557ca56723a1319e25988ea6b9a7d502fb7892e3467c79d49d6590",
+      "bytes": 7442
+    }
+  ],
+  "preEditBaseline": "docs/research/free_tier_change_baseline_2026-11-03.json",
+  "officialReference": "docs/research/bitbrowser_free_reference_2026-11-03.json",
+  "priorHistoricalReport": "docs/research/commercial_plan_validation_2026-11-03.json"
+}

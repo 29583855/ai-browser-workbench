@@ -1,0 +1,12 @@
+{
+  "date": "2026-11-04T11:02:37.605032+08:00",
+  "result": "failed",
+  "steps": [],
+  "checks": [],
+  "binarySha256": "4ee5aa3e0addb0adc0f623548e14999cbf6b4ac9669dee362eeb813d615825e2",
+  "error": "Unexpected desktop input layout",
+  "serverFacts": {
+    "registrationCount": 0,
+    "loginCount": 0
+  }
+}

@@ -1,0 +1,1118 @@
+{
+  "schemaVersion": "1.0",
+  "date": "2026-11-04",
+  "caseCount": 48,
+  "baselineCaseCount": 24,
+  "extensionCaseCount": 24,
+  "requiredRoundsPerCase": 10,
+  "cases": [
+    {
+      "id": "WT01",
+      "scenarioId": "SC01",
+      "name": "正确账号密码登录",
+      "setup": [
+        "独立run/case/attempt命名空间和Profile；不得依赖其他用例执行顺序",
+        "全新未登录"
+      ],
+      "input": "全新未登录",
+      "expected": "用户标识正确且可进入业务页",
+      "counterexample": "返回另一个测试用户的菜单，即使HTTP200和跳转成功也必须失败",
+      "cleanup": [
+        "仅回收本attempt登记的账号、会话、规则、资源及浏览器",
+        "清理失败保留证据并阻断依赖用例"
+      ],
+      "implementationTasks": [
+        "T068",
+        "T076"
+      ],
+      "executionStatus": "not-run",
+      "evidence": [],
+      "executionNote": "本目录未执行独立WT验收；已有POC子集证据不能代替完整用例"
+    },
+    {
+      "id": "WT02",
+      "scenarioId": "SC01",
+      "name": "错误密码",
+      "setup": [
+        "独立run/case/attempt命名空间和Profile；不得依赖其他用例执行顺序",
+        "未登录、正确账号"
+      ],
+      "input": "未登录、正确账号",
+      "expected": "明确错误提示，仍未登录",
+      "counterexample": "错误口令不能创建会话，受保护API仍须401；错误提示不能泄漏账号存在性",
+      "cleanup": [
+        "仅回收本attempt登记的账号、会话、规则、资源及浏览器",
+        "清理失败保留证据并阻断依赖用例"
+      ],
+      "implementationTasks": [
+        "T068",
+        "T076"
+      ],
+      "executionStatus": "not-run",
+      "evidence": [],
+      "executionNote": "本目录未执行独立WT验收；已有POC子集证据不能代替完整用例"
+    },
+    {
+      "id": "WT03",
+      "scenarioId": "SC01",
+      "name": "空账号提交",
+      "setup": [
+        "独立run/case/attempt命名空间和Profile；不得依赖其他用例执行顺序",
+        "密码已填"
+      ],
+      "input": "密码已填",
+      "expected": "账号字段错误，未发起有效登录",
+      "counterexample": "空账号不得产生成功登录事实；确认字段错误归属账号而非密码",
+      "cleanup": [
+        "仅回收本attempt登记的账号、会话、规则、资源及浏览器",
+        "清理失败保留证据并阻断依赖用例"
+      ],
+      "implementationTasks": [
+        "T068",
+        "T076"
+      ],
+      "executionStatus": "not-run",
+      "evidence": [],
+      "executionNote": "本目录未执行独立WT验收；已有POC子集证据不能代替完整用例"
+    },
+    {
+      "id": "WT04",
+      "scenarioId": "SC01",
+      "name": "空密码提交",
+      "setup": [
+        "独立run/case/attempt命名空间和Profile；不得依赖其他用例执行顺序",
+        "账号已填"
+      ],
+      "input": "账号已填",
+      "expected": "密码字段错误，仍未登录",
+      "counterexample": "空密码不得产生会话，即使浏览器绕过required校验后服务端也须拒绝",
+      "cleanup": [
+        "仅回收本attempt登记的账号、会话、规则、资源及浏览器",
+        "清理失败保留证据并阻断依赖用例"
+      ],
+      "implementationTasks": [
+        "T068",
+        "T076"
+      ],
+      "executionStatus": "not-run",
+      "evidence": [],
+      "executionNote": "本目录未执行独立WT验收；已有POC子集证据不能代替完整用例"
+    },
+    {
+      "id": "WT05",
+      "scenarioId": "SC01",
+      "name": "输入框 Enter 登录",
+      "setup": [
+        "独立run/case/attempt命名空间和Profile；不得依赖其他用例执行顺序",
+        "正确数据"
+      ],
+      "input": "正确数据",
+      "expected": "与点击登录结果一致",
+      "counterexample": "Enter只能提交一次；重复keydown或IME确认不得产生第二次登录请求",
+      "cleanup": [
+        "仅回收本attempt登记的账号、会话、规则、资源及浏览器",
+        "清理失败保留证据并阻断依赖用例"
+      ],
+      "implementationTasks": [
+        "T068",
+        "T076"
+      ],
+      "executionStatus": "not-run",
+      "evidence": [],
+      "executionNote": "本目录未执行独立WT验收；已有POC子集证据不能代替完整用例"
+    },
+    {
+      "id": "WT06",
+      "scenarioId": "SC01",
+      "name": "刷新后保持登录",
+      "setup": [
+        "独立run/case/attempt命名空间和Profile；不得依赖其他用例执行顺序",
+        "已登录且会话有效"
+      ],
+      "input": "已登录且会话有效",
+      "expected": "用户身份保持正确",
+      "counterexample": "刷新后的Cookie失效时不得使用旧页面用户文字伪装已登录",
+      "cleanup": [
+        "仅回收本attempt登记的账号、会话、规则、资源及浏览器",
+        "清理失败保留证据并阻断依赖用例"
+      ],
+      "implementationTasks": [
+        "T068",
+        "T076"
+      ],
+      "executionStatus": "not-run",
+      "evidence": [],
+      "executionNote": "本目录未执行独立WT验收；已有POC子集证据不能代替完整用例"
+    },
+    {
+      "id": "WT07",
+      "scenarioId": "SC01",
+      "name": "退出登录",
+      "setup": [
+        "独立run/case/attempt命名空间和Profile；不得依赖其他用例执行顺序",
+        "已登录"
+      ],
+      "input": "已登录",
+      "expected": "身份状态清除，受保护操作不可用",
+      "counterexample": "退出后重放旧Cookie访问保护API必须拒绝；按钮隐藏不足以证明注销",
+      "cleanup": [
+        "仅回收本attempt登记的账号、会话、规则、资源及浏览器",
+        "清理失败保留证据并阻断依赖用例"
+      ],
+      "implementationTasks": [
+        "T068",
+        "T076"
+      ],
+      "executionStatus": "not-run",
+      "evidence": [],
+      "executionNote": "本目录未执行独立WT验收；已有POC子集证据不能代替完整用例"
+    },
+    {
+      "id": "WT08",
+      "scenarioId": "SC01",
+      "name": "未登录访问业务页",
+      "setup": [
+        "独立run/case/attempt命名空间和Profile；不得依赖其他用例执行顺序",
+        "未登录"
+      ],
+      "input": "未登录",
+      "expected": "跳转登录或显示声明的未授权状态",
+      "counterexample": "直接请求保护API不得因页面路由守卫缺失而返回业务数据",
+      "cleanup": [
+        "仅回收本attempt登记的账号、会话、规则、资源及浏览器",
+        "清理失败保留证据并阻断依赖用例"
+      ],
+      "implementationTasks": [
+        "T068",
+        "T076"
+      ],
+      "executionStatus": "not-run",
+      "evidence": [],
+      "executionNote": "本目录未执行独立WT验收；已有POC子集证据不能代替完整用例"
+    },
+    {
+      "id": "WT09",
+      "scenarioId": "SC01",
+      "name": "会话过期",
+      "setup": [
+        "独立run/case/attempt命名空间和Profile；不得依赖其他用例执行顺序",
+        "测试接口令会话过期"
+      ],
+      "input": "测试接口令会话过期",
+      "expected": "页面或业务请求明确要求重新登录",
+      "counterexample": "页面保留旧用户名而服务器会话已过期时，认证状态断言必须失败",
+      "cleanup": [
+        "仅回收本attempt登记的账号、会话、规则、资源及浏览器",
+        "清理失败保留证据并阻断依赖用例"
+      ],
+      "implementationTasks": [
+        "T068",
+        "T076"
+      ],
+      "executionStatus": "not-run",
+      "evidence": [],
+      "executionNote": "本目录未执行独立WT验收；已有POC子集证据不能代替完整用例"
+    },
+    {
+      "id": "WT10",
+      "scenarioId": "SC01",
+      "name": "不同角色菜单",
+      "setup": [
+        "独立run/case/attempt命名空间和Profile；不得依赖其他用例执行顺序",
+        "普通用户/测试管理员"
+      ],
+      "input": "普通用户/测试管理员",
+      "expected": "各自只显示并允许声明的功能",
+      "counterexample": "普通角色直接调用管理员接口仍拒绝，不能仅通过菜单隐藏验收",
+      "cleanup": [
+        "仅回收本attempt登记的账号、会话、规则、资源及浏览器",
+        "清理失败保留证据并阻断依赖用例"
+      ],
+      "implementationTasks": [
+        "T068",
+        "T076"
+      ],
+      "executionStatus": "not-run",
+      "evidence": [],
+      "executionNote": "本目录未执行独立WT验收；已有POC子集证据不能代替完整用例"
+    },
+    {
+      "id": "WT11",
+      "scenarioId": "SC01",
+      "name": "正常注册",
+      "setup": [
+        "独立run/case/attempt命名空间和Profile；不得依赖其他用例执行顺序",
+        "唯一测试邮箱和有效字段"
+      ],
+      "input": "唯一测试邮箱和有效字段",
+      "expected": "账号创建一次，成功状态可验证",
+      "counterexample": "创建成功但前端无成功状态属于未知/失败，禁止再次注册；计数不得大于1",
+      "cleanup": [
+        "仅回收本attempt登记的账号、会话、规则、资源及浏览器",
+        "清理失败保留证据并阻断依赖用例"
+      ],
+      "implementationTasks": [
+        "T068",
+        "T076"
+      ],
+      "executionStatus": "not-run",
+      "evidence": [],
+      "executionNote": "本目录未执行独立WT验收；已有POC子集证据不能代替完整用例"
+    },
+    {
+      "id": "WT12",
+      "scenarioId": "SC01",
+      "name": "重复账号注册",
+      "setup": [
+        "独立run/case/attempt命名空间和Profile；不得依赖其他用例执行顺序",
+        "已有测试邮箱"
+      ],
+      "input": "已有测试邮箱",
+      "expected": "明确重复提示，无新账号",
+      "counterexample": "重复邮箱不能覆盖既有密码、角色或增加账号数量",
+      "cleanup": [
+        "仅回收本attempt登记的账号、会话、规则、资源及浏览器",
+        "清理失败保留证据并阻断依赖用例"
+      ],
+      "implementationTasks": [
+        "T068",
+        "T076"
+      ],
+      "executionStatus": "not-run",
+      "evidence": [],
+      "executionNote": "本目录未执行独立WT验收；已有POC子集证据不能代替完整用例"
+    },
+    {
+      "id": "WT13",
+      "scenarioId": "SC01",
+      "name": "邮箱格式错误",
+      "setup": [
+        "独立run/case/attempt命名空间和Profile；不得依赖其他用例执行顺序",
+        "非法格式"
+      ],
+      "input": "非法格式",
+      "expected": "字段校验失败，无账号创建",
+      "counterexample": "非法邮箱在前端和后端均不创建账号；字段错误必须指向邮箱",
+      "cleanup": [
+        "仅回收本attempt登记的账号、会话、规则、资源及浏览器",
+        "清理失败保留证据并阻断依赖用例"
+      ],
+      "implementationTasks": [
+        "T068",
+        "T076"
+      ],
+      "executionStatus": "not-run",
+      "evidence": [],
+      "executionNote": "本目录未执行独立WT验收；已有POC子集证据不能代替完整用例"
+    },
+    {
+      "id": "WT14",
+      "scenarioId": "SC01",
+      "name": "密码不满足规则",
+      "setup": [
+        "独立run/case/attempt命名空间和Profile；不得依赖其他用例执行顺序",
+        "不符合夹具密码规则"
+      ],
+      "input": "不符合夹具密码规则",
+      "expected": "提示具体规则，无账号创建",
+      "counterexample": "短密码/缺声明的字符类被拒绝，测试不能代替站点指定密码规则",
+      "cleanup": [
+        "仅回收本attempt登记的账号、会话、规则、资源及浏览器",
+        "清理失败保留证据并阻断依赖用例"
+      ],
+      "implementationTasks": [
+        "T068",
+        "T076"
+      ],
+      "executionStatus": "not-run",
+      "evidence": [],
+      "executionNote": "本目录未执行独立WT验收；已有POC子集证据不能代替完整用例"
+    },
+    {
+      "id": "WT15",
+      "scenarioId": "SC01",
+      "name": "确认密码不同",
+      "setup": [
+        "独立run/case/attempt命名空间和Profile；不得依赖其他用例执行顺序",
+        "两次密码不一致"
+      ],
+      "input": "两次密码不一致",
+      "expected": "表单拒绝提交或业务拒绝",
+      "counterexample": "确认密码不匹配时不创建账号；修正后只提交一次",
+      "cleanup": [
+        "仅回收本attempt登记的账号、会话、规则、资源及浏览器",
+        "清理失败保留证据并阻断依赖用例"
+      ],
+      "implementationTasks": [
+        "T068",
+        "T076"
+      ],
+      "executionStatus": "not-run",
+      "evidence": [],
+      "executionNote": "本目录未执行独立WT验收；已有POC子集证据不能代替完整用例"
+    },
+    {
+      "id": "WT16",
+      "scenarioId": "SC01",
+      "name": "必填字段缺失",
+      "setup": [
+        "独立run/case/attempt命名空间和Profile；不得依赖其他用例执行顺序",
+        "缺一个注册必填字段"
+      ],
+      "input": "缺一个注册必填字段",
+      "expected": "对应错误正确指向该字段",
+      "counterexample": "逐个必填字段缺失形成参数变体，不能只测空表单一个反例",
+      "cleanup": [
+        "仅回收本attempt登记的账号、会话、规则、资源及浏览器",
+        "清理失败保留证据并阻断依赖用例"
+      ],
+      "implementationTasks": [
+        "T068",
+        "T076"
+      ],
+      "executionStatus": "not-run",
+      "evidence": [],
+      "executionNote": "本目录未执行独立WT验收；已有POC子集证据不能代替完整用例"
+    },
+    {
+      "id": "WT17",
+      "scenarioId": "SC01",
+      "name": "条款未勾选",
+      "setup": [
+        "独立run/case/attempt命名空间和Profile；不得依赖其他用例执行顺序",
+        "夹具声明条款必选"
+      ],
+      "input": "夹具声明条款必选",
+      "expected": "按声明禁用按钮或返回校验错误",
+      "counterexample": "通过脚本启用按钮也不能绕过服务端条款校验，若站点声明仅前端则记录限制",
+      "cleanup": [
+        "仅回收本attempt登记的账号、会话、规则、资源及浏览器",
+        "清理失败保留证据并阻断依赖用例"
+      ],
+      "implementationTasks": [
+        "T068",
+        "T076"
+      ],
+      "executionStatus": "not-run",
+      "evidence": [],
+      "executionNote": "本目录未执行独立WT验收；已有POC子集证据不能代替完整用例"
+    },
+    {
+      "id": "WT18",
+      "scenarioId": "SC01",
+      "name": "注册后登录",
+      "setup": [
+        "独立run/case/attempt命名空间和Profile；不得依赖其他用例执行顺序",
+        "由 WT11 类用例创建的独立账号"
+      ],
+      "input": "由 WT11 类用例创建的独立账号",
+      "expected": "可按明确账号登录；资源可清理",
+      "counterexample": "使用其他attempt账号不得误算本例注册后登录；删除本例账号不删除预置账号",
+      "cleanup": [
+        "仅回收本attempt登记的账号、会话、规则、资源及浏览器",
+        "清理失败保留证据并阻断依赖用例"
+      ],
+      "implementationTasks": [
+        "T068",
+        "T076"
+      ],
+      "executionStatus": "not-run",
+      "evidence": [],
+      "executionNote": "本目录未执行独立WT验收；已有POC子集证据不能代替完整用例"
+    },
+    {
+      "id": "WT19",
+      "scenarioId": "SC04",
+      "name": "选取按钮不触发提交",
+      "setup": [
+        "独立run/case/attempt命名空间和Profile；不得依赖其他用例执行顺序",
+        "开启选元素模式"
+      ],
+      "input": "开启选元素模式",
+      "expected": "注册/保存请求计数不增加",
+      "counterexample": "选取前后的服务器提交计数必须相等；捕获到页面更早监听事件时使用静态选取",
+      "cleanup": [
+        "仅回收本attempt登记的账号、会话、规则、资源及浏览器",
+        "清理失败保留证据并阻断依赖用例"
+      ],
+      "implementationTasks": [
+        "T068",
+        "T069",
+        "T076"
+      ],
+      "executionStatus": "not-run",
+      "evidence": [],
+      "executionNote": "本目录未执行独立WT验收；已有POC子集证据不能代替完整用例"
+    },
+    {
+      "id": "WT20",
+      "scenarioId": "SC04",
+      "name": "重名按钮选择",
+      "setup": [
+        "独立run/case/attempt命名空间和Profile；不得依赖其他用例执行顺序",
+        "不同区域有同名按钮"
+      ],
+      "input": "不同区域有同名按钮",
+      "expected": "只操作指定区域节点",
+      "counterexample": "另一容器的同名按钮计数保持不变，模糊定位应拒绝而非取第一项",
+      "cleanup": [
+        "仅回收本attempt登记的账号、会话、规则、资源及浏览器",
+        "清理失败保留证据并阻断依赖用例"
+      ],
+      "implementationTasks": [
+        "T068",
+        "T069",
+        "T076"
+      ],
+      "executionStatus": "not-run",
+      "evidence": [],
+      "executionNote": "本目录未执行独立WT验收；已有POC子集证据不能代替完整用例"
+    },
+    {
+      "id": "WT21",
+      "scenarioId": "SC04",
+      "name": "隐藏/禁用按钮",
+      "setup": [
+        "独立run/case/attempt命名空间和Profile；不得依赖其他用例执行顺序",
+        "按钮不可操作"
+      ],
+      "input": "按钮不可操作",
+      "expected": "明确阻止，未发送业务动作",
+      "counterexample": "隐藏、遮挡、禁用控件分别拒绝，后端业务计数均保持不变",
+      "cleanup": [
+        "仅回收本attempt登记的账号、会话、规则、资源及浏览器",
+        "清理失败保留证据并阻断依赖用例"
+      ],
+      "implementationTasks": [
+        "T068",
+        "T069",
+        "T076"
+      ],
+      "executionStatus": "not-run",
+      "evidence": [],
+      "executionNote": "本目录未执行独立WT验收；已有POC子集证据不能代替完整用例"
+    },
+    {
+      "id": "WT22",
+      "scenarioId": "SC01",
+      "name": "双击与重复提交",
+      "setup": [
+        "独立run/case/attempt命名空间和Profile；不得依赖其他用例执行顺序",
+        "夹具声明提交去重"
+      ],
+      "input": "夹具声明提交去重",
+      "expected": "创建结果与声明一致；工具不自行补点",
+      "counterexample": "站点去重按其声明校验，工具不因超时补发第二次点击或提交",
+      "cleanup": [
+        "仅回收本attempt登记的账号、会话、规则、资源及浏览器",
+        "清理失败保留证据并阻断依赖用例"
+      ],
+      "implementationTasks": [
+        "T068",
+        "T098",
+        "T076"
+      ],
+      "executionStatus": "not-run",
+      "evidence": [],
+      "executionNote": "本目录未执行独立WT验收；已有POC子集证据不能代替完整用例"
+    },
+    {
+      "id": "WT23",
+      "scenarioId": "SC02",
+      "name": "查询与空结果",
+      "setup": [
+        "独立run/case/attempt命名空间和Profile；不得依赖其他用例执行顺序",
+        "两组筛选参数"
+      ],
+      "input": "两组筛选参数",
+      "expected": "列表行数或空结果提示符合预期",
+      "counterexample": "空结果不能沿用上一次列表行；不同筛选条件对应各自请求/结果",
+      "cleanup": [
+        "仅回收本attempt登记的账号、会话、规则、资源及浏览器",
+        "清理失败保留证据并阻断依赖用例"
+      ],
+      "implementationTasks": [
+        "T068",
+        "T076"
+      ],
+      "executionStatus": "not-run",
+      "evidence": [],
+      "executionNote": "本目录未执行独立WT验收；已有POC子集证据不能代替完整用例"
+    },
+    {
+      "id": "WT24",
+      "scenarioId": "SC01",
+      "name": "后端错误与前端异常",
+      "setup": [
+        "独立run/case/attempt命名空间和Profile；不得依赖其他用例执行顺序",
+        "注入 500/业务失败/脚本异常"
+      ],
+      "input": "注入 500/业务失败/脚本异常",
+      "expected": "用例失败或命中预期错误，报告指向对应步骤",
+      "counterexample": "分别注入HTTP500、HTTP200业务失败和JS异常，报告不得全部标通过",
+      "cleanup": [
+        "仅回收本attempt登记的账号、会话、规则、资源及浏览器",
+        "清理失败保留证据并阻断依赖用例"
+      ],
+      "implementationTasks": [
+        "T068",
+        "T076"
+      ],
+      "executionStatus": "not-run",
+      "evidence": [],
+      "executionNote": "本目录未执行独立WT验收；已有POC子集证据不能代替完整用例"
+    },
+    {
+      "id": "WT25",
+      "scenarioId": "SC04",
+      "name": "IME 输入与拾取副作用",
+      "setup": [
+        "独立run/case/attempt命名空间和Profile；不得依赖其他用例执行顺序",
+        "中文组合输入；开启拾取；后端请求计数"
+      ],
+      "input": "中文组合输入；开启拾取；后端请求计数",
+      "expected": "输入合并正确，选取不提交；回放不再次录制",
+      "counterexample": "compositionend前的中文中间值不得录成多次输入，回放事件不得再次录制",
+      "cleanup": [
+        "仅回收本attempt登记的账号、会话、规则、资源及浏览器",
+        "清理失败保留证据并阻断依赖用例"
+      ],
+      "implementationTasks": [
+        "T080",
+        "T099"
+      ],
+      "executionStatus": "not-run",
+      "evidence": [],
+      "executionNote": "本目录未执行独立WT验收；已有POC子集证据不能代替完整用例"
+    },
+    {
+      "id": "WT26",
+      "scenarioId": "SC04",
+      "name": "SPA/BFCache 后旧引用",
+      "setup": [
+        "独立run/case/attempt命名空间和Profile；不得依赖其他用例执行顺序",
+        "导航再返回或替换同名 DOM"
+      ],
+      "input": "导航再返回或替换同名 DOM",
+      "expected": "旧 ref 被拒绝，新定位唯一且不误点",
+      "counterexample": "旧backendNodeId/epoch在BFCache或DOM替换后拒绝，不能点向新同名节点",
+      "cleanup": [
+        "仅回收本attempt登记的账号、会话、规则、资源及浏览器",
+        "清理失败保留证据并阻断依赖用例"
+      ],
+      "implementationTasks": [
+        "T028",
+        "T099"
+      ],
+      "executionStatus": "not-run",
+      "evidence": [],
+      "executionNote": "本目录未执行独立WT验收；已有POC子集证据不能代替完整用例"
+    },
+    {
+      "id": "WT27",
+      "scenarioId": "SC04",
+      "name": "OOPIF 与关闭 Shadow 控件",
+      "setup": [
+        "独立run/case/attempt命名空间和Profile；不得依赖其他用例执行顺序",
+        "相同按钮分别位于跨域框架与封闭组件"
+      ],
+      "input": "相同按钮分别位于跨域框架与封闭组件",
+      "expected": "OOPIF 定位正确；封闭组件按能力返回 unsupported",
+      "counterexample": "跨站框架的同名按钮不能由主帧替代；关闭Shadow必须明确unsupported",
+      "cleanup": [
+        "仅回收本attempt登记的账号、会话、规则、资源及浏览器",
+        "清理失败保留证据并阻断依赖用例"
+      ],
+      "implementationTasks": [
+        "T028",
+        "T099"
+      ],
+      "executionStatus": "not-run",
+      "evidence": [],
+      "executionNote": "本目录未执行独立WT验收；已有POC子集证据不能代替完整用例"
+    },
+    {
+      "id": "WT28",
+      "scenarioId": "SC04",
+      "name": "快速 popup/dialog/download",
+      "setup": [
+        "独立run/case/attempt命名空间和Profile；不得依赖其他用例执行顺序",
+        "测试按钮同步触发预定事件"
+      ],
+      "input": "测试按钮同步触发预定事件",
+      "expected": "先注册再动作，弹窗归属正确；不可自动处理则 blocked",
+      "counterexample": "同步发生的popup/dialog/download不能因动作后才订阅漏记；来源越界拒绝",
+      "cleanup": [
+        "仅回收本attempt登记的账号、会话、规则、资源及浏览器",
+        "清理失败保留证据并阻断依赖用例"
+      ],
+      "implementationTasks": [
+        "T081",
+        "T099"
+      ],
+      "executionStatus": "not-run",
+      "evidence": [],
+      "executionNote": "本目录未执行独立WT验收；已有POC子集证据不能代替完整用例"
+    },
+    {
+      "id": "WT29",
+      "scenarioId": "SC01",
+      "name": "邮件激活注册",
+      "setup": [
+        "独立run/case/attempt命名空间和Profile；不得依赖其他用例执行顺序",
+        "Mailpit、独立收件人和关联 ID"
+      ],
+      "input": "Mailpit、独立收件人和关联 ID",
+      "expected": "只取本用例邮件，激活一次，错误域链接拒绝",
+      "counterexample": "其他收件人、旧邮件和非允许域激活链接均拒绝，激活只能一次",
+      "cleanup": [
+        "仅回收本attempt登记的账号、会话、规则、资源及浏览器",
+        "清理失败保留证据并阻断依赖用例"
+      ],
+      "implementationTasks": [
+        "T082",
+        "T099"
+      ],
+      "executionStatus": "not-run",
+      "evidence": [],
+      "executionNote": "本目录未执行独立WT验收；已有POC子集证据不能代替完整用例"
+    },
+    {
+      "id": "WT30",
+      "scenarioId": "SC01",
+      "name": "短信旧码与重发",
+      "setup": [
+        "独立run/case/attempt命名空间和Profile；不得依赖其他用例执行顺序",
+        "MockInbox，先发旧码再发新码"
+      ],
+      "input": "MockInbox，先发旧码再发新码",
+      "expected": "新码可用，旧码/过期码拒绝，乱序不误取",
+      "counterexample": "重发后的旧码、过期码及其他case手机号的验证码均拒绝，乱序不能误取",
+      "cleanup": [
+        "仅回收本attempt登记的账号、会话、规则、资源及浏览器",
+        "清理失败保留证据并阻断依赖用例"
+      ],
+      "implementationTasks": [
+        "T082",
+        "T099"
+      ],
+      "executionStatus": "not-run",
+      "evidence": [],
+      "executionNote": "本目录未执行独立WT验收；已有POC子集证据不能代替完整用例"
+    },
+    {
+      "id": "WT31",
+      "scenarioId": "SC01",
+      "name": "密码重置",
+      "setup": [
+        "独立run/case/attempt命名空间和Profile；不得依赖其他用例执行顺序",
+        "测试邮件链接，限时一次性 token"
+      ],
+      "input": "测试邮件链接，限时一次性 token",
+      "expected": "新密码生效，旧密码失效，链接再次使用被拒绝",
+      "counterexample": "重置token使用第二次、过期或非允许来源均拒绝；新密码生效且旧密码失效",
+      "cleanup": [
+        "仅回收本attempt登记的账号、会话、规则、资源及浏览器",
+        "清理失败保留证据并阻断依赖用例"
+      ],
+      "implementationTasks": [
+        "T082",
+        "T099"
+      ],
+      "executionStatus": "not-run",
+      "evidence": [],
+      "executionNote": "本目录未执行独立WT验收；已有POC子集证据不能代替完整用例"
+    },
+    {
+      "id": "WT32",
+      "scenarioId": "SC01",
+      "name": "OIDC 回调校验",
+      "setup": [
+        "独立run/case/attempt命名空间和Profile；不得依赖其他用例执行顺序",
+        "Keycloak 测试 realm，正确/错误 state 和取消回调"
+      ],
+      "input": "Keycloak 测试 realm，正确/错误 state 和取消回调",
+      "expected": "正确 PKCE 流程登录；错误/取消不能生成会话",
+      "counterexample": "错误state/nonce、PKCE不匹配、取消回调不产生会话；不把测试IdP当真实验收",
+      "cleanup": [
+        "仅回收本attempt登记的账号、会话、规则、资源及浏览器",
+        "清理失败保留证据并阻断依赖用例"
+      ],
+      "implementationTasks": [
+        "T083",
+        "T099"
+      ],
+      "executionStatus": "not-run",
+      "evidence": [],
+      "executionNote": "本目录未执行独立WT验收；已有POC子集证据不能代替完整用例"
+    },
+    {
+      "id": "WT33",
+      "scenarioId": "SC01",
+      "name": "TOTP 过期与重放",
+      "setup": [
+        "独立run/case/attempt命名空间和Profile；不得依赖其他用例执行顺序",
+        "专用测试种子和受控服务时钟"
+      ],
+      "input": "专用测试种子和受控服务时钟",
+      "expected": "有效码按规则通过，过期/已使用码拒绝",
+      "counterexample": "同一TOTP在已使用窗口内重放和超允许时钟偏移被拒绝，不输出种子/验证码",
+      "cleanup": [
+        "仅回收本attempt登记的账号、会话、规则、资源及浏览器",
+        "清理失败保留证据并阻断依赖用例"
+      ],
+      "implementationTasks": [
+        "T083",
+        "T099"
+      ],
+      "executionStatus": "not-run",
+      "evidence": [],
+      "executionNote": "本目录未执行独立WT验收；已有POC子集证据不能代替完整用例"
+    },
+    {
+      "id": "WT34",
+      "scenarioId": "SC01",
+      "name": "虚拟 WebAuthn",
+      "setup": [
+        "独立run/case/attempt命名空间和Profile；不得依赖其他用例执行顺序",
+        "CDP 虚拟认证器及测试 origin"
+      ],
+      "input": "CDP 虚拟认证器及测试 origin",
+      "expected": "测试注册/认证正确，错误 origin 拒绝，结束销毁凭据",
+      "counterexample": "错误origin/rpId认证失败，结束清理虚拟认证器；不能代替真实硬件通过",
+      "cleanup": [
+        "仅回收本attempt登记的账号、会话、规则、资源及浏览器",
+        "清理失败保留证据并阻断依赖用例"
+      ],
+      "implementationTasks": [
+        "T083",
+        "T099"
+      ],
+      "executionStatus": "not-run",
+      "evidence": [],
+      "executionNote": "本目录未执行独立WT验收；已有POC子集证据不能代替完整用例"
+    },
+    {
+      "id": "WT35",
+      "scenarioId": "SC02",
+      "name": "Mock 故障与规则回收",
+      "setup": [
+        "独立run/case/attempt命名空间和Profile；不得依赖其他用例执行顺序",
+        "指定 run 的请求返回 500/延迟"
+      ],
+      "input": "指定 run 的请求返回 500/延迟",
+      "expected": "UI 错误符合预期；结束后规则移除，不污染其他用例",
+      "counterexample": "另一个run或过期规则不命中，规则撤销后不静默发送本应mock的写请求",
+      "cleanup": [
+        "仅回收本attempt登记的账号、会话、规则、资源及浏览器",
+        "清理失败保留证据并阻断依赖用例"
+      ],
+      "implementationTasks": [
+        "T084",
+        "T099"
+      ],
+      "executionStatus": "not-run",
+      "evidence": [],
+      "executionNote": "本目录未执行独立WT验收；已有POC子集证据不能代替完整用例"
+    },
+    {
+      "id": "WT36",
+      "scenarioId": "SC02",
+      "name": "HAR/SW/cache 覆盖限制",
+      "setup": [
+        "独立run/case/attempt命名空间和Profile；不得依赖其他用例执行顺序",
+        "已登记 HAR 与 Service Worker 页面"
+      ],
+      "input": "已登记 HAR 与 Service Worker 页面",
+      "expected": "命中来源可见；未覆盖请求有明确行为，不混成真实结果",
+      "counterexample": "未覆盖的SW/cache/流请求必须显示来源与限制，不混为HAR命中",
+      "cleanup": [
+        "仅回收本attempt登记的账号、会话、规则、资源及浏览器",
+        "清理失败保留证据并阻断依赖用例"
+      ],
+      "implementationTasks": [
+        "T084",
+        "T099"
+      ],
+      "executionStatus": "not-run",
+      "evidence": [],
+      "executionNote": "本目录未执行独立WT验收；已有POC子集证据不能代替完整用例"
+    },
+    {
+      "id": "WT37",
+      "scenarioId": "SC02",
+      "name": "WS/SSE 消息断言",
+      "setup": [
+        "独立run/case/attempt命名空间和Profile；不得依赖其他用例执行顺序",
+        "测试服务发送关联消息、关闭与重连"
+      ],
+      "input": "测试服务发送关联消息、关闭与重连",
+      "expected": "检查指定消息/超时；截断可见，不能声称 HAR 全量回放",
+      "counterexample": "其他关联ID消息不算目标成功，断流/超时/截断需明确失败或不完整",
+      "cleanup": [
+        "仅回收本attempt登记的账号、会话、规则、资源及浏览器",
+        "清理失败保留证据并阻断依赖用例"
+      ],
+      "implementationTasks": [
+        "T084",
+        "T099"
+      ],
+      "executionStatus": "not-run",
+      "evidence": [],
+      "executionNote": "本目录未执行独立WT验收；已有POC子集证据不能代替完整用例"
+    },
+    {
+      "id": "WT38",
+      "scenarioId": "SC01",
+      "name": "页面与后端时钟",
+      "setup": [
+        "独立run/case/attempt命名空间和Profile；不得依赖其他用例执行顺序",
+        "倒计时/token 过期测试钩子"
+      ],
+      "input": "倒计时/token 过期测试钩子",
+      "expected": "分别控制且范围可见；未控制的后端时钟不伪装同步",
+      "counterexample": "只改页面时钟不能宣称服务器token同步过期；后端时钟范围必须独立记录",
+      "cleanup": [
+        "仅回收本attempt登记的账号、会话、规则、资源及浏览器",
+        "清理失败保留证据并阻断依赖用例"
+      ],
+      "implementationTasks": [
+        "T085",
+        "T099"
+      ],
+      "executionStatus": "not-run",
+      "evidence": [],
+      "executionNote": "本目录未执行独立WT验收；已有POC子集证据不能代替完整用例"
+    },
+    {
+      "id": "WT39",
+      "scenarioId": "SC01",
+      "name": "并行数据与清理失败",
+      "setup": [
+        "独立run/case/attempt命名空间和Profile；不得依赖其他用例执行顺序",
+        "两个 run/tenant；注入删除失败"
+      ],
+      "input": "两个 run/tenant；注入删除失败",
+      "expected": "账号资源不互用；污染环境阻断后续依赖",
+      "counterexample": "不同tenant的资源不能互读/误删，清理故障必须污染标记并阻断依赖",
+      "cleanup": [
+        "仅回收本attempt登记的账号、会话、规则、资源及浏览器",
+        "清理失败保留证据并阻断依赖用例"
+      ],
+      "implementationTasks": [
+        "T085",
+        "T099"
+      ],
+      "executionStatus": "not-run",
+      "evidence": [],
+      "executionNote": "本目录未执行独立WT验收；已有POC子集证据不能代替完整用例"
+    },
+    {
+      "id": "WT40",
+      "scenarioId": "SC02",
+      "name": "视觉差异与基线",
+      "setup": [
+        "独立run/case/attempt命名空间和Profile；不得依赖其他用例执行顺序",
+        "固定版本/字体/DPR，遮罩动态时间，注入按钮样式变化"
+      ],
+      "input": "固定版本/字体/DPR，遮罩动态时间，注入按钮样式变化",
+      "expected": "diff 数量/图正确，失败不覆盖基线；尺寸不一致明确报错",
+      "counterexample": "注入按钮样式变化必须产生diff，失败结果不自动覆盖基线；尺寸不同单独报错",
+      "cleanup": [
+        "仅回收本attempt登记的账号、会话、规则、资源及浏览器",
+        "清理失败保留证据并阻断依赖用例"
+      ],
+      "implementationTasks": [
+        "T086",
+        "T099"
+      ],
+      "executionStatus": "not-run",
+      "evidence": [],
+      "executionNote": "本目录未执行独立WT验收；已有POC子集证据不能代替完整用例"
+    },
+    {
+      "id": "WT41",
+      "scenarioId": "SC04",
+      "name": "无障碍与键盘",
+      "setup": [
+        "独立run/case/attempt命名空间和Profile；不得依赖其他用例执行顺序",
+        "axe 固定规则及缺 label 页面"
+      ],
+      "input": "axe 固定规则及缺 label 页面",
+      "expected": "捕获违规并保留 incomplete；Tab/Enter/Escape 可验证",
+      "counterexample": "缺label页面须检测违规，axe incomplete保留；键盘焦点不能跳到另一页面",
+      "cleanup": [
+        "仅回收本attempt登记的账号、会话、规则、资源及浏览器",
+        "清理失败保留证据并阻断依赖用例"
+      ],
+      "implementationTasks": [
+        "T087",
+        "T099"
+      ],
+      "executionStatus": "not-run",
+      "evidence": [],
+      "executionNote": "本目录未执行独立WT验收；已有POC子集证据不能代替完整用例"
+    },
+    {
+      "id": "WT42",
+      "scenarioId": "SC04",
+      "name": "响应式与触摸仿真",
+      "setup": [
+        "独立run/case/attempt命名空间和Profile；不得依赖其他用例执行顺序",
+        "桌面/窄屏视口、DPR 和触摸参数"
+      ],
+      "input": "桌面/窄屏视口、DPR 和触摸参数",
+      "expected": "控件布局和操作符合夹具预期，报告注明仿真环境",
+      "counterexample": "窄屏按钮不可见或触摸目标错误需失败，桌面截图不能代替触摸仿真证据",
+      "cleanup": [
+        "仅回收本attempt登记的账号、会话、规则、资源及浏览器",
+        "清理失败保留证据并阻断依赖用例"
+      ],
+      "implementationTasks": [
+        "T087",
+        "T099"
+      ],
+      "executionStatus": "not-run",
+      "evidence": [],
+      "executionNote": "本目录未执行独立WT验收；已有POC子集证据不能代替完整用例"
+    },
+    {
+      "id": "WT43",
+      "scenarioId": "SC04",
+      "name": "Canvas/OCR 候选",
+      "setup": [
+        "独立run/case/attempt命名空间和Profile；不得依赖其他用例执行顺序",
+        "固定 Canvas 文本、重叠目标和过期截图"
+      ],
+      "input": "固定 Canvas 文本、重叠目标和过期截图",
+      "expected": "正确候选可确认，歧义/低置信度/布局改变不盲点",
+      "counterexample": "歧义、低置信度、旧截图或布局变化时禁止盲点；人工确认记录候选版本",
+      "cleanup": [
+        "仅回收本attempt登记的账号、会话、规则、资源及浏览器",
+        "清理失败保留证据并阻断依赖用例"
+      ],
+      "implementationTasks": [
+        "T088",
+        "T099"
+      ],
+      "executionStatus": "not-run",
+      "evidence": [],
+      "executionNote": "本目录未执行独立WT验收；已有POC子集证据不能代替完整用例"
+    },
+    {
+      "id": "WT44",
+      "scenarioId": "SC03",
+      "name": "认证代理中断",
+      "setup": [
+        "独立run/case/attempt命名空间和Profile；不得依赖其他用例执行顺序",
+        "per-Profile 转发器、DNS/IPv6 探针，运行中停止桥"
+      ],
+      "input": "per-Profile 转发器、DNS/IPv6 探针，运行中停止桥",
+      "expected": "浏览器失败且无静默直连，支持范围和限制可查",
+      "counterexample": "桥断开/认证错误必须失败且无直连回退，DNS/QUIC/WebRTC/IPv6逐类记录限制",
+      "cleanup": [
+        "仅回收本attempt登记的账号、会话、规则、资源及浏览器",
+        "清理失败保留证据并阻断依赖用例"
+      ],
+      "implementationTasks": [
+        "T091",
+        "T099"
+      ],
+      "executionStatus": "not-run",
+      "evidence": [],
+      "executionNote": "本目录未执行独立WT验收；已有POC子集证据不能代替完整用例"
+    },
+    {
+      "id": "WT45",
+      "scenarioId": "SC03",
+      "name": "MV3 扩展版本",
+      "setup": [
+        "独立run/case/attempt命名空间和Profile；不得依赖其他用例执行顺序",
+        "两个环境分配不同版本的测试扩展"
+      ],
+      "input": "两个环境分配不同版本的测试扩展",
+      "expected": "版本/权限不混用，缺失加载能力有明确结果",
+      "counterexample": "版本或权限不匹配必须拒绝/报告，不能共享另一环境扩展状态",
+      "cleanup": [
+        "仅回收本attempt登记的账号、会话、规则、资源及浏览器",
+        "清理失败保留证据并阻断依赖用例"
+      ],
+      "implementationTasks": [
+        "T092",
+        "T099"
+      ],
+      "executionStatus": "not-run",
+      "evidence": [],
+      "executionNote": "本目录未执行独立WT验收；已有POC子集证据不能代替完整用例"
+    },
+    {
+      "id": "WT46",
+      "scenarioId": "SC03",
+      "name": "备份恢复反例",
+      "setup": [
+        "独立run/case/attempt命名空间和Profile；不得依赖其他用例执行顺序",
+        "停机快照、错误口令、篡改包、磁盘不足"
+      ],
+      "input": "停机快照、错误口令、篡改包、磁盘不足",
+      "expected": "正确副本可恢复，错误副本拒绝且不破坏原数据",
+      "counterexample": "错误口令、篡改、磁盘不足拒绝恢复并保持原数据完整；备份不能裸复制运行目录",
+      "cleanup": [
+        "仅回收本attempt登记的账号、会话、规则、资源及浏览器",
+        "清理失败保留证据并阻断依赖用例"
+      ],
+      "implementationTasks": [
+        "T093",
+        "T099"
+      ],
+      "executionStatus": "not-run",
+      "evidence": [],
+      "executionNote": "本目录未执行独立WT验收；已有POC子集证据不能代替完整用例"
+    },
+    {
+      "id": "WT47",
+      "scenarioId": "SC03",
+      "name": "更新签名与失败回滚",
+      "setup": [
+        "独立run/case/attempt命名空间和Profile；不得依赖其他用例执行顺序",
+        "测试签名制品、篡改/过期/降级元数据和安装失败"
+      ],
+      "input": "测试签名制品、篡改/过期/降级元数据和安装失败",
+      "expected": "不可信更新拒绝；受控失败恢复程序与匹配数据版本",
+      "counterexample": "篡改/过期/降级元数据拒绝，安装中断恢复匹配的程序/数据版本并保留失败事实",
+      "cleanup": [
+        "仅回收本attempt登记的账号、会话、规则、资源及浏览器",
+        "清理失败保留证据并阻断依赖用例"
+      ],
+      "implementationTasks": [
+        "T094",
+        "T099"
+      ],
+      "executionStatus": "not-run",
+      "evidence": [],
+      "executionNote": "本目录未执行独立WT验收；已有POC子集证据不能代替完整用例"
+    },
+    {
+      "id": "WT48",
+      "scenarioId": "SC01",
+      "name": "已提交但响应丢失",
+      "setup": [
+        "独立run/case/attempt命名空间和Profile；不得依赖其他用例执行顺序",
+        "夹具保存业务后断连接，同时停止/重启服务"
+      ],
+      "input": "夹具保存业务后断连接，同时停止/重启服务",
+      "expected": "不重复注册/保存，状态 unknown，核对后才继续或补偿",
+      "counterexample": "服务端已提交但回执丢失必须unknown，重启不重复注册/保存，核对业务事实后才继续",
+      "cleanup": [
+        "仅回收本attempt登记的账号、会话、规则、资源及浏览器",
+        "清理失败保留证据并阻断依赖用例"
+      ],
+      "implementationTasks": [
+        "T098",
+        "T099"
+      ],
+      "executionStatus": "not-run",
+      "evidence": [],
+      "executionNote": "本目录未执行独立WT验收；已有POC子集证据不能代替完整用例"
+    }
+  ]
+}

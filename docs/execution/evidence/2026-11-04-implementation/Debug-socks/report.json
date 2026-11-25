@@ -1,0 +1,174 @@
+{
+  "date": "2026-11-04T11:16:02.013955+08:00",
+  "result": "passed",
+  "binarySha256": "bb849466dc5dc7ec907b54e6faebaace535d83fe1fa503b546785cbe06ad4f93",
+  "scope": "Unauthenticated SOCKS5; full DNS/WebRTC/IPv6 leak matrix belongs to T091",
+  "remoteDnsDomainSeen": true,
+  "noSilentDirectFallback": true,
+  "forwarded": [
+    {
+      "host": "awb-fixture.invalid",
+      "port": 64781,
+      "addressType": 3
+    },
+    {
+      "host": "awb-fixture.invalid",
+      "port": 64781,
+      "addressType": 3
+    },
+    {
+      "host": "awb-fixture.invalid",
+      "port": 64781,
+      "addressType": 3
+    },
+    {
+      "host": "awb-fixture.invalid",
+      "port": 64781,
+      "addressType": 3
+    },
+    {
+      "host": "awb-fixture.invalid",
+      "port": 64781,
+      "addressType": 3
+    },
+    {
+      "host": "awb-fixture.invalid",
+      "port": 64781,
+      "addressType": 3
+    },
+    {
+      "host": "awb-fixture.invalid",
+      "port": 64781,
+      "addressType": 3
+    },
+    {
+      "host": "awb-fixture.invalid",
+      "port": 64781,
+      "addressType": 3
+    },
+    {
+      "host": "awb-fixture.invalid",
+      "port": 64781,
+      "addressType": 3
+    }
+  ],
+  "registrationCount": 1,
+  "loginCount": 1,
+  "activeTunnelsDisconnected": true,
+  "serverFacts": {
+    "registrationCount": 1,
+    "loginCount": 1
+  },
+  "commands": [
+    {
+      "sequence": 1,
+      "command": "profile_create",
+      "outcome": "PROXY_UNSUPPORTED"
+    },
+    {
+      "sequence": 2,
+      "command": "profile_create",
+      "outcome": "PROXY_UNSUPPORTED"
+    },
+    {
+      "sequence": 3,
+      "command": "profile_create",
+      "outcome": "PROXY_UNSUPPORTED"
+    },
+    {
+      "sequence": 4,
+      "command": "profile_create",
+      "outcome": "PROXY_UNSUPPORTED"
+    },
+    {
+      "sequence": 5,
+      "command": "profile_create",
+      "outcome": "passed"
+    },
+    {
+      "sequence": 6,
+      "command": "browser_start",
+      "outcome": "passed"
+    },
+    {
+      "sequence": 7,
+      "command": "lease_acquire",
+      "outcome": "passed"
+    },
+    {
+      "sequence": 8,
+      "command": "browser_navigate",
+      "outcome": "passed"
+    },
+    {
+      "sequence": 9,
+      "command": "page_wait_text",
+      "outcome": "passed"
+    },
+    {
+      "sequence": 10,
+      "command": "browser_navigate",
+      "outcome": "passed"
+    },
+    {
+      "sequence": 11,
+      "command": "page_locate",
+      "outcome": "passed"
+    },
+    {
+      "sequence": 12,
+      "command": "page_fill",
+      "outcome": "passed"
+    },
+    {
+      "sequence": 13,
+      "command": "page_locate",
+      "outcome": "passed"
+    },
+    {
+      "sequence": 14,
+      "command": "page_fill",
+      "outcome": "passed"
+    },
+    {
+      "sequence": 15,
+      "command": "page_locate",
+      "outcome": "passed"
+    },
+    {
+      "sequence": 16,
+      "command": "page_click",
+      "outcome": "passed"
+    },
+    {
+      "sequence": 17,
+      "command": "page_wait_text",
+      "outcome": "passed"
+    },
+    {
+      "sequence": 18,
+      "command": "page_locate",
+      "outcome": "passed"
+    },
+    {
+      "sequence": 19,
+      "command": "page_click",
+      "outcome": "passed"
+    },
+    {
+      "sequence": 20,
+      "command": "page_wait_text",
+      "outcome": "passed"
+    },
+    {
+      "sequence": 21,
+      "command": "browser_navigate",
+      "outcome": "NAVIGATION_FAILED"
+    },
+    {
+      "sequence": 22,
+      "command": "browser_stop",
+      "outcome": "passed"
+    }
+  ]
+}

@@ -1,0 +1,123 @@
+{
+  "date": "2026-11-04",
+  "result": "failed",
+  "checks": [
+    "input-interval-merge-secret-no-values-select-and-one-submit"
+  ],
+  "binarySha256": "d432f025b0161214872151e667c04aec5434adb37126c1e1cfe2e8e45eb95228",
+  "scope": "Main-document preview; frame/Shadow/picker/real desktop IME not accepted",
+  "error": "",
+  "calls": [
+    {
+      "sequence": 1,
+      "command": "profile_create",
+      "outcome": "passed"
+    },
+    {
+      "sequence": 2,
+      "command": "browser_start",
+      "outcome": "passed"
+    },
+    {
+      "sequence": 3,
+      "command": "lease_acquire",
+      "outcome": "passed"
+    },
+    {
+      "sequence": 4,
+      "command": "browser_navigate",
+      "outcome": "passed"
+    },
+    {
+      "sequence": 5,
+      "command": "recorder_start",
+      "outcome": "passed"
+    },
+    {
+      "sequence": 6,
+      "command": "recorder_start",
+      "outcome": "RECORDING_ACTIVE"
+    },
+    {
+      "sequence": 7,
+      "command": "page_open",
+      "outcome": "RECORDING_PAGE_LOCKED"
+    },
+    {
+      "sequence": 8,
+      "command": "page_locate",
+      "outcome": "passed"
+    },
+    {
+      "sequence": 9,
+      "command": "page_fill",
+      "outcome": "passed"
+    },
+    {
+      "sequence": 10,
+      "command": "page_locate",
+      "outcome": "passed"
+    },
+    {
+      "sequence": 11,
+      "command": "page_fill",
+      "outcome": "passed"
+    },
+    {
+      "sequence": 12,
+      "command": "page_locate",
+      "outcome": "passed"
+    },
+    {
+      "sequence": 13,
+      "command": "page_fill",
+      "outcome": "passed"
+    },
+    {
+      "sequence": 14,
+      "command": "page_locate",
+      "outcome": "passed"
+    },
+    {
+      "sequence": 15,
+      "command": "page_select",
+      "outcome": "passed"
+    },
+    {
+      "sequence": 16,
+      "command": "page_locate",
+      "outcome": "passed"
+    },
+    {
+      "sequence": 17,
+      "command": "page_click",
+      "outcome": "passed"
+    },
+    {
+      "sequence": 18,
+      "command": "page_locate",
+      "outcome": "passed"
+    },
+    {
+      "sequence": 19,
+      "command": "page_text",
+      "outcome": "passed"
+    },
+    {
+      "sequence": 20,
+      "command": "recorder_control",
+      "outcome": "passed"
+    },
+    {
+      "sequence": 21,
+      "command": "workflow_validate",
+      "outcome": "passed"
+    },
+    {
+      "sequence": 22,
+      "command": "workflow_validate",
+      "outcome": "passed"
+    }
+  ],
+  "commandCount": 22
+}

@@ -1,0 +1,48 @@
+{
+  "result": "passed",
+  "date": "2026-11-04",
+  "origin": "http://127.0.0.1:3010",
+  "runs": [
+    {
+      "run": 1,
+      "result": "passed",
+      "workflow": {
+        "runId": "0cb758c1dda603dba94444b5c5297cb5",
+        "state": "succeeded",
+        "steps": 19
+      },
+      "rows": 4,
+      "interaction": {
+        "articleId": "seed-a",
+        "like": "liked",
+        "comment": "submitted",
+        "replyParentId": "comment-a",
+        "reply": "submitted"
+      }
+    },
+    {
+      "run": 2,
+      "result": "passed",
+      "workflow": {
+        "runId": "bd553a2590f429620b6786ebd1000c24",
+        "state": "succeeded",
+        "steps": 19
+      },
+      "rows": 4,
+      "interaction": {
+        "articleId": "seed-a",
+        "like": "already-satisfied",
+        "comment": "submitted",
+        "replyParentId": "comment-a",
+        "reply": "submitted"
+      }
+    }
+  ],
+  "databaseWriteCounts": {
+    "comment": 1,
+    "like": 1,
+    "publish": 1,
+    "reply": 1
+  },
+  "method": "public runner CLI with frozen portable binary and browser"
+}

@@ -1,0 +1,20 @@
+{
+  "date": "2026-11-04T11:49:43.317273+08:00",
+  "result": "passed",
+  "checks": [
+    "archive-and-every-file-verified-pristine-data",
+    "self-test-passes-with-desktop-open-and-keeps-user-catalog-unchanged",
+    "normal-gui-launcher-and-close",
+    "cli-mcp-launchers-no-extra-stdout-and-consistent-version",
+    "api-launcher-from-unrelated-cwd-authentication-and-shutdown",
+    "double-click-self-test-cmd-full-hash-check",
+    "tampered-package-rejected",
+    "missing-crt-rejected-before-starting-executables",
+    "copied-source-vs2019-release-build-and-tests"
+  ],
+  "secondCleanMachineTested": false,
+  "archiveSha256": "5a6968041514ad194740d073db6376eba306858a39d6cc406c1b13074ebad013",
+  "copiedFolder": "E:\\project\\webexploer_codex\\build\\evidence\\multipage-20261104\\final-package\\中文 空格部署\\AI-Browser-Workbench-0.1.3-win64-multipage",
+  "version": "0.1.3-poc",
+  "manifestFiles": 858
+}

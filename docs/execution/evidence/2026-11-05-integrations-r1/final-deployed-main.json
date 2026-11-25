@@ -1,0 +1,75 @@
+{
+  "date": "2026-11-05",
+  "bin": "build\\integrations-final-deployment\\中文 空格部署\\AI-Browser-Workbench-0.1.13-win64-integrations-r1",
+  "externalServices": "local-independent-protocol-fixtures",
+  "payments": {
+    "channels": 3,
+    "notificationChecks": [
+      {
+        "channel": "alipay",
+        "status": 200,
+        "rejected": false
+      },
+      {
+        "channel": "alipay",
+        "status": 200,
+        "rejected": false
+      },
+      {
+        "channel": "wechat",
+        "status": 204,
+        "rejected": false
+      },
+      {
+        "channel": "wechat",
+        "status": 204,
+        "rejected": false
+      },
+      {
+        "channel": "wechat",
+        "status": 204,
+        "rejected": false
+      },
+      {
+        "channel": "stripe",
+        "status": 200,
+        "rejected": false
+      },
+      {
+        "channel": "stripe",
+        "status": 200,
+        "rejected": false
+      },
+      {
+        "channel": "stripe",
+        "status": 200,
+        "rejected": false
+      }
+    ],
+    "lostStripeResponse": "recovered-with-same-key",
+    "balancedLedger": true
+  },
+  "oidc": {
+    "negativeClaims": 8,
+    "emailCollision": "rejected",
+    "explicitLink": "passed",
+    "HttpOnlyCookie": true,
+    "desktopCodeReplay": "rejected",
+    "realBrowserSso": "passed",
+    "pkceExchanges": 13
+  },
+  "scheduler": {
+    "realNodeProcesses": 2,
+    "actualBrowserSubmissions": 2,
+    "duplicateSubmit": "one-command",
+    "queuedCancel": "passed",
+    "runningCancel": "passed",
+    "nodeCrash": "unknown-confirmed-stopped-no-replay",
+    "signedIdentity": "enforced",
+    "crossTenant": "rejected",
+    "revocation": "irreversible"
+  },
+  "httpChecks": 131,
+  "fixtureRequests": 77,
+  "result": "passed"
+}

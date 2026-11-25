@@ -1,0 +1,51 @@
+{
+  "date": "2026-11-04",
+  "result": "passed",
+  "checks": [
+    "immediate",
+    "multiple",
+    "quota",
+    "multiple-quota",
+    "locked",
+    "deleted"
+  ],
+  "cases": [
+    {
+      "mode": "immediate",
+      "result": "passed",
+      "snapshots": 1,
+      "failureBlocked": false
+    },
+    {
+      "mode": "multiple",
+      "result": "passed",
+      "snapshots": 2,
+      "failureBlocked": false
+    },
+    {
+      "mode": "quota",
+      "result": "passed",
+      "snapshots": 50,
+      "failureBlocked": true
+    },
+    {
+      "mode": "multiple-quota",
+      "result": "passed",
+      "snapshots": 50,
+      "failureBlocked": true
+    },
+    {
+      "mode": "locked",
+      "result": "passed",
+      "snapshots": 1,
+      "failureBlocked": true
+    },
+    {
+      "mode": "deleted",
+      "result": "passed",
+      "snapshots": 1,
+      "failureBlocked": false
+    }
+  ],
+  "binarySha256": "4d8c17b55b4d5f799210c6ea979f2c675860675b72008a1a304915f16a95a0ff"
+}

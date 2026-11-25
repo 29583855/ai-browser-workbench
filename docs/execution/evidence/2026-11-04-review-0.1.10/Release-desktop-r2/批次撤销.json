@@ -1,0 +1,16 @@
+{
+  "actions": [
+    {
+      "type": "assertText",
+      "selector": "#echo",
+      "expected": "never-matches",
+      "timeoutMs": 3000
+    },
+    {
+      "type": "fill",
+      "selector": "#field",
+      "value": "must-not-be-written"
+    }
+  ],
+  "onError": "continue"
+}

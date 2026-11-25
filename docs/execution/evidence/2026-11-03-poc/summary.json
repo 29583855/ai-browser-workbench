@@ -1,0 +1,29 @@
+{
+  "date": "2026-11-03",
+  "buildRun": "build/evidence/run-20261103-231504",
+  "result": "passed-for-declared-poc-scope",
+  "mode": "development-poc",
+  "releaseReady": false,
+  "configurations": [
+    "Debug",
+    "Release"
+  ],
+  "browserCommandsPerConfiguration": 122,
+  "mcpTools": 16,
+  "sourceMarkersFound": 0,
+  "ownSourceFiles": 21,
+  "snapshotAndRecordingVerified": true,
+  "sourceHashesMatchTestedFiles": true,
+  "testReportCanaryLeakFound": false,
+  "documents": {
+    "date": "2026-11-03",
+    "result": "passed",
+    "errors": [],
+    "markdownFiles": 18,
+    "tables": 159,
+    "relativeLinks": 138,
+    "jsonCodeBlocks": 26,
+    "scope": "document structure only; product acceptance is separate"
+  },
+  "unfinishedProductFeaturesExplicit": true
+}

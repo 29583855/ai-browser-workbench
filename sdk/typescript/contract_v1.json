@@ -1,0 +1,3676 @@
+{
+  "capabilities": {
+    "actionPreview": true,
+    "batchAtomic": false,
+    "catalogSchemaVersion": 7,
+    "centralEntitlements": true,
+    "closedShadowDom": false,
+    "commerce": true,
+    "credentialVault": "DPAPI-current-user-v1",
+    "crossFrameRecorder": false,
+    "diagnosticMetadata": true,
+    "diagnosticPayloadCapture": false,
+    "downloadCompletion": true,
+    "downloadDirectory": true,
+    "durableProfileBatchReceipts": true,
+    "elementInspection": true,
+    "experimentalUnauthenticatedHttpProxy": true,
+    "experimentalUnauthenticatedSocks5Proxy": true,
+    "explicitCdpReconnect": true,
+    "fileUpload": true,
+    "freeConcurrentLimit": 10,
+    "freeEnvironmentLimit": 10,
+    "freeProxy": true,
+    "globalMultiNodeQuota": true,
+    "immutableWorkflowVersions": true,
+    "inputClickScreenshot": true,
+    "language": "C++14",
+    "liveEventSubscription": false,
+    "localAdminPreview": true,
+    "localCommerceQuote": true,
+    "localLeaseFencing": true,
+    "localRestApi": true,
+    "mainDocumentFunctionDiscovery": true,
+    "mainDocumentRecorder": "parameterized-preview",
+    "mainFrameSnapshot": true,
+    "managedJobObject": true,
+    "managedPages": true,
+    "mcpStdio": true,
+    "metadataEventPolling": true,
+    "mode": "development-poc-not-commercial-release",
+    "modelProvider": "chat-completions-json-v1",
+    "multiNodeScheduler": "outbound-signed-v1",
+    "nativeElementPicker": "main-document-preview",
+    "nativeSelect": true,
+    "nativeWin32Shell": true,
+    "nodeMtlsCertificateSelection": true,
+    "officialPaymentChannels": [
+      "alipay-rsa2",
+      "wechat-v3",
+      "stripe-checkout"
+    ],
+    "oidcAuthorizationCodePkce": true,
+    "oopifActions": false,
+    "originScope": true,
+    "pageActionBatch": true,
+    "persistentProcessOwnership": true,
+    "privateBrowserStorageAlias": true,
+    "product": "AI Browser Workbench",
+    "productionReady": false,
+    "profileBatchPaginationAndRetention": true,
+    "profileConfigurationImportExport": true,
+    "profileConfigurationTemplates": true,
+    "profileGroups": true,
+    "profileIsolation": true,
+    "profileLifecycle": true,
+    "profileLifecycleBatch": true,
+    "profileRevisionControl": true,
+    "profileTemplateHistory": true,
+    "proxyProtocols": [],
+    "readOnlyDoctor": true,
+    "recorderFieldValues": false,
+    "reviewableSelectorRepairDraft": true,
+    "rpaWorkflowEngine": true,
+    "runtimeSettings": [
+      "userAgent",
+      "languages",
+      "timezone"
+    ],
+    "schemaExtraction": "awb-scalar-extraction-v1-array",
+    "scopedSecretRef": true,
+    "secretCapturePolicy": "block-instance-screenshots-after-use",
+    "siteKnowledgePackages": "data-only-v1",
+    "sqliteCatalog": true,
+    "stringArrayExtraction": true,
+    "structuredAssertions": true,
+    "uniqueCssLocator": true,
+    "validatedModelDrafts": true,
+    "version": "0.1.13-poc",
+    "visualFlowCanvas": "dsl1-native-editor-preview",
+    "workflowCheckpointMetadata": true,
+    "workflowCrashAutoResume": false,
+    "workflowDebugger": [
+      "breakpoint",
+      "step",
+      "stepOver",
+      "stepOut",
+      "redactedVariables"
+    ],
+    "workflowDsl": "1.1",
+    "workflowFileActions": true,
+    "workflowInputDialect": "awb-bounded-draft07-v1",
+    "workflowStringArrayOutput": true,
+    "workflowStructuredAssertions": true,
+    "workflowSupportedVersions": [
+      "1.0",
+      "1.1"
+    ],
+    "workflowTypedVariables": true
+  },
+  "contractVersion": 1,
+  "productVersion": "0.1.13-poc",
+  "tools": [
+    {
+      "description": "Report implemented technical-preview capabilities and unsupported features",
+      "inputSchema": {
+        "additionalProperties": false,
+        "properties": {},
+        "required": [],
+        "type": "object"
+      },
+      "name": "capabilities"
+    },
+    {
+      "description": "Read component and local ownership health without starting browsers or changing quotas",
+      "inputSchema": {
+        "additionalProperties": false,
+        "properties": {},
+        "required": [],
+        "type": "object"
+      },
+      "name": "doctor"
+    },
+    {
+      "description": "Read the local development and commercial-preview policy without changing state",
+      "inputSchema": {
+        "additionalProperties": false,
+        "properties": {},
+        "required": [],
+        "type": "object"
+      },
+      "name": "admin_policy"
+    },
+    {
+      "description": "Read local profile, running-browser and free-capacity counters for the management UI",
+      "inputSchema": {
+        "additionalProperties": false,
+        "properties": {},
+        "required": [],
+        "type": "object"
+      },
+      "name": "admin_summary"
+    },
+    {
+      "description": "Read local free counters or connected control-plane entitlements",
+      "inputSchema": {
+        "additionalProperties": false,
+        "properties": {},
+        "required": [],
+        "type": "object"
+      },
+      "name": "commerce_entitlements"
+    },
+    {
+      "description": "Preview whether a requested environment/concurrency/proxy scope is free or billable",
+      "inputSchema": {
+        "additionalProperties": false,
+        "properties": {
+          "concurrentCount": {
+            "maximum": 10000,
+            "minimum": 1,
+            "type": "integer"
+          },
+          "durationDays": {
+            "maximum": 3650,
+            "minimum": 1,
+            "type": "integer"
+          },
+          "environmentCount": {
+            "maximum": 100000,
+            "minimum": 1,
+            "type": "integer"
+          },
+          "proxy": {
+            "type": "boolean"
+          }
+        },
+        "required": [
+          "environmentCount"
+        ],
+        "type": "object"
+      },
+      "name": "commerce_quote"
+    },
+    {
+      "description": "Login to control plane and enforce global commercial admission",
+      "inputSchema": {
+        "additionalProperties": false,
+        "properties": {
+          "deviceName": {
+            "maxLength": 128,
+            "minLength": 1,
+            "type": "string"
+          },
+          "email": {
+            "maxLength": 254,
+            "minLength": 1,
+            "type": "string"
+          },
+          "password": {
+            "maxLength": 256,
+            "minLength": 1,
+            "type": "string"
+          },
+          "tenantId": {
+            "maxLength": 32,
+            "minLength": 1,
+            "type": "string"
+          },
+          "url": {
+            "maxLength": 2048,
+            "minLength": 1,
+            "type": "string"
+          }
+        },
+        "required": [
+          "url",
+          "email",
+          "password"
+        ],
+        "type": "object"
+      },
+      "name": "account_connect"
+    },
+    {
+      "description": "Exchange a one-time SSO desktop connection code and bind this device",
+      "inputSchema": {
+        "additionalProperties": false,
+        "properties": {
+          "code": {
+            "maxLength": 128,
+            "minLength": 1,
+            "type": "string"
+          },
+          "deviceName": {
+            "maxLength": 128,
+            "minLength": 1,
+            "type": "string"
+          },
+          "url": {
+            "maxLength": 2048,
+            "minLength": 1,
+            "type": "string"
+          }
+        },
+        "required": [
+          "url",
+          "code"
+        ],
+        "type": "object"
+      },
+      "name": "account_connect_code"
+    },
+    {
+      "description": "Logout only after every tracked browser is stopped",
+      "inputSchema": {
+        "additionalProperties": false,
+        "properties": {},
+        "required": [],
+        "type": "object"
+      },
+      "name": "account_disconnect"
+    },
+    {
+      "description": "Read protected connection metadata or current server entitlement",
+      "inputSchema": {
+        "additionalProperties": false,
+        "properties": {
+          "remote": {
+            "type": "boolean"
+          }
+        },
+        "required": [],
+        "type": "object"
+      },
+      "name": "account_status"
+    },
+    {
+      "description": "Execute a customer portal action with server-side tenant and role checks",
+      "inputSchema": {
+        "additionalProperties": false,
+        "properties": {
+          "action": {
+            "enum": [
+              "identity",
+              "snapshot",
+              "order.create",
+              "order.cancel",
+              "payment.prepare",
+              "refund.request",
+              "invoice.request",
+              "member.invite",
+              "member.update",
+              "member.accept",
+              "invite.cancel",
+              "payment.channel.create",
+              "payment.channel.query",
+              "payment.channel.refund-query",
+              "scheduler.snapshot",
+              "project.save",
+              "project.state",
+              "node.enrollment.create",
+              "node.state",
+              "assignment.create",
+              "assignment.release",
+              "workflow.remote.publish",
+              "run.submit",
+              "run.cancel",
+              "run.resolve",
+              "oidc.bindings",
+              "client.code.create"
+            ],
+            "type": "string"
+          },
+          "body": {
+            "additionalProperties": true,
+            "properties": {},
+            "required": [],
+            "type": "object"
+          }
+        },
+        "required": [
+          "action",
+          "body"
+        ],
+        "type": "object"
+      },
+      "name": "account_action"
+    },
+    {
+      "description": "List owned profiles; active by default, or choose a lifecycle state",
+      "inputSchema": {
+        "additionalProperties": false,
+        "properties": {
+          "state": {
+            "enum": [
+              "active",
+              "archived",
+              "trashed",
+              "purging",
+              "all"
+            ],
+            "type": "string"
+          }
+        },
+        "required": [],
+        "type": "object"
+      },
+      "name": "profile_list"
+    },
+    {
+      "description": "Create an isolated development profile with explicit origin scope",
+      "inputSchema": {
+        "additionalProperties": false,
+        "properties": {
+          "allowedOrigins": {
+            "items": {
+              "maxLength": 8192,
+              "minLength": 1,
+              "type": "string"
+            },
+            "maxItems": 32,
+            "minItems": 1,
+            "type": "array"
+          },
+          "name": {
+            "maxLength": 128,
+            "minLength": 1,
+            "type": "string"
+          },
+          "proxyServer": {
+            "maxLength": 2048,
+            "minLength": 1,
+            "type": "string"
+          },
+          "runtimeSettings": {
+            "additionalProperties": false,
+            "properties": {
+              "languages": {
+                "items": {
+                  "maxLength": 35,
+                  "minLength": 1,
+                  "type": "string"
+                },
+                "maxItems": 8,
+                "minItems": 1,
+                "type": "array"
+              },
+              "timezone": {
+                "maxLength": 128,
+                "minLength": 1,
+                "type": "string"
+              },
+              "userAgent": {
+                "maxLength": 1024,
+                "minLength": 1,
+                "type": "string"
+              }
+            },
+            "required": [],
+            "type": "object"
+          }
+        },
+        "required": [
+          "name",
+          "allowedOrigins"
+        ],
+        "type": "object"
+      },
+      "name": "profile_create"
+    },
+    {
+      "description": "List local versioned profile library resources",
+      "inputSchema": {
+        "additionalProperties": false,
+        "properties": {},
+        "required": [],
+        "type": "object"
+      },
+      "name": "profile_group_list"
+    },
+    {
+      "description": "Create a local profile group or configuration-only template",
+      "inputSchema": {
+        "additionalProperties": false,
+        "properties": {
+          "name": {
+            "maxLength": 128,
+            "minLength": 1,
+            "type": "string"
+          },
+          "profileIds": {
+            "items": {
+              "maxLength": 32,
+              "minLength": 1,
+              "type": "string"
+            },
+            "maxItems": 100,
+            "type": "array"
+          }
+        },
+        "required": [
+          "name",
+          "profileIds"
+        ],
+        "type": "object"
+      },
+      "name": "profile_group_create"
+    },
+    {
+      "description": "Replace a local resource using optimistic revision control",
+      "inputSchema": {
+        "additionalProperties": false,
+        "properties": {
+          "expectedRevision": {
+            "minimum": 1,
+            "type": "integer"
+          },
+          "id": {
+            "maxLength": 32,
+            "minLength": 1,
+            "type": "string"
+          },
+          "name": {
+            "maxLength": 128,
+            "minLength": 1,
+            "type": "string"
+          },
+          "profileIds": {
+            "items": {
+              "maxLength": 32,
+              "minLength": 1,
+              "type": "string"
+            },
+            "maxItems": 100,
+            "type": "array"
+          }
+        },
+        "required": [
+          "name",
+          "profileIds",
+          "id",
+          "expectedRevision"
+        ],
+        "type": "object"
+      },
+      "name": "profile_group_update"
+    },
+    {
+      "description": "Delete a local resource without deleting member profiles",
+      "inputSchema": {
+        "additionalProperties": false,
+        "properties": {
+          "expectedRevision": {
+            "minimum": 1,
+            "type": "integer"
+          },
+          "id": {
+            "maxLength": 32,
+            "minLength": 1,
+            "type": "string"
+          }
+        },
+        "required": [
+          "id",
+          "expectedRevision"
+        ],
+        "type": "object"
+      },
+      "name": "profile_group_delete"
+    },
+    {
+      "description": "List local versioned profile library resources",
+      "inputSchema": {
+        "additionalProperties": false,
+        "properties": {},
+        "required": [],
+        "type": "object"
+      },
+      "name": "profile_template_list"
+    },
+    {
+      "description": "Create a local profile group or configuration-only template",
+      "inputSchema": {
+        "additionalProperties": false,
+        "properties": {
+          "configuration": {
+            "additionalProperties": false,
+            "properties": {
+              "allowedOrigins": {
+                "items": {
+                  "maxLength": 8192,
+                  "minLength": 1,
+                  "type": "string"
+                },
+                "maxItems": 32,
+                "minItems": 1,
+                "type": "array"
+              },
+              "name": {
+                "maxLength": 128,
+                "minLength": 1,
+                "type": "string"
+              },
+              "proxyServer": {
+                "maxLength": 2048,
+                "minLength": 1,
+                "type": "string"
+              },
+              "runtimeSettings": {
+                "additionalProperties": false,
+                "properties": {
+                  "languages": {
+                    "items": {
+                      "maxLength": 35,
+                      "minLength": 1,
+                      "type": "string"
+                    },
+                    "maxItems": 8,
+                    "minItems": 1,
+                    "type": "array"
+                  },
+                  "timezone": {
+                    "maxLength": 128,
+                    "minLength": 1,
+                    "type": "string"
+                  },
+                  "userAgent": {
+                    "maxLength": 1024,
+                    "minLength": 1,
+                    "type": "string"
+                  }
+                },
+                "required": [],
+                "type": "object"
+              }
+            },
+            "required": [
+              "name",
+              "allowedOrigins"
+            ],
+            "type": "object"
+          },
+          "name": {
+            "maxLength": 128,
+            "minLength": 1,
+            "type": "string"
+          }
+        },
+        "required": [
+          "name",
+          "configuration"
+        ],
+        "type": "object"
+      },
+      "name": "profile_template_create"
+    },
+    {
+      "description": "Replace a local resource using optimistic revision control",
+      "inputSchema": {
+        "additionalProperties": false,
+        "properties": {
+          "configuration": {
+            "additionalProperties": false,
+            "properties": {
+              "allowedOrigins": {
+                "items": {
+                  "maxLength": 8192,
+                  "minLength": 1,
+                  "type": "string"
+                },
+                "maxItems": 32,
+                "minItems": 1,
+                "type": "array"
+              },
+              "name": {
+                "maxLength": 128,
+                "minLength": 1,
+                "type": "string"
+              },
+              "proxyServer": {
+                "maxLength": 2048,
+                "minLength": 1,
+                "type": "string"
+              },
+              "runtimeSettings": {
+                "additionalProperties": false,
+                "properties": {
+                  "languages": {
+                    "items": {
+                      "maxLength": 35,
+                      "minLength": 1,
+                      "type": "string"
+                    },
+                    "maxItems": 8,
+                    "minItems": 1,
+                    "type": "array"
+                  },
+                  "timezone": {
+                    "maxLength": 128,
+                    "minLength": 1,
+                    "type": "string"
+                  },
+                  "userAgent": {
+                    "maxLength": 1024,
+                    "minLength": 1,
+                    "type": "string"
+                  }
+                },
+                "required": [],
+                "type": "object"
+              }
+            },
+            "required": [
+              "name",
+              "allowedOrigins"
+            ],
+            "type": "object"
+          },
+          "expectedRevision": {
+            "minimum": 1,
+            "type": "integer"
+          },
+          "id": {
+            "maxLength": 32,
+            "minLength": 1,
+            "type": "string"
+          },
+          "name": {
+            "maxLength": 128,
+            "minLength": 1,
+            "type": "string"
+          }
+        },
+        "required": [
+          "name",
+          "configuration",
+          "id",
+          "expectedRevision"
+        ],
+        "type": "object"
+      },
+      "name": "profile_template_update"
+    },
+    {
+      "description": "Delete a local resource without deleting member profiles",
+      "inputSchema": {
+        "additionalProperties": false,
+        "properties": {
+          "expectedRevision": {
+            "minimum": 1,
+            "type": "integer"
+          },
+          "id": {
+            "maxLength": 32,
+            "minLength": 1,
+            "type": "string"
+          }
+        },
+        "required": [
+          "id",
+          "expectedRevision"
+        ],
+        "type": "object"
+      },
+      "name": "profile_template_delete"
+    },
+    {
+      "description": "Create a new isolated profile from a pinned local template revision",
+      "inputSchema": {
+        "additionalProperties": false,
+        "properties": {
+          "expectedRevision": {
+            "minimum": 1,
+            "type": "integer"
+          },
+          "id": {
+            "maxLength": 32,
+            "minLength": 1,
+            "type": "string"
+          },
+          "name": {
+            "maxLength": 128,
+            "minLength": 1,
+            "type": "string"
+          }
+        },
+        "required": [
+          "id",
+          "expectedRevision",
+          "name"
+        ],
+        "type": "object"
+      },
+      "name": "profile_template_instantiate"
+    },
+    {
+      "description": "Read immutable retained template revisions without modifying profiles",
+      "inputSchema": {
+        "additionalProperties": false,
+        "properties": {
+          "id": {
+            "maxLength": 32,
+            "minLength": 1,
+            "type": "string"
+          }
+        },
+        "required": [
+          "id"
+        ],
+        "type": "object"
+      },
+      "name": "profile_template_history"
+    },
+    {
+      "description": "Copy a retained template revision into a new current revision",
+      "inputSchema": {
+        "additionalProperties": false,
+        "properties": {
+          "expectedRevision": {
+            "minimum": 1,
+            "type": "integer"
+          },
+          "id": {
+            "maxLength": 32,
+            "minLength": 1,
+            "type": "string"
+          },
+          "sourceRevision": {
+            "minimum": 1,
+            "type": "integer"
+          }
+        },
+        "required": [
+          "id",
+          "expectedRevision",
+          "sourceRevision"
+        ],
+        "type": "object"
+      },
+      "name": "profile_template_rollback"
+    },
+    {
+      "description": "Export configurations only; cookies, credentials and local identities are excluded",
+      "inputSchema": {
+        "additionalProperties": false,
+        "properties": {
+          "profileIds": {
+            "items": {
+              "maxLength": 32,
+              "minLength": 1,
+              "type": "string"
+            },
+            "maxItems": 32,
+            "minItems": 1,
+            "type": "array"
+          }
+        },
+        "required": [
+          "profileIds"
+        ],
+        "type": "object"
+      },
+      "name": "profile_export"
+    },
+    {
+      "description": "Prevalidate and atomically create 1..32 profiles from a versioned configuration bundle",
+      "inputSchema": {
+        "additionalProperties": false,
+        "properties": {
+          "bundle": {
+            "additionalProperties": false,
+            "properties": {
+              "configurations": {
+                "items": {
+                  "additionalProperties": false,
+                  "properties": {
+                    "allowedOrigins": {
+                      "items": {
+                        "maxLength": 8192,
+                        "minLength": 1,
+                        "type": "string"
+                      },
+                      "maxItems": 32,
+                      "minItems": 1,
+                      "type": "array"
+                    },
+                    "name": {
+                      "maxLength": 128,
+                      "minLength": 1,
+                      "type": "string"
+                    },
+                    "proxyServer": {
+                      "maxLength": 2048,
+                      "minLength": 1,
+                      "type": "string"
+                    },
+                    "runtimeSettings": {
+                      "additionalProperties": false,
+                      "properties": {
+                        "languages": {
+                          "items": {
+                            "maxLength": 35,
+                            "minLength": 1,
+                            "type": "string"
+                          },
+                          "maxItems": 8,
+                          "minItems": 1,
+                          "type": "array"
+                        },
+                        "timezone": {
+                          "maxLength": 128,
+                          "minLength": 1,
+                          "type": "string"
+                        },
+                        "userAgent": {
+                          "maxLength": 1024,
+                          "minLength": 1,
+                          "type": "string"
+                        }
+                      },
+                      "required": [],
+                      "type": "object"
+                    }
+                  },
+                  "required": [
+                    "name",
+                    "allowedOrigins"
+                  ],
+                  "type": "object"
+                },
+                "maxItems": 32,
+                "minItems": 1,
+                "type": "array"
+              },
+              "format": {
+                "enum": [
+                  "awb-profile-config-v1"
+                ],
+                "type": "string"
+              }
+            },
+            "required": [
+              "format",
+              "configurations"
+            ],
+            "type": "object"
+          }
+        },
+        "required": [
+          "bundle"
+        ],
+        "type": "object"
+      },
+      "name": "profile_import"
+    },
+    {
+      "description": "Prevalidate bounded lifecycle/start/stop operations and report each result without automatic retry",
+      "inputSchema": {
+        "additionalProperties": false,
+        "properties": {
+          "onError": {
+            "enum": [
+              "stop",
+              "continue"
+            ],
+            "type": "string"
+          },
+          "operations": {
+            "items": {
+              "additionalProperties": false,
+              "properties": {
+                "arguments": {
+                  "additionalProperties": true,
+                  "properties": {},
+                  "required": [],
+                  "type": "object"
+                },
+                "command": {
+                  "maxLength": 64,
+                  "minLength": 1,
+                  "type": "string"
+                }
+              },
+              "required": [
+                "command",
+                "arguments"
+              ],
+              "type": "object"
+            },
+            "maxItems": 32,
+            "minItems": 1,
+            "type": "array"
+          },
+          "requestId": {
+            "maxLength": 32,
+            "minLength": 1,
+            "type": "string"
+          }
+        },
+        "required": [
+          "operations"
+        ],
+        "type": "object"
+      },
+      "name": "profile_batch"
+    },
+    {
+      "description": "Page durable active or archived batch receipts without replaying actions",
+      "inputSchema": {
+        "additionalProperties": false,
+        "properties": {
+          "before": {
+            "maxLength": 32,
+            "minLength": 1,
+            "type": "string"
+          },
+          "limit": {
+            "maximum": 100,
+            "minimum": 1,
+            "type": "integer"
+          },
+          "scope": {
+            "enum": [
+              "active",
+              "archived",
+              "all"
+            ],
+            "type": "string"
+          }
+        },
+        "required": [],
+        "type": "object"
+      },
+      "name": "profile_batch_list"
+    },
+    {
+      "description": "Read durable item states after disconnect or restart; no automatic replay",
+      "inputSchema": {
+        "additionalProperties": false,
+        "properties": {
+          "batchId": {
+            "maxLength": 32,
+            "minLength": 1,
+            "type": "string"
+          }
+        },
+        "required": [
+          "batchId"
+        ],
+        "type": "object"
+      },
+      "name": "profile_batch_get"
+    },
+    {
+      "description": "Compact confirmed terminal batch details while preserving request deduplication",
+      "inputSchema": {
+        "additionalProperties": false,
+        "properties": {
+          "batchId": {
+            "maxLength": 32,
+            "minLength": 1,
+            "type": "string"
+          },
+          "confirmBatchId": {
+            "maxLength": 32,
+            "minLength": 1,
+            "type": "string"
+          }
+        },
+        "required": [
+          "batchId",
+          "confirmBatchId"
+        ],
+        "type": "object"
+      },
+      "name": "profile_batch_archive"
+    },
+    {
+      "description": "Update a stopped profile using optimistic revision control",
+      "inputSchema": {
+        "additionalProperties": false,
+        "properties": {
+          "allowedOrigins": {
+            "items": {
+              "maxLength": 8192,
+              "minLength": 1,
+              "type": "string"
+            },
+            "maxItems": 32,
+            "minItems": 1,
+            "type": "array"
+          },
+          "expectedRevision": {
+            "minimum": 1,
+            "type": "integer"
+          },
+          "name": {
+            "maxLength": 128,
+            "minLength": 1,
+            "type": "string"
+          },
+          "profileId": {
+            "maxLength": 32,
+            "minLength": 1,
+            "type": "string"
+          },
+          "proxyServer": {
+            "maxLength": 2048,
+            "type": "string"
+          },
+          "runtimeSettings": {
+            "additionalProperties": false,
+            "properties": {
+              "languages": {
+                "items": {
+                  "maxLength": 35,
+                  "minLength": 1,
+                  "type": "string"
+                },
+                "maxItems": 8,
+                "minItems": 1,
+                "type": "array"
+              },
+              "timezone": {
+                "maxLength": 128,
+                "minLength": 1,
+                "type": "string"
+              },
+              "userAgent": {
+                "maxLength": 1024,
+                "minLength": 1,
+                "type": "string"
+              }
+            },
+            "required": [],
+            "type": "object"
+          }
+        },
+        "required": [
+          "profileId",
+          "expectedRevision"
+        ],
+        "type": "object"
+      },
+      "name": "profile_update"
+    },
+    {
+      "description": "Archive a stopped, unreferenced active profile without deleting its data",
+      "inputSchema": {
+        "additionalProperties": false,
+        "properties": {
+          "expectedRevision": {
+            "minimum": 1,
+            "type": "integer"
+          },
+          "profileId": {
+            "maxLength": 32,
+            "minLength": 1,
+            "type": "string"
+          }
+        },
+        "required": [
+          "profileId",
+          "expectedRevision"
+        ],
+        "type": "object"
+      },
+      "name": "profile_archive"
+    },
+    {
+      "description": "Move a stopped, unreferenced profile into the recycle bin",
+      "inputSchema": {
+        "additionalProperties": false,
+        "properties": {
+          "expectedRevision": {
+            "minimum": 1,
+            "type": "integer"
+          },
+          "profileId": {
+            "maxLength": 32,
+            "minLength": 1,
+            "type": "string"
+          }
+        },
+        "required": [
+          "profileId",
+          "expectedRevision"
+        ],
+        "type": "object"
+      },
+      "name": "profile_trash"
+    },
+    {
+      "description": "Restore an archived or recycled profile with its original identity and data",
+      "inputSchema": {
+        "additionalProperties": false,
+        "properties": {
+          "expectedRevision": {
+            "minimum": 1,
+            "type": "integer"
+          },
+          "profileId": {
+            "maxLength": 32,
+            "minLength": 1,
+            "type": "string"
+          }
+        },
+        "required": [
+          "profileId",
+          "expectedRevision"
+        ],
+        "type": "object"
+      },
+      "name": "profile_restore"
+    },
+    {
+      "description": "Permanently delete recycled data; repeat the exact profile ID to confirm",
+      "inputSchema": {
+        "additionalProperties": false,
+        "properties": {
+          "confirmProfileId": {
+            "maxLength": 32,
+            "minLength": 1,
+            "type": "string"
+          },
+          "expectedRevision": {
+            "minimum": 1,
+            "type": "integer"
+          },
+          "profileId": {
+            "maxLength": 32,
+            "minLength": 1,
+            "type": "string"
+          }
+        },
+        "required": [
+          "profileId",
+          "expectedRevision",
+          "confirmProfileId"
+        ],
+        "type": "object"
+      },
+      "name": "profile_purge"
+    },
+    {
+      "description": "Start a new owned browser process tree",
+      "inputSchema": {
+        "additionalProperties": false,
+        "properties": {
+          "headless": {
+            "type": "boolean"
+          },
+          "profileId": {
+            "maxLength": 32,
+            "minLength": 1,
+            "type": "string"
+          }
+        },
+        "required": [
+          "profileId"
+        ],
+        "type": "object"
+      },
+      "name": "browser_start"
+    },
+    {
+      "description": "Read process ownership and handshake version",
+      "inputSchema": {
+        "additionalProperties": false,
+        "properties": {
+          "profileId": {
+            "maxLength": 32,
+            "minLength": 1,
+            "type": "string"
+          }
+        },
+        "required": [
+          "profileId"
+        ],
+        "type": "object"
+      },
+      "name": "browser_status"
+    },
+    {
+      "description": "Stop only this managed process tree; no payment or lease required",
+      "inputSchema": {
+        "additionalProperties": false,
+        "properties": {
+          "profileId": {
+            "maxLength": 32,
+            "minLength": 1,
+            "type": "string"
+          }
+        },
+        "required": [
+          "profileId"
+        ],
+        "type": "object"
+      },
+      "name": "browser_stop"
+    },
+    {
+      "description": "Acquire exclusive local automatic control",
+      "inputSchema": {
+        "additionalProperties": false,
+        "properties": {
+          "owner": {
+            "maxLength": 128,
+            "minLength": 1,
+            "type": "string"
+          },
+          "profileId": {
+            "maxLength": 32,
+            "minLength": 1,
+            "type": "string"
+          },
+          "ttlMs": {
+            "maximum": 300000,
+            "minimum": 1,
+            "type": "integer"
+          }
+        },
+        "required": [
+          "profileId",
+          "owner",
+          "ttlMs"
+        ],
+        "type": "object"
+      },
+      "name": "lease_acquire"
+    },
+    {
+      "description": "Revoke prior control generation before manual takeover",
+      "inputSchema": {
+        "additionalProperties": false,
+        "properties": {
+          "profileId": {
+            "maxLength": 32,
+            "minLength": 1,
+            "type": "string"
+          }
+        },
+        "required": [
+          "profileId"
+        ],
+        "type": "object"
+      },
+      "name": "lease_revoke"
+    },
+    {
+      "description": "Navigate within the explicit profile origin scope",
+      "inputSchema": {
+        "additionalProperties": false,
+        "properties": {
+          "lease": {
+            "additionalProperties": false,
+            "properties": {
+              "generation": {
+                "minimum": 1,
+                "type": "integer"
+              },
+              "owner": {
+                "maxLength": 128,
+                "minLength": 1,
+                "type": "string"
+              },
+              "token": {
+                "maxLength": 32,
+                "minLength": 1,
+                "type": "string"
+              }
+            },
+            "required": [
+              "owner",
+              "token",
+              "generation"
+            ],
+            "type": "object"
+          },
+          "profileId": {
+            "maxLength": 32,
+            "minLength": 1,
+            "type": "string"
+          },
+          "url": {
+            "maxLength": 8192,
+            "minLength": 1,
+            "type": "string"
+          }
+        },
+        "required": [
+          "url",
+          "profileId",
+          "lease"
+        ],
+        "type": "object"
+      },
+      "name": "browser_navigate"
+    },
+    {
+      "description": "Read a bounded main-frame accessibility tree with document-bound refs",
+      "inputSchema": {
+        "additionalProperties": false,
+        "properties": {
+          "lease": {
+            "additionalProperties": false,
+            "properties": {
+              "generation": {
+                "minimum": 1,
+                "type": "integer"
+              },
+              "owner": {
+                "maxLength": 128,
+                "minLength": 1,
+                "type": "string"
+              },
+              "token": {
+                "maxLength": 32,
+                "minLength": 1,
+                "type": "string"
+              }
+            },
+            "required": [
+              "owner",
+              "token",
+              "generation"
+            ],
+            "type": "object"
+          },
+          "profileId": {
+            "maxLength": 32,
+            "minLength": 1,
+            "type": "string"
+          }
+        },
+        "required": [
+          "profileId",
+          "lease"
+        ],
+        "type": "object"
+      },
+      "name": "page_snapshot"
+    },
+    {
+      "description": "Locate exactly one CSS element in the main document",
+      "inputSchema": {
+        "additionalProperties": false,
+        "properties": {
+          "lease": {
+            "additionalProperties": false,
+            "properties": {
+              "generation": {
+                "minimum": 1,
+                "type": "integer"
+              },
+              "owner": {
+                "maxLength": 128,
+                "minLength": 1,
+                "type": "string"
+              },
+              "token": {
+                "maxLength": 32,
+                "minLength": 1,
+                "type": "string"
+              }
+            },
+            "required": [
+              "owner",
+              "token",
+              "generation"
+            ],
+            "type": "object"
+          },
+          "profileId": {
+            "maxLength": 32,
+            "minLength": 1,
+            "type": "string"
+          },
+          "selector": {
+            "maxLength": 2048,
+            "minLength": 1,
+            "type": "string"
+          }
+        },
+        "required": [
+          "selector",
+          "profileId",
+          "lease"
+        ],
+        "type": "object"
+      },
+      "name": "page_locate"
+    },
+    {
+      "description": "Find bounded visible function candidates without clicking or reading field values",
+      "inputSchema": {
+        "additionalProperties": false,
+        "properties": {
+          "lease": {
+            "additionalProperties": false,
+            "properties": {
+              "generation": {
+                "minimum": 1,
+                "type": "integer"
+              },
+              "owner": {
+                "maxLength": 128,
+                "minLength": 1,
+                "type": "string"
+              },
+              "token": {
+                "maxLength": 32,
+                "minLength": 1,
+                "type": "string"
+              }
+            },
+            "required": [
+              "owner",
+              "token",
+              "generation"
+            ],
+            "type": "object"
+          },
+          "limit": {
+            "maximum": 20,
+            "minimum": 1,
+            "type": "integer"
+          },
+          "profileId": {
+            "maxLength": 32,
+            "minLength": 1,
+            "type": "string"
+          },
+          "query": {
+            "maxLength": 128,
+            "type": "string"
+          },
+          "role": {
+            "maxLength": 64,
+            "minLength": 1,
+            "type": "string"
+          }
+        },
+        "required": [
+          "profileId",
+          "lease"
+        ],
+        "type": "object"
+      },
+      "name": "page_discover"
+    },
+    {
+      "description": "Inspect a unique element and create action drafts without reading field values",
+      "inputSchema": {
+        "additionalProperties": false,
+        "properties": {
+          "highlight": {
+            "type": "boolean"
+          },
+          "lease": {
+            "additionalProperties": false,
+            "properties": {
+              "generation": {
+                "minimum": 1,
+                "type": "integer"
+              },
+              "owner": {
+                "maxLength": 128,
+                "minLength": 1,
+                "type": "string"
+              },
+              "token": {
+                "maxLength": 32,
+                "minLength": 1,
+                "type": "string"
+              }
+            },
+            "required": [
+              "owner",
+              "token",
+              "generation"
+            ],
+            "type": "object"
+          },
+          "profileId": {
+            "maxLength": 32,
+            "minLength": 1,
+            "type": "string"
+          },
+          "selector": {
+            "maxLength": 2048,
+            "minLength": 1,
+            "type": "string"
+          }
+        },
+        "required": [
+          "selector",
+          "profileId",
+          "lease"
+        ],
+        "type": "object"
+      },
+      "name": "page_inspect"
+    },
+    {
+      "description": "Observe current action conditions without scrolling or dispatching page actions",
+      "inputSchema": {
+        "additionalProperties": false,
+        "properties": {
+          "action": {
+            "enum": [
+              "click",
+              "fill",
+              "select"
+            ],
+            "type": "string"
+          },
+          "lease": {
+            "additionalProperties": false,
+            "properties": {
+              "generation": {
+                "minimum": 1,
+                "type": "integer"
+              },
+              "owner": {
+                "maxLength": 128,
+                "minLength": 1,
+                "type": "string"
+              },
+              "token": {
+                "maxLength": 32,
+                "minLength": 1,
+                "type": "string"
+              }
+            },
+            "required": [
+              "owner",
+              "token",
+              "generation"
+            ],
+            "type": "object"
+          },
+          "profileId": {
+            "maxLength": 32,
+            "minLength": 1,
+            "type": "string"
+          },
+          "ref": {
+            "maxLength": 64,
+            "minLength": 1,
+            "type": "string"
+          }
+        },
+        "required": [
+          "ref",
+          "action",
+          "profileId",
+          "lease"
+        ],
+        "type": "object"
+      },
+      "name": "page_preview"
+    },
+    {
+      "description": "Clear the managed page debug highlight without changing page styles",
+      "inputSchema": {
+        "additionalProperties": false,
+        "properties": {
+          "lease": {
+            "additionalProperties": false,
+            "properties": {
+              "generation": {
+                "minimum": 1,
+                "type": "integer"
+              },
+              "owner": {
+                "maxLength": 128,
+                "minLength": 1,
+                "type": "string"
+              },
+              "token": {
+                "maxLength": 32,
+                "minLength": 1,
+                "type": "string"
+              }
+            },
+            "required": [
+              "owner",
+              "token",
+              "generation"
+            ],
+            "type": "object"
+          },
+          "profileId": {
+            "maxLength": 32,
+            "minLength": 1,
+            "type": "string"
+          }
+        },
+        "required": [
+          "profileId",
+          "lease"
+        ],
+        "type": "object"
+      },
+      "name": "page_clear_highlight"
+    },
+    {
+      "description": "Select an element with Chromium native overlay; selection click is intercepted",
+      "inputSchema": {
+        "additionalProperties": false,
+        "properties": {
+          "lease": {
+            "additionalProperties": false,
+            "properties": {
+              "generation": {
+                "minimum": 1,
+                "type": "integer"
+              },
+              "owner": {
+                "maxLength": 128,
+                "minLength": 1,
+                "type": "string"
+              },
+              "token": {
+                "maxLength": 32,
+                "minLength": 1,
+                "type": "string"
+              }
+            },
+            "required": [
+              "owner",
+              "token",
+              "generation"
+            ],
+            "type": "object"
+          },
+          "profileId": {
+            "maxLength": 32,
+            "minLength": 1,
+            "type": "string"
+          }
+        },
+        "required": [
+          "profileId",
+          "lease"
+        ],
+        "type": "object"
+      },
+      "name": "page_pick_start"
+    },
+    {
+      "description": "Read selected main-document element and unique CSS candidates without clicking",
+      "inputSchema": {
+        "additionalProperties": false,
+        "properties": {
+          "lease": {
+            "additionalProperties": false,
+            "properties": {
+              "generation": {
+                "minimum": 1,
+                "type": "integer"
+              },
+              "owner": {
+                "maxLength": 128,
+                "minLength": 1,
+                "type": "string"
+              },
+              "token": {
+                "maxLength": 32,
+                "minLength": 1,
+                "type": "string"
+              }
+            },
+            "required": [
+              "owner",
+              "token",
+              "generation"
+            ],
+            "type": "object"
+          },
+          "profileId": {
+            "maxLength": 32,
+            "minLength": 1,
+            "type": "string"
+          }
+        },
+        "required": [
+          "profileId",
+          "lease"
+        ],
+        "type": "object"
+      },
+      "name": "page_pick_read"
+    },
+    {
+      "description": "Stop element selection without replaying any click; no lease required",
+      "inputSchema": {
+        "additionalProperties": false,
+        "properties": {
+          "profileId": {
+            "maxLength": 32,
+            "minLength": 1,
+            "type": "string"
+          }
+        },
+        "required": [
+          "profileId"
+        ],
+        "type": "object"
+      },
+      "name": "page_pick_stop"
+    },
+    {
+      "description": "Fill an input without echoing or logging its value",
+      "inputSchema": {
+        "additionalProperties": false,
+        "properties": {
+          "lease": {
+            "additionalProperties": false,
+            "properties": {
+              "generation": {
+                "minimum": 1,
+                "type": "integer"
+              },
+              "owner": {
+                "maxLength": 128,
+                "minLength": 1,
+                "type": "string"
+              },
+              "token": {
+                "maxLength": 32,
+                "minLength": 1,
+                "type": "string"
+              }
+            },
+            "required": [
+              "owner",
+              "token",
+              "generation"
+            ],
+            "type": "object"
+          },
+          "profileId": {
+            "maxLength": 32,
+            "minLength": 1,
+            "type": "string"
+          },
+          "ref": {
+            "maxLength": 64,
+            "minLength": 1,
+            "type": "string"
+          },
+          "value": {
+            "maxLength": 65536,
+            "type": "string"
+          }
+        },
+        "required": [
+          "ref",
+          "value",
+          "profileId",
+          "lease"
+        ],
+        "type": "object"
+      },
+      "name": "page_fill"
+    },
+    {
+      "description": "Bind one bounded local file to a unique file input without reading its contents",
+      "inputSchema": {
+        "additionalProperties": false,
+        "properties": {
+          "lease": {
+            "additionalProperties": false,
+            "properties": {
+              "generation": {
+                "minimum": 1,
+                "type": "integer"
+              },
+              "owner": {
+                "maxLength": 128,
+                "minLength": 1,
+                "type": "string"
+              },
+              "token": {
+                "maxLength": 32,
+                "minLength": 1,
+                "type": "string"
+              }
+            },
+            "required": [
+              "owner",
+              "token",
+              "generation"
+            ],
+            "type": "object"
+          },
+          "path": {
+            "maxLength": 32768,
+            "minLength": 1,
+            "type": "string"
+          },
+          "profileId": {
+            "maxLength": 32,
+            "minLength": 1,
+            "type": "string"
+          },
+          "ref": {
+            "maxLength": 64,
+            "minLength": 1,
+            "type": "string"
+          }
+        },
+        "required": [
+          "ref",
+          "path",
+          "profileId",
+          "lease"
+        ],
+        "type": "object"
+      },
+      "name": "page_upload"
+    },
+    {
+      "description": "Configure a managed download directory for the current page",
+      "inputSchema": {
+        "additionalProperties": false,
+        "properties": {
+          "directory": {
+            "maxLength": 32768,
+            "minLength": 1,
+            "type": "string"
+          },
+          "lease": {
+            "additionalProperties": false,
+            "properties": {
+              "generation": {
+                "minimum": 1,
+                "type": "integer"
+              },
+              "owner": {
+                "maxLength": 128,
+                "minLength": 1,
+                "type": "string"
+              },
+              "token": {
+                "maxLength": 32,
+                "minLength": 1,
+                "type": "string"
+              }
+            },
+            "required": [
+              "owner",
+              "token",
+              "generation"
+            ],
+            "type": "object"
+          },
+          "profileId": {
+            "maxLength": 32,
+            "minLength": 1,
+            "type": "string"
+          }
+        },
+        "required": [
+          "directory",
+          "profileId",
+          "lease"
+        ],
+        "type": "object"
+      },
+      "name": "page_download_config"
+    },
+    {
+      "description": "Wait for a unique tracked download completion event and verify its ordinary file",
+      "inputSchema": {
+        "additionalProperties": false,
+        "properties": {
+          "fileName": {
+            "maxLength": 255,
+            "minLength": 1,
+            "type": "string"
+          },
+          "lease": {
+            "additionalProperties": false,
+            "properties": {
+              "generation": {
+                "minimum": 1,
+                "type": "integer"
+              },
+              "owner": {
+                "maxLength": 128,
+                "minLength": 1,
+                "type": "string"
+              },
+              "token": {
+                "maxLength": 32,
+                "minLength": 1,
+                "type": "string"
+              }
+            },
+            "required": [
+              "owner",
+              "token",
+              "generation"
+            ],
+            "type": "object"
+          },
+          "profileId": {
+            "maxLength": 32,
+            "minLength": 1,
+            "type": "string"
+          },
+          "timeoutMs": {
+            "maximum": 10000,
+            "minimum": 1,
+            "type": "integer"
+          }
+        },
+        "required": [
+          "fileName",
+          "timeoutMs",
+          "profileId",
+          "lease"
+        ],
+        "type": "object"
+      },
+      "name": "page_download_wait"
+    },
+    {
+      "description": "Fill using an origin/profile scoped SecretRef without returning the value",
+      "inputSchema": {
+        "additionalProperties": false,
+        "properties": {
+          "credentialId": {
+            "maxLength": 32,
+            "minLength": 1,
+            "type": "string"
+          },
+          "lease": {
+            "additionalProperties": false,
+            "properties": {
+              "generation": {
+                "minimum": 1,
+                "type": "integer"
+              },
+              "owner": {
+                "maxLength": 128,
+                "minLength": 1,
+                "type": "string"
+              },
+              "token": {
+                "maxLength": 32,
+                "minLength": 1,
+                "type": "string"
+              }
+            },
+            "required": [
+              "owner",
+              "token",
+              "generation"
+            ],
+            "type": "object"
+          },
+          "profileId": {
+            "maxLength": 32,
+            "minLength": 1,
+            "type": "string"
+          },
+          "ref": {
+            "maxLength": 64,
+            "minLength": 1,
+            "type": "string"
+          }
+        },
+        "required": [
+          "ref",
+          "credentialId",
+          "profileId",
+          "lease"
+        ],
+        "type": "object"
+      },
+      "name": "page_fill_secret"
+    },
+    {
+      "description": "Dispatch click; business success must be asserted separately",
+      "inputSchema": {
+        "additionalProperties": false,
+        "properties": {
+          "lease": {
+            "additionalProperties": false,
+            "properties": {
+              "generation": {
+                "minimum": 1,
+                "type": "integer"
+              },
+              "owner": {
+                "maxLength": 128,
+                "minLength": 1,
+                "type": "string"
+              },
+              "token": {
+                "maxLength": 32,
+                "minLength": 1,
+                "type": "string"
+              }
+            },
+            "required": [
+              "owner",
+              "token",
+              "generation"
+            ],
+            "type": "object"
+          },
+          "profileId": {
+            "maxLength": 32,
+            "minLength": 1,
+            "type": "string"
+          },
+          "ref": {
+            "maxLength": 64,
+            "minLength": 1,
+            "type": "string"
+          }
+        },
+        "required": [
+          "ref",
+          "profileId",
+          "lease"
+        ],
+        "type": "object"
+      },
+      "name": "page_click"
+    },
+    {
+      "description": "Select exact, unambiguous native option values without echoing them",
+      "inputSchema": {
+        "additionalProperties": false,
+        "properties": {
+          "lease": {
+            "additionalProperties": false,
+            "properties": {
+              "generation": {
+                "minimum": 1,
+                "type": "integer"
+              },
+              "owner": {
+                "maxLength": 128,
+                "minLength": 1,
+                "type": "string"
+              },
+              "token": {
+                "maxLength": 32,
+                "minLength": 1,
+                "type": "string"
+              }
+            },
+            "required": [
+              "owner",
+              "token",
+              "generation"
+            ],
+            "type": "object"
+          },
+          "profileId": {
+            "maxLength": 32,
+            "minLength": 1,
+            "type": "string"
+          },
+          "ref": {
+            "maxLength": 64,
+            "minLength": 1,
+            "type": "string"
+          },
+          "values": {
+            "items": {
+              "maxLength": 4096,
+              "type": "string"
+            },
+            "maxItems": 32,
+            "minItems": 0,
+            "type": "array"
+          }
+        },
+        "required": [
+          "ref",
+          "values",
+          "profileId",
+          "lease"
+        ],
+        "type": "object"
+      },
+      "name": "page_select"
+    },
+    {
+      "description": "Read bounded element text for assertions",
+      "inputSchema": {
+        "additionalProperties": false,
+        "properties": {
+          "lease": {
+            "additionalProperties": false,
+            "properties": {
+              "generation": {
+                "minimum": 1,
+                "type": "integer"
+              },
+              "owner": {
+                "maxLength": 128,
+                "minLength": 1,
+                "type": "string"
+              },
+              "token": {
+                "maxLength": 32,
+                "minLength": 1,
+                "type": "string"
+              }
+            },
+            "required": [
+              "owner",
+              "token",
+              "generation"
+            ],
+            "type": "object"
+          },
+          "profileId": {
+            "maxLength": 32,
+            "minLength": 1,
+            "type": "string"
+          },
+          "ref": {
+            "maxLength": 64,
+            "minLength": 1,
+            "type": "string"
+          }
+        },
+        "required": [
+          "ref",
+          "profileId",
+          "lease"
+        ],
+        "type": "object"
+      },
+      "name": "page_text"
+    },
+    {
+      "description": "Retry read-only observation until exact text matches",
+      "inputSchema": {
+        "additionalProperties": false,
+        "properties": {
+          "expected": {
+            "maxLength": 16384,
+            "type": "string"
+          },
+          "lease": {
+            "additionalProperties": false,
+            "properties": {
+              "generation": {
+                "minimum": 1,
+                "type": "integer"
+              },
+              "owner": {
+                "maxLength": 128,
+                "minLength": 1,
+                "type": "string"
+              },
+              "token": {
+                "maxLength": 32,
+                "minLength": 1,
+                "type": "string"
+              }
+            },
+            "required": [
+              "owner",
+              "token",
+              "generation"
+            ],
+            "type": "object"
+          },
+          "profileId": {
+            "maxLength": 32,
+            "minLength": 1,
+            "type": "string"
+          },
+          "selector": {
+            "maxLength": 2048,
+            "minLength": 1,
+            "type": "string"
+          },
+          "timeoutMs": {
+            "maximum": 10000,
+            "minimum": 1,
+            "type": "integer"
+          }
+        },
+        "required": [
+          "selector",
+          "expected",
+          "timeoutMs",
+          "profileId",
+          "lease"
+        ],
+        "type": "object"
+      },
+      "name": "page_wait_text"
+    },
+    {
+      "description": "Assert URL, text, element count or control state with structured evidence",
+      "inputSchema": {
+        "additionalProperties": false,
+        "properties": {
+          "assertion": {
+            "additionalProperties": true,
+            "properties": {},
+            "required": [],
+            "type": "object"
+          },
+          "lease": {
+            "additionalProperties": false,
+            "properties": {
+              "generation": {
+                "minimum": 1,
+                "type": "integer"
+              },
+              "owner": {
+                "maxLength": 128,
+                "minLength": 1,
+                "type": "string"
+              },
+              "token": {
+                "maxLength": 32,
+                "minLength": 1,
+                "type": "string"
+              }
+            },
+            "required": [
+              "owner",
+              "token",
+              "generation"
+            ],
+            "type": "object"
+          },
+          "profileId": {
+            "maxLength": 32,
+            "minLength": 1,
+            "type": "string"
+          }
+        },
+        "required": [
+          "assertion",
+          "profileId",
+          "lease"
+        ],
+        "type": "object"
+      },
+      "name": "page_assert"
+    },
+    {
+      "description": "Capture authorized page as PNG base64",
+      "inputSchema": {
+        "additionalProperties": false,
+        "properties": {
+          "lease": {
+            "additionalProperties": false,
+            "properties": {
+              "generation": {
+                "minimum": 1,
+                "type": "integer"
+              },
+              "owner": {
+                "maxLength": 128,
+                "minLength": 1,
+                "type": "string"
+              },
+              "token": {
+                "maxLength": 32,
+                "minLength": 1,
+                "type": "string"
+              }
+            },
+            "required": [
+              "owner",
+              "token",
+              "generation"
+            ],
+            "type": "object"
+          },
+          "profileId": {
+            "maxLength": 32,
+            "minLength": 1,
+            "type": "string"
+          }
+        },
+        "required": [
+          "profileId",
+          "lease"
+        ],
+        "type": "object"
+      },
+      "name": "page_screenshot"
+    },
+    {
+      "description": "List managed pages and adopt authorized popups of managed pages",
+      "inputSchema": {
+        "additionalProperties": false,
+        "properties": {
+          "lease": {
+            "additionalProperties": false,
+            "properties": {
+              "generation": {
+                "minimum": 1,
+                "type": "integer"
+              },
+              "owner": {
+                "maxLength": 128,
+                "minLength": 1,
+                "type": "string"
+              },
+              "token": {
+                "maxLength": 32,
+                "minLength": 1,
+                "type": "string"
+              }
+            },
+            "required": [
+              "owner",
+              "token",
+              "generation"
+            ],
+            "type": "object"
+          },
+          "profileId": {
+            "maxLength": 32,
+            "minLength": 1,
+            "type": "string"
+          }
+        },
+        "required": [
+          "profileId",
+          "lease"
+        ],
+        "type": "object"
+      },
+      "name": "page_list"
+    },
+    {
+      "description": "Open and select a managed page inside the allowed origin scope",
+      "inputSchema": {
+        "additionalProperties": false,
+        "properties": {
+          "lease": {
+            "additionalProperties": false,
+            "properties": {
+              "generation": {
+                "minimum": 1,
+                "type": "integer"
+              },
+              "owner": {
+                "maxLength": 128,
+                "minLength": 1,
+                "type": "string"
+              },
+              "token": {
+                "maxLength": 32,
+                "minLength": 1,
+                "type": "string"
+              }
+            },
+            "required": [
+              "owner",
+              "token",
+              "generation"
+            ],
+            "type": "object"
+          },
+          "profileId": {
+            "maxLength": 32,
+            "minLength": 1,
+            "type": "string"
+          },
+          "url": {
+            "maxLength": 8192,
+            "minLength": 1,
+            "type": "string"
+          }
+        },
+        "required": [
+          "url",
+          "profileId",
+          "lease"
+        ],
+        "type": "object"
+      },
+      "name": "page_open"
+    },
+    {
+      "description": "Select a managed page; old element references are invalidated",
+      "inputSchema": {
+        "additionalProperties": false,
+        "properties": {
+          "lease": {
+            "additionalProperties": false,
+            "properties": {
+              "generation": {
+                "minimum": 1,
+                "type": "integer"
+              },
+              "owner": {
+                "maxLength": 128,
+                "minLength": 1,
+                "type": "string"
+              },
+              "token": {
+                "maxLength": 32,
+                "minLength": 1,
+                "type": "string"
+              }
+            },
+            "required": [
+              "owner",
+              "token",
+              "generation"
+            ],
+            "type": "object"
+          },
+          "pageId": {
+            "maxLength": 32,
+            "minLength": 1,
+            "type": "string"
+          },
+          "profileId": {
+            "maxLength": 32,
+            "minLength": 1,
+            "type": "string"
+          }
+        },
+        "required": [
+          "pageId",
+          "profileId",
+          "lease"
+        ],
+        "type": "object"
+      },
+      "name": "page_switch"
+    },
+    {
+      "description": "Close one managed page without stopping the owned browser",
+      "inputSchema": {
+        "additionalProperties": false,
+        "properties": {
+          "lease": {
+            "additionalProperties": false,
+            "properties": {
+              "generation": {
+                "minimum": 1,
+                "type": "integer"
+              },
+              "owner": {
+                "maxLength": 128,
+                "minLength": 1,
+                "type": "string"
+              },
+              "token": {
+                "maxLength": 32,
+                "minLength": 1,
+                "type": "string"
+              }
+            },
+            "required": [
+              "owner",
+              "token",
+              "generation"
+            ],
+            "type": "object"
+          },
+          "pageId": {
+            "maxLength": 32,
+            "minLength": 1,
+            "type": "string"
+          },
+          "profileId": {
+            "maxLength": 32,
+            "minLength": 1,
+            "type": "string"
+          }
+        },
+        "required": [
+          "pageId",
+          "profileId",
+          "lease"
+        ],
+        "type": "object"
+      },
+      "name": "page_close"
+    },
+    {
+      "description": "Poll bounded metadata events with explicit cursor gaps; no live subscription",
+      "inputSchema": {
+        "additionalProperties": false,
+        "properties": {
+          "after": {
+            "minimum": 0,
+            "type": "integer"
+          },
+          "eventEpoch": {
+            "maxLength": 32,
+            "minLength": 1,
+            "type": "string"
+          },
+          "lease": {
+            "additionalProperties": false,
+            "properties": {
+              "generation": {
+                "minimum": 1,
+                "type": "integer"
+              },
+              "owner": {
+                "maxLength": 128,
+                "minLength": 1,
+                "type": "string"
+              },
+              "token": {
+                "maxLength": 32,
+                "minLength": 1,
+                "type": "string"
+              }
+            },
+            "required": [
+              "owner",
+              "token",
+              "generation"
+            ],
+            "type": "object"
+          },
+          "limit": {
+            "maximum": 100,
+            "minimum": 1,
+            "type": "integer"
+          },
+          "profileId": {
+            "maxLength": 32,
+            "minLength": 1,
+            "type": "string"
+          }
+        },
+        "required": [
+          "profileId",
+          "lease"
+        ],
+        "type": "object"
+      },
+      "name": "browser_events"
+    },
+    {
+      "description": "Explicitly reconnect the same owned process without replaying page actions",
+      "inputSchema": {
+        "additionalProperties": false,
+        "properties": {
+          "lease": {
+            "additionalProperties": false,
+            "properties": {
+              "generation": {
+                "minimum": 1,
+                "type": "integer"
+              },
+              "owner": {
+                "maxLength": 128,
+                "minLength": 1,
+                "type": "string"
+              },
+              "token": {
+                "maxLength": 32,
+                "minLength": 1,
+                "type": "string"
+              }
+            },
+            "required": [
+              "owner",
+              "token",
+              "generation"
+            ],
+            "type": "object"
+          },
+          "profileId": {
+            "maxLength": 32,
+            "minLength": 1,
+            "type": "string"
+          }
+        },
+        "required": [
+          "profileId",
+          "lease"
+        ],
+        "type": "object"
+      },
+      "name": "browser_reconnect"
+    },
+    {
+      "description": "Start bounded console, exception and network metadata observation before actions",
+      "inputSchema": {
+        "additionalProperties": false,
+        "properties": {
+          "lease": {
+            "additionalProperties": false,
+            "properties": {
+              "generation": {
+                "minimum": 1,
+                "type": "integer"
+              },
+              "owner": {
+                "maxLength": 128,
+                "minLength": 1,
+                "type": "string"
+              },
+              "token": {
+                "maxLength": 32,
+                "minLength": 1,
+                "type": "string"
+              }
+            },
+            "required": [
+              "owner",
+              "token",
+              "generation"
+            ],
+            "type": "object"
+          },
+          "profileId": {
+            "maxLength": 32,
+            "minLength": 1,
+            "type": "string"
+          },
+          "routePaths": {
+            "items": {
+              "maxLength": 512,
+              "minLength": 1,
+              "type": "string"
+            },
+            "maxItems": 32,
+            "minItems": 0,
+            "type": "array"
+          }
+        },
+        "required": [
+          "profileId",
+          "lease"
+        ],
+        "type": "object"
+      },
+      "name": "browser_diagnostics_start"
+    },
+    {
+      "description": "Read metadata diagnostics and step associations; payloads are omitted",
+      "inputSchema": {
+        "additionalProperties": false,
+        "properties": {
+          "after": {
+            "minimum": 0,
+            "type": "integer"
+          },
+          "epoch": {
+            "maxLength": 32,
+            "minLength": 1,
+            "type": "string"
+          },
+          "lease": {
+            "additionalProperties": false,
+            "properties": {
+              "generation": {
+                "minimum": 1,
+                "type": "integer"
+              },
+              "owner": {
+                "maxLength": 128,
+                "minLength": 1,
+                "type": "string"
+              },
+              "token": {
+                "maxLength": 32,
+                "minLength": 1,
+                "type": "string"
+              }
+            },
+            "required": [
+              "owner",
+              "token",
+              "generation"
+            ],
+            "type": "object"
+          },
+          "limit": {
+            "maximum": 100,
+            "minimum": 1,
+            "type": "integer"
+          },
+          "profileId": {
+            "maxLength": 32,
+            "minLength": 1,
+            "type": "string"
+          }
+        },
+        "required": [
+          "profileId",
+          "lease"
+        ],
+        "type": "object"
+      },
+      "name": "browser_diagnostics_read"
+    },
+    {
+      "description": "Stop collecting diagnostics and retain the bounded in-memory records",
+      "inputSchema": {
+        "additionalProperties": false,
+        "properties": {
+          "lease": {
+            "additionalProperties": false,
+            "properties": {
+              "generation": {
+                "minimum": 1,
+                "type": "integer"
+              },
+              "owner": {
+                "maxLength": 128,
+                "minLength": 1,
+                "type": "string"
+              },
+              "token": {
+                "maxLength": 32,
+                "minLength": 1,
+                "type": "string"
+              }
+            },
+            "required": [
+              "owner",
+              "token",
+              "generation"
+            ],
+            "type": "object"
+          },
+          "profileId": {
+            "maxLength": 32,
+            "minLength": 1,
+            "type": "string"
+          }
+        },
+        "required": [
+          "profileId",
+          "lease"
+        ],
+        "type": "object"
+      },
+      "name": "browser_diagnostics_stop"
+    },
+    {
+      "description": "Observe main-document actions as parameterized metadata; no field values",
+      "inputSchema": {
+        "additionalProperties": false,
+        "properties": {
+          "lease": {
+            "additionalProperties": false,
+            "properties": {
+              "generation": {
+                "minimum": 1,
+                "type": "integer"
+              },
+              "owner": {
+                "maxLength": 128,
+                "minLength": 1,
+                "type": "string"
+              },
+              "token": {
+                "maxLength": 32,
+                "minLength": 1,
+                "type": "string"
+              }
+            },
+            "required": [
+              "owner",
+              "token",
+              "generation"
+            ],
+            "type": "object"
+          },
+          "profileId": {
+            "maxLength": 32,
+            "minLength": 1,
+            "type": "string"
+          }
+        },
+        "required": [
+          "profileId",
+          "lease"
+        ],
+        "type": "object"
+      },
+      "name": "recorder_start"
+    },
+    {
+      "description": "Read bounded recording events and an unvalidated draft; no page actions",
+      "inputSchema": {
+        "additionalProperties": false,
+        "properties": {
+          "lease": {
+            "additionalProperties": false,
+            "properties": {
+              "generation": {
+                "minimum": 1,
+                "type": "integer"
+              },
+              "owner": {
+                "maxLength": 128,
+                "minLength": 1,
+                "type": "string"
+              },
+              "token": {
+                "maxLength": 32,
+                "minLength": 1,
+                "type": "string"
+              }
+            },
+            "required": [
+              "owner",
+              "token",
+              "generation"
+            ],
+            "type": "object"
+          },
+          "profileId": {
+            "maxLength": 32,
+            "minLength": 1,
+            "type": "string"
+          }
+        },
+        "required": [
+          "profileId",
+          "lease"
+        ],
+        "type": "object"
+      },
+      "name": "recorder_read"
+    },
+    {
+      "description": "Pause, resume or stop and detach the main-document recorder",
+      "inputSchema": {
+        "additionalProperties": false,
+        "properties": {
+          "lease": {
+            "additionalProperties": false,
+            "properties": {
+              "generation": {
+                "minimum": 1,
+                "type": "integer"
+              },
+              "owner": {
+                "maxLength": 128,
+                "minLength": 1,
+                "type": "string"
+              },
+              "token": {
+                "maxLength": 32,
+                "minLength": 1,
+                "type": "string"
+              }
+            },
+            "required": [
+              "owner",
+              "token",
+              "generation"
+            ],
+            "type": "object"
+          },
+          "operation": {
+            "enum": [
+              "pause",
+              "resume",
+              "stop"
+            ],
+            "type": "string"
+          },
+          "profileId": {
+            "maxLength": 32,
+            "minLength": 1,
+            "type": "string"
+          }
+        },
+        "required": [
+          "operation",
+          "profileId",
+          "lease"
+        ],
+        "type": "object"
+      },
+      "name": "recorder_control"
+    },
+    {
+      "description": "Review one selector replacement bound to the exact source hash; never publish or replay",
+      "inputSchema": {
+        "additionalProperties": false,
+        "properties": {
+          "definition": {
+            "additionalProperties": true,
+            "properties": {},
+            "required": [],
+            "type": "object"
+          },
+          "expectedSha256": {
+            "maxLength": 64,
+            "minLength": 1,
+            "type": "string"
+          },
+          "flow": {
+            "maxLength": 64,
+            "type": "string"
+          },
+          "lease": {
+            "additionalProperties": false,
+            "properties": {
+              "generation": {
+                "minimum": 1,
+                "type": "integer"
+              },
+              "owner": {
+                "maxLength": 128,
+                "minLength": 1,
+                "type": "string"
+              },
+              "token": {
+                "maxLength": 32,
+                "minLength": 1,
+                "type": "string"
+              }
+            },
+            "required": [
+              "owner",
+              "token",
+              "generation"
+            ],
+            "type": "object"
+          },
+          "profileId": {
+            "maxLength": 32,
+            "minLength": 1,
+            "type": "string"
+          },
+          "selector": {
+            "maxLength": 2048,
+            "minLength": 1,
+            "type": "string"
+          },
+          "stepId": {
+            "maxLength": 64,
+            "minLength": 1,
+            "type": "string"
+          }
+        },
+        "required": [
+          "definition",
+          "expectedSha256",
+          "stepId",
+          "selector",
+          "profileId",
+          "lease"
+        ],
+        "type": "object"
+      },
+      "name": "workflow_repair_draft"
+    },
+    {
+      "description": "Read public main-document scalar or bounded string-array data using an explicit Schema dialect",
+      "inputSchema": {
+        "additionalProperties": false,
+        "properties": {
+          "bindings": {
+            "additionalProperties": true,
+            "properties": {},
+            "required": [],
+            "type": "object"
+          },
+          "lease": {
+            "additionalProperties": false,
+            "properties": {
+              "generation": {
+                "minimum": 1,
+                "type": "integer"
+              },
+              "owner": {
+                "maxLength": 128,
+                "minLength": 1,
+                "type": "string"
+              },
+              "token": {
+                "maxLength": 32,
+                "minLength": 1,
+                "type": "string"
+              }
+            },
+            "required": [
+              "owner",
+              "token",
+              "generation"
+            ],
+            "type": "object"
+          },
+          "profileId": {
+            "maxLength": 32,
+            "minLength": 1,
+            "type": "string"
+          },
+          "schema": {
+            "additionalProperties": true,
+            "properties": {},
+            "required": [],
+            "type": "object"
+          }
+        },
+        "required": [
+          "schema",
+          "bindings",
+          "profileId",
+          "lease"
+        ],
+        "type": "object"
+      },
+      "name": "page_extract"
+    },
+    {
+      "description": "Prevalidate and execute ordered actions; unknown outcomes force a stop without replay",
+      "inputSchema": {
+        "additionalProperties": false,
+        "properties": {
+          "actions": {
+            "items": {
+              "additionalProperties": true,
+              "properties": {},
+              "required": [],
+              "type": "object"
+            },
+            "maxItems": 16,
+            "minItems": 1,
+            "type": "array"
+          },
+          "lease": {
+            "additionalProperties": false,
+            "properties": {
+              "generation": {
+                "minimum": 1,
+                "type": "integer"
+              },
+              "owner": {
+                "maxLength": 128,
+                "minLength": 1,
+                "type": "string"
+              },
+              "token": {
+                "maxLength": 32,
+                "minLength": 1,
+                "type": "string"
+              }
+            },
+            "required": [
+              "owner",
+              "token",
+              "generation"
+            ],
+            "type": "object"
+          },
+          "onError": {
+            "enum": [
+              "stop",
+              "continue"
+            ],
+            "type": "string"
+          },
+          "profileId": {
+            "maxLength": 32,
+            "minLength": 1,
+            "type": "string"
+          }
+        },
+        "required": [
+          "actions",
+          "profileId",
+          "lease"
+        ],
+        "type": "object"
+      },
+      "name": "page_batch"
+    },
+    {
+      "description": "Validate bounded workflow DSL, graph, input types, capabilities and optional input",
+      "inputSchema": {
+        "additionalProperties": false,
+        "properties": {
+          "definition": {
+            "additionalProperties": true,
+            "properties": {},
+            "required": [],
+            "type": "object"
+          },
+          "input": {
+            "additionalProperties": true,
+            "properties": {},
+            "required": [],
+            "type": "object"
+          }
+        },
+        "required": [
+          "definition"
+        ],
+        "type": "object"
+      },
+      "name": "workflow_validate"
+    },
+    {
+      "description": "Publish a validated immutable workflow version with its SHA-256",
+      "inputSchema": {
+        "additionalProperties": false,
+        "properties": {
+          "definition": {
+            "additionalProperties": true,
+            "properties": {},
+            "required": [],
+            "type": "object"
+          }
+        },
+        "required": [
+          "definition"
+        ],
+        "type": "object"
+      },
+      "name": "workflow_publish"
+    },
+    {
+      "description": "List local immutable workflow versions",
+      "inputSchema": {
+        "additionalProperties": false,
+        "properties": {},
+        "required": [],
+        "type": "object"
+      },
+      "name": "workflow_list"
+    },
+    {
+      "description": "Read an owned published workflow definition",
+      "inputSchema": {
+        "additionalProperties": false,
+        "properties": {
+          "workflowId": {
+            "maxLength": 32,
+            "minLength": 1,
+            "type": "string"
+          }
+        },
+        "required": [
+          "workflowId"
+        ],
+        "type": "object"
+      },
+      "name": "workflow_get"
+    },
+    {
+      "description": "Start a fixed workflow version asynchronously; disconnect does not cancel it",
+      "inputSchema": {
+        "additionalProperties": false,
+        "properties": {
+          "debug": {
+            "additionalProperties": true,
+            "properties": {},
+            "required": [],
+            "type": "object"
+          },
+          "input": {
+            "additionalProperties": true,
+            "properties": {},
+            "required": [],
+            "type": "object"
+          },
+          "lease": {
+            "additionalProperties": false,
+            "properties": {
+              "generation": {
+                "minimum": 1,
+                "type": "integer"
+              },
+              "owner": {
+                "maxLength": 128,
+                "minLength": 1,
+                "type": "string"
+              },
+              "token": {
+                "maxLength": 32,
+                "minLength": 1,
+                "type": "string"
+              }
+            },
+            "required": [
+              "owner",
+              "token",
+              "generation"
+            ],
+            "type": "object"
+          },
+          "profileId": {
+            "maxLength": 32,
+            "minLength": 1,
+            "type": "string"
+          },
+          "workflowId": {
+            "maxLength": 32,
+            "minLength": 1,
+            "type": "string"
+          }
+        },
+        "required": [
+          "workflowId",
+          "profileId",
+          "lease",
+          "input"
+        ],
+        "type": "object"
+      },
+      "name": "workflow_run"
+    },
+    {
+      "description": "Read secret-free run checkpoints and actual step outcomes",
+      "inputSchema": {
+        "additionalProperties": false,
+        "properties": {
+          "runId": {
+            "maxLength": 32,
+            "minLength": 1,
+            "type": "string"
+          }
+        },
+        "required": [
+          "runId"
+        ],
+        "type": "object"
+      },
+      "name": "workflow_status"
+    },
+    {
+      "description": "Find local run IDs after a client disconnect without replaying business actions",
+      "inputSchema": {
+        "additionalProperties": false,
+        "properties": {},
+        "required": [],
+        "type": "object"
+      },
+      "name": "workflow_runs"
+    },
+    {
+      "description": "Configure exact flow/step breakpoints and inspect redacted variables only at paused boundaries",
+      "inputSchema": {
+        "additionalProperties": false,
+        "properties": {
+          "options": {
+            "additionalProperties": true,
+            "properties": {},
+            "required": [],
+            "type": "object"
+          },
+          "runId": {
+            "maxLength": 32,
+            "minLength": 1,
+            "type": "string"
+          }
+        },
+        "required": [
+          "runId",
+          "options"
+        ],
+        "type": "object"
+      },
+      "name": "workflow_debug"
+    },
+    {
+      "description": "Pause at a step boundary, resume a paused run or cancel without business replay",
+      "inputSchema": {
+        "additionalProperties": false,
+        "properties": {
+          "operation": {
+            "enum": [
+              "pause",
+              "resume",
+              "cancel",
+              "step",
+              "stepOver",
+              "stepOut"
+            ],
+            "type": "string"
+          },
+          "runId": {
+            "maxLength": 32,
+            "minLength": 1,
+            "type": "string"
+          }
+        },
+        "required": [
+          "runId",
+          "operation"
+        ],
+        "type": "object"
+      },
+      "name": "workflow_control"
+    },
+    {
+      "description": "Store a scoped secret protected by Windows current-user DPAPI; never returns its value",
+      "inputSchema": {
+        "additionalProperties": false,
+        "properties": {
+          "allowedOrigins": {
+            "items": {
+              "maxLength": 8192,
+              "minLength": 1,
+              "type": "string"
+            },
+            "maxItems": 32,
+            "minItems": 1,
+            "type": "array"
+          },
+          "expiresAtMs": {
+            "maximum": 32503680000000,
+            "minimum": 0,
+            "type": "integer"
+          },
+          "name": {
+            "maxLength": 128,
+            "minLength": 1,
+            "type": "string"
+          },
+          "profileIds": {
+            "items": {
+              "maxLength": 32,
+              "minLength": 32,
+              "type": "string"
+            },
+            "maxItems": 32,
+            "minItems": 0,
+            "type": "array"
+          },
+          "purpose": {
+            "enum": [
+              "browser",
+              "model"
+            ],
+            "type": "string"
+          },
+          "value": {
+            "maxLength": 65536,
+            "minLength": 1,
+            "type": "string"
+          }
+        },
+        "required": [
+          "name",
+          "value",
+          "purpose",
+          "allowedOrigins",
+          "profileIds"
+        ],
+        "type": "object"
+      },
+      "name": "credential_create"
+    },
+    {
+      "description": "List credential metadata only; no plaintext or ciphertext",
+      "inputSchema": {
+        "additionalProperties": false,
+        "properties": {},
+        "required": [],
+        "type": "object"
+      },
+      "name": "credential_list"
+    },
+    {
+      "description": "Rotate a secret using optimistic revision control; existing scope remains fixed",
+      "inputSchema": {
+        "additionalProperties": false,
+        "properties": {
+          "credentialId": {
+            "maxLength": 32,
+            "minLength": 32,
+            "type": "string"
+          },
+          "expectedRevision": {
+            "minimum": 1,
+            "type": "integer"
+          },
+          "expiresAtMs": {
+            "maximum": 32503680000000,
+            "minimum": 0,
+            "type": "integer"
+          },
+          "value": {
+            "maxLength": 65536,
+            "minLength": 1,
+            "type": "string"
+          }
+        },
+        "required": [
+          "credentialId",
+          "expectedRevision",
+          "value"
+        ],
+        "type": "object"
+      },
+      "name": "credential_rotate"
+    },
+    {
+      "description": "Delete a credential using optimistic revision control",
+      "inputSchema": {
+        "additionalProperties": false,
+        "properties": {
+          "credentialId": {
+            "maxLength": 32,
+            "minLength": 32,
+            "type": "string"
+          },
+          "expectedRevision": {
+            "minimum": 1,
+            "type": "integer"
+          }
+        },
+        "required": [
+          "credentialId",
+          "expectedRevision"
+        ],
+        "type": "object"
+      },
+      "name": "credential_delete"
+    },
+    {
+      "description": "Read bounded secret-free credential access audit with monotonically increasing sequence",
+      "inputSchema": {
+        "additionalProperties": false,
+        "properties": {
+          "after": {
+            "minimum": 0,
+            "type": "integer"
+          }
+        },
+        "required": [],
+        "type": "object"
+      },
+      "name": "credential_audit"
+    },
+    {
+      "description": "Configure an HTTPS or loopback OpenAI-compatible completion endpoint with durable conservative budgets",
+      "inputSchema": {
+        "additionalProperties": false,
+        "properties": {
+          "credentialId": {
+            "maxLength": 32,
+            "minLength": 1,
+            "type": "string"
+          },
+          "endpoint": {
+            "maxLength": 8192,
+            "minLength": 1,
+            "type": "string"
+          },
+          "expectedRevision": {
+            "maximum": 1000000,
+            "minimum": 0,
+            "type": "integer"
+          },
+          "maxCalls": {
+            "maximum": 1000000,
+            "minimum": 1,
+            "type": "integer"
+          },
+          "maxOutputTokens": {
+            "maximum": 32768,
+            "minimum": 128,
+            "type": "integer"
+          },
+          "maxTotalTokens": {
+            "maximum": 1000000000,
+            "minimum": 1024,
+            "type": "integer"
+          },
+          "model": {
+            "maxLength": 128,
+            "minLength": 1,
+            "type": "string"
+          },
+          "timeoutMs": {
+            "maximum": 30000,
+            "minimum": 100,
+            "type": "integer"
+          }
+        },
+        "required": [
+          "expectedRevision",
+          "endpoint",
+          "model",
+          "timeoutMs",
+          "maxCalls",
+          "maxOutputTokens",
+          "maxTotalTokens"
+        ],
+        "type": "object"
+      },
+      "name": "model_configure"
+    },
+    {
+      "description": "Read model configuration and secret-free durable budget and outcome history",
+      "inputSchema": {
+        "additionalProperties": false,
+        "properties": {},
+        "required": [],
+        "type": "object"
+      },
+      "name": "model_status"
+    },
+    {
+      "description": "Generate and validate a workflow draft without publishing or executing it; no automatic retry",
+      "inputSchema": {
+        "additionalProperties": false,
+        "properties": {
+          "allowedOrigins": {
+            "items": {
+              "maxLength": 8192,
+              "minLength": 1,
+              "type": "string"
+            },
+            "maxItems": 32,
+            "minItems": 1,
+            "type": "array"
+          },
+          "task": {
+            "maxLength": 16384,
+            "minLength": 1,
+            "type": "string"
+          }
+        },
+        "required": [
+          "task",
+          "allowedOrigins"
+        ],
+        "type": "object"
+      },
+      "name": "model_generate_workflow"
+    },
+    {
+      "description": "Validate data-only site package, capabilities, routes, workflow hashes and review import differences",
+      "inputSchema": {
+        "additionalProperties": false,
+        "properties": {
+          "package": {
+            "additionalProperties": true,
+            "properties": {},
+            "required": [],
+            "type": "object"
+          }
+        },
+        "required": [
+          "package"
+        ],
+        "type": "object"
+      },
+      "name": "site_package_preview"
+    },
+    {
+      "description": "Install an immutable validated site package version using optimistic version control; does not run workflows",
+      "inputSchema": {
+        "additionalProperties": false,
+        "properties": {
+          "expectedLatestVersion": {
+            "maximum": 1000000,
+            "minimum": 0,
+            "type": "integer"
+          },
+          "package": {
+            "additionalProperties": true,
+            "properties": {},
+            "required": [],
+            "type": "object"
+          }
+        },
+        "required": [
+          "package",
+          "expectedLatestVersion"
+        ],
+        "type": "object"
+      },
+      "name": "site_package_import"
+    },
+    {
+      "description": "List installed site package versions and hashes",
+      "inputSchema": {
+        "additionalProperties": false,
+        "properties": {},
+        "required": [],
+        "type": "object"
+      },
+      "name": "site_package_list"
+    },
+    {
+      "description": "Export one exact installed data-only package version and its hash",
+      "inputSchema": {
+        "additionalProperties": false,
+        "properties": {
+          "packageId": {
+            "maxLength": 64,
+            "minLength": 1,
+            "type": "string"
+          },
+          "version": {
+            "maximum": 1000000,
+            "minimum": 1,
+            "type": "integer"
+          }
+        },
+        "required": [
+          "packageId",
+          "version"
+        ],
+        "type": "object"
+      },
+      "name": "site_package_export"
+    }
+  ]
+}

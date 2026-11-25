@@ -1,0 +1,167 @@
+{
+  "date": "2026-11-04",
+  "version": "0.1.8-poc",
+  "scope": "native desktop presentation and grouping",
+  "nativeBuild": {
+    "result": "passed",
+    "configurations": [
+      "Debug",
+      "Release"
+    ],
+    "warnings": 0,
+    "errors": 0,
+    "evidence": "native-r1"
+  },
+  "cmakeBuild": {
+    "result": "passed",
+    "ctestPerConfiguration": 3,
+    "evidence": "cmake-r1"
+  },
+  "sourceAudit": {
+    "result": "passed",
+    "files": 54,
+    "markers": 0,
+    "report": "source-audit-final.json"
+  },
+  "desktop": [
+    {
+      "configuration": "Debug",
+      "run": 0,
+      "result": "passed",
+      "checks": 11,
+      "steps": 111,
+      "binarySha256": "c0ef18a7210f237e88e9cf176f886653110cf94cfe10c429217a8503f315891d",
+      "report": "desktop-r1-0-Debug-report.json",
+      "visibleGroupSwitches": [
+        502,
+        501,
+        503,
+        501,
+        502,
+        501,
+        502,
+        503,
+        502,
+        501,
+        504,
+        501,
+        504
+      ],
+      "purgeConfirmationCount": 1
+    },
+    {
+      "configuration": "Release",
+      "run": 1,
+      "result": "passed",
+      "checks": 11,
+      "steps": 110,
+      "binarySha256": "1d43fc2fea305dfe3addb98070f38d10b1980ec04fc48075414e6c365c651596",
+      "report": "desktop-r1-1-Release-report.json",
+      "visibleGroupSwitches": [
+        502,
+        501,
+        503,
+        501,
+        502,
+        501,
+        502,
+        503,
+        502,
+        501,
+        504,
+        501,
+        504
+      ],
+      "purgeConfirmationCount": 1
+    },
+    {
+      "configuration": "Release",
+      "run": 2,
+      "result": "passed",
+      "checks": 11,
+      "steps": 110,
+      "binarySha256": "1d43fc2fea305dfe3addb98070f38d10b1980ec04fc48075414e6c365c651596",
+      "report": "desktop-r1-2-Release-report.json",
+      "visibleGroupSwitches": [
+        502,
+        501,
+        503,
+        501,
+        502,
+        501,
+        502,
+        503,
+        502,
+        501,
+        504,
+        501,
+        504
+      ],
+      "purgeConfirmationCount": 1
+    }
+  ],
+  "visual": {
+    "result": "passed",
+    "groups": 4,
+    "keyboardGroupSwitch": "Tab then Space",
+    "screenshots": [
+      "screenshots/main.png",
+      "screenshots/pages.png",
+      "screenshots/workflow.png",
+      "screenshots/profiles.png"
+    ]
+  },
+  "notValidated": [
+    "small-window scrolling",
+    "multi-DPI/multi-monitor matrix",
+    "high-contrast and screen-reader matrix",
+    "second clean Windows machine"
+  ],
+  "progress": {
+    "localCompleted": 21,
+    "localInProgress": 24,
+    "localNotStarted": 65,
+    "weight": "41/317",
+    "T022": "in-progress",
+    "T057": "not-started",
+    "validation": "docs/research/ui_progress_validation_2026-11-04.json"
+  },
+  "package": {
+    "date": "2026-11-04",
+    "version": "0.1.8-poc",
+    "result": "passed",
+    "archive": "dist/AI-Browser-Workbench-0.1.8-win64-ui-r1.zip",
+    "archiveBytes": 227195242,
+    "archiveSha256": "0e91a5906fe9cd212e8eb6f079ed94a7f6bf657eb6e83be77186f0dc216aa18b",
+    "pristineManifestFiles": 1443,
+    "manifestRechecked": true,
+    "noUnlistedFiles": true,
+    "pristineDataEmpty": true,
+    "pristineTestResultsAbsent": true,
+    "desktopBinarySha256": "1d43fc2fea305dfe3addb98070f38d10b1980ec04fc48075414e6c365c651596",
+    "deploymentChecks": 9,
+    "desktopChecks": 11,
+    "desktopSteps": 111,
+    "protocolChecks": 24,
+    "mcpToolCount": 44,
+    "copiedFolder": "E:\\project\\webexploer_codex\\build\\evidence\\ui-package-delivery-r1\\final-package\\中文 空格部署\\AI-Browser-Workbench-0.1.8-win64-ui-r1",
+    "sourceSnapshot": "captured before post-package validation; frozen archive is unchanged",
+    "secondCleanMachineTested": false,
+    "fullProductComplete": false
+  },
+  "fullProductComplete": false,
+  "rejectedCandidate": {
+    "file": "AI-Browser-Workbench-0.1.8-win64-ui.zip",
+    "sha256": "121e70e08a3cc94fc50a9842e73e2dce8888b3253db24698cbf56c5a6d4c5834",
+    "bytes": 227160569,
+    "reason": "desktop purge wait timed out after 10 passed check groups",
+    "report": "candidate-desktop-failed.json",
+    "uniqueRootCauseProven": false
+  },
+  "timingFix": {
+    "completionAfterButtonsReady": true,
+    "testWaitsForEnabledAction": true,
+    "failedCandidateRetained": true,
+    "uniqueOriginalRootCauseProven": false
+  }
+}

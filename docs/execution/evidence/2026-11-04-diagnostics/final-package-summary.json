@@ -1,0 +1,21 @@
+{
+  "date": "2026-11-04T15:20:55.053594+08:00",
+  "result": "failed",
+  "version": "0.1.6-poc",
+  "archive": {
+    "file": "AI-Browser-Workbench-0.1.6-win64-diagnostics-r2.zip",
+    "sha256": "468187b3844210f390459e2396f2f39a8676964a95523ebd0abc9f6d9d1b473c",
+    "bytes": 226139938
+  },
+  "deploymentChecksPassed": 9,
+  "packagedSuitesPassed": 13,
+  "desktopSuite": "failed",
+  "desktopError": "Expected desktop observation: desktop-review-user; observed: anonymous",
+  "causeEstablished": false,
+  "independentRepetitionsPassed": 10,
+  "independentRepetitionsDoNotResolveOriginalFailure": true,
+  "allOriginalFilesReverifiedAfterTests": true,
+  "manifestFiles": 1077,
+  "originalDataEmpty": true,
+  "commercialRelease": false
+}

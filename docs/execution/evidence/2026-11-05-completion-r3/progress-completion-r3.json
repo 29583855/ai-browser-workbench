@@ -1,0 +1,40 @@
+{
+  "date": "2026-11-05",
+  "result": "passed",
+  "errors": [],
+  "taskCountIncludingOverlappingClientAndHistorical": 234,
+  "groups": {
+    "local": {
+      "tasks": 110,
+      "states": {
+        "完成": 24,
+        "进行中": 39,
+        "未开始": 47
+      },
+      "completedBaselineDays": 52.0,
+      "baselineDays": 317,
+      "weightedTaskAcceptancePercent": 16.4
+    },
+    "admin": {
+      "tasks": 48,
+      "states": {
+        "未开始": 48
+      },
+      "completedBaselineDays": 0,
+      "baselineDays": 252,
+      "weightedTaskAcceptancePercent": 0.0
+    },
+    "commerce": {
+      "tasks": 40,
+      "states": {
+        "未开始": 40
+      },
+      "completedBaselineDays": 0,
+      "baselineDays": 223,
+      "weightedTaskAcceptancePercent": 0.0
+    }
+  },
+  "clientViewIsNonAdditive": true,
+  "releaseReady": false,
+  "ledgerSha256": "cce295f735cd2933390c4d5f534aa7bf8faf94338435374415f212987e066d11"
+}

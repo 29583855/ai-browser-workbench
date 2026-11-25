@@ -1,0 +1,192 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Content Lab · 浏览器自动化练习站</title>
+    <link rel="stylesheet" href="/style.css" />
+    <script src="/app.js" defer></script>
+  </head>
+  <body>
+    <header>
+      <div>
+        <span class="badge">LOCAL LAB</span>
+        <h1>内容自动化练习站</h1>
+        <p>从登录到发布、检索与互动，观察每一次真实页面操作。</p>
+      </div>
+      <div class="session">
+        <span>当前帐号</span><strong id="identity">anonymous</strong
+        ><span id="role">guest</span><button id="logout">退出登录</button>
+      </div>
+    </header>
+    <main>
+      <section class="card" aria-label="帐号登录">
+        <h2><b>01</b> 登录与注册</h2>
+        <div class="grid">
+          <label
+            >帐号<input
+              id="username"
+              autocomplete="username"
+              maxlength="64" /></label
+          ><label
+            >密码<input
+              id="password"
+              type="password"
+              autocomplete="current-password"
+              maxlength="128"
+          /></label>
+        </div>
+        <div class="actions">
+          <button id="login">登录</button
+          ><button id="register" class="secondary">注册测试帐号</button
+          ><output id="auth-status" aria-live="polite">ready</output>
+        </div>
+        <p class="hint">注册后再登录。数据只保存在本机；使用专门的测试帐号。</p>
+      </section>
+      <div id="workspace" hidden>
+        <section class="card" aria-label="文章创作">
+          <h2><b>02</b> 准备文章</h2>
+          <button id="create-article" data-testid="create-article">
+            写文章
+          </button>
+          <output id="editor-status">closed</output>
+          <div id="editor" hidden>
+            <div class="grid">
+              <label
+                >任务标识<input
+                  id="publish-key"
+                  maxlength="80"
+                  placeholder="每次新稿使用独立标识" /></label
+              ><label
+                >栏目<select id="category">
+                  <option value="技术">技术</option>
+                  <option value="产品动态">产品动态</option>
+                </select></label
+              >
+            </div>
+            <label
+              >文章标题<input
+                id="article-title"
+                data-testid="article-title"
+                maxlength="200"
+            /></label>
+            <label
+              >正文<textarea
+                id="article-body"
+                data-testid="article-body"
+                rows="5"
+                maxlength="20000"
+              ></textarea>
+            </label>
+            <div class="actions">
+              <button id="article-publish" data-testid="article-publish">
+                发布</button
+              ><button id="article-draft" class="secondary">保存草稿</button
+              ><button id="article-review" class="secondary">提交审核</button
+              ><output id="publish-status" aria-live="polite">ready</output>
+            </div>
+          </div>
+        </section>
+        <section class="card" aria-label="信息搜索">
+          <h2><b>03</b> 搜索与结果清单</h2>
+          <div class="search">
+            <label
+              >关键词<input
+                id="search-query"
+                maxlength="120"
+                placeholder="例如：浏览器自动化" /></label
+            ><button id="search">搜索</button>
+          </div>
+          <div class="actions">
+            <output id="search-status">ready</output
+            ><span>页码 <strong id="search-page">0</strong></span
+            ><span>总数 <strong id="search-total">0</strong></span
+            ><span>还有下一页 <strong id="has-next">false</strong></span
+            ><button id="next-page" class="secondary" disabled>下一页</button>
+          </div>
+          <div class="table-wrap">
+            <table>
+              <thead>
+                <tr>
+                  <th>文章ID</th>
+                  <th>标题</th>
+                  <th>作者</th>
+                  <th>链接</th>
+                  <th>操作</th>
+                </tr>
+              </thead>
+              <tbody id="results"></tbody>
+            </table>
+          </div>
+        </section>
+        <section class="card" aria-label="文章详情与互动">
+          <h2><b>04</b> 文章详情与互动</h2>
+          <p class="hint">可从搜索结果打开，也可按准确ID核对已提交的文章。</p>
+          <div class="search">
+            <label>文章ID<input id="open-id" maxlength="80" /></label
+            ><button id="open-article">打开文章</button>
+          </div>
+          <output id="detail-status">closed</output>
+          <div id="detail" hidden>
+            <div class="facts">
+              标识 <strong id="article-id"></strong> · 作者
+              <strong id="article-author"></strong> · 栏目
+              <strong id="article-category"></strong> · 状态
+              <strong id="article-state"></strong>
+            </div>
+            <h3 id="detail-title"></h3>
+            <div id="detail-body"></div>
+            <div class="actions">
+              <button id="like">点赞</button
+              ><output id="like-state">not-liked</output>
+            </div>
+            <div class="grid">
+              <label
+                >评论任务标识<input id="comment-key" maxlength="80" /></label
+              ><label
+                >评论正文<textarea
+                  id="comment-body"
+                  rows="2"
+                  maxlength="1000"
+                ></textarea>
+              </label>
+            </div>
+            <div class="actions">
+              <button id="comment-send">发表评论</button
+              ><output id="comment-status" aria-live="polite">ready</output>
+            </div>
+            <h3>评论与回复</h3>
+            <div id="comments"></div>
+            <div class="reply">
+              <p>回复对象 <strong id="reply-parent">none</strong></p>
+              <div class="grid">
+                <label
+                  >回复任务标识<input id="reply-key" maxlength="80" /></label
+                ><label
+                  >回复正文<textarea
+                    id="reply-body"
+                    rows="2"
+                    maxlength="1000"
+                  ></textarea>
+                </label>
+              </div>
+              <div class="actions">
+                <button id="reply-send">发送回复</button
+                ><output id="reply-status" aria-live="polite">ready</output>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="card subtle" aria-label="发布设置">
+          <h2>站点设置</h2>
+          <p>同名按钮用于测试区域定位，不能误认为文章发布。</p>
+          <button id="settings-publish" class="secondary">发布</button
+          ><output id="settings-status">unchanged</output>
+        </section>
+      </div>
+    </main>
+    <footer>
+      Content Lab · 本地练习系统 · 2026-11-04 · 普通表单与SQLite持久化
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,55 @@
+{
+  "date": "2026-11-05",
+  "result": "passed",
+  "channels": [
+    {
+      "name": "cli",
+      "result": "passed",
+      "workflowSteps": 19,
+      "toolCount": 92,
+      "checks": [
+        "free-policy",
+        "groups-template-history-rollback-config-import-export",
+        "durable-batch-idempotency-start-stop",
+        "batch-archive-pagination-and-retained-deduplication",
+        "real-file-flow-array-foreach",
+        "strict-negative-assertion"
+      ]
+    },
+    {
+      "name": "mcp",
+      "result": "passed",
+      "workflowSteps": 19,
+      "toolCount": 92,
+      "checks": [
+        "free-policy",
+        "groups-template-history-rollback-config-import-export",
+        "durable-batch-idempotency-start-stop",
+        "batch-archive-pagination-and-retained-deduplication",
+        "real-file-flow-array-foreach",
+        "strict-negative-assertion"
+      ]
+    },
+    {
+      "name": "http",
+      "result": "passed",
+      "workflowSteps": 19,
+      "toolCount": 92,
+      "checks": [
+        "free-policy",
+        "groups-template-history-rollback-config-import-export",
+        "durable-batch-idempotency-start-stop",
+        "batch-archive-pagination-and-retained-deduplication",
+        "real-file-flow-array-foreach",
+        "strict-negative-assertion"
+      ]
+    }
+  ],
+  "checks": [
+    "all-three-channels-share-new-tool-contracts-and-business-results"
+  ],
+  "binarySha256": {
+    "workbench-cli.exe": "e48a5dc0a3d79f17efc8d275e6e31c2a0b1712e70395218093ad5a46f6ce41f9",
+    "workbench-mcp.exe": "461d6d9edbefa61c2a184a839510c104f3584bea398fe30009a487fba33caec8"
+  }
+}

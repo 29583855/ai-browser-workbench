@@ -1,0 +1,104 @@
+{
+  "date": "2026-11-05",
+  "result": "passed",
+  "steps": [
+    {
+      "menuId": 916,
+      "outcome": "passed"
+    },
+    {
+      "buttonId": 101,
+      "outcome": "passed"
+    },
+    {
+      "menuId": 941,
+      "outcome": "passed"
+    },
+    {
+      "menuId": 940,
+      "outcome": "passed"
+    },
+    {
+      "menuId": 944,
+      "outcome": "passed"
+    },
+    {
+      "menuId": 943,
+      "outcome": "passed"
+    },
+    {
+      "menuId": 948,
+      "outcome": "passed"
+    },
+    {
+      "menuId": 947,
+      "outcome": "passed"
+    },
+    {
+      "menuId": 956,
+      "outcome": "passed"
+    },
+    {
+      "menuId": 957,
+      "outcome": "passed"
+    },
+    {
+      "menuId": 954,
+      "outcome": "passed"
+    },
+    {
+      "menuId": 958,
+      "outcome": "passed"
+    },
+    {
+      "menuId": 959,
+      "outcome": "passed"
+    },
+    {
+      "menuId": 952,
+      "outcome": "passed"
+    },
+    {
+      "menuId": 953,
+      "outcome": "passed"
+    },
+    {
+      "menuId": 940,
+      "outcome": "passed"
+    },
+    {
+      "buttonId": 102,
+      "outcome": "passed"
+    },
+    {
+      "buttonId": 104,
+      "outcome": "passed"
+    },
+    {
+      "menuId": 914,
+      "outcome": "passed"
+    },
+    {
+      "buttonId": 128,
+      "outcome": "passed"
+    },
+    {
+      "buttonId": 129,
+      "outcome": "passed"
+    },
+    {
+      "buttonId": 103,
+      "outcome": "passed"
+    }
+  ],
+  "checks": [
+    "desktop-policy-summary-group-template-export-import-and-list-refresh",
+    "masked-secret-cleared-create-rotate-delete-real-dpapi-panel",
+    "desktop-real-page-function-discovery-and-doctor",
+    "desktop-pause-on-start-step-set-breakpoint-redacted-variables-resume-terminal-state"
+  ],
+  "executableSha256": "b5e51d1ca3ff0272220a7f54e69d257e3675917336cebdf4296b9c67c399d1fd",
+  "groupSwitches": [
+    503
+  ]
+}

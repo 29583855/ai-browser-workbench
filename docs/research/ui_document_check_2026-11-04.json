@@ -1,0 +1,14 @@
+{
+  "date": "2026-11-04",
+  "result": "passed",
+  "markdownFiles": 49,
+  "localLinksChecked": 377,
+  "generatedTemplateMappings": [
+    {
+      "template": "tools/portable/使用说明.md",
+      "target": "文档入口.md",
+      "verifiedGeneratedFile": "dist/AI-Browser-Workbench-0.1.8-win64-ui-r1/文档入口.md"
+    }
+  ],
+  "errors": []
+}

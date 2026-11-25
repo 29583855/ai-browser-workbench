@@ -1,0 +1,149 @@
+{
+  "schemaVersion": "1.0",
+  "date": "2026-11-04",
+  "runtimeVersion": "0.1.7-poc",
+  "sharedTools": 44,
+  "actions": [
+    {
+      "id": "click",
+      "status": "available",
+      "tools": [
+        "page_click"
+      ],
+      "boundary": "点击派发后必须另外验证业务结果",
+      "authorization": "profile+current-lease+allowed-origin",
+      "retryWrites": "never",
+      "onUnknown": "stop-and-reconcile",
+      "evidenceSecrets": "exclude-input-values"
+    },
+    {
+      "id": "double-click",
+      "status": "planned",
+      "tools": [],
+      "boundary": "双击次数与未知结果，不能替换为两次盲点",
+      "authorization": "profile+current-lease+allowed-origin",
+      "retryWrites": "never",
+      "onUnknown": "stop-and-reconcile",
+      "evidenceSecrets": "exclude-input-values"
+    },
+    {
+      "id": "right-click",
+      "status": "planned",
+      "tools": [],
+      "boundary": "只操作获授权页面菜单",
+      "authorization": "profile+current-lease+allowed-origin",
+      "retryWrites": "never",
+      "onUnknown": "stop-and-reconcile",
+      "evidenceSecrets": "exclude-input-values"
+    },
+    {
+      "id": "hover",
+      "status": "planned",
+      "tools": [],
+      "boundary": "等待目标菜单可见",
+      "authorization": "profile+current-lease+allowed-origin",
+      "retryWrites": "never",
+      "onUnknown": "stop-and-reconcile",
+      "evidenceSecrets": "exclude-input-values"
+    },
+    {
+      "id": "fill",
+      "status": "available",
+      "tools": [
+        "page_fill"
+      ],
+      "boundary": "不回显填写值；SecretRef运行解析尚未实现",
+      "authorization": "profile+current-lease+allowed-origin",
+      "retryWrites": "never",
+      "onUnknown": "stop-and-reconcile",
+      "evidenceSecrets": "exclude-input-values"
+    },
+    {
+      "id": "clear",
+      "status": "available",
+      "tools": [
+        "page_fill"
+      ],
+      "boundary": "值为空字符串，重新验证控件实际状态",
+      "authorization": "profile+current-lease+allowed-origin",
+      "retryWrites": "never",
+      "onUnknown": "stop-and-reconcile",
+      "evidenceSecrets": "exclude-input-values"
+    },
+    {
+      "id": "key",
+      "status": "planned",
+      "tools": [],
+      "boundary": "限定目标元素与焦点，禁止全局系统键",
+      "authorization": "profile+current-lease+allowed-origin",
+      "retryWrites": "never",
+      "onUnknown": "stop-and-reconcile",
+      "evidenceSecrets": "exclude-input-values"
+    },
+    {
+      "id": "select",
+      "status": "available",
+      "tools": [
+        "page_select"
+      ],
+      "boundary": "仅原生select按唯一value选择；禁用/重复选项拒绝",
+      "authorization": "profile+current-lease+allowed-origin",
+      "retryWrites": "never",
+      "onUnknown": "stop-and-reconcile",
+      "evidenceSecrets": "exclude-input-values"
+    },
+    {
+      "id": "check",
+      "status": "planned",
+      "tools": [],
+      "boundary": "设置期望状态，不能盲切换",
+      "authorization": "profile+current-lease+allowed-origin",
+      "retryWrites": "never",
+      "onUnknown": "stop-and-reconcile",
+      "evidenceSecrets": "exclude-input-values"
+    },
+    {
+      "id": "scroll-into-view",
+      "status": "planned",
+      "tools": [],
+      "boundary": "独立滚动动作待实现，点击内部滚动不等于此API",
+      "authorization": "profile+current-lease+allowed-origin",
+      "retryWrites": "never",
+      "onUnknown": "stop-and-reconcile",
+      "evidenceSecrets": "exclude-input-values"
+    },
+    {
+      "id": "read",
+      "status": "available",
+      "tools": [
+        "page_text",
+        "page_extract"
+      ],
+      "boundary": "主文档公开文字及有界标量，不读取秘密控件值",
+      "authorization": "profile+current-lease+allowed-origin",
+      "retryWrites": "never",
+      "onUnknown": "stop-and-reconcile",
+      "evidenceSecrets": "exclude-input-values"
+    },
+    {
+      "id": "assert",
+      "status": "partial",
+      "tools": [
+        "page_wait_text",
+        "page_extract"
+      ],
+      "boundary": "文本/有界Schema约束可用，其余URL/值/响应断言待T071",
+      "authorization": "profile+current-lease+allowed-origin",
+      "retryWrites": "never",
+      "onUnknown": "stop-and-reconcile",
+      "evidenceSecrets": "exclude-input-values"
+    }
+  ],
+  "scenarios": [
+    "SC01 登录注册",
+    "SC02 登录后报表及文件",
+    "SC03 多环境与代理",
+    "SC04 AI与外部自动化调用"
+  ],
+  "runtimeIntegration": "planned-in-T072-T073; schema validation does not execute workflows or resolve secrets"
+}

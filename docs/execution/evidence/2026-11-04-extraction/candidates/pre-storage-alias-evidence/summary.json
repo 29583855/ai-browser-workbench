@@ -1,0 +1,212 @@
+{
+  "date": "2026-11-04T15:36:12.492276+08:00",
+  "result": "passed",
+  "version": "0.1.7-poc",
+  "tools": 44,
+  "completedWholePlanTasksThisIncrement": [
+    "T029"
+  ],
+  "newCommands": [
+    "page_extract",
+    "page_batch"
+  ],
+  "nativeEvidence": "build/evidence/native-20261104-152906",
+  "cmakeEvidence": "build/evidence/run-20261104-153029",
+  "configurations": {
+    "Debug": {
+      "browser": {
+        "result": "passed",
+        "source": "build/evidence/run-20261104-153029/Debug-browser/report.json",
+        "commands": 124
+      },
+      "proxy": {
+        "result": "passed",
+        "source": "build/evidence/run-20261104-153029/Debug-proxy/report.json",
+        "commands": 8
+      },
+      "lifecycle": {
+        "result": "passed",
+        "source": "build/evidence/run-20261104-153029/Debug-lifecycle/report.json",
+        "checks": 6
+      },
+      "recovery": {
+        "result": "passed",
+        "source": "build/evidence/run-20261104-153029/Debug-recovery/report.json",
+        "checks": 4
+      },
+      "socks": {
+        "result": "passed",
+        "source": "build/evidence/run-20261104-153029/Debug-socks/report.json",
+        "commands": 22
+      },
+      "runtime": {
+        "result": "passed",
+        "source": "build/evidence/run-20261104-153029/Debug-runtime/report.json"
+      },
+      "api": {
+        "result": "passed",
+        "source": "build/evidence/run-20261104-153029/Debug-api/report.json",
+        "requests": 88,
+        "rawRejections": 6
+      },
+      "pages": {
+        "result": "passed",
+        "source": "build/evidence/run-20261104-153029/Debug-pages/report.json",
+        "checks": 6,
+        "commands": 219
+      },
+      "inspector": {
+        "result": "passed",
+        "source": "build/evidence/run-20261104-153029/Debug-inspector/report.json",
+        "checks": 6,
+        "commands": 135
+      },
+      "workflow": {
+        "result": "passed",
+        "source": "build/evidence/run-20261104-153029/Debug-workflow/report.json",
+        "checks": 13,
+        "flows": 20,
+        "negatives": 34,
+        "commands": 1
+      },
+      "diagnostics": {
+        "result": "passed",
+        "source": "build/evidence/run-20261104-153029/Debug-diagnostics/report.json",
+        "checks": 11,
+        "commands": 211
+      },
+      "extraction": {
+        "result": "passed",
+        "source": "build/evidence/run-20261104-153029/Debug-extraction/report.json",
+        "checks": 11,
+        "commands": 51
+      },
+      "protocol": {
+        "result": "passed",
+        "source": "build/evidence/run-20261104-153029/Debug-protocol/report.json",
+        "checks": 24
+      },
+      "mcp": {
+        "result": "passed",
+        "source": "build/evidence/run-20261104-153029/Debug-mcp/report.json",
+        "steps": 51,
+        "tools": 44
+      },
+      "desktop": {
+        "result": "passed",
+        "source": "build/evidence/extraction-preflight-final-Debug-desktop/report.json",
+        "checks": 11,
+        "steps": 95
+      }
+    },
+    "Release": {
+      "browser": {
+        "result": "passed",
+        "source": "build/evidence/run-20261104-153029/Release-browser/report.json",
+        "commands": 124
+      },
+      "proxy": {
+        "result": "passed",
+        "source": "build/evidence/run-20261104-153029/Release-proxy/report.json",
+        "commands": 8
+      },
+      "lifecycle": {
+        "result": "passed",
+        "source": "build/evidence/run-20261104-153029/Release-lifecycle/report.json",
+        "checks": 6
+      },
+      "recovery": {
+        "result": "passed",
+        "source": "build/evidence/run-20261104-153029/Release-recovery/report.json",
+        "checks": 4
+      },
+      "socks": {
+        "result": "passed",
+        "source": "build/evidence/run-20261104-153029/Release-socks/report.json",
+        "commands": 22
+      },
+      "runtime": {
+        "result": "passed",
+        "source": "build/evidence/run-20261104-153029/Release-runtime/report.json"
+      },
+      "api": {
+        "result": "passed",
+        "source": "build/evidence/run-20261104-153029/Release-api/report.json",
+        "requests": 89,
+        "rawRejections": 6
+      },
+      "pages": {
+        "result": "passed",
+        "source": "build/evidence/run-20261104-153029/Release-pages/report.json",
+        "checks": 6,
+        "commands": 220
+      },
+      "inspector": {
+        "result": "passed",
+        "source": "build/evidence/run-20261104-153029/Release-inspector/report.json",
+        "checks": 6,
+        "commands": 135
+      },
+      "workflow": {
+        "result": "passed",
+        "source": "build/evidence/run-20261104-153029/Release-workflow/report.json",
+        "checks": 13,
+        "flows": 20,
+        "negatives": 34,
+        "commands": 1
+      },
+      "diagnostics": {
+        "result": "passed",
+        "source": "build/evidence/run-20261104-153029/Release-diagnostics/report.json",
+        "checks": 11,
+        "commands": 213
+      },
+      "extraction": {
+        "result": "passed",
+        "source": "build/evidence/run-20261104-153029/Release-extraction/report.json",
+        "checks": 11,
+        "commands": 51
+      },
+      "protocol": {
+        "result": "passed",
+        "source": "build/evidence/run-20261104-153029/Release-protocol/report.json",
+        "checks": 24
+      },
+      "mcp": {
+        "result": "passed",
+        "source": "build/evidence/run-20261104-153029/Release-mcp/report.json",
+        "steps": 50,
+        "tools": 44
+      },
+      "desktop": {
+        "result": "passed",
+        "source": "build/evidence/extraction-preflight-final-Release-desktop/report.json",
+        "checks": 11,
+        "steps": 113
+      }
+    }
+  },
+  "binaries": {
+    "Debug": {
+      "awb-core-tests.exe": "90d2d74901b0b27182b63db68a78089dcee9b5eaf3cd2fd96a1532c89538bec9",
+      "awb-storage-tests.exe": "40f697242f58eef570fad36c9d36cea9e7492d2095a11ab717f5525b1d4b7e7f",
+      "workbench-cli.exe": "45dd00fd0beb47a52753e0c6c1d97ddce9d9b78bc615c16a9c919157ee1bce52",
+      "workbench-mcp.exe": "cad61a13ff8206968ded573ec3cbecc15b826c0c539e6a218c0bb9dcbaa6c635",
+      "workbench.exe": "6f980fb2ba32f791fbba1291bc1ddfc4212369a17bc63ce4883ebd15013858c0"
+    },
+    "Release": {
+      "awb-core-tests.exe": "df169498c18e6095f995998f0b0561483792550489f5d0fba602b2060bf96c64",
+      "awb-storage-tests.exe": "20e50438e49ab2f3fa6d8a6d82c906ef23194dfad5a16214d4ecd85687dc1395",
+      "workbench-cli.exe": "451ff51c4096fef6deb081a4c1b4f68f8d12f87fa8a19ee0475d4fcec9e2977a",
+      "workbench-mcp.exe": "b4db70f11993ce71c9faffa17002d33341681c91a80d6498c718cbec5025d6b2",
+      "workbench.exe": "843b3e461c811e53d6f91b2a93aef815dd8ce0a7bf0656928b9a72ec5458a697"
+    }
+  },
+  "secondCleanMachineTested": false,
+  "releaseReady": false,
+  "commercialBackendImplemented": false,
+  "priorAnonymousObservationCauseEstablished": false,
+  "oldCandidateCdp12017CauseEstablished": false,
+  "finalArchiveAcceptance": "pending",
+  "selectionPreflightRejectsDuplicatesBeforeAnyAction": true
+}

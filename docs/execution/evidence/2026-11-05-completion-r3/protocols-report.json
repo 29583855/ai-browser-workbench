@@ -1,0 +1,52 @@
+{
+  "date": "2026-11-05",
+  "result": "passed",
+  "channels": [
+    {
+      "name": "cli",
+      "result": "passed",
+      "workflowSteps": 19,
+      "toolCount": 91,
+      "checks": [
+        "free-policy",
+        "groups-template-history-rollback-config-import-export",
+        "durable-batch-idempotency-start-stop",
+        "real-file-flow-array-foreach",
+        "strict-negative-assertion"
+      ]
+    },
+    {
+      "name": "mcp",
+      "result": "passed",
+      "workflowSteps": 19,
+      "toolCount": 91,
+      "checks": [
+        "free-policy",
+        "groups-template-history-rollback-config-import-export",
+        "durable-batch-idempotency-start-stop",
+        "real-file-flow-array-foreach",
+        "strict-negative-assertion"
+      ]
+    },
+    {
+      "name": "http",
+      "result": "passed",
+      "workflowSteps": 19,
+      "toolCount": 91,
+      "checks": [
+        "free-policy",
+        "groups-template-history-rollback-config-import-export",
+        "durable-batch-idempotency-start-stop",
+        "real-file-flow-array-foreach",
+        "strict-negative-assertion"
+      ]
+    }
+  ],
+  "checks": [
+    "all-three-channels-share-new-tool-contracts-and-business-results"
+  ],
+  "binarySha256": {
+    "workbench-cli.exe": "d95e3bf4ff208df438744ec2410e98941586958a1546b459ae1ec7add7129072",
+    "workbench-mcp.exe": "150b47652bcbf8b46283e3069410c34a128e7c4a28db73194073cb94e747c720"
+  }
+}

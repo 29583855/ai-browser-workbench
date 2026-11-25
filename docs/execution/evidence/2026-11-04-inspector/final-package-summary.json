@@ -1,0 +1,31 @@
+{
+  "date": "2026-11-04T12:18:33.349848+08:00",
+  "result": "passed",
+  "version": "0.1.4-poc",
+  "archive": {
+    "file": "AI-Browser-Workbench-0.1.4-win64-inspector.zip",
+    "sha256": "543be6221ca9aa9521672c826b42204666a0588708f4841cc2ddc8769a1d333b",
+    "bytes": 225252462
+  },
+  "manifestFiles": 924,
+  "deploymentChecks": 9,
+  "packagedSuites": [
+    "browser",
+    "proxy",
+    "lifecycle",
+    "recovery",
+    "socks",
+    "runtime",
+    "api",
+    "pages",
+    "inspector",
+    "protocol",
+    "mcp",
+    "desktop"
+  ],
+  "allOriginalFilesReverifiedAfterTests": true,
+  "originalDataEmpty": true,
+  "originalTestResultsAbsent": true,
+  "secondCleanMachineTested": false,
+  "commercialRelease": false
+}

@@ -1,0 +1,69 @@
+{
+  "date": "2026-11-03",
+  "scope": "Before free AI/testing and two concurrent direct environments policy update; documentation only.",
+  "files": [
+    {
+      "path": "README.md",
+      "sha256": "5cb49f46c3d79f710bfe4e7f8714f2a741b96f45c205afef4c5a7a996fc6a671",
+      "bytes": 6220,
+      "encoding": "UTF-8 no BOM",
+      "newline": "LF"
+    },
+    {
+      "path": "docs/01_开发计划与技术方案.md",
+      "sha256": "17d4aa04fa1a2c88373b1edb47ea5c8d38cef3391ddb79b7e9d183f33e6d2a07",
+      "bytes": 73109,
+      "encoding": "UTF-8 no BOM",
+      "newline": "LF"
+    },
+    {
+      "path": "docs/03_开发进度与任务清单.md",
+      "sha256": "5bf6000c82d757bf35e29c9a36fb585d37aeea9dac368b0fd3c42b92853dce19",
+      "bytes": 36953,
+      "encoding": "UTF-8 no BOM",
+      "newline": "LF"
+    },
+    {
+      "path": "docs/04_AI接口与流程设计样例.md",
+      "sha256": "d268083215c06f175eda3e27665b4af3fe8d1ea2a30fd0b57d1827a19ac1da00",
+      "bytes": 42252,
+      "encoding": "UTF-8 no BOM",
+      "newline": "LF"
+    },
+    {
+      "path": "docs/05_Web功能测试与便捷操作设计.md",
+      "sha256": "f1ba9b96ae9cebe98ae8c2232f97eb4d9b23c88baf4ed1f9593315bbba108731",
+      "bytes": 27460,
+      "encoding": "UTF-8 no BOM",
+      "newline": "LF"
+    },
+    {
+      "path": "docs/06_功能边界与源码补全方案.md",
+      "sha256": "e824835fde85d80a38c9cdd07b54e5576e0b66320818b2305b83240d07282af2",
+      "bytes": 41951,
+      "encoding": "UTF-8 no BOM",
+      "newline": "LF"
+    },
+    {
+      "path": "docs/10_管理后台功能与开发计划.md",
+      "sha256": "1972c227d1f79bc334a7b1160ef3db790b76c2ae5bcd3043e81a4e9f72b14659",
+      "bytes": 83013,
+      "encoding": "UTF-8 no BOM",
+      "newline": "LF"
+    },
+    {
+      "path": "docs/11_环境销售计费与商业运营后台计划.md",
+      "sha256": "05f5e6ab040986799d9be452f46c92498e4c37d9336f13db27caad6033023d39",
+      "bytes": 57326,
+      "encoding": "UTF-8 no BOM",
+      "newline": "LF"
+    },
+    {
+      "path": "docs/02_竞品分析与开源项目调研.md",
+      "sha256": "2a6f50acc65e4b417c8b9ce3bee18dc3300070f03969ee7f429fb17e90c4987b",
+      "bytes": 30155,
+      "encoding": "UTF-8 no BOM",
+      "newline": "LF"
+    }
+  ]
+}

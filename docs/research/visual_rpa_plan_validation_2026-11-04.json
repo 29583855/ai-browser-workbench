@@ -1,0 +1,52 @@
+{
+  "date": "2026-11-04",
+  "result": "passed",
+  "markdownFiles": 53,
+  "localLinksChecked": 443,
+  "generatedTemplateMappings": [
+    {
+      "template": "tools/portable/使用说明.md",
+      "target": "文档入口.md",
+      "verifiedGeneratedFile": "dist/AI-Browser-Workbench-0.1.8-win64-ui-r1/文档入口.md"
+    }
+  ],
+  "errors": [],
+  "validationScope": "仅文档静态检查，不是功能验收",
+  "veTasks": 28,
+  "veUnstarted": 28,
+  "estimatedPersonDays": 146,
+  "dependencyOrder": [
+    "VE001",
+    "VE002",
+    "VE003",
+    "VE004",
+    "VE007",
+    "VE009",
+    "VE005",
+    "VE008",
+    "VE010",
+    "VE011",
+    "VE006",
+    "VE017",
+    "VE012",
+    "VE013",
+    "VE014",
+    "VE016",
+    "VE018",
+    "VE015",
+    "VE022",
+    "VE024",
+    "VE025",
+    "VE019",
+    "VE020",
+    "VE023",
+    "VE021",
+    "VE026",
+    "VE027",
+    "VE028"
+  ],
+  "vrScenarios": 36,
+  "vrNotExecuted": 36,
+  "ledgerSha256": "3fc37aeb555dc98bf285569b0884733996d57cd243dabab318b59d3c0443513a",
+  "ledgerUnchanged": true
+}

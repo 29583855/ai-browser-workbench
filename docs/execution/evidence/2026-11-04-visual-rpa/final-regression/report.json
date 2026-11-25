@@ -1,0 +1,35 @@
+{
+  "date": "2026-11-04T22:34:21.975391+08:00",
+  "result": "failed",
+  "runs": [
+    {
+      "configuration": "Debug",
+      "round": 1,
+      "suite": "canvas",
+      "exitCode": 0,
+      "report": "docs\\execution\\evidence\\2026-11-04-visual-rpa\\final-regression\\Debug-canvas-1.json",
+      "binarySha256": "537bee76685a0d9312d823da02c399726c9511b222784a9b3be5e12e90712582",
+      "checks": 19,
+      "paintP95Ms": 17.1041
+    },
+    {
+      "configuration": "Debug",
+      "round": 1,
+      "suite": "recovery",
+      "exitCode": 0,
+      "report": "docs\\execution\\evidence\\2026-11-04-visual-rpa\\final-regression\\Debug-recovery-1\\report.json",
+      "binarySha256": "537bee76685a0d9312d823da02c399726c9511b222784a9b3be5e12e90712582",
+      "checks": 6
+    },
+    {
+      "configuration": "Debug",
+      "round": 1,
+      "suite": "visual_desktop",
+      "exitCode": 1,
+      "report": "docs\\execution\\evidence\\2026-11-04-visual-rpa\\final-regression\\Debug-visual_desktop-1\\report.json",
+      "binarySha256": "537bee76685a0d9312d823da02c399726c9511b222784a9b3be5e12e90712582"
+    }
+  ],
+  "scope": "Main-document recorder, picker, native canvas, desktop publication and recovery; not the full VR01-VR36 acceptance matrix",
+  "error": "Suite failed: Debug/1/visual_desktop"
+}

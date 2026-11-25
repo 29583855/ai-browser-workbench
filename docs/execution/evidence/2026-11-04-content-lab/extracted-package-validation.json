@@ -1,0 +1,21 @@
+{
+  "date": "2026-11-04",
+  "result": "passed",
+  "headed": true,
+  "scope": "extracted source ZIP runner with original portable binary",
+  "archiveSha256": "e1b42cf999f3ec21998d7ade0d617e6346d92136ec76f8fa4469b5532d046d44",
+  "archiveBytes": 24159,
+  "sourceFiles": 10,
+  "databaseWriteCounts": {
+    "comment": 1,
+    "like": 1,
+    "publish": 1,
+    "reply": 1
+  },
+  "workflow": {
+    "runId": "99f75dd3b4a99aaa19d95f9e809c6dac",
+    "state": "succeeded",
+    "steps": 19
+  },
+  "rows": 4
+}

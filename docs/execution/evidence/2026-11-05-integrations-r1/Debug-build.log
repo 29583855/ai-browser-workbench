@@ -1,0 +1,170 @@
+﻿生成启动时间为 2026/11/5 16:55:11。
+日志记录详细程度设置为: Normal。     1>项目“E:\project\webexploer_codex\AIBrowserWorkbench.sln”在节点 1 上(Build 个目标)。
+     1>ValidateSolutionConfiguration:
+         正在生成解决方案配置“Debug|x64”。
+     1>项目“E:\project\webexploer_codex\AIBrowserWorkbench.sln”(1)正在节点 2 上生成“E:\project\webexploer_codex\vs2019\workbench-cli.vcxproj”(3) (默认目标)。
+     3>项目“E:\project\webexploer_codex\vs2019\workbench-cli.vcxproj”(3)正在节点 2 上生成“E:\project\webexploer_codex\vs2019\awb_sqlite.vcxproj”(6) (默认目标)。
+     6>InitializeBuildStatus:
+         正在创建“E:\project\webexploer_codex\vs2019\..\build\native-vs2019\obj\x64\Debug\awb_sqlite\awb_sqlite.tlog\unsuccessfulbuild”，因为已指定“AlwaysCreate”。
+       ClCompile:
+         所有输出均为最新。
+       Lib:
+         所有输出均为最新。
+         awb_sqlite.vcxproj -> E:\project\webexploer_codex\build\native-vs2019\x64\Debug\awb_sqlite.lib
+       FinalizeBuildStatus:
+         正在删除文件“E:\project\webexploer_codex\vs2019\..\build\native-vs2019\obj\x64\Debug\awb_sqlite\awb_sqlite.tlog\unsuccessfulbuild”。
+         正在对“E:\project\webexploer_codex\vs2019\..\build\native-vs2019\obj\x64\Debug\awb_sqlite\awb_sqlite.tlog\awb_sqlite.lastbuildstate”执行 Touch 任务。
+     6>已完成生成项目“E:\project\webexploer_codex\vs2019\awb_sqlite.vcxproj”(默认目标)的操作。
+     1>项目“E:\project\webexploer_codex\AIBrowserWorkbench.sln”(1)正在节点 3 上生成“E:\project\webexploer_codex\vs2019\workbench-mcp.vcxproj”(2) (默认目标)。
+     2>项目“E:\project\webexploer_codex\vs2019\workbench-mcp.vcxproj”(2)正在节点 3 上生成“E:\project\webexploer_codex\vs2019\awb_core.vcxproj”(7) (默认目标)。
+     7>InitializeBuildStatus:
+         正在创建“E:\project\webexploer_codex\vs2019\..\build\native-vs2019\obj\x64\Debug\awb_core\awb_core.tlog\unsuccessfulbuild”，因为已指定“AlwaysCreate”。
+       ClCompile:
+         D:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\VC\Tools\MSVC\14.29.30133\bin\HostX86\x64\CL.exe /c /IE:\project\webexploer_codex\vs2019\..\include /IE:\project\webexploer_codex\vs2019\..\third_party /Zi /JMC /nologo /W4 /WX /diagnostics:column /Od /D _DEBUG /D UNICODE /D _UNICODE /D WIN32_LEAN_AND_MEAN /D NOMINMAX /D _UNICODE /D UNICODE /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /permissive- /Zc:wchar_t /Zc:forScope /Zc:inline /std:c++14 /Fo"E:\project\webexploer_codex\vs2019\..\build\native-vs2019\obj\x64\Debug\awb_core\\" /Fd"E:\project\webexploer_codex\vs2019\..\build\native-vs2019\x64\Debug\awb_core.pdb" /external:W4 /Gd /TP /FC /errorReport:queue /utf-8 /Zc:__cplusplus ..\src\admin\http.cpp
+         http.cpp
+       Lib:
+         D:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\VC\Tools\MSVC\14.29.30133\bin\HostX86\x64\Lib.exe /OUT:"E:\project\webexploer_codex\vs2019\..\build\native-vs2019\x64\Debug\awb_core.lib" /NOLOGO /MACHINE:X64 "E:\project\webexploer_codex\vs2019\..\build\native-vs2019\obj\x64\Debug\awb_core\platform.obj"
+         "E:\project\webexploer_codex\vs2019\..\build\native-vs2019\obj\x64\Debug\awb_core\browser.obj"
+         "E:\project\webexploer_codex\vs2019\..\build\native-vs2019\obj\x64\Debug\awb_core\diagnostics.obj"
+         "E:\project\webexploer_codex\vs2019\..\build\native-vs2019\obj\x64\Debug\awb_core\extraction.obj"
+         "E:\project\webexploer_codex\vs2019\..\build\native-vs2019\obj\x64\Debug\awb_core\picker.obj"
+         "E:\project\webexploer_codex\vs2019\..\build\native-vs2019\obj\x64\Debug\awb_core\discovery.obj"
+         "E:\project\webexploer_codex\vs2019\..\build\native-vs2019\obj\x64\Debug\awb_core\catalog.obj"
+         "E:\project\webexploer_codex\vs2019\..\build\native-vs2019\obj\x64\Debug\awb_core\service.obj"
+         "E:\project\webexploer_codex\vs2019\..\build\native-vs2019\obj\x64\Debug\awb_core\node_agent.obj"
+         "E:\project\webexploer_codex\vs2019\..\build\native-vs2019\obj\x64\Debug\awb_core\backend_protocol.obj"
+         "E:\project\webexploer_codex\vs2019\..\build\native-vs2019\obj\x64\Debug\awb_core\official_payments.obj"
+         "E:\project\webexploer_codex\vs2019\..\build\native-vs2019\obj\x64\Debug\awb_core\oidc_identity.obj"
+         "E:\project\webexploer_codex\vs2019\..\build\native-vs2019\obj\x64\Debug\awb_core\node_scheduler.obj"
+         "E:\project\webexploer_codex\vs2019\..\build\native-vs2019\obj\x64\Debug\awb_core\control_plane.obj"
+         "E:\project\webexploer_codex\vs2019\..\build\native-vs2019\obj\x64\Debug\awb_core\client.obj"
+         "E:\project\webexploer_codex\vs2019\..\build\native-vs2019\obj\x64\Debug\awb_core\commercial_client.obj"
+         "E:\project\webexploer_codex\vs2019\..\build\native-vs2019\obj\x64\Debug\awb_core\http.obj"
+         "E:\project\webexploer_codex\vs2019\..\build\native-vs2019\obj\x64\Debug\awb_core\credentials.obj"
+         "E:\project\webexploer_codex\vs2019\..\build\native-vs2019\obj\x64\Debug\awb_core\model_provider.obj"
+         "E:\project\webexploer_codex\vs2019\..\build\native-vs2019\obj\x64\Debug\awb_core\site_package.obj"
+         "E:\project\webexploer_codex\vs2019\..\build\native-vs2019\obj\x64\Debug\awb_core\local_api.obj"
+         "E:\project\webexploer_codex\vs2019\..\build\native-vs2019\obj\x64\Debug\awb_core\workflow.obj"
+         "E:\project\webexploer_codex\vs2019\..\build\native-vs2019\obj\x64\Debug\awb_core\flow_document.obj"
+         "E:\project\webexploer_codex\vs2019\..\build\native-vs2019\obj\x64\Debug\awb_core\recording.obj"
+         "E:\project\webexploer_codex\build\native-vs2019\x64\Debug\awb_sqlite.lib"
+         awb_core.vcxproj -> E:\project\webexploer_codex\build\native-vs2019\x64\Debug\awb_core.lib
+       FinalizeBuildStatus:
+         正在删除文件“E:\project\webexploer_codex\vs2019\..\build\native-vs2019\obj\x64\Debug\awb_core\awb_core.tlog\unsuccessfulbuild”。
+         正在对“E:\project\webexploer_codex\vs2019\..\build\native-vs2019\obj\x64\Debug\awb_core\awb_core.tlog\awb_core.lastbuildstate”执行 Touch 任务。
+     7>已完成生成项目“E:\project\webexploer_codex\vs2019\awb_core.vcxproj”(默认目标)的操作。
+     1>项目“E:\project\webexploer_codex\AIBrowserWorkbench.sln”(1)正在节点 3 上生成“E:\project\webexploer_codex\vs2019\workbench-admin.vcxproj”(9) (默认目标)。
+     9>InitializeBuildStatus:
+         正在创建“E:\project\webexploer_codex\vs2019\..\build\native-vs2019\obj\x64\Debug\workbench-admin\workbench-admin.tlog\unsuccessfulbuild”，因为已指定“AlwaysCreate”。
+     1>项目“E:\project\webexploer_codex\AIBrowserWorkbench.sln”(1)正在节点 4 上生成“E:\project\webexploer_codex\vs2019\awb-core-tests.vcxproj”(4) (默认目标)。
+     4>InitializeBuildStatus:
+         正在创建“E:\project\webexploer_codex\vs2019\..\build\native-vs2019\obj\x64\Debug\awb-core-tests\awb-core-tests.tlog\unsuccessfulbuild”，因为已指定“AlwaysCreate”。
+     3>InitializeBuildStatus:
+         正在创建“E:\project\webexploer_codex\vs2019\..\build\native-vs2019\obj\x64\Debug\workbench-cli\workbench-cli.tlog\unsuccessfulbuild”，因为已指定“AlwaysCreate”。
+     2>InitializeBuildStatus:
+         正在创建“E:\project\webexploer_codex\vs2019\..\build\native-vs2019\obj\x64\Debug\workbench-mcp\workbench-mcp.tlog\unsuccessfulbuild”，因为已指定“AlwaysCreate”。
+     1>项目“E:\project\webexploer_codex\AIBrowserWorkbench.sln”(1)正在节点 4 上生成“E:\project\webexploer_codex\vs2019\awb-storage-tests.vcxproj”(8) (默认目标)。
+     8>InitializeBuildStatus:
+         正在创建“E:\project\webexploer_codex\vs2019\..\build\native-vs2019\obj\x64\Debug\awb-storage-tests\awb-stor.BC93FA92.tlog\unsuccessfulbuild”，因为已指定“AlwaysCreate”。
+     2>ClCompile:
+         所有输出均为最新。
+     8>ClCompile:
+         所有输出均为最新。
+     3>ClCompile:
+         所有输出均为最新。
+     8>Link:
+         D:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\VC\Tools\MSVC\14.29.30133\bin\HostX86\x64\link.exe /ERRORREPORT:QUEUE /OUT:"E:\project\webexploer_codex\vs2019\..\build\native-vs2019\x64\Debug\awb-storage-tests.exe" /INCREMENTAL /ILK:"E:\project\webexploer_codex\vs2019\..\build\native-vs2019\obj\x64\Debug\awb-storage-tests\awb-storage-tests.ilk" /NOLOGO winhttp.lib bcrypt.lib ncrypt.lib crypt32.lib advapi32.lib shell32.lib ole32.lib user32.lib gdi32.lib comctl32.lib ws2_32.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"E:\project\webexploer_codex\vs2019\..\build\native-vs2019\x64\Debug\awb-storage-tests.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"E:\project\webexploer_codex\vs2019\..\build\native-vs2019\x64\Debug\awb-storage-tests.lib" /MACHINE:X64 "E:\project\webexploer_codex\vs2019\..\build\native-vs2019\obj\x64\Debug\awb-storage-tests\storage_tests.obj"
+         "E:\project\webexploer_codex\build\native-vs2019\x64\Debug\awb_sqlite.lib"
+         "E:\project\webexploer_codex\build\native-vs2019\x64\Debug\awb_core.lib"
+     2>Link:
+         D:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\VC\Tools\MSVC\14.29.30133\bin\HostX86\x64\link.exe /ERRORREPORT:QUEUE /OUT:"E:\project\webexploer_codex\vs2019\..\build\native-vs2019\x64\Debug\workbench-mcp.exe" /INCREMENTAL /ILK:"E:\project\webexploer_codex\vs2019\..\build\native-vs2019\obj\x64\Debug\workbench-mcp\workbench-mcp.ilk" /NOLOGO winhttp.lib bcrypt.lib ncrypt.lib crypt32.lib advapi32.lib shell32.lib ole32.lib user32.lib gdi32.lib comctl32.lib ws2_32.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"E:\project\webexploer_codex\vs2019\..\build\native-vs2019\x64\Debug\workbench-mcp.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"E:\project\webexploer_codex\vs2019\..\build\native-vs2019\x64\Debug\workbench-mcp.lib" /MACHINE:X64 "E:\project\webexploer_codex\vs2019\..\build\native-vs2019\obj\x64\Debug\workbench-mcp\main.obj"
+         "E:\project\webexploer_codex\build\native-vs2019\x64\Debug\awb_sqlite.lib"
+         "E:\project\webexploer_codex\build\native-vs2019\x64\Debug\awb_core.lib"
+     3>Link:
+         D:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\VC\Tools\MSVC\14.29.30133\bin\HostX86\x64\link.exe /ERRORREPORT:QUEUE /OUT:"E:\project\webexploer_codex\vs2019\..\build\native-vs2019\x64\Debug\workbench-cli.exe" /INCREMENTAL /ILK:"E:\project\webexploer_codex\vs2019\..\build\native-vs2019\obj\x64\Debug\workbench-cli\workbench-cli.ilk" /NOLOGO winhttp.lib bcrypt.lib ncrypt.lib crypt32.lib advapi32.lib shell32.lib ole32.lib user32.lib gdi32.lib comctl32.lib ws2_32.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"E:\project\webexploer_codex\vs2019\..\build\native-vs2019\x64\Debug\workbench-cli.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"E:\project\webexploer_codex\vs2019\..\build\native-vs2019\x64\Debug\workbench-cli.lib" /MACHINE:X64 "E:\project\webexploer_codex\vs2019\..\build\native-vs2019\obj\x64\Debug\workbench-cli\main.obj"
+         "E:\project\webexploer_codex\build\native-vs2019\x64\Debug\awb_sqlite.lib"
+         "E:\project\webexploer_codex\build\native-vs2019\x64\Debug\awb_core.lib"
+     1>项目“E:\project\webexploer_codex\AIBrowserWorkbench.sln”(1)正在节点 1 上生成“E:\project\webexploer_codex\vs2019\workbench.vcxproj”(5) (默认目标)。
+     5>InitializeBuildStatus:
+         正在创建“E:\project\webexploer_codex\vs2019\..\build\native-vs2019\obj\x64\Debug\workbench\workbench.tlog\unsuccessfulbuild”，因为已指定“AlwaysCreate”。
+       ClCompile:
+         所有输出均为最新。
+       Link:
+         D:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\VC\Tools\MSVC\14.29.30133\bin\HostX86\x64\link.exe /ERRORREPORT:QUEUE /OUT:"E:\project\webexploer_codex\vs2019\..\build\native-vs2019\x64\Debug\workbench.exe" /INCREMENTAL /ILK:"E:\project\webexploer_codex\vs2019\..\build\native-vs2019\obj\x64\Debug\workbench\workbench.ilk" /NOLOGO comdlg32.lib d2d1.lib dwrite.lib winhttp.lib bcrypt.lib ncrypt.lib crypt32.lib advapi32.lib shell32.lib ole32.lib user32.lib gdi32.lib comctl32.lib ws2_32.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"E:\project\webexploer_codex\vs2019\..\build\native-vs2019\x64\Debug\workbench.pdb" /SUBSYSTEM:WINDOWS /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"E:\project\webexploer_codex\vs2019\..\build\native-vs2019\x64\Debug\workbench.lib" /MACHINE:X64 "E:\project\webexploer_codex\vs2019\..\build\native-vs2019\obj\x64\Debug\workbench\main.obj"
+         "E:\project\webexploer_codex\vs2019\..\build\native-vs2019\obj\x64\Debug\workbench\account_window.obj"
+         "E:\project\webexploer_codex\vs2019\..\build\native-vs2019\obj\x64\Debug\workbench\automation_windows.obj"
+         "E:\project\webexploer_codex\vs2019\..\build\native-vs2019\obj\x64\Debug\workbench\library_window.obj"
+         "E:\project\webexploer_codex\vs2019\..\build\native-vs2019\obj\x64\Debug\workbench\flow_editor.obj"
+         "E:\project\webexploer_codex\build\native-vs2019\x64\Debug\awb_sqlite.lib"
+         "E:\project\webexploer_codex\build\native-vs2019\x64\Debug\awb_core.lib"
+     8>Link:
+         awb-storage-tests.vcxproj -> E:\project\webexploer_codex\build\native-vs2019\x64\Debug\awb-storage-tests.exe
+     4>ClCompile:
+         所有输出均为最新。
+     2>Link:
+         workbench-mcp.vcxproj -> E:\project\webexploer_codex\build\native-vs2019\x64\Debug\workbench-mcp.exe
+       FinalizeBuildStatus:
+         正在删除文件“E:\project\webexploer_codex\vs2019\..\build\native-vs2019\obj\x64\Debug\workbench-mcp\workbench-mcp.tlog\unsuccessfulbuild”。
+         正在对“E:\project\webexploer_codex\vs2019\..\build\native-vs2019\obj\x64\Debug\workbench-mcp\workbench-mcp.tlog\workbench-mcp.lastbuildstate”执行 Touch 任务。
+     2>已完成生成项目“E:\project\webexploer_codex\vs2019\workbench-mcp.vcxproj”(默认目标)的操作。
+     3>Link:
+         workbench-cli.vcxproj -> E:\project\webexploer_codex\build\native-vs2019\x64\Debug\workbench-cli.exe
+     9>ClCompile:
+         所有输出均为最新。
+     4>Link:
+         D:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\VC\Tools\MSVC\14.29.30133\bin\HostX86\x64\link.exe /ERRORREPORT:QUEUE /OUT:"E:\project\webexploer_codex\vs2019\..\build\native-vs2019\x64\Debug\awb-core-tests.exe" /INCREMENTAL /ILK:"E:\project\webexploer_codex\vs2019\..\build\native-vs2019\obj\x64\Debug\awb-core-tests\awb-core-tests.ilk" /NOLOGO winhttp.lib bcrypt.lib ncrypt.lib crypt32.lib advapi32.lib shell32.lib ole32.lib user32.lib gdi32.lib comctl32.lib ws2_32.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"E:\project\webexploer_codex\vs2019\..\build\native-vs2019\x64\Debug\awb-core-tests.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"E:\project\webexploer_codex\vs2019\..\build\native-vs2019\x64\Debug\awb-core-tests.lib" /MACHINE:X64 "E:\project\webexploer_codex\vs2019\..\build\native-vs2019\obj\x64\Debug\awb-core-tests\core_tests.obj"
+         "E:\project\webexploer_codex\vs2019\..\build\native-vs2019\obj\x64\Debug\awb-core-tests\flow_document_tests.obj"
+         "E:\project\webexploer_codex\build\native-vs2019\x64\Debug\awb_sqlite.lib"
+         "E:\project\webexploer_codex\build\native-vs2019\x64\Debug\awb_core.lib"
+     9>Link:
+         D:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\VC\Tools\MSVC\14.29.30133\bin\HostX86\x64\link.exe /ERRORREPORT:QUEUE /OUT:"E:\project\webexploer_codex\vs2019\..\build\native-vs2019\x64\Debug\workbench-admin.exe" /INCREMENTAL /ILK:"E:\project\webexploer_codex\vs2019\..\build\native-vs2019\obj\x64\Debug\workbench-admin\workbench-admin.ilk" /NOLOGO winhttp.lib bcrypt.lib ncrypt.lib crypt32.lib advapi32.lib shell32.lib ole32.lib user32.lib gdi32.lib comctl32.lib ws2_32.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"E:\project\webexploer_codex\vs2019\..\build\native-vs2019\x64\Debug\workbench-admin.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"E:\project\webexploer_codex\vs2019\..\build\native-vs2019\x64\Debug\workbench-admin.lib" /MACHINE:X64 "E:\project\webexploer_codex\vs2019\..\build\native-vs2019\obj\x64\Debug\workbench-admin\main.obj"
+         "E:\project\webexploer_codex\build\native-vs2019\x64\Debug\awb_sqlite.lib"
+         "E:\project\webexploer_codex\build\native-vs2019\x64\Debug\awb_core.lib"
+     5>Link:
+         workbench.vcxproj -> E:\project\webexploer_codex\build\native-vs2019\x64\Debug\workbench.exe
+     4>Link:
+         awb-core-tests.vcxproj -> E:\project\webexploer_codex\build\native-vs2019\x64\Debug\awb-core-tests.exe
+     1>项目“E:\project\webexploer_codex\AIBrowserWorkbench.sln”(1)正在节点 4 上生成“E:\project\webexploer_codex\vs2019\workbench-node.vcxproj”(10) (默认目标)。
+    10>InitializeBuildStatus:
+         正在创建“E:\project\webexploer_codex\vs2019\..\build\native-vs2019\obj\x64\Debug\workbench-node\workbench-node.tlog\unsuccessfulbuild”，因为已指定“AlwaysCreate”。
+       ClCompile:
+         所有输出均为最新。
+       Link:
+         D:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\VC\Tools\MSVC\14.29.30133\bin\HostX86\x64\link.exe /ERRORREPORT:QUEUE /OUT:"E:\project\webexploer_codex\vs2019\..\build\native-vs2019\x64\Debug\workbench-node.exe" /INCREMENTAL /ILK:"E:\project\webexploer_codex\vs2019\..\build\native-vs2019\obj\x64\Debug\workbench-node\workbench-node.ilk" /NOLOGO winhttp.lib bcrypt.lib ncrypt.lib crypt32.lib advapi32.lib shell32.lib ole32.lib user32.lib gdi32.lib comctl32.lib ws2_32.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"E:\project\webexploer_codex\vs2019\..\build\native-vs2019\x64\Debug\workbench-node.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"E:\project\webexploer_codex\vs2019\..\build\native-vs2019\x64\Debug\workbench-node.lib" /MACHINE:X64 "E:\project\webexploer_codex\vs2019\..\build\native-vs2019\obj\x64\Debug\workbench-node\main.obj"
+         "E:\project\webexploer_codex\build\native-vs2019\x64\Debug\awb_sqlite.lib"
+         "E:\project\webexploer_codex\build\native-vs2019\x64\Debug\awb_core.lib"
+     9>Link:
+         workbench-admin.vcxproj -> E:\project\webexploer_codex\build\native-vs2019\x64\Debug\workbench-admin.exe
+       FinalizeBuildStatus:
+         正在删除文件“E:\project\webexploer_codex\vs2019\..\build\native-vs2019\obj\x64\Debug\workbench-admin\workbench-admin.tlog\unsuccessfulbuild”。
+         正在对“E:\project\webexploer_codex\vs2019\..\build\native-vs2019\obj\x64\Debug\workbench-admin\workbench-admin.tlog\workbench-admin.lastbuildstate”执行 Touch 任务。
+     9>已完成生成项目“E:\project\webexploer_codex\vs2019\workbench-admin.vcxproj”(默认目标)的操作。
+     3>FinalizeBuildStatus:
+         正在删除文件“E:\project\webexploer_codex\vs2019\..\build\native-vs2019\obj\x64\Debug\workbench-cli\workbench-cli.tlog\unsuccessfulbuild”。
+         正在对“E:\project\webexploer_codex\vs2019\..\build\native-vs2019\obj\x64\Debug\workbench-cli\workbench-cli.tlog\workbench-cli.lastbuildstate”执行 Touch 任务。
+     3>已完成生成项目“E:\project\webexploer_codex\vs2019\workbench-cli.vcxproj”(默认目标)的操作。
+     5>FinalizeBuildStatus:
+         正在删除文件“E:\project\webexploer_codex\vs2019\..\build\native-vs2019\obj\x64\Debug\workbench\workbench.tlog\unsuccessfulbuild”。
+         正在对“E:\project\webexploer_codex\vs2019\..\build\native-vs2019\obj\x64\Debug\workbench\workbench.tlog\workbench.lastbuildstate”执行 Touch 任务。
+     5>已完成生成项目“E:\project\webexploer_codex\vs2019\workbench.vcxproj”(默认目标)的操作。
+    10>Link:
+         workbench-node.vcxproj -> E:\project\webexploer_codex\build\native-vs2019\x64\Debug\workbench-node.exe
+       FinalizeBuildStatus:
+         正在删除文件“E:\project\webexploer_codex\vs2019\..\build\native-vs2019\obj\x64\Debug\workbench-node\workbench-node.tlog\unsuccessfulbuild”。
+         正在对“E:\project\webexploer_codex\vs2019\..\build\native-vs2019\obj\x64\Debug\workbench-node\workbench-node.tlog\workbench-node.lastbuildstate”执行 Touch 任务。
+    10>已完成生成项目“E:\project\webexploer_codex\vs2019\workbench-node.vcxproj”(默认目标)的操作。
+     4>FinalizeBuildStatus:
+         正在删除文件“E:\project\webexploer_codex\vs2019\..\build\native-vs2019\obj\x64\Debug\awb-core-tests\awb-core-tests.tlog\unsuccessfulbuild”。
+         正在对“E:\project\webexploer_codex\vs2019\..\build\native-vs2019\obj\x64\Debug\awb-core-tests\awb-core-tests.tlog\awb-core-tests.lastbuildstate”执行 Touch 任务。
+     4>已完成生成项目“E:\project\webexploer_codex\vs2019\awb-core-tests.vcxproj”(默认目标)的操作。
+     8>FinalizeBuildStatus:
+         正在删除文件“E:\project\webexploer_codex\vs2019\..\build\native-vs2019\obj\x64\Debug\awb-storage-tests\awb-stor.BC93FA92.tlog\unsuccessfulbuild”。
+         正在对“E:\project\webexploer_codex\vs2019\..\build\native-vs2019\obj\x64\Debug\awb-storage-tests\awb-stor.BC93FA92.tlog\awb-storage-tests.lastbuildstate”执行 Touch 任务。
+     8>已完成生成项目“E:\project\webexploer_codex\vs2019\awb-storage-tests.vcxproj”(默认目标)的操作。
+     1>已完成生成项目“E:\project\webexploer_codex\AIBrowserWorkbench.sln”(Build 个目标)的操作。
+
+已成功生成。
+    0 个警告
+    0 个错误
+
+已用时间 00:00:03.35

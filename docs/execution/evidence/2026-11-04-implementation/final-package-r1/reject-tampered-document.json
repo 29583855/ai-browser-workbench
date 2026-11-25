@@ -1,0 +1,10 @@
+{
+  "result": "failed",
+  "date": "2026-11-04T11:18:10+08:00",
+  "checks": [],
+  "errors": [
+    "Package checksum mismatch: 使用说明.md"
+  ],
+  "root": "E:\\project\\webexploer_codex\\build\\evidence\\implementation-20261104\\final-package-r1\\中文 空格部署\\AI-Browser-Workbench-0.1.2-win64-features-r1",
+  "cleanMachine": false
+}

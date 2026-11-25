@@ -1,0 +1,13 @@
+{
+  "date": "2026-11-04",
+  "result": "passed",
+  "checks": [
+    "native-node-clipboard-paste-uses-distinct-identities-and-real-timer-autosave",
+    "cut-deletes-only-after-clipboard-success-and-undo-restores-nodes",
+    "abrupt-process-exit-retains-last-complete-atomic-snapshot",
+    "owner-close-is-blocked-while-editor-file-dialog-is-active",
+    "restarted-workbench-restores-model-and-layout-through-native-file-dialog",
+    "confirmed-editor-close-removes-only-its-own-recovery-file"
+  ],
+  "binarySha256": "686075329f524b19a6ad7ce1b461425d88bfbf9a0a5fcf6d2bbac3eee31599db"
+}

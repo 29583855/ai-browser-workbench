@@ -1,0 +1,1680 @@
+{
+  "validationDate": "2026-11-03",
+  "checkedAtUtc": "2026-11-03T10:06:34.488414+00:00",
+  "scope": "Documentation-only browser/client alignment to all backend MF/CF features. No product implementation, build, runtime, payment, notification, deployment or new source/web research performed.",
+  "versions": {
+    "main": "v1.4",
+    "admin": "1.4",
+    "commerce": "1.3",
+    "apiDraft": "0.7",
+    "clientSupplement": "1.0"
+  },
+  "result": "passed",
+  "errors": [],
+  "checks": {
+    "markdownFiles": 13,
+    "changedExistingMarkdownFiles": 9,
+    "newMarkdownFiles": 1,
+    "markdownTables": 154,
+    "relativeLinks": 115,
+    "jsonExamples": 25,
+    "codeFenceDelimiters": 76,
+    "allRelativeLinksAndAnchorsResolved": true,
+    "encoding": "UTF-8 without BOM / LF preserved",
+    "originalFileHashesMatchedPreviousManifestBeforeEditing": true,
+    "unrelatedMarkdownUnchanged": true,
+    "existingParentTaskRowsDaysDependenciesAndStatusesUnchanged": true,
+    "clientFeatures": 32,
+    "backendMappings": 68,
+    "basicBackendFeaturesMapped": 36,
+    "commercialBackendFeaturesMapped": 32,
+    "allClientFeaturesAndAcceptanceGroupsReferencedByBackendMappings": true,
+    "allNewClientDocumentReferencesDefined": true,
+    "clientWorkItems": 24,
+    "clientBreakdownEstimateDays": 120,
+    "clientEstimateIsNonAdditiveAndRequiresCL0BG0CG0Allocation": true,
+    "clientGroupDays": [
+      42,
+      44,
+      34
+    ],
+    "clientDependencyEdges": 57,
+    "clientDependencyAcyclic": true,
+    "clientAcceptanceGroups": 32,
+    "clientAcceptanceExecutionsPlanned": 96,
+    "clientAcceptanceExecutionsActuallyRun": 0,
+    "localTaskCount": 110,
+    "localBaselineDays": 317,
+    "adminTaskCount": 48,
+    "commercialTaskCount": 40,
+    "adminBaselineDays": 252,
+    "commercialBaselineDays": 223,
+    "combinedBackendBaselineDays": 475,
+    "combinedBackendPlannedDays": [
+      540,
+      580
+    ],
+    "backendGroupDays": {
+      "ADM": [
+        37,
+        41,
+        47,
+        41,
+        38,
+        48
+      ],
+      "COM": [
+        40,
+        48,
+        45,
+        44,
+        46
+      ]
+    },
+    "backendDependencyEdges": 260,
+    "backendDependencyAcyclic": true,
+    "freePolicyUnchanged": true,
+    "freePolicy": {
+      "policyId": "FREE_TEN_ENV_PROXY_V2",
+      "planTier": "FREE",
+      "scope": "billing-subject-all-projects-and-nodes",
+      "maxOwnedProfileInstances": 10,
+      "maxConcurrentProfileInstances": 10,
+      "concurrencyLimitBasis": "project-planning-default",
+      "proxyAllowed": true,
+      "proxyProtocols": [
+        "http",
+        "https",
+        "socks5",
+        "ssh"
+      ],
+      "rpaFeatureFree": true,
+      "localApiFeatureFree": true,
+      "aiInvocationFeatureFree": true,
+      "webTestingFeatureFree": true,
+      "browserAutomationApiFeatureFree": true,
+      "billingMode": "non_billable",
+      "requiresPaidSubscription": false,
+      "requiresPositiveBalance": false,
+      "isTimeLimitedTrial": false,
+      "paidActivationRequiresExplicitPurchase": true
+    },
+    "capacityAndConcurrencySeparated": true,
+    "freeConcurrencyIsProjectPlanningDefault": true,
+    "freeProxyProtocolsAllIncluded": true,
+    "paymentReturnDoesNotGrantEntitlement": true,
+    "nodeAckDoesNotMeanBusinessSuccess": true,
+    "stopRecoveryDoesNotRequireNewPaidGrant": true,
+    "firstFreeAssociationAndOfflineLimitsExplicit": true,
+    "parentEstimatesAndDatesRemainReferenceNotCommittedFullProductSchedule": true,
+    "allParentAndClientImplementationTasksUnstarted": true,
+    "productImplementationPercent": 0,
+    "otherResearchJsonParsed": 16,
+    "sourceRepositoryCandidateCountUnchanged": 45,
+    "newSourceOrWebResearchPerformed": false,
+    "productBuildsActuallyRun": 0,
+    "paymentsOrExternalNotificationsSent": 0
+  },
+  "backendToClientMapping": [
+    {
+      "backendFeature": "MF01",
+      "clientFeatures": [
+        "BF04",
+        "BF16",
+        "BF21"
+      ],
+      "clientBehavior": "按项目筛选节点/排队/失败；时间范围、离线/陈旧/权限过滤可见",
+      "parentTasks": [
+        "ADM011",
+        "ADM029",
+        "ADM033"
+      ],
+      "clientAcceptance": [
+        "BC04",
+        "BC16",
+        "BC21"
+      ]
+    },
+    {
+      "backendFeature": "MF02",
+      "clientFeatures": [
+        "BF02"
+      ],
+      "clientBehavior": "切换/查看归属、管理员进入门户创建/归档；服务端确认后刷新",
+      "parentTasks": [
+        "ADM006",
+        "ADM007"
+      ],
+      "clientAcceptance": [
+        "BC02"
+      ]
+    },
+    {
+      "backendFeature": "MF03",
+      "clientFeatures": [
+        "BF02",
+        "BF25"
+      ],
+      "clientBehavior": "邀请链接核验、角色/席位分列、撤回/停用显示活动影响",
+      "parentTasks": [
+        "ADM006",
+        "COM012"
+      ],
+      "clientAcceptance": [
+        "BC02",
+        "BC25"
+      ]
+    },
+    {
+      "backendFeature": "MF04",
+      "clientFeatures": [
+        "BF02",
+        "BF13",
+        "BF19"
+      ],
+      "clientBehavior": "UI可见权限与每次调用复核；事件/导出/Worker同时拒绝越权",
+      "parentTasks": [
+        "ADM007",
+        "ADM041"
+      ],
+      "clientAcceptance": [
+        "BC02",
+        "BC13",
+        "BC19"
+      ]
+    },
+    {
+      "backendFeature": "MF05",
+      "clientFeatures": [
+        "BF01"
+      ],
+      "clientBehavior": "系统浏览器OIDC登录、注销/过期/禁用，节点会话不混用",
+      "parentTasks": [
+        "ADM005",
+        "ADM035"
+      ],
+      "clientAcceptance": [
+        "BC01"
+      ]
+    },
+    {
+      "backendFeature": "MF06",
+      "clientFeatures": [
+        "BF10"
+      ],
+      "clientBehavior": "本地密钥、一次性注册/批准、重放/错主体拒绝",
+      "parentTasks": [
+        "ADM009",
+        "ADM010"
+      ],
+      "clientAcceptance": [
+        "BC10"
+      ]
+    },
+    {
+      "backendFeature": "MF07",
+      "clientFeatures": [
+        "BF10",
+        "BF31"
+      ],
+      "clientBehavior": "交互用户/锁屏/维护/离线状态；Session0不显示可人工接管",
+      "parentTasks": [
+        "ADM011",
+        "ADM038"
+      ],
+      "clientAcceptance": [
+        "BC10",
+        "BC31"
+      ]
+    },
+    {
+      "backendFeature": "MF08",
+      "clientFeatures": [
+        "BF11",
+        "BF31"
+      ],
+      "clientBehavior": "握手/缺能力预检、版本不兼容阻断、doctor证据",
+      "parentTasks": [
+        "ADM012",
+        "ADM034"
+      ],
+      "clientAcceptance": [
+        "BC11",
+        "BC31"
+      ]
+    },
+    {
+      "backendFeature": "MF09",
+      "clientFeatures": [
+        "BF04"
+      ],
+      "clientBehavior": "配置定义/物理实例/节点/目录元信息分开；归属经后台确认",
+      "parentTasks": [
+        "ADM013"
+      ],
+      "clientAcceptance": [
+        "BC04"
+      ]
+    },
+    {
+      "backendFeature": "MF10",
+      "clientFeatures": [
+        "BF05",
+        "BF12"
+      ],
+      "clientBehavior": "固定revision/diff，持久接收与应用分开，冲突不覆盖",
+      "parentTasks": [
+        "ADM014",
+        "ADM032"
+      ],
+      "clientAcceptance": [
+        "BC05",
+        "BC12"
+      ]
+    },
+    {
+      "backendFeature": "MF11",
+      "clientFeatures": [
+        "BF06",
+        "BF30"
+      ],
+      "clientBehavior": "停机/导出校验/新归属/重登录，原节点未停保持隔离",
+      "parentTasks": [
+        "ADM015"
+      ],
+      "clientAcceptance": [
+        "BC06",
+        "BC30"
+      ]
+    },
+    {
+      "backendFeature": "MF12",
+      "clientFeatures": [
+        "BF07"
+      ],
+      "clientBehavior": "免费四协议、槽绑定/出口验证/effective；认证错误不降直连",
+      "parentTasks": [
+        "ADM030",
+        "COM014"
+      ],
+      "clientAcceptance": [
+        "BC07"
+      ]
+    },
+    {
+      "backendFeature": "MF13",
+      "clientFeatures": [
+        "BF08"
+      ],
+      "clientBehavior": "版本/权限/策略下发，安装/应用/回滚状态及失败原因",
+      "parentTasks": [
+        "ADM030"
+      ],
+      "clientAcceptance": [
+        "BC08"
+      ]
+    },
+    {
+      "backendFeature": "MF14",
+      "clientFeatures": [
+        "BF09"
+      ],
+      "clientBehavior": "本地绑定/重绑、中央只回可用性，未知域/用途拒绝",
+      "parentTasks": [
+        "ADM016",
+        "ADM035"
+      ],
+      "clientAcceptance": [
+        "BC09"
+      ]
+    },
+    {
+      "backendFeature": "MF15",
+      "clientFeatures": [
+        "BF15"
+      ],
+      "clientBehavior": "草稿编辑、发布校验与不可变hash，本地执行固定run包",
+      "parentTasks": [
+        "ADM017"
+      ],
+      "clientAcceptance": [
+        "BC15"
+      ]
+    },
+    {
+      "backendFeature": "MF16",
+      "clientFeatures": [
+        "BF18"
+      ],
+      "clientBehavior": "登录注册/按钮模板、参数预检、发布版本和测试结果",
+      "parentTasks": [
+        "ADM018",
+        "ADM044"
+      ],
+      "clientAcceptance": [
+        "BC18"
+      ]
+    },
+    {
+      "backendFeature": "MF17",
+      "clientFeatures": [
+        "BF12",
+        "BF16"
+      ],
+      "clientBehavior": "排队/领取/启动/业务结果分阶段，取消/部分失败逐项展示",
+      "parentTasks": [
+        "ADM019",
+        "ADM020",
+        "ADM032"
+      ],
+      "clientAcceptance": [
+        "BC12",
+        "BC16"
+      ]
+    },
+    {
+      "backendFeature": "MF18",
+      "clientFeatures": [
+        "BF17"
+      ],
+      "clientBehavior": "中央与本地唯一调度归属、trigger去重、DST及补跑上限",
+      "parentTasks": [
+        "ADM024"
+      ],
+      "clientAcceptance": [
+        "BC17"
+      ]
+    },
+    {
+      "backendFeature": "MF19",
+      "clientFeatures": [
+        "BF13",
+        "BF14"
+      ],
+      "clientBehavior": "代数/epoch与派发门，旧代消息在入队/出队/发送前拒绝",
+      "parentTasks": [
+        "ADM021",
+        "ADM042"
+      ],
+      "clientAcceptance": [
+        "BC13",
+        "BC14"
+      ]
+    },
+    {
+      "backendFeature": "MF20",
+      "clientFeatures": [
+        "BF14",
+        "BF16"
+      ],
+      "clientBehavior": "冻结新写、业务查验、显式新授权/attempt，不重复提交注册",
+      "parentTasks": [
+        "ADM021",
+        "ADM022",
+        "ADM043"
+      ],
+      "clientAcceptance": [
+        "BC14",
+        "BC16"
+      ]
+    },
+    {
+      "backendFeature": "MF21",
+      "clientFeatures": [
+        "BF20"
+      ],
+      "clientBehavior": "owner/身份/陈旧标记、限频/离屏停流、敏感页关闭",
+      "parentTasks": [
+        "ADM025"
+      ],
+      "clientAcceptance": [
+        "BC20"
+      ]
+    },
+    {
+      "backendFeature": "MF22",
+      "clientFeatures": [
+        "BF14",
+        "BF20"
+      ],
+      "clientBehavior": "handoff-pending到ready需节点阻断自动写确认，本地急停优先",
+      "parentTasks": [
+        "ADM022",
+        "ADM026"
+      ],
+      "clientAcceptance": [
+        "BC14",
+        "BC20"
+      ]
+    },
+    {
+      "backendFeature": "MF23",
+      "clientFeatures": [
+        "BF20"
+      ],
+      "clientBehavior": "Console/Network步骤关联、正文额外授权、截断/超时，无通用raw CDP",
+      "parentTasks": [
+        "ADM027"
+      ],
+      "clientAcceptance": [
+        "BC20"
+      ]
+    },
+    {
+      "backendFeature": "MF24",
+      "clientFeatures": [
+        "BF21"
+      ],
+      "clientBehavior": "上传/校验/可下载分态，权限短链/隔离HTML、缺片保持事实",
+      "parentTasks": [
+        "ADM028",
+        "ADM029"
+      ],
+      "clientAcceptance": [
+        "BC21"
+      ]
+    },
+    {
+      "backendFeature": "MF25",
+      "clientFeatures": [
+        "BF18",
+        "BF09"
+      ],
+      "clientBehavior": "唯一命名空间、前后置清理、污染阻断、远端localhost提示",
+      "parentTasks": [
+        "ADM018",
+        "ADM019",
+        "ADM044"
+      ],
+      "clientAcceptance": [
+        "BC18",
+        "BC09"
+      ]
+    },
+    {
+      "backendFeature": "MF26",
+      "clientFeatures": [
+        "BF03",
+        "BF13",
+        "BF19",
+        "BF26"
+      ],
+      "clientBehavior": "免费资源先判、模型/付费资源预算分别展示，额度非每token另领",
+      "parentTasks": [
+        "ADM007",
+        "ADM023",
+        "COM028"
+      ],
+      "clientAcceptance": [
+        "BC03",
+        "BC13",
+        "BC19",
+        "BC26"
+      ]
+    },
+    {
+      "backendFeature": "MF27",
+      "clientFeatures": [
+        "BF15",
+        "BF09"
+      ],
+      "clientBehavior": "来源/许可/差异、站点适用性、重绑秘密、不执行包内任意代码",
+      "parentTasks": [
+        "ADM017",
+        "ADM031"
+      ],
+      "clientAcceptance": [
+        "BC15",
+        "BC09"
+      ]
+    },
+    {
+      "backendFeature": "MF28",
+      "clientFeatures": [
+        "BF22"
+      ],
+      "clientBehavior": "客户端发起/拒绝/导出关联requestId，权限过滤、日志脱敏",
+      "parentTasks": [
+        "ADM008",
+        "ADM037"
+      ],
+      "clientAcceptance": [
+        "BC22"
+      ]
+    },
+    {
+      "backendFeature": "MF29",
+      "clientFeatures": [
+        "BF04",
+        "BF16",
+        "BF30"
+      ],
+      "clientBehavior": "原子额度、磁盘/图像上限、活动引用不清理，显示保留期限",
+      "parentTasks": [
+        "ADM023",
+        "ADM028",
+        "ADM033"
+      ],
+      "clientAcceptance": [
+        "BC04",
+        "BC16",
+        "BC30"
+      ]
+    },
+    {
+      "backendFeature": "MF30",
+      "clientFeatures": [
+        "BF11"
+      ],
+      "clientBehavior": "默认只读检查、code/影响能力/证据；修复另确认并产生日志",
+      "parentTasks": [
+        "ADM012",
+        "ADM027",
+        "ADM037"
+      ],
+      "clientAcceptance": [
+        "BC11"
+      ]
+    },
+    {
+      "backendFeature": "MF31",
+      "clientFeatures": [
+        "BF02",
+        "BF03"
+      ],
+      "clientBehavior": "客户显示服务/组织停用原因；平台角色进入独立门户操作",
+      "parentTasks": [
+        "ADM033"
+      ],
+      "clientAcceptance": [
+        "BC02",
+        "BC03"
+      ]
+    },
+    {
+      "backendFeature": "MF32",
+      "clientFeatures": [
+        "BF05",
+        "BF13",
+        "BF31"
+      ],
+      "clientBehavior": "策略revision/待审批状态、版本差异，不提供本地忽略策略开关",
+      "parentTasks": [
+        "ADM023",
+        "ADM034"
+      ],
+      "clientAcceptance": [
+        "BC05",
+        "BC13",
+        "BC31"
+      ]
+    },
+    {
+      "backendFeature": "MF33",
+      "clientFeatures": [
+        "BF30",
+        "BF32"
+      ],
+      "clientBehavior": "恢复模式校验新epoch、旧run不重跑、证据/秘密分别恢复",
+      "parentTasks": [
+        "ADM036",
+        "ADM046"
+      ],
+      "clientAcceptance": [
+        "BC30",
+        "BC32"
+      ]
+    },
+    {
+      "backendFeature": "MF34",
+      "clientFeatures": [
+        "BF11",
+        "BF29"
+      ],
+      "clientBehavior": "站内故障/排队/unknown告警，聚合/去重且不含秘密",
+      "parentTasks": [
+        "ADM037",
+        "ADM040"
+      ],
+      "clientAcceptance": [
+        "BC11",
+        "BC29"
+      ]
+    },
+    {
+      "backendFeature": "MF35",
+      "clientFeatures": [
+        "BF31"
+      ],
+      "clientBehavior": "标准用户/服务Agent、受信升级/迁移/回滚和重启后对账",
+      "parentTasks": [
+        "ADM034",
+        "ADM038",
+        "ADM046"
+      ],
+      "clientAcceptance": [
+        "BC31"
+      ]
+    },
+    {
+      "backendFeature": "MF36",
+      "clientFeatures": [
+        "BF01",
+        "BF19",
+        "BF31"
+      ],
+      "clientBehavior": "受信端点/证书、token生命周期、CI接入；无任意脚本配置口",
+      "parentTasks": [
+        "ADM003",
+        "ADM005",
+        "ADM035",
+        "ADM039"
+      ],
+      "clientAcceptance": [
+        "BC01",
+        "BC19",
+        "BC31"
+      ]
+    },
+    {
+      "backendFeature": "CF01",
+      "clientFeatures": [
+        "BF03",
+        "BF23"
+      ],
+      "clientBehavior": "查看免费政策/可售扩容/价格版本，RPA/API/代理不设付费开关",
+      "parentTasks": [
+        "COM004",
+        "COM026"
+      ],
+      "clientAcceptance": [
+        "BC03",
+        "BC23"
+      ]
+    },
+    {
+      "backendFeature": "CF02",
+      "clientFeatures": [
+        "BF23"
+      ],
+      "clientBehavior": "主动选择规格→服务端报价→确认下单，重复点击同幂等键",
+      "parentTasks": [
+        "COM005"
+      ],
+      "clientAcceptance": [
+        "BC23"
+      ]
+    },
+    {
+      "backendFeature": "CF03",
+      "clientFeatures": [
+        "BF23"
+      ],
+      "clientBehavior": "打开受信支付页、查询pending/unknown/失败，渠道密钥不下发",
+      "parentTasks": [
+        "COM006"
+      ],
+      "clientAcceptance": [
+        "BC23"
+      ]
+    },
+    {
+      "backendFeature": "CF04",
+      "clientFeatures": [
+        "BF23",
+        "BF03"
+      ],
+      "clientBehavior": "仅轮询或受权事件读取后台核验结果，跳转成功不发权",
+      "parentTasks": [
+        "COM007"
+      ],
+      "clientAcceptance": [
+        "BC23",
+        "BC03"
+      ]
+    },
+    {
+      "backendFeature": "CF05",
+      "clientFeatures": [
+        "BF23",
+        "BF28"
+      ],
+      "clientBehavior": "显示到账待核验/履约异常和工单；财务对账仅独立门户",
+      "parentTasks": [
+        "COM008",
+        "COM032"
+      ],
+      "clientAcceptance": [
+        "BC23",
+        "BC28"
+      ]
+    },
+    {
+      "backendFeature": "CF06",
+      "clientFeatures": [
+        "BF24"
+      ],
+      "clientBehavior": "展示周期锚点/有效期、续费报价/期次、到账后刷新revision",
+      "parentTasks": [
+        "COM009"
+      ],
+      "clientAcceptance": [
+        "BC24"
+      ]
+    },
+    {
+      "backendFeature": "CF07",
+      "clientFeatures": [
+        "BF24",
+        "BF29"
+      ],
+      "clientBehavior": "正式委托同意/撤销/扣款预告，不能默认勾选或本地布尔发权",
+      "parentTasks": [
+        "COM020",
+        "COM030"
+      ],
+      "clientAcceptance": [
+        "BC24",
+        "BC29"
+      ]
+    },
+    {
+      "backendFeature": "CF08",
+      "clientFeatures": [
+        "BF24",
+        "BF27"
+      ],
+      "clientBehavior": "差额/生效日/总量差异/超额预演，用户选择保留对象",
+      "parentTasks": [
+        "COM019"
+      ],
+      "clientAcceptance": [
+        "BC24",
+        "BC27"
+      ]
+    },
+    {
+      "backendFeature": "CF09",
+      "clientFeatures": [
+        "BF03",
+        "BF13"
+      ],
+      "clientBehavior": "免费资格自动取得、签名/revision核验、付费到账与生效分态",
+      "parentTasks": [
+        "COM010"
+      ],
+      "clientAcceptance": [
+        "BC03",
+        "BC13"
+      ]
+    },
+    {
+      "backendFeature": "CF10",
+      "clientFeatures": [
+        "BF10",
+        "BF25",
+        "BF32"
+      ],
+      "clientBehavior": "设备绑定、公钥keyId、吊销/迁移，拒绝错租户/错boot",
+      "parentTasks": [
+        "COM011",
+        "COM031"
+      ],
+      "clientAcceptance": [
+        "BC10",
+        "BC25",
+        "BC32"
+      ]
+    },
+    {
+      "backendFeature": "CF11",
+      "clientFeatures": [
+        "BF13",
+        "BF32"
+      ],
+      "clientBehavior": "显示剩余核验期限、单调时钟/休眠/倒拨处理，不重置额度",
+      "parentTasks": [
+        "COM011",
+        "COM016"
+      ],
+      "clientAcceptance": [
+        "BC13",
+        "BC32"
+      ]
+    },
+    {
+      "backendFeature": "CF12",
+      "clientFeatures": [
+        "BF04",
+        "BF06"
+      ],
+      "clientBehavior": "创建/导入/克隆/恢复原子占位，回收站计数，永久删后才释放",
+      "parentTasks": [
+        "COM013",
+        "COM014"
+      ],
+      "clientAcceptance": [
+        "BC04",
+        "BC06"
+      ]
+    },
+    {
+      "backendFeature": "CF13",
+      "clientFeatures": [
+        "BF06",
+        "BF23"
+      ],
+      "clientBehavior": "已付/待分配/交付失败/可运行分态，隔离擦除后才回收",
+      "parentTasks": [
+        "COM013",
+        "COM026"
+      ],
+      "clientAcceptance": [
+        "BC06",
+        "BC23"
+      ]
+    },
+    {
+      "backendFeature": "CF14",
+      "clientFeatures": [
+        "BF26"
+      ],
+      "clientBehavior": "同实例区间并集、多个实例求和；免费诊断不进扣费分录",
+      "parentTasks": [
+        "COM015",
+        "COM016"
+      ],
+      "clientAcceptance": [
+        "BC26"
+      ]
+    },
+    {
+      "backendFeature": "CF15",
+      "clientFeatures": [
+        "BF26",
+        "BF23"
+      ],
+      "clientBehavior": "来源/有效期/可用/预留/已用分列，购买赠送分账，免费不扣",
+      "parentTasks": [
+        "COM017"
+      ],
+      "clientAcceptance": [
+        "BC26",
+        "BC23"
+      ]
+    },
+    {
+      "backendFeature": "CF16",
+      "clientFeatures": [
+        "BF07",
+        "BF13",
+        "BF16"
+      ],
+      "clientBehavior": "全局免费10槽、四协议免费、满额排队/拒绝无财务副作用",
+      "parentTasks": [
+        "COM014",
+        "COM017"
+      ],
+      "clientAcceptance": [
+        "BC07",
+        "BC13",
+        "BC16"
+      ]
+    },
+    {
+      "backendFeature": "CF17",
+      "clientFeatures": [
+        "BF02",
+        "BF25"
+      ],
+      "clientBehavior": "分配/邀请预留/回收结果、停用对活动会话和token影响",
+      "parentTasks": [
+        "COM012"
+      ],
+      "clientAcceptance": [
+        "BC02",
+        "BC25"
+      ]
+    },
+    {
+      "backendFeature": "CF18",
+      "clientFeatures": [
+        "BF10",
+        "BF25"
+      ],
+      "clientBehavior": "激活/解绑/冷却/重装核验；增加设备不增环境/席位",
+      "parentTasks": [
+        "COM011",
+        "COM012"
+      ],
+      "clientAcceptance": [
+        "BC10",
+        "BC25"
+      ]
+    },
+    {
+      "backendFeature": "CF19",
+      "clientFeatures": [
+        "BF23",
+        "BF24",
+        "BF28"
+      ],
+      "clientBehavior": "原生摘要与受信门户、财务权限、异常返回/手动刷新恢复",
+      "parentTasks": [
+        "COM025"
+      ],
+      "clientAcceptance": [
+        "BC23",
+        "BC24",
+        "BC28"
+      ]
+    },
+    {
+      "backendFeature": "CF20",
+      "clientFeatures": [
+        "BF28"
+      ],
+      "clientBehavior": "客户只见本组织工单/状态；运营角色可进入独立工作台",
+      "parentTasks": [
+        "COM002",
+        "COM026"
+      ],
+      "clientAcceptance": [
+        "BC28"
+      ]
+    },
+    {
+      "backendFeature": "CF21",
+      "clientFeatures": [
+        "BF26",
+        "BF28"
+      ],
+      "clientBehavior": "只读账单和调整结果，申请理由/审批号可追溯，不本机改数",
+      "parentTasks": [
+        "COM018",
+        "COM023"
+      ],
+      "clientAcceptance": [
+        "BC26",
+        "BC28"
+      ]
+    },
+    {
+      "backendFeature": "CF22",
+      "clientFeatures": [
+        "BF28",
+        "BF27"
+      ],
+      "clientBehavior": "原单申请/渠道进度/权益回收原因，退款不等于网页业务撤销",
+      "parentTasks": [
+        "COM022"
+      ],
+      "clientAcceptance": [
+        "BC28",
+        "BC27"
+      ]
+    },
+    {
+      "backendFeature": "CF23",
+      "clientFeatures": [
+        "BF28",
+        "BF27"
+      ],
+      "clientBehavior": "争议状态/申诉材料、资源冻结范围与恢复，不自动重跑任务",
+      "parentTasks": [
+        "COM022",
+        "COM032"
+      ],
+      "clientAcceptance": [
+        "BC28",
+        "BC27"
+      ]
+    },
+    {
+      "backendFeature": "CF24",
+      "clientFeatures": [
+        "BF27",
+        "BF13"
+      ],
+      "clientBehavior": "拒绝新增未授权付费消耗、有界保护，免费资格及合法代理继续",
+      "parentTasks": [
+        "COM021"
+      ],
+      "clientAcceptance": [
+        "BC27",
+        "BC13"
+      ]
+    },
+    {
+      "backendFeature": "CF25",
+      "clientFeatures": [
+        "BF27",
+        "BF30"
+      ],
+      "clientBehavior": "明示保留/导出/清理，恢复重新核验/登录，不删除超额身份",
+      "parentTasks": [
+        "COM021",
+        "COM023"
+      ],
+      "clientAcceptance": [
+        "BC27",
+        "BC30"
+      ]
+    },
+    {
+      "backendFeature": "CF26",
+      "clientFeatures": [
+        "BF03",
+        "BF23"
+      ],
+      "clientBehavior": "持续免费与限时赠送分列、到期不自动购买、不把AI免费改试用",
+      "parentTasks": [
+        "COM004",
+        "COM023"
+      ],
+      "clientAcceptance": [
+        "BC03",
+        "BC23"
+      ]
+    },
+    {
+      "backendFeature": "CF27",
+      "clientFeatures": [
+        "BF28"
+      ],
+      "clientBehavior": "财务角色申请/查看开具/作废/红冲文件，抬头/税号受限",
+      "parentTasks": [
+        "COM018",
+        "COM024"
+      ],
+      "clientAcceptance": [
+        "BC28"
+      ]
+    },
+    {
+      "backendFeature": "CF28",
+      "clientFeatures": [
+        "BF26",
+        "BF28"
+      ],
+      "clientBehavior": "会话→区间→冻结单价→账单行、预留/消费分列与争议证据",
+      "parentTasks": [
+        "COM027",
+        "COM032"
+      ],
+      "clientAcceptance": [
+        "BC26",
+        "BC28"
+      ]
+    },
+    {
+      "backendFeature": "CF29",
+      "clientFeatures": [
+        "BF19",
+        "BF13"
+      ],
+      "clientBehavior": "API/SDK/MCP同一免费/付费资源门，purpose=test不绕额度/ACL",
+      "parentTasks": [
+        "COM014",
+        "COM028"
+      ],
+      "clientAcceptance": [
+        "BC19",
+        "BC13"
+      ]
+    },
+    {
+      "backendFeature": "CF30",
+      "clientFeatures": [
+        "BF29",
+        "BF24"
+      ],
+      "clientBehavior": "站内去重、已读/跳转、取消委托不误提示；外发按配置",
+      "parentTasks": [
+        "COM030"
+      ],
+      "clientAcceptance": [
+        "BC29",
+        "BC24"
+      ]
+    },
+    {
+      "backendFeature": "CF31",
+      "clientFeatures": [
+        "BF32",
+        "BF30"
+      ],
+      "clientBehavior": "更新公钥/商业epoch、恢复先查验旧授权/区间，不重复扣/发权",
+      "parentTasks": [
+        "COM031",
+        "COM037"
+      ],
+      "clientAcceptance": [
+        "BC32",
+        "BC30"
+      ]
+    },
+    {
+      "backendFeature": "CF32",
+      "clientFeatures": [
+        "BF15",
+        "BF18",
+        "BF19",
+        "BF26"
+      ],
+      "clientBehavior": "人工/AI/RPA/外部软件使用同实例/授权，业务结果与账务独立",
+      "parentTasks": [
+        "COM029",
+        "COM036"
+      ],
+      "clientAcceptance": [
+        "BC15",
+        "BC18",
+        "BC19",
+        "BC26"
+      ]
+    }
+  ],
+  "clientWorkBreakdown": [
+    {
+      "id": "BR001",
+      "days": 3,
+      "dependsOn": [],
+      "primaryCostParent": "ADM003",
+      "collaboratingParents": [
+        "T115",
+        "COM003"
+      ],
+      "status": "not_started"
+    },
+    {
+      "id": "BR002",
+      "days": 5,
+      "dependsOn": [
+        "BR001"
+      ],
+      "primaryCostParent": "ADM005",
+      "collaboratingParents": [
+        "ADM035",
+        "T049"
+      ],
+      "status": "not_started"
+    },
+    {
+      "id": "BR003",
+      "days": 4,
+      "dependsOn": [
+        "BR002"
+      ],
+      "primaryCostParent": "ADM006",
+      "collaboratingParents": [
+        "ADM007",
+        "ADM041"
+      ],
+      "status": "not_started"
+    },
+    {
+      "id": "BR004",
+      "days": 4,
+      "dependsOn": [
+        "BR001",
+        "BR003"
+      ],
+      "primaryCostParent": "COM010",
+      "collaboratingParents": [
+        "COM011",
+        "ADM023"
+      ],
+      "status": "not_started"
+    },
+    {
+      "id": "BR005",
+      "days": 4,
+      "dependsOn": [
+        "BR003",
+        "BR004"
+      ],
+      "primaryCostParent": "ADM014",
+      "collaboratingParents": [
+        "ADM013",
+        "T016",
+        "COM013"
+      ],
+      "status": "not_started"
+    },
+    {
+      "id": "BR006",
+      "days": 5,
+      "dependsOn": [
+        "BR001",
+        "BR003"
+      ],
+      "primaryCostParent": "ADM010",
+      "collaboratingParents": [
+        "ADM009",
+        "ADM011",
+        "ADM038"
+      ],
+      "status": "not_started"
+    },
+    {
+      "id": "BR007",
+      "days": 6,
+      "dependsOn": [
+        "BR005",
+        "BR006"
+      ],
+      "primaryCostParent": "ADM021",
+      "collaboratingParents": [
+        "ADM020",
+        "ADM022",
+        "T079"
+      ],
+      "status": "not_started"
+    },
+    {
+      "id": "BR008",
+      "days": 7,
+      "dependsOn": [
+        "BR005",
+        "BR006"
+      ],
+      "primaryCostParent": "COM014",
+      "collaboratingParents": [
+        "ADM030",
+        "T054",
+        "T091"
+      ],
+      "status": "not_started"
+    },
+    {
+      "id": "BR009",
+      "days": 4,
+      "dependsOn": [
+        "BR005",
+        "BR007"
+      ],
+      "primaryCostParent": "ADM016",
+      "collaboratingParents": [
+        "ADM030",
+        "T092"
+      ],
+      "status": "not_started"
+    },
+    {
+      "id": "BR010",
+      "days": 5,
+      "dependsOn": [
+        "BR007",
+        "BR009"
+      ],
+      "primaryCostParent": "ADM019",
+      "collaboratingParents": [
+        "ADM017",
+        "ADM020",
+        "ADM024",
+        "T090"
+      ],
+      "status": "not_started"
+    },
+    {
+      "id": "BR011",
+      "days": 4,
+      "dependsOn": [
+        "BR010"
+      ],
+      "primaryCostParent": "ADM018",
+      "collaboratingParents": [
+        "ADM044",
+        "COM028",
+        "T072",
+        "T117"
+      ],
+      "status": "not_started"
+    },
+    {
+      "id": "BR012",
+      "days": 5,
+      "dependsOn": [
+        "BR007",
+        "BR010"
+      ],
+      "primaryCostParent": "ADM026",
+      "collaboratingParents": [
+        "ADM025",
+        "ADM027",
+        "T114"
+      ],
+      "status": "not_started"
+    },
+    {
+      "id": "BR013",
+      "days": 5,
+      "dependsOn": [
+        "BR004",
+        "BR003"
+      ],
+      "primaryCostParent": "COM025",
+      "collaboratingParents": [
+        "COM005",
+        "COM009",
+        "COM020",
+        "COM024"
+      ],
+      "status": "not_started"
+    },
+    {
+      "id": "BR014",
+      "days": 4,
+      "dependsOn": [
+        "BR003",
+        "BR004",
+        "BR006"
+      ],
+      "primaryCostParent": "COM012",
+      "collaboratingParents": [
+        "COM011",
+        "ADM006"
+      ],
+      "status": "not_started"
+    },
+    {
+      "id": "BR015",
+      "days": 6,
+      "dependsOn": [
+        "BR004",
+        "BR007"
+      ],
+      "primaryCostParent": "COM015",
+      "collaboratingParents": [
+        "COM014",
+        "COM016",
+        "COM017",
+        "COM027"
+      ],
+      "status": "not_started"
+    },
+    {
+      "id": "BR016",
+      "days": 5,
+      "dependsOn": [
+        "BR013",
+        "BR014",
+        "BR015"
+      ],
+      "primaryCostParent": "COM021",
+      "collaboratingParents": [
+        "COM019",
+        "COM030"
+      ],
+      "status": "not_started"
+    },
+    {
+      "id": "BR017",
+      "days": 5,
+      "dependsOn": [
+        "BR011",
+        "BR012",
+        "BR015"
+      ],
+      "primaryCostParent": "ADM028",
+      "collaboratingParents": [
+        "ADM029",
+        "ADM037",
+        "COM027",
+        "COM032"
+      ],
+      "status": "not_started"
+    },
+    {
+      "id": "BR018",
+      "days": 5,
+      "dependsOn": [
+        "BR006",
+        "BR007"
+      ],
+      "primaryCostParent": "ADM034",
+      "collaboratingParents": [
+        "ADM012",
+        "ADM037",
+        "T121"
+      ],
+      "status": "not_started"
+    },
+    {
+      "id": "BR019",
+      "days": 5,
+      "dependsOn": [
+        "BR011",
+        "BR014",
+        "BR015"
+      ],
+      "primaryCostParent": "COM028",
+      "collaboratingParents": [
+        "ADM003",
+        "T097",
+        "T115",
+        "T120"
+      ],
+      "status": "not_started"
+    },
+    {
+      "id": "BR020",
+      "days": 4,
+      "dependsOn": [
+        "BR005",
+        "BR007",
+        "BR009",
+        "BR015"
+      ],
+      "primaryCostParent": "ADM015",
+      "collaboratingParents": [
+        "ADM036",
+        "COM013",
+        "T093",
+        "T103"
+      ],
+      "status": "not_started"
+    },
+    {
+      "id": "BR021",
+      "days": 8,
+      "dependsOn": [
+        "BR008",
+        "BR011",
+        "BR012",
+        "BR017",
+        "BR019"
+      ],
+      "primaryCostParent": "COM034",
+      "collaboratingParents": [
+        "COM035",
+        "COM036",
+        "ADM044",
+        "ADM045"
+      ],
+      "status": "not_started"
+    },
+    {
+      "id": "BR022",
+      "days": 7,
+      "dependsOn": [
+        "BR013",
+        "BR014",
+        "BR015",
+        "BR016",
+        "BR017",
+        "BR019"
+      ],
+      "primaryCostParent": "COM036",
+      "collaboratingParents": [
+        "COM033",
+        "COM035"
+      ],
+      "status": "not_started"
+    },
+    {
+      "id": "BR023",
+      "days": 6,
+      "dependsOn": [
+        "BR018",
+        "BR020",
+        "BR021",
+        "BR022"
+      ],
+      "primaryCostParent": "COM038",
+      "collaboratingParents": [
+        "COM031",
+        "COM037",
+        "ADM042",
+        "ADM043",
+        "ADM046"
+      ],
+      "status": "not_started"
+    },
+    {
+      "id": "BR024",
+      "days": 4,
+      "dependsOn": [
+        "BR023"
+      ],
+      "primaryCostParent": "COM040",
+      "collaboratingParents": [
+        "COM039",
+        "ADM047",
+        "ADM048",
+        "T065"
+      ],
+      "status": "not_started"
+    }
+  ],
+  "checkedMarkdownFiles": [
+    {
+      "path": "docs/01_开发计划与技术方案.md",
+      "sha256": "f07002b2836ac8b3285db687f4ad3918f377ace55ed259bdc5c76782bcf5468a",
+      "bytes": 79771,
+      "encoding": "UTF-8",
+      "bom": false,
+      "newline": "LF"
+    },
+    {
+      "path": "docs/02_竞品分析与开源项目调研.md",
+      "sha256": "84b30ad6999c0535e6fd4d673311fb62dea3662d067e5587d638d199d4760a49",
+      "bytes": 32483,
+      "encoding": "UTF-8",
+      "bom": false,
+      "newline": "LF"
+    },
+    {
+      "path": "docs/03_开发进度与任务清单.md",
+      "sha256": "725a31bec2b4e6461dbcdfcd77c6f2e3c94a07246e1472ace4d052ae8c72847a",
+      "bytes": 41027,
+      "encoding": "UTF-8",
+      "bom": false,
+      "newline": "LF"
+    },
+    {
+      "path": "docs/04_AI接口与流程设计样例.md",
+      "sha256": "8ecdb8c52ccee541086862b2974365226194b853b8159fdcf7dfeb7403f72cf0",
+      "bytes": 46891,
+      "encoding": "UTF-8",
+      "bom": false,
+      "newline": "LF"
+    },
+    {
+      "path": "docs/05_Web功能测试与便捷操作设计.md",
+      "sha256": "a9ba3e2ded31c01526f9a00ffaf6236852ded12f536d6be43a5434c1f51de486",
+      "bytes": 31645,
+      "encoding": "UTF-8",
+      "bom": false,
+      "newline": "LF"
+    },
+    {
+      "path": "docs/06_功能边界与源码补全方案.md",
+      "sha256": "4490d72f35cb4b3aaa32f19d65c750f846423303c7c5bf3d5d2874d0293d104f",
+      "bytes": 45513,
+      "encoding": "UTF-8",
+      "bom": false,
+      "newline": "LF"
+    },
+    {
+      "path": "docs/07_补充源码选型与验证清单.md",
+      "sha256": "7c8687f4428e38cf0331f73454087564548d72e7bc215af7d58bf33519554981",
+      "bytes": 19214,
+      "encoding": "UTF-8",
+      "bom": false,
+      "newline": "LF"
+    },
+    {
+      "path": "docs/08_参考文档对照与功能增强.md",
+      "sha256": "6bb9a6c813c446910cb5ab00546db7aad765420b0c9341e168f9a4b615a59751",
+      "bytes": 30447,
+      "encoding": "UTF-8",
+      "bom": false,
+      "newline": "LF"
+    },
+    {
+      "path": "docs/09_VC2019工程与依赖构建方案.md",
+      "sha256": "1d786c2c343c3015e9d57996ac0a35835ed99af0672956c4c885ae7f22edaa5b",
+      "bytes": 20626,
+      "encoding": "UTF-8",
+      "bom": false,
+      "newline": "LF"
+    },
+    {
+      "path": "docs/10_管理后台功能与开发计划.md",
+      "sha256": "a4561ca9157a4bb0e71521361906b03be2ed4d59b8d4622845b47e039da4e204",
+      "bytes": 87674,
+      "encoding": "UTF-8",
+      "bom": false,
+      "newline": "LF"
+    },
+    {
+      "path": "docs/11_环境销售计费与商业运营后台计划.md",
+      "sha256": "15152816d4bd92afe342cfd67cb8323d11a5e1c92ff79e0d513f81ad853e144d",
+      "bytes": 82132,
+      "encoding": "UTF-8",
+      "bom": false,
+      "newline": "LF"
+    },
+    {
+      "path": "docs/12_浏览器客户端与后台联动开发计划.md",
+      "sha256": "5f1c51996255d6951d7c349563d63be0880e6295e372d24eb49764d562f25cc6",
+      "bytes": 59460,
+      "encoding": "UTF-8",
+      "bom": false,
+      "newline": "LF"
+    },
+    {
+      "path": "README.md",
+      "sha256": "7f8aaf024528a223d43a9ba2908cc63c52db2b90605f27dc8bf486fdcd09c14c",
+      "bytes": 8624,
+      "encoding": "UTF-8",
+      "bom": false,
+      "newline": "LF"
+    }
+  ],
+  "changedExistingMarkdownFiles": [
+    "docs/01_开发计划与技术方案.md",
+    "docs/03_开发进度与任务清单.md",
+    "docs/04_AI接口与流程设计样例.md",
+    "docs/05_Web功能测试与便捷操作设计.md",
+    "docs/06_功能边界与源码补全方案.md",
+    "docs/09_VC2019工程与依赖构建方案.md",
+    "docs/10_管理后台功能与开发计划.md",
+    "docs/11_环境销售计费与商业运营后台计划.md",
+    "README.md"
+  ],
+  "unrelatedMarkdownFiles": [
+    "docs/02_竞品分析与开源项目调研.md",
+    "docs/07_补充源码选型与验证清单.md",
+    "docs/08_参考文档对照与功能增强.md"
+  ],
+  "preEditBaseline": "docs/research/browser_backend_alignment_change_baseline_2026-11-03.json",
+  "priorHistoricalValidation": "docs/research/free_tier_10env_plan_validation_2026-11-03.json",
+  "limitations": [
+    "Checks validate planning structure, references, examples and consistency only; product behavior and dependencies have not been built or tested.",
+    "120 client person-days are an overlapping decomposition estimate, not an approved additive increase.",
+    "Offline grant durations, exact component versions, resource-balanced schedule, pricing and official payment-channel readiness remain implementation gates."
+  ]
+}

@@ -1,0 +1,13 @@
+用于 .NET Framework 的 Microsoft (R) 生成引擎版本 16.11.6+a918ceb31
+版权所有(C) Microsoft Corporation。保留所有权利。
+
+  awb_sqlite.vcxproj -> E:\project\webexploer_codex\build\commerce-cmake\Release\awb_sqlite.lib
+  http.cpp
+  awb_core.vcxproj -> E:\project\webexploer_codex\build\commerce-cmake\Release\awb_core.lib
+  workbench-mcp.vcxproj -> E:\project\webexploer_codex\build\commerce-cmake\Release\workbench-mcp.exe
+  workbench-node.vcxproj -> E:\project\webexploer_codex\build\commerce-cmake\Release\workbench-node.exe
+  workbench-cli.vcxproj -> E:\project\webexploer_codex\build\commerce-cmake\Release\workbench-cli.exe
+  awb-storage-tests.vcxproj -> E:\project\webexploer_codex\build\commerce-cmake\Release\awb-storage-tests.exe
+  workbench-admin.vcxproj -> E:\project\webexploer_codex\build\commerce-cmake\Release\workbench-admin.exe
+  workbench.vcxproj -> E:\project\webexploer_codex\build\commerce-cmake\Release\workbench.exe
+  awb-core-tests.vcxproj -> E:\project\webexploer_codex\build\commerce-cmake\Release\awb-core-tests.exe

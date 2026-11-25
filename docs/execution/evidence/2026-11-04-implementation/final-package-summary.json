@@ -1,0 +1,29 @@
+{
+  "date": "2026-11-04T11:21:53.565277+08:00",
+  "result": "passed",
+  "version": "0.1.2-poc",
+  "archive": {
+    "file": "AI-Browser-Workbench-0.1.2-win64-features-r1.zip",
+    "sha256": "a05e3098e8e7f426c7ad2044b6e699be527493a1f67bc8cfe0b5748c57a7e5cf",
+    "bytes": 224778483
+  },
+  "manifestFiles": 801,
+  "allOriginalFilesReverifiedAfterTests": true,
+  "originalDataEmpty": true,
+  "originalTestResultsAbsent": true,
+  "deploymentChecks": 9,
+  "packagedSuites": [
+    "browser",
+    "proxy",
+    "lifecycle",
+    "recovery",
+    "socks",
+    "runtime",
+    "api",
+    "mcp",
+    "protocol",
+    "desktop"
+  ],
+  "secondCleanMachineTested": false,
+  "commercialRelease": false
+}

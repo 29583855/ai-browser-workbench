@@ -1,0 +1,20 @@
+{
+  "date": "2026-11-04T14:24:43.136083+08:00",
+  "result": "passed",
+  "checks": [
+    "archive-and-every-file-verified-pristine-data",
+    "self-test-passes-with-desktop-open-and-keeps-user-catalog-unchanged",
+    "normal-gui-launcher-and-close",
+    "cli-mcp-launchers-no-extra-stdout-and-consistent-version",
+    "api-launcher-from-unrelated-cwd-authentication-and-shutdown",
+    "double-click-self-test-cmd-full-hash-check",
+    "tampered-package-rejected",
+    "missing-crt-rejected-before-starting-executables",
+    "copied-source-vs2019-release-build-and-tests"
+  ],
+  "secondCleanMachineTested": false,
+  "archiveSha256": "5e052460bc0636f507ffae7010826fbbf12eb928f495a1b16799f011b5734fe0",
+  "copiedFolder": "E:\\project\\webexploer_codex\\build\\evidence\\workflow-r1-package-delivery\\final-package\\中文 空格部署\\AI-Browser-Workbench-0.1.5-win64-workflow-r1",
+  "version": "0.1.5-poc",
+  "manifestFiles": 1013
+}

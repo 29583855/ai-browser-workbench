@@ -1,0 +1,271 @@
+{
+  "date": "2026-11-05",
+  "version": "0.1.11-poc",
+  "result": "passed",
+  "allPlannedFeaturesComplete": false,
+  "releaseReady": false,
+  "summary": "本地24完成/36进行中/50未开始，基线权重52/317=16.40%；后台/商业88项尚未开始。专项6完成/17进行中/5未开始。",
+  "toolCount": 67,
+  "cmakeFinalRuns": [
+    {
+      "configuration": "Debug",
+      "suite": "api",
+      "result": "passed",
+      "report": "docs/execution/evidence/2026-11-05-implementation/cmake-Debug-final/Debug-api/report.json"
+    },
+    {
+      "configuration": "Debug",
+      "suite": "browser",
+      "result": "passed",
+      "report": "docs/execution/evidence/2026-11-05-implementation/cmake-Debug-final/Debug-browser/report.json"
+    },
+    {
+      "configuration": "Debug",
+      "suite": "credentials_debug",
+      "result": "passed",
+      "report": "docs/execution/evidence/2026-11-05-implementation/cmake-Debug-final/Debug-credentials_debug/report.json"
+    },
+    {
+      "configuration": "Debug",
+      "suite": "diagnostics",
+      "result": "passed",
+      "report": "docs/execution/evidence/2026-11-05-implementation/cmake-Debug-final/Debug-diagnostics/report.json"
+    },
+    {
+      "configuration": "Debug",
+      "suite": "discovery_repair",
+      "result": "passed",
+      "report": "docs/execution/evidence/2026-11-05-implementation/cmake-Debug-final/Debug-discovery_repair/report.json"
+    },
+    {
+      "configuration": "Debug",
+      "suite": "extraction",
+      "result": "passed",
+      "report": "docs/execution/evidence/2026-11-05-implementation/cmake-Debug-final/Debug-extraction/report.json"
+    },
+    {
+      "configuration": "Debug",
+      "suite": "inspector",
+      "result": "passed",
+      "report": "docs/execution/evidence/2026-11-05-implementation/cmake-Debug-final/Debug-inspector/report.json"
+    },
+    {
+      "configuration": "Debug",
+      "suite": "lifecycle",
+      "result": "passed",
+      "report": "docs/execution/evidence/2026-11-05-implementation/cmake-Debug-final/Debug-lifecycle/report.json"
+    },
+    {
+      "configuration": "Debug",
+      "suite": "mcp",
+      "result": "passed",
+      "report": "docs/execution/evidence/2026-11-05-implementation/cmake-Debug-final/Debug-mcp/report.json"
+    },
+    {
+      "configuration": "Debug",
+      "suite": "model_packages",
+      "result": "passed",
+      "report": "docs/execution/evidence/2026-11-05-implementation/cmake-Debug-final/Debug-model_packages/report.json"
+    },
+    {
+      "configuration": "Debug",
+      "suite": "pages",
+      "result": "passed",
+      "report": "docs/execution/evidence/2026-11-05-implementation/cmake-Debug-final/Debug-pages/report.json"
+    },
+    {
+      "configuration": "Debug",
+      "suite": "protocol",
+      "result": "passed",
+      "report": "docs/execution/evidence/2026-11-05-implementation/cmake-Debug-final/Debug-protocol/report.json"
+    },
+    {
+      "configuration": "Debug",
+      "suite": "proxy",
+      "result": "passed",
+      "report": "docs/execution/evidence/2026-11-05-implementation/cmake-Debug-final/Debug-proxy/report.json"
+    },
+    {
+      "configuration": "Debug",
+      "suite": "recovery",
+      "result": "passed",
+      "report": "docs/execution/evidence/2026-11-05-implementation/cmake-Debug-final/Debug-recovery/report.json"
+    },
+    {
+      "configuration": "Debug",
+      "suite": "runtime",
+      "result": "passed",
+      "report": "docs/execution/evidence/2026-11-05-implementation/cmake-Debug-final/Debug-runtime/report.json"
+    },
+    {
+      "configuration": "Debug",
+      "suite": "sdk",
+      "result": "passed",
+      "report": "docs/execution/evidence/2026-11-05-implementation/cmake-Debug-final/Debug-sdk/report.json"
+    },
+    {
+      "configuration": "Debug",
+      "suite": "socks",
+      "result": "passed",
+      "report": "docs/execution/evidence/2026-11-05-implementation/cmake-Debug-final/Debug-socks/report.json"
+    },
+    {
+      "configuration": "Debug",
+      "suite": "storage_paths",
+      "result": "passed",
+      "report": "docs/execution/evidence/2026-11-05-implementation/cmake-Debug-final/Debug-storage_paths/report.json"
+    },
+    {
+      "configuration": "Debug",
+      "suite": "workflow",
+      "result": "passed",
+      "report": "docs/execution/evidence/2026-11-05-implementation/cmake-Debug-final/Debug-workflow/report.json"
+    },
+    {
+      "configuration": "Release",
+      "suite": "api",
+      "result": "passed",
+      "report": "docs/execution/evidence/2026-11-05-implementation/cmake-Release-final/Release-api/report.json"
+    },
+    {
+      "configuration": "Release",
+      "suite": "browser",
+      "result": "passed",
+      "report": "docs/execution/evidence/2026-11-05-implementation/cmake-Release-final/Release-browser/report.json"
+    },
+    {
+      "configuration": "Release",
+      "suite": "credentials_debug",
+      "result": "passed",
+      "report": "docs/execution/evidence/2026-11-05-implementation/cmake-Release-final/Release-credentials_debug/report.json"
+    },
+    {
+      "configuration": "Release",
+      "suite": "diagnostics",
+      "result": "passed",
+      "report": "docs/execution/evidence/2026-11-05-implementation/cmake-Release-final/Release-diagnostics/report.json"
+    },
+    {
+      "configuration": "Release",
+      "suite": "discovery_repair",
+      "result": "passed",
+      "report": "docs/execution/evidence/2026-11-05-implementation/cmake-Release-final/Release-discovery_repair/report.json"
+    },
+    {
+      "configuration": "Release",
+      "suite": "extraction",
+      "result": "passed",
+      "report": "docs/execution/evidence/2026-11-05-implementation/cmake-Release-final/Release-extraction/report.json"
+    },
+    {
+      "configuration": "Release",
+      "suite": "inspector",
+      "result": "passed",
+      "report": "docs/execution/evidence/2026-11-05-implementation/cmake-Release-final/Release-inspector/report.json"
+    },
+    {
+      "configuration": "Release",
+      "suite": "lifecycle",
+      "result": "passed",
+      "report": "docs/execution/evidence/2026-11-05-implementation/cmake-Release-final/Release-lifecycle/report.json"
+    },
+    {
+      "configuration": "Release",
+      "suite": "mcp",
+      "result": "passed",
+      "report": "docs/execution/evidence/2026-11-05-implementation/cmake-Release-final/Release-mcp/report.json"
+    },
+    {
+      "configuration": "Release",
+      "suite": "model_packages",
+      "result": "passed",
+      "report": "docs/execution/evidence/2026-11-05-implementation/cmake-Release-final/Release-model_packages/report.json"
+    },
+    {
+      "configuration": "Release",
+      "suite": "pages",
+      "result": "passed",
+      "report": "docs/execution/evidence/2026-11-05-implementation/cmake-Release-final/Release-pages/report.json"
+    },
+    {
+      "configuration": "Release",
+      "suite": "protocol",
+      "result": "passed",
+      "report": "docs/execution/evidence/2026-11-05-implementation/cmake-Release-final/Release-protocol/report.json"
+    },
+    {
+      "configuration": "Release",
+      "suite": "proxy",
+      "result": "passed",
+      "report": "docs/execution/evidence/2026-11-05-implementation/cmake-Release-final/Release-proxy/report.json"
+    },
+    {
+      "configuration": "Release",
+      "suite": "recovery",
+      "result": "passed",
+      "report": "docs/execution/evidence/2026-11-05-implementation/cmake-Release-final/Release-recovery/report.json"
+    },
+    {
+      "configuration": "Release",
+      "suite": "runtime",
+      "result": "passed",
+      "report": "docs/execution/evidence/2026-11-05-implementation/cmake-Release-final/Release-runtime/report.json"
+    },
+    {
+      "configuration": "Release",
+      "suite": "sdk",
+      "result": "passed",
+      "report": "docs/execution/evidence/2026-11-05-implementation/cmake-Release-final/Release-sdk/report.json"
+    },
+    {
+      "configuration": "Release",
+      "suite": "socks",
+      "result": "passed",
+      "report": "docs/execution/evidence/2026-11-05-implementation/cmake-Release-final/Release-socks/report.json"
+    },
+    {
+      "configuration": "Release",
+      "suite": "storage_paths",
+      "result": "passed",
+      "report": "docs/execution/evidence/2026-11-05-implementation/cmake-Release-final/Release-storage_paths/report.json"
+    },
+    {
+      "configuration": "Release",
+      "suite": "workflow",
+      "result": "passed",
+      "report": "docs/execution/evidence/2026-11-05-implementation/cmake-Release-final/Release-workflow/report.json"
+    }
+  ],
+  "nativeBuildLogs": [
+    "implementation-native-final-r3.log",
+    "implementation-native-ui-final.log"
+  ],
+  "visual": {
+    "report": "implementation-visual-regression-r3/report.json",
+    "suites": 10,
+    "checks": 94
+  },
+  "supplemental": {
+    "model-packages-clean-Debug": "model-packages-clean-Debug/report.json",
+    "model-packages-clean-Release": "model-packages-clean-Release/report.json",
+    "sdk-login-Debug": "sdk-login-Debug/report.json",
+    "sdk-login-Release": "sdk-login-Release/report.json",
+    "automation-desktop-final-Debug": "automation-desktop-final-Debug/report.json",
+    "automation-desktop-final-Release": "automation-desktop-final-Release/report.json"
+  },
+  "knownObservation": "草稿恢复相等比较曾偶发一次失败，旧证据无差异，尚未确立根因；补充差异证据、独立复测及最终双配置通过，保留长期观察",
+  "historicalFailuresRetained": true,
+  "portableValidation": "新包部署结果见dist同级交付验证文件，避免自引用ZIP哈希",
+  "binarySha256": {
+    "build/native-vs2019/x64/Debug/awb-core-tests.exe": "f4551f4abc8a3328e342533e835881d664df97b9b0284c0dc58f89930cdfa9cb",
+    "build/native-vs2019/x64/Debug/awb-storage-tests.exe": "2d4409c00d324a63fb9f77ebd24598522da3e8a4fca28e4a12125ac64f278222",
+    "build/native-vs2019/x64/Debug/workbench-cli.exe": "8bd88d3db99c9b5f2846f2e5a0fa7371df46a15e2952f941c51bbdfe5bd55549",
+    "build/native-vs2019/x64/Debug/workbench-mcp.exe": "8bb905bf7293cbe3a6866cbd15839362fb86f6e9ee9765c8e6ddf5b43ca95047",
+    "build/native-vs2019/x64/Debug/workbench.exe": "3fd6025405365b186c2a9b8c2c79ae25376574f5d4d65a00150e93570490b405",
+    "build/native-vs2019/x64/Release/awb-core-tests.exe": "ddd1823653932f907d5817e1e0c909ee3218dad20d80fe2dc732e168ed7331ee",
+    "build/native-vs2019/x64/Release/awb-storage-tests.exe": "6e4b1085f8822939adbefd673b3a55dc87b3afbe1016b32ad9eeb1003f808345",
+    "build/native-vs2019/x64/Release/workbench-cli.exe": "cf4ac7726dca54c8b3e6085183cf63a237b6bcfe1bbb5b38e2d2df08a7067bd8",
+    "build/native-vs2019/x64/Release/workbench-mcp.exe": "71493d9662f201d402c65c424dbc1f80403cf2906dcf638983fef844a4e529e1",
+    "build/native-vs2019/x64/Release/workbench.exe": "4d8c17b55b4d5f799210c6ea979f2c675860675b72008a1a304915f16a95a0ff"
+  }
+}

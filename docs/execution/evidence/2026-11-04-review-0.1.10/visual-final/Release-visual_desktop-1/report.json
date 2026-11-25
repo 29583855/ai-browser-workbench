@@ -1,0 +1,69 @@
+{
+  "date": "2026-11-04",
+  "result": "passed",
+  "checks": [
+    "desktop-record-stop-produces-parameterized-draft-with-one-submit",
+    "recorded-draft-opens-on-canvas-and-shared-validation-accepts-configuration",
+    "canvas-publication-binds-original-profile-even-after-selection-changes",
+    "main-window-runs-canvas-publication-with-cleared-input-and-one-submit"
+  ],
+  "steps": [
+    {
+      "buttonId": 101,
+      "outcome": "passed"
+    },
+    {
+      "buttonId": 101,
+      "outcome": "passed"
+    },
+    {
+      "buttonId": 102,
+      "outcome": "passed"
+    },
+    {
+      "buttonId": 104,
+      "outcome": "passed"
+    },
+    {
+      "menuId": 902,
+      "outcome": "passed"
+    },
+    {
+      "buttonId": 108,
+      "outcome": "passed"
+    },
+    {
+      "buttonId": 109,
+      "outcome": "passed"
+    },
+    {
+      "buttonId": 110,
+      "outcome": "passed"
+    },
+    {
+      "menuId": 906,
+      "outcome": "passed"
+    },
+    {
+      "buttonId": 129,
+      "outcome": "passed"
+    },
+    {
+      "buttonId": 130,
+      "outcome": "passed"
+    },
+    {
+      "buttonId": 110,
+      "outcome": "passed"
+    },
+    {
+      "buttonId": 103,
+      "outcome": "passed"
+    }
+  ],
+  "binarySha256": "e9f76e7994c42d705f738ad9d738a8afafad10d5e8ba9f601c2be010c9488777",
+  "groupSwitches": [
+    503,
+    501
+  ]
+}

@@ -1,0 +1,168 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "urn:awb:web-test:environment:1.0",
+  "title": "Web测试environment数据契约",
+  "description": "2026-11-04。设计契约；尚未接入C++运行时。结构校验后还需执行跨资源及来源语义校验。",
+  "type": "object",
+  "properties": {
+    "schemaVersion": {
+      "const": "1.0"
+    },
+    "id": {
+      "type": "string",
+      "pattern": "^[a-z][a-z0-9_-]{0,63}$"
+    },
+    "revision": {
+      "type": "integer",
+      "minimum": 1,
+      "maximum": 1000000
+    },
+    "projectId": {
+      "type": "string",
+      "pattern": "^[a-z][a-z0-9_-]{0,63}$"
+    },
+    "name": {
+      "type": "string",
+      "minLength": 1,
+      "maxLength": 128
+    },
+    "kind": {
+      "enum": [
+        "development",
+        "test"
+      ]
+    },
+    "baseUrl": {
+      "type": "string",
+      "minLength": 1,
+      "maxLength": 2048
+    },
+    "defaultPage": {
+      "type": "string",
+      "minLength": 1,
+      "maxLength": 2048
+    },
+    "allowedOrigins": {
+      "type": "array",
+      "minItems": 1,
+      "maxItems": 32,
+      "uniqueItems": true,
+      "items": {
+        "type": "string",
+        "minLength": 1,
+        "maxLength": 2048
+      }
+    },
+    "variables": {
+      "type": "object",
+      "maxProperties": 64,
+      "propertyNames": {
+        "type": "string",
+        "pattern": "^[a-z][a-z0-9_-]{0,63}$"
+      },
+      "additionalProperties": {
+        "oneOf": [
+          {
+            "type": "object",
+            "properties": {
+              "value": {
+                "type": [
+                  "string",
+                  "number",
+                  "boolean",
+                  "null"
+                ],
+                "maxLength": 4096
+              }
+            },
+            "required": [
+              "value"
+            ],
+            "additionalProperties": false
+          },
+          {
+            "type": "object",
+            "properties": {
+              "secretRef": {
+                "type": "string",
+                "pattern": "^secret://[a-z][a-z0-9_-]{0,63}/[a-z][a-z0-9_-]{0,63}$"
+              }
+            },
+            "required": [
+              "secretRef"
+            ],
+            "additionalProperties": false
+          },
+          {
+            "type": "object",
+            "properties": {
+              "generator": {
+                "const": "case-attempt-unique"
+              },
+              "prefix": {
+                "type": "string",
+                "pattern": "^[a-z][a-z0-9_-]{0,31}$"
+              }
+            },
+            "required": [
+              "generator",
+              "prefix"
+            ],
+            "additionalProperties": false
+          }
+        ]
+      }
+    },
+    "resourceRequirements": {
+      "type": "object",
+      "properties": {
+        "independentProfiles": {
+          "type": "integer",
+          "minimum": 1,
+          "maximum": 100000
+        },
+        "parallelRuns": {
+          "type": "integer",
+          "minimum": 1,
+          "maximum": 100000
+        },
+        "proxyProtocol": {
+          "enum": [
+            "direct",
+            "http",
+            "https",
+            "socks5",
+            "ssh"
+          ]
+        },
+        "overCapacity": {
+          "enum": [
+            "queue",
+            "reject"
+          ]
+        }
+      },
+      "required": [
+        "independentProfiles",
+        "parallelRuns",
+        "proxyProtocol",
+        "overCapacity"
+      ],
+      "additionalProperties": false
+    }
+  },
+  "required": [
+    "schemaVersion",
+    "id",
+    "revision",
+    "projectId",
+    "name",
+    "kind",
+    "baseUrl",
+    "defaultPage",
+    "allowedOrigins",
+    "variables",
+    "resourceRequirements"
+  ],
+  "additionalProperties": false
+}

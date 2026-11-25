@@ -1,0 +1,33 @@
+{
+  "result": "failed",
+  "date": "2026-11-04T09:08:19+08:00",
+  "checks": [
+    "package-sha256",
+    "awb-core-tests.exe",
+    "awb-storage-tests.exe",
+    "workbench.exe",
+    "capabilities",
+    "app-local-release-crt",
+    "profile_create",
+    "browser_start",
+    "lease_acquire",
+    "browser_navigate",
+    "page_locate",
+    "page_fill",
+    "page_locate",
+    "page_click",
+    "page_wait_text",
+    "offline-page-server-receipt",
+    "browser_stop",
+    "mcp-initialize-tools-list"
+  ],
+  "errors": [
+    "CLI terminated: capabilities"
+  ],
+  "root": "E:\\project\\webexploer_codex\\build\\evidence\\review-20261104\\baseline-selftest-busy\\AI-Browser-Workbench-0.1.0-win64-portable",
+  "cleanMachine": false,
+  "runtimeModules": [
+    "E:\\project\\webexploer_codex\\build\\evidence\\review-20261104\\baseline-selftest-busy\\AI-Browser-Workbench-0.1.0-win64-portable\\MSVCP140.dll",
+    "E:\\project\\webexploer_codex\\build\\evidence\\review-20261104\\baseline-selftest-busy\\AI-Browser-Workbench-0.1.0-win64-portable\\VCRUNTIME140.dll"
+  ]
+}

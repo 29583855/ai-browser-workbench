@@ -1,0 +1,25 @@
+{
+  "date": "2026-11-03",
+  "result": "passed",
+  "scope": "T015 local metadata foundation plus existing POC regression",
+  "buildRun": "build/evidence/run-20261103-234526",
+  "releaseReady": false,
+  "configurations": [
+    "Debug",
+    "Release"
+  ],
+  "ctestPerConfiguration": [
+    "core",
+    "storage",
+    "win32-shell"
+  ],
+  "storageChecksPerConfiguration": 23,
+  "browserCommandsPerConfiguration": 122,
+  "mcpTools": 16,
+  "sourceMarkersFound": 0,
+  "ownSourceFiles": 24,
+  "sourceHashesMatchTestedFiles": true,
+  "testReportCanaryLeakFound": false,
+  "physicalPowerCutTested": false,
+  "browserSessionBackupImplemented": false
+}

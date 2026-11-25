@@ -1,0 +1,27 @@
+{
+  "date": "2026-11-04",
+  "result": "passed",
+  "scope": "only task-created fixture browser data; reports retained",
+  "removed": [
+    {
+      "path": "Debug-recording-r1/private-data",
+      "deletedFiles": 151
+    },
+    {
+      "path": "Debug-recording-r2/private-data",
+      "deletedFiles": 302
+    },
+    {
+      "path": "Debug-recording-r3/private-data",
+      "deletedFiles": 337
+    },
+    {
+      "path": "Debug-recording-r4/private-data",
+      "deletedFiles": 151
+    },
+    {
+      "path": "Debug-recording-r5/private-data",
+      "deletedFiles": 337
+    }
+  ]
+}

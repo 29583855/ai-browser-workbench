@@ -1,0 +1,84 @@
+{
+  "date": "2026-11-03",
+  "result": "passed",
+  "errors": [],
+  "markdownFiles": 18,
+  "tables": 159,
+  "relativeLinks": 138,
+  "jsonCodeBlocks": 26,
+  "files": [
+    {
+      "path": "README.md",
+      "sha256": "4e564569f11508e1e9058b7ec7eca9fdd338341190d4a9714535d5c2b21e8df1"
+    },
+    {
+      "path": "NOTICE.md",
+      "sha256": "0e259a51f96acec2e61fbddad791adeb10b1c2c747c01a00cd4bc02ad50bd164"
+    },
+    {
+      "path": "docs/01_开发计划与技术方案.md",
+      "sha256": "b5b237fb26183ce7d461661ed7c464a19b19995b8db213a106396c9b0acc4512"
+    },
+    {
+      "path": "docs/02_竞品分析与开源项目调研.md",
+      "sha256": "249ac6e49d9808a751759f02bed58cfa122b80daf4b8dacda2b5c1a96d5c9b1c"
+    },
+    {
+      "path": "docs/03_开发进度与任务清单.md",
+      "sha256": "793d5563835bbb3ced654eb1a5322431ca75853e9d0a40432cab3d3cb98a6402"
+    },
+    {
+      "path": "docs/04_AI接口与流程设计样例.md",
+      "sha256": "8ecdb8c52ccee541086862b2974365226194b853b8159fdcf7dfeb7403f72cf0"
+    },
+    {
+      "path": "docs/05_Web功能测试与便捷操作设计.md",
+      "sha256": "a9ba3e2ded31c01526f9a00ffaf6236852ded12f536d6be43a5434c1f51de486"
+    },
+    {
+      "path": "docs/06_功能边界与源码补全方案.md",
+      "sha256": "4490d72f35cb4b3aaa32f19d65c750f846423303c7c5bf3d5d2874d0293d104f"
+    },
+    {
+      "path": "docs/07_补充源码选型与验证清单.md",
+      "sha256": "c7ac3e4decf1c9ee40bdd73c47ac443923a82a756903b542f11879bf83312a90"
+    },
+    {
+      "path": "docs/08_参考文档对照与功能增强.md",
+      "sha256": "6bb9a6c813c446910cb5ab00546db7aad765420b0c9341e168f9a4b615a59751"
+    },
+    {
+      "path": "docs/09_VC2019工程与依赖构建方案.md",
+      "sha256": "d4bd4a8596d9932b82fd28453ddddc807cd1a2abc3b44e40b17a721ef1139570"
+    },
+    {
+      "path": "docs/10_管理后台功能与开发计划.md",
+      "sha256": "a4561ca9157a4bb0e71521361906b03be2ed4d59b8d4622845b47e039da4e204"
+    },
+    {
+      "path": "docs/11_环境销售计费与商业运营后台计划.md",
+      "sha256": "15152816d4bd92afe342cfd67cb8323d11a5e1c92ff79e0d513f81ad853e144d"
+    },
+    {
+      "path": "docs/12_浏览器客户端与后台联动开发计划.md",
+      "sha256": "b188a4f6e7ebdd62b14542e10888abfdf1bec44680b1070550bd56e2bffde9dc"
+    },
+    {
+      "path": "docs/13_执行记录与验收台账.md",
+      "sha256": "3f5dcfe885a8ae204c4075bae1df4843134355aff67a2a7e03572f24c103f108"
+    },
+    {
+      "path": "docs/acceptance/首发四场景与POC验收.md",
+      "sha256": "f0303363bdcbbe6ad620ad7d150b3d50c0c3afb75a8912d78be90635cd962a72"
+    },
+    {
+      "path": "docs/adr/001_POC工程与UI决策.md",
+      "sha256": "0f59e58a8ae7fb62c441af00faf06802731f7588bae758b4ca26ad060ff24107"
+    },
+    {
+      "path": "docs/execution/README.md",
+      "sha256": "b2749a8f9f0036c6bd020c11ef9da9ecfbb3a7484b7a86435e5395d432bd829b"
+    }
+  ],
+  "scope": "document structure only; product acceptance is separate"
+}

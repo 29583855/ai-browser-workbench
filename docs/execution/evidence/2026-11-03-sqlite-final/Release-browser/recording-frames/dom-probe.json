@@ -1,0 +1,13 @@
+{
+  "browserTargetObserved": true,
+  "shadowRootTypes": [
+    "closed",
+    "open",
+    "user-agent"
+  ],
+  "iframeNodes": 2,
+  "oopifTargets": 1,
+  "productActionsScope": "main-frame-only",
+  "closedShadowActionsSupported": false,
+  "oopifActionsSupported": false
+}

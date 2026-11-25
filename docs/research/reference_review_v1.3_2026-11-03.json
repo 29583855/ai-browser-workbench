@@ -1,0 +1,855 @@
+{
+  "schemaVersion": "1.0",
+  "planVersion": "1.3",
+  "reviewDate": "2026-11-03",
+  "reference": {
+    "path": "E:\\project\\webexploer\\docs\\Chimera-开发计划与进度管理.md",
+    "version": "v2.0",
+    "bytes": 148033,
+    "sha256": "7d69dbb0e39a8f93997b0007b2af0156cdde3cffca516f6d64367622420af7be",
+    "encoding": "UTF-8 no BOM / LF",
+    "writtenByThisTask": false,
+    "changedDuringReview": true,
+    "fileCountInReferenceDocs": 1,
+    "snapshot": "docs/research/reference_v2_observed_2026-11-03.json"
+  },
+  "originalProjectFiles": [
+    {
+      "path": "README.md",
+      "sha256": "bef62622b9c06859e51c4319d92dc9a0e15432cbfad21190cb1d57947c7dd42e",
+      "bytes": 3328,
+      "encoding": "UTF-8",
+      "bom": false,
+      "crlf_count": 0,
+      "lf_count": 31
+    },
+    {
+      "path": "docs\\01_开发计划与技术方案.md",
+      "sha256": "f87a291df5dc4aa7b3a1ea08bcc3242a6bc0242983401484d32ab5e1575408e3",
+      "bytes": 66560,
+      "encoding": "UTF-8",
+      "bom": false,
+      "crlf_count": 0,
+      "lf_count": 762
+    },
+    {
+      "path": "docs\\02_竞品分析与开源项目调研.md",
+      "sha256": "7492e2cbe83b56b1a7e40caf7241d89d7adb70a1dae0f1634ecef554a00e2844",
+      "bytes": 28290,
+      "encoding": "UTF-8",
+      "bom": false,
+      "crlf_count": 0,
+      "lf_count": 254
+    },
+    {
+      "path": "docs\\03_开发进度与任务清单.md",
+      "sha256": "61d224fc7f564e5a2e2b6a5a7d67726b6a2313f09f92e54d0c479587a7d37bec",
+      "bytes": 28998,
+      "encoding": "UTF-8",
+      "bom": false,
+      "crlf_count": 0,
+      "lf_count": 298
+    },
+    {
+      "path": "docs\\04_AI接口与流程设计样例.md",
+      "sha256": "d86015ce6af16bbed88c9a0617ed65870e137e171f29ab90b6d1209c77d6dd85",
+      "bytes": 34200,
+      "encoding": "UTF-8",
+      "bom": false,
+      "crlf_count": 0,
+      "lf_count": 724
+    },
+    {
+      "path": "docs\\05_Web功能测试与便捷操作设计.md",
+      "sha256": "92e84fedc0d39c84deec82835a90d99735289170c469b7855df787254897d1e7",
+      "bytes": 23642,
+      "encoding": "UTF-8",
+      "bom": false,
+      "crlf_count": 0,
+      "lf_count": 259
+    },
+    {
+      "path": "docs\\06_功能边界与源码补全方案.md",
+      "sha256": "b8c2940f23e0488367e3b8ba5ca191640c17b0913e0ec642388526f10936434b",
+      "bytes": 34456,
+      "encoding": "UTF-8",
+      "bom": false,
+      "crlf_count": 0,
+      "lf_count": 319
+    },
+    {
+      "path": "docs\\07_补充源码选型与验证清单.md",
+      "sha256": "e9d3f813354f4c37d4c12fddf89ee7be6c1377d08f51a3f12365e44b408b25d1",
+      "bytes": 15321,
+      "encoding": "UTF-8",
+      "bom": false,
+      "crlf_count": 0,
+      "lf_count": 101
+    }
+  ],
+  "referenceTaskAudit": {
+    "uniqueTasks": 153,
+    "netDays": 854,
+    "stageSums": {
+      "M0": 50,
+      "M1": 142,
+      "M2": 140,
+      "M3": 116,
+      "M4": 138,
+      "M5": 142,
+      "M6": 126
+    },
+    "statedSummaryDays": 882,
+    "statedBufferDays": 110,
+    "rowTotalWithBuffer": 964,
+    "statedSummaryWithBuffer": 992,
+    "tasks": [
+      {
+        "id": "M0-01",
+        "days": 3
+      },
+      {
+        "id": "M0-02",
+        "days": 3
+      },
+      {
+        "id": "M0-03",
+        "days": 4
+      },
+      {
+        "id": "M0-04",
+        "days": 5
+      },
+      {
+        "id": "M0-05",
+        "days": 6
+      },
+      {
+        "id": "M0-06",
+        "days": 6
+      },
+      {
+        "id": "M0-07",
+        "days": 4
+      },
+      {
+        "id": "M0-08",
+        "days": 3
+      },
+      {
+        "id": "M0-09",
+        "days": 3
+      },
+      {
+        "id": "M0-10",
+        "days": 4
+      },
+      {
+        "id": "M0-11",
+        "days": 3
+      },
+      {
+        "id": "M0-12",
+        "days": 3
+      },
+      {
+        "id": "M0-13",
+        "days": 2
+      },
+      {
+        "id": "M0-14",
+        "days": 1
+      },
+      {
+        "id": "M1-01",
+        "days": 5
+      },
+      {
+        "id": "M1-02",
+        "days": 6
+      },
+      {
+        "id": "M1-03",
+        "days": 2
+      },
+      {
+        "id": "M1-04",
+        "days": 4
+      },
+      {
+        "id": "M1-05",
+        "days": 4
+      },
+      {
+        "id": "M1-06",
+        "days": 3
+      },
+      {
+        "id": "M1-07",
+        "days": 5
+      },
+      {
+        "id": "M1-08",
+        "days": 4
+      },
+      {
+        "id": "M1-09",
+        "days": 3
+      },
+      {
+        "id": "M1-10",
+        "days": 6
+      },
+      {
+        "id": "M1-11",
+        "days": 4
+      },
+      {
+        "id": "M1-12",
+        "days": 6
+      },
+      {
+        "id": "M1-13",
+        "days": 5
+      },
+      {
+        "id": "M1-14",
+        "days": 8
+      },
+      {
+        "id": "M1-15",
+        "days": 8
+      },
+      {
+        "id": "M1-16",
+        "days": 3
+      },
+      {
+        "id": "M1-17",
+        "days": 10
+      },
+      {
+        "id": "M1-18",
+        "days": 6
+      },
+      {
+        "id": "M1-19",
+        "days": 6
+      },
+      {
+        "id": "M1-20",
+        "days": 8
+      },
+      {
+        "id": "M1-21",
+        "days": 6
+      },
+      {
+        "id": "M1-22",
+        "days": 8
+      },
+      {
+        "id": "M1-23",
+        "days": 10
+      },
+      {
+        "id": "M1-24",
+        "days": 5
+      },
+      {
+        "id": "M1-25",
+        "days": 4
+      },
+      {
+        "id": "M1-26",
+        "days": 3
+      },
+      {
+        "id": "M2-01",
+        "days": 5
+      },
+      {
+        "id": "M2-02",
+        "days": 5
+      },
+      {
+        "id": "M2-03",
+        "days": 5
+      },
+      {
+        "id": "M2-04",
+        "days": 8
+      },
+      {
+        "id": "M2-05",
+        "days": 5
+      },
+      {
+        "id": "M2-06",
+        "days": 5
+      },
+      {
+        "id": "M2-07",
+        "days": 5
+      },
+      {
+        "id": "M2-08",
+        "days": 5
+      },
+      {
+        "id": "M2-09",
+        "days": 6
+      },
+      {
+        "id": "M2-10",
+        "days": 8
+      },
+      {
+        "id": "M2-11",
+        "days": 8
+      },
+      {
+        "id": "M2-12",
+        "days": 4
+      },
+      {
+        "id": "M2-13",
+        "days": 4
+      },
+      {
+        "id": "M2-14",
+        "days": 4
+      },
+      {
+        "id": "M2-15",
+        "days": 5
+      },
+      {
+        "id": "M2-16",
+        "days": 6
+      },
+      {
+        "id": "M2-17",
+        "days": 8
+      },
+      {
+        "id": "M2-18",
+        "days": 6
+      },
+      {
+        "id": "M2-19",
+        "days": 6
+      },
+      {
+        "id": "M2-20",
+        "days": 5
+      },
+      {
+        "id": "M2-21",
+        "days": 10
+      },
+      {
+        "id": "M2-22",
+        "days": 6
+      },
+      {
+        "id": "M2-23",
+        "days": 6
+      },
+      {
+        "id": "M2-24",
+        "days": 5
+      },
+      {
+        "id": "M3-01",
+        "days": 6
+      },
+      {
+        "id": "M3-02",
+        "days": 8
+      },
+      {
+        "id": "M3-03",
+        "days": 6
+      },
+      {
+        "id": "M3-04",
+        "days": 4
+      },
+      {
+        "id": "M3-05",
+        "days": 5
+      },
+      {
+        "id": "M3-06",
+        "days": 5
+      },
+      {
+        "id": "M3-07",
+        "days": 6
+      },
+      {
+        "id": "M3-08",
+        "days": 6
+      },
+      {
+        "id": "M3-09",
+        "days": 4
+      },
+      {
+        "id": "M3-10",
+        "days": 10
+      },
+      {
+        "id": "M3-11",
+        "days": 6
+      },
+      {
+        "id": "M3-12",
+        "days": 8
+      },
+      {
+        "id": "M3-13",
+        "days": 4
+      },
+      {
+        "id": "M3-14",
+        "days": 5
+      },
+      {
+        "id": "M3-15",
+        "days": 4
+      },
+      {
+        "id": "M3-16",
+        "days": 5
+      },
+      {
+        "id": "M3-17",
+        "days": 6
+      },
+      {
+        "id": "M3-18",
+        "days": 4
+      },
+      {
+        "id": "M3-19",
+        "days": 5
+      },
+      {
+        "id": "M3-20",
+        "days": 3
+      },
+      {
+        "id": "M3-21",
+        "days": 3
+      },
+      {
+        "id": "M3-22",
+        "days": 3
+      },
+      {
+        "id": "M4-01",
+        "days": 6
+      },
+      {
+        "id": "M4-02",
+        "days": 5
+      },
+      {
+        "id": "M4-03",
+        "days": 5
+      },
+      {
+        "id": "M4-04",
+        "days": 6
+      },
+      {
+        "id": "M4-05",
+        "days": 10
+      },
+      {
+        "id": "M4-06",
+        "days": 5
+      },
+      {
+        "id": "M4-07",
+        "days": 3
+      },
+      {
+        "id": "M4-08",
+        "days": 8
+      },
+      {
+        "id": "M4-09",
+        "days": 8
+      },
+      {
+        "id": "M4-10",
+        "days": 5
+      },
+      {
+        "id": "M4-11",
+        "days": 3
+      },
+      {
+        "id": "M4-12",
+        "days": 6
+      },
+      {
+        "id": "M4-13",
+        "days": 4
+      },
+      {
+        "id": "M4-14",
+        "days": 5
+      },
+      {
+        "id": "M4-15",
+        "days": 5
+      },
+      {
+        "id": "M4-16",
+        "days": 6
+      },
+      {
+        "id": "M4-17",
+        "days": 6
+      },
+      {
+        "id": "M4-18",
+        "days": 3
+      },
+      {
+        "id": "M4-19",
+        "days": 6
+      },
+      {
+        "id": "M4-20",
+        "days": 8
+      },
+      {
+        "id": "M4-21",
+        "days": 5
+      },
+      {
+        "id": "M4-22",
+        "days": 6
+      },
+      {
+        "id": "M4-23",
+        "days": 6
+      },
+      {
+        "id": "M4-24",
+        "days": 6
+      },
+      {
+        "id": "M4-25",
+        "days": 2
+      },
+      {
+        "id": "M5-01",
+        "days": 5
+      },
+      {
+        "id": "M5-02",
+        "days": 6
+      },
+      {
+        "id": "M5-03",
+        "days": 10
+      },
+      {
+        "id": "M5-04",
+        "days": 8
+      },
+      {
+        "id": "M5-05",
+        "days": 6
+      },
+      {
+        "id": "M5-06",
+        "days": 6
+      },
+      {
+        "id": "M5-07",
+        "days": 5
+      },
+      {
+        "id": "M5-08",
+        "days": 8
+      },
+      {
+        "id": "M5-09",
+        "days": 8
+      },
+      {
+        "id": "M5-10",
+        "days": 5
+      },
+      {
+        "id": "M5-11",
+        "days": 4
+      },
+      {
+        "id": "M5-12",
+        "days": 6
+      },
+      {
+        "id": "M5-13",
+        "days": 5
+      },
+      {
+        "id": "M5-14",
+        "days": 10
+      },
+      {
+        "id": "M5-15",
+        "days": 6
+      },
+      {
+        "id": "M5-16",
+        "days": 4
+      },
+      {
+        "id": "M5-17",
+        "days": 12
+      },
+      {
+        "id": "M5-18",
+        "days": 6
+      },
+      {
+        "id": "M5-19",
+        "days": 8
+      },
+      {
+        "id": "M5-20",
+        "days": 4
+      },
+      {
+        "id": "M5-21",
+        "days": 6
+      },
+      {
+        "id": "M5-22",
+        "days": 4
+      },
+      {
+        "id": "M6-01",
+        "days": 5
+      },
+      {
+        "id": "M6-02",
+        "days": 6
+      },
+      {
+        "id": "M6-03",
+        "days": 4
+      },
+      {
+        "id": "M6-04",
+        "days": 5
+      },
+      {
+        "id": "M6-05",
+        "days": 8
+      },
+      {
+        "id": "M6-06",
+        "days": 6
+      },
+      {
+        "id": "M6-07",
+        "days": 5
+      },
+      {
+        "id": "M6-08",
+        "days": 10
+      },
+      {
+        "id": "M6-09",
+        "days": 8
+      },
+      {
+        "id": "M6-10",
+        "days": 4
+      },
+      {
+        "id": "M6-11",
+        "days": 6
+      },
+      {
+        "id": "M6-12",
+        "days": 5
+      },
+      {
+        "id": "M6-13",
+        "days": 8
+      },
+      {
+        "id": "M6-14",
+        "days": 6
+      },
+      {
+        "id": "M6-15",
+        "days": 6
+      },
+      {
+        "id": "M6-16",
+        "days": 10
+      },
+      {
+        "id": "M6-17",
+        "days": 12
+      },
+      {
+        "id": "M6-18",
+        "days": 5
+      },
+      {
+        "id": "M6-19",
+        "days": 5
+      },
+      {
+        "id": "M6-20",
+        "days": 2
+      }
+    ],
+    "sourceVersion": "first v1.0 observation"
+  },
+  "toolchainInventory": {
+    "inspectionOnly": true,
+    "visualStudio2019": {
+      "enterprisePath": "D:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\Enterprise",
+      "communityPath": "D:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\Community",
+      "installationVersion": "16.11.36631.11",
+      "displayVersion": "16.11.53",
+      "vcComponentDetected": true
+    },
+    "defaultMsvcToolsVersion": "14.29.30133",
+    "clVersionObserved": "19.29.30159",
+    "architecture": "x64",
+    "sdkIncludeDirectories": [
+      "10.0.19041.0",
+      "10.0.22621.0",
+      "10.0.26100.0"
+    ],
+    "selectedSdkCandidate": "10.0.19041.0",
+    "cmakeVersion": "3.20.21032501-MSVC_2",
+    "clangFormatFilePresent": true,
+    "msbuildFilePresent": true,
+    "vcvars64FilePresent": true,
+    "productCompilationPerformed": false,
+    "dependencyBuildPerformed": false
+  },
+  "newScope": {
+    "features": [
+      "F60",
+      "F61",
+      "F62",
+      "F63",
+      "F64",
+      "F65"
+    ],
+    "boundaries": [
+      "B33",
+      "B34",
+      "B35",
+      "B36",
+      "B37",
+      "B38"
+    ],
+    "tasks": [
+      "T113",
+      "T114",
+      "T115",
+      "T116",
+      "T117",
+      "T118",
+      "T119",
+      "T120",
+      "T121",
+      "T122"
+    ],
+    "incrementalNetDays": 42,
+    "localTaskCount": 110,
+    "localNetDays": 317,
+    "plannedNetDays": [
+      343,
+      363
+    ],
+    "referenceWeeks": 29,
+    "referenceStart": "2026-11-09",
+    "referenceEnd": "2027-05-30",
+    "productImplementationPercent": 0
+  },
+  "newWebResearchPerformed": false,
+  "historicalResearchEvidenceChanged": false,
+  "notes": [
+    "Reference design claims are not upstream license or product behavior evidence.",
+    "Tool inventory is not a successful product build.",
+    "All product tasks remain unstarted.",
+    "External reference source changed during review; observations retained and v2 text captured. The reference path was read-only for this task."
+  ],
+  "referenceObservations": [
+    {
+      "observation": "first-read",
+      "version": "v1.0",
+      "bytes": 105059,
+      "sha256": "9265b09ff8213f9df00f15c5844ccfe2be666b160e48c6c32f58662ce1fa3822"
+    },
+    {
+      "path": "E:\\project\\webexploer\\docs\\Chimera-开发计划与进度管理.md",
+      "bytes": 105910,
+      "sha256": "8cd82142452ba01c4ecb8fe824cb84994381175cb2ba24426d949a7ba9fa3a01",
+      "encoding": "UTF-8 no BOM / LF",
+      "fileCountInReferenceDocs": 1,
+      "observation": "intermediate-inventory"
+    },
+    {
+      "observation": "final-supplement-read",
+      "version": "v2.0",
+      "bytes": 148033,
+      "sha256": "7d69dbb0e39a8f93997b0007b2af0156cdde3cffca516f6d64367622420af7be",
+      "snapshot": "docs/research/reference_v2_observed_2026-11-03.json"
+    }
+  ],
+  "referenceV2TaskAudit": {
+    "uniqueTasks": 171,
+    "numericMTaskCount": 165,
+    "kmTaskCount": 6,
+    "stageSums": {
+      "M0": 64,
+      "M1": 170,
+      "M2": 141,
+      "M3": 116,
+      "M4": 138,
+      "M5": 142,
+      "M6": 138
+    },
+    "numericNetDays": 909,
+    "kmBudgetFromNarrative": 55,
+    "bufferFromSummary": 195,
+    "rowTotalWithQuotedKmAndBuffer": 1159,
+    "statedSummaryTotal": 1168,
+    "notes": [
+      "KM frequency/event counts are not numeric workday estimates.",
+      "Reference source self-reported completed tasks are not product evidence in this project."
+    ]
+  },
+  "kernelFollowup": {
+    "referenceV2Read": true,
+    "modernKernelProductionIncludedInLocal29Weeks": false,
+    "t101t102Days": 28,
+    "scope": "Source/build feasibility, selected-candidate consistency and limited adaptation only. KG2-KG4 production and continuing maintenance require a separate WBS and estimate.",
+    "gates": [
+      "KG0",
+      "KG1",
+      "KG2",
+      "KG3",
+      "KG4"
+    ]
+  }
+}

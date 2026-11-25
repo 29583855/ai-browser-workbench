@@ -1,0 +1,228 @@
+{
+  "date": "2026-11-04T23:36:08.257709+08:00",
+  "result": "passed",
+  "effective": [
+    {
+      "requested": {
+        "userAgent": "AWB-QA/1.0 TestAgent-A",
+        "languages": [
+          "zh-CN",
+          "zh"
+        ],
+        "timezone": "Asia/Shanghai"
+      },
+      "actualPage": {
+        "userAgent": "AWB-QA/1.0 TestAgent-A",
+        "languages": [
+          "zh-CN",
+          "zh"
+        ],
+        "timezone": "Asia/Shanghai"
+      },
+      "headers": {
+        "userAgent": "AWB-QA/1.0 TestAgent-A",
+        "acceptLanguage": "zh-CN,zh;q=0.9"
+      }
+    },
+    {
+      "requested": {
+        "userAgent": "AWB-QA/1.0 TestAgent-B",
+        "languages": [
+          "en-US",
+          "en"
+        ],
+        "timezone": "America/New_York"
+      },
+      "actualPage": {
+        "userAgent": "AWB-QA/1.0 TestAgent-B",
+        "languages": [
+          "en-US",
+          "en"
+        ],
+        "timezone": "America/New_York"
+      },
+      "headers": {
+        "userAgent": "AWB-QA/1.0 TestAgent-B",
+        "acceptLanguage": "en-US,en;q=0.9"
+      }
+    }
+  ],
+  "binarySha256": "3eeec28715bae9859648f3bfb02caf748d6aa25a49f42551f02b8e42ea3c154c",
+  "eventsBeforeRestart": [
+    {
+      "sequence": 1,
+      "command": "profile_create",
+      "outcome": "INVALID_ARGUMENTS"
+    },
+    {
+      "sequence": 2,
+      "command": "profile_create",
+      "outcome": "INVALID_ARGUMENTS"
+    },
+    {
+      "sequence": 3,
+      "command": "profile_create",
+      "outcome": "INVALID_ARGUMENTS"
+    },
+    {
+      "sequence": 4,
+      "command": "profile_create",
+      "outcome": "INVALID_ARGUMENTS"
+    },
+    {
+      "sequence": 5,
+      "command": "profile_create",
+      "outcome": "INVALID_ARGUMENTS"
+    },
+    {
+      "sequence": 6,
+      "command": "profile_create",
+      "outcome": "INVALID_ARGUMENTS"
+    },
+    {
+      "sequence": 7,
+      "command": "profile_create",
+      "outcome": "passed"
+    },
+    {
+      "sequence": 8,
+      "command": "browser_start",
+      "outcome": "passed"
+    },
+    {
+      "sequence": 9,
+      "command": "lease_acquire",
+      "outcome": "passed"
+    },
+    {
+      "sequence": 10,
+      "command": "browser_navigate",
+      "outcome": "passed"
+    },
+    {
+      "sequence": 11,
+      "command": "page_locate",
+      "outcome": "passed"
+    },
+    {
+      "sequence": 12,
+      "command": "page_text",
+      "outcome": "passed"
+    },
+    {
+      "sequence": 13,
+      "command": "browser_navigate",
+      "outcome": "passed"
+    },
+    {
+      "sequence": 14,
+      "command": "page_locate",
+      "outcome": "passed"
+    },
+    {
+      "sequence": 15,
+      "command": "page_text",
+      "outcome": "passed"
+    },
+    {
+      "sequence": 16,
+      "command": "profile_create",
+      "outcome": "passed"
+    },
+    {
+      "sequence": 17,
+      "command": "browser_start",
+      "outcome": "passed"
+    },
+    {
+      "sequence": 18,
+      "command": "lease_acquire",
+      "outcome": "passed"
+    },
+    {
+      "sequence": 19,
+      "command": "browser_navigate",
+      "outcome": "passed"
+    },
+    {
+      "sequence": 20,
+      "command": "page_locate",
+      "outcome": "passed"
+    },
+    {
+      "sequence": 21,
+      "command": "page_text",
+      "outcome": "passed"
+    },
+    {
+      "sequence": 22,
+      "command": "browser_navigate",
+      "outcome": "passed"
+    },
+    {
+      "sequence": 23,
+      "command": "page_locate",
+      "outcome": "passed"
+    },
+    {
+      "sequence": 24,
+      "command": "page_text",
+      "outcome": "passed"
+    },
+    {
+      "sequence": 25,
+      "command": "browser_stop",
+      "outcome": "passed"
+    },
+    {
+      "sequence": 26,
+      "command": "browser_stop",
+      "outcome": "passed"
+    }
+  ],
+  "persistedAfterRestart": true,
+  "invalidTimezoneRefused": true,
+  "defaultsRestored": true,
+  "events": [
+    {
+      "sequence": 1,
+      "command": "profile_list",
+      "outcome": "passed"
+    },
+    {
+      "sequence": 2,
+      "command": "browser_start",
+      "outcome": "passed"
+    },
+    {
+      "sequence": 3,
+      "command": "browser_stop",
+      "outcome": "passed"
+    },
+    {
+      "sequence": 4,
+      "command": "profile_update",
+      "outcome": "passed"
+    },
+    {
+      "sequence": 5,
+      "command": "browser_start",
+      "outcome": "RUNTIME_CONFIGURATION_REJECTED"
+    },
+    {
+      "sequence": 6,
+      "command": "profile_update",
+      "outcome": "passed"
+    },
+    {
+      "sequence": 7,
+      "command": "browser_start",
+      "outcome": "passed"
+    },
+    {
+      "sequence": 8,
+      "command": "browser_stop",
+      "outcome": "passed"
+    }
+  ]
+}

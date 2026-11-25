@@ -1,0 +1,34 @@
+{
+  "date": "2026-11-04T23:47:00.641592+08:00",
+  "result": "passed",
+  "checks": [
+    "real-storage-register-login-navigate-reopen-path-160",
+    "real-storage-register-login-navigate-reopen-path-200",
+    "real-storage-register-login-navigate-reopen-path-240"
+  ],
+  "paths": [
+    {
+      "profileUtf16Units": 160,
+      "containsUnicodeAndSpace": true,
+      "cookieLocalIndexedCacheAndWorkerVerified": true,
+      "restartVerified": true
+    },
+    {
+      "profileUtf16Units": 200,
+      "containsUnicodeAndSpace": true,
+      "cookieLocalIndexedCacheAndWorkerVerified": true,
+      "restartVerified": true
+    },
+    {
+      "profileUtf16Units": 240,
+      "containsUnicodeAndSpace": true,
+      "cookieLocalIndexedCacheAndWorkerVerified": true,
+      "restartVerified": true
+    }
+  ],
+  "binarySha256": "a0044050b6128d930b76b404f61a62f00d9de26cba7fa95e5cf98038be823cbc",
+  "serverFacts": {
+    "registrationCount": 3,
+    "loginCount": 3
+  }
+}

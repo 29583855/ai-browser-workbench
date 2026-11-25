@@ -1,0 +1,2 @@
+CLI rejected browser_start : {"error":{"automaticRetryAllowed":false,"code":"FILE_WRITE_FAILED","message":"Cannot create managed temporary file","outcomeUnknown":false},"id":3,"ok":false}
+Self-test: failed. Report: E:\project\webexploer_codex\build\evidence\implementation-20261104\final-package\中文 空格部署\AI-Browser-Workbench-0.1.2-win64-features\test-results\run-20261104-111205-59a565cc\report.json

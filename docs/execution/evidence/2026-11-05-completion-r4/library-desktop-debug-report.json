@@ -1,0 +1,123 @@
+{
+  "date": "2026-11-05T12:59:05.001278+08:00",
+  "result": "passed",
+  "steps": [
+    {
+      "buttonId": 1242,
+      "outcome": "passed"
+    },
+    {
+      "buttonId": 1242,
+      "outcome": "REVISION_CONFLICT"
+    },
+    {
+      "buttonId": 1243,
+      "outcome": "passed"
+    },
+    {
+      "buttonId": 1242,
+      "outcome": "passed"
+    },
+    {
+      "buttonId": 1243,
+      "outcome": "passed"
+    },
+    {
+      "buttonId": 1250,
+      "outcome": "passed"
+    },
+    {
+      "buttonId": 1251,
+      "outcome": "passed"
+    },
+    {
+      "buttonId": 1245,
+      "outcome": "passed"
+    },
+    {
+      "buttonId": 1247,
+      "outcome": "passed"
+    },
+    {
+      "buttonId": 1246,
+      "outcome": "passed"
+    },
+    {
+      "buttonId": 1244,
+      "outcome": "LIBRARY_CONFIRMATION_REQUIRED"
+    },
+    {
+      "buttonId": 1244,
+      "outcome": "passed"
+    },
+    {
+      "buttonId": 1240,
+      "outcome": "passed"
+    },
+    {
+      "buttonId": 1241,
+      "outcome": "passed"
+    },
+    {
+      "buttonId": 1242,
+      "outcome": "passed"
+    },
+    {
+      "buttonId": 1240,
+      "outcome": "passed"
+    },
+    {
+      "buttonId": 1241,
+      "outcome": "passed"
+    },
+    {
+      "buttonId": 1242,
+      "outcome": "passed"
+    },
+    {
+      "buttonId": 1248,
+      "outcome": "passed"
+    },
+    {
+      "buttonId": 1249,
+      "outcome": "passed"
+    },
+    {
+      "buttonId": 1244,
+      "outcome": "passed"
+    },
+    {
+      "buttonId": 1244,
+      "outcome": "passed"
+    },
+    {
+      "buttonId": 1245,
+      "outcome": "LIBRARY_CONFIRMATION_REQUIRED"
+    },
+    {
+      "buttonId": 1245,
+      "outcome": "BATCH_RECONCILIATION_REQUIRED"
+    },
+    {
+      "buttonId": 1252,
+      "outcome": "passed"
+    },
+    {
+      "buttonId": 1245,
+      "outcome": "passed"
+    },
+    {
+      "buttonId": 1243,
+      "outcome": "passed"
+    }
+  ],
+  "checks": [
+    "all-profile-fields-clear-overrides-and-two-window-conflict-preserves-input",
+    "main-list-refresh-and-small-window-bidirectional-scroll",
+    "system-file-dialog-config-export-import-and-confirmed-profile-lifecycle",
+    "group-membership-template-history-rollback-instance-and-resource-delete",
+    "batch-page-navigation-archive-scope-and-unknown-outcome-retention",
+    "owner-close-joins-pending-save-and-restart-keeps-deduplication"
+  ],
+  "binarySha256": "1bf7821098a1da454e6e9674ed202a23356539a53809cd1c66c5f4bfe58459f4"
+}

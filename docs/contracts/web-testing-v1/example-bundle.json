@@ -1,0 +1,137 @@
+{
+  "schemaVersion": "1.0",
+  "project": {
+    "schemaVersion": "1.0",
+    "id": "sample-web",
+    "revision": 1,
+    "name": "登录注册开发测试项目",
+    "environmentIds": [
+      "local-dev"
+    ],
+    "caseIds": [
+      "login-success"
+    ],
+    "dataSetIds": [
+      "test-user"
+    ],
+    "roleIds": [
+      "ordinary-user"
+    ],
+    "defaultEnvironmentId": "local-dev",
+    "scenarioIds": [
+      "SC01"
+    ]
+  },
+  "environments": [
+    {
+      "schemaVersion": "1.0",
+      "id": "local-dev",
+      "revision": 1,
+      "projectId": "sample-web",
+      "name": "本地开发",
+      "kind": "development",
+      "baseUrl": "http://127.0.0.1:3000",
+      "defaultPage": "/login?view=test#form",
+      "allowedOrigins": [
+        "http://127.0.0.1:3000"
+      ],
+      "variables": {},
+      "resourceRequirements": {
+        "independentProfiles": 1,
+        "parallelRuns": 1,
+        "proxyProtocol": "direct",
+        "overCapacity": "queue"
+      }
+    }
+  ],
+  "dataSets": [
+    {
+      "schemaVersion": "1.0",
+      "id": "test-user",
+      "revision": 1,
+      "projectId": "sample-web",
+      "parameters": {
+        "username": {
+          "type": "string",
+          "sensitive": false
+        },
+        "password": {
+          "type": "string",
+          "sensitive": true
+        }
+      },
+      "rows": [
+        {
+          "id": "ordinary",
+          "bindings": {
+            "username": {
+              "generator": "case-attempt-unique",
+              "prefix": "fixture-user"
+            },
+            "password": {
+              "secretRef": "secret://sample-web/login-password"
+            }
+          }
+        }
+      ]
+    }
+  ],
+  "cases": [
+    {
+      "schemaVersion": "1.0",
+      "id": "login-success",
+      "revision": 1,
+      "projectId": "sample-web",
+      "name": "正确账号密码登录",
+      "scenarioId": "SC01",
+      "catalogIds": [
+        "WT01"
+      ],
+      "environmentIds": [
+        "local-dev"
+      ],
+      "roleId": "ordinary-user",
+      "dataSetId": "test-user",
+      "workflow": {
+        "id": "login",
+        "version": 1
+      },
+      "setupWorkflow": {
+        "id": "create-test-user",
+        "version": 1
+      },
+      "cleanup": {
+        "workflow": {
+          "id": "delete-created-user",
+          "version": 1
+        },
+        "onlyCreatedResources": true,
+        "onFailure": "block-dependent-cases"
+      },
+      "authentication": {
+        "mode": "new-identity",
+        "identityRef": null,
+        "verifyWorkflow": null
+      },
+      "isolation": {
+        "browser": "independent-profile",
+        "backend": "case-attempt-namespace"
+      },
+      "execution": {
+        "timeoutMs": 60000,
+        "writeRetry": "never",
+        "onUnknown": "require-reconciliation",
+        "cleanupRequired": true,
+        "attemptHistory": "append-only"
+      },
+      "assertions": [
+        "页面身份与本attempt测试账号一致",
+        "受保护业务接口返回相同身份，成功登录事实计数恰好一次"
+      ],
+      "tags": [
+        "smoke",
+        "authentication"
+      ]
+    }
+  ]
+}

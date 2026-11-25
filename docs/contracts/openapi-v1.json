@@ -1,0 +1,5243 @@
+{
+  "openapi": "3.0.3",
+  "info": {
+    "title": "AI Browser Workbench Local Tool API",
+    "version": "0.1.13-poc"
+  },
+  "servers": [
+    {
+      "url": "http://127.0.0.1:{port}",
+      "variables": {
+        "port": {
+          "default": "9228"
+        }
+      }
+    }
+  ],
+  "security": [
+    {
+      "BearerAuth": []
+    }
+  ],
+  "components": {
+    "securitySchemes": {
+      "BearerAuth": {
+        "type": "http",
+        "scheme": "bearer"
+      }
+    }
+  },
+  "paths": {
+    "/v1/tools/capabilities": {
+      "post": {
+        "operationId": "capabilities",
+        "description": "Report implemented technical-preview capabilities and unsupported features",
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "additionalProperties": false,
+                "properties": {},
+                "required": [],
+                "type": "object"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Envelope with ok=true and result; business completion requires postconditions"
+          },
+          "default": {
+            "description": "Envelope with ok=false and error.code/message/outcomeUnknown; no automatic retry"
+          }
+        }
+      }
+    },
+    "/v1/tools/doctor": {
+      "post": {
+        "operationId": "doctor",
+        "description": "Read component and local ownership health without starting browsers or changing quotas",
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "additionalProperties": false,
+                "properties": {},
+                "required": [],
+                "type": "object"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Envelope with ok=true and result; business completion requires postconditions"
+          },
+          "default": {
+            "description": "Envelope with ok=false and error.code/message/outcomeUnknown; no automatic retry"
+          }
+        }
+      }
+    },
+    "/v1/tools/admin_policy": {
+      "post": {
+        "operationId": "admin_policy",
+        "description": "Read the local development and commercial-preview policy without changing state",
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "additionalProperties": false,
+                "properties": {},
+                "required": [],
+                "type": "object"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Envelope with ok=true and result; business completion requires postconditions"
+          },
+          "default": {
+            "description": "Envelope with ok=false and error.code/message/outcomeUnknown; no automatic retry"
+          }
+        }
+      }
+    },
+    "/v1/tools/admin_summary": {
+      "post": {
+        "operationId": "admin_summary",
+        "description": "Read local profile, running-browser and free-capacity counters for the management UI",
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "additionalProperties": false,
+                "properties": {},
+                "required": [],
+                "type": "object"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Envelope with ok=true and result; business completion requires postconditions"
+          },
+          "default": {
+            "description": "Envelope with ok=false and error.code/message/outcomeUnknown; no automatic retry"
+          }
+        }
+      }
+    },
+    "/v1/tools/commerce_entitlements": {
+      "post": {
+        "operationId": "commerce_entitlements",
+        "description": "Read local free counters or connected control-plane entitlements",
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "additionalProperties": false,
+                "properties": {},
+                "required": [],
+                "type": "object"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Envelope with ok=true and result; business completion requires postconditions"
+          },
+          "default": {
+            "description": "Envelope with ok=false and error.code/message/outcomeUnknown; no automatic retry"
+          }
+        }
+      }
+    },
+    "/v1/tools/commerce_quote": {
+      "post": {
+        "operationId": "commerce_quote",
+        "description": "Preview whether a requested environment/concurrency/proxy scope is free or billable",
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "additionalProperties": false,
+                "properties": {
+                  "concurrentCount": {
+                    "maximum": 10000,
+                    "minimum": 1,
+                    "type": "integer"
+                  },
+                  "durationDays": {
+                    "maximum": 3650,
+                    "minimum": 1,
+                    "type": "integer"
+                  },
+                  "environmentCount": {
+                    "maximum": 100000,
+                    "minimum": 1,
+                    "type": "integer"
+                  },
+                  "proxy": {
+                    "type": "boolean"
+                  }
+                },
+                "required": [
+                  "environmentCount"
+                ],
+                "type": "object"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Envelope with ok=true and result; business completion requires postconditions"
+          },
+          "default": {
+            "description": "Envelope with ok=false and error.code/message/outcomeUnknown; no automatic retry"
+          }
+        }
+      }
+    },
+    "/v1/tools/account_connect": {
+      "post": {
+        "operationId": "account_connect",
+        "description": "Login to control plane and enforce global commercial admission",
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "additionalProperties": false,
+                "properties": {
+                  "deviceName": {
+                    "maxLength": 128,
+                    "minLength": 1,
+                    "type": "string"
+                  },
+                  "email": {
+                    "maxLength": 254,
+                    "minLength": 1,
+                    "type": "string"
+                  },
+                  "password": {
+                    "maxLength": 256,
+                    "minLength": 1,
+                    "type": "string"
+                  },
+                  "tenantId": {
+                    "maxLength": 32,
+                    "minLength": 1,
+                    "type": "string"
+                  },
+                  "url": {
+                    "maxLength": 2048,
+                    "minLength": 1,
+                    "type": "string"
+                  }
+                },
+                "required": [
+                  "url",
+                  "email",
+                  "password"
+                ],
+                "type": "object"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Envelope with ok=true and result; business completion requires postconditions"
+          },
+          "default": {
+            "description": "Envelope with ok=false and error.code/message/outcomeUnknown; no automatic retry"
+          }
+        }
+      }
+    },
+    "/v1/tools/account_connect_code": {
+      "post": {
+        "operationId": "account_connect_code",
+        "description": "Exchange a one-time SSO desktop connection code and bind this device",
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "additionalProperties": false,
+                "properties": {
+                  "code": {
+                    "maxLength": 128,
+                    "minLength": 1,
+                    "type": "string"
+                  },
+                  "deviceName": {
+                    "maxLength": 128,
+                    "minLength": 1,
+                    "type": "string"
+                  },
+                  "url": {
+                    "maxLength": 2048,
+                    "minLength": 1,
+                    "type": "string"
+                  }
+                },
+                "required": [
+                  "url",
+                  "code"
+                ],
+                "type": "object"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Envelope with ok=true and result; business completion requires postconditions"
+          },
+          "default": {
+            "description": "Envelope with ok=false and error.code/message/outcomeUnknown; no automatic retry"
+          }
+        }
+      }
+    },
+    "/v1/tools/account_disconnect": {
+      "post": {
+        "operationId": "account_disconnect",
+        "description": "Logout only after every tracked browser is stopped",
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "additionalProperties": false,
+                "properties": {},
+                "required": [],
+                "type": "object"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Envelope with ok=true and result; business completion requires postconditions"
+          },
+          "default": {
+            "description": "Envelope with ok=false and error.code/message/outcomeUnknown; no automatic retry"
+          }
+        }
+      }
+    },
+    "/v1/tools/account_status": {
+      "post": {
+        "operationId": "account_status",
+        "description": "Read protected connection metadata or current server entitlement",
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "additionalProperties": false,
+                "properties": {
+                  "remote": {
+                    "type": "boolean"
+                  }
+                },
+                "required": [],
+                "type": "object"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Envelope with ok=true and result; business completion requires postconditions"
+          },
+          "default": {
+            "description": "Envelope with ok=false and error.code/message/outcomeUnknown; no automatic retry"
+          }
+        }
+      }
+    },
+    "/v1/tools/account_action": {
+      "post": {
+        "operationId": "account_action",
+        "description": "Execute a customer portal action with server-side tenant and role checks",
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "additionalProperties": false,
+                "properties": {
+                  "action": {
+                    "enum": [
+                      "identity",
+                      "snapshot",
+                      "order.create",
+                      "order.cancel",
+                      "payment.prepare",
+                      "refund.request",
+                      "invoice.request",
+                      "member.invite",
+                      "member.update",
+                      "member.accept",
+                      "invite.cancel",
+                      "payment.channel.create",
+                      "payment.channel.query",
+                      "payment.channel.refund-query",
+                      "scheduler.snapshot",
+                      "project.save",
+                      "project.state",
+                      "node.enrollment.create",
+                      "node.state",
+                      "assignment.create",
+                      "assignment.release",
+                      "workflow.remote.publish",
+                      "run.submit",
+                      "run.cancel",
+                      "run.resolve",
+                      "oidc.bindings",
+                      "client.code.create"
+                    ],
+                    "type": "string"
+                  },
+                  "body": {
+                    "additionalProperties": true,
+                    "properties": {},
+                    "required": [],
+                    "type": "object"
+                  }
+                },
+                "required": [
+                  "action",
+                  "body"
+                ],
+                "type": "object"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Envelope with ok=true and result; business completion requires postconditions"
+          },
+          "default": {
+            "description": "Envelope with ok=false and error.code/message/outcomeUnknown; no automatic retry"
+          }
+        }
+      }
+    },
+    "/v1/tools/profile_list": {
+      "post": {
+        "operationId": "profile_list",
+        "description": "List owned profiles; active by default, or choose a lifecycle state",
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "additionalProperties": false,
+                "properties": {
+                  "state": {
+                    "enum": [
+                      "active",
+                      "archived",
+                      "trashed",
+                      "purging",
+                      "all"
+                    ],
+                    "type": "string"
+                  }
+                },
+                "required": [],
+                "type": "object"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Envelope with ok=true and result; business completion requires postconditions"
+          },
+          "default": {
+            "description": "Envelope with ok=false and error.code/message/outcomeUnknown; no automatic retry"
+          }
+        }
+      }
+    },
+    "/v1/tools/profile_create": {
+      "post": {
+        "operationId": "profile_create",
+        "description": "Create an isolated development profile with explicit origin scope",
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "additionalProperties": false,
+                "properties": {
+                  "allowedOrigins": {
+                    "items": {
+                      "maxLength": 8192,
+                      "minLength": 1,
+                      "type": "string"
+                    },
+                    "maxItems": 32,
+                    "minItems": 1,
+                    "type": "array"
+                  },
+                  "name": {
+                    "maxLength": 128,
+                    "minLength": 1,
+                    "type": "string"
+                  },
+                  "proxyServer": {
+                    "maxLength": 2048,
+                    "minLength": 1,
+                    "type": "string"
+                  },
+                  "runtimeSettings": {
+                    "additionalProperties": false,
+                    "properties": {
+                      "languages": {
+                        "items": {
+                          "maxLength": 35,
+                          "minLength": 1,
+                          "type": "string"
+                        },
+                        "maxItems": 8,
+                        "minItems": 1,
+                        "type": "array"
+                      },
+                      "timezone": {
+                        "maxLength": 128,
+                        "minLength": 1,
+                        "type": "string"
+                      },
+                      "userAgent": {
+                        "maxLength": 1024,
+                        "minLength": 1,
+                        "type": "string"
+                      }
+                    },
+                    "required": [],
+                    "type": "object"
+                  }
+                },
+                "required": [
+                  "name",
+                  "allowedOrigins"
+                ],
+                "type": "object"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Envelope with ok=true and result; business completion requires postconditions"
+          },
+          "default": {
+            "description": "Envelope with ok=false and error.code/message/outcomeUnknown; no automatic retry"
+          }
+        }
+      }
+    },
+    "/v1/tools/profile_group_list": {
+      "post": {
+        "operationId": "profile_group_list",
+        "description": "List local versioned profile library resources",
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "additionalProperties": false,
+                "properties": {},
+                "required": [],
+                "type": "object"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Envelope with ok=true and result; business completion requires postconditions"
+          },
+          "default": {
+            "description": "Envelope with ok=false and error.code/message/outcomeUnknown; no automatic retry"
+          }
+        }
+      }
+    },
+    "/v1/tools/profile_group_create": {
+      "post": {
+        "operationId": "profile_group_create",
+        "description": "Create a local profile group or configuration-only template",
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "additionalProperties": false,
+                "properties": {
+                  "name": {
+                    "maxLength": 128,
+                    "minLength": 1,
+                    "type": "string"
+                  },
+                  "profileIds": {
+                    "items": {
+                      "maxLength": 32,
+                      "minLength": 1,
+                      "type": "string"
+                    },
+                    "maxItems": 100,
+                    "type": "array"
+                  }
+                },
+                "required": [
+                  "name",
+                  "profileIds"
+                ],
+                "type": "object"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Envelope with ok=true and result; business completion requires postconditions"
+          },
+          "default": {
+            "description": "Envelope with ok=false and error.code/message/outcomeUnknown; no automatic retry"
+          }
+        }
+      }
+    },
+    "/v1/tools/profile_group_update": {
+      "post": {
+        "operationId": "profile_group_update",
+        "description": "Replace a local resource using optimistic revision control",
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "additionalProperties": false,
+                "properties": {
+                  "expectedRevision": {
+                    "minimum": 1,
+                    "type": "integer"
+                  },
+                  "id": {
+                    "maxLength": 32,
+                    "minLength": 1,
+                    "type": "string"
+                  },
+                  "name": {
+                    "maxLength": 128,
+                    "minLength": 1,
+                    "type": "string"
+                  },
+                  "profileIds": {
+                    "items": {
+                      "maxLength": 32,
+                      "minLength": 1,
+                      "type": "string"
+                    },
+                    "maxItems": 100,
+                    "type": "array"
+                  }
+                },
+                "required": [
+                  "name",
+                  "profileIds",
+                  "id",
+                  "expectedRevision"
+                ],
+                "type": "object"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Envelope with ok=true and result; business completion requires postconditions"
+          },
+          "default": {
+            "description": "Envelope with ok=false and error.code/message/outcomeUnknown; no automatic retry"
+          }
+        }
+      }
+    },
+    "/v1/tools/profile_group_delete": {
+      "post": {
+        "operationId": "profile_group_delete",
+        "description": "Delete a local resource without deleting member profiles",
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "additionalProperties": false,
+                "properties": {
+                  "expectedRevision": {
+                    "minimum": 1,
+                    "type": "integer"
+                  },
+                  "id": {
+                    "maxLength": 32,
+                    "minLength": 1,
+                    "type": "string"
+                  }
+                },
+                "required": [
+                  "id",
+                  "expectedRevision"
+                ],
+                "type": "object"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Envelope with ok=true and result; business completion requires postconditions"
+          },
+          "default": {
+            "description": "Envelope with ok=false and error.code/message/outcomeUnknown; no automatic retry"
+          }
+        }
+      }
+    },
+    "/v1/tools/profile_template_list": {
+      "post": {
+        "operationId": "profile_template_list",
+        "description": "List local versioned profile library resources",
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "additionalProperties": false,
+                "properties": {},
+                "required": [],
+                "type": "object"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Envelope with ok=true and result; business completion requires postconditions"
+          },
+          "default": {
+            "description": "Envelope with ok=false and error.code/message/outcomeUnknown; no automatic retry"
+          }
+        }
+      }
+    },
+    "/v1/tools/profile_template_create": {
+      "post": {
+        "operationId": "profile_template_create",
+        "description": "Create a local profile group or configuration-only template",
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "additionalProperties": false,
+                "properties": {
+                  "configuration": {
+                    "additionalProperties": false,
+                    "properties": {
+                      "allowedOrigins": {
+                        "items": {
+                          "maxLength": 8192,
+                          "minLength": 1,
+                          "type": "string"
+                        },
+                        "maxItems": 32,
+                        "minItems": 1,
+                        "type": "array"
+                      },
+                      "name": {
+                        "maxLength": 128,
+                        "minLength": 1,
+                        "type": "string"
+                      },
+                      "proxyServer": {
+                        "maxLength": 2048,
+                        "minLength": 1,
+                        "type": "string"
+                      },
+                      "runtimeSettings": {
+                        "additionalProperties": false,
+                        "properties": {
+                          "languages": {
+                            "items": {
+                              "maxLength": 35,
+                              "minLength": 1,
+                              "type": "string"
+                            },
+                            "maxItems": 8,
+                            "minItems": 1,
+                            "type": "array"
+                          },
+                          "timezone": {
+                            "maxLength": 128,
+                            "minLength": 1,
+                            "type": "string"
+                          },
+                          "userAgent": {
+                            "maxLength": 1024,
+                            "minLength": 1,
+                            "type": "string"
+                          }
+                        },
+                        "required": [],
+                        "type": "object"
+                      }
+                    },
+                    "required": [
+                      "name",
+                      "allowedOrigins"
+                    ],
+                    "type": "object"
+                  },
+                  "name": {
+                    "maxLength": 128,
+                    "minLength": 1,
+                    "type": "string"
+                  }
+                },
+                "required": [
+                  "name",
+                  "configuration"
+                ],
+                "type": "object"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Envelope with ok=true and result; business completion requires postconditions"
+          },
+          "default": {
+            "description": "Envelope with ok=false and error.code/message/outcomeUnknown; no automatic retry"
+          }
+        }
+      }
+    },
+    "/v1/tools/profile_template_update": {
+      "post": {
+        "operationId": "profile_template_update",
+        "description": "Replace a local resource using optimistic revision control",
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "additionalProperties": false,
+                "properties": {
+                  "configuration": {
+                    "additionalProperties": false,
+                    "properties": {
+                      "allowedOrigins": {
+                        "items": {
+                          "maxLength": 8192,
+                          "minLength": 1,
+                          "type": "string"
+                        },
+                        "maxItems": 32,
+                        "minItems": 1,
+                        "type": "array"
+                      },
+                      "name": {
+                        "maxLength": 128,
+                        "minLength": 1,
+                        "type": "string"
+                      },
+                      "proxyServer": {
+                        "maxLength": 2048,
+                        "minLength": 1,
+                        "type": "string"
+                      },
+                      "runtimeSettings": {
+                        "additionalProperties": false,
+                        "properties": {
+                          "languages": {
+                            "items": {
+                              "maxLength": 35,
+                              "minLength": 1,
+                              "type": "string"
+                            },
+                            "maxItems": 8,
+                            "minItems": 1,
+                            "type": "array"
+                          },
+                          "timezone": {
+                            "maxLength": 128,
+                            "minLength": 1,
+                            "type": "string"
+                          },
+                          "userAgent": {
+                            "maxLength": 1024,
+                            "minLength": 1,
+                            "type": "string"
+                          }
+                        },
+                        "required": [],
+                        "type": "object"
+                      }
+                    },
+                    "required": [
+                      "name",
+                      "allowedOrigins"
+                    ],
+                    "type": "object"
+                  },
+                  "expectedRevision": {
+                    "minimum": 1,
+                    "type": "integer"
+                  },
+                  "id": {
+                    "maxLength": 32,
+                    "minLength": 1,
+                    "type": "string"
+                  },
+                  "name": {
+                    "maxLength": 128,
+                    "minLength": 1,
+                    "type": "string"
+                  }
+                },
+                "required": [
+                  "name",
+                  "configuration",
+                  "id",
+                  "expectedRevision"
+                ],
+                "type": "object"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Envelope with ok=true and result; business completion requires postconditions"
+          },
+          "default": {
+            "description": "Envelope with ok=false and error.code/message/outcomeUnknown; no automatic retry"
+          }
+        }
+      }
+    },
+    "/v1/tools/profile_template_delete": {
+      "post": {
+        "operationId": "profile_template_delete",
+        "description": "Delete a local resource without deleting member profiles",
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "additionalProperties": false,
+                "properties": {
+                  "expectedRevision": {
+                    "minimum": 1,
+                    "type": "integer"
+                  },
+                  "id": {
+                    "maxLength": 32,
+                    "minLength": 1,
+                    "type": "string"
+                  }
+                },
+                "required": [
+                  "id",
+                  "expectedRevision"
+                ],
+                "type": "object"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Envelope with ok=true and result; business completion requires postconditions"
+          },
+          "default": {
+            "description": "Envelope with ok=false and error.code/message/outcomeUnknown; no automatic retry"
+          }
+        }
+      }
+    },
+    "/v1/tools/profile_template_instantiate": {
+      "post": {
+        "operationId": "profile_template_instantiate",
+        "description": "Create a new isolated profile from a pinned local template revision",
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "additionalProperties": false,
+                "properties": {
+                  "expectedRevision": {
+                    "minimum": 1,
+                    "type": "integer"
+                  },
+                  "id": {
+                    "maxLength": 32,
+                    "minLength": 1,
+                    "type": "string"
+                  },
+                  "name": {
+                    "maxLength": 128,
+                    "minLength": 1,
+                    "type": "string"
+                  }
+                },
+                "required": [
+                  "id",
+                  "expectedRevision",
+                  "name"
+                ],
+                "type": "object"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Envelope with ok=true and result; business completion requires postconditions"
+          },
+          "default": {
+            "description": "Envelope with ok=false and error.code/message/outcomeUnknown; no automatic retry"
+          }
+        }
+      }
+    },
+    "/v1/tools/profile_template_history": {
+      "post": {
+        "operationId": "profile_template_history",
+        "description": "Read immutable retained template revisions without modifying profiles",
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "additionalProperties": false,
+                "properties": {
+                  "id": {
+                    "maxLength": 32,
+                    "minLength": 1,
+                    "type": "string"
+                  }
+                },
+                "required": [
+                  "id"
+                ],
+                "type": "object"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Envelope with ok=true and result; business completion requires postconditions"
+          },
+          "default": {
+            "description": "Envelope with ok=false and error.code/message/outcomeUnknown; no automatic retry"
+          }
+        }
+      }
+    },
+    "/v1/tools/profile_template_rollback": {
+      "post": {
+        "operationId": "profile_template_rollback",
+        "description": "Copy a retained template revision into a new current revision",
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "additionalProperties": false,
+                "properties": {
+                  "expectedRevision": {
+                    "minimum": 1,
+                    "type": "integer"
+                  },
+                  "id": {
+                    "maxLength": 32,
+                    "minLength": 1,
+                    "type": "string"
+                  },
+                  "sourceRevision": {
+                    "minimum": 1,
+                    "type": "integer"
+                  }
+                },
+                "required": [
+                  "id",
+                  "expectedRevision",
+                  "sourceRevision"
+                ],
+                "type": "object"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Envelope with ok=true and result; business completion requires postconditions"
+          },
+          "default": {
+            "description": "Envelope with ok=false and error.code/message/outcomeUnknown; no automatic retry"
+          }
+        }
+      }
+    },
+    "/v1/tools/profile_export": {
+      "post": {
+        "operationId": "profile_export",
+        "description": "Export configurations only; cookies, credentials and local identities are excluded",
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "additionalProperties": false,
+                "properties": {
+                  "profileIds": {
+                    "items": {
+                      "maxLength": 32,
+                      "minLength": 1,
+                      "type": "string"
+                    },
+                    "maxItems": 32,
+                    "minItems": 1,
+                    "type": "array"
+                  }
+                },
+                "required": [
+                  "profileIds"
+                ],
+                "type": "object"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Envelope with ok=true and result; business completion requires postconditions"
+          },
+          "default": {
+            "description": "Envelope with ok=false and error.code/message/outcomeUnknown; no automatic retry"
+          }
+        }
+      }
+    },
+    "/v1/tools/profile_import": {
+      "post": {
+        "operationId": "profile_import",
+        "description": "Prevalidate and atomically create 1..32 profiles from a versioned configuration bundle",
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "additionalProperties": false,
+                "properties": {
+                  "bundle": {
+                    "additionalProperties": false,
+                    "properties": {
+                      "configurations": {
+                        "items": {
+                          "additionalProperties": false,
+                          "properties": {
+                            "allowedOrigins": {
+                              "items": {
+                                "maxLength": 8192,
+                                "minLength": 1,
+                                "type": "string"
+                              },
+                              "maxItems": 32,
+                              "minItems": 1,
+                              "type": "array"
+                            },
+                            "name": {
+                              "maxLength": 128,
+                              "minLength": 1,
+                              "type": "string"
+                            },
+                            "proxyServer": {
+                              "maxLength": 2048,
+                              "minLength": 1,
+                              "type": "string"
+                            },
+                            "runtimeSettings": {
+                              "additionalProperties": false,
+                              "properties": {
+                                "languages": {
+                                  "items": {
+                                    "maxLength": 35,
+                                    "minLength": 1,
+                                    "type": "string"
+                                  },
+                                  "maxItems": 8,
+                                  "minItems": 1,
+                                  "type": "array"
+                                },
+                                "timezone": {
+                                  "maxLength": 128,
+                                  "minLength": 1,
+                                  "type": "string"
+                                },
+                                "userAgent": {
+                                  "maxLength": 1024,
+                                  "minLength": 1,
+                                  "type": "string"
+                                }
+                              },
+                              "required": [],
+                              "type": "object"
+                            }
+                          },
+                          "required": [
+                            "name",
+                            "allowedOrigins"
+                          ],
+                          "type": "object"
+                        },
+                        "maxItems": 32,
+                        "minItems": 1,
+                        "type": "array"
+                      },
+                      "format": {
+                        "enum": [
+                          "awb-profile-config-v1"
+                        ],
+                        "type": "string"
+                      }
+                    },
+                    "required": [
+                      "format",
+                      "configurations"
+                    ],
+                    "type": "object"
+                  }
+                },
+                "required": [
+                  "bundle"
+                ],
+                "type": "object"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Envelope with ok=true and result; business completion requires postconditions"
+          },
+          "default": {
+            "description": "Envelope with ok=false and error.code/message/outcomeUnknown; no automatic retry"
+          }
+        }
+      }
+    },
+    "/v1/tools/profile_batch": {
+      "post": {
+        "operationId": "profile_batch",
+        "description": "Prevalidate bounded lifecycle/start/stop operations and report each result without automatic retry",
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "additionalProperties": false,
+                "properties": {
+                  "onError": {
+                    "enum": [
+                      "stop",
+                      "continue"
+                    ],
+                    "type": "string"
+                  },
+                  "operations": {
+                    "items": {
+                      "additionalProperties": false,
+                      "properties": {
+                        "arguments": {
+                          "additionalProperties": true,
+                          "properties": {},
+                          "required": [],
+                          "type": "object"
+                        },
+                        "command": {
+                          "maxLength": 64,
+                          "minLength": 1,
+                          "type": "string"
+                        }
+                      },
+                      "required": [
+                        "command",
+                        "arguments"
+                      ],
+                      "type": "object"
+                    },
+                    "maxItems": 32,
+                    "minItems": 1,
+                    "type": "array"
+                  },
+                  "requestId": {
+                    "maxLength": 32,
+                    "minLength": 1,
+                    "type": "string"
+                  }
+                },
+                "required": [
+                  "operations"
+                ],
+                "type": "object"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Envelope with ok=true and result; business completion requires postconditions"
+          },
+          "default": {
+            "description": "Envelope with ok=false and error.code/message/outcomeUnknown; no automatic retry"
+          }
+        }
+      }
+    },
+    "/v1/tools/profile_batch_list": {
+      "post": {
+        "operationId": "profile_batch_list",
+        "description": "Page durable active or archived batch receipts without replaying actions",
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "additionalProperties": false,
+                "properties": {
+                  "before": {
+                    "maxLength": 32,
+                    "minLength": 1,
+                    "type": "string"
+                  },
+                  "limit": {
+                    "maximum": 100,
+                    "minimum": 1,
+                    "type": "integer"
+                  },
+                  "scope": {
+                    "enum": [
+                      "active",
+                      "archived",
+                      "all"
+                    ],
+                    "type": "string"
+                  }
+                },
+                "required": [],
+                "type": "object"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Envelope with ok=true and result; business completion requires postconditions"
+          },
+          "default": {
+            "description": "Envelope with ok=false and error.code/message/outcomeUnknown; no automatic retry"
+          }
+        }
+      }
+    },
+    "/v1/tools/profile_batch_get": {
+      "post": {
+        "operationId": "profile_batch_get",
+        "description": "Read durable item states after disconnect or restart; no automatic replay",
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "additionalProperties": false,
+                "properties": {
+                  "batchId": {
+                    "maxLength": 32,
+                    "minLength": 1,
+                    "type": "string"
+                  }
+                },
+                "required": [
+                  "batchId"
+                ],
+                "type": "object"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Envelope with ok=true and result; business completion requires postconditions"
+          },
+          "default": {
+            "description": "Envelope with ok=false and error.code/message/outcomeUnknown; no automatic retry"
+          }
+        }
+      }
+    },
+    "/v1/tools/profile_batch_archive": {
+      "post": {
+        "operationId": "profile_batch_archive",
+        "description": "Compact confirmed terminal batch details while preserving request deduplication",
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "additionalProperties": false,
+                "properties": {
+                  "batchId": {
+                    "maxLength": 32,
+                    "minLength": 1,
+                    "type": "string"
+                  },
+                  "confirmBatchId": {
+                    "maxLength": 32,
+                    "minLength": 1,
+                    "type": "string"
+                  }
+                },
+                "required": [
+                  "batchId",
+                  "confirmBatchId"
+                ],
+                "type": "object"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Envelope with ok=true and result; business completion requires postconditions"
+          },
+          "default": {
+            "description": "Envelope with ok=false and error.code/message/outcomeUnknown; no automatic retry"
+          }
+        }
+      }
+    },
+    "/v1/tools/profile_update": {
+      "post": {
+        "operationId": "profile_update",
+        "description": "Update a stopped profile using optimistic revision control",
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "additionalProperties": false,
+                "properties": {
+                  "allowedOrigins": {
+                    "items": {
+                      "maxLength": 8192,
+                      "minLength": 1,
+                      "type": "string"
+                    },
+                    "maxItems": 32,
+                    "minItems": 1,
+                    "type": "array"
+                  },
+                  "expectedRevision": {
+                    "minimum": 1,
+                    "type": "integer"
+                  },
+                  "name": {
+                    "maxLength": 128,
+                    "minLength": 1,
+                    "type": "string"
+                  },
+                  "profileId": {
+                    "maxLength": 32,
+                    "minLength": 1,
+                    "type": "string"
+                  },
+                  "proxyServer": {
+                    "maxLength": 2048,
+                    "type": "string"
+                  },
+                  "runtimeSettings": {
+                    "additionalProperties": false,
+                    "properties": {
+                      "languages": {
+                        "items": {
+                          "maxLength": 35,
+                          "minLength": 1,
+                          "type": "string"
+                        },
+                        "maxItems": 8,
+                        "minItems": 1,
+                        "type": "array"
+                      },
+                      "timezone": {
+                        "maxLength": 128,
+                        "minLength": 1,
+                        "type": "string"
+                      },
+                      "userAgent": {
+                        "maxLength": 1024,
+                        "minLength": 1,
+                        "type": "string"
+                      }
+                    },
+                    "required": [],
+                    "type": "object"
+                  }
+                },
+                "required": [
+                  "profileId",
+                  "expectedRevision"
+                ],
+                "type": "object"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Envelope with ok=true and result; business completion requires postconditions"
+          },
+          "default": {
+            "description": "Envelope with ok=false and error.code/message/outcomeUnknown; no automatic retry"
+          }
+        }
+      }
+    },
+    "/v1/tools/profile_archive": {
+      "post": {
+        "operationId": "profile_archive",
+        "description": "Archive a stopped, unreferenced active profile without deleting its data",
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "additionalProperties": false,
+                "properties": {
+                  "expectedRevision": {
+                    "minimum": 1,
+                    "type": "integer"
+                  },
+                  "profileId": {
+                    "maxLength": 32,
+                    "minLength": 1,
+                    "type": "string"
+                  }
+                },
+                "required": [
+                  "profileId",
+                  "expectedRevision"
+                ],
+                "type": "object"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Envelope with ok=true and result; business completion requires postconditions"
+          },
+          "default": {
+            "description": "Envelope with ok=false and error.code/message/outcomeUnknown; no automatic retry"
+          }
+        }
+      }
+    },
+    "/v1/tools/profile_trash": {
+      "post": {
+        "operationId": "profile_trash",
+        "description": "Move a stopped, unreferenced profile into the recycle bin",
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "additionalProperties": false,
+                "properties": {
+                  "expectedRevision": {
+                    "minimum": 1,
+                    "type": "integer"
+                  },
+                  "profileId": {
+                    "maxLength": 32,
+                    "minLength": 1,
+                    "type": "string"
+                  }
+                },
+                "required": [
+                  "profileId",
+                  "expectedRevision"
+                ],
+                "type": "object"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Envelope with ok=true and result; business completion requires postconditions"
+          },
+          "default": {
+            "description": "Envelope with ok=false and error.code/message/outcomeUnknown; no automatic retry"
+          }
+        }
+      }
+    },
+    "/v1/tools/profile_restore": {
+      "post": {
+        "operationId": "profile_restore",
+        "description": "Restore an archived or recycled profile with its original identity and data",
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "additionalProperties": false,
+                "properties": {
+                  "expectedRevision": {
+                    "minimum": 1,
+                    "type": "integer"
+                  },
+                  "profileId": {
+                    "maxLength": 32,
+                    "minLength": 1,
+                    "type": "string"
+                  }
+                },
+                "required": [
+                  "profileId",
+                  "expectedRevision"
+                ],
+                "type": "object"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Envelope with ok=true and result; business completion requires postconditions"
+          },
+          "default": {
+            "description": "Envelope with ok=false and error.code/message/outcomeUnknown; no automatic retry"
+          }
+        }
+      }
+    },
+    "/v1/tools/profile_purge": {
+      "post": {
+        "operationId": "profile_purge",
+        "description": "Permanently delete recycled data; repeat the exact profile ID to confirm",
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "additionalProperties": false,
+                "properties": {
+                  "confirmProfileId": {
+                    "maxLength": 32,
+                    "minLength": 1,
+                    "type": "string"
+                  },
+                  "expectedRevision": {
+                    "minimum": 1,
+                    "type": "integer"
+                  },
+                  "profileId": {
+                    "maxLength": 32,
+                    "minLength": 1,
+                    "type": "string"
+                  }
+                },
+                "required": [
+                  "profileId",
+                  "expectedRevision",
+                  "confirmProfileId"
+                ],
+                "type": "object"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Envelope with ok=true and result; business completion requires postconditions"
+          },
+          "default": {
+            "description": "Envelope with ok=false and error.code/message/outcomeUnknown; no automatic retry"
+          }
+        }
+      }
+    },
+    "/v1/tools/browser_start": {
+      "post": {
+        "operationId": "browser_start",
+        "description": "Start a new owned browser process tree",
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "additionalProperties": false,
+                "properties": {
+                  "headless": {
+                    "type": "boolean"
+                  },
+                  "profileId": {
+                    "maxLength": 32,
+                    "minLength": 1,
+                    "type": "string"
+                  }
+                },
+                "required": [
+                  "profileId"
+                ],
+                "type": "object"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Envelope with ok=true and result; business completion requires postconditions"
+          },
+          "default": {
+            "description": "Envelope with ok=false and error.code/message/outcomeUnknown; no automatic retry"
+          }
+        }
+      }
+    },
+    "/v1/tools/browser_status": {
+      "post": {
+        "operationId": "browser_status",
+        "description": "Read process ownership and handshake version",
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "additionalProperties": false,
+                "properties": {
+                  "profileId": {
+                    "maxLength": 32,
+                    "minLength": 1,
+                    "type": "string"
+                  }
+                },
+                "required": [
+                  "profileId"
+                ],
+                "type": "object"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Envelope with ok=true and result; business completion requires postconditions"
+          },
+          "default": {
+            "description": "Envelope with ok=false and error.code/message/outcomeUnknown; no automatic retry"
+          }
+        }
+      }
+    },
+    "/v1/tools/browser_stop": {
+      "post": {
+        "operationId": "browser_stop",
+        "description": "Stop only this managed process tree; no payment or lease required",
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "additionalProperties": false,
+                "properties": {
+                  "profileId": {
+                    "maxLength": 32,
+                    "minLength": 1,
+                    "type": "string"
+                  }
+                },
+                "required": [
+                  "profileId"
+                ],
+                "type": "object"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Envelope with ok=true and result; business completion requires postconditions"
+          },
+          "default": {
+            "description": "Envelope with ok=false and error.code/message/outcomeUnknown; no automatic retry"
+          }
+        }
+      }
+    },
+    "/v1/tools/lease_acquire": {
+      "post": {
+        "operationId": "lease_acquire",
+        "description": "Acquire exclusive local automatic control",
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "additionalProperties": false,
+                "properties": {
+                  "owner": {
+                    "maxLength": 128,
+                    "minLength": 1,
+                    "type": "string"
+                  },
+                  "profileId": {
+                    "maxLength": 32,
+                    "minLength": 1,
+                    "type": "string"
+                  },
+                  "ttlMs": {
+                    "maximum": 300000,
+                    "minimum": 1,
+                    "type": "integer"
+                  }
+                },
+                "required": [
+                  "profileId",
+                  "owner",
+                  "ttlMs"
+                ],
+                "type": "object"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Envelope with ok=true and result; business completion requires postconditions"
+          },
+          "default": {
+            "description": "Envelope with ok=false and error.code/message/outcomeUnknown; no automatic retry"
+          }
+        }
+      }
+    },
+    "/v1/tools/lease_revoke": {
+      "post": {
+        "operationId": "lease_revoke",
+        "description": "Revoke prior control generation before manual takeover",
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "additionalProperties": false,
+                "properties": {
+                  "profileId": {
+                    "maxLength": 32,
+                    "minLength": 1,
+                    "type": "string"
+                  }
+                },
+                "required": [
+                  "profileId"
+                ],
+                "type": "object"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Envelope with ok=true and result; business completion requires postconditions"
+          },
+          "default": {
+            "description": "Envelope with ok=false and error.code/message/outcomeUnknown; no automatic retry"
+          }
+        }
+      }
+    },
+    "/v1/tools/browser_navigate": {
+      "post": {
+        "operationId": "browser_navigate",
+        "description": "Navigate within the explicit profile origin scope",
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "additionalProperties": false,
+                "properties": {
+                  "lease": {
+                    "additionalProperties": false,
+                    "properties": {
+                      "generation": {
+                        "minimum": 1,
+                        "type": "integer"
+                      },
+                      "owner": {
+                        "maxLength": 128,
+                        "minLength": 1,
+                        "type": "string"
+                      },
+                      "token": {
+                        "maxLength": 32,
+                        "minLength": 1,
+                        "type": "string"
+                      }
+                    },
+                    "required": [
+                      "owner",
+                      "token",
+                      "generation"
+                    ],
+                    "type": "object"
+                  },
+                  "profileId": {
+                    "maxLength": 32,
+                    "minLength": 1,
+                    "type": "string"
+                  },
+                  "url": {
+                    "maxLength": 8192,
+                    "minLength": 1,
+                    "type": "string"
+                  }
+                },
+                "required": [
+                  "url",
+                  "profileId",
+                  "lease"
+                ],
+                "type": "object"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Envelope with ok=true and result; business completion requires postconditions"
+          },
+          "default": {
+            "description": "Envelope with ok=false and error.code/message/outcomeUnknown; no automatic retry"
+          }
+        }
+      }
+    },
+    "/v1/tools/page_snapshot": {
+      "post": {
+        "operationId": "page_snapshot",
+        "description": "Read a bounded main-frame accessibility tree with document-bound refs",
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "additionalProperties": false,
+                "properties": {
+                  "lease": {
+                    "additionalProperties": false,
+                    "properties": {
+                      "generation": {
+                        "minimum": 1,
+                        "type": "integer"
+                      },
+                      "owner": {
+                        "maxLength": 128,
+                        "minLength": 1,
+                        "type": "string"
+                      },
+                      "token": {
+                        "maxLength": 32,
+                        "minLength": 1,
+                        "type": "string"
+                      }
+                    },
+                    "required": [
+                      "owner",
+                      "token",
+                      "generation"
+                    ],
+                    "type": "object"
+                  },
+                  "profileId": {
+                    "maxLength": 32,
+                    "minLength": 1,
+                    "type": "string"
+                  }
+                },
+                "required": [
+                  "profileId",
+                  "lease"
+                ],
+                "type": "object"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Envelope with ok=true and result; business completion requires postconditions"
+          },
+          "default": {
+            "description": "Envelope with ok=false and error.code/message/outcomeUnknown; no automatic retry"
+          }
+        }
+      }
+    },
+    "/v1/tools/page_locate": {
+      "post": {
+        "operationId": "page_locate",
+        "description": "Locate exactly one CSS element in the main document",
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "additionalProperties": false,
+                "properties": {
+                  "lease": {
+                    "additionalProperties": false,
+                    "properties": {
+                      "generation": {
+                        "minimum": 1,
+                        "type": "integer"
+                      },
+                      "owner": {
+                        "maxLength": 128,
+                        "minLength": 1,
+                        "type": "string"
+                      },
+                      "token": {
+                        "maxLength": 32,
+                        "minLength": 1,
+                        "type": "string"
+                      }
+                    },
+                    "required": [
+                      "owner",
+                      "token",
+                      "generation"
+                    ],
+                    "type": "object"
+                  },
+                  "profileId": {
+                    "maxLength": 32,
+                    "minLength": 1,
+                    "type": "string"
+                  },
+                  "selector": {
+                    "maxLength": 2048,
+                    "minLength": 1,
+                    "type": "string"
+                  }
+                },
+                "required": [
+                  "selector",
+                  "profileId",
+                  "lease"
+                ],
+                "type": "object"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Envelope with ok=true and result; business completion requires postconditions"
+          },
+          "default": {
+            "description": "Envelope with ok=false and error.code/message/outcomeUnknown; no automatic retry"
+          }
+        }
+      }
+    },
+    "/v1/tools/page_discover": {
+      "post": {
+        "operationId": "page_discover",
+        "description": "Find bounded visible function candidates without clicking or reading field values",
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "additionalProperties": false,
+                "properties": {
+                  "lease": {
+                    "additionalProperties": false,
+                    "properties": {
+                      "generation": {
+                        "minimum": 1,
+                        "type": "integer"
+                      },
+                      "owner": {
+                        "maxLength": 128,
+                        "minLength": 1,
+                        "type": "string"
+                      },
+                      "token": {
+                        "maxLength": 32,
+                        "minLength": 1,
+                        "type": "string"
+                      }
+                    },
+                    "required": [
+                      "owner",
+                      "token",
+                      "generation"
+                    ],
+                    "type": "object"
+                  },
+                  "limit": {
+                    "maximum": 20,
+                    "minimum": 1,
+                    "type": "integer"
+                  },
+                  "profileId": {
+                    "maxLength": 32,
+                    "minLength": 1,
+                    "type": "string"
+                  },
+                  "query": {
+                    "maxLength": 128,
+                    "type": "string"
+                  },
+                  "role": {
+                    "maxLength": 64,
+                    "minLength": 1,
+                    "type": "string"
+                  }
+                },
+                "required": [
+                  "profileId",
+                  "lease"
+                ],
+                "type": "object"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Envelope with ok=true and result; business completion requires postconditions"
+          },
+          "default": {
+            "description": "Envelope with ok=false and error.code/message/outcomeUnknown; no automatic retry"
+          }
+        }
+      }
+    },
+    "/v1/tools/page_inspect": {
+      "post": {
+        "operationId": "page_inspect",
+        "description": "Inspect a unique element and create action drafts without reading field values",
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "additionalProperties": false,
+                "properties": {
+                  "highlight": {
+                    "type": "boolean"
+                  },
+                  "lease": {
+                    "additionalProperties": false,
+                    "properties": {
+                      "generation": {
+                        "minimum": 1,
+                        "type": "integer"
+                      },
+                      "owner": {
+                        "maxLength": 128,
+                        "minLength": 1,
+                        "type": "string"
+                      },
+                      "token": {
+                        "maxLength": 32,
+                        "minLength": 1,
+                        "type": "string"
+                      }
+                    },
+                    "required": [
+                      "owner",
+                      "token",
+                      "generation"
+                    ],
+                    "type": "object"
+                  },
+                  "profileId": {
+                    "maxLength": 32,
+                    "minLength": 1,
+                    "type": "string"
+                  },
+                  "selector": {
+                    "maxLength": 2048,
+                    "minLength": 1,
+                    "type": "string"
+                  }
+                },
+                "required": [
+                  "selector",
+                  "profileId",
+                  "lease"
+                ],
+                "type": "object"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Envelope with ok=true and result; business completion requires postconditions"
+          },
+          "default": {
+            "description": "Envelope with ok=false and error.code/message/outcomeUnknown; no automatic retry"
+          }
+        }
+      }
+    },
+    "/v1/tools/page_preview": {
+      "post": {
+        "operationId": "page_preview",
+        "description": "Observe current action conditions without scrolling or dispatching page actions",
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "additionalProperties": false,
+                "properties": {
+                  "action": {
+                    "enum": [
+                      "click",
+                      "fill",
+                      "select"
+                    ],
+                    "type": "string"
+                  },
+                  "lease": {
+                    "additionalProperties": false,
+                    "properties": {
+                      "generation": {
+                        "minimum": 1,
+                        "type": "integer"
+                      },
+                      "owner": {
+                        "maxLength": 128,
+                        "minLength": 1,
+                        "type": "string"
+                      },
+                      "token": {
+                        "maxLength": 32,
+                        "minLength": 1,
+                        "type": "string"
+                      }
+                    },
+                    "required": [
+                      "owner",
+                      "token",
+                      "generation"
+                    ],
+                    "type": "object"
+                  },
+                  "profileId": {
+                    "maxLength": 32,
+                    "minLength": 1,
+                    "type": "string"
+                  },
+                  "ref": {
+                    "maxLength": 64,
+                    "minLength": 1,
+                    "type": "string"
+                  }
+                },
+                "required": [
+                  "ref",
+                  "action",
+                  "profileId",
+                  "lease"
+                ],
+                "type": "object"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Envelope with ok=true and result; business completion requires postconditions"
+          },
+          "default": {
+            "description": "Envelope with ok=false and error.code/message/outcomeUnknown; no automatic retry"
+          }
+        }
+      }
+    },
+    "/v1/tools/page_clear_highlight": {
+      "post": {
+        "operationId": "page_clear_highlight",
+        "description": "Clear the managed page debug highlight without changing page styles",
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "additionalProperties": false,
+                "properties": {
+                  "lease": {
+                    "additionalProperties": false,
+                    "properties": {
+                      "generation": {
+                        "minimum": 1,
+                        "type": "integer"
+                      },
+                      "owner": {
+                        "maxLength": 128,
+                        "minLength": 1,
+                        "type": "string"
+                      },
+                      "token": {
+                        "maxLength": 32,
+                        "minLength": 1,
+                        "type": "string"
+                      }
+                    },
+                    "required": [
+                      "owner",
+                      "token",
+                      "generation"
+                    ],
+                    "type": "object"
+                  },
+                  "profileId": {
+                    "maxLength": 32,
+                    "minLength": 1,
+                    "type": "string"
+                  }
+                },
+                "required": [
+                  "profileId",
+                  "lease"
+                ],
+                "type": "object"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Envelope with ok=true and result; business completion requires postconditions"
+          },
+          "default": {
+            "description": "Envelope with ok=false and error.code/message/outcomeUnknown; no automatic retry"
+          }
+        }
+      }
+    },
+    "/v1/tools/page_pick_start": {
+      "post": {
+        "operationId": "page_pick_start",
+        "description": "Select an element with Chromium native overlay; selection click is intercepted",
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "additionalProperties": false,
+                "properties": {
+                  "lease": {
+                    "additionalProperties": false,
+                    "properties": {
+                      "generation": {
+                        "minimum": 1,
+                        "type": "integer"
+                      },
+                      "owner": {
+                        "maxLength": 128,
+                        "minLength": 1,
+                        "type": "string"
+                      },
+                      "token": {
+                        "maxLength": 32,
+                        "minLength": 1,
+                        "type": "string"
+                      }
+                    },
+                    "required": [
+                      "owner",
+                      "token",
+                      "generation"
+                    ],
+                    "type": "object"
+                  },
+                  "profileId": {
+                    "maxLength": 32,
+                    "minLength": 1,
+                    "type": "string"
+                  }
+                },
+                "required": [
+                  "profileId",
+                  "lease"
+                ],
+                "type": "object"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Envelope with ok=true and result; business completion requires postconditions"
+          },
+          "default": {
+            "description": "Envelope with ok=false and error.code/message/outcomeUnknown; no automatic retry"
+          }
+        }
+      }
+    },
+    "/v1/tools/page_pick_read": {
+      "post": {
+        "operationId": "page_pick_read",
+        "description": "Read selected main-document element and unique CSS candidates without clicking",
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "additionalProperties": false,
+                "properties": {
+                  "lease": {
+                    "additionalProperties": false,
+                    "properties": {
+                      "generation": {
+                        "minimum": 1,
+                        "type": "integer"
+                      },
+                      "owner": {
+                        "maxLength": 128,
+                        "minLength": 1,
+                        "type": "string"
+                      },
+                      "token": {
+                        "maxLength": 32,
+                        "minLength": 1,
+                        "type": "string"
+                      }
+                    },
+                    "required": [
+                      "owner",
+                      "token",
+                      "generation"
+                    ],
+                    "type": "object"
+                  },
+                  "profileId": {
+                    "maxLength": 32,
+                    "minLength": 1,
+                    "type": "string"
+                  }
+                },
+                "required": [
+                  "profileId",
+                  "lease"
+                ],
+                "type": "object"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Envelope with ok=true and result; business completion requires postconditions"
+          },
+          "default": {
+            "description": "Envelope with ok=false and error.code/message/outcomeUnknown; no automatic retry"
+          }
+        }
+      }
+    },
+    "/v1/tools/page_pick_stop": {
+      "post": {
+        "operationId": "page_pick_stop",
+        "description": "Stop element selection without replaying any click; no lease required",
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "additionalProperties": false,
+                "properties": {
+                  "profileId": {
+                    "maxLength": 32,
+                    "minLength": 1,
+                    "type": "string"
+                  }
+                },
+                "required": [
+                  "profileId"
+                ],
+                "type": "object"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Envelope with ok=true and result; business completion requires postconditions"
+          },
+          "default": {
+            "description": "Envelope with ok=false and error.code/message/outcomeUnknown; no automatic retry"
+          }
+        }
+      }
+    },
+    "/v1/tools/page_fill": {
+      "post": {
+        "operationId": "page_fill",
+        "description": "Fill an input without echoing or logging its value",
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "additionalProperties": false,
+                "properties": {
+                  "lease": {
+                    "additionalProperties": false,
+                    "properties": {
+                      "generation": {
+                        "minimum": 1,
+                        "type": "integer"
+                      },
+                      "owner": {
+                        "maxLength": 128,
+                        "minLength": 1,
+                        "type": "string"
+                      },
+                      "token": {
+                        "maxLength": 32,
+                        "minLength": 1,
+                        "type": "string"
+                      }
+                    },
+                    "required": [
+                      "owner",
+                      "token",
+                      "generation"
+                    ],
+                    "type": "object"
+                  },
+                  "profileId": {
+                    "maxLength": 32,
+                    "minLength": 1,
+                    "type": "string"
+                  },
+                  "ref": {
+                    "maxLength": 64,
+                    "minLength": 1,
+                    "type": "string"
+                  },
+                  "value": {
+                    "maxLength": 65536,
+                    "type": "string"
+                  }
+                },
+                "required": [
+                  "ref",
+                  "value",
+                  "profileId",
+                  "lease"
+                ],
+                "type": "object"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Envelope with ok=true and result; business completion requires postconditions"
+          },
+          "default": {
+            "description": "Envelope with ok=false and error.code/message/outcomeUnknown; no automatic retry"
+          }
+        }
+      }
+    },
+    "/v1/tools/page_upload": {
+      "post": {
+        "operationId": "page_upload",
+        "description": "Bind one bounded local file to a unique file input without reading its contents",
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "additionalProperties": false,
+                "properties": {
+                  "lease": {
+                    "additionalProperties": false,
+                    "properties": {
+                      "generation": {
+                        "minimum": 1,
+                        "type": "integer"
+                      },
+                      "owner": {
+                        "maxLength": 128,
+                        "minLength": 1,
+                        "type": "string"
+                      },
+                      "token": {
+                        "maxLength": 32,
+                        "minLength": 1,
+                        "type": "string"
+                      }
+                    },
+                    "required": [
+                      "owner",
+                      "token",
+                      "generation"
+                    ],
+                    "type": "object"
+                  },
+                  "path": {
+                    "maxLength": 32768,
+                    "minLength": 1,
+                    "type": "string"
+                  },
+                  "profileId": {
+                    "maxLength": 32,
+                    "minLength": 1,
+                    "type": "string"
+                  },
+                  "ref": {
+                    "maxLength": 64,
+                    "minLength": 1,
+                    "type": "string"
+                  }
+                },
+                "required": [
+                  "ref",
+                  "path",
+                  "profileId",
+                  "lease"
+                ],
+                "type": "object"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Envelope with ok=true and result; business completion requires postconditions"
+          },
+          "default": {
+            "description": "Envelope with ok=false and error.code/message/outcomeUnknown; no automatic retry"
+          }
+        }
+      }
+    },
+    "/v1/tools/page_download_config": {
+      "post": {
+        "operationId": "page_download_config",
+        "description": "Configure a managed download directory for the current page",
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "additionalProperties": false,
+                "properties": {
+                  "directory": {
+                    "maxLength": 32768,
+                    "minLength": 1,
+                    "type": "string"
+                  },
+                  "lease": {
+                    "additionalProperties": false,
+                    "properties": {
+                      "generation": {
+                        "minimum": 1,
+                        "type": "integer"
+                      },
+                      "owner": {
+                        "maxLength": 128,
+                        "minLength": 1,
+                        "type": "string"
+                      },
+                      "token": {
+                        "maxLength": 32,
+                        "minLength": 1,
+                        "type": "string"
+                      }
+                    },
+                    "required": [
+                      "owner",
+                      "token",
+                      "generation"
+                    ],
+                    "type": "object"
+                  },
+                  "profileId": {
+                    "maxLength": 32,
+                    "minLength": 1,
+                    "type": "string"
+                  }
+                },
+                "required": [
+                  "directory",
+                  "profileId",
+                  "lease"
+                ],
+                "type": "object"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Envelope with ok=true and result; business completion requires postconditions"
+          },
+          "default": {
+            "description": "Envelope with ok=false and error.code/message/outcomeUnknown; no automatic retry"
+          }
+        }
+      }
+    },
+    "/v1/tools/page_download_wait": {
+      "post": {
+        "operationId": "page_download_wait",
+        "description": "Wait for a unique tracked download completion event and verify its ordinary file",
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "additionalProperties": false,
+                "properties": {
+                  "fileName": {
+                    "maxLength": 255,
+                    "minLength": 1,
+                    "type": "string"
+                  },
+                  "lease": {
+                    "additionalProperties": false,
+                    "properties": {
+                      "generation": {
+                        "minimum": 1,
+                        "type": "integer"
+                      },
+                      "owner": {
+                        "maxLength": 128,
+                        "minLength": 1,
+                        "type": "string"
+                      },
+                      "token": {
+                        "maxLength": 32,
+                        "minLength": 1,
+                        "type": "string"
+                      }
+                    },
+                    "required": [
+                      "owner",
+                      "token",
+                      "generation"
+                    ],
+                    "type": "object"
+                  },
+                  "profileId": {
+                    "maxLength": 32,
+                    "minLength": 1,
+                    "type": "string"
+                  },
+                  "timeoutMs": {
+                    "maximum": 10000,
+                    "minimum": 1,
+                    "type": "integer"
+                  }
+                },
+                "required": [
+                  "fileName",
+                  "timeoutMs",
+                  "profileId",
+                  "lease"
+                ],
+                "type": "object"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Envelope with ok=true and result; business completion requires postconditions"
+          },
+          "default": {
+            "description": "Envelope with ok=false and error.code/message/outcomeUnknown; no automatic retry"
+          }
+        }
+      }
+    },
+    "/v1/tools/page_fill_secret": {
+      "post": {
+        "operationId": "page_fill_secret",
+        "description": "Fill using an origin/profile scoped SecretRef without returning the value",
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "additionalProperties": false,
+                "properties": {
+                  "credentialId": {
+                    "maxLength": 32,
+                    "minLength": 1,
+                    "type": "string"
+                  },
+                  "lease": {
+                    "additionalProperties": false,
+                    "properties": {
+                      "generation": {
+                        "minimum": 1,
+                        "type": "integer"
+                      },
+                      "owner": {
+                        "maxLength": 128,
+                        "minLength": 1,
+                        "type": "string"
+                      },
+                      "token": {
+                        "maxLength": 32,
+                        "minLength": 1,
+                        "type": "string"
+                      }
+                    },
+                    "required": [
+                      "owner",
+                      "token",
+                      "generation"
+                    ],
+                    "type": "object"
+                  },
+                  "profileId": {
+                    "maxLength": 32,
+                    "minLength": 1,
+                    "type": "string"
+                  },
+                  "ref": {
+                    "maxLength": 64,
+                    "minLength": 1,
+                    "type": "string"
+                  }
+                },
+                "required": [
+                  "ref",
+                  "credentialId",
+                  "profileId",
+                  "lease"
+                ],
+                "type": "object"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Envelope with ok=true and result; business completion requires postconditions"
+          },
+          "default": {
+            "description": "Envelope with ok=false and error.code/message/outcomeUnknown; no automatic retry"
+          }
+        }
+      }
+    },
+    "/v1/tools/page_click": {
+      "post": {
+        "operationId": "page_click",
+        "description": "Dispatch click; business success must be asserted separately",
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "additionalProperties": false,
+                "properties": {
+                  "lease": {
+                    "additionalProperties": false,
+                    "properties": {
+                      "generation": {
+                        "minimum": 1,
+                        "type": "integer"
+                      },
+                      "owner": {
+                        "maxLength": 128,
+                        "minLength": 1,
+                        "type": "string"
+                      },
+                      "token": {
+                        "maxLength": 32,
+                        "minLength": 1,
+                        "type": "string"
+                      }
+                    },
+                    "required": [
+                      "owner",
+                      "token",
+                      "generation"
+                    ],
+                    "type": "object"
+                  },
+                  "profileId": {
+                    "maxLength": 32,
+                    "minLength": 1,
+                    "type": "string"
+                  },
+                  "ref": {
+                    "maxLength": 64,
+                    "minLength": 1,
+                    "type": "string"
+                  }
+                },
+                "required": [
+                  "ref",
+                  "profileId",
+                  "lease"
+                ],
+                "type": "object"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Envelope with ok=true and result; business completion requires postconditions"
+          },
+          "default": {
+            "description": "Envelope with ok=false and error.code/message/outcomeUnknown; no automatic retry"
+          }
+        }
+      }
+    },
+    "/v1/tools/page_select": {
+      "post": {
+        "operationId": "page_select",
+        "description": "Select exact, unambiguous native option values without echoing them",
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "additionalProperties": false,
+                "properties": {
+                  "lease": {
+                    "additionalProperties": false,
+                    "properties": {
+                      "generation": {
+                        "minimum": 1,
+                        "type": "integer"
+                      },
+                      "owner": {
+                        "maxLength": 128,
+                        "minLength": 1,
+                        "type": "string"
+                      },
+                      "token": {
+                        "maxLength": 32,
+                        "minLength": 1,
+                        "type": "string"
+                      }
+                    },
+                    "required": [
+                      "owner",
+                      "token",
+                      "generation"
+                    ],
+                    "type": "object"
+                  },
+                  "profileId": {
+                    "maxLength": 32,
+                    "minLength": 1,
+                    "type": "string"
+                  },
+                  "ref": {
+                    "maxLength": 64,
+                    "minLength": 1,
+                    "type": "string"
+                  },
+                  "values": {
+                    "items": {
+                      "maxLength": 4096,
+                      "type": "string"
+                    },
+                    "maxItems": 32,
+                    "minItems": 0,
+                    "type": "array"
+                  }
+                },
+                "required": [
+                  "ref",
+                  "values",
+                  "profileId",
+                  "lease"
+                ],
+                "type": "object"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Envelope with ok=true and result; business completion requires postconditions"
+          },
+          "default": {
+            "description": "Envelope with ok=false and error.code/message/outcomeUnknown; no automatic retry"
+          }
+        }
+      }
+    },
+    "/v1/tools/page_text": {
+      "post": {
+        "operationId": "page_text",
+        "description": "Read bounded element text for assertions",
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "additionalProperties": false,
+                "properties": {
+                  "lease": {
+                    "additionalProperties": false,
+                    "properties": {
+                      "generation": {
+                        "minimum": 1,
+                        "type": "integer"
+                      },
+                      "owner": {
+                        "maxLength": 128,
+                        "minLength": 1,
+                        "type": "string"
+                      },
+                      "token": {
+                        "maxLength": 32,
+                        "minLength": 1,
+                        "type": "string"
+                      }
+                    },
+                    "required": [
+                      "owner",
+                      "token",
+                      "generation"
+                    ],
+                    "type": "object"
+                  },
+                  "profileId": {
+                    "maxLength": 32,
+                    "minLength": 1,
+                    "type": "string"
+                  },
+                  "ref": {
+                    "maxLength": 64,
+                    "minLength": 1,
+                    "type": "string"
+                  }
+                },
+                "required": [
+                  "ref",
+                  "profileId",
+                  "lease"
+                ],
+                "type": "object"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Envelope with ok=true and result; business completion requires postconditions"
+          },
+          "default": {
+            "description": "Envelope with ok=false and error.code/message/outcomeUnknown; no automatic retry"
+          }
+        }
+      }
+    },
+    "/v1/tools/page_wait_text": {
+      "post": {
+        "operationId": "page_wait_text",
+        "description": "Retry read-only observation until exact text matches",
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "additionalProperties": false,
+                "properties": {
+                  "expected": {
+                    "maxLength": 16384,
+                    "type": "string"
+                  },
+                  "lease": {
+                    "additionalProperties": false,
+                    "properties": {
+                      "generation": {
+                        "minimum": 1,
+                        "type": "integer"
+                      },
+                      "owner": {
+                        "maxLength": 128,
+                        "minLength": 1,
+                        "type": "string"
+                      },
+                      "token": {
+                        "maxLength": 32,
+                        "minLength": 1,
+                        "type": "string"
+                      }
+                    },
+                    "required": [
+                      "owner",
+                      "token",
+                      "generation"
+                    ],
+                    "type": "object"
+                  },
+                  "profileId": {
+                    "maxLength": 32,
+                    "minLength": 1,
+                    "type": "string"
+                  },
+                  "selector": {
+                    "maxLength": 2048,
+                    "minLength": 1,
+                    "type": "string"
+                  },
+                  "timeoutMs": {
+                    "maximum": 10000,
+                    "minimum": 1,
+                    "type": "integer"
+                  }
+                },
+                "required": [
+                  "selector",
+                  "expected",
+                  "timeoutMs",
+                  "profileId",
+                  "lease"
+                ],
+                "type": "object"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Envelope with ok=true and result; business completion requires postconditions"
+          },
+          "default": {
+            "description": "Envelope with ok=false and error.code/message/outcomeUnknown; no automatic retry"
+          }
+        }
+      }
+    },
+    "/v1/tools/page_assert": {
+      "post": {
+        "operationId": "page_assert",
+        "description": "Assert URL, text, element count or control state with structured evidence",
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "additionalProperties": false,
+                "properties": {
+                  "assertion": {
+                    "additionalProperties": true,
+                    "properties": {},
+                    "required": [],
+                    "type": "object"
+                  },
+                  "lease": {
+                    "additionalProperties": false,
+                    "properties": {
+                      "generation": {
+                        "minimum": 1,
+                        "type": "integer"
+                      },
+                      "owner": {
+                        "maxLength": 128,
+                        "minLength": 1,
+                        "type": "string"
+                      },
+                      "token": {
+                        "maxLength": 32,
+                        "minLength": 1,
+                        "type": "string"
+                      }
+                    },
+                    "required": [
+                      "owner",
+                      "token",
+                      "generation"
+                    ],
+                    "type": "object"
+                  },
+                  "profileId": {
+                    "maxLength": 32,
+                    "minLength": 1,
+                    "type": "string"
+                  }
+                },
+                "required": [
+                  "assertion",
+                  "profileId",
+                  "lease"
+                ],
+                "type": "object"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Envelope with ok=true and result; business completion requires postconditions"
+          },
+          "default": {
+            "description": "Envelope with ok=false and error.code/message/outcomeUnknown; no automatic retry"
+          }
+        }
+      }
+    },
+    "/v1/tools/page_screenshot": {
+      "post": {
+        "operationId": "page_screenshot",
+        "description": "Capture authorized page as PNG base64",
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "additionalProperties": false,
+                "properties": {
+                  "lease": {
+                    "additionalProperties": false,
+                    "properties": {
+                      "generation": {
+                        "minimum": 1,
+                        "type": "integer"
+                      },
+                      "owner": {
+                        "maxLength": 128,
+                        "minLength": 1,
+                        "type": "string"
+                      },
+                      "token": {
+                        "maxLength": 32,
+                        "minLength": 1,
+                        "type": "string"
+                      }
+                    },
+                    "required": [
+                      "owner",
+                      "token",
+                      "generation"
+                    ],
+                    "type": "object"
+                  },
+                  "profileId": {
+                    "maxLength": 32,
+                    "minLength": 1,
+                    "type": "string"
+                  }
+                },
+                "required": [
+                  "profileId",
+                  "lease"
+                ],
+                "type": "object"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Envelope with ok=true and result; business completion requires postconditions"
+          },
+          "default": {
+            "description": "Envelope with ok=false and error.code/message/outcomeUnknown; no automatic retry"
+          }
+        }
+      }
+    },
+    "/v1/tools/page_list": {
+      "post": {
+        "operationId": "page_list",
+        "description": "List managed pages and adopt authorized popups of managed pages",
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "additionalProperties": false,
+                "properties": {
+                  "lease": {
+                    "additionalProperties": false,
+                    "properties": {
+                      "generation": {
+                        "minimum": 1,
+                        "type": "integer"
+                      },
+                      "owner": {
+                        "maxLength": 128,
+                        "minLength": 1,
+                        "type": "string"
+                      },
+                      "token": {
+                        "maxLength": 32,
+                        "minLength": 1,
+                        "type": "string"
+                      }
+                    },
+                    "required": [
+                      "owner",
+                      "token",
+                      "generation"
+                    ],
+                    "type": "object"
+                  },
+                  "profileId": {
+                    "maxLength": 32,
+                    "minLength": 1,
+                    "type": "string"
+                  }
+                },
+                "required": [
+                  "profileId",
+                  "lease"
+                ],
+                "type": "object"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Envelope with ok=true and result; business completion requires postconditions"
+          },
+          "default": {
+            "description": "Envelope with ok=false and error.code/message/outcomeUnknown; no automatic retry"
+          }
+        }
+      }
+    },
+    "/v1/tools/page_open": {
+      "post": {
+        "operationId": "page_open",
+        "description": "Open and select a managed page inside the allowed origin scope",
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "additionalProperties": false,
+                "properties": {
+                  "lease": {
+                    "additionalProperties": false,
+                    "properties": {
+                      "generation": {
+                        "minimum": 1,
+                        "type": "integer"
+                      },
+                      "owner": {
+                        "maxLength": 128,
+                        "minLength": 1,
+                        "type": "string"
+                      },
+                      "token": {
+                        "maxLength": 32,
+                        "minLength": 1,
+                        "type": "string"
+                      }
+                    },
+                    "required": [
+                      "owner",
+                      "token",
+                      "generation"
+                    ],
+                    "type": "object"
+                  },
+                  "profileId": {
+                    "maxLength": 32,
+                    "minLength": 1,
+                    "type": "string"
+                  },
+                  "url": {
+                    "maxLength": 8192,
+                    "minLength": 1,
+                    "type": "string"
+                  }
+                },
+                "required": [
+                  "url",
+                  "profileId",
+                  "lease"
+                ],
+                "type": "object"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Envelope with ok=true and result; business completion requires postconditions"
+          },
+          "default": {
+            "description": "Envelope with ok=false and error.code/message/outcomeUnknown; no automatic retry"
+          }
+        }
+      }
+    },
+    "/v1/tools/page_switch": {
+      "post": {
+        "operationId": "page_switch",
+        "description": "Select a managed page; old element references are invalidated",
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "additionalProperties": false,
+                "properties": {
+                  "lease": {
+                    "additionalProperties": false,
+                    "properties": {
+                      "generation": {
+                        "minimum": 1,
+                        "type": "integer"
+                      },
+                      "owner": {
+                        "maxLength": 128,
+                        "minLength": 1,
+                        "type": "string"
+                      },
+                      "token": {
+                        "maxLength": 32,
+                        "minLength": 1,
+                        "type": "string"
+                      }
+                    },
+                    "required": [
+                      "owner",
+                      "token",
+                      "generation"
+                    ],
+                    "type": "object"
+                  },
+                  "pageId": {
+                    "maxLength": 32,
+                    "minLength": 1,
+                    "type": "string"
+                  },
+                  "profileId": {
+                    "maxLength": 32,
+                    "minLength": 1,
+                    "type": "string"
+                  }
+                },
+                "required": [
+                  "pageId",
+                  "profileId",
+                  "lease"
+                ],
+                "type": "object"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Envelope with ok=true and result; business completion requires postconditions"
+          },
+          "default": {
+            "description": "Envelope with ok=false and error.code/message/outcomeUnknown; no automatic retry"
+          }
+        }
+      }
+    },
+    "/v1/tools/page_close": {
+      "post": {
+        "operationId": "page_close",
+        "description": "Close one managed page without stopping the owned browser",
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "additionalProperties": false,
+                "properties": {
+                  "lease": {
+                    "additionalProperties": false,
+                    "properties": {
+                      "generation": {
+                        "minimum": 1,
+                        "type": "integer"
+                      },
+                      "owner": {
+                        "maxLength": 128,
+                        "minLength": 1,
+                        "type": "string"
+                      },
+                      "token": {
+                        "maxLength": 32,
+                        "minLength": 1,
+                        "type": "string"
+                      }
+                    },
+                    "required": [
+                      "owner",
+                      "token",
+                      "generation"
+                    ],
+                    "type": "object"
+                  },
+                  "pageId": {
+                    "maxLength": 32,
+                    "minLength": 1,
+                    "type": "string"
+                  },
+                  "profileId": {
+                    "maxLength": 32,
+                    "minLength": 1,
+                    "type": "string"
+                  }
+                },
+                "required": [
+                  "pageId",
+                  "profileId",
+                  "lease"
+                ],
+                "type": "object"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Envelope with ok=true and result; business completion requires postconditions"
+          },
+          "default": {
+            "description": "Envelope with ok=false and error.code/message/outcomeUnknown; no automatic retry"
+          }
+        }
+      }
+    },
+    "/v1/tools/browser_events": {
+      "post": {
+        "operationId": "browser_events",
+        "description": "Poll bounded metadata events with explicit cursor gaps; no live subscription",
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "additionalProperties": false,
+                "properties": {
+                  "after": {
+                    "minimum": 0,
+                    "type": "integer"
+                  },
+                  "eventEpoch": {
+                    "maxLength": 32,
+                    "minLength": 1,
+                    "type": "string"
+                  },
+                  "lease": {
+                    "additionalProperties": false,
+                    "properties": {
+                      "generation": {
+                        "minimum": 1,
+                        "type": "integer"
+                      },
+                      "owner": {
+                        "maxLength": 128,
+                        "minLength": 1,
+                        "type": "string"
+                      },
+                      "token": {
+                        "maxLength": 32,
+                        "minLength": 1,
+                        "type": "string"
+                      }
+                    },
+                    "required": [
+                      "owner",
+                      "token",
+                      "generation"
+                    ],
+                    "type": "object"
+                  },
+                  "limit": {
+                    "maximum": 100,
+                    "minimum": 1,
+                    "type": "integer"
+                  },
+                  "profileId": {
+                    "maxLength": 32,
+                    "minLength": 1,
+                    "type": "string"
+                  }
+                },
+                "required": [
+                  "profileId",
+                  "lease"
+                ],
+                "type": "object"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Envelope with ok=true and result; business completion requires postconditions"
+          },
+          "default": {
+            "description": "Envelope with ok=false and error.code/message/outcomeUnknown; no automatic retry"
+          }
+        }
+      }
+    },
+    "/v1/tools/browser_reconnect": {
+      "post": {
+        "operationId": "browser_reconnect",
+        "description": "Explicitly reconnect the same owned process without replaying page actions",
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "additionalProperties": false,
+                "properties": {
+                  "lease": {
+                    "additionalProperties": false,
+                    "properties": {
+                      "generation": {
+                        "minimum": 1,
+                        "type": "integer"
+                      },
+                      "owner": {
+                        "maxLength": 128,
+                        "minLength": 1,
+                        "type": "string"
+                      },
+                      "token": {
+                        "maxLength": 32,
+                        "minLength": 1,
+                        "type": "string"
+                      }
+                    },
+                    "required": [
+                      "owner",
+                      "token",
+                      "generation"
+                    ],
+                    "type": "object"
+                  },
+                  "profileId": {
+                    "maxLength": 32,
+                    "minLength": 1,
+                    "type": "string"
+                  }
+                },
+                "required": [
+                  "profileId",
+                  "lease"
+                ],
+                "type": "object"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Envelope with ok=true and result; business completion requires postconditions"
+          },
+          "default": {
+            "description": "Envelope with ok=false and error.code/message/outcomeUnknown; no automatic retry"
+          }
+        }
+      }
+    },
+    "/v1/tools/browser_diagnostics_start": {
+      "post": {
+        "operationId": "browser_diagnostics_start",
+        "description": "Start bounded console, exception and network metadata observation before actions",
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "additionalProperties": false,
+                "properties": {
+                  "lease": {
+                    "additionalProperties": false,
+                    "properties": {
+                      "generation": {
+                        "minimum": 1,
+                        "type": "integer"
+                      },
+                      "owner": {
+                        "maxLength": 128,
+                        "minLength": 1,
+                        "type": "string"
+                      },
+                      "token": {
+                        "maxLength": 32,
+                        "minLength": 1,
+                        "type": "string"
+                      }
+                    },
+                    "required": [
+                      "owner",
+                      "token",
+                      "generation"
+                    ],
+                    "type": "object"
+                  },
+                  "profileId": {
+                    "maxLength": 32,
+                    "minLength": 1,
+                    "type": "string"
+                  },
+                  "routePaths": {
+                    "items": {
+                      "maxLength": 512,
+                      "minLength": 1,
+                      "type": "string"
+                    },
+                    "maxItems": 32,
+                    "minItems": 0,
+                    "type": "array"
+                  }
+                },
+                "required": [
+                  "profileId",
+                  "lease"
+                ],
+                "type": "object"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Envelope with ok=true and result; business completion requires postconditions"
+          },
+          "default": {
+            "description": "Envelope with ok=false and error.code/message/outcomeUnknown; no automatic retry"
+          }
+        }
+      }
+    },
+    "/v1/tools/browser_diagnostics_read": {
+      "post": {
+        "operationId": "browser_diagnostics_read",
+        "description": "Read metadata diagnostics and step associations; payloads are omitted",
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "additionalProperties": false,
+                "properties": {
+                  "after": {
+                    "minimum": 0,
+                    "type": "integer"
+                  },
+                  "epoch": {
+                    "maxLength": 32,
+                    "minLength": 1,
+                    "type": "string"
+                  },
+                  "lease": {
+                    "additionalProperties": false,
+                    "properties": {
+                      "generation": {
+                        "minimum": 1,
+                        "type": "integer"
+                      },
+                      "owner": {
+                        "maxLength": 128,
+                        "minLength": 1,
+                        "type": "string"
+                      },
+                      "token": {
+                        "maxLength": 32,
+                        "minLength": 1,
+                        "type": "string"
+                      }
+                    },
+                    "required": [
+                      "owner",
+                      "token",
+                      "generation"
+                    ],
+                    "type": "object"
+                  },
+                  "limit": {
+                    "maximum": 100,
+                    "minimum": 1,
+                    "type": "integer"
+                  },
+                  "profileId": {
+                    "maxLength": 32,
+                    "minLength": 1,
+                    "type": "string"
+                  }
+                },
+                "required": [
+                  "profileId",
+                  "lease"
+                ],
+                "type": "object"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Envelope with ok=true and result; business completion requires postconditions"
+          },
+          "default": {
+            "description": "Envelope with ok=false and error.code/message/outcomeUnknown; no automatic retry"
+          }
+        }
+      }
+    },
+    "/v1/tools/browser_diagnostics_stop": {
+      "post": {
+        "operationId": "browser_diagnostics_stop",
+        "description": "Stop collecting diagnostics and retain the bounded in-memory records",
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "additionalProperties": false,
+                "properties": {
+                  "lease": {
+                    "additionalProperties": false,
+                    "properties": {
+                      "generation": {
+                        "minimum": 1,
+                        "type": "integer"
+                      },
+                      "owner": {
+                        "maxLength": 128,
+                        "minLength": 1,
+                        "type": "string"
+                      },
+                      "token": {
+                        "maxLength": 32,
+                        "minLength": 1,
+                        "type": "string"
+                      }
+                    },
+                    "required": [
+                      "owner",
+                      "token",
+                      "generation"
+                    ],
+                    "type": "object"
+                  },
+                  "profileId": {
+                    "maxLength": 32,
+                    "minLength": 1,
+                    "type": "string"
+                  }
+                },
+                "required": [
+                  "profileId",
+                  "lease"
+                ],
+                "type": "object"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Envelope with ok=true and result; business completion requires postconditions"
+          },
+          "default": {
+            "description": "Envelope with ok=false and error.code/message/outcomeUnknown; no automatic retry"
+          }
+        }
+      }
+    },
+    "/v1/tools/recorder_start": {
+      "post": {
+        "operationId": "recorder_start",
+        "description": "Observe main-document actions as parameterized metadata; no field values",
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "additionalProperties": false,
+                "properties": {
+                  "lease": {
+                    "additionalProperties": false,
+                    "properties": {
+                      "generation": {
+                        "minimum": 1,
+                        "type": "integer"
+                      },
+                      "owner": {
+                        "maxLength": 128,
+                        "minLength": 1,
+                        "type": "string"
+                      },
+                      "token": {
+                        "maxLength": 32,
+                        "minLength": 1,
+                        "type": "string"
+                      }
+                    },
+                    "required": [
+                      "owner",
+                      "token",
+                      "generation"
+                    ],
+                    "type": "object"
+                  },
+                  "profileId": {
+                    "maxLength": 32,
+                    "minLength": 1,
+                    "type": "string"
+                  }
+                },
+                "required": [
+                  "profileId",
+                  "lease"
+                ],
+                "type": "object"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Envelope with ok=true and result; business completion requires postconditions"
+          },
+          "default": {
+            "description": "Envelope with ok=false and error.code/message/outcomeUnknown; no automatic retry"
+          }
+        }
+      }
+    },
+    "/v1/tools/recorder_read": {
+      "post": {
+        "operationId": "recorder_read",
+        "description": "Read bounded recording events and an unvalidated draft; no page actions",
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "additionalProperties": false,
+                "properties": {
+                  "lease": {
+                    "additionalProperties": false,
+                    "properties": {
+                      "generation": {
+                        "minimum": 1,
+                        "type": "integer"
+                      },
+                      "owner": {
+                        "maxLength": 128,
+                        "minLength": 1,
+                        "type": "string"
+                      },
+                      "token": {
+                        "maxLength": 32,
+                        "minLength": 1,
+                        "type": "string"
+                      }
+                    },
+                    "required": [
+                      "owner",
+                      "token",
+                      "generation"
+                    ],
+                    "type": "object"
+                  },
+                  "profileId": {
+                    "maxLength": 32,
+                    "minLength": 1,
+                    "type": "string"
+                  }
+                },
+                "required": [
+                  "profileId",
+                  "lease"
+                ],
+                "type": "object"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Envelope with ok=true and result; business completion requires postconditions"
+          },
+          "default": {
+            "description": "Envelope with ok=false and error.code/message/outcomeUnknown; no automatic retry"
+          }
+        }
+      }
+    },
+    "/v1/tools/recorder_control": {
+      "post": {
+        "operationId": "recorder_control",
+        "description": "Pause, resume or stop and detach the main-document recorder",
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "additionalProperties": false,
+                "properties": {
+                  "lease": {
+                    "additionalProperties": false,
+                    "properties": {
+                      "generation": {
+                        "minimum": 1,
+                        "type": "integer"
+                      },
+                      "owner": {
+                        "maxLength": 128,
+                        "minLength": 1,
+                        "type": "string"
+                      },
+                      "token": {
+                        "maxLength": 32,
+                        "minLength": 1,
+                        "type": "string"
+                      }
+                    },
+                    "required": [
+                      "owner",
+                      "token",
+                      "generation"
+                    ],
+                    "type": "object"
+                  },
+                  "operation": {
+                    "enum": [
+                      "pause",
+                      "resume",
+                      "stop"
+                    ],
+                    "type": "string"
+                  },
+                  "profileId": {
+                    "maxLength": 32,
+                    "minLength": 1,
+                    "type": "string"
+                  }
+                },
+                "required": [
+                  "operation",
+                  "profileId",
+                  "lease"
+                ],
+                "type": "object"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Envelope with ok=true and result; business completion requires postconditions"
+          },
+          "default": {
+            "description": "Envelope with ok=false and error.code/message/outcomeUnknown; no automatic retry"
+          }
+        }
+      }
+    },
+    "/v1/tools/workflow_repair_draft": {
+      "post": {
+        "operationId": "workflow_repair_draft",
+        "description": "Review one selector replacement bound to the exact source hash; never publish or replay",
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "additionalProperties": false,
+                "properties": {
+                  "definition": {
+                    "additionalProperties": true,
+                    "properties": {},
+                    "required": [],
+                    "type": "object"
+                  },
+                  "expectedSha256": {
+                    "maxLength": 64,
+                    "minLength": 1,
+                    "type": "string"
+                  },
+                  "flow": {
+                    "maxLength": 64,
+                    "type": "string"
+                  },
+                  "lease": {
+                    "additionalProperties": false,
+                    "properties": {
+                      "generation": {
+                        "minimum": 1,
+                        "type": "integer"
+                      },
+                      "owner": {
+                        "maxLength": 128,
+                        "minLength": 1,
+                        "type": "string"
+                      },
+                      "token": {
+                        "maxLength": 32,
+                        "minLength": 1,
+                        "type": "string"
+                      }
+                    },
+                    "required": [
+                      "owner",
+                      "token",
+                      "generation"
+                    ],
+                    "type": "object"
+                  },
+                  "profileId": {
+                    "maxLength": 32,
+                    "minLength": 1,
+                    "type": "string"
+                  },
+                  "selector": {
+                    "maxLength": 2048,
+                    "minLength": 1,
+                    "type": "string"
+                  },
+                  "stepId": {
+                    "maxLength": 64,
+                    "minLength": 1,
+                    "type": "string"
+                  }
+                },
+                "required": [
+                  "definition",
+                  "expectedSha256",
+                  "stepId",
+                  "selector",
+                  "profileId",
+                  "lease"
+                ],
+                "type": "object"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Envelope with ok=true and result; business completion requires postconditions"
+          },
+          "default": {
+            "description": "Envelope with ok=false and error.code/message/outcomeUnknown; no automatic retry"
+          }
+        }
+      }
+    },
+    "/v1/tools/page_extract": {
+      "post": {
+        "operationId": "page_extract",
+        "description": "Read public main-document scalar or bounded string-array data using an explicit Schema dialect",
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "additionalProperties": false,
+                "properties": {
+                  "bindings": {
+                    "additionalProperties": true,
+                    "properties": {},
+                    "required": [],
+                    "type": "object"
+                  },
+                  "lease": {
+                    "additionalProperties": false,
+                    "properties": {
+                      "generation": {
+                        "minimum": 1,
+                        "type": "integer"
+                      },
+                      "owner": {
+                        "maxLength": 128,
+                        "minLength": 1,
+                        "type": "string"
+                      },
+                      "token": {
+                        "maxLength": 32,
+                        "minLength": 1,
+                        "type": "string"
+                      }
+                    },
+                    "required": [
+                      "owner",
+                      "token",
+                      "generation"
+                    ],
+                    "type": "object"
+                  },
+                  "profileId": {
+                    "maxLength": 32,
+                    "minLength": 1,
+                    "type": "string"
+                  },
+                  "schema": {
+                    "additionalProperties": true,
+                    "properties": {},
+                    "required": [],
+                    "type": "object"
+                  }
+                },
+                "required": [
+                  "schema",
+                  "bindings",
+                  "profileId",
+                  "lease"
+                ],
+                "type": "object"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Envelope with ok=true and result; business completion requires postconditions"
+          },
+          "default": {
+            "description": "Envelope with ok=false and error.code/message/outcomeUnknown; no automatic retry"
+          }
+        }
+      }
+    },
+    "/v1/tools/page_batch": {
+      "post": {
+        "operationId": "page_batch",
+        "description": "Prevalidate and execute ordered actions; unknown outcomes force a stop without replay",
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "additionalProperties": false,
+                "properties": {
+                  "actions": {
+                    "items": {
+                      "additionalProperties": true,
+                      "properties": {},
+                      "required": [],
+                      "type": "object"
+                    },
+                    "maxItems": 16,
+                    "minItems": 1,
+                    "type": "array"
+                  },
+                  "lease": {
+                    "additionalProperties": false,
+                    "properties": {
+                      "generation": {
+                        "minimum": 1,
+                        "type": "integer"
+                      },
+                      "owner": {
+                        "maxLength": 128,
+                        "minLength": 1,
+                        "type": "string"
+                      },
+                      "token": {
+                        "maxLength": 32,
+                        "minLength": 1,
+                        "type": "string"
+                      }
+                    },
+                    "required": [
+                      "owner",
+                      "token",
+                      "generation"
+                    ],
+                    "type": "object"
+                  },
+                  "onError": {
+                    "enum": [
+                      "stop",
+                      "continue"
+                    ],
+                    "type": "string"
+                  },
+                  "profileId": {
+                    "maxLength": 32,
+                    "minLength": 1,
+                    "type": "string"
+                  }
+                },
+                "required": [
+                  "actions",
+                  "profileId",
+                  "lease"
+                ],
+                "type": "object"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Envelope with ok=true and result; business completion requires postconditions"
+          },
+          "default": {
+            "description": "Envelope with ok=false and error.code/message/outcomeUnknown; no automatic retry"
+          }
+        }
+      }
+    },
+    "/v1/tools/workflow_validate": {
+      "post": {
+        "operationId": "workflow_validate",
+        "description": "Validate bounded workflow DSL, graph, input types, capabilities and optional input",
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "additionalProperties": false,
+                "properties": {
+                  "definition": {
+                    "additionalProperties": true,
+                    "properties": {},
+                    "required": [],
+                    "type": "object"
+                  },
+                  "input": {
+                    "additionalProperties": true,
+                    "properties": {},
+                    "required": [],
+                    "type": "object"
+                  }
+                },
+                "required": [
+                  "definition"
+                ],
+                "type": "object"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Envelope with ok=true and result; business completion requires postconditions"
+          },
+          "default": {
+            "description": "Envelope with ok=false and error.code/message/outcomeUnknown; no automatic retry"
+          }
+        }
+      }
+    },
+    "/v1/tools/workflow_publish": {
+      "post": {
+        "operationId": "workflow_publish",
+        "description": "Publish a validated immutable workflow version with its SHA-256",
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "additionalProperties": false,
+                "properties": {
+                  "definition": {
+                    "additionalProperties": true,
+                    "properties": {},
+                    "required": [],
+                    "type": "object"
+                  }
+                },
+                "required": [
+                  "definition"
+                ],
+                "type": "object"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Envelope with ok=true and result; business completion requires postconditions"
+          },
+          "default": {
+            "description": "Envelope with ok=false and error.code/message/outcomeUnknown; no automatic retry"
+          }
+        }
+      }
+    },
+    "/v1/tools/workflow_list": {
+      "post": {
+        "operationId": "workflow_list",
+        "description": "List local immutable workflow versions",
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "additionalProperties": false,
+                "properties": {},
+                "required": [],
+                "type": "object"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Envelope with ok=true and result; business completion requires postconditions"
+          },
+          "default": {
+            "description": "Envelope with ok=false and error.code/message/outcomeUnknown; no automatic retry"
+          }
+        }
+      }
+    },
+    "/v1/tools/workflow_get": {
+      "post": {
+        "operationId": "workflow_get",
+        "description": "Read an owned published workflow definition",
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "additionalProperties": false,
+                "properties": {
+                  "workflowId": {
+                    "maxLength": 32,
+                    "minLength": 1,
+                    "type": "string"
+                  }
+                },
+                "required": [
+                  "workflowId"
+                ],
+                "type": "object"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Envelope with ok=true and result; business completion requires postconditions"
+          },
+          "default": {
+            "description": "Envelope with ok=false and error.code/message/outcomeUnknown; no automatic retry"
+          }
+        }
+      }
+    },
+    "/v1/tools/workflow_run": {
+      "post": {
+        "operationId": "workflow_run",
+        "description": "Start a fixed workflow version asynchronously; disconnect does not cancel it",
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "additionalProperties": false,
+                "properties": {
+                  "debug": {
+                    "additionalProperties": true,
+                    "properties": {},
+                    "required": [],
+                    "type": "object"
+                  },
+                  "input": {
+                    "additionalProperties": true,
+                    "properties": {},
+                    "required": [],
+                    "type": "object"
+                  },
+                  "lease": {
+                    "additionalProperties": false,
+                    "properties": {
+                      "generation": {
+                        "minimum": 1,
+                        "type": "integer"
+                      },
+                      "owner": {
+                        "maxLength": 128,
+                        "minLength": 1,
+                        "type": "string"
+                      },
+                      "token": {
+                        "maxLength": 32,
+                        "minLength": 1,
+                        "type": "string"
+                      }
+                    },
+                    "required": [
+                      "owner",
+                      "token",
+                      "generation"
+                    ],
+                    "type": "object"
+                  },
+                  "profileId": {
+                    "maxLength": 32,
+                    "minLength": 1,
+                    "type": "string"
+                  },
+                  "workflowId": {
+                    "maxLength": 32,
+                    "minLength": 1,
+                    "type": "string"
+                  }
+                },
+                "required": [
+                  "workflowId",
+                  "profileId",
+                  "lease",
+                  "input"
+                ],
+                "type": "object"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Envelope with ok=true and result; business completion requires postconditions"
+          },
+          "default": {
+            "description": "Envelope with ok=false and error.code/message/outcomeUnknown; no automatic retry"
+          }
+        }
+      }
+    },
+    "/v1/tools/workflow_status": {
+      "post": {
+        "operationId": "workflow_status",
+        "description": "Read secret-free run checkpoints and actual step outcomes",
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "additionalProperties": false,
+                "properties": {
+                  "runId": {
+                    "maxLength": 32,
+                    "minLength": 1,
+                    "type": "string"
+                  }
+                },
+                "required": [
+                  "runId"
+                ],
+                "type": "object"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Envelope with ok=true and result; business completion requires postconditions"
+          },
+          "default": {
+            "description": "Envelope with ok=false and error.code/message/outcomeUnknown; no automatic retry"
+          }
+        }
+      }
+    },
+    "/v1/tools/workflow_runs": {
+      "post": {
+        "operationId": "workflow_runs",
+        "description": "Find local run IDs after a client disconnect without replaying business actions",
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "additionalProperties": false,
+                "properties": {},
+                "required": [],
+                "type": "object"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Envelope with ok=true and result; business completion requires postconditions"
+          },
+          "default": {
+            "description": "Envelope with ok=false and error.code/message/outcomeUnknown; no automatic retry"
+          }
+        }
+      }
+    },
+    "/v1/tools/workflow_debug": {
+      "post": {
+        "operationId": "workflow_debug",
+        "description": "Configure exact flow/step breakpoints and inspect redacted variables only at paused boundaries",
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "additionalProperties": false,
+                "properties": {
+                  "options": {
+                    "additionalProperties": true,
+                    "properties": {},
+                    "required": [],
+                    "type": "object"
+                  },
+                  "runId": {
+                    "maxLength": 32,
+                    "minLength": 1,
+                    "type": "string"
+                  }
+                },
+                "required": [
+                  "runId",
+                  "options"
+                ],
+                "type": "object"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Envelope with ok=true and result; business completion requires postconditions"
+          },
+          "default": {
+            "description": "Envelope with ok=false and error.code/message/outcomeUnknown; no automatic retry"
+          }
+        }
+      }
+    },
+    "/v1/tools/workflow_control": {
+      "post": {
+        "operationId": "workflow_control",
+        "description": "Pause at a step boundary, resume a paused run or cancel without business replay",
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "additionalProperties": false,
+                "properties": {
+                  "operation": {
+                    "enum": [
+                      "pause",
+                      "resume",
+                      "cancel",
+                      "step",
+                      "stepOver",
+                      "stepOut"
+                    ],
+                    "type": "string"
+                  },
+                  "runId": {
+                    "maxLength": 32,
+                    "minLength": 1,
+                    "type": "string"
+                  }
+                },
+                "required": [
+                  "runId",
+                  "operation"
+                ],
+                "type": "object"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Envelope with ok=true and result; business completion requires postconditions"
+          },
+          "default": {
+            "description": "Envelope with ok=false and error.code/message/outcomeUnknown; no automatic retry"
+          }
+        }
+      }
+    },
+    "/v1/tools/credential_create": {
+      "post": {
+        "operationId": "credential_create",
+        "description": "Store a scoped secret protected by Windows current-user DPAPI; never returns its value",
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "additionalProperties": false,
+                "properties": {
+                  "allowedOrigins": {
+                    "items": {
+                      "maxLength": 8192,
+                      "minLength": 1,
+                      "type": "string"
+                    },
+                    "maxItems": 32,
+                    "minItems": 1,
+                    "type": "array"
+                  },
+                  "expiresAtMs": {
+                    "maximum": 32503680000000,
+                    "minimum": 0,
+                    "type": "integer"
+                  },
+                  "name": {
+                    "maxLength": 128,
+                    "minLength": 1,
+                    "type": "string"
+                  },
+                  "profileIds": {
+                    "items": {
+                      "maxLength": 32,
+                      "minLength": 32,
+                      "type": "string"
+                    },
+                    "maxItems": 32,
+                    "minItems": 0,
+                    "type": "array"
+                  },
+                  "purpose": {
+                    "enum": [
+                      "browser",
+                      "model"
+                    ],
+                    "type": "string"
+                  },
+                  "value": {
+                    "maxLength": 65536,
+                    "minLength": 1,
+                    "type": "string"
+                  }
+                },
+                "required": [
+                  "name",
+                  "value",
+                  "purpose",
+                  "allowedOrigins",
+                  "profileIds"
+                ],
+                "type": "object"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Envelope with ok=true and result; business completion requires postconditions"
+          },
+          "default": {
+            "description": "Envelope with ok=false and error.code/message/outcomeUnknown; no automatic retry"
+          }
+        }
+      }
+    },
+    "/v1/tools/credential_list": {
+      "post": {
+        "operationId": "credential_list",
+        "description": "List credential metadata only; no plaintext or ciphertext",
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "additionalProperties": false,
+                "properties": {},
+                "required": [],
+                "type": "object"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Envelope with ok=true and result; business completion requires postconditions"
+          },
+          "default": {
+            "description": "Envelope with ok=false and error.code/message/outcomeUnknown; no automatic retry"
+          }
+        }
+      }
+    },
+    "/v1/tools/credential_rotate": {
+      "post": {
+        "operationId": "credential_rotate",
+        "description": "Rotate a secret using optimistic revision control; existing scope remains fixed",
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "additionalProperties": false,
+                "properties": {
+                  "credentialId": {
+                    "maxLength": 32,
+                    "minLength": 32,
+                    "type": "string"
+                  },
+                  "expectedRevision": {
+                    "minimum": 1,
+                    "type": "integer"
+                  },
+                  "expiresAtMs": {
+                    "maximum": 32503680000000,
+                    "minimum": 0,
+                    "type": "integer"
+                  },
+                  "value": {
+                    "maxLength": 65536,
+                    "minLength": 1,
+                    "type": "string"
+                  }
+                },
+                "required": [
+                  "credentialId",
+                  "expectedRevision",
+                  "value"
+                ],
+                "type": "object"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Envelope with ok=true and result; business completion requires postconditions"
+          },
+          "default": {
+            "description": "Envelope with ok=false and error.code/message/outcomeUnknown; no automatic retry"
+          }
+        }
+      }
+    },
+    "/v1/tools/credential_delete": {
+      "post": {
+        "operationId": "credential_delete",
+        "description": "Delete a credential using optimistic revision control",
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "additionalProperties": false,
+                "properties": {
+                  "credentialId": {
+                    "maxLength": 32,
+                    "minLength": 32,
+                    "type": "string"
+                  },
+                  "expectedRevision": {
+                    "minimum": 1,
+                    "type": "integer"
+                  }
+                },
+                "required": [
+                  "credentialId",
+                  "expectedRevision"
+                ],
+                "type": "object"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Envelope with ok=true and result; business completion requires postconditions"
+          },
+          "default": {
+            "description": "Envelope with ok=false and error.code/message/outcomeUnknown; no automatic retry"
+          }
+        }
+      }
+    },
+    "/v1/tools/credential_audit": {
+      "post": {
+        "operationId": "credential_audit",
+        "description": "Read bounded secret-free credential access audit with monotonically increasing sequence",
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "additionalProperties": false,
+                "properties": {
+                  "after": {
+                    "minimum": 0,
+                    "type": "integer"
+                  }
+                },
+                "required": [],
+                "type": "object"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Envelope with ok=true and result; business completion requires postconditions"
+          },
+          "default": {
+            "description": "Envelope with ok=false and error.code/message/outcomeUnknown; no automatic retry"
+          }
+        }
+      }
+    },
+    "/v1/tools/model_configure": {
+      "post": {
+        "operationId": "model_configure",
+        "description": "Configure an HTTPS or loopback OpenAI-compatible completion endpoint with durable conservative budgets",
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "additionalProperties": false,
+                "properties": {
+                  "credentialId": {
+                    "maxLength": 32,
+                    "minLength": 1,
+                    "type": "string"
+                  },
+                  "endpoint": {
+                    "maxLength": 8192,
+                    "minLength": 1,
+                    "type": "string"
+                  },
+                  "expectedRevision": {
+                    "maximum": 1000000,
+                    "minimum": 0,
+                    "type": "integer"
+                  },
+                  "maxCalls": {
+                    "maximum": 1000000,
+                    "minimum": 1,
+                    "type": "integer"
+                  },
+                  "maxOutputTokens": {
+                    "maximum": 32768,
+                    "minimum": 128,
+                    "type": "integer"
+                  },
+                  "maxTotalTokens": {
+                    "maximum": 1000000000,
+                    "minimum": 1024,
+                    "type": "integer"
+                  },
+                  "model": {
+                    "maxLength": 128,
+                    "minLength": 1,
+                    "type": "string"
+                  },
+                  "timeoutMs": {
+                    "maximum": 30000,
+                    "minimum": 100,
+                    "type": "integer"
+                  }
+                },
+                "required": [
+                  "expectedRevision",
+                  "endpoint",
+                  "model",
+                  "timeoutMs",
+                  "maxCalls",
+                  "maxOutputTokens",
+                  "maxTotalTokens"
+                ],
+                "type": "object"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Envelope with ok=true and result; business completion requires postconditions"
+          },
+          "default": {
+            "description": "Envelope with ok=false and error.code/message/outcomeUnknown; no automatic retry"
+          }
+        }
+      }
+    },
+    "/v1/tools/model_status": {
+      "post": {
+        "operationId": "model_status",
+        "description": "Read model configuration and secret-free durable budget and outcome history",
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "additionalProperties": false,
+                "properties": {},
+                "required": [],
+                "type": "object"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Envelope with ok=true and result; business completion requires postconditions"
+          },
+          "default": {
+            "description": "Envelope with ok=false and error.code/message/outcomeUnknown; no automatic retry"
+          }
+        }
+      }
+    },
+    "/v1/tools/model_generate_workflow": {
+      "post": {
+        "operationId": "model_generate_workflow",
+        "description": "Generate and validate a workflow draft without publishing or executing it; no automatic retry",
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "additionalProperties": false,
+                "properties": {
+                  "allowedOrigins": {
+                    "items": {
+                      "maxLength": 8192,
+                      "minLength": 1,
+                      "type": "string"
+                    },
+                    "maxItems": 32,
+                    "minItems": 1,
+                    "type": "array"
+                  },
+                  "task": {
+                    "maxLength": 16384,
+                    "minLength": 1,
+                    "type": "string"
+                  }
+                },
+                "required": [
+                  "task",
+                  "allowedOrigins"
+                ],
+                "type": "object"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Envelope with ok=true and result; business completion requires postconditions"
+          },
+          "default": {
+            "description": "Envelope with ok=false and error.code/message/outcomeUnknown; no automatic retry"
+          }
+        }
+      }
+    },
+    "/v1/tools/site_package_preview": {
+      "post": {
+        "operationId": "site_package_preview",
+        "description": "Validate data-only site package, capabilities, routes, workflow hashes and review import differences",
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "additionalProperties": false,
+                "properties": {
+                  "package": {
+                    "additionalProperties": true,
+                    "properties": {},
+                    "required": [],
+                    "type": "object"
+                  }
+                },
+                "required": [
+                  "package"
+                ],
+                "type": "object"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Envelope with ok=true and result; business completion requires postconditions"
+          },
+          "default": {
+            "description": "Envelope with ok=false and error.code/message/outcomeUnknown; no automatic retry"
+          }
+        }
+      }
+    },
+    "/v1/tools/site_package_import": {
+      "post": {
+        "operationId": "site_package_import",
+        "description": "Install an immutable validated site package version using optimistic version control; does not run workflows",
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "additionalProperties": false,
+                "properties": {
+                  "expectedLatestVersion": {
+                    "maximum": 1000000,
+                    "minimum": 0,
+                    "type": "integer"
+                  },
+                  "package": {
+                    "additionalProperties": true,
+                    "properties": {},
+                    "required": [],
+                    "type": "object"
+                  }
+                },
+                "required": [
+                  "package",
+                  "expectedLatestVersion"
+                ],
+                "type": "object"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Envelope with ok=true and result; business completion requires postconditions"
+          },
+          "default": {
+            "description": "Envelope with ok=false and error.code/message/outcomeUnknown; no automatic retry"
+          }
+        }
+      }
+    },
+    "/v1/tools/site_package_list": {
+      "post": {
+        "operationId": "site_package_list",
+        "description": "List installed site package versions and hashes",
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "additionalProperties": false,
+                "properties": {},
+                "required": [],
+                "type": "object"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Envelope with ok=true and result; business completion requires postconditions"
+          },
+          "default": {
+            "description": "Envelope with ok=false and error.code/message/outcomeUnknown; no automatic retry"
+          }
+        }
+      }
+    },
+    "/v1/tools/site_package_export": {
+      "post": {
+        "operationId": "site_package_export",
+        "description": "Export one exact installed data-only package version and its hash",
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "additionalProperties": false,
+                "properties": {
+                  "packageId": {
+                    "maxLength": 64,
+                    "minLength": 1,
+                    "type": "string"
+                  },
+                  "version": {
+                    "maximum": 1000000,
+                    "minimum": 1,
+                    "type": "integer"
+                  }
+                },
+                "required": [
+                  "packageId",
+                  "version"
+                ],
+                "type": "object"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Envelope with ok=true and result; business completion requires postconditions"
+          },
+          "default": {
+            "description": "Envelope with ok=false and error.code/message/outcomeUnknown; no automatic retry"
+          }
+        }
+      }
+    }
+  }
+}

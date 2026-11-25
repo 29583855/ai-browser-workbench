@@ -1,0 +1,272 @@
+{
+  "actualWindowDpi": 96.0,
+  "checks": [
+    "native-mouse-drag-commits-layout",
+    "layout-keeps-executable-definition-unchanged",
+    "native-arrow-key-moves-selected-node",
+    "undo-redo-restores-layout",
+    "native-box-selection",
+    "native-palette-drag-drop",
+    "native-mouse-wheel-zoom",
+    "native-middle-button-pan",
+    "unicode-native-property-edit-roundtrip",
+    "native-palette-inserts-node",
+    "invalid-cycle-cannot-pass-shared-validator",
+    "200-node-draft-opens-within-two-seconds",
+    "dpi-and-zoom-hit-test",
+    "dpi-and-zoom-hit-test",
+    "dpi-and-zoom-hit-test",
+    "dpi-and-zoom-hit-test",
+    "dpi-and-zoom-hit-test",
+    "dpi-and-zoom-hit-test",
+    "200-node-paint-p95-within-50ms"
+  ],
+  "date": "2026-11-04",
+  "limits": "Synthetic 100/150% render targets; real second monitor and physical IME remain unverified",
+  "load200NodesMs": 0.2786,
+  "paintCount": 61,
+  "paintP95Ms": 17.429,
+  "paintSamplesMs": [
+    {
+      "dpi": 96.0,
+      "ms": 4.3727
+    },
+    {
+      "dpi": 96.0,
+      "ms": 11.6549
+    },
+    {
+      "dpi": 96.0,
+      "ms": 16.4376
+    },
+    {
+      "dpi": 96.0,
+      "ms": 17.1696
+    },
+    {
+      "dpi": 96.0,
+      "ms": 16.2511
+    },
+    {
+      "dpi": 96.0,
+      "ms": 16.8284
+    },
+    {
+      "dpi": 96.0,
+      "ms": 17.25
+    },
+    {
+      "dpi": 96.0,
+      "ms": 17.4456
+    },
+    {
+      "dpi": 96.0,
+      "ms": 16.6873
+    },
+    {
+      "dpi": 96.0,
+      "ms": 16.6647
+    },
+    {
+      "dpi": 96.0,
+      "ms": 17.0692
+    },
+    {
+      "dpi": 96.0,
+      "ms": 16.6643
+    },
+    {
+      "dpi": 96.0,
+      "ms": 17.3511
+    },
+    {
+      "dpi": 96.0,
+      "ms": 16.4661
+    },
+    {
+      "dpi": 96.0,
+      "ms": 16.7601
+    },
+    {
+      "dpi": 96.0,
+      "ms": 17.5123
+    },
+    {
+      "dpi": 96.0,
+      "ms": 15.9324
+    },
+    {
+      "dpi": 96.0,
+      "ms": 16.9099
+    },
+    {
+      "dpi": 96.0,
+      "ms": 16.7423
+    },
+    {
+      "dpi": 96.0,
+      "ms": 16.9876
+    },
+    {
+      "dpi": 96.0,
+      "ms": 16.532
+    },
+    {
+      "dpi": 96.0,
+      "ms": 17.0894
+    },
+    {
+      "dpi": 96.0,
+      "ms": 16.5328
+    },
+    {
+      "dpi": 96.0,
+      "ms": 16.6525
+    },
+    {
+      "dpi": 96.0,
+      "ms": 16.5866
+    },
+    {
+      "dpi": 96.0,
+      "ms": 16.4065
+    },
+    {
+      "dpi": 96.0,
+      "ms": 16.4607
+    },
+    {
+      "dpi": 96.0,
+      "ms": 17.0345
+    },
+    {
+      "dpi": 96.0,
+      "ms": 17.1226
+    },
+    {
+      "dpi": 96.0,
+      "ms": 16.9531
+    },
+    {
+      "dpi": 144.0,
+      "ms": 16.9103
+    },
+    {
+      "dpi": 144.0,
+      "ms": 16.6656
+    },
+    {
+      "dpi": 144.0,
+      "ms": 17.237
+    },
+    {
+      "dpi": 144.0,
+      "ms": 17.039
+    },
+    {
+      "dpi": 144.0,
+      "ms": 16.7818
+    },
+    {
+      "dpi": 144.0,
+      "ms": 16.9151
+    },
+    {
+      "dpi": 144.0,
+      "ms": 16.822
+    },
+    {
+      "dpi": 144.0,
+      "ms": 16.6078
+    },
+    {
+      "dpi": 144.0,
+      "ms": 16.9986
+    },
+    {
+      "dpi": 144.0,
+      "ms": 16.8471
+    },
+    {
+      "dpi": 144.0,
+      "ms": 16.9443
+    },
+    {
+      "dpi": 144.0,
+      "ms": 16.9571
+    },
+    {
+      "dpi": 144.0,
+      "ms": 16.9856
+    },
+    {
+      "dpi": 144.0,
+      "ms": 16.9758
+    },
+    {
+      "dpi": 144.0,
+      "ms": 17.0438
+    },
+    {
+      "dpi": 144.0,
+      "ms": 16.804
+    },
+    {
+      "dpi": 144.0,
+      "ms": 16.9216
+    },
+    {
+      "dpi": 144.0,
+      "ms": 17.0369
+    },
+    {
+      "dpi": 144.0,
+      "ms": 16.9038
+    },
+    {
+      "dpi": 144.0,
+      "ms": 16.8998
+    },
+    {
+      "dpi": 144.0,
+      "ms": 16.7248
+    },
+    {
+      "dpi": 144.0,
+      "ms": 17.0443
+    },
+    {
+      "dpi": 144.0,
+      "ms": 17.429
+    },
+    {
+      "dpi": 144.0,
+      "ms": 17.2434
+    },
+    {
+      "dpi": 144.0,
+      "ms": 16.8204
+    },
+    {
+      "dpi": 144.0,
+      "ms": 15.922
+    },
+    {
+      "dpi": 144.0,
+      "ms": 16.898
+    },
+    {
+      "dpi": 144.0,
+      "ms": 16.6672
+    },
+    {
+      "dpi": 144.0,
+      "ms": 17.0874
+    },
+    {
+      "dpi": 144.0,
+      "ms": 16.4257
+    }
+  ],
+  "result": "passed"
+}

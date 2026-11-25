@@ -1,0 +1,641 @@
+<!doctype html>
+<html lang="zh-CN">
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" /><title>
+    Workbench · 管理中心
+  </title>
+  <style>
+    :root {
+      font-family:
+        Segoe UI,
+        Microsoft YaHei,
+        sans-serif;
+      color: #183149;
+      background: #f1f5fa;
+    }
+    * {
+      box-sizing: border-box;
+    }
+    body {
+      margin: 0;
+    }
+    header {
+      background: #142c45;
+      color: white;
+      padding: 20px 32px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    header strong {
+      font-size: 22px;
+    }
+    main {
+      max-width: 1320px;
+      margin: 24px auto;
+      padding: 0 24px;
+    }
+    h2 {
+      font-size: 22px;
+    }
+    h3 {
+      font-size: 17px;
+    }
+    p {
+      line-height: 1.7;
+    }
+    small {
+      color: #536b80;
+    }
+    .card {
+      background: white;
+      border: 1px solid #dbe4ed;
+      border-radius: 14px;
+      padding: 22px;
+      margin: 18px 0;
+      box-shadow: 0 3px 14px #142c4508;
+    }
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 16px;
+    }
+    .stat b {
+      display: block;
+      font-size: 30px;
+      color: #0b7285;
+    }
+    nav {
+      display: flex;
+      gap: 8px;
+      flex-wrap: wrap;
+    }
+    button {
+      border: 0;
+      border-radius: 7px;
+      padding: 10px 16px;
+      background: #087f8c;
+      color: white;
+      cursor: pointer;
+      font: inherit;
+    }
+    button:hover {
+      background: #076572;
+    }
+    button:disabled {
+      opacity: 0.5;
+      cursor: wait;
+    }
+    nav button {
+      background: #dce7f3;
+      color: #183149;
+    }
+    nav button.active {
+      background: #183149;
+      color: white;
+    }
+    label {
+      display: block;
+      font-size: 13px;
+      color: #435e75;
+      margin: 10px 0;
+    }
+    input,
+    select {
+      display: block;
+      margin-top: 5px;
+      padding: 10px;
+      border: 1px solid #bccbd9;
+      border-radius: 7px;
+      width: 100%;
+      font: inherit;
+    }
+    form {
+      margin: 12px 0;
+    }
+    form .grid {
+      gap: 0 20px;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      font-size: 13px;
+    }
+    th,
+    td {
+      padding: 12px 8px;
+      border-bottom: 1px solid #e5edf4;
+      text-align: left;
+      word-break: break-all;
+    }
+    th {
+      color: #536b80;
+    }
+    .scroll {
+      overflow: auto;
+      max-height: 470px;
+    }
+    .id {
+      font-family: Consolas, monospace;
+      font-size: 12px;
+    }
+    .actions button {
+      padding: 6px 10px;
+      margin: 3px;
+      font-size: 12px;
+    }
+    .muted {
+      background: #e5edf4;
+      color: #183149;
+    }
+    #notice {
+      position: sticky;
+      top: 8px;
+      padding: 12px 18px;
+      background: #e4f4f2;
+      border: 1px solid #9ccbc6;
+      border-radius: 8px;
+      white-space: pre-wrap;
+      z-index: 2;
+    }
+    #notice.error {
+      background: #fff0ee;
+      border-color: #e6aca3;
+      color: #972d22;
+    }
+    [hidden] {
+      display: none !important;
+    }
+    pre {
+      white-space: pre-wrap;
+      overflow-wrap: anywhere;
+      font-size: 12px;
+    }
+    footer {
+      padding: 30px;
+      color: #536b80;
+      font-size: 12px;
+    }
+  </style>
+  <header>
+    <strong>Workbench <span style="font-weight: 400">/ 管理中心</span></strong
+    ><span id="account">账户 · 商业 · 运行管理</span>
+  </header>
+  <main>
+    <div id="notice" role="status" hidden></div>
+    <section id="auth">
+      <div class="card">
+        <h2>登录管理中心</h2>
+        <button id="sso-login" type="button" hidden>
+          通过企业身份服务登录
+        </button>
+        <p>
+          首次运行请从后台数据目录读取
+          bootstrap.key，初始化平台管理员。无默认密码。
+        </p>
+        <form id="auth-form">
+          <div class="grid">
+            <label
+              >操作<select name="mode">
+                <option value="login">登录</option>
+                <option value="bootstrap">初始化平台管理员</option>
+                <option value="register">注册客户组织</option>
+              </select></label
+            ><label
+              >邮箱<input
+                name="email"
+                type="email"
+                required
+                autocomplete="username" /></label
+            ><label
+              >密码（注册至少12字符）<input
+                name="password"
+                type="password"
+                required
+                autocomplete="current-password" /></label
+            ><label
+              >组织 / 昵称（注册时）<input
+                name="name"
+                autocomplete="organization" /></label
+            ><label
+              >初始化密钥（仅首次）<input
+                name="key"
+                type="password"
+                autocomplete="off"
+            /></label>
+          </div>
+          <button>进入管理中心</button>
+        </form>
+      </div>
+    </section>
+    <section id="workspace" hidden>
+      <div class="card">
+        <div class="grid">
+          <label>当前组织<select id="tenant"></select></label>
+          <div>
+            <p id="who"></p>
+            <button id="refresh">刷新数据</button>
+            <button id="logout" class="muted">退出登录</button>
+          </div>
+        </div>
+      </div>
+      <nav id="navigation">
+        <button data-page="overview" class="active">概览与套餐</button
+        ><button data-page="team">成员与席位</button
+        ><button data-page="billing">订单与账务</button
+        ><button data-page="runtime">设备与运行</button
+        ><button data-page="operator" id="operator-tab" hidden>平台运营</button
+        ><button data-page="scheduler">多机自动化</button
+        ><button data-page="security">账户安全</button>
+      </nav>
+      <section data-view="overview">
+        <div id="stats" class="grid"></div>
+        <div class="card">
+          <h2>可购买套餐</h2>
+          <p>
+            免费档：10个环境、10路并发、1个席位，支持代理协议、RPA、Local
+            API和AI测试。付费套餐扩展额度；续费从原到期日接续。
+          </p>
+          <div id="plans" class="grid"></div>
+        </div>
+        <div class="card">
+          <h3>订阅与续费</h3>
+          <div id="grants"></div>
+        </div>
+      </section>
+      <section data-view="team" hidden>
+        <div class="card">
+          <h2>席位与权限</h2>
+          <p id="seat-info"></p>
+          <form data-action="member.invite">
+            <div class="grid">
+              <label>邀请邮箱<input name="email" type="email" required /></label
+              ><label
+                >角色<select name="role">
+                  <option value="member">成员</option>
+                  <option value="admin">组织管理员</option>
+                  <option value="finance">财务</option>
+                  <option value="owner">所有者</option>
+                </select></label
+              >
+            </div>
+            <button>邀请并预占席位</button>
+          </form>
+          <div id="members"></div>
+          <h3>待处理邀请</h3>
+          <div id="invites"></div>
+        </div>
+        <div class="card">
+          <h3>接受邀请</h3>
+          <form data-action="member.accept">
+            <label
+              >邀请令牌<input
+                name="invitationToken"
+                required
+                autocomplete="off" /></label
+            ><button>接受邀请</button>
+          </form>
+          <pre id="invitation-result"></pre>
+        </div>
+      </section>
+      <section data-view="billing" hidden>
+        <div class="card">
+          <h2>订单与支付</h2>
+          <form id="channel-form">
+            <div class="grid">
+              <label>订单号<input name="orderId" required /></label>
+              <label
+                >官方渠道<select name="channel">
+                  <option value="alipay">支付宝</option>
+                  <option value="wechat">微信支付</option>
+                  <option value="stripe">Stripe</option>
+                </select></label
+              >
+              <label
+                >操作<select name="verb">
+                  <option value="create">创建付款</option>
+                  <option value="query">查询付款</option>
+                  <option value="refund">执行已申请退款（平台）</option>
+                  <option value="refund-query">查询退款</option>
+                </select></label
+              >
+            </div>
+            <button>执行官方渠道操作</button>
+          </form>
+          <pre id="channel-result"></pre>
+          <p>
+            渠道参数由服务器配置。支付返回结果未确认时，请先查询付款或退款。
+          </p>
+          <p>
+            线下支付由平台核实银行流水后确认。网关未配置时不能发起网关支付。订单支付、退款、回调均核验成交金额。
+          </p>
+          <div id="orders"></div>
+        </div>
+        <div class="card">
+          <h3>收款与退款分录（人民币分）</h3>
+          <div id="ledger"></div>
+        </div>
+        <div class="card">
+          <h3>发票申请</h3>
+          <form data-action="invoice.request">
+            <div class="grid">
+              <label>订单号<input name="orderId" required /></label
+              ><label>发票抬头<input name="title" required /></label
+              ><label>税号<input name="taxId" required /></label>
+            </div>
+            <button>提交申请</button>
+          </form>
+          <div id="invoices"></div>
+        </div>
+      </section>
+      <section data-view="runtime" hidden>
+        <div class="card">
+          <h2>设备与全局并发</h2>
+          <p>
+            离线或心跳中断的运行槽继续占用配额。核实浏览器停止后才能人工释放，防止重复运行。
+          </p>
+          <div id="devices"></div>
+          <h3>运行槽</h3>
+          <div id="slots"></div>
+          <h3>已结束用量（秒）</h3>
+          <div id="usage"></div>
+        </div>
+      </section>
+      <section data-view="operator" hidden>
+        <div class="card">
+          <h2>平台运营</h2>
+          <p id="reconciliation"></p>
+          <h3>发布套餐版本</h3>
+          <form data-action="plan.save">
+            <div class="grid">
+              <label
+                >计费类型<select name="billingMode">
+                  <option value="subscription">包时订阅</option>
+                  <option value="prepaid">预付秒数</option>
+                </select></label
+              ><label
+                >时长包秒数<input
+                  type="number"
+                  name="timeSeconds"
+                  min="300"
+                  value="36000" /></label
+              ><label>产品标识<input name="productId" required /></label
+              ><label>套餐名称<input name="name" required /></label
+              ><label
+                >价格（人民币分）<input
+                  type="number"
+                  name="amountMinor"
+                  min="1"
+                  max="100000000"
+                  required /></label
+              ><label
+                >有效天数<input
+                  type="number"
+                  name="days"
+                  min="1"
+                  max="3650"
+                  value="30"
+                  required /></label
+              ><label
+                >环境数<input
+                  type="number"
+                  name="environmentLimit"
+                  min="10"
+                  value="50"
+                  required /></label
+              ><label
+                >并发数<input
+                  type="number"
+                  name="concurrentLimit"
+                  min="1"
+                  value="20"
+                  required /></label
+              ><label
+                >席位数<input
+                  type="number"
+                  name="seatLimit"
+                  min="1"
+                  value="5"
+                  required
+              /></label>
+            </div>
+            <button>发布新价格版本</button>
+          </form>
+          <div id="operator-plans"></div>
+        </div>
+        <div class="card">
+          <h3>线下收款 / 退款确认</h3>
+          <form id="settle-form">
+            <div class="grid">
+              <label
+                >操作<select name="mode">
+                  <option value="payment.confirm">确认收款</option>
+                  <option value="refund.confirm">确认已退款</option>
+                </select></label
+              ><label>订单号<input name="orderId" required /></label
+              ><label
+                >核实金额（分）<input
+                  type="number"
+                  name="amountMinor"
+                  min="1"
+                  required /></label
+              ><label>唯一银行流水号<input name="receipt" required /></label
+              ><label>核实说明<input name="reason" required /></label>
+            </div>
+            <button>确认已核实的资金变动</button>
+          </form>
+          <div id="operator-orders"></div>
+          <h3>关闭订单后的已核实来款</h3>
+          <div id="payment-reviews"></div>
+          <form data-action="payment.reconcile">
+            <div class="grid">
+              <label>订单号<input name="orderId" required /></label
+              ><label>核对事件号<input name="reviewId" required /></label
+              ><label
+                >金额（分）<input
+                  name="amountMinor"
+                  type="number"
+                  min="1"
+                  required /></label
+              ><label>核实流水号<input name="receipt" required /></label
+              ><label>核实说明<input name="reason" required /></label>
+            </div>
+            <button>核实后补记收款</button>
+          </form>
+        </div>
+        <div class="card">
+          <h3>组织管理</h3>
+          <div id="tenants"></div>
+          <h3>账号管理</h3>
+          <div id="users"></div>
+        </div>
+        <div class="card">
+          <h3>发票处理</h3>
+          <form data-action="invoice.issue">
+            <div class="grid">
+              <label>申请号<input name="id" required /></label
+              ><label
+                >实际开具发票号<input name="invoiceNumber" required
+              /></label>
+            </div>
+            <button>登记已开具发票</button>
+          </form>
+          <div id="operator-invoices"></div>
+          <form data-action="invoice.credit">
+            <div class="grid">
+              <label>退款发票申请号<input name="id" required /></label
+              ><label
+                >实际红字发票 / 冲红编号<input name="creditNoteNumber" required
+              /></label>
+            </div>
+            <button>登记已完成冲红</button>
+          </form>
+        </div>
+        <div class="card">
+          <h3>审计记录</h3>
+          <div id="audit"></div>
+          <button id="export">导出运营数据</button>
+        </div>
+      </section>
+      <section data-view="scheduler" hidden>
+        <div class="card">
+          <h2>项目与执行节点</h2>
+          <p>
+            按组织和项目批准节点。任务固定绑定环境与流程版本；失联任务需要核对业务结果。
+          </p>
+          <form id="project-form">
+            <div class="grid">
+              <label>项目名称<input name="name" required /></label
+              ><label
+                >允许的网站来源（每行一项）<textarea
+                  name="origins"
+                  required
+                ></textarea>
+              </label>
+            </div>
+            <button>创建项目</button>
+          </form>
+          <div id="remote-projects"></div>
+          <form id="enrollment-form">
+            <div class="grid">
+              <label
+                >项目<select
+                  name="projectId"
+                  id="enrollment-project"
+                ></select></label
+              ><label
+                >节点并发容量<input
+                  name="capacity"
+                  type="number"
+                  min="1"
+                  max="64"
+                  value="1"
+                  required
+              /></label>
+            </div>
+            <button>生成一次性节点注册码</button>
+          </form>
+          <pre id="enrollment-result"></pre>
+          <div id="remote-nodes"></div>
+        </div>
+        <div class="card">
+          <h2>分配环境与发布流程</h2>
+          <form id="assignment-form">
+            <div class="grid">
+              <label
+                >项目<select
+                  name="projectId"
+                  id="assignment-project"
+                ></select></label
+              ><label
+                >节点<select name="nodeId" id="assignment-node"></select></label
+              ><label>环境名称<input name="name" required /></label>
+            </div>
+            <button>分配环境</button>
+          </form>
+          <div id="remote-assignments"></div>
+          <form id="version-form">
+            <label
+              >项目<select
+                name="projectId"
+                id="version-project"
+              ></select></label
+            ><label
+              >已验证流程定义 JSON<textarea
+                name="definition"
+                rows="10"
+                required
+              ></textarea></label
+            ><button>发布不可变流程版本</button>
+          </form>
+          <div id="remote-versions"></div>
+        </div>
+        <div class="card">
+          <h2>提交与核对任务</h2>
+          <form id="remote-run-form">
+            <div class="grid">
+              <label
+                >环境<select
+                  name="assignmentId"
+                  id="run-assignment"
+                ></select></label
+              ><label
+                >流程版本<select
+                  name="versionId"
+                  id="run-version"
+                ></select></label
+              ><label
+                >超时秒数<input
+                  name="timeoutSeconds"
+                  type="number"
+                  min="5"
+                  max="86400"
+                  value="120"
+              /></label>
+            </div>
+            <label>输入 JSON<textarea name="input" rows="3">{}</textarea></label
+            ><button>加入执行队列</button>
+          </form>
+          <div id="remote-runs"></div>
+        </div>
+      </section>
+      <section data-view="security" hidden>
+        <div class="card">
+          <h2>企业登录与桌面连接</h2>
+          <button id="sso-link" type="button">绑定当前企业身份</button
+          ><button id="desktop-code" type="button">生成一次性桌面连接码</button
+          ><button id="sso-logout" type="button">退出企业身份登录</button>
+          <pre id="desktop-code-result"></pre>
+          <p>
+            原生账号窗口：邮箱填写
+            sso，密码栏粘贴连接码。连接码120秒有效且仅能用一次。
+          </p>
+        </div>
+        <div class="card">
+          <h2>修改密码</h2>
+          <p>修改后立即吊销全部旧会话，并为当前窗口签发新会话。</p>
+          <form data-action="password.change">
+            <label
+              >当前密码<input
+                type="password"
+                name="oldPassword"
+                required
+                autocomplete="current-password" /></label
+            ><label
+              >新密码（至少12字符）<input
+                type="password"
+                name="password"
+                required
+                autocomplete="new-password" /></label
+            ><button>修改密码</button>
+          </form>
+        </div>
+      </section>
+    </section>
+    <footer>
+      Workbench Control Plane · C++14 / VC++2019 · 独立SQLite事务存储 ·
+      网关凭据在服务端配置
+    </footer>
+  </main>
+  <script src="/portal.js"></script>
+</html>

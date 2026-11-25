@@ -1,0 +1,34 @@
+{
+  "date": "2026-11-04",
+  "attempts": [
+    {
+      "attempt": "r1",
+      "result": "failed",
+      "error": "sqlite3.OperationalError: table articles has 8 columns but 9 values were supplied",
+      "phase": "database initialization; no browser actions",
+      "fix": "use 8 placeholders in article INSERT statements"
+    },
+    {
+      "attempt": "r2",
+      "result": "failed",
+      "error": "WORKFLOW_TYPE_INVALID",
+      "phase": "definition input body maxLength 20000 exceeds assertText 16384",
+      "report": "retained-r2-report.json",
+      "fix": "set maxLength to 16384 and check validation result before publish"
+    },
+    {
+      "attempt": "r3",
+      "result": "failed",
+      "error": "KeyError: id",
+      "phase": "test assertion after successful outcome-unknown handling",
+      "report": "retained-r3-report.json",
+      "fix": "inspect stepId and assert no subsequent search step"
+    },
+    {
+      "attempt": "r4",
+      "result": "passed",
+      "checks": 15,
+      "calls": 327
+    }
+  ]
+}

@@ -1,0 +1,56 @@
+-- Configuring done
+-- Generating done
+-- Build files have been written to: E:/project/webexploer_codex/build/vs2019-x64
+用于 .NET Framework 的 Microsoft (R) 生成引擎版本 16.11.6+a918ceb31
+版权所有(C) Microsoft Corporation。保留所有权利。
+
+  awb_sqlite.vcxproj -> E:\project\webexploer_codex\build\vs2019-x64\Debug\awb_sqlite.lib
+  awb_core.vcxproj -> E:\project\webexploer_codex\build\vs2019-x64\Debug\awb_core.lib
+  awb-storage-tests.vcxproj -> E:\project\webexploer_codex\build\vs2019-x64\Debug\awb-storage-tests.exe
+  workbench-mcp.vcxproj -> E:\project\webexploer_codex\build\vs2019-x64\Debug\workbench-mcp.exe
+  workbench-cli.vcxproj -> E:\project\webexploer_codex\build\vs2019-x64\Debug\workbench-cli.exe
+  workbench.vcxproj -> E:\project\webexploer_codex\build\vs2019-x64\Debug\workbench.exe
+  awb-core-tests.vcxproj -> E:\project\webexploer_codex\build\vs2019-x64\Debug\awb-core-tests.exe
+Internal ctest changing into directory: E:/project/webexploer_codex/build/vs2019-x64
+Test project E:/project/webexploer_codex/build/vs2019-x64
+    Start 1: core
+1/3 Test #1: core .............................   Passed   29.81 sec
+    Start 2: storage
+2/3 Test #2: storage ..........................   Passed    3.43 sec
+    Start 3: win32-shell
+3/3 Test #3: win32-shell ......................   Passed    0.22 sec
+
+100% tests passed, 0 tests failed out of 3
+
+Total Test time (real) =  33.46 sec
+用于 .NET Framework 的 Microsoft (R) 生成引擎版本 16.11.6+a918ceb31
+版权所有(C) Microsoft Corporation。保留所有权利。
+
+  awb_sqlite.vcxproj -> E:\project\webexploer_codex\build\vs2019-x64\Release\awb_sqlite.lib
+  flow_document.cpp
+  recording.cpp
+  正在生成代码...
+  awb_core.vcxproj -> E:\project\webexploer_codex\build\vs2019-x64\Release\awb_core.lib
+  awb-storage-tests.vcxproj -> E:\project\webexploer_codex\build\vs2019-x64\Release\awb-storage-tests.exe
+  workbench-mcp.vcxproj -> E:\project\webexploer_codex\build\vs2019-x64\Release\workbench-mcp.exe
+  workbench-cli.vcxproj -> E:\project\webexploer_codex\build\vs2019-x64\Release\workbench-cli.exe
+  flow_editor.cpp
+  flow_document_tests.cpp
+  main.cpp
+  awb-core-tests.vcxproj -> E:\project\webexploer_codex\build\vs2019-x64\Release\awb-core-tests.exe
+  正在生成代码...
+  workbench.vcxproj -> E:\project\webexploer_codex\build\vs2019-x64\Release\workbench.exe
+Internal ctest changing into directory: E:/project/webexploer_codex/build/vs2019-x64
+Test project E:/project/webexploer_codex/build/vs2019-x64
+    Start 1: core
+1/3 Test #1: core .............................   Passed    2.89 sec
+    Start 2: storage
+2/3 Test #2: storage ..........................   Passed    2.81 sec
+    Start 3: win32-shell
+3/3 Test #3: win32-shell ......................   Passed    0.17 sec
+
+100% tests passed, 0 tests failed out of 3
+
+Total Test time (real) =   5.88 sec
+{"result": "passed", "ownSourceFiles": 69, "placeholderMarkersFound": 0, "errors": []}
+Evidence: E:\project\webexploer_codex\build\evidence\run-20261104-223422

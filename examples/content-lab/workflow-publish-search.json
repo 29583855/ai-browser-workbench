@@ -1,0 +1,240 @@
+{
+  "schemaVersion": "1.0",
+  "name": "内容网站：登录发布并搜索",
+  "version": 1,
+  "inputSchema": {
+    "type": "object",
+    "properties": {
+      "user": {
+        "type": "string",
+        "maxLength": 64
+      },
+      "password": {
+        "type": "string",
+        "maxLength": 128
+      },
+      "taskKey": {
+        "type": "string",
+        "maxLength": 80
+      },
+      "title": {
+        "type": "string",
+        "maxLength": 200
+      },
+      "body": {
+        "type": "string",
+        "maxLength": 16384
+      },
+      "category": {
+        "type": "string",
+        "maxLength": 32
+      },
+      "keyword": {
+        "type": "string",
+        "maxLength": 120
+      },
+      "expectedSearchStatus": {
+        "type": "string",
+        "maxLength": 100
+      }
+    },
+    "required": [
+      "user",
+      "password",
+      "taskKey",
+      "title",
+      "body",
+      "category",
+      "keyword",
+      "expectedSearchStatus"
+    ],
+    "additionalProperties": false
+  },
+  "policy": {
+    "allowedOrigins": [
+      "http://127.0.0.1:3010"
+    ],
+    "maxSteps": 32,
+    "maxDurationMs": 60000
+  },
+  "entry": "open",
+  "steps": [
+    {
+      "id": "open",
+      "type": "navigate",
+      "url": "http://127.0.0.1:3010/",
+      "next": "ready"
+    },
+    {
+      "id": "ready",
+      "type": "assertText",
+      "selector": "#auth-status",
+      "expected": "ready",
+      "timeoutMs": 5000,
+      "next": "user"
+    },
+    {
+      "id": "user",
+      "type": "fill",
+      "selector": "#username",
+      "value": {
+        "input": "/user"
+      },
+      "next": "password"
+    },
+    {
+      "id": "password",
+      "type": "fill",
+      "selector": "#password",
+      "value": {
+        "input": "/password"
+      },
+      "next": "login"
+    },
+    {
+      "id": "login",
+      "type": "click",
+      "selector": "#login",
+      "postcondition": {
+        "selector": "#auth-status",
+        "expected": "logged-in",
+        "timeoutMs": 5000
+      },
+      "next": "identity"
+    },
+    {
+      "id": "identity",
+      "type": "assertText",
+      "selector": "#identity",
+      "expected": {
+        "input": "/user"
+      },
+      "timeoutMs": 5000,
+      "next": "create"
+    },
+    {
+      "id": "create",
+      "type": "click",
+      "selector": "#create-article",
+      "postcondition": {
+        "selector": "#editor-status",
+        "expected": "ready",
+        "timeoutMs": 5000
+      },
+      "next": "task"
+    },
+    {
+      "id": "task",
+      "type": "fill",
+      "selector": "#publish-key",
+      "value": {
+        "input": "/taskKey"
+      },
+      "next": "title"
+    },
+    {
+      "id": "title",
+      "type": "fill",
+      "selector": "#article-title",
+      "value": {
+        "input": "/title"
+      },
+      "next": "body"
+    },
+    {
+      "id": "body",
+      "type": "fill",
+      "selector": "#article-body",
+      "value": {
+        "input": "/body"
+      },
+      "next": "category"
+    },
+    {
+      "id": "category",
+      "type": "select",
+      "selector": "#category",
+      "values": [
+        {
+          "input": "/category"
+        }
+      ],
+      "next": "publish"
+    },
+    {
+      "id": "publish",
+      "type": "click",
+      "selector": "#article-publish",
+      "postcondition": {
+        "selector": "#publish-status",
+        "expected": "published",
+        "timeoutMs": 5000
+      },
+      "next": "verify-author"
+    },
+    {
+      "id": "verify-author",
+      "type": "assertText",
+      "selector": "#article-author",
+      "expected": {
+        "input": "/user"
+      },
+      "timeoutMs": 5000,
+      "next": "verify-title"
+    },
+    {
+      "id": "verify-title",
+      "type": "assertText",
+      "selector": "#detail-title",
+      "expected": {
+        "input": "/title"
+      },
+      "timeoutMs": 5000,
+      "next": "verify-body"
+    },
+    {
+      "id": "verify-body",
+      "type": "assertText",
+      "selector": "#detail-body",
+      "expected": {
+        "input": "/body"
+      },
+      "timeoutMs": 5000,
+      "next": "verify-state"
+    },
+    {
+      "id": "verify-state",
+      "type": "assertText",
+      "selector": "#article-state",
+      "expected": "published",
+      "timeoutMs": 5000,
+      "next": "keyword"
+    },
+    {
+      "id": "keyword",
+      "type": "fill",
+      "selector": "#search-query",
+      "value": {
+        "input": "/keyword"
+      },
+      "next": "search"
+    },
+    {
+      "id": "search",
+      "type": "click",
+      "selector": "#search",
+      "postcondition": {
+        "selector": "#search-status",
+        "expected": {
+          "input": "/expectedSearchStatus"
+        },
+        "timeoutMs": 5000
+      },
+      "next": "done"
+    },
+    {
+      "id": "done",
+      "type": "end"
+    }
+  ]
+}

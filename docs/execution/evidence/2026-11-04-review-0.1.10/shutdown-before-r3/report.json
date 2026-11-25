@@ -1,0 +1,35 @@
+{
+  "date": "2026-11-04",
+  "result": "failed",
+  "checks": [
+    "immediate",
+    "multiple"
+  ],
+  "cases": [
+    {
+      "mode": "immediate",
+      "result": "passed",
+      "snapshots": 1,
+      "failureBlocked": false
+    },
+    {
+      "mode": "multiple",
+      "result": "passed",
+      "snapshots": 2,
+      "failureBlocked": false
+    },
+    {
+      "mode": "quota",
+      "result": "failed",
+      "error": "Workbench exited although recovery could not be written",
+      "errorType": "AssertionError"
+    },
+    {
+      "mode": "locked",
+      "result": "failed",
+      "error": "Workbench exited although recovery could not be written",
+      "errorType": "AssertionError"
+    }
+  ],
+  "binarySha256": "3ae00ba8a6a6ca0819c83ec4802e223fa88be281ec47d5d4098ab611ca74352a"
+}

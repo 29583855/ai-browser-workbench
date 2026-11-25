@@ -1,0 +1,17 @@
+{
+  "date": "2026-11-04T09:06:59.583018+08:00",
+  "result": "failed",
+  "steps": [
+    {
+      "buttonId": 101,
+      "outcome": "passed"
+    },
+    {
+      "buttonId": 101,
+      "outcome": "passed"
+    }
+  ],
+  "checks": [],
+  "binarySha256": "ec911f6d6ec07b16076313e900c7d3cddfc7cf7529ef96beba8ba4cad62332a5",
+  "error": "Newly created profile is not selected; next operation targets another profile"
+}

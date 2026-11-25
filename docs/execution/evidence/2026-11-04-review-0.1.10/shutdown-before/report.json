@@ -1,0 +1,32 @@
+{
+  "date": "2026-11-04",
+  "result": "failed",
+  "checks": [],
+  "cases": [
+    {
+      "mode": "immediate",
+      "result": "failed",
+      "error": "Main window did not appear",
+      "errorType": "TimeoutError"
+    },
+    {
+      "mode": "multiple",
+      "result": "failed",
+      "error": "Main window did not appear",
+      "errorType": "TimeoutError"
+    },
+    {
+      "mode": "quota",
+      "result": "failed",
+      "error": "Main window did not appear",
+      "errorType": "TimeoutError"
+    },
+    {
+      "mode": "locked",
+      "result": "failed",
+      "error": "Main window did not appear",
+      "errorType": "TimeoutError"
+    }
+  ],
+  "binarySha256": "3ae00ba8a6a6ca0819c83ec4802e223fa88be281ec47d5d4098ab611ca74352a"
+}

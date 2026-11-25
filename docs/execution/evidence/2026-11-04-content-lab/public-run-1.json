@@ -1,0 +1,529 @@
+{
+  "date": "2026-11-04",
+  "result": "passed",
+  "origin": "http://127.0.0.1:3010",
+  "method": "C++ CLI workflow plus site-specific browser tool orchestration; no direct site write API",
+  "binarySha256": "d8a0473a0ae63f7f90796a38151acdcacdc97f47439e035b53f01117df4b88c3",
+  "registration": "registered",
+  "workflow": {
+    "runId": "0cb758c1dda603dba94444b5c5297cb5",
+    "state": "succeeded",
+    "steps": 19
+  },
+  "publishedArticleId": "article-113d3c2ac77f",
+  "results": [
+    {
+      "id": "seed-a",
+      "title": "浏览器自动化：登录测试",
+      "author": "editor",
+      "url": "http://127.0.0.1:3010/?article=seed-a"
+    },
+    {
+      "id": "seed-b",
+      "title": "浏览器自动化：表单回归",
+      "author": "editor",
+      "url": "http://127.0.0.1:3010/?article=seed-b"
+    },
+    {
+      "id": "seed-c",
+      "title": "浏览器自动化：元素定位",
+      "author": "editor",
+      "url": "http://127.0.0.1:3010/?article=seed-c"
+    },
+    {
+      "id": "article-113d3c2ac77f",
+      "title": "浏览器自动化：从登录到发布的练习",
+      "author": "demo-author",
+      "url": "http://127.0.0.1:3010/?article=article-113d3c2ac77f"
+    }
+  ],
+  "interaction": {
+    "articleId": "seed-a",
+    "like": "liked",
+    "comment": "submitted",
+    "replyParentId": "comment-a",
+    "reply": "submitted"
+  },
+  "commands": [
+    {
+      "sequence": 1,
+      "command": "profile_create",
+      "result": "passed"
+    },
+    {
+      "sequence": 2,
+      "command": "browser_start",
+      "result": "passed"
+    },
+    {
+      "sequence": 3,
+      "command": "lease_acquire",
+      "result": "passed"
+    },
+    {
+      "sequence": 4,
+      "command": "browser_navigate",
+      "result": "passed"
+    },
+    {
+      "sequence": 5,
+      "command": "page_wait_text",
+      "result": "passed"
+    },
+    {
+      "sequence": 6,
+      "command": "page_locate",
+      "result": "passed"
+    },
+    {
+      "sequence": 7,
+      "command": "page_fill",
+      "result": "passed"
+    },
+    {
+      "sequence": 8,
+      "command": "page_locate",
+      "result": "passed"
+    },
+    {
+      "sequence": 9,
+      "command": "page_fill",
+      "result": "passed"
+    },
+    {
+      "sequence": 10,
+      "command": "page_locate",
+      "result": "passed"
+    },
+    {
+      "sequence": 11,
+      "command": "page_click",
+      "result": "passed"
+    },
+    {
+      "sequence": 12,
+      "command": "page_locate",
+      "result": "passed"
+    },
+    {
+      "sequence": 13,
+      "command": "page_text",
+      "result": "passed"
+    },
+    {
+      "sequence": 14,
+      "command": "page_locate",
+      "result": "passed"
+    },
+    {
+      "sequence": 15,
+      "command": "page_text",
+      "result": "passed"
+    },
+    {
+      "sequence": 16,
+      "command": "workflow_validate",
+      "result": "passed"
+    },
+    {
+      "sequence": 17,
+      "command": "workflow_publish",
+      "result": "passed"
+    },
+    {
+      "sequence": 18,
+      "command": "workflow_run",
+      "result": "passed"
+    },
+    {
+      "sequence": 19,
+      "command": "workflow_status",
+      "result": "passed"
+    },
+    {
+      "sequence": 20,
+      "command": "workflow_status",
+      "result": "passed"
+    },
+    {
+      "sequence": 21,
+      "command": "workflow_status",
+      "result": "passed"
+    },
+    {
+      "sequence": 22,
+      "command": "workflow_status",
+      "result": "passed"
+    },
+    {
+      "sequence": 23,
+      "command": "workflow_status",
+      "result": "passed"
+    },
+    {
+      "sequence": 24,
+      "command": "page_locate",
+      "result": "passed"
+    },
+    {
+      "sequence": 25,
+      "command": "page_text",
+      "result": "passed"
+    },
+    {
+      "sequence": 26,
+      "command": "page_locate",
+      "result": "passed"
+    },
+    {
+      "sequence": 27,
+      "command": "page_text",
+      "result": "passed"
+    },
+    {
+      "sequence": 28,
+      "command": "page_locate",
+      "result": "passed"
+    },
+    {
+      "sequence": 29,
+      "command": "page_text",
+      "result": "passed"
+    },
+    {
+      "sequence": 30,
+      "command": "page_locate",
+      "result": "passed"
+    },
+    {
+      "sequence": 31,
+      "command": "page_text",
+      "result": "passed"
+    },
+    {
+      "sequence": 32,
+      "command": "page_locate",
+      "result": "passed"
+    },
+    {
+      "sequence": 33,
+      "command": "page_text",
+      "result": "passed"
+    },
+    {
+      "sequence": 34,
+      "command": "page_locate",
+      "result": "passed"
+    },
+    {
+      "sequence": 35,
+      "command": "page_text",
+      "result": "passed"
+    },
+    {
+      "sequence": 36,
+      "command": "page_locate",
+      "result": "passed"
+    },
+    {
+      "sequence": 37,
+      "command": "page_text",
+      "result": "passed"
+    },
+    {
+      "sequence": 38,
+      "command": "page_locate",
+      "result": "passed"
+    },
+    {
+      "sequence": 39,
+      "command": "page_text",
+      "result": "passed"
+    },
+    {
+      "sequence": 40,
+      "command": "page_locate",
+      "result": "passed"
+    },
+    {
+      "sequence": 41,
+      "command": "page_text",
+      "result": "passed"
+    },
+    {
+      "sequence": 42,
+      "command": "page_locate",
+      "result": "passed"
+    },
+    {
+      "sequence": 43,
+      "command": "page_text",
+      "result": "passed"
+    },
+    {
+      "sequence": 44,
+      "command": "page_locate",
+      "result": "passed"
+    },
+    {
+      "sequence": 45,
+      "command": "page_text",
+      "result": "passed"
+    },
+    {
+      "sequence": 46,
+      "command": "page_locate",
+      "result": "passed"
+    },
+    {
+      "sequence": 47,
+      "command": "page_click",
+      "result": "passed"
+    },
+    {
+      "sequence": 48,
+      "command": "page_wait_text",
+      "result": "passed"
+    },
+    {
+      "sequence": 49,
+      "command": "page_locate",
+      "result": "passed"
+    },
+    {
+      "sequence": 50,
+      "command": "page_text",
+      "result": "passed"
+    },
+    {
+      "sequence": 51,
+      "command": "page_locate",
+      "result": "passed"
+    },
+    {
+      "sequence": 52,
+      "command": "page_text",
+      "result": "passed"
+    },
+    {
+      "sequence": 53,
+      "command": "page_locate",
+      "result": "passed"
+    },
+    {
+      "sequence": 54,
+      "command": "page_text",
+      "result": "passed"
+    },
+    {
+      "sequence": 55,
+      "command": "page_locate",
+      "result": "passed"
+    },
+    {
+      "sequence": 56,
+      "command": "page_text",
+      "result": "passed"
+    },
+    {
+      "sequence": 57,
+      "command": "page_locate",
+      "result": "passed"
+    },
+    {
+      "sequence": 58,
+      "command": "page_text",
+      "result": "passed"
+    },
+    {
+      "sequence": 59,
+      "command": "page_locate",
+      "result": "passed"
+    },
+    {
+      "sequence": 60,
+      "command": "page_text",
+      "result": "passed"
+    },
+    {
+      "sequence": 61,
+      "command": "page_locate",
+      "result": "passed"
+    },
+    {
+      "sequence": 62,
+      "command": "page_text",
+      "result": "passed"
+    },
+    {
+      "sequence": 63,
+      "command": "page_locate",
+      "result": "passed"
+    },
+    {
+      "sequence": 64,
+      "command": "page_text",
+      "result": "passed"
+    },
+    {
+      "sequence": 65,
+      "command": "page_locate",
+      "result": "passed"
+    },
+    {
+      "sequence": 66,
+      "command": "page_text",
+      "result": "passed"
+    },
+    {
+      "sequence": 67,
+      "command": "page_locate",
+      "result": "passed"
+    },
+    {
+      "sequence": 68,
+      "command": "page_fill",
+      "result": "passed"
+    },
+    {
+      "sequence": 69,
+      "command": "page_locate",
+      "result": "passed"
+    },
+    {
+      "sequence": 70,
+      "command": "page_click",
+      "result": "passed"
+    },
+    {
+      "sequence": 71,
+      "command": "page_wait_text",
+      "result": "passed"
+    },
+    {
+      "sequence": 72,
+      "command": "page_wait_text",
+      "result": "passed"
+    },
+    {
+      "sequence": 73,
+      "command": "page_locate",
+      "result": "passed"
+    },
+    {
+      "sequence": 74,
+      "command": "page_text",
+      "result": "passed"
+    },
+    {
+      "sequence": 75,
+      "command": "page_locate",
+      "result": "passed"
+    },
+    {
+      "sequence": 76,
+      "command": "page_click",
+      "result": "passed"
+    },
+    {
+      "sequence": 77,
+      "command": "page_wait_text",
+      "result": "passed"
+    },
+    {
+      "sequence": 78,
+      "command": "page_locate",
+      "result": "passed"
+    },
+    {
+      "sequence": 79,
+      "command": "page_fill",
+      "result": "passed"
+    },
+    {
+      "sequence": 80,
+      "command": "page_locate",
+      "result": "passed"
+    },
+    {
+      "sequence": 81,
+      "command": "page_fill",
+      "result": "passed"
+    },
+    {
+      "sequence": 82,
+      "command": "page_locate",
+      "result": "passed"
+    },
+    {
+      "sequence": 83,
+      "command": "page_click",
+      "result": "passed"
+    },
+    {
+      "sequence": 84,
+      "command": "page_wait_text",
+      "result": "passed"
+    },
+    {
+      "sequence": 85,
+      "command": "page_locate",
+      "result": "passed"
+    },
+    {
+      "sequence": 86,
+      "command": "page_click",
+      "result": "passed"
+    },
+    {
+      "sequence": 87,
+      "command": "page_wait_text",
+      "result": "passed"
+    },
+    {
+      "sequence": 88,
+      "command": "page_locate",
+      "result": "passed"
+    },
+    {
+      "sequence": 89,
+      "command": "page_fill",
+      "result": "passed"
+    },
+    {
+      "sequence": 90,
+      "command": "page_locate",
+      "result": "passed"
+    },
+    {
+      "sequence": 91,
+      "command": "page_fill",
+      "result": "passed"
+    },
+    {
+      "sequence": 92,
+      "command": "page_locate",
+      "result": "passed"
+    },
+    {
+      "sequence": 93,
+      "command": "page_click",
+      "result": "passed"
+    },
+    {
+      "sequence": 94,
+      "command": "page_wait_text",
+      "result": "passed"
+    },
+    {
+      "sequence": 95,
+      "command": "page_screenshot",
+      "result": "passed"
+    },
+    {
+      "sequence": 96,
+      "command": "browser_stop",
+      "result": "passed"
+    }
+  ]
+}

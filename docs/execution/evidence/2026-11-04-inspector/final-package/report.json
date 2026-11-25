@@ -1,0 +1,20 @@
+{
+  "date": "2026-11-04T12:16:09.352558+08:00",
+  "result": "passed",
+  "checks": [
+    "archive-and-every-file-verified-pristine-data",
+    "self-test-passes-with-desktop-open-and-keeps-user-catalog-unchanged",
+    "normal-gui-launcher-and-close",
+    "cli-mcp-launchers-no-extra-stdout-and-consistent-version",
+    "api-launcher-from-unrelated-cwd-authentication-and-shutdown",
+    "double-click-self-test-cmd-full-hash-check",
+    "tampered-package-rejected",
+    "missing-crt-rejected-before-starting-executables",
+    "copied-source-vs2019-release-build-and-tests"
+  ],
+  "secondCleanMachineTested": false,
+  "archiveSha256": "543be6221ca9aa9521672c826b42204666a0588708f4841cc2ddc8769a1d333b",
+  "copiedFolder": "E:\\project\\webexploer_codex\\build\\evidence\\inspector-20261104\\final-package\\中文 空格部署\\AI-Browser-Workbench-0.1.4-win64-inspector",
+  "version": "0.1.4-poc",
+  "manifestFiles": 924
+}

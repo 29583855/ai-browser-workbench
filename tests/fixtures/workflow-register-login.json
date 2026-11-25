@@ -1,0 +1,104 @@
+{
+  "schemaVersion": "1.0",
+  "name": "注册、登录、退出测试示例",
+  "version": 1,
+  "inputSchema": {
+    "type": "object",
+    "properties": {
+      "user": {
+        "type": "string",
+        "maxLength": 64
+      },
+      "password": {
+        "type": "string",
+        "maxLength": 64
+      }
+    },
+    "required": [
+      "user",
+      "password"
+    ],
+    "additionalProperties": false
+  },
+  "policy": {
+    "allowedOrigins": [
+      "http://127.0.0.1:3000"
+    ],
+    "maxSteps": 128,
+    "maxDurationMs": 60000
+  },
+  "entry": "open",
+  "steps": [
+    {
+      "id": "open",
+      "type": "navigate",
+      "url": "http://127.0.0.1:3000/register",
+      "next": "user"
+    },
+    {
+      "id": "user",
+      "type": "fill",
+      "selector": "#username",
+      "value": {
+        "input": "/user"
+      },
+      "next": "password"
+    },
+    {
+      "id": "password",
+      "type": "fill",
+      "selector": "#password",
+      "value": {
+        "input": "/password"
+      },
+      "next": "register"
+    },
+    {
+      "id": "register",
+      "type": "click",
+      "selector": "#register",
+      "postcondition": {
+        "selector": "#result",
+        "expected": "registered",
+        "timeoutMs": 5000
+      },
+      "next": "login"
+    },
+    {
+      "id": "login",
+      "type": "click",
+      "selector": "#login",
+      "postcondition": {
+        "selector": "#result",
+        "expected": "logged-in",
+        "timeoutMs": 5000
+      },
+      "next": "identity"
+    },
+    {
+      "id": "identity",
+      "type": "assertText",
+      "selector": "#identity",
+      "expected": {
+        "input": "/user"
+      },
+      "timeoutMs": 5000,
+      "next": "logout"
+    },
+    {
+      "id": "logout",
+      "type": "click",
+      "selector": "#logout",
+      "postcondition": {
+        "selector": "#result",
+        "expected": "logged-out",
+        "timeoutMs": 5000
+      },
+      "next": "done"
+    },
+    {
+      "id": "done",
+      "type": "end"
+    }
+  ]
+}

@@ -1,0 +1,156 @@
+{
+  "date": "2026-11-04T15:13:23.452299+08:00",
+  "result": "failed",
+  "steps": [
+    {
+      "buttonId": 101,
+      "outcome": "passed"
+    },
+    {
+      "buttonId": 101,
+      "outcome": "passed"
+    },
+    {
+      "buttonId": 101,
+      "outcome": "passed"
+    },
+    {
+      "buttonId": 101,
+      "outcome": "passed"
+    },
+    {
+      "buttonId": 101,
+      "outcome": "passed"
+    },
+    {
+      "buttonId": 101,
+      "outcome": "passed"
+    },
+    {
+      "buttonId": 101,
+      "outcome": "passed"
+    },
+    {
+      "buttonId": 101,
+      "outcome": "passed"
+    },
+    {
+      "buttonId": 102,
+      "outcome": "passed"
+    },
+    {
+      "buttonId": 134,
+      "outcome": "passed"
+    },
+    {
+      "buttonId": 104,
+      "outcome": "passed"
+    },
+    {
+      "buttonId": 108,
+      "outcome": "passed"
+    },
+    {
+      "buttonId": 108,
+      "outcome": "passed"
+    },
+    {
+      "buttonId": 109,
+      "outcome": "passed"
+    },
+    {
+      "buttonId": 110,
+      "outcome": "passed"
+    },
+    {
+      "buttonId": 110,
+      "outcome": "passed"
+    },
+    {
+      "buttonId": 109,
+      "outcome": "passed"
+    },
+    {
+      "buttonId": 110,
+      "outcome": "passed"
+    },
+    {
+      "buttonId": 110,
+      "outcome": "passed"
+    },
+    {
+      "buttonId": 123,
+      "outcome": "passed"
+    },
+    {
+      "buttonId": 125,
+      "outcome": "passed"
+    },
+    {
+      "buttonId": 124,
+      "outcome": "passed"
+    },
+    {
+      "buttonId": 104,
+      "outcome": "passed"
+    },
+    {
+      "buttonId": 126,
+      "outcome": "passed"
+    },
+    {
+      "buttonId": 110,
+      "outcome": "passed"
+    },
+    {
+      "buttonId": 104,
+      "outcome": "passed"
+    },
+    {
+      "buttonId": 104,
+      "outcome": "passed"
+    },
+    {
+      "buttonId": 137,
+      "outcome": "passed"
+    },
+    {
+      "buttonId": 138,
+      "outcome": "passed"
+    },
+    {
+      "buttonId": 110,
+      "outcome": "LEASE_REQUIRED"
+    }
+  ],
+  "checks": [
+    "eight-new-profiles-select-the-created-profile",
+    "desktop-inspection-highlight-clear-preview-and-native-select"
+  ],
+  "binarySha256": "89f682744635f05c71871671f2e807a2823478c72582ef83934756271d2da444",
+  "error": "'result'",
+  "failureObservation": {},
+  "failureObservationError": "(110, 'LEASE_REQUIRED')",
+  "serverFacts": {
+    "registrationCount": 1,
+    "loginCount": 1
+  },
+  "identityObservations": [
+    {
+      "authenticated": false,
+      "tick": 1855528.562
+    },
+    {
+      "authenticated": false,
+      "tick": 1855529.734
+    },
+    {
+      "authenticated": true,
+      "tick": 1855530.75
+    },
+    {
+      "authenticated": true,
+      "tick": 1855531.187
+    }
+  ]
+}

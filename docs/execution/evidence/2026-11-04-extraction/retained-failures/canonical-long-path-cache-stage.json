@@ -1,0 +1,910 @@
+{
+  "date": "2026-11-04T15:45:46.152083+08:00",
+  "result": "failed",
+  "steps": [
+    {
+      "buttonId": 101,
+      "outcome": "passed"
+    },
+    {
+      "buttonId": 101,
+      "outcome": "passed"
+    },
+    {
+      "buttonId": 101,
+      "outcome": "passed"
+    },
+    {
+      "buttonId": 101,
+      "outcome": "passed"
+    },
+    {
+      "buttonId": 101,
+      "outcome": "passed"
+    },
+    {
+      "buttonId": 101,
+      "outcome": "passed"
+    },
+    {
+      "buttonId": 101,
+      "outcome": "passed"
+    },
+    {
+      "buttonId": 101,
+      "outcome": "passed"
+    },
+    {
+      "buttonId": 102,
+      "outcome": "passed"
+    },
+    {
+      "buttonId": 134,
+      "outcome": "passed"
+    },
+    {
+      "buttonId": 104,
+      "outcome": "passed"
+    },
+    {
+      "buttonId": 108,
+      "outcome": "passed"
+    },
+    {
+      "buttonId": 108,
+      "outcome": "passed"
+    },
+    {
+      "buttonId": 109,
+      "outcome": "passed"
+    },
+    {
+      "buttonId": 110,
+      "outcome": "passed"
+    },
+    {
+      "buttonId": 110,
+      "outcome": "passed"
+    },
+    {
+      "buttonId": 109,
+      "outcome": "passed"
+    },
+    {
+      "buttonId": 110,
+      "outcome": "passed"
+    },
+    {
+      "buttonId": 110,
+      "outcome": "passed"
+    },
+    {
+      "buttonId": 110,
+      "outcome": "passed"
+    },
+    {
+      "buttonId": 110,
+      "outcome": "passed"
+    },
+    {
+      "buttonId": 110,
+      "outcome": "passed"
+    },
+    {
+      "buttonId": 110,
+      "outcome": "passed"
+    },
+    {
+      "buttonId": 110,
+      "outcome": "passed"
+    },
+    {
+      "buttonId": 110,
+      "outcome": "passed"
+    },
+    {
+      "buttonId": 110,
+      "outcome": "passed"
+    },
+    {
+      "buttonId": 110,
+      "outcome": "passed"
+    },
+    {
+      "buttonId": 110,
+      "outcome": "passed"
+    },
+    {
+      "buttonId": 110,
+      "outcome": "passed"
+    },
+    {
+      "buttonId": 110,
+      "outcome": "passed"
+    },
+    {
+      "buttonId": 110,
+      "outcome": "passed"
+    },
+    {
+      "buttonId": 110,
+      "outcome": "passed"
+    },
+    {
+      "buttonId": 110,
+      "outcome": "passed"
+    },
+    {
+      "buttonId": 110,
+      "outcome": "passed"
+    },
+    {
+      "buttonId": 110,
+      "outcome": "passed"
+    },
+    {
+      "buttonId": 110,
+      "outcome": "passed"
+    },
+    {
+      "buttonId": 110,
+      "outcome": "passed"
+    },
+    {
+      "buttonId": 110,
+      "outcome": "passed"
+    },
+    {
+      "buttonId": 110,
+      "outcome": "passed"
+    },
+    {
+      "buttonId": 110,
+      "outcome": "passed"
+    },
+    {
+      "buttonId": 110,
+      "outcome": "passed"
+    },
+    {
+      "buttonId": 110,
+      "outcome": "passed"
+    },
+    {
+      "buttonId": 110,
+      "outcome": "passed"
+    },
+    {
+      "buttonId": 110,
+      "outcome": "passed"
+    },
+    {
+      "buttonId": 110,
+      "outcome": "passed"
+    },
+    {
+      "buttonId": 110,
+      "outcome": "passed"
+    },
+    {
+      "buttonId": 110,
+      "outcome": "passed"
+    },
+    {
+      "buttonId": 110,
+      "outcome": "passed"
+    },
+    {
+      "buttonId": 110,
+      "outcome": "passed"
+    },
+    {
+      "buttonId": 110,
+      "outcome": "passed"
+    },
+    {
+      "buttonId": 110,
+      "outcome": "passed"
+    },
+    {
+      "buttonId": 110,
+      "outcome": "passed"
+    },
+    {
+      "buttonId": 110,
+      "outcome": "passed"
+    },
+    {
+      "buttonId": 110,
+      "outcome": "passed"
+    },
+    {
+      "buttonId": 110,
+      "outcome": "passed"
+    },
+    {
+      "buttonId": 110,
+      "outcome": "passed"
+    },
+    {
+      "buttonId": 110,
+      "outcome": "passed"
+    },
+    {
+      "buttonId": 110,
+      "outcome": "passed"
+    },
+    {
+      "buttonId": 110,
+      "outcome": "passed"
+    },
+    {
+      "buttonId": 110,
+      "outcome": "passed"
+    },
+    {
+      "buttonId": 110,
+      "outcome": "passed"
+    },
+    {
+      "buttonId": 110,
+      "outcome": "passed"
+    },
+    {
+      "buttonId": 110,
+      "outcome": "passed"
+    },
+    {
+      "buttonId": 110,
+      "outcome": "passed"
+    },
+    {
+      "buttonId": 110,
+      "outcome": "passed"
+    },
+    {
+      "buttonId": 110,
+      "outcome": "passed"
+    },
+    {
+      "buttonId": 110,
+      "outcome": "passed"
+    },
+    {
+      "buttonId": 110,
+      "outcome": "passed"
+    },
+    {
+      "buttonId": 110,
+      "outcome": "passed"
+    },
+    {
+      "buttonId": 110,
+      "outcome": "passed"
+    },
+    {
+      "buttonId": 110,
+      "outcome": "passed"
+    },
+    {
+      "buttonId": 110,
+      "outcome": "passed"
+    },
+    {
+      "buttonId": 110,
+      "outcome": "passed"
+    },
+    {
+      "buttonId": 110,
+      "outcome": "passed"
+    },
+    {
+      "buttonId": 110,
+      "outcome": "passed"
+    },
+    {
+      "buttonId": 110,
+      "outcome": "passed"
+    },
+    {
+      "buttonId": 110,
+      "outcome": "passed"
+    },
+    {
+      "buttonId": 110,
+      "outcome": "passed"
+    },
+    {
+      "buttonId": 110,
+      "outcome": "passed"
+    },
+    {
+      "buttonId": 110,
+      "outcome": "passed"
+    },
+    {
+      "buttonId": 110,
+      "outcome": "passed"
+    },
+    {
+      "buttonId": 110,
+      "outcome": "passed"
+    },
+    {
+      "buttonId": 110,
+      "outcome": "passed"
+    },
+    {
+      "buttonId": 110,
+      "outcome": "passed"
+    },
+    {
+      "buttonId": 110,
+      "outcome": "passed"
+    },
+    {
+      "buttonId": 110,
+      "outcome": "passed"
+    },
+    {
+      "buttonId": 110,
+      "outcome": "passed"
+    },
+    {
+      "buttonId": 110,
+      "outcome": "passed"
+    },
+    {
+      "buttonId": 110,
+      "outcome": "passed"
+    },
+    {
+      "buttonId": 110,
+      "outcome": "passed"
+    },
+    {
+      "buttonId": 110,
+      "outcome": "passed"
+    },
+    {
+      "buttonId": 110,
+      "outcome": "passed"
+    },
+    {
+      "buttonId": 110,
+      "outcome": "passed"
+    },
+    {
+      "buttonId": 110,
+      "outcome": "passed"
+    },
+    {
+      "buttonId": 110,
+      "outcome": "passed"
+    },
+    {
+      "buttonId": 110,
+      "outcome": "passed"
+    },
+    {
+      "buttonId": 110,
+      "outcome": "passed"
+    },
+    {
+      "buttonId": 110,
+      "outcome": "passed"
+    },
+    {
+      "buttonId": 110,
+      "outcome": "passed"
+    },
+    {
+      "buttonId": 110,
+      "outcome": "passed"
+    },
+    {
+      "buttonId": 110,
+      "outcome": "passed"
+    },
+    {
+      "buttonId": 110,
+      "outcome": "passed"
+    },
+    {
+      "buttonId": 110,
+      "outcome": "passed"
+    },
+    {
+      "buttonId": 110,
+      "outcome": "passed"
+    },
+    {
+      "buttonId": 110,
+      "outcome": "passed"
+    },
+    {
+      "buttonId": 110,
+      "outcome": "passed"
+    },
+    {
+      "buttonId": 110,
+      "outcome": "passed"
+    },
+    {
+      "buttonId": 110,
+      "outcome": "passed"
+    },
+    {
+      "buttonId": 110,
+      "outcome": "passed"
+    },
+    {
+      "buttonId": 110,
+      "outcome": "passed"
+    },
+    {
+      "buttonId": 110,
+      "outcome": "passed"
+    },
+    {
+      "buttonId": 110,
+      "outcome": "passed"
+    },
+    {
+      "buttonId": 110,
+      "outcome": "passed"
+    },
+    {
+      "buttonId": 110,
+      "outcome": "passed"
+    },
+    {
+      "buttonId": 110,
+      "outcome": "passed"
+    },
+    {
+      "buttonId": 110,
+      "outcome": "passed"
+    },
+    {
+      "buttonId": 135,
+      "outcome": "passed"
+    }
+  ],
+  "checks": [
+    "eight-new-profiles-select-the-created-profile"
+  ],
+  "binarySha256": "843b3e461c811e53d6f91b2a93aef815dd8ce0a7bf0656928b9a72ec5458a697",
+  "error": "Expected desktop observation: desktop-review-user; observed: anonymous",
+  "failureObservation": {
+    "#result": "network-error",
+    "#identity": "anonymous",
+    "#storage": "{\"local\":null,\"indexed\":null,\"cache\":[]}",
+    "#fixture-diagnostic": "cache-open:UnknownError"
+  },
+  "failureDiagnostics": {
+    "active": true,
+    "bufferLimit": 512,
+    "currentSequence": 22,
+    "cursor": {
+      "after": 22,
+      "epoch": "2589dae0464ee0edd35bba8205df68bc"
+    },
+    "droppedEvents": 0,
+    "droppedPendingRequests": 0,
+    "events": [
+      {
+        "context": {
+          "actionId": "b7d3140f1f2ac594240c91811dd18736",
+          "command": "browser_navigate"
+        },
+        "correlation": "observed-during-context",
+        "frameId": "FC3ED78151B15AD6620EFCB6E720CB10",
+        "kind": "request-start",
+        "method": "GET",
+        "observedTickMs": 1857471203,
+        "origin": "http://127.0.0.1:60120",
+        "pageId": "b9d26be49a8f58d7b15462c71685f409",
+        "requestId": "f411da950fb34ff30e0a7e7c8a84a68a",
+        "resourceType": "Document",
+        "route": "[omitted]",
+        "sequence": 1
+      },
+      {
+        "context": {
+          "actionId": "b7d3140f1f2ac594240c91811dd18736",
+          "command": "browser_navigate"
+        },
+        "correlation": "request-start-context-not-proven-cause",
+        "frameId": "FC3ED78151B15AD6620EFCB6E720CB10",
+        "fromDiskCache": false,
+        "fromServiceWorker": false,
+        "httpError": false,
+        "kind": "response",
+        "method": "GET",
+        "observedTickMs": 1857471218,
+        "origin": "http://127.0.0.1:60120",
+        "pageId": "b9d26be49a8f58d7b15462c71685f409",
+        "requestId": "f411da950fb34ff30e0a7e7c8a84a68a",
+        "resourceType": "Document",
+        "route": "[omitted]",
+        "sequence": 2,
+        "status": 200
+      },
+      {
+        "context": {
+          "actionId": "b7d3140f1f2ac594240c91811dd18736",
+          "command": "browser_navigate"
+        },
+        "correlation": "observed-during-context",
+        "frameId": "FC3ED78151B15AD6620EFCB6E720CB10",
+        "kind": "request-start",
+        "method": "GET",
+        "observedTickMs": 1857471218,
+        "origin": "http://127.0.0.1:60120",
+        "pageId": "b9d26be49a8f58d7b15462c71685f409",
+        "requestId": "c938aa4b2505aec3ff3aeb1432991300",
+        "resourceType": "Script",
+        "route": "[omitted]",
+        "sequence": 3
+      },
+      {
+        "context": {
+          "actionId": "b7d3140f1f2ac594240c91811dd18736",
+          "command": "browser_navigate"
+        },
+        "correlation": "request-start-context-not-proven-cause",
+        "frameId": "FC3ED78151B15AD6620EFCB6E720CB10",
+        "kind": "request-finished",
+        "method": "GET",
+        "observedTickMs": 1857471234,
+        "origin": "http://127.0.0.1:60120",
+        "pageId": "b9d26be49a8f58d7b15462c71685f409",
+        "requestId": "f411da950fb34ff30e0a7e7c8a84a68a",
+        "resourceType": "Document",
+        "route": "[omitted]",
+        "sequence": 4
+      },
+      {
+        "context": {
+          "actionId": "b7d3140f1f2ac594240c91811dd18736",
+          "command": "browser_navigate"
+        },
+        "correlation": "request-start-context-not-proven-cause",
+        "frameId": "FC3ED78151B15AD6620EFCB6E720CB10",
+        "fromDiskCache": false,
+        "fromServiceWorker": false,
+        "httpError": false,
+        "kind": "response",
+        "method": "GET",
+        "observedTickMs": 1857471234,
+        "origin": "http://127.0.0.1:60120",
+        "pageId": "b9d26be49a8f58d7b15462c71685f409",
+        "requestId": "c938aa4b2505aec3ff3aeb1432991300",
+        "resourceType": "Script",
+        "route": "[omitted]",
+        "sequence": 5,
+        "status": 200
+      },
+      {
+        "context": {
+          "actionId": "b7d3140f1f2ac594240c91811dd18736",
+          "command": "browser_navigate"
+        },
+        "correlation": "request-start-context-not-proven-cause",
+        "frameId": "FC3ED78151B15AD6620EFCB6E720CB10",
+        "kind": "request-finished",
+        "method": "GET",
+        "observedTickMs": 1857471234,
+        "origin": "http://127.0.0.1:60120",
+        "pageId": "b9d26be49a8f58d7b15462c71685f409",
+        "requestId": "c938aa4b2505aec3ff3aeb1432991300",
+        "resourceType": "Script",
+        "route": "[omitted]",
+        "sequence": 6
+      },
+      {
+        "context": {
+          "actionId": "b7d3140f1f2ac594240c91811dd18736",
+          "command": "browser_navigate"
+        },
+        "correlation": "observed-during-context",
+        "frameId": "FC3ED78151B15AD6620EFCB6E720CB10",
+        "kind": "request-start",
+        "method": "GET",
+        "observedTickMs": 1857471234,
+        "origin": "http://127.0.0.1:60120",
+        "pageId": "b9d26be49a8f58d7b15462c71685f409",
+        "requestId": "1714a9b75d89419e8517bb6e673f214f",
+        "resourceType": "Fetch",
+        "route": "[omitted]",
+        "sequence": 7
+      },
+      {
+        "context": {
+          "actionId": "b7d3140f1f2ac594240c91811dd18736",
+          "command": "browser_navigate"
+        },
+        "correlation": "request-start-context-not-proven-cause",
+        "frameId": "FC3ED78151B15AD6620EFCB6E720CB10",
+        "fromDiskCache": false,
+        "fromServiceWorker": false,
+        "httpError": false,
+        "kind": "response",
+        "method": "GET",
+        "observedTickMs": 1857471265,
+        "origin": "http://127.0.0.1:60120",
+        "pageId": "b9d26be49a8f58d7b15462c71685f409",
+        "requestId": "1714a9b75d89419e8517bb6e673f214f",
+        "resourceType": "Fetch",
+        "route": "[omitted]",
+        "sequence": 8,
+        "status": 200
+      },
+      {
+        "context": {
+          "actionId": "b7d3140f1f2ac594240c91811dd18736",
+          "command": "browser_navigate"
+        },
+        "correlation": "request-start-context-not-proven-cause",
+        "frameId": "FC3ED78151B15AD6620EFCB6E720CB10",
+        "kind": "request-finished",
+        "method": "GET",
+        "observedTickMs": 1857471265,
+        "origin": "http://127.0.0.1:60120",
+        "pageId": "b9d26be49a8f58d7b15462c71685f409",
+        "requestId": "1714a9b75d89419e8517bb6e673f214f",
+        "resourceType": "Fetch",
+        "route": "[omitted]",
+        "sequence": 9
+      },
+      {
+        "context": {
+          "actionId": "b7d3140f1f2ac594240c91811dd18736",
+          "command": "browser_navigate"
+        },
+        "correlation": "observed-during-context",
+        "frameId": "FC3ED78151B15AD6620EFCB6E720CB10",
+        "kind": "request-start",
+        "method": "GET",
+        "observedTickMs": 1857471265,
+        "origin": "http://127.0.0.1:60120",
+        "pageId": "b9d26be49a8f58d7b15462c71685f409",
+        "requestId": "ac8eee9e04333df0a8cd3a453144a073",
+        "resourceType": "Other",
+        "route": "[omitted]",
+        "sequence": 10
+      },
+      {
+        "context": {
+          "actionId": "b7d3140f1f2ac594240c91811dd18736",
+          "command": "browser_navigate"
+        },
+        "correlation": "request-start-context-not-proven-cause",
+        "frameId": "FC3ED78151B15AD6620EFCB6E720CB10",
+        "fromDiskCache": false,
+        "fromServiceWorker": false,
+        "httpError": true,
+        "kind": "response",
+        "method": "GET",
+        "observedTickMs": 1857471265,
+        "origin": "http://127.0.0.1:60120",
+        "pageId": "b9d26be49a8f58d7b15462c71685f409",
+        "requestId": "ac8eee9e04333df0a8cd3a453144a073",
+        "resourceType": "Other",
+        "route": "[omitted]",
+        "sequence": 11,
+        "status": 404
+      },
+      {
+        "context": {
+          "actionId": "b7d3140f1f2ac594240c91811dd18736",
+          "command": "browser_navigate"
+        },
+        "correlation": "request-start-context-not-proven-cause",
+        "frameId": "FC3ED78151B15AD6620EFCB6E720CB10",
+        "kind": "request-finished",
+        "method": "GET",
+        "observedTickMs": 1857471265,
+        "origin": "http://127.0.0.1:60120",
+        "pageId": "b9d26be49a8f58d7b15462c71685f409",
+        "requestId": "ac8eee9e04333df0a8cd3a453144a073",
+        "resourceType": "Other",
+        "route": "[omitted]",
+        "sequence": 12
+      },
+      {
+        "context": {
+          "actionId": "d74e02e09b7d61b22de01223975ccf5c",
+          "command": "page_click"
+        },
+        "correlation": "observed-during-context",
+        "frameId": "FC3ED78151B15AD6620EFCB6E720CB10",
+        "kind": "request-start",
+        "method": "POST",
+        "observedTickMs": 1857471375,
+        "origin": "http://127.0.0.1:60120",
+        "pageId": "b9d26be49a8f58d7b15462c71685f409",
+        "requestId": "a0de894fdcbe08530d1f3240475b2af0",
+        "resourceType": "Fetch",
+        "route": "[omitted]",
+        "sequence": 13
+      },
+      {
+        "context": {
+          "actionId": "d74e02e09b7d61b22de01223975ccf5c",
+          "command": "page_click"
+        },
+        "correlation": "request-start-context-not-proven-cause",
+        "frameId": "FC3ED78151B15AD6620EFCB6E720CB10",
+        "fromDiskCache": false,
+        "fromServiceWorker": false,
+        "httpError": false,
+        "kind": "response",
+        "method": "POST",
+        "observedTickMs": 1857471484,
+        "origin": "http://127.0.0.1:60120",
+        "pageId": "b9d26be49a8f58d7b15462c71685f409",
+        "requestId": "a0de894fdcbe08530d1f3240475b2af0",
+        "resourceType": "Fetch",
+        "route": "[omitted]",
+        "sequence": 14,
+        "status": 201
+      },
+      {
+        "context": {
+          "actionId": "d74e02e09b7d61b22de01223975ccf5c",
+          "command": "page_click"
+        },
+        "correlation": "request-start-context-not-proven-cause",
+        "frameId": "FC3ED78151B15AD6620EFCB6E720CB10",
+        "kind": "request-finished",
+        "method": "POST",
+        "observedTickMs": 1857471484,
+        "origin": "http://127.0.0.1:60120",
+        "pageId": "b9d26be49a8f58d7b15462c71685f409",
+        "requestId": "a0de894fdcbe08530d1f3240475b2af0",
+        "resourceType": "Fetch",
+        "route": "[omitted]",
+        "sequence": 15
+      },
+      {
+        "context": {},
+        "correlation": "observed-during-context",
+        "frameId": "FC3ED78151B15AD6620EFCB6E720CB10",
+        "kind": "request-start",
+        "method": "GET",
+        "observedTickMs": 1857471484,
+        "origin": "http://127.0.0.1:60120",
+        "pageId": "b9d26be49a8f58d7b15462c71685f409",
+        "requestId": "f19810e7a6fc06e3aebc04480ae2f6b6",
+        "resourceType": "Fetch",
+        "route": "[omitted]",
+        "sequence": 16
+      },
+      {
+        "context": {},
+        "correlation": "request-start-context-not-proven-cause",
+        "frameId": "FC3ED78151B15AD6620EFCB6E720CB10",
+        "fromDiskCache": false,
+        "fromServiceWorker": false,
+        "httpError": false,
+        "kind": "response",
+        "method": "GET",
+        "observedTickMs": 1857471484,
+        "origin": "http://127.0.0.1:60120",
+        "pageId": "b9d26be49a8f58d7b15462c71685f409",
+        "requestId": "f19810e7a6fc06e3aebc04480ae2f6b6",
+        "resourceType": "Fetch",
+        "route": "[omitted]",
+        "sequence": 17,
+        "status": 200
+      },
+      {
+        "context": {},
+        "correlation": "request-start-context-not-proven-cause",
+        "frameId": "FC3ED78151B15AD6620EFCB6E720CB10",
+        "kind": "request-finished",
+        "method": "GET",
+        "observedTickMs": 1857471484,
+        "origin": "http://127.0.0.1:60120",
+        "pageId": "b9d26be49a8f58d7b15462c71685f409",
+        "requestId": "f19810e7a6fc06e3aebc04480ae2f6b6",
+        "resourceType": "Fetch",
+        "route": "[omitted]",
+        "sequence": 18
+      },
+      {
+        "context": {
+          "actionId": "d91a151015ba145757ddf6ecad1768fa",
+          "command": "page_click"
+        },
+        "correlation": "observed-during-context",
+        "frameId": "FC3ED78151B15AD6620EFCB6E720CB10",
+        "kind": "request-start",
+        "method": "POST",
+        "observedTickMs": 1857471531,
+        "origin": "http://127.0.0.1:60120",
+        "pageId": "b9d26be49a8f58d7b15462c71685f409",
+        "requestId": "ccaa161a017bad37cceb7471f8d4ad44",
+        "resourceType": "Fetch",
+        "route": "[omitted]",
+        "sequence": 19
+      },
+      {
+        "context": {
+          "actionId": "d91a151015ba145757ddf6ecad1768fa",
+          "command": "page_click"
+        },
+        "correlation": "request-start-context-not-proven-cause",
+        "frameId": "FC3ED78151B15AD6620EFCB6E720CB10",
+        "fromDiskCache": false,
+        "fromServiceWorker": false,
+        "httpError": false,
+        "kind": "response",
+        "method": "POST",
+        "observedTickMs": 1857471562,
+        "origin": "http://127.0.0.1:60120",
+        "pageId": "b9d26be49a8f58d7b15462c71685f409",
+        "requestId": "ccaa161a017bad37cceb7471f8d4ad44",
+        "resourceType": "Fetch",
+        "route": "[omitted]",
+        "sequence": 20,
+        "status": 200
+      },
+      {
+        "context": {
+          "actionId": "d91a151015ba145757ddf6ecad1768fa",
+          "command": "page_click"
+        },
+        "correlation": "request-start-context-not-proven-cause",
+        "frameId": "FC3ED78151B15AD6620EFCB6E720CB10",
+        "kind": "request-finished",
+        "method": "POST",
+        "observedTickMs": 1857471562,
+        "origin": "http://127.0.0.1:60120",
+        "pageId": "b9d26be49a8f58d7b15462c71685f409",
+        "requestId": "ccaa161a017bad37cceb7471f8d4ad44",
+        "resourceType": "Fetch",
+        "route": "[omitted]",
+        "sequence": 21
+      },
+      {
+        "argumentCount": 1,
+        "argumentTypes": [
+          "object"
+        ],
+        "contentOmitted": true,
+        "context": {},
+        "correlation": "observed-during-context",
+        "kind": "console",
+        "level": "error",
+        "observedTickMs": 1857471562,
+        "pageId": "b9d26be49a8f58d7b15462c71685f409",
+        "sequence": 22
+      }
+    ],
+    "gap": false,
+    "liveSubscription": false,
+    "more": false,
+    "oldestAvailable": 1,
+    "payloadCapture": false,
+    "pendingLimit": 128,
+    "pendingRequests": 0,
+    "scopeFilteredEvents": 2
+  },
+  "serverFacts": {
+    "registrationCount": 1,
+    "loginCount": 1
+  },
+  "identityObservations": [
+    {
+      "authenticated": false,
+      "tick": 1857471.234
+    },
+    {
+      "authenticated": false,
+      "tick": 1857471.437
+    }
+  ]
+}

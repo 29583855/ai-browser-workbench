@@ -1,0 +1,467 @@
+{
+  "date": "2026-11-04",
+  "type": "scope-and-estimate-allocation-not-functional-acceptance",
+  "dslFirstRelease": "1.0",
+  "proposedNextDsl": "1.1-design-only",
+  "tasks": [
+    {
+      "id": "VE001",
+      "primaryParent": "T043",
+      "otherParents": [
+        "T033",
+        "T043",
+        "T089",
+        "T115"
+      ],
+      "estimatedRemainingDays": 6,
+      "creditedExistingDays": 0,
+      "existingScopeRemainingDays": 6,
+      "confirmedNewScopeDays": 0,
+      "replacedWorkDays": 0,
+      "parentBaselineDays": 3.0,
+      "classification": "原计划已包含的待实现范围，专项重新估算；不与父包基线相加"
+    },
+    {
+      "id": "VE002",
+      "primaryParent": "T042",
+      "otherParents": [
+        "T042",
+        "T077"
+      ],
+      "estimatedRemainingDays": 6,
+      "creditedExistingDays": 0,
+      "existingScopeRemainingDays": 6,
+      "confirmedNewScopeDays": 0,
+      "replacedWorkDays": 0,
+      "parentBaselineDays": 4.0,
+      "classification": "原计划已包含的待实现范围，专项重新估算；不与父包基线相加"
+    },
+    {
+      "id": "VE003",
+      "primaryParent": "T028",
+      "otherParents": [
+        "T018",
+        "T024",
+        "T025",
+        "T028"
+      ],
+      "estimatedRemainingDays": 5,
+      "creditedExistingDays": 0,
+      "existingScopeRemainingDays": 5,
+      "confirmedNewScopeDays": 0,
+      "replacedWorkDays": 0,
+      "parentBaselineDays": 4.0,
+      "classification": "原计划已包含的待实现范围，专项重新估算；不与父包基线相加"
+    },
+    {
+      "id": "VE004",
+      "primaryParent": "T044",
+      "otherParents": [
+        "T044",
+        "T080",
+        "T095"
+      ],
+      "estimatedRemainingDays": 6,
+      "creditedExistingDays": 0,
+      "existingScopeRemainingDays": 6,
+      "confirmedNewScopeDays": 0,
+      "replacedWorkDays": 0,
+      "parentBaselineDays": 4.0,
+      "classification": "原计划已包含的待实现范围，专项重新估算；不与父包基线相加"
+    },
+    {
+      "id": "VE005",
+      "primaryParent": "T044",
+      "otherParents": [
+        "T044",
+        "T080",
+        "T049"
+      ],
+      "estimatedRemainingDays": 5,
+      "creditedExistingDays": 0,
+      "existingScopeRemainingDays": 5,
+      "confirmedNewScopeDays": 0,
+      "replacedWorkDays": 0,
+      "parentBaselineDays": 4.0,
+      "classification": "原计划已包含的待实现范围，专项重新估算；不与父包基线相加"
+    },
+    {
+      "id": "VE006",
+      "primaryParent": "T044",
+      "otherParents": [
+        "T044",
+        "T043",
+        "T069"
+      ],
+      "estimatedRemainingDays": 4,
+      "creditedExistingDays": 0,
+      "existingScopeRemainingDays": 4,
+      "confirmedNewScopeDays": 0,
+      "replacedWorkDays": 0,
+      "parentBaselineDays": 4.0,
+      "classification": "原计划已包含的待实现范围，专项重新估算；不与父包基线相加"
+    },
+    {
+      "id": "VE007",
+      "primaryParent": "T069",
+      "otherParents": [
+        "T027",
+        "T028",
+        "T069"
+      ],
+      "estimatedRemainingDays": 5,
+      "creditedExistingDays": 0,
+      "existingScopeRemainingDays": 5,
+      "confirmedNewScopeDays": 0,
+      "replacedWorkDays": 0,
+      "parentBaselineDays": 3.0,
+      "classification": "原计划已包含的待实现范围，专项重新估算；不与父包基线相加"
+    },
+    {
+      "id": "VE008",
+      "primaryParent": "T081",
+      "otherParents": [
+        "T024",
+        "T028",
+        "T080",
+        "T081"
+      ],
+      "estimatedRemainingDays": 5,
+      "creditedExistingDays": 0,
+      "existingScopeRemainingDays": 5,
+      "confirmedNewScopeDays": 0,
+      "replacedWorkDays": 0,
+      "parentBaselineDays": 3.0,
+      "classification": "原计划已包含的待实现范围，专项重新估算；不与父包基线相加"
+    },
+    {
+      "id": "VE009",
+      "primaryParent": "T042",
+      "otherParents": [
+        "T042",
+        "T022"
+      ],
+      "estimatedRemainingDays": 5,
+      "creditedExistingDays": 0,
+      "existingScopeRemainingDays": 5,
+      "confirmedNewScopeDays": 0,
+      "replacedWorkDays": 0,
+      "parentBaselineDays": 4.0,
+      "classification": "原计划已包含的待实现范围，专项重新估算；不与父包基线相加"
+    },
+    {
+      "id": "VE010",
+      "primaryParent": "T042",
+      "otherParents": [
+        "T042",
+        "T043",
+        "T089"
+      ],
+      "estimatedRemainingDays": 4,
+      "creditedExistingDays": 0,
+      "existingScopeRemainingDays": 4,
+      "confirmedNewScopeDays": 0,
+      "replacedWorkDays": 0,
+      "parentBaselineDays": 4.0,
+      "classification": "原计划已包含的待实现范围，专项重新估算；不与父包基线相加"
+    },
+    {
+      "id": "VE011",
+      "primaryParent": "T043",
+      "otherParents": [
+        "T042",
+        "T043",
+        "T095"
+      ],
+      "estimatedRemainingDays": 4,
+      "creditedExistingDays": 0,
+      "existingScopeRemainingDays": 4,
+      "confirmedNewScopeDays": 0,
+      "replacedWorkDays": 0,
+      "parentBaselineDays": 3.0,
+      "classification": "原计划已包含的待实现范围，专项重新估算；不与父包基线相加"
+    },
+    {
+      "id": "VE012",
+      "primaryParent": "T043",
+      "otherParents": [
+        "T033",
+        "T043",
+        "T047",
+        "T089"
+      ],
+      "estimatedRemainingDays": 6,
+      "creditedExistingDays": 0,
+      "existingScopeRemainingDays": 6,
+      "confirmedNewScopeDays": 0,
+      "replacedWorkDays": 0,
+      "parentBaselineDays": 3.0,
+      "classification": "原计划已包含的待实现范围，专项重新估算；不与父包基线相加"
+    },
+    {
+      "id": "VE013",
+      "primaryParent": "T089",
+      "otherParents": [
+        "T043",
+        "T089"
+      ],
+      "estimatedRemainingDays": 6,
+      "creditedExistingDays": 0,
+      "existingScopeRemainingDays": 6,
+      "confirmedNewScopeDays": 0,
+      "replacedWorkDays": 0,
+      "parentBaselineDays": 4.0,
+      "classification": "原计划已包含的待实现范围，专项重新估算；不与父包基线相加"
+    },
+    {
+      "id": "VE014",
+      "primaryParent": "T081",
+      "otherParents": [
+        "T019",
+        "T071",
+        "T081"
+      ],
+      "estimatedRemainingDays": 6,
+      "creditedExistingDays": 0,
+      "existingScopeRemainingDays": 6,
+      "confirmedNewScopeDays": 0,
+      "replacedWorkDays": 0,
+      "parentBaselineDays": 3.0,
+      "classification": "原计划已包含的待实现范围，专项重新估算；不与父包基线相加"
+    },
+    {
+      "id": "VE015",
+      "primaryParent": "T045",
+      "otherParents": [
+        "T035",
+        "T045",
+        "T043"
+      ],
+      "estimatedRemainingDays": 5,
+      "creditedExistingDays": 0,
+      "existingScopeRemainingDays": 5,
+      "confirmedNewScopeDays": 0,
+      "replacedWorkDays": 0,
+      "parentBaselineDays": 3.0,
+      "classification": "原计划已包含的待实现范围，专项重新估算；不与父包基线相加"
+    },
+    {
+      "id": "VE016",
+      "primaryParent": "T095",
+      "otherParents": [
+        "T025",
+        "T026",
+        "T035",
+        "T095",
+        "T098"
+      ],
+      "estimatedRemainingDays": 5,
+      "creditedExistingDays": 0,
+      "existingScopeRemainingDays": 5,
+      "confirmedNewScopeDays": 0,
+      "replacedWorkDays": 0,
+      "parentBaselineDays": 4.0,
+      "classification": "原计划已包含的待实现范围，专项重新估算；不与父包基线相加"
+    },
+    {
+      "id": "VE017",
+      "primaryParent": "T049",
+      "otherParents": [
+        "T049",
+        "T096"
+      ],
+      "estimatedRemainingDays": 5,
+      "creditedExistingDays": 0,
+      "existingScopeRemainingDays": 5,
+      "confirmedNewScopeDays": 0,
+      "replacedWorkDays": 0,
+      "parentBaselineDays": 2.0,
+      "classification": "原计划已包含的待实现范围，专项重新估算；不与父包基线相加"
+    },
+    {
+      "id": "VE018",
+      "primaryParent": "T050",
+      "otherParents": [
+        "T050",
+        "T051"
+      ],
+      "estimatedRemainingDays": 5,
+      "creditedExistingDays": 0,
+      "existingScopeRemainingDays": 5,
+      "confirmedNewScopeDays": 0,
+      "replacedWorkDays": 0,
+      "parentBaselineDays": 2.0,
+      "classification": "原计划已包含的待实现范围，专项重新估算；不与父包基线相加"
+    },
+    {
+      "id": "VE019",
+      "primaryParent": "T118",
+      "otherParents": [
+        "T118",
+        "T115"
+      ],
+      "estimatedRemainingDays": 6,
+      "creditedExistingDays": 0,
+      "existingScopeRemainingDays": 6,
+      "confirmedNewScopeDays": 0,
+      "replacedWorkDays": 0,
+      "parentBaselineDays": 5.0,
+      "classification": "原计划已包含的待实现范围，专项重新估算；不与父包基线相加"
+    },
+    {
+      "id": "VE020",
+      "primaryParent": "T119",
+      "otherParents": [
+        "T027",
+        "T028",
+        "T050",
+        "T051",
+        "T119"
+      ],
+      "estimatedRemainingDays": 6,
+      "creditedExistingDays": 0,
+      "existingScopeRemainingDays": 6,
+      "confirmedNewScopeDays": 0,
+      "replacedWorkDays": 0,
+      "parentBaselineDays": 4.0,
+      "classification": "原计划已包含的待实现范围，专项重新估算；不与父包基线相加"
+    },
+    {
+      "id": "VE021",
+      "primaryParent": "T119",
+      "otherParents": [
+        "T118",
+        "T119",
+        "T098"
+      ],
+      "estimatedRemainingDays": 5,
+      "creditedExistingDays": 0,
+      "existingScopeRemainingDays": 5,
+      "confirmedNewScopeDays": 0,
+      "replacedWorkDays": 0,
+      "parentBaselineDays": 4.0,
+      "classification": "原计划已包含的待实现范围，专项重新估算；不与父包基线相加"
+    },
+    {
+      "id": "VE022",
+      "primaryParent": "T046",
+      "otherParents": [
+        "T019",
+        "T046",
+        "T081"
+      ],
+      "estimatedRemainingDays": 6,
+      "creditedExistingDays": 0,
+      "existingScopeRemainingDays": 6,
+      "confirmedNewScopeDays": 0,
+      "replacedWorkDays": 0,
+      "parentBaselineDays": 3.0,
+      "classification": "原计划已包含的待实现范围，专项重新估算；不与父包基线相加"
+    },
+    {
+      "id": "VE023",
+      "primaryParent": "T118",
+      "otherParents": [
+        "T043",
+        "T089",
+        "T118",
+        "T098"
+      ],
+      "estimatedRemainingDays": 5,
+      "creditedExistingDays": 0,
+      "existingScopeRemainingDays": 5,
+      "confirmedNewScopeDays": 0,
+      "replacedWorkDays": 0,
+      "parentBaselineDays": 5.0,
+      "classification": "原计划已包含的待实现范围，专项重新估算；不与父包基线相加"
+    },
+    {
+      "id": "VE024",
+      "primaryParent": "T115",
+      "otherParents": [
+        "T030",
+        "T115",
+        "T117"
+      ],
+      "estimatedRemainingDays": 4,
+      "creditedExistingDays": 0,
+      "existingScopeRemainingDays": 4,
+      "confirmedNewScopeDays": 0,
+      "replacedWorkDays": 0,
+      "parentBaselineDays": 6.0,
+      "classification": "原计划已包含的待实现范围，专项重新估算；不与父包基线相加"
+    },
+    {
+      "id": "VE025",
+      "primaryParent": "T080",
+      "otherParents": [
+        "T032",
+        "T047",
+        "T068",
+        "T080"
+      ],
+      "estimatedRemainingDays": 5,
+      "creditedExistingDays": 0,
+      "existingScopeRemainingDays": 5,
+      "confirmedNewScopeDays": 0,
+      "replacedWorkDays": 0,
+      "parentBaselineDays": 4.0,
+      "classification": "原计划已包含的待实现范围，专项重新估算；不与父包基线相加"
+    },
+    {
+      "id": "VE026",
+      "primaryParent": "T119",
+      "otherParents": [
+        "T062",
+        "T119",
+        "T122"
+      ],
+      "estimatedRemainingDays": 5,
+      "creditedExistingDays": 0,
+      "existingScopeRemainingDays": 5,
+      "confirmedNewScopeDays": 0,
+      "replacedWorkDays": 0,
+      "parentBaselineDays": 4.0,
+      "classification": "原计划已包含的待实现范围，专项重新估算；不与父包基线相加"
+    },
+    {
+      "id": "VE027",
+      "primaryParent": "T087",
+      "otherParents": [
+        "T022",
+        "T042",
+        "T087"
+      ],
+      "estimatedRemainingDays": 5,
+      "creditedExistingDays": 0,
+      "existingScopeRemainingDays": 5,
+      "confirmedNewScopeDays": 0,
+      "replacedWorkDays": 0,
+      "parentBaselineDays": 3.0,
+      "classification": "原计划已包含的待实现范围，专项重新估算；不与父包基线相加"
+    },
+    {
+      "id": "VE028",
+      "primaryParent": "T064",
+      "otherParents": [
+        "T047",
+        "T061",
+        "T064",
+        "T065",
+        "T096",
+        "T122"
+      ],
+      "estimatedRemainingDays": 6,
+      "creditedExistingDays": 0,
+      "existingScopeRemainingDays": 6,
+      "confirmedNewScopeDays": 0,
+      "replacedWorkDays": 0,
+      "parentBaselineDays": 2.0,
+      "classification": "原计划已包含的待实现范围，专项重新估算；不与父包基线相加"
+    }
+  ],
+  "totalEstimatedRemainingDays": 146,
+  "originalLocalBaselineUnchanged": 317,
+  "additionalApprovedBaselineDays": 0,
+  "note": "主父包用于唯一责任归集，其他父包是依赖/交叉验收；原已完成功能只复用，未再计算新增完成；工时为专项剩余范围重估，不代表父包基线已获扩容。"
+}

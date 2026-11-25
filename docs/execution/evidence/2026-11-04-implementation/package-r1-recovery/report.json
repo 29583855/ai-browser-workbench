@@ -1,0 +1,40 @@
+{
+  "date": "2026-11-04T11:19:04.385231+08:00",
+  "result": "passed",
+  "checks": [
+    "service-crash-job-cleanup-persistent-identity-and-restart",
+    "live-external-process-blocked-no-automatic-kill-or-delete",
+    "pid-reuse-identity-mismatch-never-kills-new-process",
+    "corrupt-record-visible-and-refuses-automatic-start"
+  ],
+  "binarySha256": "6de403f1a7ddaaf527365067d0ae7100c6785b30884e90fa5d9ea0f6d5af1529",
+  "eventsBeforeCrash": [
+    {
+      "sequence": 1,
+      "command": "profile_create",
+      "outcome": "passed"
+    },
+    {
+      "sequence": 2,
+      "command": "browser_start",
+      "outcome": "passed"
+    },
+    {
+      "sequence": 3,
+      "command": "browser_status",
+      "outcome": "passed"
+    }
+  ],
+  "events": [
+    {
+      "sequence": 1,
+      "command": "browser_status",
+      "outcome": "passed"
+    },
+    {
+      "sequence": 2,
+      "command": "browser_start",
+      "outcome": "PROCESS_OWNERSHIP_UNCONFIRMED"
+    }
+  ]
+}

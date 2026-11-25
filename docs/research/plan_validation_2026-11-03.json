@@ -1,0 +1,74 @@
+{
+  "validation_date": "2026-11-03",
+  "plan_version": "1.2",
+  "scope": "Documentation consistency only. No product code/build/runtime tests. Capacity and task-role scheduling are estimates, not resource-level scheduling proof.",
+  "checked_files": [
+    {
+      "path": "README.md",
+      "sha256": "bef62622b9c06859e51c4319d92dc9a0e15432cbfad21190cb1d57947c7dd42e",
+      "bytes": 3328
+    },
+    {
+      "path": "docs/01_开发计划与技术方案.md",
+      "sha256": "f87a291df5dc4aa7b3a1ea08bcc3242a6bc0242983401484d32ab5e1575408e3",
+      "bytes": 66560
+    },
+    {
+      "path": "docs/02_竞品分析与开源项目调研.md",
+      "sha256": "7492e2cbe83b56b1a7e40caf7241d89d7adb70a1dae0f1634ecef554a00e2844",
+      "bytes": 28290
+    },
+    {
+      "path": "docs/03_开发进度与任务清单.md",
+      "sha256": "61d224fc7f564e5a2e2b6a5a7d67726b6a2313f09f92e54d0c479587a7d37bec",
+      "bytes": 28998
+    },
+    {
+      "path": "docs/04_AI接口与流程设计样例.md",
+      "sha256": "d86015ce6af16bbed88c9a0617ed65870e137e171f29ab90b6d1209c77d6dd85",
+      "bytes": 34200
+    },
+    {
+      "path": "docs/05_Web功能测试与便捷操作设计.md",
+      "sha256": "92e84fedc0d39c84deec82835a90d99735289170c469b7855df787254897d1e7",
+      "bytes": 23642
+    },
+    {
+      "path": "docs/06_功能边界与源码补全方案.md",
+      "sha256": "b8c2940f23e0488367e3b8ba5ca191640c17b0913e0ec642388526f10936434b",
+      "bytes": 34456
+    },
+    {
+      "path": "docs/07_补充源码选型与验证清单.md",
+      "sha256": "e9d3f813354f4c37d4c12fddf89ee7be6c1377d08f51a3f12365e44b408b25d1",
+      "bytes": 15321
+    }
+  ],
+  "json_blocks_parsed": 16,
+  "task_count": 112,
+  "baseline_task_count": 100,
+  "dependency_edge_count": 288,
+  "acyclic": true,
+  "task_workday_groups": [
+    154,
+    24,
+    97,
+    275
+  ],
+  "coverage": {
+    "features": 59,
+    "tests": 48,
+    "boundaries": 32,
+    "sources": 21,
+    "feature_trace": 59
+  },
+  "schedule_weeks": 26,
+  "milestones_checked": true,
+  "research_counts": {
+    "records": 87,
+    "http_success": 78,
+    "http_error": 9
+  },
+  "errors": [],
+  "passed": true
+}

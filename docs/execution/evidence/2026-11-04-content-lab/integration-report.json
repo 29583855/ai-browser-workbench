@@ -1,0 +1,1891 @@
+{
+  "date": "2026-11-04",
+  "result": "passed",
+  "checks": [
+    "registration-duplicate-and-wrong-password",
+    "nineteen-step-dsl-publish-full-body-author-category-and-search-two-pages",
+    "same-name-publish-buttons-ambiguous-rejected-settings-untouched",
+    "like-skipped-on-second-run-comments-idempotent-correct-parent-bound",
+    "repeat-completed-task-same-content-does-not-create-second-article",
+    "empty-search-ends-without-interaction",
+    "draft-and-pending-review-never-reported-as-published",
+    "same-task-different-state-or-content-rejected",
+    "publish-http-receipt-lost-one-commit-workflow-unknown-readonly-reconcile-no-resubmit",
+    "comment-http-receipt-lost-one-commit-readonly-reconcile-no-resubmit",
+    "rate-limit-stops-write-no-new-comment",
+    "expired-session-rejected-no-new-comment",
+    "reader-role-cannot-publish-author-is-not-client-controlled",
+    "page-navigation-invalidates-old-element-reference",
+    "website-restart-preserves-session-articles-likes-and-comment-parentage"
+  ],
+  "workflows": [
+    {
+      "name": "publish-search",
+      "runId": "724c4520911710f1cc6a44272a3e8b09",
+      "state": "succeeded",
+      "steps": 19
+    },
+    {
+      "name": "repeat-acknowledged-task",
+      "runId": "311de6737cb314f43c0cd5f410d75b09",
+      "state": "succeeded",
+      "steps": 19
+    },
+    {
+      "name": "lost-publish-receipt",
+      "runId": "ce933ebaf5c96ee0165164fccdf0ed7f",
+      "state": "outcome-unknown",
+      "errorCode": "WORKFLOW_POSTCONDITION_UNCONFIRMED"
+    }
+  ],
+  "origin": "http://127.0.0.1:64732",
+  "method": "real managed Chromium through existing C++ CLI; database readback only",
+  "binarySha256": "d8a0473a0ae63f7f90796a38151acdcacdc97f47439e035b53f01117df4b88c3",
+  "workflowSha256": "81b032c3ac5bbda9b3082a41efcbcb895073946d07e323136837a473e8a33913",
+  "privateRuntimeDataPublished": false,
+  "searchResults": [
+    {
+      "id": "seed-a",
+      "title": "浏览器自动化：登录测试",
+      "author": "editor",
+      "url": "http://127.0.0.1:64732/?article=seed-a"
+    },
+    {
+      "id": "seed-b",
+      "title": "浏览器自动化：表单回归",
+      "author": "editor",
+      "url": "http://127.0.0.1:64732/?article=seed-b"
+    },
+    {
+      "id": "seed-c",
+      "title": "浏览器自动化：元素定位",
+      "author": "editor",
+      "url": "http://127.0.0.1:64732/?article=seed-c"
+    },
+    {
+      "id": "article-c80d4ea0b9c7",
+      "title": "浏览器自动化：从登录到发布的练习",
+      "author": "demo-author",
+      "url": "http://127.0.0.1:64732/?article=article-c80d4ea0b9c7"
+    }
+  ],
+  "serverFacts": {
+    "articles": [
+      {
+        "id": "seed-a",
+        "author": "editor",
+        "title": "浏览器自动化：登录测试",
+        "body": "这是本地测试文章，用于验证页面自动操作。",
+        "category": "技术",
+        "state": "published",
+        "task_key": "seed-a"
+      },
+      {
+        "id": "seed-b",
+        "author": "editor",
+        "title": "浏览器自动化：表单回归",
+        "body": "这是本地测试文章，用于验证页面自动操作。",
+        "category": "技术",
+        "state": "published",
+        "task_key": "seed-b"
+      },
+      {
+        "id": "seed-c",
+        "author": "editor",
+        "title": "浏览器自动化：元素定位",
+        "body": "这是本地测试文章，用于验证页面自动操作。",
+        "category": "技术",
+        "state": "published",
+        "task_key": "seed-c"
+      },
+      {
+        "id": "seed-d",
+        "author": "editor",
+        "title": "普通产品公告",
+        "body": "这是本地测试文章，用于验证页面自动操作。",
+        "category": "技术",
+        "state": "published",
+        "task_key": "seed-d"
+      },
+      {
+        "id": "article-c80d4ea0b9c7",
+        "author": "demo-author",
+        "title": "浏览器自动化：从登录到发布的练习",
+        "body": "这是一篇准备好的本地测试文章。\n第二段用于核对完整正文、中文与换行。",
+        "category": "技术",
+        "state": "published",
+        "task_key": "lab-article-001"
+      },
+      {
+        "id": "article-20702886a310",
+        "author": "demo-author",
+        "title": "独立状态验证 draft-test",
+        "body": "状态测试正文",
+        "category": "技术",
+        "state": "draft",
+        "task_key": "draft-test"
+      },
+      {
+        "id": "article-5136f0d1979d",
+        "author": "demo-author",
+        "title": "独立状态验证 review-test",
+        "body": "状态测试正文",
+        "category": "技术",
+        "state": "pending-review",
+        "task_key": "review-test"
+      },
+      {
+        "id": "article-507575a486bf",
+        "author": "demo-author",
+        "title": "浏览器自动化：从登录到发布的练习",
+        "body": "这是一篇准备好的本地测试文章。\n第二段用于核对完整正文、中文与换行。",
+        "category": "技术",
+        "state": "published",
+        "task_key": "lost-publish-receipt"
+      }
+    ],
+    "comments": [
+      {
+        "id": "comment-a",
+        "article": "seed-a",
+        "author": "editor",
+        "parent": null,
+        "body": "这是一条待回复的示例评论。",
+        "task_key": "seed-a"
+      },
+      {
+        "id": "comment-b",
+        "article": "seed-b",
+        "author": "editor",
+        "parent": null,
+        "body": "这是一条待回复的示例评论。",
+        "task_key": "seed-b"
+      },
+      {
+        "id": "comment-c",
+        "article": "seed-c",
+        "author": "editor",
+        "parent": null,
+        "body": "这是一条待回复的示例评论。",
+        "task_key": "seed-c"
+      },
+      {
+        "id": "comment-d",
+        "article": "seed-d",
+        "author": "editor",
+        "parent": null,
+        "body": "这是一条待回复的示例评论。",
+        "task_key": "seed-d"
+      },
+      {
+        "id": "comment-88beb1688ce8",
+        "article": "seed-a",
+        "author": "demo-author",
+        "parent": null,
+        "body": "自动化测试评论：已核对文章内容。",
+        "task_key": "lab-article-001-comment"
+      },
+      {
+        "id": "comment-112e43dc806f",
+        "article": "seed-a",
+        "author": "demo-author",
+        "parent": "comment-a",
+        "body": "自动化测试回复：此回复绑定comment-a。",
+        "task_key": "lab-article-001-reply"
+      },
+      {
+        "id": "comment-e3fc7b107278",
+        "article": "seed-a",
+        "author": "demo-author",
+        "parent": null,
+        "body": "回执丢失时只发送一次。",
+        "task_key": "lost-comment-receipt"
+      }
+    ],
+    "likes": [
+      {
+        "article": "seed-a",
+        "username": "demo-author"
+      }
+    ],
+    "events": [
+      {
+        "kind": "publish",
+        "object_id": "article-c80d4ea0b9c7",
+        "username": "demo-author"
+      },
+      {
+        "kind": "like",
+        "object_id": "seed-a",
+        "username": "demo-author"
+      },
+      {
+        "kind": "comment",
+        "object_id": "comment-88beb1688ce8",
+        "username": "demo-author"
+      },
+      {
+        "kind": "reply",
+        "object_id": "comment-112e43dc806f",
+        "username": "demo-author"
+      },
+      {
+        "kind": "publish",
+        "object_id": "article-20702886a310",
+        "username": "demo-author"
+      },
+      {
+        "kind": "publish",
+        "object_id": "article-5136f0d1979d",
+        "username": "demo-author"
+      },
+      {
+        "kind": "publish",
+        "object_id": "article-507575a486bf",
+        "username": "demo-author"
+      },
+      {
+        "kind": "comment",
+        "object_id": "comment-e3fc7b107278",
+        "username": "demo-author"
+      }
+    ]
+  },
+  "commands": [
+    {
+      "sequence": 1,
+      "command": "profile_create",
+      "result": "passed"
+    },
+    {
+      "sequence": 2,
+      "command": "browser_start",
+      "result": "passed"
+    },
+    {
+      "sequence": 3,
+      "command": "lease_acquire",
+      "result": "passed"
+    },
+    {
+      "sequence": 4,
+      "command": "browser_navigate",
+      "result": "passed"
+    },
+    {
+      "sequence": 5,
+      "command": "page_wait_text",
+      "result": "passed"
+    },
+    {
+      "sequence": 6,
+      "command": "page_locate",
+      "result": "passed"
+    },
+    {
+      "sequence": 7,
+      "command": "page_fill",
+      "result": "passed"
+    },
+    {
+      "sequence": 8,
+      "command": "page_locate",
+      "result": "passed"
+    },
+    {
+      "sequence": 9,
+      "command": "page_fill",
+      "result": "passed"
+    },
+    {
+      "sequence": 10,
+      "command": "page_locate",
+      "result": "passed"
+    },
+    {
+      "sequence": 11,
+      "command": "page_click",
+      "result": "passed"
+    },
+    {
+      "sequence": 12,
+      "command": "page_locate",
+      "result": "passed"
+    },
+    {
+      "sequence": 13,
+      "command": "page_text",
+      "result": "passed"
+    },
+    {
+      "sequence": 14,
+      "command": "page_locate",
+      "result": "passed"
+    },
+    {
+      "sequence": 15,
+      "command": "page_text",
+      "result": "passed"
+    },
+    {
+      "sequence": 16,
+      "command": "page_locate",
+      "result": "passed"
+    },
+    {
+      "sequence": 17,
+      "command": "page_fill",
+      "result": "passed"
+    },
+    {
+      "sequence": 18,
+      "command": "page_locate",
+      "result": "passed"
+    },
+    {
+      "sequence": 19,
+      "command": "page_fill",
+      "result": "passed"
+    },
+    {
+      "sequence": 20,
+      "command": "page_locate",
+      "result": "passed"
+    },
+    {
+      "sequence": 21,
+      "command": "page_click",
+      "result": "passed"
+    },
+    {
+      "sequence": 22,
+      "command": "page_locate",
+      "result": "passed"
+    },
+    {
+      "sequence": 23,
+      "command": "page_text",
+      "result": "passed"
+    },
+    {
+      "sequence": 24,
+      "command": "page_locate",
+      "result": "passed"
+    },
+    {
+      "sequence": 25,
+      "command": "page_text",
+      "result": "passed"
+    },
+    {
+      "sequence": 26,
+      "command": "page_locate",
+      "result": "passed"
+    },
+    {
+      "sequence": 27,
+      "command": "page_fill",
+      "result": "passed"
+    },
+    {
+      "sequence": 28,
+      "command": "page_locate",
+      "result": "passed"
+    },
+    {
+      "sequence": 29,
+      "command": "page_click",
+      "result": "passed"
+    },
+    {
+      "sequence": 30,
+      "command": "page_wait_text",
+      "result": "passed"
+    },
+    {
+      "sequence": 31,
+      "command": "page_wait_text",
+      "result": "passed"
+    },
+    {
+      "sequence": 32,
+      "command": "workflow_validate",
+      "result": "passed"
+    },
+    {
+      "sequence": 33,
+      "command": "workflow_publish",
+      "result": "passed"
+    },
+    {
+      "sequence": 34,
+      "command": "workflow_run",
+      "result": "passed"
+    },
+    {
+      "sequence": 35,
+      "command": "workflow_status",
+      "result": "passed"
+    },
+    {
+      "sequence": 36,
+      "command": "workflow_status",
+      "result": "passed"
+    },
+    {
+      "sequence": 37,
+      "command": "workflow_status",
+      "result": "passed"
+    },
+    {
+      "sequence": 38,
+      "command": "workflow_status",
+      "result": "passed"
+    },
+    {
+      "sequence": 39,
+      "command": "workflow_status",
+      "result": "passed"
+    },
+    {
+      "sequence": 40,
+      "command": "page_locate",
+      "result": "passed"
+    },
+    {
+      "sequence": 41,
+      "command": "page_text",
+      "result": "passed"
+    },
+    {
+      "sequence": 42,
+      "command": "page_locate",
+      "result": "passed"
+    },
+    {
+      "sequence": 43,
+      "command": "page_text",
+      "result": "passed"
+    },
+    {
+      "sequence": 44,
+      "command": "page_locate",
+      "result": "passed"
+    },
+    {
+      "sequence": 45,
+      "command": "page_text",
+      "result": "passed"
+    },
+    {
+      "sequence": 46,
+      "command": "page_locate",
+      "result": "passed"
+    },
+    {
+      "sequence": 47,
+      "command": "page_text",
+      "result": "passed"
+    },
+    {
+      "sequence": 48,
+      "command": "page_locate",
+      "result": "passed"
+    },
+    {
+      "sequence": 49,
+      "command": "page_text",
+      "result": "passed"
+    },
+    {
+      "sequence": 50,
+      "command": "page_locate",
+      "result": "passed"
+    },
+    {
+      "sequence": 51,
+      "command": "page_text",
+      "result": "passed"
+    },
+    {
+      "sequence": 52,
+      "command": "page_locate",
+      "result": "passed"
+    },
+    {
+      "sequence": 53,
+      "command": "page_text",
+      "result": "passed"
+    },
+    {
+      "sequence": 54,
+      "command": "page_locate",
+      "result": "passed"
+    },
+    {
+      "sequence": 55,
+      "command": "page_text",
+      "result": "passed"
+    },
+    {
+      "sequence": 56,
+      "command": "page_locate",
+      "result": "passed"
+    },
+    {
+      "sequence": 57,
+      "command": "page_text",
+      "result": "passed"
+    },
+    {
+      "sequence": 58,
+      "command": "page_locate",
+      "result": "passed"
+    },
+    {
+      "sequence": 59,
+      "command": "page_text",
+      "result": "passed"
+    },
+    {
+      "sequence": 60,
+      "command": "page_locate",
+      "result": "passed"
+    },
+    {
+      "sequence": 61,
+      "command": "page_text",
+      "result": "passed"
+    },
+    {
+      "sequence": 62,
+      "command": "page_locate",
+      "result": "passed"
+    },
+    {
+      "sequence": 63,
+      "command": "page_click",
+      "result": "passed"
+    },
+    {
+      "sequence": 64,
+      "command": "page_wait_text",
+      "result": "passed"
+    },
+    {
+      "sequence": 65,
+      "command": "page_locate",
+      "result": "passed"
+    },
+    {
+      "sequence": 66,
+      "command": "page_text",
+      "result": "passed"
+    },
+    {
+      "sequence": 67,
+      "command": "page_locate",
+      "result": "passed"
+    },
+    {
+      "sequence": 68,
+      "command": "page_text",
+      "result": "passed"
+    },
+    {
+      "sequence": 69,
+      "command": "page_locate",
+      "result": "passed"
+    },
+    {
+      "sequence": 70,
+      "command": "page_text",
+      "result": "passed"
+    },
+    {
+      "sequence": 71,
+      "command": "page_locate",
+      "result": "passed"
+    },
+    {
+      "sequence": 72,
+      "command": "page_text",
+      "result": "passed"
+    },
+    {
+      "sequence": 73,
+      "command": "page_locate",
+      "result": "passed"
+    },
+    {
+      "sequence": 74,
+      "command": "page_text",
+      "result": "passed"
+    },
+    {
+      "sequence": 75,
+      "command": "page_locate",
+      "result": "passed"
+    },
+    {
+      "sequence": 76,
+      "command": "page_text",
+      "result": "passed"
+    },
+    {
+      "sequence": 77,
+      "command": "page_locate",
+      "result": "passed"
+    },
+    {
+      "sequence": 78,
+      "command": "page_text",
+      "result": "passed"
+    },
+    {
+      "sequence": 79,
+      "command": "page_locate",
+      "result": "passed"
+    },
+    {
+      "sequence": 80,
+      "command": "page_text",
+      "result": "passed"
+    },
+    {
+      "sequence": 81,
+      "command": "page_locate",
+      "result": "passed"
+    },
+    {
+      "sequence": 82,
+      "command": "page_text",
+      "result": "passed"
+    },
+    {
+      "sequence": 83,
+      "command": "page_wait_text",
+      "result": "passed"
+    },
+    {
+      "sequence": 84,
+      "command": "page_locate",
+      "result": "LOCATOR_AMBIGUOUS"
+    },
+    {
+      "sequence": 85,
+      "command": "page_screenshot",
+      "result": "passed"
+    },
+    {
+      "sequence": 86,
+      "command": "page_locate",
+      "result": "passed"
+    },
+    {
+      "sequence": 87,
+      "command": "page_fill",
+      "result": "passed"
+    },
+    {
+      "sequence": 88,
+      "command": "page_locate",
+      "result": "passed"
+    },
+    {
+      "sequence": 89,
+      "command": "page_click",
+      "result": "passed"
+    },
+    {
+      "sequence": 90,
+      "command": "page_wait_text",
+      "result": "passed"
+    },
+    {
+      "sequence": 91,
+      "command": "page_wait_text",
+      "result": "passed"
+    },
+    {
+      "sequence": 92,
+      "command": "page_locate",
+      "result": "passed"
+    },
+    {
+      "sequence": 93,
+      "command": "page_text",
+      "result": "passed"
+    },
+    {
+      "sequence": 94,
+      "command": "page_locate",
+      "result": "passed"
+    },
+    {
+      "sequence": 95,
+      "command": "page_click",
+      "result": "passed"
+    },
+    {
+      "sequence": 96,
+      "command": "page_wait_text",
+      "result": "passed"
+    },
+    {
+      "sequence": 97,
+      "command": "page_locate",
+      "result": "passed"
+    },
+    {
+      "sequence": 98,
+      "command": "page_fill",
+      "result": "passed"
+    },
+    {
+      "sequence": 99,
+      "command": "page_locate",
+      "result": "passed"
+    },
+    {
+      "sequence": 100,
+      "command": "page_fill",
+      "result": "passed"
+    },
+    {
+      "sequence": 101,
+      "command": "page_locate",
+      "result": "passed"
+    },
+    {
+      "sequence": 102,
+      "command": "page_click",
+      "result": "passed"
+    },
+    {
+      "sequence": 103,
+      "command": "page_wait_text",
+      "result": "passed"
+    },
+    {
+      "sequence": 104,
+      "command": "page_locate",
+      "result": "passed"
+    },
+    {
+      "sequence": 105,
+      "command": "page_click",
+      "result": "passed"
+    },
+    {
+      "sequence": 106,
+      "command": "page_wait_text",
+      "result": "passed"
+    },
+    {
+      "sequence": 107,
+      "command": "page_locate",
+      "result": "passed"
+    },
+    {
+      "sequence": 108,
+      "command": "page_fill",
+      "result": "passed"
+    },
+    {
+      "sequence": 109,
+      "command": "page_locate",
+      "result": "passed"
+    },
+    {
+      "sequence": 110,
+      "command": "page_fill",
+      "result": "passed"
+    },
+    {
+      "sequence": 111,
+      "command": "page_locate",
+      "result": "passed"
+    },
+    {
+      "sequence": 112,
+      "command": "page_click",
+      "result": "passed"
+    },
+    {
+      "sequence": 113,
+      "command": "page_wait_text",
+      "result": "passed"
+    },
+    {
+      "sequence": 114,
+      "command": "page_locate",
+      "result": "passed"
+    },
+    {
+      "sequence": 115,
+      "command": "page_fill",
+      "result": "passed"
+    },
+    {
+      "sequence": 116,
+      "command": "page_locate",
+      "result": "passed"
+    },
+    {
+      "sequence": 117,
+      "command": "page_click",
+      "result": "passed"
+    },
+    {
+      "sequence": 118,
+      "command": "page_wait_text",
+      "result": "passed"
+    },
+    {
+      "sequence": 119,
+      "command": "page_wait_text",
+      "result": "passed"
+    },
+    {
+      "sequence": 120,
+      "command": "page_locate",
+      "result": "passed"
+    },
+    {
+      "sequence": 121,
+      "command": "page_text",
+      "result": "passed"
+    },
+    {
+      "sequence": 122,
+      "command": "page_locate",
+      "result": "passed"
+    },
+    {
+      "sequence": 123,
+      "command": "page_fill",
+      "result": "passed"
+    },
+    {
+      "sequence": 124,
+      "command": "page_locate",
+      "result": "passed"
+    },
+    {
+      "sequence": 125,
+      "command": "page_fill",
+      "result": "passed"
+    },
+    {
+      "sequence": 126,
+      "command": "page_locate",
+      "result": "passed"
+    },
+    {
+      "sequence": 127,
+      "command": "page_click",
+      "result": "passed"
+    },
+    {
+      "sequence": 128,
+      "command": "page_wait_text",
+      "result": "passed"
+    },
+    {
+      "sequence": 129,
+      "command": "page_locate",
+      "result": "passed"
+    },
+    {
+      "sequence": 130,
+      "command": "page_click",
+      "result": "passed"
+    },
+    {
+      "sequence": 131,
+      "command": "page_wait_text",
+      "result": "passed"
+    },
+    {
+      "sequence": 132,
+      "command": "page_locate",
+      "result": "passed"
+    },
+    {
+      "sequence": 133,
+      "command": "page_fill",
+      "result": "passed"
+    },
+    {
+      "sequence": 134,
+      "command": "page_locate",
+      "result": "passed"
+    },
+    {
+      "sequence": 135,
+      "command": "page_fill",
+      "result": "passed"
+    },
+    {
+      "sequence": 136,
+      "command": "page_locate",
+      "result": "passed"
+    },
+    {
+      "sequence": 137,
+      "command": "page_click",
+      "result": "passed"
+    },
+    {
+      "sequence": 138,
+      "command": "page_wait_text",
+      "result": "passed"
+    },
+    {
+      "sequence": 139,
+      "command": "page_locate",
+      "result": "LOCATOR_AMBIGUOUS"
+    },
+    {
+      "sequence": 140,
+      "command": "page_screenshot",
+      "result": "passed"
+    },
+    {
+      "sequence": 141,
+      "command": "workflow_validate",
+      "result": "passed"
+    },
+    {
+      "sequence": 142,
+      "command": "workflow_publish",
+      "result": "passed"
+    },
+    {
+      "sequence": 143,
+      "command": "workflow_run",
+      "result": "passed"
+    },
+    {
+      "sequence": 144,
+      "command": "workflow_status",
+      "result": "passed"
+    },
+    {
+      "sequence": 145,
+      "command": "workflow_status",
+      "result": "passed"
+    },
+    {
+      "sequence": 146,
+      "command": "workflow_status",
+      "result": "passed"
+    },
+    {
+      "sequence": 147,
+      "command": "workflow_status",
+      "result": "passed"
+    },
+    {
+      "sequence": 148,
+      "command": "workflow_status",
+      "result": "passed"
+    },
+    {
+      "sequence": 149,
+      "command": "page_locate",
+      "result": "passed"
+    },
+    {
+      "sequence": 150,
+      "command": "page_fill",
+      "result": "passed"
+    },
+    {
+      "sequence": 151,
+      "command": "page_locate",
+      "result": "passed"
+    },
+    {
+      "sequence": 152,
+      "command": "page_click",
+      "result": "passed"
+    },
+    {
+      "sequence": 153,
+      "command": "page_wait_text",
+      "result": "passed"
+    },
+    {
+      "sequence": 154,
+      "command": "page_locate",
+      "result": "passed"
+    },
+    {
+      "sequence": 155,
+      "command": "page_text",
+      "result": "passed"
+    },
+    {
+      "sequence": 156,
+      "command": "page_locate",
+      "result": "passed"
+    },
+    {
+      "sequence": 157,
+      "command": "page_text",
+      "result": "passed"
+    },
+    {
+      "sequence": 158,
+      "command": "page_locate",
+      "result": "passed"
+    },
+    {
+      "sequence": 159,
+      "command": "page_click",
+      "result": "passed"
+    },
+    {
+      "sequence": 160,
+      "command": "page_wait_text",
+      "result": "passed"
+    },
+    {
+      "sequence": 161,
+      "command": "page_locate",
+      "result": "passed"
+    },
+    {
+      "sequence": 162,
+      "command": "page_fill",
+      "result": "passed"
+    },
+    {
+      "sequence": 163,
+      "command": "page_locate",
+      "result": "passed"
+    },
+    {
+      "sequence": 164,
+      "command": "page_fill",
+      "result": "passed"
+    },
+    {
+      "sequence": 165,
+      "command": "page_locate",
+      "result": "passed"
+    },
+    {
+      "sequence": 166,
+      "command": "page_fill",
+      "result": "passed"
+    },
+    {
+      "sequence": 167,
+      "command": "page_locate",
+      "result": "passed"
+    },
+    {
+      "sequence": 168,
+      "command": "page_click",
+      "result": "passed"
+    },
+    {
+      "sequence": 169,
+      "command": "page_wait_text",
+      "result": "passed"
+    },
+    {
+      "sequence": 170,
+      "command": "page_wait_text",
+      "result": "passed"
+    },
+    {
+      "sequence": 171,
+      "command": "page_locate",
+      "result": "passed"
+    },
+    {
+      "sequence": 172,
+      "command": "page_click",
+      "result": "passed"
+    },
+    {
+      "sequence": 173,
+      "command": "page_wait_text",
+      "result": "passed"
+    },
+    {
+      "sequence": 174,
+      "command": "page_locate",
+      "result": "passed"
+    },
+    {
+      "sequence": 175,
+      "command": "page_fill",
+      "result": "passed"
+    },
+    {
+      "sequence": 176,
+      "command": "page_locate",
+      "result": "passed"
+    },
+    {
+      "sequence": 177,
+      "command": "page_fill",
+      "result": "passed"
+    },
+    {
+      "sequence": 178,
+      "command": "page_locate",
+      "result": "passed"
+    },
+    {
+      "sequence": 179,
+      "command": "page_fill",
+      "result": "passed"
+    },
+    {
+      "sequence": 180,
+      "command": "page_locate",
+      "result": "passed"
+    },
+    {
+      "sequence": 181,
+      "command": "page_click",
+      "result": "passed"
+    },
+    {
+      "sequence": 182,
+      "command": "page_wait_text",
+      "result": "passed"
+    },
+    {
+      "sequence": 183,
+      "command": "page_wait_text",
+      "result": "passed"
+    },
+    {
+      "sequence": 184,
+      "command": "page_locate",
+      "result": "passed"
+    },
+    {
+      "sequence": 185,
+      "command": "page_click",
+      "result": "passed"
+    },
+    {
+      "sequence": 186,
+      "command": "page_wait_text",
+      "result": "passed"
+    },
+    {
+      "sequence": 187,
+      "command": "page_locate",
+      "result": "passed"
+    },
+    {
+      "sequence": 188,
+      "command": "page_fill",
+      "result": "passed"
+    },
+    {
+      "sequence": 189,
+      "command": "page_locate",
+      "result": "passed"
+    },
+    {
+      "sequence": 190,
+      "command": "page_fill",
+      "result": "passed"
+    },
+    {
+      "sequence": 191,
+      "command": "page_locate",
+      "result": "passed"
+    },
+    {
+      "sequence": 192,
+      "command": "page_fill",
+      "result": "passed"
+    },
+    {
+      "sequence": 193,
+      "command": "page_locate",
+      "result": "passed"
+    },
+    {
+      "sequence": 194,
+      "command": "page_click",
+      "result": "passed"
+    },
+    {
+      "sequence": 195,
+      "command": "page_wait_text",
+      "result": "passed"
+    },
+    {
+      "sequence": 196,
+      "command": "workflow_validate",
+      "result": "passed"
+    },
+    {
+      "sequence": 197,
+      "command": "workflow_publish",
+      "result": "passed"
+    },
+    {
+      "sequence": 198,
+      "command": "workflow_run",
+      "result": "passed"
+    },
+    {
+      "sequence": 199,
+      "command": "workflow_status",
+      "result": "passed"
+    },
+    {
+      "sequence": 200,
+      "command": "workflow_status",
+      "result": "passed"
+    },
+    {
+      "sequence": 201,
+      "command": "workflow_status",
+      "result": "passed"
+    },
+    {
+      "sequence": 202,
+      "command": "workflow_status",
+      "result": "passed"
+    },
+    {
+      "sequence": 203,
+      "command": "workflow_status",
+      "result": "passed"
+    },
+    {
+      "sequence": 204,
+      "command": "workflow_status",
+      "result": "passed"
+    },
+    {
+      "sequence": 205,
+      "command": "workflow_status",
+      "result": "passed"
+    },
+    {
+      "sequence": 206,
+      "command": "workflow_status",
+      "result": "passed"
+    },
+    {
+      "sequence": 207,
+      "command": "workflow_status",
+      "result": "passed"
+    },
+    {
+      "sequence": 208,
+      "command": "workflow_status",
+      "result": "passed"
+    },
+    {
+      "sequence": 209,
+      "command": "workflow_status",
+      "result": "passed"
+    },
+    {
+      "sequence": 210,
+      "command": "workflow_status",
+      "result": "passed"
+    },
+    {
+      "sequence": 211,
+      "command": "workflow_status",
+      "result": "passed"
+    },
+    {
+      "sequence": 212,
+      "command": "workflow_status",
+      "result": "passed"
+    },
+    {
+      "sequence": 213,
+      "command": "workflow_status",
+      "result": "passed"
+    },
+    {
+      "sequence": 214,
+      "command": "workflow_status",
+      "result": "passed"
+    },
+    {
+      "sequence": 215,
+      "command": "workflow_status",
+      "result": "passed"
+    },
+    {
+      "sequence": 216,
+      "command": "workflow_status",
+      "result": "passed"
+    },
+    {
+      "sequence": 217,
+      "command": "workflow_status",
+      "result": "passed"
+    },
+    {
+      "sequence": 218,
+      "command": "workflow_status",
+      "result": "passed"
+    },
+    {
+      "sequence": 219,
+      "command": "workflow_status",
+      "result": "passed"
+    },
+    {
+      "sequence": 220,
+      "command": "workflow_status",
+      "result": "passed"
+    },
+    {
+      "sequence": 221,
+      "command": "workflow_status",
+      "result": "passed"
+    },
+    {
+      "sequence": 222,
+      "command": "workflow_status",
+      "result": "passed"
+    },
+    {
+      "sequence": 223,
+      "command": "workflow_status",
+      "result": "passed"
+    },
+    {
+      "sequence": 224,
+      "command": "workflow_status",
+      "result": "passed"
+    },
+    {
+      "sequence": 225,
+      "command": "workflow_status",
+      "result": "passed"
+    },
+    {
+      "sequence": 226,
+      "command": "workflow_status",
+      "result": "passed"
+    },
+    {
+      "sequence": 227,
+      "command": "workflow_status",
+      "result": "passed"
+    },
+    {
+      "sequence": 228,
+      "command": "workflow_status",
+      "result": "passed"
+    },
+    {
+      "sequence": 229,
+      "command": "workflow_status",
+      "result": "passed"
+    },
+    {
+      "sequence": 230,
+      "command": "workflow_status",
+      "result": "passed"
+    },
+    {
+      "sequence": 231,
+      "command": "workflow_status",
+      "result": "passed"
+    },
+    {
+      "sequence": 232,
+      "command": "workflow_status",
+      "result": "passed"
+    },
+    {
+      "sequence": 233,
+      "command": "workflow_status",
+      "result": "passed"
+    },
+    {
+      "sequence": 234,
+      "command": "workflow_status",
+      "result": "passed"
+    },
+    {
+      "sequence": 235,
+      "command": "workflow_status",
+      "result": "passed"
+    },
+    {
+      "sequence": 236,
+      "command": "workflow_status",
+      "result": "passed"
+    },
+    {
+      "sequence": 237,
+      "command": "workflow_status",
+      "result": "passed"
+    },
+    {
+      "sequence": 238,
+      "command": "workflow_status",
+      "result": "passed"
+    },
+    {
+      "sequence": 239,
+      "command": "workflow_status",
+      "result": "passed"
+    },
+    {
+      "sequence": 240,
+      "command": "workflow_status",
+      "result": "passed"
+    },
+    {
+      "sequence": 241,
+      "command": "workflow_status",
+      "result": "passed"
+    },
+    {
+      "sequence": 242,
+      "command": "workflow_status",
+      "result": "passed"
+    },
+    {
+      "sequence": 243,
+      "command": "workflow_status",
+      "result": "passed"
+    },
+    {
+      "sequence": 244,
+      "command": "workflow_status",
+      "result": "passed"
+    },
+    {
+      "sequence": 245,
+      "command": "workflow_status",
+      "result": "passed"
+    },
+    {
+      "sequence": 246,
+      "command": "workflow_status",
+      "result": "passed"
+    },
+    {
+      "sequence": 247,
+      "command": "workflow_status",
+      "result": "passed"
+    },
+    {
+      "sequence": 248,
+      "command": "workflow_status",
+      "result": "passed"
+    },
+    {
+      "sequence": 249,
+      "command": "workflow_status",
+      "result": "passed"
+    },
+    {
+      "sequence": 250,
+      "command": "workflow_status",
+      "result": "passed"
+    },
+    {
+      "sequence": 251,
+      "command": "workflow_status",
+      "result": "passed"
+    },
+    {
+      "sequence": 252,
+      "command": "page_locate",
+      "result": "passed"
+    },
+    {
+      "sequence": 253,
+      "command": "page_fill",
+      "result": "passed"
+    },
+    {
+      "sequence": 254,
+      "command": "page_locate",
+      "result": "passed"
+    },
+    {
+      "sequence": 255,
+      "command": "page_click",
+      "result": "passed"
+    },
+    {
+      "sequence": 256,
+      "command": "page_wait_text",
+      "result": "passed"
+    },
+    {
+      "sequence": 257,
+      "command": "page_wait_text",
+      "result": "passed"
+    },
+    {
+      "sequence": 258,
+      "command": "page_wait_text",
+      "result": "passed"
+    },
+    {
+      "sequence": 259,
+      "command": "page_wait_text",
+      "result": "passed"
+    },
+    {
+      "sequence": 260,
+      "command": "page_locate",
+      "result": "passed"
+    },
+    {
+      "sequence": 261,
+      "command": "page_fill",
+      "result": "passed"
+    },
+    {
+      "sequence": 262,
+      "command": "page_locate",
+      "result": "passed"
+    },
+    {
+      "sequence": 263,
+      "command": "page_click",
+      "result": "passed"
+    },
+    {
+      "sequence": 264,
+      "command": "page_wait_text",
+      "result": "passed"
+    },
+    {
+      "sequence": 265,
+      "command": "page_wait_text",
+      "result": "passed"
+    },
+    {
+      "sequence": 266,
+      "command": "page_locate",
+      "result": "passed"
+    },
+    {
+      "sequence": 267,
+      "command": "page_fill",
+      "result": "passed"
+    },
+    {
+      "sequence": 268,
+      "command": "page_locate",
+      "result": "passed"
+    },
+    {
+      "sequence": 269,
+      "command": "page_fill",
+      "result": "passed"
+    },
+    {
+      "sequence": 270,
+      "command": "page_locate",
+      "result": "passed"
+    },
+    {
+      "sequence": 271,
+      "command": "page_click",
+      "result": "passed"
+    },
+    {
+      "sequence": 272,
+      "command": "page_wait_text",
+      "result": "passed"
+    },
+    {
+      "sequence": 273,
+      "command": "page_locate",
+      "result": "passed"
+    },
+    {
+      "sequence": 274,
+      "command": "page_fill",
+      "result": "passed"
+    },
+    {
+      "sequence": 275,
+      "command": "page_locate",
+      "result": "passed"
+    },
+    {
+      "sequence": 276,
+      "command": "page_click",
+      "result": "passed"
+    },
+    {
+      "sequence": 277,
+      "command": "page_wait_text",
+      "result": "passed"
+    },
+    {
+      "sequence": 278,
+      "command": "page_wait_text",
+      "result": "passed"
+    },
+    {
+      "sequence": 279,
+      "command": "page_wait_text",
+      "result": "passed"
+    },
+    {
+      "sequence": 280,
+      "command": "page_locate",
+      "result": "passed"
+    },
+    {
+      "sequence": 281,
+      "command": "page_fill",
+      "result": "passed"
+    },
+    {
+      "sequence": 282,
+      "command": "page_locate",
+      "result": "passed"
+    },
+    {
+      "sequence": 283,
+      "command": "page_fill",
+      "result": "passed"
+    },
+    {
+      "sequence": 284,
+      "command": "page_locate",
+      "result": "passed"
+    },
+    {
+      "sequence": 285,
+      "command": "page_click",
+      "result": "passed"
+    },
+    {
+      "sequence": 286,
+      "command": "page_wait_text",
+      "result": "passed"
+    },
+    {
+      "sequence": 287,
+      "command": "page_locate",
+      "result": "passed"
+    },
+    {
+      "sequence": 288,
+      "command": "page_click",
+      "result": "passed"
+    },
+    {
+      "sequence": 289,
+      "command": "page_wait_text",
+      "result": "passed"
+    },
+    {
+      "sequence": 290,
+      "command": "browser_navigate",
+      "result": "passed"
+    },
+    {
+      "sequence": 291,
+      "command": "page_wait_text",
+      "result": "passed"
+    },
+    {
+      "sequence": 292,
+      "command": "page_locate",
+      "result": "passed"
+    },
+    {
+      "sequence": 293,
+      "command": "page_fill",
+      "result": "passed"
+    },
+    {
+      "sequence": 294,
+      "command": "page_locate",
+      "result": "passed"
+    },
+    {
+      "sequence": 295,
+      "command": "page_fill",
+      "result": "passed"
+    },
+    {
+      "sequence": 296,
+      "command": "page_locate",
+      "result": "passed"
+    },
+    {
+      "sequence": 297,
+      "command": "page_click",
+      "result": "passed"
+    },
+    {
+      "sequence": 298,
+      "command": "page_wait_text",
+      "result": "passed"
+    },
+    {
+      "sequence": 299,
+      "command": "page_wait_text",
+      "result": "passed"
+    },
+    {
+      "sequence": 300,
+      "command": "page_locate",
+      "result": "passed"
+    },
+    {
+      "sequence": 301,
+      "command": "page_click",
+      "result": "passed"
+    },
+    {
+      "sequence": 302,
+      "command": "page_wait_text",
+      "result": "passed"
+    },
+    {
+      "sequence": 303,
+      "command": "page_locate",
+      "result": "passed"
+    },
+    {
+      "sequence": 304,
+      "command": "page_fill",
+      "result": "passed"
+    },
+    {
+      "sequence": 305,
+      "command": "page_locate",
+      "result": "passed"
+    },
+    {
+      "sequence": 306,
+      "command": "page_fill",
+      "result": "passed"
+    },
+    {
+      "sequence": 307,
+      "command": "page_locate",
+      "result": "passed"
+    },
+    {
+      "sequence": 308,
+      "command": "page_fill",
+      "result": "passed"
+    },
+    {
+      "sequence": 309,
+      "command": "page_locate",
+      "result": "passed"
+    },
+    {
+      "sequence": 310,
+      "command": "page_click",
+      "result": "passed"
+    },
+    {
+      "sequence": 311,
+      "command": "page_wait_text",
+      "result": "passed"
+    },
+    {
+      "sequence": 312,
+      "command": "browser_navigate",
+      "result": "passed"
+    },
+    {
+      "sequence": 313,
+      "command": "page_wait_text",
+      "result": "passed"
+    },
+    {
+      "sequence": 314,
+      "command": "page_locate",
+      "result": "passed"
+    },
+    {
+      "sequence": 315,
+      "command": "browser_navigate",
+      "result": "passed"
+    },
+    {
+      "sequence": 316,
+      "command": "page_wait_text",
+      "result": "passed"
+    },
+    {
+      "sequence": 317,
+      "command": "page_fill",
+      "result": "STALE_ELEMENT_REFERENCE"
+    },
+    {
+      "sequence": 318,
+      "command": "browser_navigate",
+      "result": "passed"
+    },
+    {
+      "sequence": 319,
+      "command": "page_wait_text",
+      "result": "passed"
+    },
+    {
+      "sequence": 320,
+      "command": "page_locate",
+      "result": "passed"
+    },
+    {
+      "sequence": 321,
+      "command": "page_fill",
+      "result": "passed"
+    },
+    {
+      "sequence": 322,
+      "command": "page_locate",
+      "result": "passed"
+    },
+    {
+      "sequence": 323,
+      "command": "page_click",
+      "result": "passed"
+    },
+    {
+      "sequence": 324,
+      "command": "page_wait_text",
+      "result": "passed"
+    },
+    {
+      "sequence": 325,
+      "command": "page_wait_text",
+      "result": "passed"
+    },
+    {
+      "sequence": 326,
+      "command": "page_wait_text",
+      "result": "passed"
+    },
+    {
+      "sequence": 327,
+      "command": "browser_stop",
+      "result": "passed"
+    }
+  ]
+}

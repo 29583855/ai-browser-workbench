@@ -1,0 +1,555 @@
+{
+  "date": "2026-11-05",
+  "result": "passed",
+  "checks": [
+    "nine-preflight-negatives-rejected-before-browser-start",
+    "real-upload-download-array-foreach-two-clicks-and-final-B",
+    "array-overflow-and-sensitive-source-stop-or-explicit-observation-route",
+    "structured-assertion-failure-is-deterministic-and-not-retried",
+    "revoked-lease-prevents-any-first-dispatch"
+  ],
+  "runs": [
+    {
+      "automaticRetryAllowed": false,
+      "checkpointDurable": true,
+      "errorCode": "",
+      "outcomeUnknown": false,
+      "profileId": "f93d497d849ad632a78570aa224c5134",
+      "runId": "b6212d459dfcd9e44485ba102c690dde",
+      "sha256": "6f8fdb6156fc75853ccb609306e9878d6d28335551bd060ef102afcd1b1bf968",
+      "state": "succeeded",
+      "steps": [
+        {
+          "depth": 0,
+          "flow": "main",
+          "ordinal": 0,
+          "replayClass": "page-effect-no-replay",
+          "state": "succeeded",
+          "stepId": "open",
+          "type": "navigate"
+        },
+        {
+          "depth": 0,
+          "flow": "main",
+          "ordinal": 1,
+          "replayClass": "local-effect-no-replay",
+          "state": "succeeded",
+          "stepId": "configure",
+          "type": "downloadConfig"
+        },
+        {
+          "depth": 0,
+          "flow": "main",
+          "ordinal": 2,
+          "replayClass": "page-effect-no-replay",
+          "state": "succeeded",
+          "stepId": "upload",
+          "type": "upload"
+        },
+        {
+          "depth": 0,
+          "flow": "main",
+          "ordinal": 3,
+          "replayClass": "read-only",
+          "state": "succeeded",
+          "stepId": "uploaded",
+          "type": "assertText"
+        },
+        {
+          "depth": 0,
+          "flow": "main",
+          "ordinal": 4,
+          "replayClass": "page-effect-no-replay",
+          "state": "succeeded",
+          "stepId": "download",
+          "type": "click"
+        },
+        {
+          "depth": 0,
+          "flow": "main",
+          "ordinal": 5,
+          "replayClass": "read-only",
+          "state": "succeeded",
+          "stepId": "downloaded",
+          "type": "downloadWait"
+        },
+        {
+          "depth": 0,
+          "flow": "main",
+          "ordinal": 6,
+          "replayClass": "read-only",
+          "state": "succeeded",
+          "stepId": "read",
+          "type": "readTexts"
+        },
+        {
+          "depth": 0,
+          "flow": "main",
+          "ordinal": 7,
+          "replayClass": "control-only",
+          "state": "succeeded",
+          "stepId": "each",
+          "type": "foreach"
+        },
+        {
+          "depth": 1,
+          "flow": "body",
+          "ordinal": 8,
+          "replayClass": "page-effect-no-replay",
+          "state": "succeeded",
+          "stepId": "fill",
+          "type": "fill"
+        },
+        {
+          "depth": 1,
+          "flow": "body",
+          "ordinal": 9,
+          "replayClass": "page-effect-no-replay",
+          "state": "succeeded",
+          "stepId": "click",
+          "type": "click"
+        },
+        {
+          "depth": 1,
+          "flow": "body",
+          "ordinal": 10,
+          "replayClass": "control-only",
+          "state": "succeeded",
+          "stepId": "done",
+          "type": "end"
+        },
+        {
+          "depth": 1,
+          "flow": "body",
+          "ordinal": 11,
+          "replayClass": "page-effect-no-replay",
+          "state": "succeeded",
+          "stepId": "fill",
+          "type": "fill"
+        },
+        {
+          "depth": 1,
+          "flow": "body",
+          "ordinal": 12,
+          "replayClass": "page-effect-no-replay",
+          "state": "succeeded",
+          "stepId": "click",
+          "type": "click"
+        },
+        {
+          "depth": 1,
+          "flow": "body",
+          "ordinal": 13,
+          "replayClass": "control-only",
+          "state": "succeeded",
+          "stepId": "done",
+          "type": "end"
+        },
+        {
+          "depth": 0,
+          "flow": "main",
+          "ordinal": 14,
+          "replayClass": "read-only",
+          "state": "succeeded",
+          "stepId": "count",
+          "type": "assert"
+        },
+        {
+          "depth": 0,
+          "flow": "main",
+          "ordinal": 15,
+          "replayClass": "read-only",
+          "state": "succeeded",
+          "stepId": "checked",
+          "type": "assert"
+        },
+        {
+          "depth": 0,
+          "flow": "main",
+          "ordinal": 16,
+          "replayClass": "read-only",
+          "state": "succeeded",
+          "stepId": "verify",
+          "type": "assertText"
+        },
+        {
+          "depth": 0,
+          "flow": "main",
+          "ordinal": 17,
+          "replayClass": "read-only",
+          "state": "succeeded",
+          "stepId": "echo",
+          "type": "assert"
+        },
+        {
+          "depth": 0,
+          "flow": "main",
+          "ordinal": 18,
+          "replayClass": "control-only",
+          "state": "succeeded",
+          "stepId": "done",
+          "type": "end"
+        }
+      ],
+      "workflowId": "d13b002d3b057caf1126ce3b0c7fb874"
+    }
+  ],
+  "executableSha256": "193e5f0b8988ff46084b3e035e3f934a6769a887e2c2a8a7e4332edce9786c93",
+  "commands": [
+    {
+      "sequence": 1,
+      "command": "workflow_validate",
+      "outcome": "passed"
+    },
+    {
+      "sequence": 2,
+      "command": "workflow_publish",
+      "outcome": "WORKFLOW_INVALID"
+    },
+    {
+      "sequence": 3,
+      "command": "workflow_validate",
+      "outcome": "passed"
+    },
+    {
+      "sequence": 4,
+      "command": "workflow_publish",
+      "outcome": "WORKFLOW_INVALID"
+    },
+    {
+      "sequence": 5,
+      "command": "workflow_validate",
+      "outcome": "passed"
+    },
+    {
+      "sequence": 6,
+      "command": "workflow_publish",
+      "outcome": "WORKFLOW_INVALID"
+    },
+    {
+      "sequence": 7,
+      "command": "workflow_validate",
+      "outcome": "passed"
+    },
+    {
+      "sequence": 8,
+      "command": "workflow_publish",
+      "outcome": "WORKFLOW_INVALID"
+    },
+    {
+      "sequence": 9,
+      "command": "workflow_validate",
+      "outcome": "passed"
+    },
+    {
+      "sequence": 10,
+      "command": "workflow_publish",
+      "outcome": "WORKFLOW_INVALID"
+    },
+    {
+      "sequence": 11,
+      "command": "workflow_validate",
+      "outcome": "passed"
+    },
+    {
+      "sequence": 12,
+      "command": "workflow_publish",
+      "outcome": "WORKFLOW_INVALID"
+    },
+    {
+      "sequence": 13,
+      "command": "workflow_validate",
+      "outcome": "passed"
+    },
+    {
+      "sequence": 14,
+      "command": "workflow_publish",
+      "outcome": "WORKFLOW_INVALID"
+    },
+    {
+      "sequence": 15,
+      "command": "workflow_validate",
+      "outcome": "passed"
+    },
+    {
+      "sequence": 16,
+      "command": "workflow_publish",
+      "outcome": "WORKFLOW_INVALID"
+    },
+    {
+      "sequence": 17,
+      "command": "workflow_validate",
+      "outcome": "passed"
+    },
+    {
+      "sequence": 18,
+      "command": "workflow_publish",
+      "outcome": "WORKFLOW_INVALID"
+    },
+    {
+      "sequence": 19,
+      "command": "profile_create",
+      "outcome": "passed"
+    },
+    {
+      "sequence": 20,
+      "command": "browser_start",
+      "outcome": "passed"
+    },
+    {
+      "sequence": 21,
+      "command": "lease_acquire",
+      "outcome": "passed"
+    },
+    {
+      "sequence": 22,
+      "command": "workflow_validate",
+      "outcome": "passed"
+    },
+    {
+      "sequence": 23,
+      "command": "workflow_publish",
+      "outcome": "passed"
+    },
+    {
+      "sequence": 24,
+      "command": "workflow_run",
+      "outcome": "passed"
+    },
+    {
+      "sequence": 25,
+      "command": "workflow_status",
+      "outcome": "passed"
+    },
+    {
+      "sequence": 26,
+      "command": "workflow_status",
+      "outcome": "passed"
+    },
+    {
+      "sequence": 27,
+      "command": "workflow_status",
+      "outcome": "passed"
+    },
+    {
+      "sequence": 28,
+      "command": "workflow_status",
+      "outcome": "passed"
+    },
+    {
+      "sequence": 29,
+      "command": "workflow_status",
+      "outcome": "passed"
+    },
+    {
+      "sequence": 30,
+      "command": "workflow_status",
+      "outcome": "passed"
+    },
+    {
+      "sequence": 31,
+      "command": "workflow_status",
+      "outcome": "passed"
+    },
+    {
+      "sequence": 32,
+      "command": "workflow_status",
+      "outcome": "passed"
+    },
+    {
+      "sequence": 33,
+      "command": "workflow_status",
+      "outcome": "passed"
+    },
+    {
+      "sequence": 34,
+      "command": "workflow_status",
+      "outcome": "passed"
+    },
+    {
+      "sequence": 35,
+      "command": "workflow_status",
+      "outcome": "passed"
+    },
+    {
+      "sequence": 36,
+      "command": "workflow_status",
+      "outcome": "passed"
+    },
+    {
+      "sequence": 37,
+      "command": "workflow_status",
+      "outcome": "passed"
+    },
+    {
+      "sequence": 38,
+      "command": "workflow_status",
+      "outcome": "passed"
+    },
+    {
+      "sequence": 39,
+      "command": "workflow_status",
+      "outcome": "passed"
+    },
+    {
+      "sequence": 40,
+      "command": "workflow_validate",
+      "outcome": "passed"
+    },
+    {
+      "sequence": 41,
+      "command": "workflow_publish",
+      "outcome": "passed"
+    },
+    {
+      "sequence": 42,
+      "command": "workflow_run",
+      "outcome": "passed"
+    },
+    {
+      "sequence": 43,
+      "command": "workflow_status",
+      "outcome": "passed"
+    },
+    {
+      "sequence": 44,
+      "command": "workflow_status",
+      "outcome": "passed"
+    },
+    {
+      "sequence": 45,
+      "command": "workflow_validate",
+      "outcome": "passed"
+    },
+    {
+      "sequence": 46,
+      "command": "workflow_publish",
+      "outcome": "passed"
+    },
+    {
+      "sequence": 47,
+      "command": "workflow_run",
+      "outcome": "passed"
+    },
+    {
+      "sequence": 48,
+      "command": "workflow_status",
+      "outcome": "passed"
+    },
+    {
+      "sequence": 49,
+      "command": "workflow_status",
+      "outcome": "passed"
+    },
+    {
+      "sequence": 50,
+      "command": "workflow_validate",
+      "outcome": "passed"
+    },
+    {
+      "sequence": 51,
+      "command": "workflow_publish",
+      "outcome": "passed"
+    },
+    {
+      "sequence": 52,
+      "command": "workflow_run",
+      "outcome": "passed"
+    },
+    {
+      "sequence": 53,
+      "command": "workflow_status",
+      "outcome": "passed"
+    },
+    {
+      "sequence": 54,
+      "command": "workflow_status",
+      "outcome": "passed"
+    },
+    {
+      "sequence": 55,
+      "command": "workflow_validate",
+      "outcome": "passed"
+    },
+    {
+      "sequence": 56,
+      "command": "workflow_publish",
+      "outcome": "passed"
+    },
+    {
+      "sequence": 57,
+      "command": "workflow_run",
+      "outcome": "passed"
+    },
+    {
+      "sequence": 58,
+      "command": "workflow_status",
+      "outcome": "passed"
+    },
+    {
+      "sequence": 59,
+      "command": "workflow_status",
+      "outcome": "passed"
+    },
+    {
+      "sequence": 60,
+      "command": "workflow_validate",
+      "outcome": "passed"
+    },
+    {
+      "sequence": 61,
+      "command": "workflow_publish",
+      "outcome": "passed"
+    },
+    {
+      "sequence": 62,
+      "command": "workflow_run",
+      "outcome": "passed"
+    },
+    {
+      "sequence": 63,
+      "command": "workflow_status",
+      "outcome": "passed"
+    },
+    {
+      "sequence": 64,
+      "command": "workflow_status",
+      "outcome": "passed"
+    },
+    {
+      "sequence": 65,
+      "command": "workflow_publish",
+      "outcome": "passed"
+    },
+    {
+      "sequence": 66,
+      "command": "workflow_run",
+      "outcome": "passed"
+    },
+    {
+      "sequence": 67,
+      "command": "workflow_status",
+      "outcome": "passed"
+    },
+    {
+      "sequence": 68,
+      "command": "lease_revoke",
+      "outcome": "passed"
+    },
+    {
+      "sequence": 69,
+      "command": "workflow_control",
+      "outcome": "passed"
+    },
+    {
+      "sequence": 70,
+      "command": "workflow_status",
+      "outcome": "passed"
+    },
+    {
+      "sequence": 71,
+      "command": "browser_stop",
+      "outcome": "passed"
+    }
+  ]
+}

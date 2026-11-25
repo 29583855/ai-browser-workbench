@@ -1,0 +1,28 @@
+<!doctype html><meta charset="utf-8"><title>结构化提取与批处理夹具</title>
+<h1 id="title" title="公开提示">中文😀报告</h1><p id="amount">12.5</p><p id="truth">true</p>
+<p id="bad-number">12abc</p><p id="huge-number">1e999</p><p id="large"></p>
+<p class="duplicate">A</p><p class="duplicate">B</p>
+<input id="private" type="password" value="secret-canary-extraction-password">
+<input id="agree" type="checkbox" checked><input id="field">
+<button id="increment">增加一次</button><output id="clicks">0</output><output id="echo">empty</output>
+<select id="choice"><option value="a">A</option><option value="b">B</option></select><output id="selected">a</output>
+<label for="upload">上传文件</label><input id="upload" type="file">
+<output id="uploaded">empty</output>
+<div id="editable" contenteditable="true">初始富文本</div>
+<a id="download" href="/download/fixture.csv" download>下载报表</a>
+<script>
+// 用途：使用真实FileList确认流程上传事件已到达页面；日期：2026-11-05。
+document.querySelector('#upload').onchange=function(){document.querySelector('#uploaded').textContent=this.files[0]?.name||'empty';};
+document.querySelector('#large').textContent='😀'.repeat(4097);
+// 用途：验证批处理实际点击次数和不重放，不以协议成功冒充业务结果；日期：2026-11-04。
+document.querySelector('#increment').onclick=function(){
+ document.querySelector('#clicks').textContent=String(Number(document.querySelector('#clicks').textContent)+1);
+ console.warn('batch fixture clicked');
+};
+// 用途：真实input事件写入公开回显，仅使用非秘密测试数据；日期：2026-11-04。
+document.querySelector('#field').oninput=function(){document.querySelector('#echo').textContent=this.value;};
+// 用途：真实change事件供批处理选择后断言；日期：2026-11-04。
+document.querySelector('#choice').onchange=function(){document.querySelector('#selected').textContent=this.value;};
+// 用途：故意篡改主世界读取函数，提取器的隔离世界仍须使用原生DOM方法；日期：2026-11-04。
+document.querySelectorAll=function(){throw Error('fixture-main-world-reader-tampered');};
+</script>

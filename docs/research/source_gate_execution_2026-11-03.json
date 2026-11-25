@@ -1,0 +1,146 @@
+{
+  "date": "2026-11-03",
+  "task": "T005",
+  "result": "source-and-license-boundaries-reviewed",
+  "method": "fixed-commit source archives plus untruncated Git trees; no upstream project binaries executed",
+  "repositories": [
+    {
+      "repo": "citrolabs/ego-lite",
+      "commit": "12407167f84a58af24044f072868051952131491",
+      "archiveSha256": "abf0e04c072eadf05266ec06ef35d3aaea5cdb96587dac7b3eab088b98300537",
+      "archiveBytes": 3224166,
+      "fileCount": 283,
+      "licensePaths": [
+        "ego-lite-12407167f84a58af24044f072868051952131491/.github/star-history/FONT-LICENSE.txt",
+        "ego-lite-12407167f84a58af24044f072868051952131491/LICENSE",
+        "ego-lite-12407167f84a58af24044f072868051952131491/package/ego-browser/src/update-notice.test.mjs",
+        "ego-lite-12407167f84a58af24044f072868051952131491/package/ego-browser/src/update-notice.ts",
+        "ego-lite-12407167f84a58af24044f072868051952131491/plugins/ego/LICENSE"
+      ],
+      "submodulesFile": [],
+      "url": "https://codeload.github.com/citrolabs/ego-lite/zip/12407167f84a58af24044f072868051952131491",
+      "checkedOutSourceRoot": "build\\research-sources\\ego-lite-12407167f84a58af24044f072868051952131491",
+      "binarySourceMatchVerified": false,
+      "gitTreeSha": "12407167f84a58af24044f072868051952131491",
+      "gitlinks": [],
+      "treeTruncated": false,
+      "reviewedFiles": [
+        {
+          "path": "LICENSE",
+          "bytes": 1066,
+          "sha256": "325b6f26ca9452fcfb81cc6f52e3889573a7c141e9d07ab35f678b7d95d48e52"
+        },
+        {
+          "path": "README.md",
+          "bytes": 11462,
+          "sha256": "22ea6e93f9bf19f74561a1e7fb71e2de06dbf0d2f96a33bfda81c926a78fa5c2"
+        },
+        {
+          "path": "package/ego-browser/package.json",
+          "bytes": 1351,
+          "sha256": "65d251dfe992cccf54049ec9b3d061984243c157b57d36bd1bf7eb4785db4906"
+        },
+        {
+          "path": "docs/local-runtime-development.md",
+          "bytes": 3424,
+          "sha256": "57f565c376e31c6638e23c0373a75b55e7f275afa3d23de61250773dc00dab05"
+        },
+        {
+          "path": "docs/native-bindings-api.md",
+          "bytes": 24171,
+          "sha256": "101f7ea43b4034b219d870a66cc2d132f1e24d006c42fb551996acdda1b0b202"
+        }
+      ],
+      "reusedInProduct": false,
+      "conclusion": "MIT harness only; separate native runtime is not included; no direct source integration"
+    },
+    {
+      "repo": "sheying2013/OpenBrowser",
+      "commit": "618d283f955e31e1e478a26e19eaf4873b818870",
+      "archiveSha256": "72fd41d7517ba37d8d98ef21a85aee565b242cc7e03e4a2b7e72d29b8b8c9181",
+      "archiveBytes": 32026519,
+      "fileCount": 6961,
+      "licensePaths": [
+        "OpenBrowser-618d283f955e31e1e478a26e19eaf4873b818870/Browserapp/LICENSE.chrome-power.txt",
+        "OpenBrowser-618d283f955e31e1e478a26e19eaf4873b818870/Browserapp/THIRD-PARTY-NOTICES.md",
+        "OpenBrowser-618d283f955e31e1e478a26e19eaf4873b818870/Browserapp/kernels/macos-x64/chrome_148/openbrowser_148/OpenBrowser.app/Contents/Frameworks/HubStudio Framework.framework/Versions/148.0.7778.165/Libraries/WidevineCdm/LICENSE",
+        "OpenBrowser-618d283f955e31e1e478a26e19eaf4873b818870/LICENSE"
+      ],
+      "submodulesFile": [],
+      "url": "https://codeload.github.com/sheying2013/OpenBrowser/zip/618d283f955e31e1e478a26e19eaf4873b818870",
+      "checkedOutSourceRoot": "build\\research-sources\\OpenBrowser-618d283f955e31e1e478a26e19eaf4873b818870",
+      "binarySourceMatchVerified": false,
+      "gitTreeSha": "618d283f955e31e1e478a26e19eaf4873b818870",
+      "gitlinks": [],
+      "treeTruncated": false,
+      "reviewedFiles": [
+        {
+          "path": "LICENSE",
+          "bytes": 1081,
+          "sha256": "2131f74426e393be1855ef93053248dc2a0272f4e9c701dad81fafe4a620a3cc"
+        },
+        {
+          "path": "README.md",
+          "bytes": 7125,
+          "sha256": "1d5cc2156b175363424f6f4c135fd01c935b0b7b655ba8d52ff645a319a0adb3"
+        },
+        {
+          "path": "Browserapp/THIRD-PARTY-NOTICES.md",
+          "bytes": 1321,
+          "sha256": "0067394715d44bdab2896e656d06159904b2c2515f77abbdfc9ee2b9cf6c1ece"
+        },
+        {
+          "path": "Browserapp/LICENSE.chrome-power.txt",
+          "bytes": 34522,
+          "sha256": "4df3c306dddaaf4baffdff5ca820cc679ac8cd6dc263c6a74517783e42fa7a3b"
+        },
+        {
+          "path": "Browserapp/native-input-mirror.cs",
+          "bytes": 42052,
+          "sha256": "4f4a8c50174714cdcc2953b1f934f8a6545abac19c780a7eb0466418de1417b2"
+        },
+        {
+          "path": "Cargo.toml",
+          "bytes": 72,
+          "sha256": "63731465e40a1caea07d203c82b1e53f0b47298df2a74eb1fd0533bfab2d3de7"
+        }
+      ],
+      "reusedInProduct": false,
+      "conclusion": "Root MIT is not sufficient: native-input-mirror.cs derives from AGPL-3.0 chrome-power; exclude upstream native input and packaged kernels from product"
+    },
+    {
+      "repo": "adryfish/fingerprint-chromium",
+      "commit": "698a1002bd54c021ac2001cc6298bbc45826dcbb",
+      "archiveSha256": "b9b2803535107af9de5f14b852572f037d681c4d06d794abdb2293aa8cc29016",
+      "archiveBytes": 281397,
+      "fileCount": 5,
+      "licensePaths": [
+        "fingerprint-chromium-698a1002bd54c021ac2001cc6298bbc45826dcbb/LICENSE"
+      ],
+      "submodulesFile": [],
+      "url": "https://codeload.github.com/adryfish/fingerprint-chromium/zip/698a1002bd54c021ac2001cc6298bbc45826dcbb",
+      "checkedOutSourceRoot": "build\\research-sources\\fingerprint-chromium-698a1002bd54c021ac2001cc6298bbc45826dcbb",
+      "binarySourceMatchVerified": false,
+      "gitTreeSha": "698a1002bd54c021ac2001cc6298bbc45826dcbb",
+      "gitlinks": [],
+      "treeTruncated": false,
+      "reviewedFiles": [
+        {
+          "path": "LICENSE",
+          "bytes": 1543,
+          "sha256": "8114c6a80331b11081dcccf6007f97cc53e811452a03412ad1b839f3e8caa55b"
+        },
+        {
+          "path": "README.md",
+          "bytes": 23491,
+          "sha256": "e25f37ced648d99cd43316312ddb999a1bdf4dc1fad19373c43db08d7c964477"
+        }
+      ],
+      "reusedInProduct": false,
+      "conclusion": "Pinned main commit has documentation/license/image only; no matching modern engine source. Reject as a build/runtime dependency, retain research only"
+    }
+  ],
+  "productionReuse": [],
+  "kernelBinarySourceMatchVerified": false,
+  "acceptedRuntime": "Official Chrome for Testing used as test-only external binary; no redistribution approval claimed"
+}

@@ -1,0 +1,45 @@
+-- Configuring done
+-- Generating done
+-- Build files have been written to: E:/project/webexploer_codex/build/vs2019-x64
+用于 .NET Framework 的 Microsoft (R) 生成引擎版本 16.11.6+a918ceb31
+版权所有(C) Microsoft Corporation。保留所有权利。
+
+  awb_sqlite.vcxproj -> E:\project\webexploer_codex\build\vs2019-x64\Debug\awb_sqlite.lib
+  workflow.cpp
+  awb_core.vcxproj -> E:\project\webexploer_codex\build\vs2019-x64\Debug\awb_core.lib
+  awb-storage-tests.vcxproj -> E:\project\webexploer_codex\build\vs2019-x64\Debug\awb-storage-tests.exe
+  workbench-mcp.vcxproj -> E:\project\webexploer_codex\build\vs2019-x64\Debug\workbench-mcp.exe
+  workbench-cli.vcxproj -> E:\project\webexploer_codex\build\vs2019-x64\Debug\workbench-cli.exe
+  workbench.vcxproj -> E:\project\webexploer_codex\build\vs2019-x64\Debug\workbench.exe
+  awb-core-tests.vcxproj -> E:\project\webexploer_codex\build\vs2019-x64\Debug\awb-core-tests.exe
+Internal ctest changing into directory: E:/project/webexploer_codex/build/vs2019-x64
+Test project E:/project/webexploer_codex/build/vs2019-x64
+    Start 1: core
+1/3 Test #1: core .............................   Passed    0.86 sec
+    Start 2: storage
+2/3 Test #2: storage ..........................   Passed    3.58 sec
+    Start 3: win32-shell
+3/3 Test #3: win32-shell ......................   Passed    0.61 sec
+
+100% tests passed, 0 tests failed out of 3
+
+Total Test time (real) =   5.06 sec
+{"result": "passed", "commands": 124, "report": "E:\\project\\webexploer_codex\\build\\evidence\\run-20261104-140210\\Debug-browser\\report.json"}
+{"result": "passed", "report": "E:\\project\\webexploer_codex\\build\\evidence\\run-20261104-140210\\Debug-proxy\\report.json"}
+{"result": "passed", "checks": 6, "report": "E:\\project\\webexploer_codex\\build\\evidence\\run-20261104-140210\\Debug-lifecycle\\report.json"}
+{"result": "passed", "checks": 4, "report": "E:\\project\\webexploer_codex\\build\\evidence\\run-20261104-140210\\Debug-recovery\\report.json"}
+{"result": "passed", "report": "E:\\project\\webexploer_codex\\build\\evidence\\run-20261104-140210\\Debug-socks\\report.json"}
+{"result": "passed", "report": "E:\\project\\webexploer_codex\\build\\evidence\\run-20261104-140210\\Debug-runtime\\report.json"}
+{"result": "passed", "requests": 80, "report": "E:\\project\\webexploer_codex\\build\\evidence\\run-20261104-140210\\Debug-api\\report.json"}
+{"result": "passed", "checks": 6, "report": "E:\\project\\webexploer_codex\\build\\evidence\\run-20261104-140210\\Debug-pages\\report.json"}
+{"result": "passed", "checks": 6, "error": null}
+{"result": "passed", "flows": 20, "negativeCases": 34, "checks": 12, "error": null}
+{"result": "passed", "checks": 18, "failures": []}
+Traceback (most recent call last):
+  File "E:\project\webexploer_codex\tests\integration_mcp.py", line 14, in <module>
+    from integration_workflow import definition, scenarios
+  File "E:\project\webexploer_codex\tests\integration_workflow.py", line 13, in <module>
+    from integration_browser import Client, FixtureServer
+  File "E:\project\webexploer_codex\tests\integration_browser.py", line 14, in <module>
+    from PIL import Image
+ModuleNotFoundError: No module named 'PIL'

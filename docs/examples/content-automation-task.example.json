@@ -1,0 +1,70 @@
+{
+  "documentType": "content-automation-task-design",
+  "schemaVersion": "design-0.1",
+  "executionStatus": "design-only-not-executable-by-current-workflow-engine",
+  "date": "2026-11-04",
+  "taskId": "content-example-001",
+  "site": {
+    "origin": "https://content.example.test",
+    "profileReference": "REPLACE_WITH_ACTUAL_PROFILE_ID",
+    "expectedAccountAlias": "author-test"
+  },
+  "publish": {
+    "enabled": true,
+    "mode": "auto-publish",
+    "draftReference": "draft://local/article-001",
+    "draftRevision": 1,
+    "expectedTitle": "示例文章标题（替换为准备稿件标题）",
+    "category": "产品动态",
+    "visibility": "public",
+    "successRequires": "verified-public-detail-with-correct-author-and-content-revision"
+  },
+  "search": {
+    "enabled": true,
+    "keywords": ["浏览器自动化"],
+    "filters": { "sort": "latest" },
+    "maxPages": 3,
+    "maxResults": 20,
+    "outputFields": ["articleId", "title", "url", "author", "publishedAt", "summary"],
+    "deduplicateBy": ["site-article-id", "identity-preserving-canonical-url"]
+  },
+  "interaction": {
+    "mode": "explicit-targets",
+    "maxTargets": 2,
+    "targets": [
+      {
+        "articleId": "EXAMPLE_ARTICLE_A",
+        "url": "https://content.example.test/articles/EXAMPLE_ARTICLE_A",
+        "actions": [
+          { "type": "set-liked", "desiredState": true, "ifAlreadySatisfied": "skip" },
+          { "type": "comment", "text": "这里替换为对该篇文章准备好的评论。" }
+        ]
+      },
+      {
+        "articleId": "EXAMPLE_ARTICLE_B",
+        "url": "https://content.example.test/articles/EXAMPLE_ARTICLE_B",
+        "actions": [
+          {
+            "type": "reply",
+            "parentCommentId": "EXAMPLE_PARENT_COMMENT",
+            "text": "这里替换为针对该条父评论准备好的回复。"
+          }
+        ]
+      }
+    ]
+  },
+  "executionPolicy": {
+    "maxDurationSeconds": 120,
+    "minimumActionIntervalSeconds": 3,
+    "onUnknownBusinessOutcome": "reconcile-before-any-new-submission",
+    "onUnsupportedCapability": "stop-and-report-missing-capability",
+    "onRateLimitOrAuthenticationFailure": "stop-and-report",
+    "cancelBehavior": "stop-future-actions-without-implicit-business-rollback"
+  },
+  "notes": [
+    "这是任务配置草案，不是DSL1.0，也不是page_batch输入；当前程序不能直接执行。",
+    "示例域名、文章ID、环境引用和稿件引用均需替换，不能当作可用资源。",
+    "搜索结果不会自动加入explicit-targets；需由用户选择或明确配置筛选规则。",
+    "稿件加载、列表采集、富文本适配和业务回执执行层仍待开发。"
+  ]
+}

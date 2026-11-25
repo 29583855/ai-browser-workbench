@@ -1,0 +1,216 @@
+{
+  "date": "2026-11-04",
+  "result": "passed",
+  "errors": [],
+  "ownSourceFiles": 41,
+  "chineseDatedCppAnnotations": 263,
+  "files": [
+    {
+      "path": "include/awb/browser.hpp",
+      "sha256": "1cdcda0de1375504d33ffa7042018a2e6e0da2c7bfa7f1ed206a8d392e965f5b",
+      "bytes": 5263
+    },
+    {
+      "path": "include/awb/catalog.hpp",
+      "sha256": "d0f52f9300316cba52441f26ba4188229fa2059629f2c9bb3134c91ff3c9369f",
+      "bytes": 2242
+    },
+    {
+      "path": "include/awb/local_api.hpp",
+      "sha256": "9c4c7a894c3e74b215c067e6be8593b88e7fab1c50a528abbb86abc30fae1064",
+      "bytes": 280
+    },
+    {
+      "path": "include/awb/platform.hpp",
+      "sha256": "f799d84122df9dc101605f54ac9b3134114e7dc5ed34aaa44ec58e3e6e738901",
+      "bytes": 3253
+    },
+    {
+      "path": "include/awb/service.hpp",
+      "sha256": "90277862ce5ec250b27a8d023b118203d43324be7530f9f9f97e9a385c146d7a",
+      "bytes": 2193
+    },
+    {
+      "path": "include/awb/version.hpp",
+      "sha256": "f7db0de80d4959f38c2f66e42b8cd93f6da696efb1e59f92964a0c740208f2e6",
+      "bytes": 178
+    },
+    {
+      "path": "src/browser/browser.cpp",
+      "sha256": "415ca3ff1329c3de1bdea4128e86f99b65f764028940fb24e3048dd6f94c9283",
+      "bytes": 37747
+    },
+    {
+      "path": "src/cli/main.cpp",
+      "sha256": "7b9aa96f496a10e3fa3773d5a6653853bac20ef40ffc1d452b593089acdc047c",
+      "bytes": 3097
+    },
+    {
+      "path": "src/core/catalog.cpp",
+      "sha256": "e143ee1ed5b405cb38def4ca9973d13bd769bf9e78ad9d6675f1f692a91cd1b6",
+      "bytes": 33259
+    },
+    {
+      "path": "src/core/local_api.cpp",
+      "sha256": "37344faa895381ceb53729a55e400fd78d4a2d8ecde79a707587106bd7d5eb1f",
+      "bytes": 22109
+    },
+    {
+      "path": "src/core/service.cpp",
+      "sha256": "8b2aa09932ca5718daa015cf3a03532ba1ef59e69c95f99b878ca753c1a5f8eb",
+      "bytes": 24813
+    },
+    {
+      "path": "src/mcp/main.cpp",
+      "sha256": "e9b95869d445b5c31805582150bcacfb957b2f53737dfce40bfa5a23fd534312",
+      "bytes": 5688
+    },
+    {
+      "path": "src/platform/windows/platform.cpp",
+      "sha256": "23cb108e31ddd9a43a42b5dacb2fa244b8ad555901d2d142029016207f3d1f5e",
+      "bytes": 18041
+    },
+    {
+      "path": "src/ui/main.cpp",
+      "sha256": "aefc022031d2658af88e7887ff1126527254eec1d96b53578b33b0c48246336a",
+      "bytes": 22566
+    },
+    {
+      "path": "tests/core_tests.cpp",
+      "sha256": "b876523e17822db0367dc4b100053d590587e30f55cadb449dd6ea2a9715ddb1",
+      "bytes": 10883
+    },
+    {
+      "path": "tests/fixtures/fixture.js",
+      "sha256": "3d4e738e46f4ebc1ef18e5eb365d56b9a16c1b062a53275cf687aea46863f5fa",
+      "bytes": 5738
+    },
+    {
+      "path": "tests/fixtures/http_proxy.py",
+      "sha256": "8654471fa16cddc5ff4d1bd5da2d1c7d27ac9c605a1c45997c4cbe592bd77d80",
+      "bytes": 2177
+    },
+    {
+      "path": "tests/fixtures/socks_proxy.py",
+      "sha256": "deaf7691836150461bf88d6411bb1500f38f4e892bb35584912f2ebc79bd13f7",
+      "bytes": 3921
+    },
+    {
+      "path": "tests/fixtures/sw.js",
+      "sha256": "f4dc80c0a6a4ff05eb66eae68abaaa9b8eb269695bc6d6c99521a16d4cd72d3b",
+      "bytes": 321
+    },
+    {
+      "path": "tests/fixtures/web_app.py",
+      "sha256": "a207321a8ea71abc3126f1d04fd469b650d8494f887d6db683d6b5dac7da3c9a",
+      "bytes": 11438
+    },
+    {
+      "path": "tests/integration_api.py",
+      "sha256": "80b32c8d7e57f6a4237f19d96b32202c28373465125affddd995748ed5d49755",
+      "bytes": 14160
+    },
+    {
+      "path": "tests/integration_browser.py",
+      "sha256": "3dc83a3ff0df0d4a44c78ea4169757b6b6c1d989e19855b004aed0b28cfcc8be",
+      "bytes": 20081
+    },
+    {
+      "path": "tests/integration_desktop.py",
+      "sha256": "817ed38a8e7bbc5e8689ec9bc45e5d0d80e1d9852cb7257698648bd0af40d68c",
+      "bytes": 12776
+    },
+    {
+      "path": "tests/integration_lifecycle.py",
+      "sha256": "b08af78495ec7f79c088498a0560a5309efb4e3e2dc09362f9ecb4a9f7509907",
+      "bytes": 7805
+    },
+    {
+      "path": "tests/integration_mcp.py",
+      "sha256": "2da79bb97e5c6c99183024a6f7194901c4ff2e86cfd4803579599ad0553e12cb",
+      "bytes": 3610
+    },
+    {
+      "path": "tests/integration_package.py",
+      "sha256": "84daf5166b92e4b20bf30e88653d8867dea7362e39e9b1712755118a2bd80f3f",
+      "bytes": 11617
+    },
+    {
+      "path": "tests/integration_protocol.py",
+      "sha256": "975b41cbb9e9aeafa27371b5750896c6ea1095db75c33f2d1124f720565d9d03",
+      "bytes": 5411
+    },
+    {
+      "path": "tests/integration_proxy.py",
+      "sha256": "c5ecb441bdb7b0811246d1ccbe359c641317b47a6c2feb86f471647a58539026",
+      "bytes": 3539
+    },
+    {
+      "path": "tests/integration_recovery.py",
+      "sha256": "caa5adb65ea4d093a1cd10f3dea1178e421af7a6790145208dc95798ecfa65c6",
+      "bytes": 6490
+    },
+    {
+      "path": "tests/integration_runtime.py",
+      "sha256": "92e9dc59bc0920f7de5962b4d37b4b550e744c82d55d7e95898ae9136f976537",
+      "bytes": 5165
+    },
+    {
+      "path": "tests/integration_socks.py",
+      "sha256": "6434dc608e4a974e3cf2d5e554241ca627b2c2ec0ab7ea7a68559df724206477",
+      "bytes": 4567
+    },
+    {
+      "path": "tests/record_cdp.mjs",
+      "sha256": "34166c3a8f840c29100c70f8a23c5798ee9429d04018dcb3a138c69bc5102117",
+      "bytes": 5898
+    },
+    {
+      "path": "tests/storage_tests.cpp",
+      "sha256": "839412162108b86baf8c5d4b6844f538ac53baa6417853e9cc38f230a9ad56fc",
+      "bytes": 33685
+    },
+    {
+      "path": "tools/audit_source.py",
+      "sha256": "45594769b093df197bf5170b2ecf603efc4afb655d4c436f4118291a0fecbe1e",
+      "bytes": 5051
+    },
+    {
+      "path": "tools/build-vs2019.ps1",
+      "sha256": "88768bafb56a6e9421b00da5aaa662a538f043f7cad3e0cf07561581791e7783",
+      "bytes": 2372
+    },
+    {
+      "path": "tools/build.ps1",
+      "sha256": "033ed5d382bfa82d25ddcdba029f9d19fccd3d4d180695db7a618693412b089e",
+      "bytes": 4475
+    },
+    {
+      "path": "tools/package-portable.ps1",
+      "sha256": "a4eaf6ac8e87c23589a9c1531e6448fd83066b0a06ad907d6ee8b86073e3c977",
+      "bytes": 1459
+    },
+    {
+      "path": "tools/package_portable.py",
+      "sha256": "1272502033ddbdce79bdf30e9ab038ce0ad541c2e5f5e8a9b8b8bcb761d64205",
+      "bytes": 8922
+    },
+    {
+      "path": "tools/portable/Self-Test.ps1",
+      "sha256": "bfff104b36d72199b8f96f2ce55cb93662b970d45a174fcf133c6ed97f171085",
+      "bytes": 11264
+    },
+    {
+      "path": "tools/portable/Smoke-Server.ps1",
+      "sha256": "4bc58babe5052ed9d2e4ec0921ea18e67be4648813dee93cb2a48225ddc53caf",
+      "bytes": 3089
+    },
+    {
+      "path": "tools/verify_progress.py",
+      "sha256": "6100477317f359083f1c433bcfe9e173dd96a7bde4d50c8c54b38f0b0b033a4b",
+      "bytes": 4000
+    }
+  ],
+  "placeholderMarkersFound": 0,
+  "scope": "Static source check only; full feature completion requires task acceptance evidence"
+}

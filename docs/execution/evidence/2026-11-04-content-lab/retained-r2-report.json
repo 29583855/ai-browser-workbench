@@ -1,0 +1,228 @@
+{
+  "date": "2026-11-04",
+  "result": "failed",
+  "checks": [
+    "registration-duplicate-and-wrong-password"
+  ],
+  "workflows": [],
+  "origin": "http://127.0.0.1:49643",
+  "method": "real managed Chromium through existing C++ CLI; database readback only",
+  "binarySha256": "d8a0473a0ae63f7f90796a38151acdcacdc97f47439e035b53f01117df4b88c3",
+  "workflowSha256": "6e0d5765e7213ee45118f32f82352af138818a002037ee9d3c9e14b0d012ac29",
+  "privateRuntimeDataPublished": false,
+  "errorType": "ToolError",
+  "lastCommands": [
+    {
+      "sequence": 26,
+      "command": "page_locate",
+      "result": "passed"
+    },
+    {
+      "sequence": 27,
+      "command": "page_fill",
+      "result": "passed"
+    },
+    {
+      "sequence": 28,
+      "command": "page_locate",
+      "result": "passed"
+    },
+    {
+      "sequence": 29,
+      "command": "page_click",
+      "result": "passed"
+    },
+    {
+      "sequence": 30,
+      "command": "page_wait_text",
+      "result": "passed"
+    },
+    {
+      "sequence": 31,
+      "command": "page_wait_text",
+      "result": "passed"
+    },
+    {
+      "sequence": 32,
+      "command": "workflow_validate",
+      "result": "passed"
+    },
+    {
+      "sequence": 33,
+      "command": "workflow_publish",
+      "result": "WORKFLOW_INVALID"
+    }
+  ],
+  "commands": [
+    {
+      "sequence": 1,
+      "command": "profile_create",
+      "result": "passed"
+    },
+    {
+      "sequence": 2,
+      "command": "browser_start",
+      "result": "passed"
+    },
+    {
+      "sequence": 3,
+      "command": "lease_acquire",
+      "result": "passed"
+    },
+    {
+      "sequence": 4,
+      "command": "browser_navigate",
+      "result": "passed"
+    },
+    {
+      "sequence": 5,
+      "command": "page_wait_text",
+      "result": "passed"
+    },
+    {
+      "sequence": 6,
+      "command": "page_locate",
+      "result": "passed"
+    },
+    {
+      "sequence": 7,
+      "command": "page_fill",
+      "result": "passed"
+    },
+    {
+      "sequence": 8,
+      "command": "page_locate",
+      "result": "passed"
+    },
+    {
+      "sequence": 9,
+      "command": "page_fill",
+      "result": "passed"
+    },
+    {
+      "sequence": 10,
+      "command": "page_locate",
+      "result": "passed"
+    },
+    {
+      "sequence": 11,
+      "command": "page_click",
+      "result": "passed"
+    },
+    {
+      "sequence": 12,
+      "command": "page_locate",
+      "result": "passed"
+    },
+    {
+      "sequence": 13,
+      "command": "page_text",
+      "result": "passed"
+    },
+    {
+      "sequence": 14,
+      "command": "page_locate",
+      "result": "passed"
+    },
+    {
+      "sequence": 15,
+      "command": "page_text",
+      "result": "passed"
+    },
+    {
+      "sequence": 16,
+      "command": "page_locate",
+      "result": "passed"
+    },
+    {
+      "sequence": 17,
+      "command": "page_fill",
+      "result": "passed"
+    },
+    {
+      "sequence": 18,
+      "command": "page_locate",
+      "result": "passed"
+    },
+    {
+      "sequence": 19,
+      "command": "page_fill",
+      "result": "passed"
+    },
+    {
+      "sequence": 20,
+      "command": "page_locate",
+      "result": "passed"
+    },
+    {
+      "sequence": 21,
+      "command": "page_click",
+      "result": "passed"
+    },
+    {
+      "sequence": 22,
+      "command": "page_locate",
+      "result": "passed"
+    },
+    {
+      "sequence": 23,
+      "command": "page_text",
+      "result": "passed"
+    },
+    {
+      "sequence": 24,
+      "command": "page_locate",
+      "result": "passed"
+    },
+    {
+      "sequence": 25,
+      "command": "page_text",
+      "result": "passed"
+    },
+    {
+      "sequence": 26,
+      "command": "page_locate",
+      "result": "passed"
+    },
+    {
+      "sequence": 27,
+      "command": "page_fill",
+      "result": "passed"
+    },
+    {
+      "sequence": 28,
+      "command": "page_locate",
+      "result": "passed"
+    },
+    {
+      "sequence": 29,
+      "command": "page_click",
+      "result": "passed"
+    },
+    {
+      "sequence": 30,
+      "command": "page_wait_text",
+      "result": "passed"
+    },
+    {
+      "sequence": 31,
+      "command": "page_wait_text",
+      "result": "passed"
+    },
+    {
+      "sequence": 32,
+      "command": "workflow_validate",
+      "result": "passed"
+    },
+    {
+      "sequence": 33,
+      "command": "workflow_publish",
+      "result": "WORKFLOW_INVALID"
+    },
+    {
+      "sequence": 34,
+      "command": "browser_stop",
+      "result": "passed"
+    }
+  ]
+}

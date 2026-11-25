@@ -1,0 +1,45 @@
+{
+  "date": "2026-11-04",
+  "result": "passed",
+  "checks": [
+    "flow_recovery:passed",
+    "visual_desktop:passed",
+    "recording:passed",
+    "mcp:passed",
+    "protocol:passed"
+  ],
+  "suites": [
+    {
+      "suite": "flow_recovery",
+      "result": "passed",
+      "report": "build\\evidence\\visual-rpa-package-behavior-r2\\flow_recovery\\report.json",
+      "checks": 6
+    },
+    {
+      "suite": "visual_desktop",
+      "result": "passed",
+      "report": "build\\evidence\\visual-rpa-package-behavior-r2\\visual_desktop\\report.json",
+      "checks": 4
+    },
+    {
+      "suite": "recording",
+      "result": "passed",
+      "report": "build\\evidence\\visual-rpa-package-behavior-r2\\recording\\report.json",
+      "checks": 11
+    },
+    {
+      "suite": "mcp",
+      "result": "passed",
+      "report": "build\\evidence\\visual-rpa-package-behavior-r2\\mcp\\report.json",
+      "tools": 50
+    },
+    {
+      "suite": "protocol",
+      "result": "passed",
+      "report": "build\\evidence\\visual-rpa-package-behavior-r2\\protocol\\report.json",
+      "checks": 24
+    }
+  ],
+  "secondCleanMachineTested": false,
+  "pristineManifestFiles": 1627
+}

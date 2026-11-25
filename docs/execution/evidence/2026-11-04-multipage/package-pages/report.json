@@ -1,0 +1,1115 @@
+{
+  "date": "2026-11-04T11:51:57.421906+08:00",
+  "result": "passed",
+  "checks": [
+    "independent-sessions-blank-page-runtime-origin-and-stale-references",
+    "popup-adoption-foreign-origin-exclusion-and-profile-boundary",
+    "event-pagination-no-duplicates-overflow-gap-and-no-page-secrets",
+    "real-timeout-explicit-reconnect-preserves-pages-no-business-replay",
+    "explicit-32-page-budget-and-close-reclaims-capacity",
+    "lease-fencing-close-last-reopen-and-instance-cursor-reset"
+  ],
+  "binarySha256": "bbc65d6258ea1cc0a26e2973c100e507fe48792a534aea8250cba6d4df65af8b",
+  "commands": [
+    {
+      "sequence": 1,
+      "command": "profile_create",
+      "outcome": "passed"
+    },
+    {
+      "sequence": 2,
+      "command": "browser_start",
+      "outcome": "passed"
+    },
+    {
+      "sequence": 3,
+      "command": "lease_acquire",
+      "outcome": "passed"
+    },
+    {
+      "sequence": 4,
+      "command": "page_list",
+      "outcome": "passed"
+    },
+    {
+      "sequence": 5,
+      "command": "page_open",
+      "outcome": "passed"
+    },
+    {
+      "sequence": 6,
+      "command": "page_close",
+      "outcome": "passed"
+    },
+    {
+      "sequence": 7,
+      "command": "browser_navigate",
+      "outcome": "passed"
+    },
+    {
+      "sequence": 8,
+      "command": "page_locate",
+      "outcome": "passed"
+    },
+    {
+      "sequence": 9,
+      "command": "page_open",
+      "outcome": "passed"
+    },
+    {
+      "sequence": 10,
+      "command": "page_locate",
+      "outcome": "passed"
+    },
+    {
+      "sequence": 11,
+      "command": "page_text",
+      "outcome": "passed"
+    },
+    {
+      "sequence": 12,
+      "command": "page_text",
+      "outcome": "STALE_ELEMENT_REFERENCE"
+    },
+    {
+      "sequence": 13,
+      "command": "page_switch",
+      "outcome": "passed"
+    },
+    {
+      "sequence": 14,
+      "command": "page_text",
+      "outcome": "STALE_ELEMENT_REFERENCE"
+    },
+    {
+      "sequence": 15,
+      "command": "page_locate",
+      "outcome": "passed"
+    },
+    {
+      "sequence": 16,
+      "command": "page_text",
+      "outcome": "passed"
+    },
+    {
+      "sequence": 17,
+      "command": "page_open",
+      "outcome": "ORIGIN_DENIED"
+    },
+    {
+      "sequence": 18,
+      "command": "page_list",
+      "outcome": "passed"
+    },
+    {
+      "sequence": 19,
+      "command": "profile_create",
+      "outcome": "passed"
+    },
+    {
+      "sequence": 20,
+      "command": "browser_start",
+      "outcome": "passed"
+    },
+    {
+      "sequence": 21,
+      "command": "lease_acquire",
+      "outcome": "passed"
+    },
+    {
+      "sequence": 22,
+      "command": "page_switch",
+      "outcome": "PAGE_NOT_FOUND"
+    },
+    {
+      "sequence": 23,
+      "command": "browser_stop",
+      "outcome": "passed"
+    },
+    {
+      "sequence": 24,
+      "command": "page_locate",
+      "outcome": "passed"
+    },
+    {
+      "sequence": 25,
+      "command": "page_click",
+      "outcome": "passed"
+    },
+    {
+      "sequence": 26,
+      "command": "page_list",
+      "outcome": "passed"
+    },
+    {
+      "sequence": 27,
+      "command": "page_list",
+      "outcome": "passed"
+    },
+    {
+      "sequence": 28,
+      "command": "page_switch",
+      "outcome": "passed"
+    },
+    {
+      "sequence": 29,
+      "command": "browser_status",
+      "outcome": "passed"
+    },
+    {
+      "sequence": 30,
+      "command": "page_switch",
+      "outcome": "passed"
+    },
+    {
+      "sequence": 31,
+      "command": "page_locate",
+      "outcome": "passed"
+    },
+    {
+      "sequence": 32,
+      "command": "page_click",
+      "outcome": "passed"
+    },
+    {
+      "sequence": 33,
+      "command": "page_list",
+      "outcome": "passed"
+    },
+    {
+      "sequence": 34,
+      "command": "browser_events",
+      "outcome": "passed"
+    },
+    {
+      "sequence": 35,
+      "command": "browser_events",
+      "outcome": "passed"
+    },
+    {
+      "sequence": 36,
+      "command": "browser_events",
+      "outcome": "passed"
+    },
+    {
+      "sequence": 37,
+      "command": "browser_events",
+      "outcome": "passed"
+    },
+    {
+      "sequence": 38,
+      "command": "browser_events",
+      "outcome": "passed"
+    },
+    {
+      "sequence": 39,
+      "command": "browser_events",
+      "outcome": "passed"
+    },
+    {
+      "sequence": 40,
+      "command": "browser_events",
+      "outcome": "EVENT_CURSOR_INVALID"
+    },
+    {
+      "sequence": 41,
+      "command": "browser_events",
+      "outcome": "EVENT_CURSOR_INVALID"
+    },
+    {
+      "sequence": 42,
+      "command": "browser_navigate",
+      "outcome": "passed"
+    },
+    {
+      "sequence": 43,
+      "command": "browser_navigate",
+      "outcome": "passed"
+    },
+    {
+      "sequence": 44,
+      "command": "browser_navigate",
+      "outcome": "passed"
+    },
+    {
+      "sequence": 45,
+      "command": "browser_navigate",
+      "outcome": "passed"
+    },
+    {
+      "sequence": 46,
+      "command": "browser_navigate",
+      "outcome": "passed"
+    },
+    {
+      "sequence": 47,
+      "command": "browser_navigate",
+      "outcome": "passed"
+    },
+    {
+      "sequence": 48,
+      "command": "browser_navigate",
+      "outcome": "passed"
+    },
+    {
+      "sequence": 49,
+      "command": "browser_navigate",
+      "outcome": "passed"
+    },
+    {
+      "sequence": 50,
+      "command": "browser_navigate",
+      "outcome": "passed"
+    },
+    {
+      "sequence": 51,
+      "command": "browser_navigate",
+      "outcome": "passed"
+    },
+    {
+      "sequence": 52,
+      "command": "browser_navigate",
+      "outcome": "passed"
+    },
+    {
+      "sequence": 53,
+      "command": "browser_navigate",
+      "outcome": "passed"
+    },
+    {
+      "sequence": 54,
+      "command": "browser_navigate",
+      "outcome": "passed"
+    },
+    {
+      "sequence": 55,
+      "command": "browser_navigate",
+      "outcome": "passed"
+    },
+    {
+      "sequence": 56,
+      "command": "browser_navigate",
+      "outcome": "passed"
+    },
+    {
+      "sequence": 57,
+      "command": "browser_navigate",
+      "outcome": "passed"
+    },
+    {
+      "sequence": 58,
+      "command": "browser_navigate",
+      "outcome": "passed"
+    },
+    {
+      "sequence": 59,
+      "command": "browser_navigate",
+      "outcome": "passed"
+    },
+    {
+      "sequence": 60,
+      "command": "browser_navigate",
+      "outcome": "passed"
+    },
+    {
+      "sequence": 61,
+      "command": "browser_navigate",
+      "outcome": "passed"
+    },
+    {
+      "sequence": 62,
+      "command": "browser_navigate",
+      "outcome": "passed"
+    },
+    {
+      "sequence": 63,
+      "command": "browser_navigate",
+      "outcome": "passed"
+    },
+    {
+      "sequence": 64,
+      "command": "browser_navigate",
+      "outcome": "passed"
+    },
+    {
+      "sequence": 65,
+      "command": "browser_navigate",
+      "outcome": "passed"
+    },
+    {
+      "sequence": 66,
+      "command": "browser_navigate",
+      "outcome": "passed"
+    },
+    {
+      "sequence": 67,
+      "command": "browser_navigate",
+      "outcome": "passed"
+    },
+    {
+      "sequence": 68,
+      "command": "browser_navigate",
+      "outcome": "passed"
+    },
+    {
+      "sequence": 69,
+      "command": "browser_navigate",
+      "outcome": "passed"
+    },
+    {
+      "sequence": 70,
+      "command": "browser_navigate",
+      "outcome": "passed"
+    },
+    {
+      "sequence": 71,
+      "command": "browser_navigate",
+      "outcome": "passed"
+    },
+    {
+      "sequence": 72,
+      "command": "browser_navigate",
+      "outcome": "passed"
+    },
+    {
+      "sequence": 73,
+      "command": "browser_navigate",
+      "outcome": "passed"
+    },
+    {
+      "sequence": 74,
+      "command": "browser_navigate",
+      "outcome": "passed"
+    },
+    {
+      "sequence": 75,
+      "command": "browser_navigate",
+      "outcome": "passed"
+    },
+    {
+      "sequence": 76,
+      "command": "browser_navigate",
+      "outcome": "passed"
+    },
+    {
+      "sequence": 77,
+      "command": "browser_navigate",
+      "outcome": "passed"
+    },
+    {
+      "sequence": 78,
+      "command": "browser_navigate",
+      "outcome": "passed"
+    },
+    {
+      "sequence": 79,
+      "command": "browser_navigate",
+      "outcome": "passed"
+    },
+    {
+      "sequence": 80,
+      "command": "browser_navigate",
+      "outcome": "passed"
+    },
+    {
+      "sequence": 81,
+      "command": "browser_navigate",
+      "outcome": "passed"
+    },
+    {
+      "sequence": 82,
+      "command": "browser_navigate",
+      "outcome": "passed"
+    },
+    {
+      "sequence": 83,
+      "command": "browser_navigate",
+      "outcome": "passed"
+    },
+    {
+      "sequence": 84,
+      "command": "browser_navigate",
+      "outcome": "passed"
+    },
+    {
+      "sequence": 85,
+      "command": "browser_navigate",
+      "outcome": "passed"
+    },
+    {
+      "sequence": 86,
+      "command": "browser_navigate",
+      "outcome": "passed"
+    },
+    {
+      "sequence": 87,
+      "command": "browser_navigate",
+      "outcome": "passed"
+    },
+    {
+      "sequence": 88,
+      "command": "browser_navigate",
+      "outcome": "passed"
+    },
+    {
+      "sequence": 89,
+      "command": "browser_navigate",
+      "outcome": "passed"
+    },
+    {
+      "sequence": 90,
+      "command": "browser_navigate",
+      "outcome": "passed"
+    },
+    {
+      "sequence": 91,
+      "command": "browser_navigate",
+      "outcome": "passed"
+    },
+    {
+      "sequence": 92,
+      "command": "browser_navigate",
+      "outcome": "passed"
+    },
+    {
+      "sequence": 93,
+      "command": "browser_navigate",
+      "outcome": "passed"
+    },
+    {
+      "sequence": 94,
+      "command": "browser_navigate",
+      "outcome": "passed"
+    },
+    {
+      "sequence": 95,
+      "command": "browser_navigate",
+      "outcome": "passed"
+    },
+    {
+      "sequence": 96,
+      "command": "browser_navigate",
+      "outcome": "passed"
+    },
+    {
+      "sequence": 97,
+      "command": "browser_navigate",
+      "outcome": "passed"
+    },
+    {
+      "sequence": 98,
+      "command": "browser_navigate",
+      "outcome": "passed"
+    },
+    {
+      "sequence": 99,
+      "command": "browser_navigate",
+      "outcome": "passed"
+    },
+    {
+      "sequence": 100,
+      "command": "browser_navigate",
+      "outcome": "passed"
+    },
+    {
+      "sequence": 101,
+      "command": "browser_navigate",
+      "outcome": "passed"
+    },
+    {
+      "sequence": 102,
+      "command": "browser_navigate",
+      "outcome": "passed"
+    },
+    {
+      "sequence": 103,
+      "command": "browser_navigate",
+      "outcome": "passed"
+    },
+    {
+      "sequence": 104,
+      "command": "browser_navigate",
+      "outcome": "passed"
+    },
+    {
+      "sequence": 105,
+      "command": "browser_navigate",
+      "outcome": "passed"
+    },
+    {
+      "sequence": 106,
+      "command": "browser_navigate",
+      "outcome": "passed"
+    },
+    {
+      "sequence": 107,
+      "command": "browser_navigate",
+      "outcome": "passed"
+    },
+    {
+      "sequence": 108,
+      "command": "browser_navigate",
+      "outcome": "passed"
+    },
+    {
+      "sequence": 109,
+      "command": "browser_navigate",
+      "outcome": "passed"
+    },
+    {
+      "sequence": 110,
+      "command": "browser_navigate",
+      "outcome": "passed"
+    },
+    {
+      "sequence": 111,
+      "command": "browser_navigate",
+      "outcome": "passed"
+    },
+    {
+      "sequence": 112,
+      "command": "browser_navigate",
+      "outcome": "passed"
+    },
+    {
+      "sequence": 113,
+      "command": "browser_navigate",
+      "outcome": "passed"
+    },
+    {
+      "sequence": 114,
+      "command": "browser_navigate",
+      "outcome": "passed"
+    },
+    {
+      "sequence": 115,
+      "command": "browser_navigate",
+      "outcome": "passed"
+    },
+    {
+      "sequence": 116,
+      "command": "browser_navigate",
+      "outcome": "passed"
+    },
+    {
+      "sequence": 117,
+      "command": "browser_navigate",
+      "outcome": "passed"
+    },
+    {
+      "sequence": 118,
+      "command": "browser_navigate",
+      "outcome": "passed"
+    },
+    {
+      "sequence": 119,
+      "command": "browser_navigate",
+      "outcome": "passed"
+    },
+    {
+      "sequence": 120,
+      "command": "browser_navigate",
+      "outcome": "passed"
+    },
+    {
+      "sequence": 121,
+      "command": "browser_navigate",
+      "outcome": "passed"
+    },
+    {
+      "sequence": 122,
+      "command": "browser_navigate",
+      "outcome": "passed"
+    },
+    {
+      "sequence": 123,
+      "command": "browser_navigate",
+      "outcome": "passed"
+    },
+    {
+      "sequence": 124,
+      "command": "browser_navigate",
+      "outcome": "passed"
+    },
+    {
+      "sequence": 125,
+      "command": "browser_navigate",
+      "outcome": "passed"
+    },
+    {
+      "sequence": 126,
+      "command": "browser_navigate",
+      "outcome": "passed"
+    },
+    {
+      "sequence": 127,
+      "command": "browser_navigate",
+      "outcome": "passed"
+    },
+    {
+      "sequence": 128,
+      "command": "browser_navigate",
+      "outcome": "passed"
+    },
+    {
+      "sequence": 129,
+      "command": "browser_navigate",
+      "outcome": "passed"
+    },
+    {
+      "sequence": 130,
+      "command": "browser_navigate",
+      "outcome": "passed"
+    },
+    {
+      "sequence": 131,
+      "command": "browser_navigate",
+      "outcome": "passed"
+    },
+    {
+      "sequence": 132,
+      "command": "browser_events",
+      "outcome": "passed"
+    },
+    {
+      "sequence": 133,
+      "command": "browser_navigate",
+      "outcome": "passed"
+    },
+    {
+      "sequence": 134,
+      "command": "page_locate",
+      "outcome": "passed"
+    },
+    {
+      "sequence": 135,
+      "command": "page_locate",
+      "outcome": "passed"
+    },
+    {
+      "sequence": 136,
+      "command": "page_click",
+      "outcome": "ACTION_OUTCOME_UNKNOWN"
+    },
+    {
+      "sequence": 137,
+      "command": "browser_status",
+      "outcome": "passed"
+    },
+    {
+      "sequence": 138,
+      "command": "page_snapshot",
+      "outcome": "CDP_DISCONNECTED"
+    },
+    {
+      "sequence": 139,
+      "command": "browser_reconnect",
+      "outcome": "passed"
+    },
+    {
+      "sequence": 140,
+      "command": "page_text",
+      "outcome": "STALE_ELEMENT_REFERENCE"
+    },
+    {
+      "sequence": 141,
+      "command": "page_wait_text",
+      "outcome": "passed"
+    },
+    {
+      "sequence": 142,
+      "command": "browser_events",
+      "outcome": "passed"
+    },
+    {
+      "sequence": 143,
+      "command": "lease_revoke",
+      "outcome": "passed"
+    },
+    {
+      "sequence": 144,
+      "command": "page_open",
+      "outcome": "LEASE_REVOKED"
+    },
+    {
+      "sequence": 145,
+      "command": "page_close",
+      "outcome": "LEASE_REVOKED"
+    },
+    {
+      "sequence": 146,
+      "command": "browser_reconnect",
+      "outcome": "LEASE_REVOKED"
+    },
+    {
+      "sequence": 147,
+      "command": "lease_acquire",
+      "outcome": "passed"
+    },
+    {
+      "sequence": 148,
+      "command": "page_list",
+      "outcome": "passed"
+    },
+    {
+      "sequence": 149,
+      "command": "page_open",
+      "outcome": "passed"
+    },
+    {
+      "sequence": 150,
+      "command": "page_open",
+      "outcome": "passed"
+    },
+    {
+      "sequence": 151,
+      "command": "page_open",
+      "outcome": "passed"
+    },
+    {
+      "sequence": 152,
+      "command": "page_open",
+      "outcome": "passed"
+    },
+    {
+      "sequence": 153,
+      "command": "page_open",
+      "outcome": "passed"
+    },
+    {
+      "sequence": 154,
+      "command": "page_open",
+      "outcome": "passed"
+    },
+    {
+      "sequence": 155,
+      "command": "page_open",
+      "outcome": "passed"
+    },
+    {
+      "sequence": 156,
+      "command": "page_open",
+      "outcome": "passed"
+    },
+    {
+      "sequence": 157,
+      "command": "page_open",
+      "outcome": "passed"
+    },
+    {
+      "sequence": 158,
+      "command": "page_open",
+      "outcome": "passed"
+    },
+    {
+      "sequence": 159,
+      "command": "page_open",
+      "outcome": "passed"
+    },
+    {
+      "sequence": 160,
+      "command": "page_open",
+      "outcome": "passed"
+    },
+    {
+      "sequence": 161,
+      "command": "page_open",
+      "outcome": "passed"
+    },
+    {
+      "sequence": 162,
+      "command": "page_open",
+      "outcome": "passed"
+    },
+    {
+      "sequence": 163,
+      "command": "page_open",
+      "outcome": "passed"
+    },
+    {
+      "sequence": 164,
+      "command": "page_open",
+      "outcome": "passed"
+    },
+    {
+      "sequence": 165,
+      "command": "page_open",
+      "outcome": "passed"
+    },
+    {
+      "sequence": 166,
+      "command": "page_open",
+      "outcome": "passed"
+    },
+    {
+      "sequence": 167,
+      "command": "page_open",
+      "outcome": "passed"
+    },
+    {
+      "sequence": 168,
+      "command": "page_open",
+      "outcome": "passed"
+    },
+    {
+      "sequence": 169,
+      "command": "page_open",
+      "outcome": "passed"
+    },
+    {
+      "sequence": 170,
+      "command": "page_open",
+      "outcome": "passed"
+    },
+    {
+      "sequence": 171,
+      "command": "page_open",
+      "outcome": "passed"
+    },
+    {
+      "sequence": 172,
+      "command": "page_open",
+      "outcome": "passed"
+    },
+    {
+      "sequence": 173,
+      "command": "page_open",
+      "outcome": "passed"
+    },
+    {
+      "sequence": 174,
+      "command": "page_open",
+      "outcome": "passed"
+    },
+    {
+      "sequence": 175,
+      "command": "page_open",
+      "outcome": "passed"
+    },
+    {
+      "sequence": 176,
+      "command": "page_open",
+      "outcome": "passed"
+    },
+    {
+      "sequence": 177,
+      "command": "page_open",
+      "outcome": "passed"
+    },
+    {
+      "sequence": 178,
+      "command": "page_list",
+      "outcome": "passed"
+    },
+    {
+      "sequence": 179,
+      "command": "page_open",
+      "outcome": "PAGE_BUDGET_EXCEEDED"
+    },
+    {
+      "sequence": 180,
+      "command": "page_close",
+      "outcome": "passed"
+    },
+    {
+      "sequence": 181,
+      "command": "page_close",
+      "outcome": "passed"
+    },
+    {
+      "sequence": 182,
+      "command": "page_close",
+      "outcome": "passed"
+    },
+    {
+      "sequence": 183,
+      "command": "page_close",
+      "outcome": "passed"
+    },
+    {
+      "sequence": 184,
+      "command": "page_close",
+      "outcome": "passed"
+    },
+    {
+      "sequence": 185,
+      "command": "page_close",
+      "outcome": "passed"
+    },
+    {
+      "sequence": 186,
+      "command": "page_close",
+      "outcome": "passed"
+    },
+    {
+      "sequence": 187,
+      "command": "page_close",
+      "outcome": "passed"
+    },
+    {
+      "sequence": 188,
+      "command": "page_close",
+      "outcome": "passed"
+    },
+    {
+      "sequence": 189,
+      "command": "page_close",
+      "outcome": "passed"
+    },
+    {
+      "sequence": 190,
+      "command": "page_close",
+      "outcome": "passed"
+    },
+    {
+      "sequence": 191,
+      "command": "page_close",
+      "outcome": "passed"
+    },
+    {
+      "sequence": 192,
+      "command": "page_close",
+      "outcome": "passed"
+    },
+    {
+      "sequence": 193,
+      "command": "page_close",
+      "outcome": "passed"
+    },
+    {
+      "sequence": 194,
+      "command": "page_close",
+      "outcome": "passed"
+    },
+    {
+      "sequence": 195,
+      "command": "page_close",
+      "outcome": "passed"
+    },
+    {
+      "sequence": 196,
+      "command": "page_close",
+      "outcome": "passed"
+    },
+    {
+      "sequence": 197,
+      "command": "page_close",
+      "outcome": "passed"
+    },
+    {
+      "sequence": 198,
+      "command": "page_close",
+      "outcome": "passed"
+    },
+    {
+      "sequence": 199,
+      "command": "page_close",
+      "outcome": "passed"
+    },
+    {
+      "sequence": 200,
+      "command": "page_close",
+      "outcome": "passed"
+    },
+    {
+      "sequence": 201,
+      "command": "page_close",
+      "outcome": "passed"
+    },
+    {
+      "sequence": 202,
+      "command": "page_close",
+      "outcome": "passed"
+    },
+    {
+      "sequence": 203,
+      "command": "page_close",
+      "outcome": "passed"
+    },
+    {
+      "sequence": 204,
+      "command": "page_close",
+      "outcome": "passed"
+    },
+    {
+      "sequence": 205,
+      "command": "page_close",
+      "outcome": "passed"
+    },
+    {
+      "sequence": 206,
+      "command": "page_close",
+      "outcome": "passed"
+    },
+    {
+      "sequence": 207,
+      "command": "page_close",
+      "outcome": "passed"
+    },
+    {
+      "sequence": 208,
+      "command": "page_close",
+      "outcome": "passed"
+    },
+    {
+      "sequence": 209,
+      "command": "page_close",
+      "outcome": "passed"
+    },
+    {
+      "sequence": 210,
+      "command": "page_close",
+      "outcome": "passed"
+    },
+    {
+      "sequence": 211,
+      "command": "page_close",
+      "outcome": "passed"
+    },
+    {
+      "sequence": 212,
+      "command": "page_list",
+      "outcome": "passed"
+    },
+    {
+      "sequence": 213,
+      "command": "page_snapshot",
+      "outcome": "PAGE_REQUIRED"
+    },
+    {
+      "sequence": 214,
+      "command": "page_open",
+      "outcome": "passed"
+    },
+    {
+      "sequence": 215,
+      "command": "page_switch",
+      "outcome": "PAGE_NOT_FOUND"
+    },
+    {
+      "sequence": 216,
+      "command": "browser_stop",
+      "outcome": "passed"
+    },
+    {
+      "sequence": 217,
+      "command": "browser_start",
+      "outcome": "passed"
+    },
+    {
+      "sequence": 218,
+      "command": "lease_acquire",
+      "outcome": "passed"
+    },
+    {
+      "sequence": 219,
+      "command": "browser_events",
+      "outcome": "EVENT_CURSOR_INVALID"
+    },
+    {
+      "sequence": 220,
+      "command": "browser_stop",
+      "outcome": "passed"
+    }
+  ]
+}

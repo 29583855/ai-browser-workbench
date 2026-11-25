@@ -1,0 +1,753 @@
+{
+  "date": "2026-11-04T11:45:06.734241+08:00",
+  "executable": "E:\\project\\webexploer_codex\\build\\vs2019-x64\\Release\\workbench-cli.exe",
+  "binarySha256": "445438b20f6c9a8a1a465df3b858295c24acb9bd12611782fb027667e818f2e4",
+  "origin": "http://127.0.0.1:60733",
+  "scenarios": [
+    "three-profile Cookie/localStorage/IndexedDB/CacheStorage/SW isolation",
+    "AX snapshot, ambiguous/missing locator rejection, stale document refs and origin gate",
+    "revoked writer rejected, stop confirmed and persistent login after reopen",
+    "server committed once before CDP deadline; unknown action is never automatically retried",
+    "owned browser crash detected without automatic business retry",
+    "service crash closes owned browser job, releases root lock and preserves login"
+  ],
+  "result": "passed",
+  "processes": [
+    {
+      "activePageId": "12f1f8973a600f8281e8348cc3ce7502",
+      "cdpConnected": true,
+      "executable": "E:\\project\\webexploer_codex\\build\\runtime\\chrome-win64\\chrome.exe",
+      "managedPageCount": 1,
+      "ownership": "private-job-object",
+      "pid": 21992,
+      "processCreatedFileTime": 134382375067570731,
+      "running": true,
+      "runtime": {
+        "effective": {
+          "languages": [
+            "zh-CN"
+          ],
+          "timezone": "Asia/Shanghai",
+          "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/156.0.0.0 Safari/537.36"
+        },
+        "kernelFingerprintModification": false,
+        "requested": {},
+        "scope": "primary-target"
+      },
+      "version": {
+        "jsVersion": "15.6.75.27",
+        "product": "Chrome/156.0.8078.80",
+        "protocolVersion": "1.3",
+        "revision": "@fb096c0011f9d50f0a264a9376420cdea9c421e3",
+        "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/156.0.0.0 Safari/537.36"
+      }
+    },
+    {
+      "activePageId": "4cef616522f9fde2cd1953fb79393acf",
+      "cdpConnected": true,
+      "executable": "E:\\project\\webexploer_codex\\build\\runtime\\chrome-win64\\chrome.exe",
+      "managedPageCount": 1,
+      "ownership": "private-job-object",
+      "pid": 32360,
+      "processCreatedFileTime": 134382375071187133,
+      "running": true,
+      "runtime": {
+        "effective": {
+          "languages": [
+            "zh-CN"
+          ],
+          "timezone": "Asia/Shanghai",
+          "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/156.0.0.0 Safari/537.36"
+        },
+        "kernelFingerprintModification": false,
+        "requested": {},
+        "scope": "primary-target"
+      },
+      "version": {
+        "jsVersion": "15.6.75.27",
+        "product": "Chrome/156.0.8078.80",
+        "protocolVersion": "1.3",
+        "revision": "@fb096c0011f9d50f0a264a9376420cdea9c421e3",
+        "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/156.0.0.0 Safari/537.36"
+      }
+    },
+    {
+      "activePageId": "319c3676df8509bd13f7ec8eafd2ef19",
+      "cdpConnected": true,
+      "executable": "E:\\project\\webexploer_codex\\build\\runtime\\chrome-win64\\chrome.exe",
+      "managedPageCount": 1,
+      "ownership": "private-job-object",
+      "pid": 5796,
+      "processCreatedFileTime": 134382375074930492,
+      "running": true,
+      "runtime": {
+        "effective": {
+          "languages": [
+            "zh-CN"
+          ],
+          "timezone": "Asia/Shanghai",
+          "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/156.0.0.0 Safari/537.36"
+        },
+        "kernelFingerprintModification": false,
+        "requested": {},
+        "scope": "primary-target"
+      },
+      "version": {
+        "jsVersion": "15.6.75.27",
+        "product": "Chrome/156.0.8078.80",
+        "protocolVersion": "1.3",
+        "revision": "@fb096c0011f9d50f0a264a9376420cdea9c421e3",
+        "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/156.0.0.0 Safari/537.36"
+      }
+    }
+  ],
+  "screenshotSha256": "3fec6c6c1aa7ae67ea61d787ea1eeae341f618c6f1c1fb9da13dd9784bd76448",
+  "recording": {
+    "source": "CDP Page.screencastFrame",
+    "frames": 19,
+    "format": "animated GIF",
+    "durationMs": 1098,
+    "sha256": "96ac04b0e8c5eeebf16192f71c24083ad0ab3dda28bd5beef654382f79a7458d",
+    "domProbe": {
+      "browserTargetObserved": true,
+      "shadowRootTypes": [
+        "closed",
+        "open",
+        "user-agent"
+      ],
+      "iframeNodes": 2,
+      "oopifTargets": 1,
+      "productActionsScope": "main-frame-only",
+      "closedShadowActionsSupported": false,
+      "oopifActionsSupported": false
+    }
+  },
+  "serverFacts": {
+    "registrationCount": 2,
+    "loginCount": 2,
+    "userCount": 2,
+    "faultCommitCount": 1
+  },
+  "commands": [
+    {
+      "sequence": 1,
+      "command": "capabilities",
+      "outcome": "passed"
+    },
+    {
+      "sequence": 2,
+      "command": "profile_create",
+      "outcome": "passed"
+    },
+    {
+      "sequence": 3,
+      "command": "browser_start",
+      "outcome": "passed"
+    },
+    {
+      "sequence": 4,
+      "command": "lease_acquire",
+      "outcome": "passed"
+    },
+    {
+      "sequence": 5,
+      "command": "profile_create",
+      "outcome": "passed"
+    },
+    {
+      "sequence": 6,
+      "command": "browser_start",
+      "outcome": "passed"
+    },
+    {
+      "sequence": 7,
+      "command": "lease_acquire",
+      "outcome": "passed"
+    },
+    {
+      "sequence": 8,
+      "command": "profile_create",
+      "outcome": "passed"
+    },
+    {
+      "sequence": 9,
+      "command": "browser_start",
+      "outcome": "passed"
+    },
+    {
+      "sequence": 10,
+      "command": "lease_acquire",
+      "outcome": "passed"
+    },
+    {
+      "sequence": 11,
+      "command": "browser_navigate",
+      "outcome": "passed"
+    },
+    {
+      "sequence": 12,
+      "command": "browser_navigate",
+      "outcome": "passed"
+    },
+    {
+      "sequence": 13,
+      "command": "page_wait_text",
+      "outcome": "passed"
+    },
+    {
+      "sequence": 14,
+      "command": "page_locate",
+      "outcome": "passed"
+    },
+    {
+      "sequence": 15,
+      "command": "page_fill",
+      "outcome": "passed"
+    },
+    {
+      "sequence": 16,
+      "command": "page_locate",
+      "outcome": "passed"
+    },
+    {
+      "sequence": 17,
+      "command": "page_fill",
+      "outcome": "passed"
+    },
+    {
+      "sequence": 18,
+      "command": "page_locate",
+      "outcome": "passed"
+    },
+    {
+      "sequence": 19,
+      "command": "page_click",
+      "outcome": "passed"
+    },
+    {
+      "sequence": 20,
+      "command": "page_wait_text",
+      "outcome": "passed"
+    },
+    {
+      "sequence": 21,
+      "command": "page_locate",
+      "outcome": "passed"
+    },
+    {
+      "sequence": 22,
+      "command": "page_click",
+      "outcome": "passed"
+    },
+    {
+      "sequence": 23,
+      "command": "page_wait_text",
+      "outcome": "passed"
+    },
+    {
+      "sequence": 24,
+      "command": "page_locate",
+      "outcome": "passed"
+    },
+    {
+      "sequence": 25,
+      "command": "page_fill",
+      "outcome": "passed"
+    },
+    {
+      "sequence": 26,
+      "command": "page_locate",
+      "outcome": "passed"
+    },
+    {
+      "sequence": 27,
+      "command": "page_click",
+      "outcome": "passed"
+    },
+    {
+      "sequence": 28,
+      "command": "page_wait_text",
+      "outcome": "passed"
+    },
+    {
+      "sequence": 29,
+      "command": "page_wait_text",
+      "outcome": "passed"
+    },
+    {
+      "sequence": 30,
+      "command": "page_locate",
+      "outcome": "passed"
+    },
+    {
+      "sequence": 31,
+      "command": "page_fill",
+      "outcome": "passed"
+    },
+    {
+      "sequence": 32,
+      "command": "page_locate",
+      "outcome": "passed"
+    },
+    {
+      "sequence": 33,
+      "command": "page_click",
+      "outcome": "passed"
+    },
+    {
+      "sequence": 34,
+      "command": "page_wait_text",
+      "outcome": "passed"
+    },
+    {
+      "sequence": 35,
+      "command": "page_wait_text",
+      "outcome": "passed"
+    },
+    {
+      "sequence": 36,
+      "command": "browser_navigate",
+      "outcome": "passed"
+    },
+    {
+      "sequence": 37,
+      "command": "page_wait_text",
+      "outcome": "passed"
+    },
+    {
+      "sequence": 38,
+      "command": "page_locate",
+      "outcome": "passed"
+    },
+    {
+      "sequence": 39,
+      "command": "page_fill",
+      "outcome": "passed"
+    },
+    {
+      "sequence": 40,
+      "command": "page_locate",
+      "outcome": "passed"
+    },
+    {
+      "sequence": 41,
+      "command": "page_fill",
+      "outcome": "passed"
+    },
+    {
+      "sequence": 42,
+      "command": "page_locate",
+      "outcome": "passed"
+    },
+    {
+      "sequence": 43,
+      "command": "page_click",
+      "outcome": "passed"
+    },
+    {
+      "sequence": 44,
+      "command": "page_wait_text",
+      "outcome": "passed"
+    },
+    {
+      "sequence": 45,
+      "command": "page_locate",
+      "outcome": "passed"
+    },
+    {
+      "sequence": 46,
+      "command": "page_click",
+      "outcome": "passed"
+    },
+    {
+      "sequence": 47,
+      "command": "page_wait_text",
+      "outcome": "passed"
+    },
+    {
+      "sequence": 48,
+      "command": "page_locate",
+      "outcome": "passed"
+    },
+    {
+      "sequence": 49,
+      "command": "page_fill",
+      "outcome": "passed"
+    },
+    {
+      "sequence": 50,
+      "command": "page_locate",
+      "outcome": "passed"
+    },
+    {
+      "sequence": 51,
+      "command": "page_click",
+      "outcome": "passed"
+    },
+    {
+      "sequence": 52,
+      "command": "page_wait_text",
+      "outcome": "passed"
+    },
+    {
+      "sequence": 53,
+      "command": "page_wait_text",
+      "outcome": "passed"
+    },
+    {
+      "sequence": 54,
+      "command": "page_locate",
+      "outcome": "passed"
+    },
+    {
+      "sequence": 55,
+      "command": "page_fill",
+      "outcome": "passed"
+    },
+    {
+      "sequence": 56,
+      "command": "page_locate",
+      "outcome": "passed"
+    },
+    {
+      "sequence": 57,
+      "command": "page_click",
+      "outcome": "passed"
+    },
+    {
+      "sequence": 58,
+      "command": "page_wait_text",
+      "outcome": "passed"
+    },
+    {
+      "sequence": 59,
+      "command": "page_wait_text",
+      "outcome": "passed"
+    },
+    {
+      "sequence": 60,
+      "command": "page_wait_text",
+      "outcome": "passed"
+    },
+    {
+      "sequence": 61,
+      "command": "page_locate",
+      "outcome": "passed"
+    },
+    {
+      "sequence": 62,
+      "command": "page_text",
+      "outcome": "passed"
+    },
+    {
+      "sequence": 63,
+      "command": "page_wait_text",
+      "outcome": "passed"
+    },
+    {
+      "sequence": 64,
+      "command": "page_locate",
+      "outcome": "passed"
+    },
+    {
+      "sequence": 65,
+      "command": "page_text",
+      "outcome": "passed"
+    },
+    {
+      "sequence": 66,
+      "command": "browser_navigate",
+      "outcome": "passed"
+    },
+    {
+      "sequence": 67,
+      "command": "page_wait_text",
+      "outcome": "passed"
+    },
+    {
+      "sequence": 68,
+      "command": "page_wait_text",
+      "outcome": "passed"
+    },
+    {
+      "sequence": 69,
+      "command": "page_locate",
+      "outcome": "passed"
+    },
+    {
+      "sequence": 70,
+      "command": "page_text",
+      "outcome": "passed"
+    },
+    {
+      "sequence": 71,
+      "command": "page_snapshot",
+      "outcome": "passed"
+    },
+    {
+      "sequence": 72,
+      "command": "page_locate",
+      "outcome": "LOCATOR_AMBIGUOUS"
+    },
+    {
+      "sequence": 73,
+      "command": "page_locate",
+      "outcome": "ELEMENT_NOT_FOUND"
+    },
+    {
+      "sequence": 74,
+      "command": "page_locate",
+      "outcome": "ELEMENT_NOT_FOUND"
+    },
+    {
+      "sequence": 75,
+      "command": "page_locate",
+      "outcome": "INVALID_ARGUMENTS"
+    },
+    {
+      "sequence": 76,
+      "command": "page_locate",
+      "outcome": "ELEMENT_NOT_FOUND"
+    },
+    {
+      "sequence": 77,
+      "command": "page_locate",
+      "outcome": "ELEMENT_NOT_FOUND"
+    },
+    {
+      "sequence": 78,
+      "command": "page_locate",
+      "outcome": "ELEMENT_NOT_FOUND"
+    },
+    {
+      "sequence": 79,
+      "command": "page_locate",
+      "outcome": "ELEMENT_NOT_FOUND"
+    },
+    {
+      "sequence": 80,
+      "command": "page_locate",
+      "outcome": "INVALID_ARGUMENTS"
+    },
+    {
+      "sequence": 81,
+      "command": "page_locate",
+      "outcome": "passed"
+    },
+    {
+      "sequence": 82,
+      "command": "page_click",
+      "outcome": "ELEMENT_NOT_ACTIONABLE"
+    },
+    {
+      "sequence": 83,
+      "command": "page_locate",
+      "outcome": "passed"
+    },
+    {
+      "sequence": 84,
+      "command": "page_click",
+      "outcome": "ELEMENT_NOT_ACTIONABLE"
+    },
+    {
+      "sequence": 85,
+      "command": "page_locate",
+      "outcome": "passed"
+    },
+    {
+      "sequence": 86,
+      "command": "page_fill",
+      "outcome": "ELEMENT_NOT_EDITABLE"
+    },
+    {
+      "sequence": 87,
+      "command": "page_locate",
+      "outcome": "passed"
+    },
+    {
+      "sequence": 88,
+      "command": "browser_navigate",
+      "outcome": "passed"
+    },
+    {
+      "sequence": 89,
+      "command": "page_fill",
+      "outcome": "STALE_ELEMENT_REFERENCE"
+    },
+    {
+      "sequence": 90,
+      "command": "browser_navigate",
+      "outcome": "ORIGIN_DENIED"
+    },
+    {
+      "sequence": 91,
+      "command": "page_locate",
+      "outcome": "passed"
+    },
+    {
+      "sequence": 92,
+      "command": "page_click",
+      "outcome": "passed"
+    },
+    {
+      "sequence": 93,
+      "command": "page_wait_text",
+      "outcome": "passed"
+    },
+    {
+      "sequence": 94,
+      "command": "page_screenshot",
+      "outcome": "passed"
+    },
+    {
+      "sequence": 95,
+      "command": "lease_revoke",
+      "outcome": "passed"
+    },
+    {
+      "sequence": 96,
+      "command": "page_click",
+      "outcome": "LEASE_REVOKED"
+    },
+    {
+      "sequence": 97,
+      "command": "lease_acquire",
+      "outcome": "passed"
+    },
+    {
+      "sequence": 98,
+      "command": "page_wait_text",
+      "outcome": "passed"
+    },
+    {
+      "sequence": 99,
+      "command": "page_locate",
+      "outcome": "passed"
+    },
+    {
+      "sequence": 100,
+      "command": "browser_stop",
+      "outcome": "passed"
+    },
+    {
+      "sequence": 101,
+      "command": "browser_start",
+      "outcome": "passed"
+    },
+    {
+      "sequence": 102,
+      "command": "lease_acquire",
+      "outcome": "passed"
+    },
+    {
+      "sequence": 103,
+      "command": "browser_navigate",
+      "outcome": "passed"
+    },
+    {
+      "sequence": 104,
+      "command": "page_wait_text",
+      "outcome": "passed"
+    },
+    {
+      "sequence": 105,
+      "command": "page_locate",
+      "outcome": "passed"
+    },
+    {
+      "sequence": 106,
+      "command": "page_fill",
+      "outcome": "STALE_ELEMENT_REFERENCE"
+    },
+    {
+      "sequence": 107,
+      "command": "page_locate",
+      "outcome": "passed"
+    },
+    {
+      "sequence": 108,
+      "command": "page_click",
+      "outcome": "ACTION_OUTCOME_UNKNOWN"
+    },
+    {
+      "sequence": 109,
+      "command": "browser_status",
+      "outcome": "passed"
+    },
+    {
+      "sequence": 110,
+      "command": "browser_status",
+      "outcome": "passed"
+    },
+    {
+      "sequence": 111,
+      "command": "page_snapshot",
+      "outcome": "BROWSER_NOT_RUNNING"
+    },
+    {
+      "sequence": 112,
+      "command": "browser_start",
+      "outcome": "passed"
+    },
+    {
+      "sequence": 113,
+      "command": "page_snapshot",
+      "outcome": "LEASE_REVOKED"
+    },
+    {
+      "sequence": 114,
+      "command": "browser_stop",
+      "outcome": "passed"
+    },
+    {
+      "sequence": 115,
+      "command": "browser_stop",
+      "outcome": "passed"
+    },
+    {
+      "sequence": 116,
+      "command": "browser_stop",
+      "outcome": "passed"
+    },
+    {
+      "sequence": 117,
+      "command": "browser_start",
+      "outcome": "passed"
+    },
+    {
+      "sequence": 118,
+      "command": "profile_list",
+      "outcome": "passed"
+    },
+    {
+      "sequence": 119,
+      "command": "browser_status",
+      "outcome": "passed"
+    },
+    {
+      "sequence": 120,
+      "command": "browser_start",
+      "outcome": "passed"
+    },
+    {
+      "sequence": 121,
+      "command": "lease_acquire",
+      "outcome": "passed"
+    },
+    {
+      "sequence": 122,
+      "command": "browser_navigate",
+      "outcome": "passed"
+    },
+    {
+      "sequence": 123,
+      "command": "page_wait_text",
+      "outcome": "passed"
+    },
+    {
+      "sequence": 124,
+      "command": "browser_stop",
+      "outcome": "passed"
+    }
+  ]
+}

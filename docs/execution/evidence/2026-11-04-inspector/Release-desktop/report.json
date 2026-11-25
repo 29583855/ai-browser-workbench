@@ -1,0 +1,256 @@
+{
+  "date": "2026-11-04T12:10:31.694432+08:00",
+  "result": "passed",
+  "steps": [
+    {
+      "buttonId": 101,
+      "outcome": "passed"
+    },
+    {
+      "buttonId": 101,
+      "outcome": "passed"
+    },
+    {
+      "buttonId": 101,
+      "outcome": "passed"
+    },
+    {
+      "buttonId": 101,
+      "outcome": "passed"
+    },
+    {
+      "buttonId": 101,
+      "outcome": "passed"
+    },
+    {
+      "buttonId": 101,
+      "outcome": "passed"
+    },
+    {
+      "buttonId": 101,
+      "outcome": "passed"
+    },
+    {
+      "buttonId": 101,
+      "outcome": "passed"
+    },
+    {
+      "buttonId": 102,
+      "outcome": "passed"
+    },
+    {
+      "buttonId": 104,
+      "outcome": "passed"
+    },
+    {
+      "buttonId": 108,
+      "outcome": "passed"
+    },
+    {
+      "buttonId": 108,
+      "outcome": "passed"
+    },
+    {
+      "buttonId": 109,
+      "outcome": "passed"
+    },
+    {
+      "buttonId": 110,
+      "outcome": "passed"
+    },
+    {
+      "buttonId": 110,
+      "outcome": "passed"
+    },
+    {
+      "buttonId": 109,
+      "outcome": "passed"
+    },
+    {
+      "buttonId": 110,
+      "outcome": "passed"
+    },
+    {
+      "buttonId": 110,
+      "outcome": "passed"
+    },
+    {
+      "buttonId": 123,
+      "outcome": "passed"
+    },
+    {
+      "buttonId": 125,
+      "outcome": "passed"
+    },
+    {
+      "buttonId": 124,
+      "outcome": "passed"
+    },
+    {
+      "buttonId": 104,
+      "outcome": "passed"
+    },
+    {
+      "buttonId": 126,
+      "outcome": "passed"
+    },
+    {
+      "buttonId": 110,
+      "outcome": "passed"
+    },
+    {
+      "buttonId": 104,
+      "outcome": "passed"
+    },
+    {
+      "buttonId": 117,
+      "outcome": "passed"
+    },
+    {
+      "buttonId": 118,
+      "outcome": "passed"
+    },
+    {
+      "buttonId": 117,
+      "outcome": "passed"
+    },
+    {
+      "buttonId": 119,
+      "outcome": "passed"
+    },
+    {
+      "buttonId": 110,
+      "outcome": "passed"
+    },
+    {
+      "buttonId": 120,
+      "outcome": "passed"
+    },
+    {
+      "buttonId": 121,
+      "outcome": "passed"
+    },
+    {
+      "buttonId": 122,
+      "outcome": "passed"
+    },
+    {
+      "buttonId": 105,
+      "outcome": "passed"
+    },
+    {
+      "buttonId": 107,
+      "outcome": "LOCATOR_AMBIGUOUS"
+    },
+    {
+      "buttonId": 110,
+      "outcome": "LEASE_REQUIRED"
+    },
+    {
+      "buttonId": 111,
+      "outcome": "passed"
+    },
+    {
+      "buttonId": 110,
+      "outcome": "passed"
+    },
+    {
+      "buttonId": 103,
+      "outcome": "passed"
+    },
+    {
+      "buttonId": 102,
+      "outcome": "passed"
+    },
+    {
+      "buttonId": 104,
+      "outcome": "passed"
+    },
+    {
+      "buttonId": 110,
+      "outcome": "passed"
+    },
+    {
+      "buttonId": 103,
+      "outcome": "passed"
+    },
+    {
+      "buttonId": 102,
+      "outcome": "passed"
+    },
+    {
+      "buttonId": 104,
+      "outcome": "passed"
+    },
+    {
+      "buttonId": 110,
+      "outcome": "passed"
+    },
+    {
+      "buttonId": 103,
+      "outcome": "passed"
+    },
+    {
+      "buttonId": 112,
+      "outcome": "passed"
+    },
+    {
+      "buttonId": 113,
+      "outcome": "passed"
+    },
+    {
+      "buttonId": 102,
+      "outcome": "PROFILE_STATE_INVALID"
+    },
+    {
+      "buttonId": 114,
+      "outcome": "passed"
+    },
+    {
+      "buttonId": 115,
+      "outcome": "passed"
+    },
+    {
+      "buttonId": 102,
+      "outcome": "passed"
+    },
+    {
+      "buttonId": 104,
+      "outcome": "passed"
+    },
+    {
+      "buttonId": 110,
+      "outcome": "passed"
+    },
+    {
+      "buttonId": 103,
+      "outcome": "passed"
+    },
+    {
+      "buttonId": 101,
+      "outcome": "passed"
+    },
+    {
+      "buttonId": 114,
+      "outcome": "passed"
+    },
+    {
+      "buttonId": 116,
+      "outcome": "passed"
+    }
+  ],
+  "checks": [
+    "eight-new-profiles-select-the-created-profile",
+    "desktop-inspection-highlight-clear-preview-and-native-select",
+    "desktop-pages-open-select-switch-close-events-and-explicit-reconnect",
+    "register-login-fill-clear-snapshot-ambiguity-revoke-reacquire-stop",
+    "second-profile-isolated-first-profile-login-persists-after-restart",
+    "desktop-update-archive-trash-restore-preserves-login-and-id",
+    "desktop-permanent-delete-confirmation-and-list-refresh"
+  ],
+  "binarySha256": "de0b175a5aee207fd9d3f65fdab1cceb3a4b52a1bf5d8ac7ca38876e14bdeb4d",
+  "serverFacts": {
+    "registrationCount": 1,
+    "loginCount": 1
+  }
+}

@@ -1,0 +1,104 @@
+{
+  "date": "2026-11-04T09:06:59.223290+08:00",
+  "result": "failed",
+  "checks": [
+    {
+      "name": "cli-invalid-1",
+      "result": "passed",
+      "actual": "INVALID_JSON"
+    },
+    {
+      "name": "cli-invalid-2",
+      "result": "failed",
+      "actual": "INVALID_JSON"
+    },
+    {
+      "name": "cli-invalid-3",
+      "result": "failed",
+      "actual": null
+    },
+    {
+      "name": "cli-invalid-4",
+      "result": "failed",
+      "actual": null
+    },
+    {
+      "name": "cli-invalid-5",
+      "result": "passed",
+      "actual": "INVALID_REQUEST"
+    },
+    {
+      "name": "cli-invalid-6",
+      "result": "passed",
+      "actual": "INVALID_ARGUMENTS"
+    },
+    {
+      "name": "cli-recovers-after-errors",
+      "result": "passed",
+      "actual": true
+    },
+    {
+      "name": "mcp-invalid-1",
+      "result": "passed",
+      "actual": -32700
+    },
+    {
+      "name": "mcp-invalid-2",
+      "result": "passed",
+      "actual": -32600
+    },
+    {
+      "name": "mcp-invalid-3",
+      "result": "failed",
+      "actual": -32602
+    },
+    {
+      "name": "mcp-invalid-4",
+      "result": "failed",
+      "actual": null
+    },
+    {
+      "name": "mcp-invalid-5",
+      "result": "failed",
+      "actual": null
+    },
+    {
+      "name": "mcp-invalid-6",
+      "result": "passed",
+      "actual": -32002
+    },
+    {
+      "name": "mcp-initialize",
+      "result": "passed",
+      "actual": 3
+    },
+    {
+      "name": "mcp-invalid-params",
+      "result": "failed",
+      "actual": null
+    },
+    {
+      "name": "mcp-recovers-and-lists-16-tools",
+      "result": "passed",
+      "actual": 5
+    },
+    {
+      "name": "mcp-tool-validation",
+      "result": "passed",
+      "actual": "INVALID_ARGUMENTS"
+    },
+    {
+      "name": "mcp-notifications-no-reply-and-ping",
+      "result": "passed",
+      "actual": {
+        "id": 7,
+        "jsonrpc": "2.0",
+        "result": {}
+      }
+    }
+  ],
+  "binarySha256": {
+    "workbench-cli.exe": "a5a714c370807be2dd0bac1d23e96b8849140c7ec1f418cdbc0c91e9873802e7",
+    "workbench-mcp.exe": "0e5545f7c7624c1f71425bf2921524c880c9cf273046a85f3815587370240b0a"
+  }
+}

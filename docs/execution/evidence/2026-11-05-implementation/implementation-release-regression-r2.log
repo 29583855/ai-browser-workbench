@@ -1,0 +1,47 @@
+-- Configuring done
+-- Generating done
+-- Build files have been written to: E:/project/webexploer_codex/build/vs2019-x64
+用于 .NET Framework 的 Microsoft (R) 生成引擎版本 16.11.6+a918ceb31
+版权所有(C) Microsoft Corporation。保留所有权利。
+
+  awb_sqlite.vcxproj -> E:\project\webexploer_codex\build\vs2019-x64\Release\awb_sqlite.lib
+  awb_core.vcxproj -> E:\project\webexploer_codex\build\vs2019-x64\Release\awb_core.lib
+  awb-storage-tests.vcxproj -> E:\project\webexploer_codex\build\vs2019-x64\Release\awb-storage-tests.exe
+  awb-core-tests.vcxproj -> E:\project\webexploer_codex\build\vs2019-x64\Release\awb-core-tests.exe
+  workbench-mcp.vcxproj -> E:\project\webexploer_codex\build\vs2019-x64\Release\workbench-mcp.exe
+  workbench.vcxproj -> E:\project\webexploer_codex\build\vs2019-x64\Release\workbench.exe
+  workbench-cli.vcxproj -> E:\project\webexploer_codex\build\vs2019-x64\Release\workbench-cli.exe
+Internal ctest changing into directory: E:/project/webexploer_codex/build/vs2019-x64
+Test project E:/project/webexploer_codex/build/vs2019-x64
+    Start 1: core
+1/3 Test #1: core .............................   Passed    2.82 sec
+    Start 2: storage
+2/3 Test #2: storage ..........................   Passed    2.67 sec
+    Start 3: win32-shell
+3/3 Test #3: win32-shell ......................   Passed    0.09 sec
+
+100% tests passed, 0 tests failed out of 3
+
+Total Test time (real) =   5.58 sec
+{"result": "passed", "tools": 67, "drift": []}
+{"result": "passed", "commands": 124, "report": "E:\\project\\webexploer_codex\\build\\evidence\\run-20261105-094054\\Release-browser\\report.json"}
+{"result": "passed", "report": "E:\\project\\webexploer_codex\\build\\evidence\\run-20261105-094054\\Release-proxy\\report.json"}
+{"result": "passed", "checks": 6, "report": "E:\\project\\webexploer_codex\\build\\evidence\\run-20261105-094054\\Release-lifecycle\\report.json"}
+{"result": "passed", "checks": 4, "report": "E:\\project\\webexploer_codex\\build\\evidence\\run-20261105-094054\\Release-recovery\\report.json"}
+{"result": "passed", "report": "E:\\project\\webexploer_codex\\build\\evidence\\run-20261105-094054\\Release-socks\\report.json"}
+{"result": "passed", "report": "E:\\project\\webexploer_codex\\build\\evidence\\run-20261105-094054\\Release-runtime\\report.json"}
+{"result": "passed", "requests": 89, "report": "E:\\project\\webexploer_codex\\build\\evidence\\run-20261105-094054\\Release-api\\report.json"}
+{"result": "passed", "checks": 6, "report": "E:\\project\\webexploer_codex\\build\\evidence\\run-20261105-094054\\Release-pages\\report.json"}
+{"result": "passed", "checks": 6, "error": null}
+{"result": "passed", "flows": 20, "negativeCases": 34, "checks": 13, "error": null}
+{"result": "passed", "checks": ["real-console-exception-http404-redirect-transport-failure-and-action-association", "pagination-strict-sequence-and-invalid-cursor-rejection", "late-response-keeps-originating-run-step-ordinal-with-causality-limitation", "paused-workflow-allows-lease-checked-read-only-diagnostics", "new-managed-page-inherits-observer-and-foreign-origin-metadata-filtered", "512-record-bound-and-explicit-overflow-gap", "128-pending-request-bound-reports-discarded-correlations", "explicit-reconnect-gap-no-replay-stop-retains-records-without-collecting", "diagnostic-cursor-cannot-cross-profile-instance", "new-epoch-invalidates-old-cursor-and-all-diagnostic-tools-enforce-lease", "console-content-url-query-response-body-and-lease-canaries-absent"], "error": null}
+{"result": "passed", "checks": 11, "commands": 51}
+{"result": "passed", "checks": 3, "error": null}
+{"result": "passed", "checks": ["encrypted-at-rest-metadata-only-scoped-create-and-cas", "profile-denial-reflection-redaction-and-sticky-screenshot-block", "typed-variables-read-output-foreach-subflow-results-breakpoints-step-and-stepOver", "stepOut-and-cancel-at-exact-depth-boundary", "six-static-type-scope-and-expression-rejections", "expiry-rotation-revision-delete-and-audit", "restart-persistence-and-secret-free-product-checkpoints", "tampered-ciphertext-fails-closed"]}
+{"result": "passed", "checks": ["unconfigured-fallback-scoped-auth-real-http-valid-draft-and-durable-admission-budget", "eight-failures-no-retry-no-redirect-no-secret-export-and-timeout-reservation", "browser-purpose-secret-denied-before-model-network", "package-preview-cas-immutable-versions-diff-and-exact-export", "nine-package-field-path-capability-secret-and-hash-rejections", "exported-package-workflow-real-browser-replay", "restart-preserves-budgets-and-package-hashes-without-prompts-or-keys"]}
+{"result": "passed", "checks": 5}
+{"result": "passed", "checks": 6}
+{"result": "passed", "checks": 24, "failures": []}
+{"result": "passed", "tools": 67, "report": "E:\\project\\webexploer_codex\\build\\evidence\\run-20261105-094054\\Release-mcp\\report.json"}
+{"result": "passed", "ownSourceFiles": 93, "placeholderMarkersFound": 0, "errors": []}
+Evidence: E:\project\webexploer_codex\build\evidence\run-20261105-094054

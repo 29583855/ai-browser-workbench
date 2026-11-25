@@ -1,0 +1,54 @@
+﻿生成启动时间为 2026/11/4 16:36:25。
+日志记录详细程度设置为: Normal。     1>项目“E:\project\webexploer_codex\vs2019\workbench.vcxproj”在节点 1 上(Build 个目标)。
+     1>项目“E:\project\webexploer_codex\vs2019\workbench.vcxproj”(1)正在节点 2 上生成“E:\project\webexploer_codex\vs2019\awb_sqlite.vcxproj”(3) (默认目标)。
+     3>InitializeBuildStatus:
+         正在创建“E:\project\webexploer_codex\vs2019\..\build\native-vs2019\obj\x64\Debug\awb_sqlite\awb_sqlite.tlog\unsuccessfulbuild”，因为已指定“AlwaysCreate”。
+       ClCompile:
+         所有输出均为最新。
+       Lib:
+         所有输出均为最新。
+         awb_sqlite.vcxproj -> E:\project\webexploer_codex\build\native-vs2019\x64\Debug\awb_sqlite.lib
+       FinalizeBuildStatus:
+         正在删除文件“E:\project\webexploer_codex\vs2019\..\build\native-vs2019\obj\x64\Debug\awb_sqlite\awb_sqlite.tlog\unsuccessfulbuild”。
+         正在对“E:\project\webexploer_codex\vs2019\..\build\native-vs2019\obj\x64\Debug\awb_sqlite\awb_sqlite.tlog\awb_sqlite.lastbuildstate”执行 Touch 任务。
+     3>已完成生成项目“E:\project\webexploer_codex\vs2019\awb_sqlite.vcxproj”(默认目标)的操作。
+     1>项目“E:\project\webexploer_codex\vs2019\workbench.vcxproj”(1)正在节点 1 上生成“E:\project\webexploer_codex\vs2019\awb_core.vcxproj”(2) (默认目标)。
+     2>InitializeBuildStatus:
+         正在创建“E:\project\webexploer_codex\vs2019\..\build\native-vs2019\obj\x64\Debug\awb_core\awb_core.tlog\unsuccessfulbuild”，因为已指定“AlwaysCreate”。
+       ClCompile:
+         所有输出均为最新。
+       Lib:
+         所有输出均为最新。
+         awb_core.vcxproj -> E:\project\webexploer_codex\build\native-vs2019\x64\Debug\awb_core.lib
+       FinalizeBuildStatus:
+         正在删除文件“E:\project\webexploer_codex\vs2019\..\build\native-vs2019\obj\x64\Debug\awb_core\awb_core.tlog\unsuccessfulbuild”。
+         正在对“E:\project\webexploer_codex\vs2019\..\build\native-vs2019\obj\x64\Debug\awb_core\awb_core.tlog\awb_core.lastbuildstate”执行 Touch 任务。
+     2>已完成生成项目“E:\project\webexploer_codex\vs2019\awb_core.vcxproj”(默认目标)的操作。
+     1>InitializeBuildStatus:
+         正在创建“E:\project\webexploer_codex\vs2019\..\build\native-vs2019\obj\x64\Debug\workbench\workbench.tlog\unsuccessfulbuild”，因为已指定“AlwaysCreate”。
+       ClCompile:
+         D:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\VC\Tools\MSVC\14.29.30133\bin\HostX86\x64\CL.exe /c /IE:\project\webexploer_codex\vs2019\..\include /IE:\project\webexploer_codex\vs2019\..\third_party /Zi /JMC /nologo /W4 /WX /diagnostics:column /Od /D _DEBUG /D UNICODE /D _UNICODE /D WIN32_LEAN_AND_MEAN /D NOMINMAX /D _UNICODE /D UNICODE /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /permissive- /Zc:wchar_t /Zc:forScope /Zc:inline /std:c++14 /Fo"E:\project\webexploer_codex\vs2019\..\build\native-vs2019\obj\x64\Debug\workbench\\" /Fd"E:\project\webexploer_codex\vs2019\..\build\native-vs2019\obj\x64\Debug\workbench\vc142.pdb" /external:W4 /Gd /TP /FC /errorReport:queue /utf-8 /Zc:__cplusplus ..\src\ui\main.cpp
+         main.cpp
+     1>E:\project\webexploer_codex\src\ui\theme.hpp(68,19): error C2220: 以下警告被视为错误 [E:\project\webexploer_codex\vs2019\workbench.vcxproj]
+     1>E:\project\webexploer_codex\src\ui\theme.hpp(68,19): warning C4458: “value”的声明隐藏了类成员 [E:\project\webexploer_codex\vs2019\workbench.vcxproj]
+       E:\project\webexploer_codex\src\ui\theme.hpp(38,10): message : 参见“desktop::Theme::value”的声明 [E:\project\webexploer_codex\vs2019\workbench.vcxproj]
+     1>E:\project\webexploer_codex\src\ui\theme.hpp(84,23): warning C4458: “status”的声明隐藏了类成员 [E:\project\webexploer_codex\vs2019\workbench.vcxproj]
+       E:\project\webexploer_codex\src\ui\theme.hpp(28,10): message : 参见“desktop::Theme::status”的声明 [E:\project\webexploer_codex\vs2019\workbench.vcxproj]
+     1>已完成生成项目“E:\project\webexploer_codex\vs2019\workbench.vcxproj”(Build 个目标)的操作 - 失败。
+
+生成失败。
+
+       “E:\project\webexploer_codex\vs2019\workbench.vcxproj”(Build 目标) (1) ->
+       (ClCompile 目标) -> 
+         E:\project\webexploer_codex\src\ui\theme.hpp(68,19): warning C4458: “value”的声明隐藏了类成员 [E:\project\webexploer_codex\vs2019\workbench.vcxproj]
+         E:\project\webexploer_codex\src\ui\theme.hpp(84,23): warning C4458: “status”的声明隐藏了类成员 [E:\project\webexploer_codex\vs2019\workbench.vcxproj]
+
+
+       “E:\project\webexploer_codex\vs2019\workbench.vcxproj”(Build 目标) (1) ->
+       (ClCompile 目标) -> 
+         E:\project\webexploer_codex\src\ui\theme.hpp(68,19): error C2220: 以下警告被视为错误 [E:\project\webexploer_codex\vs2019\workbench.vcxproj]
+
+    2 个警告
+    1 个错误
+
+已用时间 00:00:02.03

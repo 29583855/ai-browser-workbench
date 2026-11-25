@@ -1,0 +1,193 @@
+{
+  "date": "2026-11-05",
+  "result": "passed",
+  "scope": "Native v142/C++14 dual-configuration build, local fixture regressions, contracts and source review; final portable ZIP delivery tested separately after freezing",
+  "allPlannedWorkComplete": false,
+  "productionReady": false,
+  "toolCount": 91,
+  "catalogSchemaVersion": 6,
+  "reports": [
+    {
+      "name": "extraction",
+      "result": "passed",
+      "file": "docs/execution/evidence/2026-11-05-completion-r3/extraction-report.json",
+      "source": "build/completion-r3-extraction/report.json",
+      "sha256": "407f47865c4749e6dcfe32ead7f171dcd83151ca5e8fbf33ff194bb42b8df6ef",
+      "checkGroups": 13,
+      "commandsOrRequests": 93
+    },
+    {
+      "name": "files",
+      "result": "passed",
+      "file": "docs/execution/evidence/2026-11-05-completion-r3/files-report.json",
+      "source": "build/completion-r3-files/report.json",
+      "sha256": "de018adc84719b73ace0fb4ea6814c149144427718b3f84f81a1942f9349e2aa",
+      "checkGroups": 5,
+      "commandsOrRequests": 88
+    },
+    {
+      "name": "files-debug",
+      "result": "passed",
+      "file": "docs/execution/evidence/2026-11-05-completion-r3/files-debug-report.json",
+      "source": "build/completion-r3-files-debug/report.json",
+      "sha256": "37cb87b1a481ecae31a1bda25a6f636942a228eeecc16777f2b2283fcabb9cc1",
+      "checkGroups": 5,
+      "commandsOrRequests": 71
+    },
+    {
+      "name": "library",
+      "result": "passed",
+      "file": "docs/execution/evidence/2026-11-05-completion-r3/library-report.json",
+      "source": "build/completion-r3-library/report.json",
+      "sha256": "a180d4354afc5159609db6176be46f7e1bc78f9a9ce0605fd3af537bc4f9fcef",
+      "checkGroups": 4,
+      "commandsOrRequests": 55
+    },
+    {
+      "name": "protocols",
+      "result": "passed",
+      "file": "docs/execution/evidence/2026-11-05-completion-r3/protocols-report.json",
+      "source": "build/completion-r3-protocols/report.json",
+      "sha256": "f0aaa9306eb7ebf097db55a148ceaebf7525ca2f6e066a2eebcbe67ed4a1efaf",
+      "checkGroups": 1,
+      "commandsOrRequests": 0
+    },
+    {
+      "name": "desktop",
+      "result": "passed",
+      "file": "docs/execution/evidence/2026-11-05-completion-r3/desktop-report.json",
+      "source": "build/completion-r3-desktop/report.json",
+      "sha256": "6674080af8505e039cff9f2e4d48c669e57bb7c1b168d122ebd48b43efacc66f",
+      "checkGroups": 4,
+      "commandsOrRequests": 0
+    },
+    {
+      "name": "api",
+      "result": "passed",
+      "file": "docs/execution/evidence/2026-11-05-completion-r3/api-report.json",
+      "source": "build/completion-r3-api/report.json",
+      "sha256": "b38d4fdba14d56a4d06c69a9a45434d0bf192327cc0a35dc6af55ef690005a2e",
+      "checkGroups": 0,
+      "commandsOrRequests": 95
+    },
+    {
+      "name": "browser",
+      "result": "passed",
+      "file": "docs/execution/evidence/2026-11-05-completion-r3/browser-report.json",
+      "source": "build/completion-r3-browser/report.json",
+      "sha256": "6c579ab8cf98f01ffaa7e8d0155d336aea92020916584a42efa4d4c334e5985f",
+      "checkGroups": 0,
+      "commandsOrRequests": 124
+    },
+    {
+      "name": "workflow",
+      "result": "passed",
+      "file": "docs/execution/evidence/2026-11-05-completion-r3/workflow-report.json",
+      "source": "build/completion-r3-workflow/report.json",
+      "sha256": "a69eed5daf1d0db51fc6063e357d77f732e0ba692c68b2b9dd679bed2dd6ec10",
+      "checkGroups": 13,
+      "commandsOrRequests": 1
+    },
+    {
+      "name": "credentials",
+      "result": "passed",
+      "file": "docs/execution/evidence/2026-11-05-completion-r3/credentials-report.json",
+      "source": "build/completion-r3-credentials/report.json",
+      "sha256": "6684cf7b57b5c564fc56ea36b1f910b5c2b86de7c4db020e19753015c5b226ba",
+      "checkGroups": 8,
+      "commandsOrRequests": 0
+    },
+    {
+      "name": "model",
+      "result": "passed",
+      "file": "docs/execution/evidence/2026-11-05-completion-r3/model-report.json",
+      "source": "build/completion-r3-model/report.json",
+      "sha256": "2d582b48f7523c2d07a19330744c0580062fe43e0cc377d78e1b36182363a802",
+      "checkGroups": 8,
+      "commandsOrRequests": 0
+    },
+    {
+      "name": "sdk",
+      "result": "passed",
+      "file": "docs/execution/evidence/2026-11-05-completion-r3/sdk-report.json",
+      "source": "build/completion-r3-sdk/report.json",
+      "sha256": "78d82c854d25f9b7f418136f846433b418c2b2513ac01d4cebd3b763e1ce2f77",
+      "checkGroups": 7,
+      "commandsOrRequests": 0
+    }
+  ],
+  "nativeEvidence": "build/evidence/native-20261105-115549",
+  "binarySha256": {
+    "Debug": {
+      "workbench.exe": "9025bab77109eea7e560113e89a2e9f6cb4495f68a4ba247f5e2beb3f7122dd4",
+      "workbench-cli.exe": "193e5f0b8988ff46084b3e035e3f934a6769a887e2c2a8a7e4332edce9786c93",
+      "workbench-mcp.exe": "4f1a0ef585b27b923b52a2ce8e6524694dea9388008a82f455e0b049b0d542dd",
+      "awb-core-tests.exe": "a2779505066aa15961d5fe31a4b8cfd0187e41f8f2aee6e7c1f964ff1318ceab",
+      "awb-storage-tests.exe": "bf1f728a37227cce19b6f746cfa921188c382598a5ea1a26e1c766aa8096b2e4"
+    },
+    "Release": {
+      "workbench.exe": "b5e51d1ca3ff0272220a7f54e69d257e3675917336cebdf4296b9c67c399d1fd",
+      "workbench-cli.exe": "d95e3bf4ff208df438744ec2410e98941586958a1546b459ae1ec7add7129072",
+      "workbench-mcp.exe": "150b47652bcbf8b46283e3069410c34a128e7c4a28db73194073cb94e747c720",
+      "awb-core-tests.exe": "8d70fb651c7900ed763e33c69d851c2c41db7165b3bcb7f94b57f7a35b7517d3",
+      "awb-storage-tests.exe": "a778693a0f30b70b3e051f333537f908bcd59beb93dcddc7f1e95fac34bb447f"
+    }
+  },
+  "notCompleted": [
+    "central tenants/roles/seats/nodes/global quota grants",
+    "orders/payments/usage/renewal/ledger",
+    "authenticated HTTPS/SSH proxies and leak matrix",
+    "cross-frame/OOPIF/complex recording and structured property forms",
+    "timezone scheduling and diagnostic evidence packages",
+    "signed installer/update, independent clean machine and long-run acceptance"
+  ],
+  "deliveryStatus": "passed",
+  "planStatus": {
+    "local": {
+      "tasks": 110,
+      "states": {
+        "完成": 24,
+        "进行中": 39,
+        "未开始": 47
+      },
+      "completedBaselineDays": 52.0,
+      "baselineDays": 317,
+      "weightedTaskAcceptancePercent": 16.4
+    },
+    "admin": {
+      "tasks": 48,
+      "states": {
+        "未开始": 48
+      },
+      "completedBaselineDays": 0,
+      "baselineDays": 252,
+      "weightedTaskAcceptancePercent": 0.0
+    },
+    "commerce": {
+      "tasks": 40,
+      "states": {
+        "未开始": 40
+      },
+      "completedBaselineDays": 0,
+      "baselineDays": 223,
+      "weightedTaskAcceptancePercent": 0.0
+    }
+  },
+  "visualPlanStatus": {
+    "completed": 6,
+    "inProgress": 19,
+    "unstarted": 3
+  },
+  "finalDelivery": {
+    "archive": "dist/AI-Browser-Workbench-0.1.11-win64-automation-r3.zip",
+    "bytes": 229713649,
+    "sha256": "c68fe4192faee97fab607e1c9514f9eb18e27572a026ea0fa51e246afed05a0f",
+    "manifestFiles": 1979,
+    "deploymentChecks": 9,
+    "transportChannels": 3,
+    "deploymentReport": "docs/execution/evidence/2026-11-05-completion-r3/package-report.json",
+    "transportReport": "docs/execution/evidence/2026-11-05-completion-r3/package-protocols-report.json",
+    "sourceFrozenBeforeDeploymentTests": true,
+    "cleanMachine": false
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "result": "failed",
+  "archive": {
+    "file": "AI-Browser-Workbench-0.1.7-win64-extraction-r1.zip",
+    "sha256": "afc402472bd189cc3ff16a6f2eef5db87fe368bd5a4c69db8a827f297746e17e",
+    "bytes": 226634200
+  },
+  "deploymentChecksPassed": 9,
+  "nonDesktopSuitesPassed": 14,
+  "desktopResult": "failed",
+  "commercialRelease": false
+}

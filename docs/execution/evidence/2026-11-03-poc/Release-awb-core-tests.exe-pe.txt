@@ -1,0 +1,186 @@
+Microsoft (R) COFF/PE Dumper Version 14.29.30159.0
+Copyright (C) Microsoft Corporation.  All rights reserved.
+
+
+Dump of file build\vs2019-x64\Release\awb-core-tests.exe
+
+PE signature found
+
+File Type: EXECUTABLE IMAGE
+
+FILE HEADER VALUES
+            8664 machine (x64)
+               6 number of sections
+        6AE9F520 time date stamp Tue Nov  3 22:52:16 2026
+               0 file pointer to symbol table
+               0 number of symbols
+              F0 size of optional header
+              22 characteristics
+                   Executable
+                   Application can handle large (>2GB) addresses
+
+OPTIONAL HEADER VALUES
+             20B magic # (PE32+)
+           14.29 linker version
+           3EA00 size of code
+           14800 size of initialized data
+               0 size of uninitialized data
+           39F8C entry point (0000000140039F8C)
+            1000 base of code
+       140000000 image base (0000000140000000 to 0000000140057FFF)
+            1000 section alignment
+             200 file alignment
+            6.00 operating system version
+            0.00 image version
+            6.00 subsystem version
+               0 Win32 version
+           58000 size of image
+             400 size of headers
+               0 checksum
+               3 subsystem (Windows CUI)
+            8160 DLL characteristics
+                   High Entropy Virtual Addresses
+                   Dynamic base
+                   NX compatible
+                   Terminal Server Aware
+          100000 size of stack reserve
+            1000 size of stack commit
+          100000 size of heap reserve
+            1000 size of heap commit
+               0 loader flags
+              10 number of directories
+               0 [       0] RVA [size] of Export Directory
+           4EE0C [     140] RVA [size] of Import Directory
+           56000 [     1E0] RVA [size] of Resource Directory
+           53000 [    2418] RVA [size] of Exception Directory
+               0 [       0] RVA [size] of Certificates Directory
+           57000 [     188] RVA [size] of Base Relocation Directory
+           456C0 [      1C] RVA [size] of Debug Directory
+               0 [       0] RVA [size] of Architecture Directory
+               0 [       0] RVA [size] of Global Pointer Directory
+               0 [       0] RVA [size] of Thread Storage Directory
+           456E0 [     138] RVA [size] of Load Configuration Directory
+               0 [       0] RVA [size] of Bound Import Directory
+           40000 [     5B8] RVA [size] of Import Address Table Directory
+               0 [       0] RVA [size] of Delay Import Directory
+               0 [       0] RVA [size] of COM Descriptor Directory
+               0 [       0] RVA [size] of Reserved Directory
+
+
+SECTION HEADER #1
+   .text name
+   3E9FD virtual size
+    1000 virtual address (0000000140001000 to 000000014003F9FC)
+   3EA00 size of raw data
+     400 file pointer to raw data (00000400 to 0003EDFF)
+       0 file pointer to relocation table
+       0 file pointer to line numbers
+       0 number of relocations
+       0 number of line numbers
+60000020 flags
+         Code
+         Execute Read
+
+SECTION HEADER #2
+  .rdata name
+   1090A virtual size
+   40000 virtual address (0000000140040000 to 0000000140050909)
+   10A00 size of raw data
+   3EE00 file pointer to raw data (0003EE00 to 0004F7FF)
+       0 file pointer to relocation table
+       0 file pointer to line numbers
+       0 number of relocations
+       0 number of line numbers
+40000040 flags
+         Initialized Data
+         Read Only
+
+  Debug Directories
+
+        Time Type        Size      RVA  Pointer
+    -------- ------- -------- -------- --------
+    6AE9F520 coffgrp      2D0 000469F0    457F0
+
+  Image has the following dependencies:
+
+    WINHTTP.dll
+    bcrypt.dll
+    ADVAPI32.dll
+    SHELL32.dll
+    KERNEL32.dll
+    MSVCP140.dll
+    VCRUNTIME140.dll
+    VCRUNTIME140_1.dll
+    api-ms-win-crt-runtime-l1-1-0.dll
+    api-ms-win-crt-heap-l1-1-0.dll
+    api-ms-win-crt-convert-l1-1-0.dll
+    api-ms-win-crt-stdio-l1-1-0.dll
+    api-ms-win-crt-locale-l1-1-0.dll
+    api-ms-win-crt-math-l1-1-0.dll
+    api-ms-win-crt-string-l1-1-0.dll
+
+SECTION HEADER #3
+   .data name
+    1290 virtual size
+   51000 virtual address (0000000140051000 to 000000014005228F)
+     E00 size of raw data
+   4F800 file pointer to raw data (0004F800 to 000505FF)
+       0 file pointer to relocation table
+       0 file pointer to line numbers
+       0 number of relocations
+       0 number of line numbers
+C0000040 flags
+         Initialized Data
+         Read Write
+
+SECTION HEADER #4
+  .pdata name
+    2418 virtual size
+   53000 virtual address (0000000140053000 to 0000000140055417)
+    2600 size of raw data
+   50600 file pointer to raw data (00050600 to 00052BFF)
+       0 file pointer to relocation table
+       0 file pointer to line numbers
+       0 number of relocations
+       0 number of line numbers
+40000040 flags
+         Initialized Data
+         Read Only
+
+SECTION HEADER #5
+   .rsrc name
+     1E0 virtual size
+   56000 virtual address (0000000140056000 to 00000001400561DF)
+     200 size of raw data
+   52C00 file pointer to raw data (00052C00 to 00052DFF)
+       0 file pointer to relocation table
+       0 file pointer to line numbers
+       0 number of relocations
+       0 number of line numbers
+40000040 flags
+         Initialized Data
+         Read Only
+
+SECTION HEADER #6
+  .reloc name
+     188 virtual size
+   57000 virtual address (0000000140057000 to 0000000140057187)
+     200 size of raw data
+   52E00 file pointer to raw data (00052E00 to 00052FFF)
+       0 file pointer to relocation table
+       0 file pointer to line numbers
+       0 number of relocations
+       0 number of line numbers
+42000040 flags
+         Initialized Data
+         Discardable
+         Read Only
+
+  Summary
+
+        2000 .data
+        3000 .pdata
+       11000 .rdata
+        1000 .reloc
+        1000 .rsrc
+       3F000 .text

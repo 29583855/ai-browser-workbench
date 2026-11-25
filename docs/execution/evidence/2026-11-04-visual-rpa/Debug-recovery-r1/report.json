@@ -1,0 +1,12 @@
+{
+  "date": "2026-11-04",
+  "result": "failed",
+  "checks": [
+    "native-node-clipboard-paste-uses-distinct-identities-and-real-timer-autosave",
+    "cut-deletes-only-after-clipboard-success-and-undo-restores-nodes",
+    "abrupt-process-exit-retains-last-complete-atomic-snapshot"
+  ],
+  "binarySha256": "cce79b7e4383e5e8ee5e54a8f878262b17e42f1280361b32bdc82cdabcb55ce0",
+  "error": "Recovery file dialog has no file-name edit",
+  "cleanupError": ""
+}

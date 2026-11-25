@@ -1,0 +1,19 @@
+Traceback (most recent call last):
+  File "E:\project\webexploer_codex\tests\integration_node_launchers.py", line 117, in <module>
+    finally:
+    ^^^^^^
+  File "E:\project\webexploer_codex\tests\integration_node_launchers.py", line 64, in main
+    "browser": str(package / "browser/chrome-win64/chrome.exe"),
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\project\webexploer_codex\tests\integration_node_launchers.py", line 17, in invoke
+    # 用途：日志使用普通文件，防止后台节点继承管道句柄使communicate等待其整个生命周期；日期：2026-11-05。
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\usr\Python\3.12.3_64\Lib\subprocess.py", line 550, in run
+    stdout, stderr = process.communicate(input, timeout=timeout)
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\usr\Python\3.12.3_64\Lib\subprocess.py", line 1209, in communicate
+    stdout, stderr = self._communicate(input, endtime, timeout)
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\usr\Python\3.12.3_64\Lib\subprocess.py", line 1630, in _communicate
+    raise TimeoutExpired(self.args, orig_timeout)
+subprocess.TimeoutExpired: Command '['powershell.exe', '-NoProfile', '-ExecutionPolicy', 'Bypass', '-File', 'E:\\project\\webexploer_codex\\build\\integrations-candidate-r2\\AI-Browser-Workbench-0.1.13-win64-candidate-r2\\Start-Node.ps1', '-Config', 'E:\\project\\webexploer_codex\\build\\integrations-candidate-r2-node-launchers\\中文 空格配置\\node.json']' timed out after 30 seconds

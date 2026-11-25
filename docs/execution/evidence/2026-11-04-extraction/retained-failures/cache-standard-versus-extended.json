@@ -1,0 +1,104 @@
+{
+  "date": "2026-11-04",
+  "results": [
+    {
+      "profileLength": 90,
+      "extended": false,
+      "result": "observed",
+      "observed": {
+        "ok": true
+      }
+    },
+    {
+      "profileLength": 90,
+      "extended": true,
+      "result": "observed",
+      "observed": {
+        "ok": true
+      }
+    },
+    {
+      "profileLength": 110,
+      "extended": false,
+      "result": "observed",
+      "observed": {
+        "ok": true
+      }
+    },
+    {
+      "profileLength": 110,
+      "extended": true,
+      "result": "observed",
+      "observed": {
+        "ok": true
+      }
+    },
+    {
+      "profileLength": 125,
+      "extended": false,
+      "result": "observed",
+      "observed": {
+        "ok": true
+      }
+    },
+    {
+      "profileLength": 125,
+      "extended": true,
+      "result": "observed",
+      "observed": {
+        "ok": true
+      }
+    },
+    {
+      "profileLength": 135,
+      "extended": false,
+      "result": "observed",
+      "observed": {
+        "ok": false,
+        "name": "UnknownError"
+      }
+    },
+    {
+      "profileLength": 135,
+      "extended": true,
+      "result": "observed",
+      "observed": {
+        "ok": true
+      }
+    },
+    {
+      "profileLength": 145,
+      "extended": false,
+      "result": "observed",
+      "observed": {
+        "ok": false,
+        "name": "UnknownError"
+      }
+    },
+    {
+      "profileLength": 145,
+      "extended": true,
+      "result": "observed",
+      "observed": {
+        "ok": true
+      }
+    },
+    {
+      "profileLength": 155,
+      "extended": false,
+      "result": "observed",
+      "observed": {
+        "ok": false,
+        "name": "UnknownError"
+      }
+    },
+    {
+      "profileLength": 155,
+      "extended": true,
+      "result": "observed",
+      "observed": {
+        "ok": true
+      }
+    }
+  ]
+}

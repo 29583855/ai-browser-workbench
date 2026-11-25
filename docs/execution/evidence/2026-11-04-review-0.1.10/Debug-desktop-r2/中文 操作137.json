@@ -1,0 +1,72 @@
+{
+  "schema": {
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "type": "object",
+    "properties": {
+      "title": {
+        "type": "string",
+        "minLength": 5,
+        "maxLength": 5
+      },
+      "amount": {
+        "type": "number",
+        "minimum": 10,
+        "maximum": 15
+      },
+      "truth": {
+        "type": "boolean",
+        "enum": [
+          true
+        ]
+      },
+      "count": {
+        "type": "integer",
+        "enum": [
+          2
+        ]
+      },
+      "checked": {
+        "type": "boolean"
+      },
+      "hint": {
+        "type": "string"
+      }
+    },
+    "required": [
+      "title",
+      "amount",
+      "truth",
+      "count",
+      "checked",
+      "hint"
+    ],
+    "additionalProperties": false
+  },
+  "bindings": {
+    "title": {
+      "selector": "#title",
+      "source": "text"
+    },
+    "amount": {
+      "selector": "#amount",
+      "source": "text"
+    },
+    "truth": {
+      "selector": "#truth",
+      "source": "text"
+    },
+    "count": {
+      "selector": ".duplicate",
+      "source": "count"
+    },
+    "checked": {
+      "selector": "#agree",
+      "source": "checked"
+    },
+    "hint": {
+      "selector": "#title",
+      "source": "attribute",
+      "attribute": "title"
+    }
+  }
+}

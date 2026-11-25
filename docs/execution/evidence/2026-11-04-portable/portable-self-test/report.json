@@ -1,0 +1,34 @@
+{
+    "result":  "passed",
+    "date":  "2026-11-04T00:14:52+08:00",
+    "checks":  [
+                   "awb-core-tests.exe",
+                   "awb-storage-tests.exe",
+                   "workbench.exe",
+                   "capabilities",
+                   "app-local-release-crt",
+                   "profile_create",
+                   "browser_start",
+                   "lease_acquire",
+                   "browser_navigate",
+                   "page_locate",
+                   "page_fill",
+                   "page_locate",
+                   "page_click",
+                   "page_wait_text",
+                   "offline-page-server-receipt",
+                   "browser_stop",
+                   "mcp-initialize-tools-list",
+                   "capabilities",
+                   "default-portable-root-from-unrelated-cwd"
+               ],
+    "errors":  [
+
+               ],
+    "root":  "E:\\project\\webexploer_codex\\build\\portable-relocation\\中文 复制测试\\AI-Browser-Workbench-0.1.0-win64-test",
+    "cleanMachine":  false,
+    "runtimeModules":  [
+                           "E:\\project\\webexploer_codex\\build\\portable-relocation\\中文 复制测试\\AI-Browser-Workbench-0.1.0-win64-test\\MSVCP140.dll",
+                           "E:\\project\\webexploer_codex\\build\\portable-relocation\\中文 复制测试\\AI-Browser-Workbench-0.1.0-win64-test\\VCRUNTIME140.dll"
+                       ]
+}

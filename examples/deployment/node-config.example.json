@@ -1,0 +1,9 @@
+{
+  "root": "D:/WorkbenchNode/data/node-a",
+  "browser": "D:/WorkbenchNode/browser/chrome-win64/chrome.exe",
+  "url": "",
+  "name": "Windows执行节点A",
+  "enrollmentToken": "",
+  "headless": false,
+  "clientCertificateThumbprint": ""
+}

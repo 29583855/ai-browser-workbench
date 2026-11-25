@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="16.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|x64"><Configuration>Debug</Configuration><Platform>x64</Platform></ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64"><Configuration>Release</Configuration><Platform>x64</Platform></ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{3C1EB3B9-484D-5236-84C5-08123E868F41}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <WindowsTargetPlatformVersion>10.0.19041.0</WindowsTargetPlatformVersion>
+    <VCToolsVersion>14.29.30133</VCToolsVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="PropertySheets"><Import Project="Workbench.Common.props" /></ImportGroup>
+  <ItemGroup>
+    <ClCompile Include="..\src\platform\windows\platform.cpp" />
+    <ClCompile Include="..\src\browser\browser.cpp" />
+    <ClCompile Include="..\src\browser\diagnostics.cpp" />
+    <ClCompile Include="..\src\browser\extraction.cpp" />
+    <ClCompile Include="..\src\browser\picker.cpp" />
+    <ClCompile Include="..\src\browser\discovery.cpp" />
+    <ClCompile Include="..\src\core\catalog.cpp" />
+    <ClCompile Include="..\src\core\service.cpp" />
+    <ClCompile Include="..\src\node\node_agent.cpp" />
+    <ClCompile Include="..\src\admin\backend_protocol.cpp" />
+    <ClCompile Include="..\src\admin\official_payments.cpp" />
+    <ClCompile Include="..\src\admin\oidc_identity.cpp" />
+    <ClCompile Include="..\src\admin\node_scheduler.cpp" />
+    <ClCompile Include="..\src\admin\control_plane.cpp" />
+    <ClCompile Include="..\src\admin\client.cpp" />
+    <ClCompile Include="..\src\admin\commercial_client.cpp" />
+    <ClCompile Include="..\src\admin\http.cpp" />
+    <ClCompile Include="..\src\core\credentials.cpp" />
+    <ClCompile Include="..\src\core\model_provider.cpp" />
+    <ClCompile Include="..\src\core\site_package.cpp" />
+    <ClCompile Include="..\src\core\local_api.cpp" />
+    <ClCompile Include="..\src\core\workflow.cpp" />
+    <ClCompile Include="..\src\core\flow_document.cpp" />
+    <ClCompile Include="..\src\recorder\recording.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\include\awb\browser.hpp" />
+    <ClInclude Include="..\include\awb\catalog.hpp" />
+    <ClInclude Include="..\include\awb\platform.hpp" />
+    <ClInclude Include="..\include\awb\service.hpp" />
+    <ClInclude Include="..\include\awb\control_plane.hpp" />
+    <ClInclude Include="..\include\awb\commercial_client.hpp" />
+    <ClInclude Include="..\src\admin\portal.hpp" />
+    <ClInclude Include="..\include\awb\credentials.hpp" />
+    <ClInclude Include="..\include\awb\model_provider.hpp" />
+    <ClInclude Include="..\include\awb\site_package.hpp" />
+    <ClInclude Include="..\include\awb\version.hpp" />
+    <ClInclude Include="..\include\awb\local_api.hpp" />
+    <ClInclude Include="..\include\awb\workflow.hpp" />
+    <ClInclude Include="..\include\awb\flow_document.hpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="awb_sqlite.vcxproj"><Project>{3472BE03-1A52-5FCA-A03C-D583F7C2464F}</Project><LinkLibraryDependencies>true</LinkLibraryDependencies></ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\src\admin\web\index.html" />
+    <None Include="..\src\admin\web\portal.js" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+</Project>

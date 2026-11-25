@@ -1,0 +1,10 @@
+{
+  "result": "failed",
+  "date": "2026-11-05T15:11:06+08:00",
+  "checks": [],
+  "errors": [
+    "Package checksum mismatch: 使用说明.md"
+  ],
+  "root": "E:\\project\\webexploer_codex\\build\\commerce-package-validation\\中文 空格部署\\AI-Browser-Workbench-0.1.12-win64-commerce-r1",
+  "cleanMachine": false
+}

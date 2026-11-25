@@ -1,0 +1,52 @@
+{
+  "date": "2026-11-04T11:47:52.162393+08:00",
+  "version": "0.1.3-poc",
+  "result": "passed",
+  "scope": "Implemented local multipage/event/reconnect increment; not full product acceptance",
+  "nativeEvidence": "build/evidence/native-20261104-114051",
+  "cmakeEvidence": "build/evidence/run-20261104-114400",
+  "configurations": [
+    "Debug",
+    "Release"
+  ],
+  "browserCommandsPerConfiguration": 124,
+  "storageChecksPerConfiguration": 29,
+  "apiRequestsPerConfiguration": 47,
+  "apiRawRejectionsPerConfiguration": 5,
+  "pagesChecksPerConfiguration": 6,
+  "protocolChecksPerConfiguration": 18,
+  "tools": 27,
+  "newCommands": [
+    "page_list",
+    "page_open",
+    "page_switch",
+    "page_close",
+    "browser_events",
+    "browser_reconnect"
+  ],
+  "completedWholePlanTasksThisIncrement": [],
+  "T018": "partial",
+  "T024": "partial",
+  "desktopBothConfigurationsPassed": true,
+  "sourceAuditPassed": true,
+  "externalServicesProvided": false,
+  "secondCleanMachineTested": false,
+  "releaseReady": false,
+  "failuresPreserved": true,
+  "binaries": {
+    "Debug": {
+      "awb-core-tests.exe": "2e4f789af63c4942d5eb57ad03faefea0a896e80fe1afdd6152d3560c0753f50",
+      "awb-storage-tests.exe": "35cf681e22163903b07b5ffae4622ad6e810f7a4807f3ad2df54704576553f36",
+      "workbench-cli.exe": "2358a8f9aefdc29966538c6a5642f232a21d96ec0a67a14a6e6133e98c2154dc",
+      "workbench-mcp.exe": "992ebab914807398c8a2026365f8f18ccdc4f9da1a551d9812e46a3b6156d709",
+      "workbench.exe": "a24d3274b4bfc39e4716a496c2ca266d90dce76492c57e8bf7d622c5f25fd646"
+    },
+    "Release": {
+      "awb-core-tests.exe": "ba318b354290d9f1f23975fedb2c9a6f5a58f998448c548eec5ba61e95df7e71",
+      "awb-storage-tests.exe": "eb777e3a169c51234d376cdff9e310f61e0f54dc5c9a9d7bac2120b656833425",
+      "workbench-cli.exe": "bbc65d6258ea1cc0a26e2973c100e507fe48792a534aea8250cba6d4df65af8b",
+      "workbench-mcp.exe": "35b0b2a7906d3bd8adb507485a7162422466e403f431e6ec9e31bd173c88dba2",
+      "workbench.exe": "3449b0a9b81a3ca42f2f6856feb8b2e75611ee35fb4b373e0e84c10ef112a250"
+    }
+  }
+}

@@ -1,0 +1,39 @@
+{
+  "date": "2026-11-04",
+  "result": "passed",
+  "manualEquivalentChecks": [
+    "first-registration-registered",
+    "login-and-authenticated-identity",
+    "authenticated-report-rows-one",
+    "logout-and-unauthenticated-report-denied",
+    "wrong-password-preserves-anonymous-identity"
+  ],
+  "workflowChecks": [
+    {
+      "run": 1,
+      "state": "succeeded",
+      "steps": 7
+    },
+    {
+      "run": 2,
+      "state": "succeeded",
+      "steps": 7
+    }
+  ],
+  "version": "0.1.8-poc",
+  "scope": "own loopback fixture and new documentation example only",
+  "exampleSha256": "06b474f9ce191872fd7460922b5ba0e722641e2532e2bf7e0764ea8393b5ecb6",
+  "binarySha256": "d8a0473a0ae63f7f90796a38151acdcacdc97f47439e035b53f01117df4b88c3",
+  "doesNotValidateUserSystem": true,
+  "exactExampleOrigin": true,
+  "effectiveOrigin": "http://127.0.0.1:3000",
+  "serverFacts": {
+    "registrations": 1,
+    "successfulLogins": 3
+  },
+  "calls": 61,
+  "method": "Release CLI drives actual managed browser; no new manual desktop UI validation",
+  "privateRuntimeDataPublished": false,
+  "documentCheck": "docs/research/quickstart_document_check_2026-11-04.json",
+  "progressValidation": "docs/research/quickstart_progress_validation_2026-11-04.json"
+}

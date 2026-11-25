@@ -1,0 +1,9 @@
+{
+  "date": "2026-11-04",
+  "result": "failed",
+  "checks": [
+    "native-node-clipboard-paste-uses-distinct-identities-and-real-timer-autosave"
+  ],
+  "binarySha256": "5c33c5f3ce25f762e0f716003e25472c55089348719e481ac9a440f2224dcb16",
+  "error": "Autosave timer did not preserve expected draft"
+}

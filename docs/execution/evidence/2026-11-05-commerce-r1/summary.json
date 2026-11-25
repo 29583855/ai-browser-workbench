@@ -1,0 +1,269 @@
+{
+  "date": "2026-11-05",
+  "version": "0.1.12-poc",
+  "result": "passed",
+  "scope": "single-node commerce backend, native client admission and portable development test candidate",
+  "compiler": "VS2019 v142 14.29.30133 / C++14 / x64 / Debug and Release",
+  "productionReady": false,
+  "commerce": {
+    "release": {
+      "result": "passed",
+      "httpChecks": 105,
+      "portalActions": 27,
+      "browserBridge": {
+        "result": "passed",
+        "actions": 35,
+        "revocationStoppedBrowser": true
+      }
+    },
+    "debug": {
+      "result": "passed",
+      "httpChecks": 105,
+      "portalActions": 27,
+      "browserBridge": {
+        "result": "passed",
+        "actions": 34,
+        "revocationStoppedBrowser": true
+      }
+    }
+  },
+  "edges": {
+    "release": {
+      "result": "passed",
+      "httpChecks": 131,
+      "nativeChecks": 7
+    },
+    "debug": {
+      "result": "passed",
+      "httpChecks": 131,
+      "nativeChecks": 7
+    }
+  },
+  "outage": {
+    "release": {
+      "date": "2026-11-05",
+      "result": "passed",
+      "browsers": 2,
+      "stopAfterSeconds": 12.219,
+      "pendingSlotsPreserved": true,
+      "sameAddressRestarted": true,
+      "reconciledSlots": 2,
+      "clientChecks": 93,
+      "checks": [
+        "real-two-browser-outage-stop",
+        "no-auto-slot-release",
+        "same-port-restart-retains-admission",
+        "same-account-reauthentication",
+        "confirmed-stop-release"
+      ]
+    },
+    "debug": {
+      "date": "2026-11-05",
+      "result": "passed",
+      "browsers": 2,
+      "stopAfterSeconds": 12.078,
+      "pendingSlotsPreserved": true,
+      "sameAddressRestarted": true,
+      "reconciledSlots": 2,
+      "clientChecks": 85,
+      "checks": [
+        "real-two-browser-outage-stop",
+        "no-auto-slot-release",
+        "same-port-restart-retains-admission",
+        "same-account-reauthentication",
+        "confirmed-stop-release"
+      ]
+    }
+  },
+  "nativeStorageChecksPerConfiguration": 43,
+  "ctestPassed": 3,
+  "sharedTools": 96,
+  "apiRequests": 92,
+  "desktopGroups": 11,
+  "desktopSteps": 109,
+  "sdkGroups": 7,
+  "launcherRestartCycles": 4,
+  "ownSourceFiles": 121,
+  "unfinishedSourceMarkersFound": 0,
+  "externalLiveMerchantTested": false,
+  "oidcTested": false,
+  "secondWindowsMachineTested": false,
+  "externalParameters": "blank by user authorization; no real channel payment or refund occurred",
+  "limits": [
+    "Official Alipay/WeChat/Stripe adapters, active channel query and automatic refunds remain unimplemented.",
+    "Single loopback backend; full public TLS, identity federation, multi-node scheduling and disaster recovery are not delivered.",
+    "Central environment capacity is reserved at commercial activation, not synchronized with every offline draft.",
+    "During disconnection, unresolved occupancy is billed until confirmed release; precise stop-evidence arbitration is pending.",
+    "Original ADM/COM packages remain in progress; document 42 checkboxes cover tested subfunctions only."
+  ],
+  "postFreezeValidation": "See ZIP-adjacent deployment report and document 43 after packaging; not part of this snapshot.",
+  "binaries": [
+    {
+      "configuration": "Debug",
+      "name": "awb-core-tests.exe",
+      "sha256": "aa3aa1559243457e764692167e973170cadb85cde2b4004b652a427101c4b097",
+      "bytes": 5767168
+    },
+    {
+      "configuration": "Debug",
+      "name": "awb-storage-tests.exe",
+      "sha256": "5d9448a4ba1d6927f258a9bd2d9847d313c2b9bcbd71ed251cbf410831f02a75",
+      "bytes": 4349952
+    },
+    {
+      "configuration": "Debug",
+      "name": "workbench-admin.exe",
+      "sha256": "8df95ee9922389ed448fc5fe419a995574df7dd8c0ea00f7b90a12b09a58ac49",
+      "bytes": 3139072
+    },
+    {
+      "configuration": "Debug",
+      "name": "workbench-cli.exe",
+      "sha256": "c4e74444ab5bf9266aeb7f5f45875fae28f4fee4d30a1eef66b5cbea0b1c9817",
+      "bytes": 5685760
+    },
+    {
+      "configuration": "Debug",
+      "name": "workbench-mcp.exe",
+      "sha256": "035040983de7d276391db485f66b664a960f6a04432618b6e2b3b9bbbaaf6bdf",
+      "bytes": 5623808
+    },
+    {
+      "configuration": "Debug",
+      "name": "workbench.exe",
+      "sha256": "f971dc804ec8dd6a383e06365323a0eeeaf2a4670e71eb7f4bbc432a24ee4d84",
+      "bytes": 6139392
+    },
+    {
+      "configuration": "Release",
+      "name": "awb-core-tests.exe",
+      "sha256": "9d85469f34653111a75cc0a8cfcceb4dd51f6512c360929c059dcd5cf93c22c5",
+      "bytes": 3803648
+    },
+    {
+      "configuration": "Release",
+      "name": "awb-storage-tests.exe",
+      "sha256": "4201cefc60e58b898183ed4ff0b6ebb1cbf528c0ba828279a685a1ee66a154af",
+      "bytes": 2799616
+    },
+    {
+      "configuration": "Release",
+      "name": "workbench-admin.exe",
+      "sha256": "e59ec8a1bf96169e73a9d4f4ba13c426f0ab837d2bfcc9f6845377d1d0821407",
+      "bytes": 2030080
+    },
+    {
+      "configuration": "Release",
+      "name": "workbench-cli.exe",
+      "sha256": "eef8d796e08b66bd004c76af78bca827b739f46371777989ffb0b29af0e7517a",
+      "bytes": 3752960
+    },
+    {
+      "configuration": "Release",
+      "name": "workbench-mcp.exe",
+      "sha256": "117a0cfdf5836c4d19150dbe556d4fd0f39fc5a3c6be95fa5dc2ce85478f2394",
+      "bytes": 3709952
+    },
+    {
+      "configuration": "Release",
+      "name": "workbench.exe",
+      "sha256": "5491bae8753dc201723171b265797adb483df6c5ada3010d113b257d4dbf37bf",
+      "bytes": 4041216
+    }
+  ],
+  "evidence": [
+    {
+      "file": "admin-portal.png",
+      "sha256": "aed0760683c2df79993332d4e0ff8d289126dfa05eab6cfdc04b28e0ecc52696"
+    },
+    {
+      "file": "api-regression.json",
+      "sha256": "cad0b38d17ebe1f62831a9fe757bc8fe19314662ffa4dc0e446a3bfffaf47810"
+    },
+    {
+      "file": "cmake-build.log",
+      "sha256": "7af3b882af4f42c58d164c872a5a60b9588a5a6edd21e006140c9b60843195e0"
+    },
+    {
+      "file": "commerce-debug.json",
+      "sha256": "aa58221c74ef38ebd5e0b8e6a1a46aefc9be7d0de4a4446281fc5a8046b81a12"
+    },
+    {
+      "file": "commerce-release.json",
+      "sha256": "60a1becc465d9904c9df7183e7a6a92f33db9f68378a168ce02be9ea8cec57df"
+    },
+    {
+      "file": "ctest.log",
+      "sha256": "495e816a7e6b5807432172aedc56ccc8092c17ac9a46a1b1c0027ca6b06ce0b3"
+    },
+    {
+      "file": "desktop-regression.json",
+      "sha256": "88236b171339ae8531d1245e2a7cb8326b68a12dece87ec85daca2b7a063aabc"
+    },
+    {
+      "file": "edges-debug.json",
+      "sha256": "ecc8b00a9f4296ca377ef86ff3b07a3d01e4c18599a7e8d08a164ed26b15aba5"
+    },
+    {
+      "file": "edges-release.json",
+      "sha256": "ecc8b00a9f4296ca377ef86ff3b07a3d01e4c18599a7e8d08a164ed26b15aba5"
+    },
+    {
+      "file": "launcher-report.json",
+      "sha256": "0f2fe72a57996f398572992e1d9341f92a1f1838e1b576828db12cb50081a7df"
+    },
+    {
+      "file": "launcher-self-test.log",
+      "sha256": "5b168ce0dcbb5e2dd4f2ddf60ab1a57823fd310dfb462172af47c0fa42ad61ca"
+    },
+    {
+      "file": "native-account.png",
+      "sha256": "36c9c7ab94fc787b8a6fb219e52d04c8c8b0a06725d1318458ff9f107cbe6510"
+    },
+    {
+      "file": "native-build-and-tests.log",
+      "sha256": "1b10226fd6aa07e85d834c4c6d0032f56cbe15ef11e33bca7beabb89b95baf21"
+    },
+    {
+      "file": "native-debug-build.log",
+      "sha256": "928e303f1b62392dd5e585cb03a165a74158da57e85c448195d79fcfaff8179b"
+    },
+    {
+      "file": "native-debug-storage.json",
+      "sha256": "82fdd8da407ecf27526396663735e9a646ff9350c8cf3f975792f9c3bb2c8349"
+    },
+    {
+      "file": "native-release-build.log",
+      "sha256": "bfd4812920443aad3c8a29123b48079a6971eb96a67a485bc7ad16138bdf0d85"
+    },
+    {
+      "file": "native-release-storage.json",
+      "sha256": "82fdd8da407ecf27526396663735e9a646ff9350c8cf3f975792f9c3bb2c8349"
+    },
+    {
+      "file": "outage-debug.json",
+      "sha256": "83c6a5bf9927f347c70c023d90b2bfc7d62e8e35dff99821917b6cd6e0f95072"
+    },
+    {
+      "file": "outage-release.json",
+      "sha256": "248c62871edea5a8f147208f513daa0e06b4fbed5261feaee85e1f4e157c5168"
+    },
+    {
+      "file": "progress.json",
+      "sha256": "bfbce3d46dc9b97a19315fd55dd8cfbd3f70636a40336c079489c249447a89e7"
+    },
+    {
+      "file": "sdk-regression.json",
+      "sha256": "2ef3b9233c2c8d073bf05f1b12c6ebbc2bb0678b1c164ace70b040c8df258ca5"
+    },
+    {
+      "file": "source-audit.json",
+      "sha256": "353682cbb5b7cb615be9d34110a91f9142a058e846001b7e717a6e2b082d15bb"
+    },
+    {
+      "file": "visual-plan.json",
+      "sha256": "176f4e15b444b1f5b2dec6553ccf470f52b44ef7925142dfcb47cb3034eb02b7"
+    }
+  ],
+  "progressEvidence": "progress.json"
+}

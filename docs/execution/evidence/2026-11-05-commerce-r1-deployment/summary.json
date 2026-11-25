@@ -1,0 +1,91 @@
+{
+  "date": "2026-11-05",
+  "version": "0.1.12-poc",
+  "result": "passed",
+  "phase": "post-freeze independent package acceptance",
+  "archive": {
+    "file": "AI-Browser-Workbench-0.1.12-win64-commerce-r1.zip",
+    "sha256": "501c5ba14e0d827357a4271e2a9648342d129cc126f20a10a907e60e11364838",
+    "bytes": 231261928
+  },
+  "manifestFiles": 2084,
+  "packageAcceptanceGroups": 10,
+  "packagedCommerceHttpChecks": 105,
+  "packagedEdgeHttpChecks": 131,
+  "portalActions": 27,
+  "nativeAccountChecks": 7,
+  "outage": {
+    "date": "2026-11-05",
+    "result": "passed",
+    "browsers": 2,
+    "stopAfterSeconds": 12.406,
+    "pendingSlotsPreserved": true,
+    "sameAddressRestarted": true,
+    "reconciledSlots": 2,
+    "clientChecks": 95,
+    "checks": [
+      "real-two-browser-outage-stop",
+      "no-auto-slot-release",
+      "same-port-restart-retains-admission",
+      "same-account-reauthentication",
+      "confirmed-stop-release"
+    ]
+  },
+  "sourceRebuiltWithVS2019": true,
+  "stagingFilesVerified": 2084,
+  "stagingDataPristine": true,
+  "previousR4ArchiveUnchanged": true,
+  "secondCleanMachineTested": false,
+  "liveMerchantTested": false,
+  "productionReady": false,
+  "negativeReportsExpectedToFail": [
+    "reject-tampered-document.json",
+    "reject-missing-runtime.json"
+  ],
+  "evidence": [
+    {
+      "file": "package-report.json",
+      "sha256": "3a554fef8156cd8d85d3740480df2f7d2bb88b64b631d248faaf22f993e631fd"
+    },
+    {
+      "file": "self-test.json",
+      "sha256": "ffb3482d5bc0a7204126824c8375d53dfc88b2247f969643394194bb698569ad"
+    },
+    {
+      "file": "self-test.log",
+      "sha256": "4783643e9b18dce8d4147bf9ce4a8a0ea1cdc9f1a6edd201237fbe25aceabbc0"
+    },
+    {
+      "file": "reject-tampered-document.json",
+      "sha256": "686b130ab7cd6185a760cc9f8e0c2e337753e803e8bf5b034bd205f1ed0693b6"
+    },
+    {
+      "file": "reject-missing-runtime.json",
+      "sha256": "d0d08f2294b288a81eeb35d2d04f18cf534dedcbe56e5b57af205fc74ae34b62"
+    },
+    {
+      "file": "copied-source-build.log",
+      "sha256": "90711dd9d6e3f40f507d43adf077a022e19cb64cf08ed1c7044b5ad35e8a4d07"
+    },
+    {
+      "file": "commerce.json",
+      "sha256": "60a1becc465d9904c9df7183e7a6a92f33db9f68378a168ce02be9ea8cec57df"
+    },
+    {
+      "file": "edges.json",
+      "sha256": "ecc8b00a9f4296ca377ef86ff3b07a3d01e4c18599a7e8d08a164ed26b15aba5"
+    },
+    {
+      "file": "outage.json",
+      "sha256": "f84b8b1eef7d374ba2e868e80849a8e6dfc81fd08e377e8db41572bd6de0e371"
+    },
+    {
+      "file": "admin-portal.png",
+      "sha256": "2510da69f12f9591c1710493ad1652428ce20910d714b323b0e933486bdcfa16"
+    },
+    {
+      "file": "native-account.png",
+      "sha256": "ccf1f69cbab07ae2933971959d68707131d40592fab78650e04bfeca9cdd0178"
+    }
+  ]
+}

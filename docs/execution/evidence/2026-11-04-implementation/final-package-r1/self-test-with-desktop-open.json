@@ -1,0 +1,34 @@
+{
+  "result": "passed",
+  "date": "2026-11-04T11:17:52+08:00",
+  "checks": [
+    "package-sha256",
+    "awb-core-tests.exe",
+    "awb-storage-tests.exe",
+    "workbench.exe",
+    "capabilities",
+    "app-local-release-crt",
+    "profile_create",
+    "browser_start",
+    "lease_acquire",
+    "browser_navigate",
+    "page_locate",
+    "page_fill",
+    "page_locate",
+    "page_click",
+    "page_wait_text",
+    "offline-page-server-receipt",
+    "browser_stop",
+    "mcp-initialize-tools-list",
+    "capabilities",
+    "default-portable-root-from-unrelated-cwd",
+    "self-test-keeps-live-user-data-isolated"
+  ],
+  "errors": [],
+  "root": "E:\\project\\webexploer_codex\\build\\evidence\\implementation-20261104\\final-package-r1\\中文 空格部署\\AI-Browser-Workbench-0.1.2-win64-features-r1",
+  "cleanMachine": false,
+  "runtimeModules": [
+    "E:\\project\\webexploer_codex\\build\\evidence\\implementation-20261104\\final-package-r1\\中文 空格部署\\AI-Browser-Workbench-0.1.2-win64-features-r1\\MSVCP140.dll",
+    "E:\\project\\webexploer_codex\\build\\evidence\\implementation-20261104\\final-package-r1\\中文 空格部署\\AI-Browser-Workbench-0.1.2-win64-features-r1\\VCRUNTIME140.dll"
+  ]
+}

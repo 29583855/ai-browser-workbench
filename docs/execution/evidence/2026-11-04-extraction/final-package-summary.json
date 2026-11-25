@@ -1,0 +1,42 @@
+{
+  "date": "2026-11-04T16:22:20.541434+08:00",
+  "result": "passed",
+  "version": "0.1.7-poc",
+  "archive": {
+    "file": "AI-Browser-Workbench-0.1.7-win64-extraction-r2.zip",
+    "sha256": "e9b024934a883da3f3c2a5442526995b330a930eac811cf1b2410e32dd5e7e52",
+    "bytes": 226869733
+  },
+  "manifestFiles": 1394,
+  "deploymentChecks": 9,
+  "packagedSuites": [
+    "browser",
+    "proxy",
+    "lifecycle",
+    "recovery",
+    "socks",
+    "runtime",
+    "api",
+    "pages",
+    "inspector",
+    "workflow",
+    "diagnostics",
+    "extraction",
+    "storage_paths",
+    "protocol",
+    "mcp",
+    "desktop"
+  ],
+  "allOriginalFilesReverifiedAfterTests": true,
+  "originalDataEmpty": true,
+  "originalTestResultsAbsent": true,
+  "secondCleanMachineTested": false,
+  "commercialRelease": false,
+  "designContractChecks": 61,
+  "designContractReport": "package-web-contracts/report.json",
+  "archiveDocumentCheck": {
+    "result": "passed",
+    "markdownFiles": 47,
+    "localLinksChecked": 346
+  }
+}

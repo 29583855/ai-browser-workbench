@@ -1,0 +1,93 @@
+<!doctype html>
+<meta charset="utf-8">
+<title>元素探查与表单操作夹具</title>
+<style>
+  body { font: 16px sans-serif; margin: 20px; }
+  input, select, button { margin: 4px; min-height: 24px; }
+  .row { margin-bottom: 10px; }
+  .covered { position: relative; display: inline-block; width: 160px; height: 40px; }
+  .cover { position: absolute; inset: 0; background: #777; }
+</style>
+<div class="row">
+  <input id="editable" value="secret-canary-inspector" aria-label="测试输入">
+  <input id="readonly" readonly value="unchanged">
+  <input id="hidden" type="hidden" value="unchanged">
+  <input id="file" type="file">
+  <input id="normalize" value="">
+</div>
+<div class="row">
+  <fieldset disabled><input id="fieldset" value="unchanged"></fieldset>
+  <span inert><input id="inert" value="unchanged"></span>
+  <span style="opacity:0"><input id="opacity" value="unchanged"></span>
+  <span style="display:none"><input id="display" value="unchanged"></span>
+</div>
+<div class="row">
+  <button id="click">点击一次</button>
+  <button id="transparent" style="opacity:0">透明按钮</button>
+  <div class="covered"><button id="covered">被覆盖的按钮</button><div class="cover"></div></div>
+  <button class="duplicate">重复一</button><button class="duplicate">重复二</button>
+</div>
+<div class="row">
+  <select id="single" aria-label="地区">
+    <option value="">请选择</option><option value="us">美国</option><option value="cn">中国</option>
+    <option value="bad" disabled>禁用</option><optgroup label="禁用组" disabled><option value="locked">锁定</option></optgroup>
+    <option value="dupe">重名一</option><option value="dupe">重名二</option>
+    <option value="secret-canary-selection">隐私选项</option>
+  </select>
+  <select id="multiple" multiple><option value="a">甲</option><option value="b">乙</option><option value="c">丙</option></select>
+  <select id="disabled-select" disabled><option value="x">禁用</option></select>
+  <select id="reactive"><option value="a">原值</option><option value="b">会被网页重设</option></select>
+</div>
+<div id="clicks">0</div><div id="focuses">0</div><div id="input-events">0:0</div><div id="select-events">0:0</div>
+<div id="single-value"></div><div id="multiple-value"></div><div id="reactive-events">0</div><div id="normalized-events">0</div><div id="scroll">0</div>
+<button id="remove">移除输入</button>
+<div style="height:2000px"></div><button id="offscreen">视口外按钮</button>
+<script>
+  const byId = document.getElementById.bind(document);
+  let clicks = 0, focuses = 0, inputs = 0, changes = 0, selectInputs = 0, selectChanges = 0, reactiveChanges = 0, normalizedChanges = 0;
+  // 用途：记录真实点击次数，不伪造客户端成功；日期：2026-11-04。
+  function countClick() { byId('clicks').textContent = String(++clicks); }
+  byId('click').addEventListener('click', countClick);
+  byId('offscreen').addEventListener('click', countClick);
+  // 用途：记录填写的input/change事件，不输出填写内容；日期：2026-11-04。
+  function recordInput(event) {
+    if (event.type === 'input') ++inputs; else ++changes;
+    byId('input-events').textContent = String(inputs) + ':' + changes;
+  }
+  byId('editable').addEventListener('input', recordInput);
+  byId('editable').addEventListener('change', recordInput);
+  // 用途：对选项事件和实际DOM选择结果提供独立可查询断言；日期：2026-11-04。
+  function recordSelect(event) {
+    if (event.type === 'input') ++selectInputs; else ++selectChanges;
+    byId('select-events').textContent = String(selectInputs) + ':' + selectChanges;
+    byId('single-value').textContent = byId('single').value;
+    byId('multiple-value').textContent = Array.from(byId('multiple').selectedOptions).map(optionValue).join(',');
+  }
+  // 用途：仅供夹具断言读取固定选项值，不进入产品探查结果；日期：2026-11-04。
+  function optionValue(option) { return option.value; }
+  for (const id of ['single', 'multiple']) {
+    byId(id).addEventListener('input', recordSelect);
+    byId(id).addEventListener('change', recordSelect);
+  }
+  // 用途：模拟网站在事件处理器中改变选择，验证后置条件失败不重试；日期：2026-11-04。
+  function resetSelection() {
+    byId('reactive').selectedIndex = 0;
+    byId('reactive-events').textContent = String(++reactiveChanges);
+  }
+  byId('reactive').addEventListener('change', resetSelection);
+  // 用途：模拟网站对输入的即时格式化，验证值后置条件失败会明确报告；日期：2026-11-04。
+  function normalizeInput() {
+    byId('normalize').value = byId('normalize').value.toUpperCase();
+    byId('normalized-events').textContent = String(++normalizedChanges);
+  }
+  byId('normalize').addEventListener('change', normalizeInput);
+  // 用途：制造同文档移除引用的失效条件；日期：2026-11-04。
+  function removeInput() { byId('editable').remove(); }
+  byId('remove').addEventListener('click', removeInput);
+  // 用途：独立记录滚动以证明预览不执行滚动；日期：2026-11-04。
+  function recordScroll() { byId('scroll').textContent = String(scrollY); }
+  window.addEventListener('scroll', recordScroll);
+  // 用途：记录真实焦点事件以验证只读预览不会聚焦控件；日期：2026-11-04。
+  function recordFocus() { byId('focuses').textContent = String(++focuses); }
+  document.addEventListener('focusin', recordFocus);
+</script>

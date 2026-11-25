@@ -1,0 +1,12 @@
+{
+  "date": "2026-11-05",
+  "result": "passed",
+  "checks": [
+    "windows-powershell-5.1-unrelated-cwd-chinese-space-config",
+    "start-script-real-node-enrollment-and-approval",
+    "authenticated-heartbeat-after-approval",
+    "stop-script-graceful-exit",
+    "relative-private-root-rejected"
+  ],
+  "physicalSecondMachineTested": false
+}

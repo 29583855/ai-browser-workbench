@@ -1,0 +1,30 @@
+CMake is re-running because E:/project/webexploer_codex/build/vs2019-x64/CMakeFiles/generate.stamp is out-of-date.
+  the file 'E:/project/webexploer_codex/CMakeLists.txt'
+  is newer than 'E:/project/webexploer_codex/build/vs2019-x64/CMakeFiles/generate.stamp.depend'
+  result='-1'
+-- Configuring done
+-- Generating done
+-- Build files have been written to: E:/project/webexploer_codex/build/vs2019-x64
+用于 .NET Framework 的 Microsoft (R) 生成引擎版本 16.11.6+a918ceb31
+版权所有(C) Microsoft Corporation。保留所有权利。
+
+  awb_sqlite.vcxproj -> E:\project\webexploer_codex\build\vs2019-x64\Release\awb_sqlite.lib
+  catalog.cpp
+  local_api.cpp
+  service.cpp
+  正在生成代码...
+  awb_core.vcxproj -> E:\project\webexploer_codex\build\vs2019-x64\Release\awb_core.lib
+  storage_tests.cpp
+  main.cpp
+  main.cpp
+  main.cpp
+  core_tests.cpp
+  flow_editor.cpp
+  workbench-cli.vcxproj -> E:\project\webexploer_codex\build\vs2019-x64\Release\workbench-cli.exe
+  workbench-mcp.vcxproj -> E:\project\webexploer_codex\build\vs2019-x64\Release\workbench-mcp.exe
+  automation_windows.cpp
+  awb-core-tests.vcxproj -> E:\project\webexploer_codex\build\vs2019-x64\Release\awb-core-tests.exe
+  awb-storage-tests.vcxproj -> E:\project\webexploer_codex\build\vs2019-x64\Release\awb-storage-tests.exe
+  library_window.cpp
+  正在生成代码...
+  workbench.vcxproj -> E:\project\webexploer_codex\build\vs2019-x64\Release\workbench.exe

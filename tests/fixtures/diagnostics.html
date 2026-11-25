@@ -1,0 +1,38 @@
+<!doctype html><meta charset="utf-8"><title>诊断夹具</title>
+<button id="failure">错误请求与异常</button><button id="delay">异步请求</button>
+<button id="flood">事件溢出</button><button id="foreign">外域请求</button>
+<button id="request-flood">请求预算</button>
+<output id="sent">ready</output><output id="late">waiting</output>
+<script>
+// 用途：产生真实HTTP错误、重定向、连接失败和异常，内容包含禁止写入证据的哨兵；日期：2026-11-04。
+document.querySelector('#failure').onclick = () => {
+  console.error('diagnostic-secret-canary', {password:'diagnostic-secret-canary'});
+  fetch('/diag404?token=diagnostic-secret-canary');
+  fetch('/diag-redirect');
+  fetch('/diag-fail').catch(() => {});
+  document.querySelector('#sent').textContent = 'sent';
+  setTimeout(() => { throw new TypeError('diagnostic-secret-canary'); }, 0);
+};
+// 用途：异步响应晚于点击步骤，测试请求起点上下文不被下一步骤覆盖；日期：2026-11-04。
+document.querySelector('#delay').onclick = () => {
+  fetch('/diag-delay?token=diagnostic-secret-canary').then(r => r.text()).then(() => {
+    document.querySelector('#late').textContent = 'arrived';
+  });
+  document.querySelector('#sent').textContent = 'sent';
+};
+// 用途：产生超过记录预算的控制台事件，验证游标丢失报告；日期：2026-11-04。
+document.querySelector('#flood').onclick = () => {
+  for (let i=0; i<600; ++i) console.warn('diagnostic-secret-canary', i);
+  document.querySelector('#sent').textContent = 'flooded';
+};
+// 用途：未授权来源仅供验证采集过滤，浏览器策略不会将其视作网络防火墙；日期：2026-11-04。
+document.querySelector('#foreign').onclick = () => {
+  fetch('http://localhost:' + location.port + '/diag404?token=foreign-secret-canary').catch(() => {});
+  document.querySelector('#sent').textContent = 'foreign';
+};
+// 用途：同时发起超过未决请求预算的只读请求，不以丢失请求构造成功；日期：2026-11-04。
+document.querySelector('#request-flood').onclick = () => {
+  for (let i=0; i<140; ++i) fetch('/diag-delay?budget=' + i).catch(() => {});
+  document.querySelector('#sent').textContent = 'requested';
+};
+</script>

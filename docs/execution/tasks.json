@@ -1,0 +1,3087 @@
+{
+  "schemaVersion": 1,
+  "updated": "2026-11-05",
+  "mode": "development-poc",
+  "productPolicy": "FREE_TEN_ENV_PROXY_V2",
+  "releaseReady": false,
+  "note": "0.1.13实现三官方支付协议、OIDC/PKCE和单持久协调器的多Windows节点队列/租约/真实浏览器执行；双配置、本地独立协议夹具及同机双节点通过。商户/企业IdP/真实证书和第二台物理机未验收；原234条完整父包剩余实现与验收逐项保留。",
+  "tasks": [
+    {
+      "id": "T001",
+      "title": "固定 4 个首发场景和目标动作清单",
+      "group": "local",
+      "baselineDays": 1.0,
+      "state": "完成",
+      "completed": "冻结四首发场景、输入/动作/业务断言及负向规则",
+      "remaining": [],
+      "evidence": [
+        "docs/acceptance/首发四场景与POC验收.md"
+      ]
+    },
+    {
+      "id": "T002",
+      "title": "冻结 VC2019/v142、C++14、注释、编码、目录与格式规范",
+      "group": "local",
+      "baselineDays": 1.0,
+      "state": "完成",
+      "completed": "v142/C++14/x64/SDK、编码/注释/格式规范及真实源码审计",
+      "remaining": [],
+      "evidence": [
+        "docs/adr/001_POC工程与UI决策.md",
+        ".clang-format",
+        "CMakeLists.txt",
+        "docs/execution/evidence/2026-11-03-poc/source-audit.json"
+      ]
+    },
+    {
+      "id": "T003",
+      "title": "VS2019/v142/SDK19041、CMake、最小测试与双配置构建",
+      "group": "local",
+      "baselineDays": 2.0,
+      "state": "进行中",
+      "completed": "本机CMake及原生9项目VS2019解决方案双配置编译/核心/SQLite/窗口通过；含中文空格复制源码Release重建已有证据",
+      "remaining": [
+        "干净机器重建、自动CI与可复现依赖供应门尚未通过"
+      ],
+      "evidence": [
+        "CMakeLists.txt",
+        "AIBrowserWorkbench.sln",
+        "vs2019/Workbench.Common.props",
+        "docs/execution/evidence/2026-11-04-portable/summary.json",
+        "docs/execution/evidence/2026-11-04-portable/relocated-source-build.log",
+        "docs/execution/evidence/2026-11-04-review/summary.json",
+        "docs/execution/evidence/2026-11-04-implementation/final-package-summary.json",
+        "docs/execution/evidence/2026-11-04-inspector/final-package-summary.json",
+        "docs/34_项目功能复盘与回归测试报告.md",
+        "docs/44_官方支付OIDC与多机调度实施验收.md",
+        "docs/execution/evidence/2026-11-05-integrations-r1/summary.json"
+      ]
+    },
+    {
+      "id": "T004",
+      "title": "Qt 维护/许可和 Win32 备选、UI 壳验证",
+      "group": "local",
+      "baselineDays": 2.0,
+      "state": "完成",
+      "completed": "采纳Win32备选，真实窗口/控件及忙碌撤销验证",
+      "remaining": [],
+      "evidence": [
+        "docs/adr/001_POC工程与UI决策.md",
+        "src/ui/main.cpp",
+        "docs/execution/evidence/2026-11-03-poc/Debug-ctest.log",
+        "docs/execution/evidence/2026-11-03-poc/Release-ctest.log"
+      ]
+    },
+    {
+      "id": "T005",
+      "title": "三重点仓库源码/许可/内核来源核查",
+      "group": "local",
+      "baselineDays": 2.0,
+      "state": "完成",
+      "completed": "三个固定提交源码/许可/子模块/内核边界审查，限制性源码不准入",
+      "remaining": [],
+      "evidence": [
+        "docs/research/source_gate_execution_2026-11-03.json",
+        "NOTICE.md"
+      ]
+    },
+    {
+      "id": "T006",
+      "title": "Chromium 受控启动、握手、停止与归属",
+      "group": "local",
+      "baselineDays": 2.0,
+      "state": "完成",
+      "completed": "独立进程启动、协议握手、PID/创建时间、停止及自有Job清理",
+      "remaining": [],
+      "evidence": [
+        "src/browser/browser.cpp",
+        "docs/execution/evidence/2026-11-03-poc/Debug-browser/report.json",
+        "docs/execution/evidence/2026-11-03-poc/Release-browser/report.json"
+      ]
+    },
+    {
+      "id": "T007",
+      "title": "自建夹具站点首批与断言方式",
+      "group": "local",
+      "baselineDays": 2.0,
+      "state": "完成",
+      "completed": "首批登录注册/报表/存储/复杂DOM夹具及业务事实断言",
+      "remaining": [],
+      "evidence": [
+        "tests/fixtures/web_app.py",
+        "tests/fixtures/fixture.js",
+        "docs/acceptance/首发四场景与POC验收.md",
+        "docs/execution/evidence/2026-11-03-poc/Release-browser/report.json"
+      ]
+    },
+    {
+      "id": "T008",
+      "title": "三 Profile 存储隔离和初步代理验证",
+      "group": "local",
+      "baselineDays": 2.0,
+      "state": "完成",
+      "completed": "三Profile持久身份与存储隔离；初步HTTP代理出口/断线拒绝",
+      "remaining": [],
+      "evidence": [
+        "tests/integration_browser.py",
+        "tests/integration_proxy.py",
+        "docs/execution/evidence/2026-11-03-poc/Debug-browser/report.json",
+        "docs/execution/evidence/2026-11-03-poc/Release-browser/report.json",
+        "docs/execution/evidence/2026-11-03-poc/Debug-proxy/report.json",
+        "docs/execution/evidence/2026-11-03-poc/Release-proxy/report.json"
+      ]
+    },
+    {
+      "id": "T009",
+      "title": "快照、基础动作、截图最小闭环",
+      "group": "local",
+      "baselineDays": 2.0,
+      "state": "完成",
+      "completed": "主帧AX快照、定位填写点击、截图和真实CDP表单录屏闭环",
+      "remaining": [],
+      "evidence": [
+        "src/browser/browser.cpp",
+        "docs/execution/evidence/2026-11-03-poc/Release-browser/report.json",
+        "docs/execution/evidence/2026-11-03-poc/Release-browser/registration-login.gif",
+        "docs/execution/evidence/2026-11-03-poc/Release-browser/screenshot.png"
+      ]
+    },
+    {
+      "id": "T010",
+      "title": "重复节点、OOPIF、Shadow DOM 定位实验",
+      "group": "local",
+      "baselineDays": 2.0,
+      "state": "完成",
+      "completed": "实测重复节点、open/closed Shadow、同源frame与独立OOPIF；明确主帧限制",
+      "remaining": [],
+      "evidence": [
+        "docs/execution/evidence/2026-11-03-poc/Release-browser/report.json",
+        "docs/execution/evidence/2026-11-03-poc/Release-browser/recording-frames/dom-probe.json",
+        "tests/record_cdp.mjs"
+      ]
+    },
+    {
+      "id": "T011",
+      "title": "Space 归属、租约和人工接管实验",
+      "group": "local",
+      "baselineDays": 2.0,
+      "state": "进行中",
+      "completed": "Profile单写租约generation/TTL、原子撤销及UI接管",
+      "remaining": [
+        "Space/Tab归属、真实人工操作仲裁与跨空间实验未实现"
+      ],
+      "evidence": [
+        "src/core/service.cpp"
+      ]
+    },
+    {
+      "id": "T012",
+      "title": "最小 MCP stdio 握手和工具调用实验",
+      "group": "local",
+      "baselineDays": 1.0,
+      "state": "完成",
+      "completed": "官方Python MCP SDK真实握手、工具schema/调用、错误与ping互操作",
+      "remaining": [],
+      "evidence": [
+        "src/mcp/main.cpp",
+        "tests/integration_mcp.py",
+        "docs/execution/evidence/2026-11-03-poc/Debug-mcp/report.json",
+        "docs/execution/evidence/2026-11-03-poc/Release-mcp/report.json"
+      ]
+    },
+    {
+      "id": "T013",
+      "title": "焦点、断代理、服务/浏览器崩溃实验",
+      "group": "local",
+      "baselineDays": 2.0,
+      "state": "进行中",
+      "completed": "浏览器/服务崩溃、Job清理、登录恢复、HTTP断代理；真实提交后CDP超时返回未知且不重试；r1长路径CacheStorage异常已稳定复现，受控短路径别名使Cookie/LS/IDB/Cache/SW及旧数据重开通过",
+      "remaining": [
+        "可见窗口/多窗口焦点、全故障矩阵及正式流程业务结果查验未完成",
+        "0.1.7-r1匿名故障已定位CacheStorage长路径并修正；0.1.6旧失败缺同级阶段记录，旧CDP12017亦未证明同源，继续故障矩阵和长稳验收"
+      ],
+      "evidence": [
+        "src/browser/browser.cpp",
+        "docs/execution/evidence/2026-11-04-extraction/summary.json"
+      ]
+    },
+    {
+      "id": "T014",
+      "title": "G0 评审与下一阶段重估",
+      "group": "local",
+      "baselineDays": 1.0,
+      "state": "未开始",
+      "completed": "",
+      "remaining": [],
+      "evidence": []
+    },
+    {
+      "id": "T015",
+      "title": "SQLite schema、迁移和事务访问层",
+      "group": "local",
+      "baselineDays": 2.0,
+      "state": "完成",
+      "completed": "SQLite 3.54.1同工具链C目标、WAL/FULL单写事务、v1/v2校验迁移及升级前快照、旧JSON保留/幂等导入、在线元数据备份/新文件恢复；双配置故障与全POC回归通过。独立基础层验收不解除T014/G0。",
+      "remaining": [],
+      "evidence": [
+        "docs/adr/002_SQLite索引迁移与独立验收.md",
+        "docs/acceptance/T015_SQLite索引验收.md",
+        "src/core/catalog.cpp",
+        "tests/storage_tests.cpp",
+        "docs/execution/evidence/2026-11-03-sqlite-final/Debug-storage-report.json",
+        "docs/execution/evidence/2026-11-03-sqlite-final/Release-storage-report.json",
+        "docs/execution/evidence/2026-11-03-sqlite-final/Debug-ctest.log",
+        "docs/execution/evidence/2026-11-03-sqlite-final/Release-ctest.log",
+        "docs/execution/evidence/2026-11-03-sqlite-final/summary.json"
+      ]
+    },
+    {
+      "id": "T016",
+      "title": "Profile CRUD、唯一目录和回收站",
+      "group": "local",
+      "baselineDays": 3.0,
+      "state": "完成",
+      "completed": "配置更新/乐观版本、归档/回收/恢复/二次ID确认永久删除；运行中与持久资源引用保护；清理中断保留状态和重启重试；中文/长路径、junction/硬链接边界双配置通过",
+      "remaining": [],
+      "evidence": [
+        "docs/acceptance/T016_环境生命周期验收.md",
+        "docs/execution/evidence/2026-11-04-implementation/Debug-lifecycle/report.json",
+        "docs/execution/evidence/2026-11-04-implementation/Release-lifecycle/report.json",
+        "docs/execution/evidence/2026-11-04-implementation/Debug-storage-report.json",
+        "docs/execution/evidence/2026-11-04-implementation/Release-storage-report.json"
+      ]
+    },
+    {
+      "id": "T017",
+      "title": "浏览器进程树、Job Object、启动恢复",
+      "group": "local",
+      "baselineDays": 2.0,
+      "state": "完成",
+      "completed": "持久进程身份记录、重启恢复识别、Job崩溃清理及不误杀外部进程双配置验收；长目录使用固定目标的私有短路径连接，句柄防替换/冲突拒绝/退出清理通过，普通路径继续拒绝用户重解析点",
+      "remaining": [],
+      "evidence": [
+        "docs/acceptance/T017_进程归属与恢复验收.md",
+        "docs/execution/evidence/2026-11-04-implementation/Debug-recovery/report.json",
+        "docs/execution/evidence/2026-11-04-implementation/Release-recovery/report.json",
+        "docs/execution/evidence/2026-11-04-extraction/summary.json"
+      ]
+    },
+    {
+      "id": "T018",
+      "title": "CDP 连接、多 session、事件和超时",
+      "group": "local",
+      "baselineDays": 3.0,
+      "state": "进行中",
+      "completed": "受管多页面独立session、元数据事件游标/有界缓冲/缺口、8秒截止、显式同进程重连且不重放业务；0.1.6增加三个诊断工具共42工具、无内容元数据与步骤关联及桌面三按钮；r1长路径CacheStorage异常已稳定复现，受控短路径别名使Cookie/LS/IDB/Cache/SW及旧数据重开通过",
+      "remaining": [
+        "实时事件订阅、完整frame/OOPIF会话、合并故障/取消及持久事件恢复未完成",
+        "候选部署测试只读核对偶发CDP传输取消12017原因尚未确立；需后续连接稳定性/长稳复现，失败证据已保留",
+        "0.1.7-r1匿名故障已定位CacheStorage长路径并修正；0.1.6旧失败缺同级阶段记录，旧CDP12017亦未证明同源，继续故障矩阵和长稳验收"
+      ],
+      "evidence": [
+        "src/browser/browser.cpp",
+        "docs/21_多页面事件与显式重连测试报告.md",
+        "docs/execution/evidence/2026-11-04-multipage/summary.json",
+        "docs/execution/evidence/2026-11-04-diagnostics/summary.json",
+        "docs/execution/evidence/2026-11-04-extraction/summary.json"
+      ]
+    },
+    {
+      "id": "T019",
+      "title": "导航/点击/填写/选择/等待/截图正式化",
+      "group": "local",
+      "baselineDays": 3.0,
+      "state": "进行中",
+      "completed": "导航/唯一定位/填写/鼠标点击/原生单多选/文本断言/截图；统一可操作条件及填写/选择实际后置校验",
+      "remaining": [
+        "文件/跨frame动作、完整业务后置断言与全部动作夹具未完成"
+      ],
+      "evidence": [
+        "src/browser/browser.cpp",
+        "docs/execution/evidence/2026-11-04-inspector/summary.json",
+        "docs/execution/evidence/2026-11-04-inspector/final-package-summary.json"
+      ]
+    },
+    {
+      "id": "T020",
+      "title": "requestId、错误码、证据和结构化日志",
+      "group": "local",
+      "baselineDays": 2.0,
+      "state": "进行中",
+      "completed": "有界JSONL、请求ID、结构错误码、outcomeUnknown及测试证据；本地API请求ID及有界无秘密结构化审计/故障语义已实现；流程步骤无输入值元数据检查点与固定错误码已接入；0.1.6增加三个诊断工具共42工具、无内容元数据与步骤关联及桌面三按钮；0.1.7接入Schema提取与有界批处理共44工具、逐项未知结果停批及桌面按钮；API审计增加固定部分/未知摘要",
+      "remaining": [
+        "正式步骤/证据存储、结构日志、审计和秘密策略未完成"
+      ],
+      "evidence": [
+        "src/core/service.cpp",
+        "docs/execution/evidence/2026-11-04-workflow/summary.json",
+        "docs/execution/evidence/2026-11-04-diagnostics/summary.json",
+        "docs/execution/evidence/2026-11-04-extraction/summary.json"
+      ]
+    },
+    {
+      "id": "T021",
+      "title": "本地 REST 鉴权与 CLI 基础命令",
+      "group": "local",
+      "baselineDays": 2.0,
+      "state": "完成",
+      "completed": "鉴权回环REST/CLI共用21工具、If-Match、Host/Origin、结构化审计与结果未知故障双配置验收",
+      "remaining": [],
+      "evidence": [
+        "docs/acceptance/T021_本地HTTP接口验收.md",
+        "docs/execution/evidence/2026-11-04-implementation/Debug-api/report.json",
+        "docs/execution/evidence/2026-11-04-implementation/Release-api/report.json"
+      ]
+    },
+    {
+      "id": "T022",
+      "title": "工作台、环境列表和运行日志 UI",
+      "group": "local",
+      "baselineDays": 3.0,
+      "state": "进行中",
+      "completed": "真实环境列表/启停/定位/填写/点击/文本控件与异步结果；新增多页面六控件与显式重连真实测试；新增探查高亮/清除/预览点击/单值选择四按钮，原生双配置59步骤通过；39共享工具增加流程校验/发布/执行/状态/控制，原生桌面及HTTP/MCP真实通过；0.1.6增加三个诊断工具共42工具、无内容元数据与步骤关联及桌面三按钮；0.1.7接入Schema提取与有界批处理共44工具、逐项未知结果停批及桌面按钮；API审计增加固定部分/未知摘要；0.1.8完成环境侧栏、四分组卡片、真实执行状态、中文字体/焦点与选中名称同步；原生/CMake双配置及桌面各11组通过；修正结果发布先于按钮恢复的时序窗口，驱动等待按钮可用，Debug一次/Release两次完整复验通过；候选包原超时及未证明唯一根因保留于文档27",
+      "remaining": [
+        "完整产品页面、运行日志视图、不同DPI/多显示器、较小窗口滚动与完整可访问性验收尚未完成"
+      ],
+      "evidence": [
+        "src/core/service.cpp",
+        "docs/execution/evidence/2026-11-04-multipage/summary.json",
+        "docs/execution/evidence/2026-11-04-inspector/summary.json",
+        "docs/execution/evidence/2026-11-04-inspector/final-package-summary.json",
+        "docs/execution/evidence/2026-11-04-workflow/summary.json",
+        "docs/execution/evidence/2026-11-04-diagnostics/summary.json",
+        "docs/execution/evidence/2026-11-04-extraction/summary.json",
+        "src/ui/theme.hpp",
+        "docs/27_桌面界面美化与交互验证报告.md",
+        "docs/execution/evidence/2026-11-04-ui/summary.json",
+        "docs/34_项目功能复盘与回归测试报告.md"
+      ]
+    },
+    {
+      "id": "T023",
+      "title": "10 个可重复流程与 v0.1 集成验收",
+      "group": "local",
+      "baselineDays": 2.0,
+      "state": "未开始",
+      "completed": "",
+      "remaining": [],
+      "evidence": []
+    },
+    {
+      "id": "T024",
+      "title": "Space/Tab 资源模型与弹窗归属",
+      "group": "local",
+      "baselineDays": 2.0,
+      "state": "进行中",
+      "completed": "本地受管页面ID、列表/新建/切换/关闭、同源子弹窗收纳、32页预算、跨环境拒绝及桌面操作",
+      "remaining": [
+        "Space资源归属/范围、完整Tab生命周期仲裁、弹窗预注册及系统事件交接未完成"
+      ],
+      "evidence": [
+        "src/browser/browser.cpp",
+        "src/ui/main.cpp",
+        "docs/21_多页面事件与显式重连测试报告.md",
+        "docs/execution/evidence/2026-11-04-multipage/summary.json"
+      ]
+    },
+    {
+      "id": "T025",
+      "title": "租约 generation、排队/派发门禁",
+      "group": "local",
+      "baselineDays": 3.0,
+      "state": "进行中",
+      "completed": "Profile本地单写代数及发送锁内租约验证",
+      "remaining": [
+        "Space层、排队/取消和跨空间派发测试未完成"
+      ],
+      "evidence": [
+        "src/core/service.cpp"
+      ]
+    },
+    {
+      "id": "T026",
+      "title": "暂停、接管、恢复和急停状态机",
+      "group": "local",
+      "baselineDays": 2.0,
+      "state": "进行中",
+      "completed": "UI忙碌时撤销；停止先撤销再等待当前请求返回；39共享工具增加流程校验/发布/执行/状态/控制，原生桌面及HTTP/MCP真实通过",
+      "remaining": [
+        "暂停/恢复/接管排空正式状态机、所有未来入口覆盖未完成"
+      ],
+      "evidence": [
+        "src/core/service.cpp",
+        "docs/execution/evidence/2026-11-04-workflow/summary.json"
+      ]
+    },
+    {
+      "id": "T027",
+      "title": "AX/DOM 快照、压缩、子树与截断元信息",
+      "group": "local",
+      "baselineDays": 3.0,
+      "state": "进行中",
+      "completed": "主帧AX快照，500节点/深度12、截断标志",
+      "remaining": [
+        "子树/压缩、多frame范围、体积与耗时基准未完成"
+      ],
+      "evidence": [
+        "src/browser/browser.cpp"
+      ]
+    },
+    {
+      "id": "T028",
+      "title": "frame/session/epoch 引用和唯一定位校验",
+      "group": "local",
+      "baselineDays": 4.0,
+      "state": "进行中",
+      "completed": "loader和随机浏览器epoch绑定引用、歧义/旧文档/重启引用拒绝",
+      "remaining": [
+        "frame/session/epoch完整模型和OOPIF定位动作未实现"
+      ],
+      "evidence": [
+        "src/browser/browser.cpp"
+      ]
+    },
+    {
+      "id": "T029",
+      "title": "JSON Schema 提取和动作批处理",
+      "group": "local",
+      "baselineDays": 2.0,
+      "state": "完成",
+      "completed": "主文档有界Schema提取/缺失字段/类型与约束、整批预检、真实动作及逐项部分/停批结果；未知结果不重放；双配置/HTTP/MCP/桌面撤销通过",
+      "remaining": [],
+      "evidence": [
+        "docs/acceptance/T029_结构化提取与动作批处理.md",
+        "docs/execution/evidence/2026-11-04-extraction/summary.json"
+      ]
+    },
+    {
+      "id": "T030",
+      "title": "正式 MCP 工具、取消和权限映射",
+      "group": "local",
+      "baselineDays": 2.0,
+      "state": "进行中",
+      "completed": "正式SDK可调用的最小stdio服务与共享工具表；0.1.7接入Schema提取与有界批处理共44工具、逐项未知结果停批及桌面按钮；API审计增加固定部分/未知摘要",
+      "remaining": [
+        "取消/进度/事件、权限映射与正式全部MCP工具未完成"
+      ],
+      "evidence": [
+        "src/core/service.cpp",
+        "docs/execution/evidence/2026-11-04-extraction/summary.json"
+      ]
+    },
+    {
+      "id": "T031",
+      "title": "Space/接管/快照和任务状态 UI",
+      "group": "local",
+      "baselineDays": 3.0,
+      "state": "未开始",
+      "completed": "",
+      "remaining": [],
+      "evidence": []
+    },
+    {
+      "id": "T032",
+      "title": "20 动作夹具与多客户端互操作回归",
+      "group": "local",
+      "baselineDays": 2.0,
+      "state": "未开始",
+      "completed": "",
+      "remaining": [],
+      "evidence": []
+    },
+    {
+      "id": "T033",
+      "title": "流程 DSL、Schema、版本与类型校验",
+      "group": "local",
+      "baselineDays": 2.0,
+      "state": "完成",
+      "completed": "DSL1.0、有界输入Schema、类型/图/能力校验、不可变SHA256发布；34反例/独立结构Schema/双配置多入口通过",
+      "remaining": [],
+      "evidence": [
+        "docs/acceptance/T033_流程定义与类型校验.md",
+        "docs/execution/evidence/2026-11-04-workflow/summary.json"
+      ]
+    },
+    {
+      "id": "T034",
+      "title": "顺序/条件/显式循环/子流程执行器",
+      "group": "local",
+      "baselineDays": 4.0,
+      "state": "完成",
+      "completed": "顺序/条件/显式计数循环/嵌套/子流程解释器；20真实流程、异步运行、暂停/恢复/取消及租约边界通过",
+      "remaining": [],
+      "evidence": [
+        "docs/acceptance/T034_有界流程执行器.md",
+        "docs/execution/evidence/2026-11-04-workflow/summary.json"
+      ]
+    },
+    {
+      "id": "T035",
+      "title": "步骤状态、检查点、幂等分类和未知结果",
+      "group": "local",
+      "baselineDays": 2.0,
+      "state": "进行中",
+      "completed": "无秘密步骤检查点、写前executing意图、重放分类、后置未确认unknown和重启冻结；真实提交后杀进程不重复",
+      "remaining": [
+        "完整intent/dispatched/verified阶段日志、人工核对后断点恢复、与全证据存储集成仍未完成"
+      ],
+      "evidence": [
+        "docs/23_流程执行器与检查点测试报告.md",
+        "docs/execution/evidence/2026-11-04-workflow/summary.json"
+      ]
+    },
+    {
+      "id": "T036",
+      "title": "HTTP/无认证 SOCKS5 与出口检测基础",
+      "group": "local",
+      "baselineDays": 2.0,
+      "state": "进行中",
+      "completed": "真实HTTP/SOCKS5接入、远端域名解析、注册登录及断隧道拒绝；产品出口探测尚未完成",
+      "remaining": [
+        "受管请求/实际页面分别检测出口及一致性、错误/延时呈现与受控公网验证未完成；完整泄漏矩阵另属T091"
+      ],
+      "evidence": [
+        "docs/acceptance/T036_无认证代理阶段验证.md",
+        "docs/execution/evidence/2026-11-04-implementation/Debug-socks/report.json",
+        "docs/execution/evidence/2026-11-04-implementation/Release-socks/report.json"
+      ]
+    },
+    {
+      "id": "T037",
+      "title": "UA/语言/时区配置与生效报告",
+      "group": "local",
+      "baselineDays": 1.0,
+      "state": "完成",
+      "completed": "UA/语言/时区持久配置、真实请求头/网页生效报告及双环境隔离/重启/错误配置双配置验收",
+      "remaining": [],
+      "evidence": [
+        "docs/acceptance/T037_区域配置验收.md",
+        "docs/execution/evidence/2026-11-04-implementation/Debug-runtime/report.json",
+        "docs/execution/evidence/2026-11-04-implementation/Release-runtime/report.json"
+      ]
+    },
+    {
+      "id": "T038",
+      "title": "元素探查、定位预览和动作试执行",
+      "group": "local",
+      "baselineDays": 2.0,
+      "state": "完成",
+      "completed": "唯一CSS探查、原生可视高亮/清除、只读预览、动作草稿和人工单步试执行；双配置/桌面/HTTP/官方MCP验证",
+      "remaining": [],
+      "evidence": [
+        "docs/acceptance/T038_元素探查与动作试执行.md",
+        "docs/execution/evidence/2026-11-04-inspector/summary.json",
+        "docs/execution/evidence/2026-11-04-inspector/final-package-summary.json"
+      ]
+    },
+    {
+      "id": "T039",
+      "title": "Console/异常/Network 收集和步骤关联",
+      "group": "local",
+      "baselineDays": 3.0,
+      "state": "完成",
+      "completed": "有界Console/异常/Network元数据、页面/请求/流程步骤关联、重定向/异步/租约/来源/丢失预算；双配置11组及HTTP/MCP/桌面通过",
+      "remaining": [],
+      "evidence": [
+        "docs/acceptance/T039_诊断收集与步骤关联.md",
+        "docs/execution/evidence/2026-11-04-diagnostics/summary.json"
+      ]
+    },
+    {
+      "id": "T040",
+      "title": "5 Profile 队列、资源限制和取消",
+      "group": "local",
+      "baselineDays": 2.0,
+      "state": "进行中",
+      "completed": "本地最多5活动流程线程，同Profile排斥、步骤/时长预算和取消已实现",
+      "remaining": [
+        "5 Profile资源负载/内存CPU限制、持久排队、公平调度和取消竞态完整矩阵仍未验收"
+      ],
+      "evidence": [
+        "docs/23_流程执行器与检查点测试报告.md",
+        "docs/execution/evidence/2026-11-04-workflow/summary.json"
+      ]
+    },
+    {
+      "id": "T041",
+      "title": "G1 核心链路和 AI 任务基线",
+      "group": "local",
+      "baselineDays": 2.0,
+      "state": "未开始",
+      "completed": "",
+      "remaining": [],
+      "evidence": []
+    },
+    {
+      "id": "T042",
+      "title": "画布节点、连线、选择、撤销和布局",
+      "group": "local",
+      "baselineDays": 4.0,
+      "state": "进行中",
+      "completed": "原生画布节点、端口连线/主子流程、框选/拖动/缩放、历史/剪贴板、自动保存恢复已本机验证",
+      "remaining": [
+        "完整属性向导、可视化图错误定位、调试和全部可访问性/多屏验收未完成"
+      ],
+      "evidence": [
+        "docs/32_可视化RPA实施与测试记录.md",
+        "docs/34_项目功能复盘与回归测试报告.md"
+      ]
+    },
+    {
+      "id": "T043",
+      "title": "属性面板、变量、Schema、输入与发布",
+      "group": "local",
+      "baselineDays": 3.0,
+      "state": "进行中",
+      "completed": "DSL1.1变量和主文档readTexts数组输出已进入foreach，新增文件/断言节点及画布/Schema同步",
+      "remaining": [
+        "结构化输入/变量/属性表单、完整Schema联动与UI/DSL兼容矩阵仍未完成"
+      ],
+      "evidence": [
+        "docs/23_流程执行器与检查点测试报告.md",
+        "docs/execution/evidence/2026-11-04-workflow/summary.json",
+        "docs/32_可视化RPA实施与测试记录.md",
+        "docs/35_自动化基础能力补全与测试报告.md",
+        "docs/execution/evidence/2026-11-05-implementation/cmake-Debug-final/Debug-credentials_debug/report.json",
+        "docs/execution/evidence/2026-11-05-implementation/cmake-Release-final/Release-credentials_debug/report.json",
+        "docs/38_未实现收口更新与回归验证.md",
+        "docs/execution/evidence/2026-11-05-completion-r3/summary.json"
+      ]
+    },
+    {
+      "id": "T044",
+      "title": "操作录制、定位候选、输入合并、SecretRef",
+      "group": "local",
+      "baselineDays": 4.0,
+      "state": "进行中",
+      "completed": "主文档真实录制/定位候选/输入合并、画布草稿及DPAPI SecretRef填写已实现",
+      "remaining": [
+        "跨frame/Shadow/弹窗、复杂控件、实时录制工具条和录制后凭据绑定完整引导尚未完成"
+      ],
+      "evidence": [
+        "docs/32_可视化RPA实施与测试记录.md",
+        "docs/35_自动化基础能力补全与测试报告.md",
+        "docs/execution/evidence/2026-11-05-implementation/cmake-Debug-final/Debug-credentials_debug/report.json",
+        "docs/execution/evidence/2026-11-05-implementation/cmake-Release-final/Release-credentials_debug/report.json"
+      ]
+    },
+    {
+      "id": "T045",
+      "title": "断点、单步、变量检查与错误路由 UI",
+      "group": "local",
+      "baselineDays": 3.0,
+      "state": "进行中",
+      "completed": "精确flow/step断点、首节点暂停、单步/跨过/跳出、脱敏变量和只读错误分支及原生调试窗通过",
+      "remaining": [
+        "完整画布断点/运行高亮、所有动作错误路由策略与多页面/并发故障矩阵尚未完成"
+      ],
+      "evidence": [
+        "docs/35_自动化基础能力补全与测试报告.md",
+        "docs/execution/evidence/2026-11-05-implementation/cmake-Debug-final/Debug-credentials_debug/report.json",
+        "docs/execution/evidence/2026-11-05-implementation/cmake-Release-final/Release-credentials_debug/report.json"
+      ]
+    },
+    {
+      "id": "T046",
+      "title": "富文本/下拉/上传/下载与路径校验",
+      "group": "local",
+      "baselineDays": 3.0,
+      "state": "进行中",
+      "completed": "普通单文件上传、下载目录及完成事件/文件核对、ContentEditable、流程和画布节点通过本机测试",
+      "remaining": [
+        "多文件/自定义编辑器和选择器适配、下载取消/重名/断网/跨版本及完整路径故障矩阵仍未验收"
+      ],
+      "evidence": [
+        "docs/38_未实现收口更新与回归验证.md",
+        "docs/execution/evidence/2026-11-05-completion-r3/summary.json"
+      ]
+    },
+    {
+      "id": "T047",
+      "title": "录制与画布一致性回归",
+      "group": "local",
+      "baselineDays": 2.0,
+      "state": "进行中",
+      "completed": "原生画布/录制草稿配置/发布/主窗口回放、模型视图隔离及双配置三轮回归通过",
+      "remaining": [
+        "完整图形JSON运行一致性、复杂控件/新DSL和故障矩阵待验收"
+      ],
+      "evidence": [
+        "docs/32_可视化RPA实施与测试记录.md",
+        "docs/34_项目功能复盘与回归测试报告.md"
+      ]
+    },
+    {
+      "id": "T048",
+      "title": "时区调度、漏跑、去重、批次逐项结果",
+      "group": "local",
+      "baselineDays": 3.0,
+      "state": "未开始",
+      "completed": "",
+      "remaining": [],
+      "evidence": []
+    },
+    {
+      "id": "T049",
+      "title": "凭据保管、敏感标记与证据脱敏",
+      "group": "local",
+      "baselineDays": 2.0,
+      "state": "进行中",
+      "completed": "DPAPI凭据保管、用途/来源/环境绑定、SecretRef、敏感变量传播与统一输出脱敏通过",
+      "remaining": [
+        "全来源敏感分类、报告/截图/导出/历史证据统一策略和跨Windows用户凭据迁移尚未完成"
+      ],
+      "evidence": [
+        "docs/35_自动化基础能力补全与测试报告.md",
+        "docs/execution/evidence/2026-11-05-implementation/cmake-Debug-final/Debug-credentials_debug/report.json",
+        "docs/execution/evidence/2026-11-05-implementation/cmake-Release-final/Release-credentials_debug/report.json"
+      ]
+    },
+    {
+      "id": "T050",
+      "title": "模型 Provider、调用预算和状态记录",
+      "group": "local",
+      "baselineDays": 2.0,
+      "state": "完成",
+      "completed": "真实WinHTTP模型Provider、持久预算预留、超时/失败/未知不重试、状态历史及未配置降级通过",
+      "remaining": [],
+      "evidence": [
+        "docs/35_自动化基础能力补全与测试报告.md",
+        "docs/execution/evidence/2026-11-05-implementation/model-packages-clean-Debug/report.json",
+        "docs/execution/evidence/2026-11-05-implementation/model-packages-clean-Release/report.json"
+      ]
+    },
+    {
+      "id": "T051",
+      "title": "自然语言生成草稿和结构/权限校验",
+      "group": "local",
+      "baselineDays": 2.0,
+      "state": "进行中",
+      "completed": "模型生成JSON草稿，统一结构/类型/图/来源验证并在画布审阅；未配置不阻断手工操作",
+      "remaining": [
+        "真实外部模型语义效果、权限/任务对象完整校验及跨站点任务规划成功率基准尚未完成"
+      ],
+      "evidence": [
+        "docs/35_自动化基础能力补全与测试报告.md",
+        "docs/execution/evidence/2026-11-05-implementation/model-packages-clean-Debug/report.json",
+        "docs/execution/evidence/2026-11-05-implementation/model-packages-clean-Release/report.json"
+      ]
+    },
+    {
+      "id": "T052",
+      "title": "环境分组、模板、批操作和配置导入导出",
+      "group": "local",
+      "baselineDays": 2.0,
+      "state": "完成",
+      "completed": "SQLite v7本地分组/模板/历史/配置原子导入导出、完整原生配置表单、逐项持久批次、分页与保留去重归档；双配置/三端/生命周期/并发故障/真实CLI中断验收通过",
+      "remaining": [],
+      "evidence": [
+        "docs/38_未实现收口更新与回归验证.md",
+        "docs/execution/evidence/2026-11-05-completion-r3/summary.json",
+        "docs/acceptance/T052_环境库模板批操作与配置管理.md",
+        "docs/40_环境库表单与批次保留管理实现测试.md",
+        "docs/execution/evidence/2026-11-05-completion-r4/summary.json"
+      ]
+    },
+    {
+      "id": "T053",
+      "title": "扩展分配、版本、权限与启动检查",
+      "group": "local",
+      "baselineDays": 2.0,
+      "state": "未开始",
+      "completed": "",
+      "remaining": [],
+      "evidence": []
+    },
+    {
+      "id": "T054",
+      "title": "代理认证实验、断代理策略和 DNS 检测",
+      "group": "local",
+      "baselineDays": 2.0,
+      "state": "未开始",
+      "completed": "",
+      "remaining": [],
+      "evidence": []
+    },
+    {
+      "id": "T055",
+      "title": "一致性备份、加密包和恢复验证",
+      "group": "local",
+      "baselineDays": 2.0,
+      "state": "未开始",
+      "completed": "",
+      "remaining": [],
+      "evidence": []
+    },
+    {
+      "id": "T056",
+      "title": "G2 集成回归与 v0.5 测试版",
+      "group": "local",
+      "baselineDays": 3.0,
+      "state": "未开始",
+      "completed": "",
+      "remaining": [],
+      "evidence": []
+    },
+    {
+      "id": "T057",
+      "title": "窗口排列、DPI 和显示器配置",
+      "group": "local",
+      "baselineDays": 1.0,
+      "state": "未开始",
+      "completed": "",
+      "remaining": [],
+      "evidence": []
+    },
+    {
+      "id": "T058",
+      "title": "同构页面语义同步与失败目标隔离",
+      "group": "local",
+      "baselineDays": 3.0,
+      "state": "未开始",
+      "completed": "",
+      "remaining": [],
+      "evidence": []
+    },
+    {
+      "id": "T059",
+      "title": "BitBrowser 健康/列表/开关/CDP 适配",
+      "group": "local",
+      "baselineDays": 3.0,
+      "state": "未开始",
+      "completed": "",
+      "remaining": [],
+      "evidence": []
+    },
+    {
+      "id": "T060",
+      "title": "诊断包、证据回放、对比与脱敏预览",
+      "group": "local",
+      "baselineDays": 2.0,
+      "state": "未开始",
+      "completed": "",
+      "remaining": [],
+      "evidence": []
+    },
+    {
+      "id": "T061",
+      "title": "安装器、运行时检测、签名更新与回滚",
+      "group": "local",
+      "baselineDays": 4.0,
+      "state": "进行中",
+      "completed": "独立Release便携目录/ZIP、app-local VC142、固定浏览器、相对路径发现、独立数据、来源及SHA-256清单、无Python/Node离线自检；本机换目录实测通过；0.1.1并行桌面自检、篡改/缺DLL拒绝、启动入口与复制源码重建验证；0.1.2长路径修复及9项完整新包部署/复制源码验收通过",
+      "remaining": [
+        "签名安装器、系统运行条件检测/修复、签名更新/回滚尚未实现",
+        "三台干净Windows机器的安装、升级、失败恢复和回滚门未通过；便携复制不替代这些门"
+      ],
+      "evidence": [
+        "tools/package-portable.ps1",
+        "tools/package_portable.py",
+        "tools/portable/Self-Test.ps1",
+        "docs/14_VC2019工程与便携测试包.md",
+        "docs/execution/evidence/2026-11-04-portable/summary.json",
+        "docs/execution/evidence/2026-11-04-review/summary.json",
+        "docs/execution/evidence/2026-11-04-implementation/final-package-summary.json",
+        "docs/execution/evidence/2026-11-04-inspector/final-package-summary.json"
+      ]
+    },
+    {
+      "id": "T062",
+      "title": "30 流程回归与 30×3 AI 任务测试",
+      "group": "local",
+      "baselineDays": 3.0,
+      "state": "未开始",
+      "completed": "",
+      "remaining": [],
+      "evidence": []
+    },
+    {
+      "id": "T063",
+      "title": "性能、24 小时长稳、资源与焦点回归",
+      "group": "local",
+      "baselineDays": 3.0,
+      "state": "未开始",
+      "completed": "",
+      "remaining": [],
+      "evidence": []
+    },
+    {
+      "id": "T064",
+      "title": "中文帮助、API/MCP 文档与 3 个模板",
+      "group": "local",
+      "baselineDays": 2.0,
+      "state": "进行中",
+      "completed": "0.1.1实际功能操作、部署运行环境、源码编译开发环境及复盘测试报告四份中文文档，随包入口与CLI/MCP实际参数说明；新增实际本地HTTP API参考和0.1.2功能文档；新增从零到一登录/业务测试手册、可执行登录查询流程及执行记录模板；本机5组场景及流程两次真实浏览器验证通过；补充内容自动化设计、可运行练习站教程、19步DSL与CLI编排示例及缺陷记录；15组内容浏览器检查及冻结便携程序两次公开入口运行通过，通用CA未覆盖部分保留",
+      "remaining": [
+        "后续新增接口的完整帮助、3个产品流程模板及新用户独立演练未验收；当前文档不代表完整产品帮助系统"
+      ],
+      "evidence": [
+        "docs/15_测试复盘与缺陷修复报告.md",
+        "docs/16_功能操作说明.md",
+        "docs/17_运行环境搭建配置.md",
+        "docs/18_源码编译开发环境搭建.md",
+        "docs/execution/evidence/2026-11-04-review/summary.json",
+        "docs/19_功能增量与测试报告.md",
+        "docs/20_本地HTTP_API参考.md",
+        "docs/28_Web系统从零到一测试操作流程.md",
+        "docs/examples/workflow-login-report.json",
+        "docs/examples/web-test-run-record-template.md",
+        "docs/execution/evidence/2026-11-04-quickstart/summary.json",
+        "docs/29_文章发布搜索与互动自动化流程.md",
+        "docs/examples/content-automation-task.example.json",
+        "docs/examples/content-automation-run-record-template.md",
+        "docs/30_内容网站脚本自动化实测与操作指南.md",
+        "examples/content-lab/README.md",
+        "examples/content-lab/workflow-publish-search.json",
+        "docs/execution/evidence/2026-11-04-content-lab/public-entry-summary.json",
+        "docs/34_项目功能复盘与回归测试报告.md"
+      ]
+    },
+    {
+      "id": "T065",
+      "title": "许可、依赖、维护与编码/注释审查",
+      "group": "local",
+      "baselineDays": 2.0,
+      "state": "进行中",
+      "completed": "固定MIT/SQLite依赖锁、NOTICE、编码/格式/注释审计；便携包浏览器来源哈希、VC142官方Redist说明及逐文件清单；打包输入显式校验不受Python -O影响，统一版本来源及执行日期报告修正",
+      "remaining": [
+        "完整发行SBOM、传递依赖、制品签名及维护/发布审查未完成"
+      ],
+      "evidence": [
+        "src/core/service.cpp",
+        "NOTICE.md",
+        "tools/package_portable.py",
+        "docs/execution/evidence/2026-11-04-portable/summary.json",
+        "docs/execution/evidence/2026-11-04-review/summary.json",
+        "docs/execution/evidence/2026-11-04-implementation/final-package-summary.json",
+        "docs/execution/evidence/2026-11-04-inspector/final-package-summary.json"
+      ]
+    },
+    {
+      "id": "T066",
+      "title": "缺陷冻结、G3 验收与发布候选",
+      "group": "local",
+      "baselineDays": 3.0,
+      "state": "未开始",
+      "completed": "",
+      "remaining": [],
+      "evidence": []
+    },
+    {
+      "id": "T067",
+      "title": "Web 测试项目、四场景、用例和动作契约细化 W1–W3",
+      "group": "local",
+      "baselineDays": 1.0,
+      "state": "完成",
+      "completed": "项目/环境/用例/数据集/bundle严格Schema，4场景与48目录的准备/预期/具体反例/清理，12动作能力边界及增量选型；61项离线设计契约验证通过；运行管理与执行仍由后续包承担",
+      "remaining": [],
+      "evidence": [
+        "docs/acceptance/T067_Web测试数据契约验收.md",
+        "docs/execution/evidence/2026-11-04-web-contracts/report.json"
+      ]
+    },
+    {
+      "id": "T068",
+      "title": "localhost 登录注册测试站点与固定数据 W4–W6",
+      "group": "local",
+      "baselineDays": 2.0,
+      "state": "进行中",
+      "completed": "真实登录注册、重复/错误密码、报表与隔离夹具；新增SQLite持久化本地内容网站，包含发布/草稿/审核、分页搜索、点赞、评论与指定回复，15组真实浏览器检查通过",
+      "remaining": [
+        "24用例完整fixture/首批10例归集与G0依赖未完成"
+      ],
+      "evidence": [
+        "src/core/service.cpp",
+        "examples/content-lab/server.py",
+        "examples/content-lab/index.html",
+        "examples/content-lab/app.js",
+        "examples/content-lab/runner.py",
+        "tests/integration_content_lab.py",
+        "docs/execution/evidence/2026-11-04-content-lab/integration-report.json",
+        "docs/34_项目功能复盘与回归测试报告.md"
+      ]
+    },
+    {
+      "id": "T069",
+      "title": "页面元素选取、高亮、快捷操作与步骤插入 W7–W9",
+      "group": "local",
+      "baselineDays": 3.0,
+      "state": "进行中",
+      "completed": "原生Overlay拾取拦截点击，唯一CSS候选回填选择器；退出/撤销后退出无补发点击",
+      "remaining": [
+        "语义对象约束、直接插入步骤、复杂frame与完整反例矩阵未完成"
+      ],
+      "evidence": [
+        "docs/32_可视化RPA实施与测试记录.md"
+      ]
+    },
+    {
+      "id": "T070",
+      "title": "登录/退出/注册模板及认证状态断言 W9–W10",
+      "group": "local",
+      "baselineDays": 3.0,
+      "state": "未开始",
+      "completed": "",
+      "remaining": [],
+      "evidence": []
+    },
+    {
+      "id": "T071",
+      "title": "可视化断言编辑和动作前注册请求观察 W9–W10",
+      "group": "local",
+      "baselineDays": 3.0,
+      "state": "进行中",
+      "completed": "严格URL/文本/数量/状态断言工具、DSL断言节点及画布接入已完成子范围",
+      "remaining": [
+        "结构化可视化断言属性表单、动作前网络响应观察及完整正反矩阵尚未实现"
+      ],
+      "evidence": [
+        "docs/38_未实现收口更新与回归验证.md",
+        "docs/execution/evidence/2026-11-05-completion-r3/summary.json"
+      ]
+    },
+    {
+      "id": "T072",
+      "title": "开发/测试环境、角色、数据与前后置清理 W14–W16",
+      "group": "local",
+      "baselineDays": 3.0,
+      "state": "未开始",
+      "completed": "",
+      "remaining": [],
+      "evidence": []
+    },
+    {
+      "id": "T073",
+      "title": "参数化用例、测试集、筛选与隔离调度 W17–W19",
+      "group": "local",
+      "baselineDays": 3.0,
+      "state": "未开始",
+      "completed": "",
+      "remaining": [],
+      "evidence": []
+    },
+    {
+      "id": "T074",
+      "title": "测试报告、失败证据、HTML/JSON/JUnit 导出 W19–W23",
+      "group": "local",
+      "baselineDays": 3.0,
+      "state": "未开始",
+      "completed": "",
+      "remaining": [],
+      "evidence": []
+    },
+    {
+      "id": "T075",
+      "title": "测试 CLI、CI 退出码与回归集成说明 W23–W24",
+      "group": "local",
+      "baselineDays": 2.0,
+      "state": "未开始",
+      "completed": "",
+      "remaining": [],
+      "evidence": []
+    },
+    {
+      "id": "T076",
+      "title": "48 用例×10 轮回归和易操作性验收 W25–W26",
+      "group": "local",
+      "baselineDays": 1.0,
+      "state": "未开始",
+      "completed": "",
+      "remaining": [],
+      "evidence": []
+    },
+    {
+      "id": "T077",
+      "title": "依赖固定、C++14 传输/Schema/Qt5 与节点画布构建门 W1–W3",
+      "group": "local",
+      "baselineDays": 4.0,
+      "state": "进行中",
+      "completed": "实际固定并编译nlohmann/json；Win32路线ADR",
+      "remaining": [
+        "通用draft-07、传输服务、日期/加密/画布等逐依赖准入未完成"
+      ],
+      "evidence": [
+        "src/core/service.cpp"
+      ]
+    },
+    {
+      "id": "T078",
+      "title": "运行时来源、下载校验、版本/能力与受管更新 W4–W6",
+      "group": "local",
+      "baselineDays": 4.0,
+      "state": "进行中",
+      "completed": "官方CfT来源/版本/ZIP哈希，真实协议与受管进程",
+      "remaining": [
+        "产品下载验证器、损坏/断网/两版本能力/更新策略未完成"
+      ],
+      "evidence": [
+        "src/core/service.cpp"
+      ]
+    },
+    {
+      "id": "T079",
+      "title": "命名管道 ACL、端点所有权、Worker 调用门禁 W4–W6",
+      "group": "local",
+      "baselineDays": 3.0,
+      "state": "未开始",
+      "completed": "",
+      "remaining": [],
+      "evidence": []
+    },
+    {
+      "id": "T080",
+      "title": "拾取/录制复杂事件、IME、回放去重和跨帧补量 W11–W13",
+      "group": "local",
+      "baselineDays": 4.0,
+      "state": "进行中",
+      "completed": "主文档输入合并、Chromium IME/Enter去重、原生Overlay拾取无业务误触通过",
+      "remaining": [
+        "跨frame/Shadow/弹窗、虚拟列表、实体IME及复杂事件完整矩阵未完成"
+      ],
+      "evidence": [
+        "docs/32_可视化RPA实施与测试记录.md"
+      ]
+    },
+    {
+      "id": "T081",
+      "title": "popup/dialog/权限/导航预注册与系统交接 W9–W10",
+      "group": "local",
+      "baselineDays": 3.0,
+      "state": "未开始",
+      "completed": "",
+      "remaining": [],
+      "evidence": []
+    },
+    {
+      "id": "T082",
+      "title": "Mailpit/MockInbox、激活/重置/验证码适配 W14–W16",
+      "group": "local",
+      "baselineDays": 4.0,
+      "state": "未开始",
+      "completed": "",
+      "remaining": [],
+      "evidence": []
+    },
+    {
+      "id": "T083",
+      "title": "受控 OIDC/PKCE、TOTP 和虚拟 WebAuthn W17–W20",
+      "group": "local",
+      "baselineDays": 5.0,
+      "state": "未开始",
+      "completed": "",
+      "remaining": [],
+      "evidence": []
+    },
+    {
+      "id": "T084",
+      "title": "scoped Mock/HAR、WS/SSE 检查及故障模拟 W17–W20",
+      "group": "local",
+      "baselineDays": 6.0,
+      "state": "未开始",
+      "completed": "",
+      "remaining": [],
+      "evidence": []
+    },
+    {
+      "id": "T085",
+      "title": "页面时钟、后端 reset、唯一数据/租户与污染门 W14–W16",
+      "group": "local",
+      "baselineDays": 4.0,
+      "state": "未开始",
+      "completed": "",
+      "remaining": [],
+      "evidence": []
+    },
+    {
+      "id": "T086",
+      "title": "Pixelmatch Worker、视觉基线版本与 diff W17–W20",
+      "group": "local",
+      "baselineDays": 4.0,
+      "state": "未开始",
+      "completed": "",
+      "remaining": [],
+      "evidence": []
+    },
+    {
+      "id": "T087",
+      "title": "axe 扫描、响应式矩阵与工作台键盘检查 W21–W22",
+      "group": "local",
+      "baselineDays": 3.0,
+      "state": "未开始",
+      "completed": "",
+      "remaining": [],
+      "evidence": []
+    },
+    {
+      "id": "T088",
+      "title": "OCR Worker、Canvas 候选/坐标时效和人工降级 W21–W22",
+      "group": "local",
+      "baselineDays": 4.0,
+      "state": "未开始",
+      "completed": "",
+      "remaining": [],
+      "evidence": []
+    },
+    {
+      "id": "T089",
+      "title": "draft-07 方言、表达式 AST、图/子流程与导入边界 W9–W13",
+      "group": "local",
+      "baselineDays": 4.0,
+      "state": "进行中",
+      "completed": "共享输入Schema、DSL1.1有限AST算术/字符串/变量/列表、图/子流程/错误边校验通过",
+      "remaining": [
+        "通用draft-07方言准入/转换、正式新DSL历史迁移器和完整导入导出格式矩阵待完成"
+      ],
+      "evidence": [
+        "docs/23_流程执行器与检查点测试报告.md",
+        "docs/execution/evidence/2026-11-04-workflow/summary.json",
+        "docs/32_可视化RPA实施与测试记录.md",
+        "docs/35_自动化基础能力补全与测试报告.md",
+        "docs/execution/evidence/2026-11-05-implementation/cmake-Debug-final/Debug-credentials_debug/report.json",
+        "docs/execution/evidence/2026-11-05-implementation/cmake-Release-final/Release-credentials_debug/report.json"
+      ]
+    },
+    {
+      "id": "T090",
+      "title": "date/tz、DST、休眠/重启调度与触发去重 W14–W16",
+      "group": "local",
+      "baselineDays": 3.0,
+      "state": "未开始",
+      "completed": "",
+      "remaining": [],
+      "evidence": []
+    },
+    {
+      "id": "T091",
+      "title": "认证代理桥、DNS/QUIC/WebRTC/IPv6 矩阵 W17–W20",
+      "group": "local",
+      "baselineDays": 6.0,
+      "state": "未开始",
+      "completed": "",
+      "remaining": [],
+      "evidence": []
+    },
+    {
+      "id": "T092",
+      "title": "MV3/运行时加载策略、Native Messaging 登记 W17–W18",
+      "group": "local",
+      "baselineDays": 3.0,
+      "state": "未开始",
+      "completed": "",
+      "remaining": [],
+      "evidence": []
+    },
+    {
+      "id": "T093",
+      "title": "libsodium 加密包、跨版本迁移和恢复补量 W19–W21",
+      "group": "local",
+      "baselineDays": 5.0,
+      "state": "未开始",
+      "completed": "",
+      "remaining": [],
+      "evidence": []
+    },
+    {
+      "id": "T094",
+      "title": "WinSparkle/签名、密钥轮换、离线与失败回滚 W21–W22",
+      "group": "local",
+      "baselineDays": 4.0,
+      "state": "未开始",
+      "completed": "",
+      "remaining": [],
+      "evidence": []
+    },
+    {
+      "id": "T095",
+      "title": "写前日志、重启核对、事件背压与资源配额 W19–W22",
+      "group": "local",
+      "baselineDays": 4.0,
+      "state": "进行中",
+      "completed": "录制1000条/8MiB事件预算、草稿独立原子自动保存、强退恢复及revision冲突本机验证",
+      "remaining": [
+        "业务写前派发日志、未知结果核对、跨进程背压及完整资源配额未完成"
+      ],
+      "evidence": [
+        "docs/32_可视化RPA实施与测试记录.md",
+        "docs/34_项目功能复盘与回归测试报告.md"
+      ]
+    },
+    {
+      "id": "T096",
+      "title": "追踪/报告脱敏、HTML 安全和 CI 制品保留 W23–W24",
+      "group": "local",
+      "baselineDays": 4.0,
+      "state": "未开始",
+      "completed": "",
+      "remaining": [],
+      "evidence": []
+    },
+    {
+      "id": "T097",
+      "title": "分页/revision/去重、事件重连和 MCP 兼容加固 W21–W24",
+      "group": "local",
+      "baselineDays": 4.0,
+      "state": "未开始",
+      "completed": "",
+      "remaining": [],
+      "evidence": []
+    },
+    {
+      "id": "T098",
+      "title": "未知业务结果查验、清理/补偿与文件边界 W19–W22",
+      "group": "local",
+      "baselineDays": 3.0,
+      "state": "未开始",
+      "completed": "",
+      "remaining": [],
+      "evidence": []
+    },
+    {
+      "id": "T099",
+      "title": "WT25–WT48 夹具汇总与正反向/权限/故障验收 W25",
+      "group": "local",
+      "baselineDays": 4.0,
+      "state": "未开始",
+      "completed": "",
+      "remaining": [],
+      "evidence": []
+    },
+    {
+      "id": "T100",
+      "title": "新增能力联合故障回归与来源准入发布门 W29",
+      "group": "local",
+      "baselineDays": 5.0,
+      "state": "未开始",
+      "completed": "",
+      "remaining": [],
+      "evidence": []
+    },
+    {
+      "id": "T113",
+      "title": "环境矩阵、配置一致性/重复扫描及差异草稿 W17–W19",
+      "group": "local",
+      "baselineDays": 4.0,
+      "state": "未开始",
+      "completed": "",
+      "remaining": [],
+      "evidence": []
+    },
+    {
+      "id": "T114",
+      "title": "Space 总览、受限预览、owner/接管与图像背压 W17–W20",
+      "group": "local",
+      "baselineDays": 5.0,
+      "state": "未开始",
+      "completed": "",
+      "remaining": [],
+      "evidence": []
+    },
+    {
+      "id": "T115",
+      "title": "单一契约注册表、多端生成器及产物校验 W11–W16",
+      "group": "local",
+      "baselineDays": 6.0,
+      "state": "进行中",
+      "completed": "91工具共享注册表、契约JSON/OpenAPI/TS参数类型及手册生成、三传输新增功能实测通过",
+      "remaining": [
+        "完整Schema方言转换与所有历史客户端兼容矩阵仍未完成"
+      ],
+      "evidence": [
+        "docs/35_自动化基础能力补全与测试报告.md",
+        "docs/contracts/tools-v1.json",
+        "sdk/python/awb_client.py",
+        "sdk/typescript/client.ts",
+        "docs/38_未实现收口更新与回归验证.md",
+        "docs/execution/evidence/2026-11-05-completion-r3/summary.json"
+      ]
+    },
+    {
+      "id": "T116",
+      "title": "MCP 精简工具集、快照预算与同文档 delta W17–W20",
+      "group": "local",
+      "baselineDays": 2.0,
+      "state": "未开始",
+      "completed": "",
+      "remaining": [],
+      "evidence": []
+    },
+    {
+      "id": "T117",
+      "title": "TS/Python 薄客户端、版本化 Agent 手册与 3 个示例 W24–W26",
+      "group": "local",
+      "baselineDays": 4.0,
+      "state": "完成",
+      "completed": "Python/TS薄客户端、完整Schema握手/漂移拒绝、版本化Agent手册、三个核心示例及两端独立环境SecretRef登录示例通过",
+      "remaining": [],
+      "evidence": [
+        "docs/35_自动化基础能力补全与测试报告.md",
+        "sdk/AGENT_API_V1.md",
+        "docs/execution/evidence/2026-11-05-implementation/sdk-login-Debug/report.json",
+        "docs/execution/evidence/2026-11-05-implementation/sdk-login-Release/report.json"
+      ]
+    },
+    {
+      "id": "T118",
+      "title": "站点知识包格式、校验、导入差异和版本导出 W17–W22",
+      "group": "local",
+      "baselineDays": 5.0,
+      "state": "完成",
+      "completed": "数据型站点知识包封闭契约、坏包校验、差异/CAS导入/不可变版本精确导出、干净项目复用回放通过",
+      "remaining": [],
+      "evidence": [
+        "docs/35_自动化基础能力补全与测试报告.md",
+        "docs/execution/evidence/2026-11-05-implementation/model-packages-clean-Debug/report.json",
+        "docs/execution/evidence/2026-11-05-implementation/model-packages-clean-Release/report.json"
+      ]
+    },
+    {
+      "id": "T119",
+      "title": "定位候选、快照差异与可审阅修复草稿 W23–W25",
+      "group": "local",
+      "baselineDays": 4.0,
+      "state": "进行中",
+      "completed": "主文档有界功能候选及原流程SHA绑定的单节点定位修复草稿通过；不发布/执行",
+      "remaining": [
+        "完整页面快照差异/改版检测、旧失败与未知提交联合修复验收、跨站点基准尚未完成"
+      ],
+      "evidence": [
+        "docs/35_自动化基础能力补全与测试报告.md",
+        "docs/execution/evidence/2026-11-05-implementation/discovery-repair-r3/report.json"
+      ]
+    },
+    {
+      "id": "T120",
+      "title": "独立 BitBrowser 入站管理子集、字段表与契约 W24–W26",
+      "group": "local",
+      "baselineDays": 6.0,
+      "state": "未开始",
+      "completed": "",
+      "remaining": [],
+      "evidence": []
+    },
+    {
+      "id": "T121",
+      "title": "doctor/状态页、配额与缺组件的只读诊断 W23–W26",
+      "group": "local",
+      "baselineDays": 2.0,
+      "state": "进行中",
+      "completed": "doctor及本地后台策略/摘要/权益/报价菜单已实现，明确免费10环境/10并发和中央未实现状态",
+      "remaining": [
+        "磁盘/端口/缺组件完整诊断、版本握手和正式商业状态页面尚未完成"
+      ],
+      "evidence": [
+        "docs/35_自动化基础能力补全与测试报告.md",
+        "docs/contracts/tools-v1.json",
+        "sdk/python/awb_client.py",
+        "sdk/typescript/client.ts",
+        "docs/38_未实现收口更新与回归验证.md",
+        "docs/execution/evidence/2026-11-05-completion-r3/summary.json"
+      ]
+    },
+    {
+      "id": "T122",
+      "title": "AT 联合故障验收、AI 配对基准和增强收口 W27–W28",
+      "group": "local",
+      "baselineDays": 4.0,
+      "state": "未开始",
+      "completed": "",
+      "remaining": [],
+      "evidence": []
+    },
+    {
+      "id": "T101",
+      "title": "fingerprint-chromium 固定源码/二进制来源与构建",
+      "group": "future",
+      "baselineDays": null,
+      "state": "未开始",
+      "completed": "",
+      "remaining": [],
+      "evidence": []
+    },
+    {
+      "id": "T102",
+      "title": "Canvas/WebGL/字体/音频/Worker/CH 一致性",
+      "group": "future",
+      "baselineDays": null,
+      "state": "未开始",
+      "completed": "",
+      "remaining": [],
+      "evidence": []
+    },
+    {
+      "id": "T103",
+      "title": "迁移备份与多驱动增强；libsodium/自有适配",
+      "group": "future",
+      "baselineDays": null,
+      "state": "未开始",
+      "completed": "",
+      "remaining": [],
+      "evidence": []
+    },
+    {
+      "id": "T104",
+      "title": "ego runtime/native bridge 适配",
+      "group": "future",
+      "baselineDays": null,
+      "state": "未开始",
+      "completed": "",
+      "remaining": [],
+      "evidence": []
+    },
+    {
+      "id": "T105",
+      "title": "WebView2 Win32 COM 嵌入 POC",
+      "group": "future",
+      "baselineDays": null,
+      "state": "未开始",
+      "completed": "",
+      "remaining": [],
+      "evidence": []
+    },
+    {
+      "id": "T106",
+      "title": "内嵌浏览器产品化与完整手动浏览 UI",
+      "group": "future",
+      "baselineDays": null,
+      "state": "未开始",
+      "completed": "",
+      "remaining": [],
+      "evidence": []
+    },
+    {
+      "id": "T107",
+      "title": "完整 JS Debugger/source map/性能与重放",
+      "group": "future",
+      "baselineDays": null,
+      "state": "未开始",
+      "completed": "",
+      "remaining": [],
+      "evidence": []
+    },
+    {
+      "id": "T108",
+      "title": "MCP Streamable HTTP、远程授权与吊销",
+      "group": "future",
+      "baselineDays": null,
+      "state": "未开始",
+      "completed": "",
+      "remaining": [],
+      "evidence": []
+    },
+    {
+      "id": "T109",
+      "title": "团队身份/角色/环境共享锁；历史父项",
+      "group": "future",
+      "baselineDays": null,
+      "state": "已替代",
+      "completed": "由ADM专项工作包替代，不重复计权",
+      "remaining": [],
+      "evidence": []
+    },
+    {
+      "id": "T110",
+      "title": "远程 Worker、mTLS、心跳和任务分发；历史父项",
+      "group": "future",
+      "baselineDays": null,
+      "state": "已替代",
+      "completed": "由ADM专项工作包替代，不重复计权",
+      "remaining": [],
+      "evidence": []
+    },
+    {
+      "id": "T111",
+      "title": "团队审计、密钥轮换、灾备与观测；历史父项",
+      "group": "future",
+      "baselineDays": null,
+      "state": "已替代",
+      "completed": "由ADM专项工作包替代，不重复计权",
+      "remaining": [],
+      "evidence": []
+    },
+    {
+      "id": "T112",
+      "title": "macOS/Linux 平台接口、签名和打包",
+      "group": "future",
+      "baselineDays": null,
+      "state": "未开始",
+      "completed": "",
+      "remaining": [],
+      "evidence": []
+    },
+    {
+      "id": "ADM001",
+      "title": "场景/范围、组织模型、资源归属与验收冻结",
+      "group": "admin",
+      "baselineDays": 3.0,
+      "state": "未开始",
+      "completed": "",
+      "remaining": [],
+      "evidence": []
+    },
+    {
+      "id": "ADM002",
+      "title": "导航/关键页面原型、交互和空/错/离线状态",
+      "group": "admin",
+      "baselineDays": 4.0,
+      "state": "未开始",
+      "completed": "",
+      "remaining": [],
+      "evidence": []
+    },
+    {
+      "id": "ADM003",
+      "title": "控制面/节点契约、版本、错误和生成器扩展",
+      "group": "admin",
+      "baselineDays": 5.0,
+      "state": "进行中",
+      "completed": "节点独立签名消息/版本/契约hash握手、错误协议和97工具/双SDK/OpenAPI同步（0.1.13，2026-11-05）",
+      "remaining": [
+        "节点所有消息的独立JSON Schema生成器、完整历史版本兼容表和正反例目录"
+      ],
+      "evidence": [
+        "docs/44_官方支付OIDC与多机调度实施验收.md",
+        "docs/execution/evidence/2026-11-05-integrations-r1/summary.json"
+      ]
+    },
+    {
+      "id": "ADM004",
+      "title": "v142服务/前端工程、数据库迁移/存储适配与CI",
+      "group": "admin",
+      "baselineDays": 5.0,
+      "state": "进行中",
+      "completed": "新增v142/C++14后台工程、内嵌中文门户、独立SQLite v1事务存储及双构建入口（0.1.12，2026-11-05）",
+      "remaining": [
+        "CI部署、后台存储故障注入和正式迁移升级矩阵"
+      ],
+      "evidence": [
+        "docs/42_后台支付席位与计时实现测试及操作指南.md",
+        "docs/execution/evidence/2026-11-05-commerce-r1/summary.json"
+      ]
+    },
+    {
+      "id": "ADM005",
+      "title": "OIDC/BFF登录、会话/CSRF/注销与首次初始化",
+      "group": "admin",
+      "baselineDays": 6.0,
+      "state": "进行中",
+      "completed": "OIDC发现/授权码S256 PKCE、RS256/JWK/claims、浏览器绑定、HttpOnly/CSRF、显式主体绑定、桌面单次连接码及本地/RP退出；真实Chromium验收通过（0.1.13，2026-11-05）",
+      "remaining": [
+        "实际企业IdP兼容、MFA/账号恢复和管理员恢复完整演练"
+      ],
+      "evidence": [
+        "docs/42_后台支付席位与计时实现测试及操作指南.md",
+        "docs/execution/evidence/2026-11-05-commerce-r1/summary.json",
+        "docs/44_官方支付OIDC与多机调度实施验收.md",
+        "docs/execution/evidence/2026-11-05-integrations-r1/summary.json"
+      ]
+    },
+    {
+      "id": "ADM006",
+      "title": "组织/项目/成员/邀请生命周期及页面",
+      "group": "admin",
+      "baselineDays": 5.0,
+      "state": "进行中",
+      "completed": "组织/邀请/成员页面已有；新增项目来源/成员授权、节点和环境归属、停用及来源收回门禁（0.1.13，2026-11-05）",
+      "remaining": [
+        "项目归档及完整资源生命周期页面、跨模块资源成员联动矩阵"
+      ],
+      "evidence": [
+        "docs/42_后台支付席位与计时实现测试及操作指南.md",
+        "docs/execution/evidence/2026-11-05-commerce-r1/summary.json",
+        "docs/44_官方支付OIDC与多机调度实施验收.md",
+        "docs/execution/evidence/2026-11-05-integrations-r1/summary.json"
+      ]
+    },
+    {
+      "id": "ADM007",
+      "title": "RBAC/ACL/服务账号、判权与免费政策接入点",
+      "group": "admin",
+      "baselineDays": 5.0,
+      "state": "进行中",
+      "completed": "组织四角色、平台运营权限、租户资源隔离和最后所有者保护（0.1.12，2026-11-05）",
+      "remaining": [
+        "资源级ACL、服务账号及六角色完整矩阵"
+      ],
+      "evidence": [
+        "docs/42_后台支付席位与计时实现测试及操作指南.md",
+        "docs/execution/evidence/2026-11-05-commerce-r1/summary.json"
+      ]
+    },
+    {
+      "id": "ADM008",
+      "title": "审计基础、事务outbox与请求去重骨架",
+      "group": "admin",
+      "baselineDays": 4.0,
+      "state": "进行中",
+      "completed": "原不可变审计/账本；新增事务Outbox、节点Inbox、签名序号去重/回复缓存，持久任务载荷DPAPI保护（0.1.13，2026-11-05）",
+      "remaining": [
+        "统一审计归档保留、所有敏感接口拒绝/失败审计与更完整故障矩阵"
+      ],
+      "evidence": [
+        "docs/42_后台支付席位与计时实现测试及操作指南.md",
+        "docs/execution/evidence/2026-11-05-commerce-r1/summary.json",
+        "docs/44_官方支付OIDC与多机调度实施验收.md",
+        "docs/execution/evidence/2026-11-05-integrations-r1/summary.json"
+      ]
+    },
+    {
+      "id": "ADM009",
+      "title": "一次性节点注册、设备密钥与归属批准",
+      "group": "admin",
+      "baselineDays": 5.0,
+      "state": "进行中",
+      "completed": "5分钟一次性注册、独立RSA密钥/DPAPI身份、注册proof和丢失响应安全恢复、pending审批及不可逆撤销（0.1.13，2026-11-05）",
+      "remaining": [
+        "第二台实际Windows重装/跨用户身份与原BT06完整矩阵验收"
+      ],
+      "evidence": [
+        "docs/42_后台支付席位与计时实现测试及操作指南.md",
+        "docs/execution/evidence/2026-11-05-commerce-r1/summary.json",
+        "docs/44_官方支付OIDC与多机调度实施验收.md",
+        "docs/execution/evidence/2026-11-05-integrations-r1/summary.json"
+      ]
+    },
+    {
+      "id": "ADM010",
+      "title": "节点mTLS、证书轮换/吊销和主动出站通道",
+      "group": "admin",
+      "baselineDays": 6.0,
+      "state": "进行中",
+      "completed": "WinHTTP主动HTTPS出站、Windows MY证书指纹选取、独立mTLS入口及私有转发证明、维护/换证/吊销部署模板（0.1.13，2026-11-05）",
+      "remaining": [
+        "真实TLS/mTLS证书握手、过期/换证/撤销及NAT/网关环境演练"
+      ],
+      "evidence": [
+        "docs/44_官方支付OIDC与多机调度实施验收.md",
+        "docs/execution/evidence/2026-11-05-integrations-r1/summary.json"
+      ]
+    },
+    {
+      "id": "ADM011",
+      "title": "节点/交互会话/心跳/容量与详情页",
+      "group": "admin",
+      "baselineDays": 5.0,
+      "state": "进行中",
+      "completed": "真实节点在线/心跳/维护/容量/版本/会话元信息及门户详情，独立worker和browser进程（0.1.13，2026-11-05）",
+      "remaining": [
+        "Windows服务与交互Agent分离、Session0/用户退出/多会话完整支持及实机矩阵"
+      ],
+      "evidence": [
+        "docs/44_官方支付OIDC与多机调度实施验收.md",
+        "docs/execution/evidence/2026-11-05-integrations-r1/summary.json"
+      ]
+    },
+    {
+      "id": "ADM012",
+      "title": "能力/版本/契约握手、节点doctor和预检",
+      "group": "admin",
+      "baselineDays": 4.0,
+      "state": "进行中",
+      "completed": "节点版本/协议/工具契约hash和会话/浏览器能力上报，不兼容阻断；复用本地doctor（0.1.13，2026-11-05）",
+      "remaining": [
+        "完整节点doctor诊断页面及缺组件按能力隔离、多浏览器版本矩阵"
+      ],
+      "evidence": [
+        "docs/44_官方支付OIDC与多机调度实施验收.md",
+        "docs/execution/evidence/2026-11-05-integrations-r1/summary.json"
+      ]
+    },
+    {
+      "id": "ADM013",
+      "title": "环境配置与实例目录、节点/用户绑定及页面",
+      "group": "admin",
+      "baselineDays": 6.0,
+      "state": "进行中",
+      "completed": "门户环境分配目录，固定节点/owner/配置hash/generation，中央容量预留和所属用户授权（0.1.13，2026-11-05）",
+      "remaining": [
+        "目录/实例全生命周期、过滤分页和完整归档/删除恢复页面矩阵"
+      ],
+      "evidence": [
+        "docs/44_官方支付OIDC与多机调度实施验收.md",
+        "docs/execution/evidence/2026-11-05-integrations-r1/summary.json"
+      ]
+    },
+    {
+      "id": "ADM014",
+      "title": "配置发布/分发、revision/ACK/应用结果及差异",
+      "group": "admin",
+      "baselineDays": 5.0,
+      "state": "进行中",
+      "completed": "环境固定配置及generation随不可变运行包下发，节点持久接收并ACK（0.1.13，2026-11-05）",
+      "remaining": [
+        "通用配置更新revision/CAS、差异预览、离线冲突及部分应用结果管理"
+      ],
+      "evidence": [
+        "docs/44_官方支付OIDC与多机调度实施验收.md",
+        "docs/execution/evidence/2026-11-05-integrations-r1/summary.json"
+      ]
+    },
+    {
+      "id": "ADM015",
+      "title": "实例独占归属、停机迁移/恢复和重登录边界",
+      "group": "admin",
+      "baselineDays": 5.0,
+      "state": "未开始",
+      "completed": "",
+      "remaining": [],
+      "evidence": []
+    },
+    {
+      "id": "ADM016",
+      "title": "凭据槽、节点本机绑定与中央可用性管理",
+      "group": "admin",
+      "baselineDays": 5.0,
+      "state": "未开始",
+      "completed": "",
+      "remaining": [],
+      "evidence": []
+    },
+    {
+      "id": "ADM017",
+      "title": "流程/模板目录、步骤表单/DSL草稿、版本校验发布",
+      "group": "admin",
+      "baselineDays": 5.0,
+      "state": "进行中",
+      "completed": "远端流程目录、统一DSL校验和不可变版本发布，项目来源闭包校验；门户JSON发布入口（0.1.13，2026-11-05）",
+      "remaining": [
+        "后台完整步骤属性表单、草稿/模板生命周期、引用闭包跨版本矩阵"
+      ],
+      "evidence": [
+        "docs/44_官方支付OIDC与多机调度实施验收.md",
+        "docs/execution/evidence/2026-11-05-integrations-r1/summary.json"
+      ]
+    },
+    {
+      "id": "ADM018",
+      "title": "测试项目/用例/测试集、角色/数据/前后置页面",
+      "group": "admin",
+      "baselineDays": 6.0,
+      "state": "进行中",
+      "completed": "项目/来源/成员页面与远端流程运行已接入（0.1.13，2026-11-05）",
+      "remaining": [
+        "独立用例/测试集、角色数据、前后置清理与污染页面仍未实现"
+      ],
+      "evidence": [
+        "docs/44_官方支付OIDC与多机调度实施验收.md",
+        "docs/execution/evidence/2026-11-05-integrations-r1/summary.json"
+      ]
+    },
+    {
+      "id": "ADM019",
+      "title": "固定run包、批次/步骤/业务结果与本地测试桥",
+      "group": "admin",
+      "baselineDays": 6.0,
+      "state": "进行中",
+      "completed": "固定版本/输入/超时运行包、实际节点DSL执行、停止确认与持久业务回执，真实网页计数核对（0.1.13，2026-11-05）",
+      "remaining": [
+        "远端批次/完整步骤证据、测试数据命名空间与本地测试桥完整矩阵"
+      ],
+      "evidence": [
+        "docs/44_官方支付OIDC与多机调度实施验收.md",
+        "docs/execution/evidence/2026-11-05-integrations-r1/summary.json"
+      ]
+    },
+    {
+      "id": "ADM020",
+      "title": "调度领取、公平配额、outbox投递/receipt/去重",
+      "group": "admin",
+      "baselineDays": 7.0,
+      "state": "进行中",
+      "completed": "持久FIFO序号、中央原子容量/运行槽、节点容量与assignment独占，事务Outbox/Inbox、ACK/结果幂等且不重放业务（0.1.13，2026-11-05）",
+      "remaining": [
+        "跨组织/项目公平策略和预算优先级、压力/背压及完整历史消息兼容矩阵"
+      ],
+      "evidence": [
+        "docs/44_官方支付OIDC与多机调度实施验收.md",
+        "docs/execution/evidence/2026-11-05-integrations-r1/summary.json"
+      ]
+    },
+    {
+      "id": "ADM021",
+      "title": "中央/节点租约、epoch、分区到期与unknown冻结",
+      "group": "admin",
+      "baselineDays": 7.0,
+      "state": "进行中",
+      "completed": "中央20秒lease、单调18秒本地保护，每次CDP实际发送门禁，generation/epoch、重启unknown和未确认槽冻结；协调器强杀验收通过（0.1.13，2026-11-05）",
+      "remaining": [
+        "真实双机分区、机器时钟跳变、所有迟到消息及完整接管故障矩阵"
+      ],
+      "evidence": [
+        "docs/44_官方支付OIDC与多机调度实施验收.md",
+        "docs/execution/evidence/2026-11-05-integrations-r1/summary.json"
+      ]
+    },
+    {
+      "id": "ADM022",
+      "title": "暂停/取消/急停/人工交接、查验和补偿状态",
+      "group": "admin",
+      "baselineDays": 5.0,
+      "state": "进行中",
+      "completed": "队列/运行中取消、节点停止、unknown人工业务核对并要求真实停止确认（0.1.13，2026-11-05）",
+      "remaining": [
+        "暂停/恢复/人工交接排空与补偿授权的完整状态机和页面"
+      ],
+      "evidence": [
+        "docs/44_官方支付OIDC与多机调度实施验收.md",
+        "docs/execution/evidence/2026-11-05-integrations-r1/summary.json"
+      ]
+    },
+    {
+      "id": "ADM023",
+      "title": "项目策略/审批、AI/CI预算与运行配额预留",
+      "group": "admin",
+      "baselineDays": 6.0,
+      "state": "进行中",
+      "completed": "服务器统一环境激活和并发槽，失联保留配额，按秒用量与预付结算（0.1.12，2026-11-05）",
+      "remaining": [
+        "全生命周期中央目录、项目资源配额和调度排队"
+      ],
+      "evidence": [
+        "docs/42_后台支付席位与计时实现测试及操作指南.md",
+        "docs/execution/evidence/2026-11-05-commerce-r1/summary.json"
+      ]
+    },
+    {
+      "id": "ADM024",
+      "title": "中央定时、DST、漏跑、trigger去重/本地计划冲突",
+      "group": "admin",
+      "baselineDays": 5.0,
+      "state": "未开始",
+      "completed": "",
+      "remaining": [],
+      "evidence": []
+    },
+    {
+      "id": "ADM025",
+      "title": "Space总览、状态/owner/限频预览与背压",
+      "group": "admin",
+      "baselineDays": 5.0,
+      "state": "未开始",
+      "completed": "",
+      "remaining": [],
+      "evidence": []
+    },
+    {
+      "id": "ADM026",
+      "title": "Web交接请求、本机桌面联动/交还与待人工页",
+      "group": "admin",
+      "baselineDays": 6.0,
+      "state": "进行中",
+      "completed": "中文后台与客户门户、运营表格、原生账号表单（0.1.12，2026-11-05）",
+      "remaining": [
+        "通用流程/项目/节点控制台及可访问性完整验收"
+      ],
+      "evidence": [
+        "docs/42_后台支付席位与计时实现测试及操作指南.md",
+        "docs/execution/evidence/2026-11-05-commerce-r1/summary.json"
+      ]
+    },
+    {
+      "id": "ADM027",
+      "title": "Console/Network/节点诊断的受控查询页面",
+      "group": "admin",
+      "baselineDays": 5.0,
+      "state": "未开始",
+      "completed": "",
+      "remaining": [],
+      "evidence": []
+    },
+    {
+      "id": "ADM028",
+      "title": "证据上传/校验/存储、报告/隔离HTML与导出",
+      "group": "admin",
+      "baselineDays": 6.0,
+      "state": "未开始",
+      "completed": "",
+      "remaining": [],
+      "evidence": []
+    },
+    {
+      "id": "ADM029",
+      "title": "事件时间线、重连cursor、运行筛选和统计",
+      "group": "admin",
+      "baselineDays": 5.0,
+      "state": "未开始",
+      "completed": "",
+      "remaining": [],
+      "evidence": []
+    },
+    {
+      "id": "ADM030",
+      "title": "代理/扩展目录、节点分配/槽绑定/生效记录",
+      "group": "admin",
+      "baselineDays": 5.0,
+      "state": "未开始",
+      "completed": "",
+      "remaining": [],
+      "evidence": []
+    },
+    {
+      "id": "ADM031",
+      "title": "知识包/模板导入差异、版本/来源管理",
+      "group": "admin",
+      "baselineDays": 4.0,
+      "state": "未开始",
+      "completed": "",
+      "remaining": [],
+      "evidence": []
+    },
+    {
+      "id": "ADM032",
+      "title": "批操作页面、运行控制台和逐项失败处理",
+      "group": "admin",
+      "baselineDays": 5.0,
+      "state": "未开始",
+      "completed": "",
+      "remaining": [],
+      "evidence": []
+    },
+    {
+      "id": "ADM033",
+      "title": "平台组织开通/停用、配额/保留和资源页面",
+      "group": "admin",
+      "baselineDays": 5.0,
+      "state": "进行中",
+      "completed": "多租户组织开通/冻结、账号停用、套餐额度管理（0.1.12，2026-11-05）",
+      "remaining": [
+        "企业项目及托管资源、平台规模压测"
+      ],
+      "evidence": [
+        "docs/42_后台支付席位与计时实现测试及操作指南.md",
+        "docs/execution/evidence/2026-11-05-commerce-r1/summary.json"
+      ]
+    },
+    {
+      "id": "ADM034",
+      "title": "策略/制品通道、服务/节点兼容与受控升级",
+      "group": "admin",
+      "baselineDays": 4.0,
+      "state": "未开始",
+      "completed": "",
+      "remaining": [],
+      "evidence": []
+    },
+    {
+      "id": "ADM035",
+      "title": "IdP/证书/会话key配置、恢复管理员和轮换",
+      "group": "admin",
+      "baselineDays": 5.0,
+      "state": "进行中",
+      "completed": "IdP/支付/服务配置模板，JWK换钥和Webhook多key，Windows证书库与证书轮换部署步骤（0.1.13，2026-11-05）",
+      "remaining": [
+        "配置审计管理页面、会话密钥生命周期、管理员丢失恢复和真实证书轮换演练"
+      ],
+      "evidence": [
+        "docs/44_官方支付OIDC与多机调度实施验收.md",
+        "docs/execution/evidence/2026-11-05-integrations-r1/summary.json"
+      ]
+    },
+    {
+      "id": "ADM036",
+      "title": "DB/证据/配置备份、恢复模式与调度epoch重建",
+      "group": "admin",
+      "baselineDays": 5.0,
+      "state": "未开始",
+      "completed": "",
+      "remaining": [],
+      "evidence": []
+    },
+    {
+      "id": "ADM037",
+      "title": "指标/审计查询、健康/诊断和站内告警聚合",
+      "group": "admin",
+      "baselineDays": 5.0,
+      "state": "进行中",
+      "completed": "不可变审计查询、运营快照及平衡账本检查（0.1.12，2026-11-05）",
+      "remaining": [
+        "平台指标监控、告警和可配置保留策略"
+      ],
+      "evidence": [
+        "docs/42_后台支付席位与计时实现测试及操作指南.md",
+        "docs/execution/evidence/2026-11-05-commerce-r1/summary.json"
+      ]
+    },
+    {
+      "id": "ADM038",
+      "title": "Windows自托管安装、服务/交互Agent、证书/CRT",
+      "group": "admin",
+      "baselineDays": 5.0,
+      "state": "未开始",
+      "completed": "",
+      "remaining": [],
+      "evidence": []
+    },
+    {
+      "id": "ADM039",
+      "title": "Web/API保护、内容隔离、依赖/许可/SBOM门",
+      "group": "admin",
+      "baselineDays": 5.0,
+      "state": "未开始",
+      "completed": "",
+      "remaining": [],
+      "evidence": []
+    },
+    {
+      "id": "ADM040",
+      "title": "容量/性能/限流/72小时负载夹具与指标采集",
+      "group": "admin",
+      "baselineDays": 4.0,
+      "state": "未开始",
+      "completed": "",
+      "remaining": [],
+      "evidence": []
+    },
+    {
+      "id": "ADM041",
+      "title": "租户/项目/角色/事件/对象存储权限正反验收",
+      "group": "admin",
+      "baselineDays": 6.0,
+      "state": "未开始",
+      "completed": "",
+      "remaining": [],
+      "evidence": []
+    },
+    {
+      "id": "ADM042",
+      "title": "节点/证书/租约/分区/接管/迟到消息故障验收",
+      "group": "admin",
+      "baselineDays": 6.0,
+      "state": "进行中",
+      "completed": "节点签名/重放/身份越权、租约失联、成员/项目范围收回、撤销、节点及协调器强杀恢复负向通过（0.1.13，2026-11-05）",
+      "remaining": [
+        "实际证书/网络分区/人工接管/时钟联合完整矩阵"
+      ],
+      "evidence": [
+        "docs/44_官方支付OIDC与多机调度实施验收.md",
+        "docs/execution/evidence/2026-11-05-integrations-r1/summary.json"
+      ]
+    },
+    {
+      "id": "ADM043",
+      "title": "调度/DB/outbox/unknown/备份恢复联合故障",
+      "group": "admin",
+      "baselineDays": 6.0,
+      "state": "进行中",
+      "completed": "Outbox相同命令重投、unknown保槽、节点和协调器强杀、恢复epoch提升不重放、重复完成去重已通过（0.1.13，2026-11-05）",
+      "remaining": [
+        "数据库磁盘/提交故障与对象证据备份恢复的联合多机灾备矩阵"
+      ],
+      "evidence": [
+        "docs/44_官方支付OIDC与多机调度实施验收.md",
+        "docs/execution/evidence/2026-11-05-integrations-r1/summary.json"
+      ]
+    },
+    {
+      "id": "ADM044",
+      "title": "两节点Web测试、数据/组件/AI边界和报告回归",
+      "group": "admin",
+      "baselineDays": 6.0,
+      "state": "进行中",
+      "completed": "同机两个真实独立节点/浏览器各执行一次网页发布，取消/幂等/隔离/恢复核对通过（0.1.13，2026-11-05）",
+      "remaining": [
+        "第二台物理机、完整288次WT及远程AT/组件/数据/报告矩阵"
+      ],
+      "evidence": [
+        "docs/44_官方支付OIDC与多机调度实施验收.md",
+        "docs/execution/evidence/2026-11-05-integrations-r1/summary.json"
+      ]
+    },
+    {
+      "id": "ADM045",
+      "title": "后台E2E/键盘/多角色/易用性和浏览器兼容",
+      "group": "admin",
+      "baselineDays": 6.0,
+      "state": "未开始",
+      "completed": "",
+      "remaining": [],
+      "evidence": []
+    },
+    {
+      "id": "ADM046",
+      "title": "干净部署、升级/恢复、长稳/容量和运维验收",
+      "group": "admin",
+      "baselineDays": 5.0,
+      "state": "未开始",
+      "completed": "",
+      "remaining": [],
+      "evidence": []
+    },
+    {
+      "id": "ADM047",
+      "title": "中文用户/管理员/部署手册、API/CI示例与交接",
+      "group": "admin",
+      "baselineDays": 5.0,
+      "state": "未开始",
+      "completed": "",
+      "remaining": [],
+      "evidence": []
+    },
+    {
+      "id": "ADM048",
+      "title": "BT汇总/缺陷冻结、来源/编码审查和BG4交付",
+      "group": "admin",
+      "baselineDays": 8.0,
+      "state": "未开始",
+      "completed": "",
+      "remaining": [],
+      "evidence": []
+    },
+    {
+      "id": "COM001",
+      "title": "免费10环境/RPA/API/代理与销售规则冻结",
+      "group": "commerce",
+      "baselineDays": 3.0,
+      "state": "未开始",
+      "completed": "",
+      "remaining": [],
+      "evidence": []
+    },
+    {
+      "id": "COM002",
+      "title": "客户/运营/财务页面原型及商业权限",
+      "group": "commerce",
+      "baselineDays": 4.0,
+      "state": "未开始",
+      "completed": "",
+      "remaining": [],
+      "evidence": []
+    },
+    {
+      "id": "COM003",
+      "title": "商业契约/表/迁移/账本约束与构建骨架",
+      "group": "commerce",
+      "baselineDays": 5.0,
+      "state": "进行中",
+      "completed": "独立SQLite商业对象、立即事务、整数金额及不可变双分录/时长分录（0.1.12，2026-11-05）",
+      "remaining": [
+        "分批时长失效、统一事件契约与存储故障矩阵"
+      ],
+      "evidence": [
+        "docs/42_后台支付席位与计时实现测试及操作指南.md",
+        "docs/execution/evidence/2026-11-05-commerce-r1/summary.json"
+      ]
+    },
+    {
+      "id": "COM004",
+      "title": "免费政策、商品/价格/套餐与发布",
+      "group": "commerce",
+      "baselineDays": 5.0,
+      "state": "进行中",
+      "completed": "免费十环境政策、商品价格版本发布/下架、成交快照（0.1.12，2026-11-05）",
+      "remaining": [
+        "完整托管资源SKU、商品策略和正式定价验收"
+      ],
+      "evidence": [
+        "docs/42_后台支付席位与计时实现测试及操作指南.md",
+        "docs/execution/evidence/2026-11-05-commerce-r1/summary.json"
+      ]
+    },
+    {
+      "id": "COM005",
+      "title": "报价、订单、幂等与库存预留契约",
+      "group": "commerce",
+      "baselineDays": 6.0,
+      "state": "进行中",
+      "completed": "服务端价格订单、同键并发幂等/参数冲突、取消及过期核验（0.1.12，2026-11-05）",
+      "remaining": [
+        "托管库存预留及独立报价有效期契约"
+      ],
+      "evidence": [
+        "docs/42_后台支付席位与计时实现测试及操作指南.md",
+        "docs/execution/evidence/2026-11-05-commerce-r1/summary.json"
+      ]
+    },
+    {
+      "id": "COM006",
+      "title": "首条支付渠道、尝试/查询与沙箱隔离",
+      "group": "commerce",
+      "baselineDays": 6.0,
+      "state": "进行中",
+      "completed": "支付宝RSA2、微信V3 Native、Stripe Checkout创建/查单、持久尝试、官方幂等键和沙箱/生产地址约束（0.1.13，2026-11-05）",
+      "remaining": [
+        "真实商户沙箱及生产开通验收、实际渠道错误码/风控矩阵"
+      ],
+      "evidence": [
+        "docs/42_后台支付席位与计时实现测试及操作指南.md",
+        "docs/execution/evidence/2026-11-05-commerce-r1/summary.json",
+        "docs/44_官方支付OIDC与多机调度实施验收.md",
+        "docs/execution/evidence/2026-11-05-integrations-r1/summary.json"
+      ]
+    },
+    {
+      "id": "COM007",
+      "title": "回调验签/inbox、到账/outbox与乱序去重",
+      "group": "commerce",
+      "baselineDays": 5.0,
+      "state": "进行中",
+      "completed": "三渠道原文验签/商户金额模式校验、微信AES-GCM解密、重复经济事实去重、到账/账本/权益原子提交与迟到核对（0.1.13，2026-11-05）",
+      "remaining": [
+        "统一对外事件Outbox、真实商户乱序/掉电/重复通知完整演练"
+      ],
+      "evidence": [
+        "docs/42_后台支付席位与计时实现测试及操作指南.md",
+        "docs/execution/evidence/2026-11-05-commerce-r1/summary.json",
+        "docs/44_官方支付OIDC与多机调度实施验收.md",
+        "docs/execution/evidence/2026-11-05-integrations-r1/summary.json"
+      ]
+    },
+    {
+      "id": "COM008",
+      "title": "主动补单、渠道对账骨架及履约异常",
+      "group": "commerce",
+      "baselineDays": 6.0,
+      "state": "进行中",
+      "completed": "平衡账本检查、运营导出、已关闭订单迟到来款人工核对（0.1.12，2026-11-05）",
+      "remaining": [
+        "官方渠道账单下载/自动差异匹配及再处理"
+      ],
+      "evidence": [
+        "docs/42_后台支付席位与计时实现测试及操作指南.md",
+        "docs/execution/evidence/2026-11-05-commerce-r1/summary.json"
+      ]
+    },
+    {
+      "id": "COM009",
+      "title": "周期/锚点/手动续费与并发期次",
+      "group": "commerce",
+      "baselineDays": 6.0,
+      "state": "进行中",
+      "completed": "固定天数周期、同产品并发付款串行续期及期末锚点（0.1.12，2026-11-05）",
+      "remaining": [
+        "自然月锚点/跨月规则和自动续费期次验收"
+      ],
+      "evidence": [
+        "docs/42_后台支付席位与计时实现测试及操作指南.md",
+        "docs/execution/evidence/2026-11-05-commerce-r1/summary.json"
+      ]
+    },
+    {
+      "id": "COM010",
+      "title": "免费/付费权益聚合、revision及发放/撤销",
+      "group": "commerce",
+      "baselineDays": 6.0,
+      "state": "进行中",
+      "completed": "支付发放授权、续期、退款撤销和到期免费回落（0.1.12，2026-11-05）",
+      "remaining": [
+        "签名权益版本、推送确认及灾备epoch"
+      ],
+      "evidence": [
+        "docs/42_后台支付席位与计时实现测试及操作指南.md",
+        "docs/execution/evidence/2026-11-05-commerce-r1/summary.json"
+      ]
+    },
+    {
+      "id": "COM011",
+      "title": "签名许可证、设备迁移与全局免费槽grant",
+      "group": "commerce",
+      "baselineDays": 7.0,
+      "state": "进行中",
+      "completed": "设备登记撤销、DPAPI会话、跨设备统一免费配额（0.1.12，2026-11-05）",
+      "remaining": [
+        "签名许可证、设备独立额度、正式迁移与密钥轮换"
+      ],
+      "evidence": [
+        "docs/42_后台支付席位与计时实现测试及操作指南.md",
+        "docs/execution/evidence/2026-11-05-commerce-r1/summary.json"
+      ]
+    },
+    {
+      "id": "COM012",
+      "title": "席位/邀请预留/回收与设备额度页面",
+      "group": "commerce",
+      "baselineDays": 5.0,
+      "state": "进行中",
+      "completed": "命名席位、7天邀请预占/接受/取消/过期、成员回收和并发超售测试（0.1.12，2026-11-05）",
+      "remaining": [
+        "设备独立额度和授权迁移，完整BC席位联动矩阵"
+      ],
+      "evidence": [
+        "docs/42_后台支付席位与计时实现测试及操作指南.md",
+        "docs/execution/evidence/2026-11-05-commerce-r1/summary.json"
+      ]
+    },
+    {
+      "id": "COM013",
+      "title": "静态库存、实例交付/隔离/清理回收",
+      "group": "commerce",
+      "baselineDays": 6.0,
+      "state": "未开始",
+      "completed": "",
+      "remaining": [],
+      "evidence": []
+    },
+    {
+      "id": "COM014",
+      "title": "免费容量/并发准入、四协议代理及启动桥",
+      "group": "commerce",
+      "baselineDays": 6.0,
+      "state": "进行中",
+      "completed": "真实浏览器启动申请环境/全局槽、动作前核验、十秒撤销巡检（0.1.12，2026-11-05）",
+      "remaining": [
+        "中央环境库全生命周期同步和完整代理/托管桥接"
+      ],
+      "evidence": [
+        "docs/42_后台支付席位与计时实现测试及操作指南.md",
+        "docs/execution/evidence/2026-11-05-commerce-r1/summary.json"
+      ]
+    },
+    {
+      "id": "COM015",
+      "title": "免费诊断/付费计量分流、区间去重及预览",
+      "group": "commerce",
+      "baselineDays": 5.0,
+      "state": "进行中",
+      "completed": "免费与订阅/预付会话分列、起止UTC秒和结束用量明细（0.1.12，2026-11-05）",
+      "remaining": [
+        "分段调价、统计聚合及长时间运行演练"
+      ],
+      "evidence": [
+        "docs/42_后台支付席位与计时实现测试及操作指南.md",
+        "docs/execution/evidence/2026-11-05-commerce-r1/summary.json"
+      ]
+    },
+    {
+      "id": "COM016",
+      "title": "有界grant/断线/停机unknown和结算对账",
+      "group": "commerce",
+      "baselineDays": 7.0,
+      "state": "进行中",
+      "completed": "持久启动意图、幂等槽恢复、后台强杀保留槽、人工确认停止（0.1.12，2026-11-05）",
+      "remaining": [
+        "跨机网络分区、restore epoch与未决区间计费仲裁"
+      ],
+      "evidence": [
+        "docs/42_后台支付席位与计时实现测试及操作指南.md",
+        "docs/execution/evidence/2026-11-05-commerce-r1/summary.json"
+      ]
+    },
+    {
+      "id": "COM017",
+      "title": "时长包/预付额度批次和原子预留结算",
+      "group": "commerce",
+      "baselineDays": 5.0,
+      "state": "进行中",
+      "completed": "租户预付秒数充值/5分钟原子预留/续占/停止结算、负余额与充值抵扣（0.1.12，2026-11-05）",
+      "remaining": [
+        "每批余额到期、退款成本分摊和独立批次结算"
+      ],
+      "evidence": [
+        "docs/42_后台支付席位与计时实现测试及操作指南.md",
+        "docs/execution/evidence/2026-11-05-commerce-r1/summary.json"
+      ]
+    },
+    {
+      "id": "COM018",
+      "title": "货币账本/账单行/冲正和平衡校验",
+      "group": "commerce",
+      "baselineDays": 6.0,
+      "state": "进行中",
+      "completed": "人民币分平衡收款/退款账本、不可变触发器、时长分录及余额（0.1.12，2026-11-05）",
+      "remaining": [
+        "应收/预收会计科目、账单期及审批冲正"
+      ],
+      "evidence": [
+        "docs/42_后台支付席位与计时实现测试及操作指南.md",
+        "docs/execution/evidence/2026-11-05-commerce-r1/summary.json"
+      ]
+    },
+    {
+      "id": "COM019",
+      "title": "升降级/比例报价/减席/超额选择",
+      "group": "commerce",
+      "baselineDays": 5.0,
+      "state": "未开始",
+      "completed": "",
+      "remaining": [],
+      "evidence": []
+    },
+    {
+      "id": "COM020",
+      "title": "自动续费委托/撤销/按期扣款和重试",
+      "group": "commerce",
+      "baselineDays": 6.0,
+      "state": "未开始",
+      "completed": "",
+      "remaining": [],
+      "evidence": []
+    },
+    {
+      "id": "COM021",
+      "title": "付费到期/保护窗/免费回落及数据恢复",
+      "group": "commerce",
+      "baselineDays": 5.0,
+      "state": "进行中",
+      "completed": "到期计算免费额度、运行准入检查及超额停止（0.1.12，2026-11-05）",
+      "remaining": [
+        "用户选择免费环境集和完整席位溢出策略"
+      ],
+      "evidence": [
+        "docs/42_后台支付席位与计时实现测试及操作指南.md",
+        "docs/execution/evidence/2026-11-05-commerce-r1/summary.json"
+      ]
+    },
+    {
+      "id": "COM022",
+      "title": "部分退款/拒付、渠道查询/账本权益联动",
+      "group": "commerce",
+      "baselineDays": 7.0,
+      "state": "进行中",
+      "completed": "三官方渠道全额退款/查询、稳定退款身份、退款前预付秒数冻结与确认不双扣、外部退款经济事实入账（0.1.13，2026-11-05）",
+      "remaining": [
+        "部分退款、拒付/争议及其账本权益/发票完整流程"
+      ],
+      "evidence": [
+        "docs/42_后台支付席位与计时实现测试及操作指南.md",
+        "docs/execution/evidence/2026-11-05-commerce-r1/summary.json",
+        "docs/44_官方支付OIDC与多机调度实施验收.md",
+        "docs/execution/evidence/2026-11-05-integrations-r1/summary.json"
+      ]
+    },
+    {
+      "id": "COM023",
+      "title": "调账/赠送/赔付审批、有限授权和工单",
+      "group": "commerce",
+      "baselineDays": 6.0,
+      "state": "未开始",
+      "completed": "",
+      "remaining": [],
+      "evidence": []
+    },
+    {
+      "id": "COM024",
+      "title": "账单/发票申请、人工开具登记与红冲",
+      "group": "commerce",
+      "baselineDays": 5.0,
+      "state": "进行中",
+      "completed": "发票申请、登记实开票号、退款待冲红及实际冲红号（0.1.12，2026-11-05）",
+      "remaining": [
+        "税务服务适配、发票文件/附件与红字凭证验收"
+      ],
+      "evidence": [
+        "docs/42_后台支付席位与计时实现测试及操作指南.md",
+        "docs/execution/evidence/2026-11-05-commerce-r1/summary.json"
+      ]
+    },
+    {
+      "id": "COM025",
+      "title": "免费权益/扩容购买/续费/席位/账单门户",
+      "group": "commerce",
+      "baselineDays": 5.0,
+      "state": "进行中",
+      "completed": "客户商品/订单/续费/席位/用量/发票/账号门户（0.1.12，2026-11-05）",
+      "remaining": [
+        "争议工单、通知偏好及资源级完整客户门户"
+      ],
+      "evidence": [
+        "docs/42_后台支付席位与计时实现测试及操作指南.md",
+        "docs/execution/evidence/2026-11-05-commerce-r1/summary.json"
+      ]
+    },
+    {
+      "id": "COM026",
+      "title": "商品/客户/库存/订单/客服运营控制台",
+      "group": "commerce",
+      "baselineDays": 6.0,
+      "state": "进行中",
+      "completed": "运营商品/组织/账号/收款/退款/迟到核对/发票/审计控制台（0.1.12，2026-11-05）",
+      "remaining": [
+        "库存、审批调账、正式渠道对账和签名密钥管理"
+      ],
+      "evidence": [
+        "docs/42_后台支付席位与计时实现测试及操作指南.md",
+        "docs/execution/evidence/2026-11-05-commerce-r1/summary.json"
+      ]
+    },
+    {
+      "id": "COM027",
+      "title": "用量区间、费用明细/预留、争议页面",
+      "group": "commerce",
+      "baselineDays": 5.0,
+      "state": "进行中",
+      "completed": "已停止会话实际秒数和免费/付费标记、时长账本（0.1.12，2026-11-05）",
+      "remaining": [
+        "客户争议工单、账单期聚合与证据仲裁"
+      ],
+      "evidence": [
+        "docs/42_后台支付席位与计时实现测试及操作指南.md",
+        "docs/execution/evidence/2026-11-05-commerce-r1/summary.json"
+      ]
+    },
+    {
+      "id": "COM028",
+      "title": "免费Local API/SDK与资源预检/付费预算契约",
+      "group": "commerce",
+      "baselineDays": 5.0,
+      "state": "进行中",
+      "completed": "四个真实共享账号工具、CLI/MCP/Local API入口（0.1.12，2026-11-05）",
+      "remaining": [
+        "签名SDK授权模型及全部商业接口版本验收"
+      ],
+      "evidence": [
+        "docs/42_后台支付席位与计时实现测试及操作指南.md",
+        "docs/execution/evidence/2026-11-05-commerce-r1/summary.json"
+      ]
+    },
+    {
+      "id": "COM029",
+      "title": "人工/AI/RPA免费业务及付费扩容联动",
+      "group": "commerce",
+      "baselineDays": 6.0,
+      "state": "进行中",
+      "completed": "本地AI测试持续免费、商业会话使用统一工具和准入（0.1.12，2026-11-05）",
+      "remaining": [
+        "完整商业流程联调及托管资源授权矩阵"
+      ],
+      "evidence": [
+        "docs/42_后台支付席位与计时实现测试及操作指南.md",
+        "docs/execution/evidence/2026-11-05-commerce-r1/summary.json"
+      ]
+    },
+    {
+      "id": "COM030",
+      "title": "到期/余额/续费预告站内提醒及适配",
+      "group": "commerce",
+      "baselineDays": 6.0,
+      "state": "未开始",
+      "completed": "",
+      "remaining": [],
+      "evidence": []
+    },
+    {
+      "id": "COM031",
+      "title": "授权签名key轮换/备份/恢复及商业epoch",
+      "group": "commerce",
+      "baselineDays": 5.0,
+      "state": "未开始",
+      "completed": "",
+      "remaining": [],
+      "evidence": []
+    },
+    {
+      "id": "COM032",
+      "title": "财务结算/渠道/计量三方对账与运营指标",
+      "group": "commerce",
+      "baselineDays": 6.0,
+      "state": "进行中",
+      "completed": "余额/双分录平衡检查、运营导出与支付迟到来款核对（0.1.12，2026-11-05）",
+      "remaining": [
+        "自动渠道差异对账与长期运营指标"
+      ],
+      "evidence": [
+        "docs/42_后台支付席位与计时实现测试及操作指南.md",
+        "docs/execution/evidence/2026-11-05-commerce-r1/summary.json"
+      ]
+    },
+    {
+      "id": "COM033",
+      "title": "商品/支付/续费/退款/对账故障联测",
+      "group": "commerce",
+      "baselineDays": 6.0,
+      "state": "进行中",
+      "completed": "三渠道创建/查询/退款/签名故障、Stripe丢失创建响应同key恢复、金额模式冲突和旧商业续费/账本回归通过（0.1.13，2026-11-05）",
+      "remaining": [
+        "实际商户联合故障、部分退款/争议和完整CT矩阵"
+      ],
+      "evidence": [
+        "docs/44_官方支付OIDC与多机调度实施验收.md",
+        "docs/execution/evidence/2026-11-05-integrations-r1/summary.json"
+      ]
+    },
+    {
+      "id": "COM034",
+      "title": "免费槽/代理与付费计量/停止故障联测",
+      "group": "commerce",
+      "baselineDays": 6.0,
+      "state": "未开始",
+      "completed": "",
+      "remaining": [],
+      "evidence": []
+    },
+    {
+      "id": "COM035",
+      "title": "免费/付费权益、席位/设备/门户越权联测",
+      "group": "commerce",
+      "baselineDays": 6.0,
+      "state": "未开始",
+      "completed": "",
+      "remaining": [],
+      "evidence": []
+    },
+    {
+      "id": "COM036",
+      "title": "免费业务与BA/购买到使用E2E",
+      "group": "commerce",
+      "baselineDays": 6.0,
+      "state": "未开始",
+      "completed": "",
+      "remaining": [],
+      "evidence": []
+    },
+    {
+      "id": "COM037",
+      "title": "商业数据/密钥恢复、安全/容量验收",
+      "group": "commerce",
+      "baselineDays": 6.0,
+      "state": "未开始",
+      "completed": "",
+      "remaining": [],
+      "evidence": []
+    },
+    {
+      "id": "COM038",
+      "title": "72小时免费/付费混合长稳与损失复核",
+      "group": "commerce",
+      "baselineDays": 5.0,
+      "state": "未开始",
+      "completed": "",
+      "remaining": [],
+      "evidence": []
+    },
+    {
+      "id": "COM039",
+      "title": "客户/客服/财务/运营手册及交接构建",
+      "group": "commerce",
+      "baselineDays": 5.0,
+      "state": "未开始",
+      "completed": "",
+      "remaining": [],
+      "evidence": []
+    },
+    {
+      "id": "COM040",
+      "title": "CT/BA/FG汇总、缺陷收口及CG4交付",
+      "group": "commerce",
+      "baselineDays": 6.0,
+      "state": "未开始",
+      "completed": "",
+      "remaining": [],
+      "evidence": []
+    },
+    {
+      "id": "BR001",
+      "title": "客户端契约/状态/事件/错误、68项映射和范围冻结",
+      "group": "client-overlap",
+      "baselineDays": 3.0,
+      "state": "进行中",
+      "completed": "本地31工具共享注册表；多页面/事件/重连及元素探查、预览和表单选择已实现；39共享工具增加流程校验/发布/执行/状态/控制，原生桌面及HTTP/MCP真实通过；0.1.6增加三个诊断工具共42工具、无内容元数据与步骤关联及桌面三按钮；0.1.7接入Schema提取与有界批处理共44工具、逐项未知结果停批及桌面按钮；API审计增加固定部分/未知摘要",
+      "remaining": [
+        "中央/客户端契约、事件/持久回执与68映射实现未完成"
+      ],
+      "evidence": [
+        "src/core/service.cpp",
+        "docs/execution/evidence/2026-11-04-multipage/summary.json",
+        "docs/execution/evidence/2026-11-04-inspector/summary.json",
+        "docs/execution/evidence/2026-11-04-workflow/summary.json",
+        "docs/execution/evidence/2026-11-04-diagnostics/summary.json",
+        "docs/execution/evidence/2026-11-04-extraction/summary.json"
+      ]
+    },
+    {
+      "id": "BR002",
+      "title": "native登录/退出/过期、系统凭据和账号页",
+      "group": "client-overlap",
+      "baselineDays": 5.0,
+      "state": "进行中",
+      "completed": "原生密码掩码账号表单、DPAPI会话、重新认证与退出（0.1.12，2026-11-05）",
+      "remaining": [
+        "OIDC系统浏览器登录及完整过期恢复UX"
+      ],
+      "evidence": [
+        "docs/42_后台支付席位与计时实现测试及操作指南.md",
+        "docs/execution/evidence/2026-11-05-commerce-r1/summary.json"
+      ]
+    },
+    {
+      "id": "BR003",
+      "title": "组织切换/成员/ACL、客户端缓存隔离",
+      "group": "client-overlap",
+      "baselineDays": 4.0,
+      "state": "进行中",
+      "completed": "按组织登录及门户成员角色/组织切换（0.1.12，2026-11-05）",
+      "remaining": [
+        "桌面项目与资源ACL选择器"
+      ],
+      "evidence": [
+        "docs/42_后台支付席位与计时实现测试及操作指南.md",
+        "docs/execution/evidence/2026-11-05-commerce-r1/summary.json"
+      ]
+    },
+    {
+      "id": "BR004",
+      "title": "免费权益摘要/签名缓存/全局槽grant校验",
+      "group": "client-overlap",
+      "baselineDays": 4.0,
+      "state": "进行中",
+      "completed": "服务器实时权益和跨设备全局准入槽（0.1.12，2026-11-05）",
+      "remaining": [
+        "签名授权缓存、离线策略及完整回落选择"
+      ],
+      "evidence": [
+        "docs/42_后台支付席位与计时实现测试及操作指南.md",
+        "docs/execution/evidence/2026-11-05-commerce-r1/summary.json"
+      ]
+    },
+    {
+      "id": "BR005",
+      "title": "本地远程环境目录、版本差异/生效/容量占位",
+      "group": "client-overlap",
+      "baselineDays": 4.0,
+      "state": "进行中",
+      "completed": "本地SQLite环境完整生命周期、revision/CAS及主目标区域生效报告",
+      "remaining": [
+        "组织/远端目录、跨节点参数生效及中央容量占位未实现"
+      ],
+      "evidence": [
+        "src/core/service.cpp"
+      ]
+    },
+    {
+      "id": "BR006",
+      "title": "设备/节点注册、证书轮换/交互会话和出站连接",
+      "group": "client-overlap",
+      "baselineDays": 5.0,
+      "state": "进行中",
+      "completed": "独立节点程序与便携脚本、签名注册/审批/撤销、Windows证书选择与换证步骤、主动出站及持久重启核对（0.1.13，2026-11-05）",
+      "remaining": [
+        "真实双机部署/换证/用户退出、服务与交互代理、跨机器迁移完整验收"
+      ],
+      "evidence": [
+        "docs/42_后台支付席位与计时实现测试及操作指南.md",
+        "docs/execution/evidence/2026-11-05-commerce-r1/summary.json",
+        "docs/44_官方支付OIDC与多机调度实施验收.md",
+        "docs/execution/evidence/2026-11-05-integrations-r1/summary.json"
+      ]
+    },
+    {
+      "id": "BR007",
+      "title": "持久命令/回执、撤销fencing、重连恢复",
+      "group": "client-overlap",
+      "baselineDays": 6.0,
+      "state": "未开始",
+      "completed": "",
+      "remaining": [],
+      "evidence": []
+    },
+    {
+      "id": "BR008",
+      "title": "四协议代理页/effective、认证桥/HTTPS/SSH及故障",
+      "group": "client-overlap",
+      "baselineDays": 7.0,
+      "state": "进行中",
+      "completed": "无认证HTTP/SOCKS5接入及本机真实转发、远端域名解析和断隧道验证",
+      "remaining": [
+        "四协议UI、生效报告、认证/HTTPS/SSH和节点路由未完成"
+      ],
+      "evidence": [
+        "src/core/service.cpp"
+      ]
+    },
+    {
+      "id": "BR009",
+      "title": "扩展分发版本/本机秘密槽绑定与脱敏",
+      "group": "client-overlap",
+      "baselineDays": 4.0,
+      "state": "未开始",
+      "completed": "",
+      "remaining": [],
+      "evidence": []
+    },
+    {
+      "id": "BR010",
+      "title": "RPA版本、批次/队列、中央本地定时归属",
+      "group": "client-overlap",
+      "baselineDays": 5.0,
+      "state": "进行中",
+      "completed": "不可变RPA远端版本、持久FIFO队列、Outbox/Inbox和真实浏览器执行已接入（0.1.13，2026-11-05）",
+      "remaining": [
+        "中央/本地定时归属、DST/漏跑、批次资源策略完整联动"
+      ],
+      "evidence": [
+        "docs/44_官方支付OIDC与多机调度实施验收.md",
+        "docs/execution/evidence/2026-11-05-integrations-r1/summary.json"
+      ]
+    },
+    {
+      "id": "BR011",
+      "title": "远端Web测试/数据清理、AI/CI/SDK免费统一路径",
+      "group": "client-overlap",
+      "baselineDays": 4.0,
+      "state": "进行中",
+      "completed": "节点复用免费准入及固定DSL，真实跨节点执行网页发布；不因AI/Web测试要求购买（0.1.13，2026-11-05）",
+      "remaining": [
+        "远端用例/测试集、数据前后置清理、完整AI/CI/SDK统一矩阵"
+      ],
+      "evidence": [
+        "docs/44_官方支付OIDC与多机调度实施验收.md",
+        "docs/execution/evidence/2026-11-05-integrations-r1/summary.json"
+      ]
+    },
+    {
+      "id": "BR012",
+      "title": "Space预览/本机接管、受控调试与unknown页",
+      "group": "client-overlap",
+      "baselineDays": 5.0,
+      "state": "进行中",
+      "completed": "本机主帧快照、忙碌撤销/停止与unknown错误",
+      "remaining": [
+        "Space预览/远端调试/持久命令/完整接管未完成"
+      ],
+      "evidence": [
+        "src/core/service.cpp"
+      ]
+    },
+    {
+      "id": "BR013",
+      "title": "原生购买/续费摘要与门户、订单恢复/财务申请",
+      "group": "client-overlap",
+      "baselineDays": 5.0,
+      "state": "进行中",
+      "completed": "门户购买、手动续费、订单、收款及退款查询（0.1.12，2026-11-05）",
+      "remaining": [
+        "官方渠道客户端联调、主动查单和完整升级路径"
+      ],
+      "evidence": [
+        "docs/42_后台支付席位与计时实现测试及操作指南.md",
+        "docs/execution/evidence/2026-11-05-commerce-r1/summary.json"
+      ]
+    },
+    {
+      "id": "BR014",
+      "title": "席位/许可/设备额度、邀请回收/停用影响",
+      "group": "client-overlap",
+      "baselineDays": 4.0,
+      "state": "进行中",
+      "completed": "席位邀请/回收及成员停用影响执行，原生门户入口（0.1.12，2026-11-05）",
+      "remaining": [
+        "签名许可、设备独立限额和完整多机验收"
+      ],
+      "evidence": [
+        "docs/42_后台支付席位与计时实现测试及操作指南.md",
+        "docs/execution/evidence/2026-11-05-commerce-r1/summary.json"
+      ]
+    },
+    {
+      "id": "BR015",
+      "title": "免费诊断/付费计量区间日志、预算/费用摘要",
+      "group": "client-overlap",
+      "baselineDays": 6.0,
+      "state": "进行中",
+      "completed": "实际运行秒数及预付余额，停止时结算和门户明细（0.1.12，2026-11-05）",
+      "remaining": [
+        "账单周期统计、争议与分批时长策略"
+      ],
+      "evidence": [
+        "docs/42_后台支付席位与计时实现测试及操作指南.md",
+        "docs/execution/evidence/2026-11-05-commerce-r1/summary.json"
+      ]
+    },
+    {
+      "id": "BR016",
+      "title": "到期预演/保留选择/免费切换与站内提醒",
+      "group": "client-overlap",
+      "baselineDays": 5.0,
+      "state": "进行中",
+      "completed": "服务端到期免费回落、额度核验及巡检拒绝超额运行（0.1.12，2026-11-05）",
+      "remaining": [
+        "显式选择免费环境集、库存冻结和通知"
+      ],
+      "evidence": [
+        "docs/42_后台支付席位与计时实现测试及操作指南.md",
+        "docs/execution/evidence/2026-11-05-commerce-r1/summary.json"
+      ]
+    },
+    {
+      "id": "BR017",
+      "title": "证据上传/报告/审计、账单追溯/争议工单摘要",
+      "group": "client-overlap",
+      "baselineDays": 5.0,
+      "state": "未开始",
+      "completed": "",
+      "remaining": [],
+      "evidence": []
+    },
+    {
+      "id": "BR018",
+      "title": "版本/doctor、维护升级/设置/健康提醒",
+      "group": "client-overlap",
+      "baselineDays": 5.0,
+      "state": "未开始",
+      "completed": "",
+      "remaining": [],
+      "evidence": []
+    },
+    {
+      "id": "BR019",
+      "title": "Local API/CLI/MCP/SDK契约与兼容入口对齐",
+      "group": "client-overlap",
+      "baselineDays": 5.0,
+      "state": "进行中",
+      "completed": "97工具CLI/MCP/HTTP/SDK契约同步，新增桌面SSO连接码、中央账户动作和节点签名协议（0.1.13，2026-11-05）",
+      "remaining": [
+        "全部历史客户端/方言兼容、远程事件与中央权限完整矩阵"
+      ],
+      "evidence": [
+        "src/core/service.cpp",
+        "docs/execution/evidence/2026-11-04-multipage/summary.json",
+        "docs/execution/evidence/2026-11-04-inspector/summary.json",
+        "docs/execution/evidence/2026-11-04-workflow/summary.json",
+        "docs/execution/evidence/2026-11-04-diagnostics/summary.json",
+        "docs/execution/evidence/2026-11-04-extraction/summary.json",
+        "docs/42_后台支付席位与计时实现测试及操作指南.md",
+        "docs/execution/evidence/2026-11-05-commerce-r1/summary.json",
+        "docs/44_官方支付OIDC与多机调度实施验收.md",
+        "docs/execution/evidence/2026-11-05-integrations-r1/summary.json"
+      ]
+    },
+    {
+      "id": "BR020",
+      "title": "旧本地Profile入管/导入、停机迁移/备份恢复",
+      "group": "client-overlap",
+      "baselineDays": 4.0,
+      "state": "未开始",
+      "completed": "",
+      "remaining": [],
+      "evidence": []
+    },
+    {
+      "id": "BR021",
+      "title": "免费10环境/四协议/多入口/选元素端到端联测",
+      "group": "client-overlap",
+      "baselineDays": 8.0,
+      "state": "未开始",
+      "completed": "",
+      "remaining": [],
+      "evidence": []
+    },
+    {
+      "id": "BR022",
+      "title": "主动购买/续费/席位/计量/退款到回落联测",
+      "group": "client-overlap",
+      "baselineDays": 7.0,
+      "state": "未开始",
+      "completed": "",
+      "remaining": [],
+      "evidence": []
+    },
+    {
+      "id": "BR023",
+      "title": "断线/分区/旧库/时间/撤销、升级回滚/72小时长稳",
+      "group": "client-overlap",
+      "baselineDays": 6.0,
+      "state": "未开始",
+      "completed": "",
+      "remaining": [],
+      "evidence": []
+    },
+    {
+      "id": "BR024",
+      "title": "干净机安装、手册/接口样例/归集表和CL4交付",
+      "group": "client-overlap",
+      "baselineDays": 4.0,
+      "state": "未开始",
+      "completed": "",
+      "remaining": [],
+      "evidence": []
+    }
+  ]
+}

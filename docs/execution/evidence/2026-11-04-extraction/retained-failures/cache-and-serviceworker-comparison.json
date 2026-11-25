@@ -1,0 +1,140 @@
+{
+  "date": "2026-11-04",
+  "results": [
+    {
+      "profileLength": 90,
+      "extended": false,
+      "result": "observed",
+      "observed": {
+        "cache": true,
+        "sw": true
+      }
+    },
+    {
+      "profileLength": 90,
+      "extended": true,
+      "result": "observed",
+      "observed": {
+        "cache": true,
+        "sw": {
+          "name": "AbortError",
+          "message": "Failed to register a ServiceWorker for scope ('http://127.0.0.1:60339/') with script ('http://127.0.0.1:60339/sw.js'): Operation has been aborted"
+        }
+      }
+    },
+    {
+      "profileLength": 110,
+      "extended": false,
+      "result": "observed",
+      "observed": {
+        "cache": true,
+        "sw": true
+      }
+    },
+    {
+      "profileLength": 110,
+      "extended": true,
+      "result": "observed",
+      "observed": {
+        "cache": true,
+        "sw": {
+          "name": "AbortError",
+          "message": "Failed to register a ServiceWorker for scope ('http://127.0.0.1:60339/') with script ('http://127.0.0.1:60339/sw.js'): Operation has been aborted"
+        }
+      }
+    },
+    {
+      "profileLength": 125,
+      "extended": false,
+      "result": "observed",
+      "observed": {
+        "cache": true,
+        "sw": true
+      }
+    },
+    {
+      "profileLength": 125,
+      "extended": true,
+      "result": "observed",
+      "observed": {
+        "cache": true,
+        "sw": {
+          "name": "AbortError",
+          "message": "Failed to register a ServiceWorker for scope ('http://127.0.0.1:60339/') with script ('http://127.0.0.1:60339/sw.js'): Operation has been aborted"
+        }
+      }
+    },
+    {
+      "profileLength": 135,
+      "extended": false,
+      "result": "observed",
+      "observed": {
+        "cache": {
+          "name": "UnknownError",
+          "message": "Failed to execute 'open' on 'CacheStorage': Unexpected internal error."
+        },
+        "sw": true
+      }
+    },
+    {
+      "profileLength": 135,
+      "extended": true,
+      "result": "observed",
+      "observed": {
+        "cache": true,
+        "sw": {
+          "name": "AbortError",
+          "message": "Failed to register a ServiceWorker for scope ('http://127.0.0.1:60339/') with script ('http://127.0.0.1:60339/sw.js'): Operation has been aborted"
+        }
+      }
+    },
+    {
+      "profileLength": 145,
+      "extended": false,
+      "result": "observed",
+      "observed": {
+        "cache": {
+          "name": "UnknownError",
+          "message": "Failed to execute 'open' on 'CacheStorage': Unexpected internal error."
+        },
+        "sw": true
+      }
+    },
+    {
+      "profileLength": 145,
+      "extended": true,
+      "result": "observed",
+      "observed": {
+        "cache": true,
+        "sw": {
+          "name": "AbortError",
+          "message": "Failed to register a ServiceWorker for scope ('http://127.0.0.1:60339/') with script ('http://127.0.0.1:60339/sw.js'): Operation has been aborted"
+        }
+      }
+    },
+    {
+      "profileLength": 155,
+      "extended": false,
+      "result": "observed",
+      "observed": {
+        "cache": {
+          "name": "UnknownError",
+          "message": "Failed to execute 'open' on 'CacheStorage': Unexpected internal error."
+        },
+        "sw": true
+      }
+    },
+    {
+      "profileLength": 155,
+      "extended": true,
+      "result": "observed",
+      "observed": {
+        "cache": true,
+        "sw": {
+          "name": "AbortError",
+          "message": "Failed to register a ServiceWorker for scope ('http://127.0.0.1:60339/') with script ('http://127.0.0.1:60339/sw.js'): Operation has been aborted"
+        }
+      }
+    }
+  ]
+}

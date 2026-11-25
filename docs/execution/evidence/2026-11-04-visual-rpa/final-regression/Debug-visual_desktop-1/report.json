@@ -1,0 +1,52 @@
+{
+  "date": "2026-11-04",
+  "result": "failed",
+  "checks": [
+    "desktop-record-stop-produces-parameterized-draft-with-one-submit",
+    "recorded-draft-opens-on-canvas-and-shared-validation-accepts-configuration"
+  ],
+  "steps": [
+    {
+      "buttonId": 101,
+      "outcome": "passed"
+    },
+    {
+      "buttonId": 101,
+      "outcome": "passed"
+    },
+    {
+      "buttonId": 102,
+      "outcome": "passed"
+    },
+    {
+      "buttonId": 104,
+      "outcome": "passed"
+    },
+    {
+      "menuId": 902,
+      "outcome": "passed"
+    },
+    {
+      "buttonId": 108,
+      "outcome": "passed"
+    },
+    {
+      "buttonId": 109,
+      "outcome": "passed"
+    },
+    {
+      "buttonId": 110,
+      "outcome": "passed"
+    },
+    {
+      "menuId": 906,
+      "outcome": "passed"
+    },
+    {
+      "buttonId": 103,
+      "outcome": "passed"
+    }
+  ],
+  "binarySha256": "537bee76685a0d9312d823da02c399726c9511b222784a9b3be5e12e90712582",
+  "error": ""
+}

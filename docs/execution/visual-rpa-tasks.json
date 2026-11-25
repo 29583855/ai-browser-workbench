@@ -1,0 +1,476 @@
+{
+  "schemaVersion": 1,
+  "updated": "2026-11-05",
+  "scope": "visual-rpa-specialty-non-additive",
+  "releaseReady": false,
+  "tasks": [
+    {
+      "id": "VE001",
+      "title": "范围/控件矩阵、录制事件/草稿契约、版本与工时归集、分期退出条件",
+      "state": "完成",
+      "estimatedPersonDays": 6,
+      "parents": [
+        "T033",
+        "T043",
+        "T089",
+        "T115"
+      ],
+      "evidence": [
+        "docs/acceptance/VE001_范围契约与工时归集.md"
+      ],
+      "remaining": []
+    },
+    {
+      "id": "VE002",
+      "title": "原生画布技术样例、DPI/200节点验证、替代方案准入与ADR",
+      "state": "完成",
+      "estimatedPersonDays": 6,
+      "parents": [
+        "T042",
+        "T077"
+      ],
+      "evidence": [
+        "docs/adr/003_原生流程画布选型与技术验证.md"
+      ],
+      "remaining": []
+    },
+    {
+      "id": "VE003",
+      "title": "页面/frame/epoch能力模型及录制/执行归属校验",
+      "state": "进行中",
+      "estimatedPersonDays": 5,
+      "parents": [
+        "T018",
+        "T024",
+        "T025",
+        "T028"
+      ],
+      "evidence": [
+        "docs/32_可视化RPA实施与测试记录.md"
+      ],
+      "remaining": [
+        "仅当前主页面/session/document归属；尚缺完整frame/epoch公开能力及多页面仲裁矩阵"
+      ]
+    },
+    {
+      "id": "VE004",
+      "title": "预注册事件监听、录制会话、有界队列、缺口和停止解绑",
+      "state": "进行中",
+      "estimatedPersonDays": 6,
+      "parents": [
+        "T044",
+        "T080",
+        "T095"
+      ],
+      "evidence": [
+        "docs/32_可视化RPA实施与测试记录.md"
+      ],
+      "remaining": [
+        "主文档隔离监听及1000事件预算已实现；跨会话断连/浏览器退出/监听失败全面清理未验收"
+      ]
+    },
+    {
+      "id": "VE005",
+      "title": "输入/IME合并、Enter提交及多事件去重、敏感采集前分类",
+      "state": "进行中",
+      "estimatedPersonDays": 5,
+      "parents": [
+        "T044",
+        "T080",
+        "T049"
+      ],
+      "evidence": [
+        "docs/32_可视化RPA实施与测试记录.md"
+      ],
+      "remaining": [
+        "输入参数化、IME/Enter去重和独立凭据库已验证；特殊表单/快速双击/录制凭据绑定和敏感传播完整矩阵待完成"
+      ]
+    },
+    {
+      "id": "VE006",
+      "title": "录制工具条、实时步骤、参数槽与断言补全、导出v1草稿",
+      "state": "进行中",
+      "estimatedPersonDays": 4,
+      "parents": [
+        "T044",
+        "T043",
+        "T069"
+      ],
+      "evidence": [
+        "docs/32_可视化RPA实施与测试记录.md"
+      ],
+      "remaining": [
+        "已有菜单与录制草稿进入画布；独立实时工具条/输入与断言表单、完整v1配置引导未完成"
+      ]
+    },
+    {
+      "id": "VE007",
+      "title": "鼠标拾取、高亮、唯一候选、稳定定位描述与预览",
+      "state": "进行中",
+      "estimatedPersonDays": 5,
+      "parents": [
+        "T027",
+        "T028",
+        "T069"
+      ],
+      "evidence": [
+        "docs/32_可视化RPA实施与测试记录.md"
+      ],
+      "remaining": [
+        "原生拾取截获点击并返回唯一ID/testId/结构CSS；仍缺语义对象约束、直接步骤插入及完整反例"
+      ]
+    },
+    {
+      "id": "VE008",
+      "title": "新标签/弹窗/SPA、iframe与开放Shadow录制/定位能力",
+      "state": "进行中",
+      "estimatedPersonDays": 5,
+      "parents": [
+        "T024",
+        "T028",
+        "T080",
+        "T081"
+      ],
+      "evidence": [
+        "docs/32_可视化RPA实施与测试记录.md"
+      ],
+      "remaining": [
+        "普通新文档预注册监听可用；弹窗、SPA全面关联、iframe/OOPIF和开放Shadow录制未完成"
+      ]
+    },
+    {
+      "id": "VE009",
+      "title": "节点库、拖拽、缩放平移、框选、命中测试与键盘导航",
+      "state": "完成",
+      "estimatedPersonDays": 5,
+      "parents": [
+        "T042",
+        "T022"
+      ],
+      "evidence": [
+        "docs/acceptance/VE009_节点画布基础交互.md"
+      ],
+      "remaining": []
+    },
+    {
+      "id": "VE010",
+      "title": "分支连线、结构化循环、子流程、图错误定位与发布阻断",
+      "state": "进行中",
+      "estimatedPersonDays": 4,
+      "parents": [
+        "T042",
+        "T043",
+        "T089"
+      ],
+      "evidence": [
+        "docs/32_可视化RPA实施与测试记录.md"
+      ],
+      "remaining": [
+        "已有next/then/else/onError连线及引用重映射、loop/foreach/call和统一校验；图错误一键定位/完整属性向导及复杂图矩阵待完成"
+      ]
+    },
+    {
+      "id": "VE011",
+      "title": "撤销重做、复制粘贴、草稿自动保存、崩溃恢复与并发revision",
+      "state": "完成",
+      "estimatedPersonDays": 4,
+      "parents": [
+        "T042",
+        "T043",
+        "T095"
+      ],
+      "evidence": [
+        "docs/acceptance/VE011_编辑历史剪贴板与恢复验收.md",
+        "docs/34_项目功能复盘与回归测试报告.md"
+      ],
+      "remaining": []
+    },
+    {
+      "id": "VE012",
+      "title": "画布/DSL无损转换、视图元数据分离、版本迁移及hash验证",
+      "state": "进行中",
+      "estimatedPersonDays": 6,
+      "parents": [
+        "T033",
+        "T043",
+        "T047",
+        "T089"
+      ],
+      "evidence": [
+        "docs/32_可视化RPA实施与测试记录.md"
+      ],
+      "remaining": [
+        "v1定义完整保留、独立布局、未来节点只读；正式新版本迁移器、全部历史/未来格式及数据迁移矩阵未完成"
+      ]
+    },
+    {
+      "id": "VE013",
+      "title": "类型化运行变量、节点输出、受限列表/foreach及子流程结果",
+      "state": "进行中",
+      "estimatedPersonDays": 6,
+      "parents": [
+        "T043",
+        "T089"
+      ],
+      "evidence": [
+        "docs/35_自动化基础能力补全与测试报告.md",
+        "docs/38_未实现收口更新与回归验证.md",
+        "docs/execution/evidence/2026-11-05-completion-r3/summary.json"
+      ],
+      "remaining": [
+        "网页字符串数组已作为有界变量进入foreach及子流程；可视化变量/输入表单和完整类型输出矩阵仍待完成"
+      ]
+    },
+    {
+      "id": "VE014",
+      "title": "可视化文本/URL/状态/数量断言、预注册观察和确定性等待",
+      "state": "进行中",
+      "estimatedPersonDays": 6,
+      "parents": [
+        "T019",
+        "T071",
+        "T081"
+      ],
+      "evidence": [
+        "docs/38_未实现收口更新与回归验证.md",
+        "docs/execution/evidence/2026-11-05-completion-r3/summary.json"
+      ],
+      "remaining": [
+        "严格URL/文本/数量/状态断言及DSL/画布节点已接入；属性向导、预注册响应观察与完整确定性等待矩阵待完成"
+      ]
+    },
+    {
+      "id": "VE015",
+      "title": "断点、单步、变量脱敏、错误分支和UI/执行器状态一致",
+      "state": "进行中",
+      "estimatedPersonDays": 5,
+      "parents": [
+        "T035",
+        "T045",
+        "T043"
+      ],
+      "evidence": [
+        "docs/35_自动化基础能力补全与测试报告.md"
+      ],
+      "remaining": [
+        "断点/step/over/out/脱敏变量/只读错误边及调试窗已实现；完整画布高亮、动作错误策略和并发故障矩阵待完成"
+      ]
+    },
+    {
+      "id": "VE016",
+      "title": "派发阶段日志、接管/取消排空、未知结果核对与重启不重放",
+      "state": "未开始",
+      "estimatedPersonDays": 5,
+      "parents": [
+        "T025",
+        "T026",
+        "T035",
+        "T095",
+        "T098"
+      ],
+      "evidence": [],
+      "remaining": []
+    },
+    {
+      "id": "VE017",
+      "title": "凭据库、SecretRef绑定、敏感传播、报告/截图/导出canary检查",
+      "state": "进行中",
+      "estimatedPersonDays": 5,
+      "parents": [
+        "T049",
+        "T096"
+      ],
+      "evidence": [
+        "docs/35_自动化基础能力补全与测试报告.md"
+      ],
+      "remaining": [
+        "DPAPI/SecretRef/敏感变量与实例级截图阻断通过；全证据分类/报告/导出统一策略及canary矩阵待完成"
+      ]
+    },
+    {
+      "id": "VE018",
+      "title": "模型Provider配置、预算、超时、草稿校验与无模型降级",
+      "state": "完成",
+      "estimatedPersonDays": 5,
+      "parents": [
+        "T050",
+        "T051"
+      ],
+      "evidence": [
+        "docs/35_自动化基础能力补全与测试报告.md"
+      ],
+      "remaining": []
+    },
+    {
+      "id": "VE019",
+      "title": "站点知识包契约、导入差异、能力/路径校验、版本绑定和导出",
+      "state": "完成",
+      "estimatedPersonDays": 6,
+      "parents": [
+        "T118",
+        "T115"
+      ],
+      "evidence": [
+        "docs/35_自动化基础能力补全与测试报告.md"
+      ],
+      "remaining": []
+    },
+    {
+      "id": "VE020",
+      "title": "页面功能发现、语义候选及任务草稿规划、目标/范围检查",
+      "state": "进行中",
+      "estimatedPersonDays": 6,
+      "parents": [
+        "T027",
+        "T028",
+        "T050",
+        "T051",
+        "T119"
+      ],
+      "evidence": [
+        "docs/35_自动化基础能力补全与测试报告.md"
+      ],
+      "remaining": [
+        "主文档受限标签启发式候选、独立模型草稿已实现；语义对象约束/多页面完整规划和跨站点效果待完成"
+      ]
+    },
+    {
+      "id": "VE021",
+      "title": "页面变更检测、定位候选对比、可审阅修复及原失败保留",
+      "state": "进行中",
+      "estimatedPersonDays": 5,
+      "parents": [
+        "T118",
+        "T119",
+        "T098"
+      ],
+      "evidence": [
+        "docs/35_自动化基础能力补全与测试报告.md"
+      ],
+      "remaining": [
+        "已有SHA绑定唯一定位修复草稿、原发布保留；完整快照对比/改版检测和未知提交联合验收待完成"
+      ]
+    },
+    {
+      "id": "VE022",
+      "title": "富文本/原生与自定义选择器/上传下载控件能力、路径和结果校验",
+      "state": "进行中",
+      "estimatedPersonDays": 6,
+      "parents": [
+        "T019",
+        "T046",
+        "T081"
+      ],
+      "evidence": [
+        "docs/38_未实现收口更新与回归验证.md",
+        "docs/execution/evidence/2026-11-05-completion-r3/summary.json"
+      ],
+      "remaining": [
+        "单文件上传、ContentEditable、原生select、下载完成事件和路径核对已实现；自定义控件、多文件和取消/重名/断网故障矩阵未完成"
+      ]
+    },
+    {
+      "id": "VE023",
+      "title": "搜索分页列表、对象去重、已赞期望状态、评论/指定回复可视化模板",
+      "state": "未开始",
+      "estimatedPersonDays": 5,
+      "parents": [
+        "T043",
+        "T089",
+        "T118",
+        "T098"
+      ],
+      "evidence": [],
+      "remaining": []
+    },
+    {
+      "id": "VE024",
+      "title": "新契约生成、CLI/MCP/HTTP映射与能力发现、旧客户端兼容",
+      "state": "进行中",
+      "estimatedPersonDays": 4,
+      "parents": [
+        "T030",
+        "T115",
+        "T117"
+      ],
+      "evidence": [
+        "docs/35_自动化基础能力补全与测试报告.md",
+        "docs/38_未实现收口更新与回归验证.md",
+        "docs/execution/evidence/2026-11-05-completion-r3/summary.json"
+      ],
+      "remaining": [
+        "91工具契约/双SDK生成及CLI/MCP/HTTP完整Schema与新增功能链路通过；所有历史客户端和方言兼容矩阵未完成"
+      ]
+    },
+    {
+      "id": "VE025",
+      "title": "录制/画布/复杂控件夹具、事件计数、负向和故障集自动化",
+      "state": "进行中",
+      "estimatedPersonDays": 5,
+      "parents": [
+        "T032",
+        "T047",
+        "T068",
+        "T080"
+      ],
+      "evidence": [
+        "docs/32_可视化RPA实施与测试记录.md",
+        "docs/34_项目功能复盘与回归测试报告.md"
+      ],
+      "remaining": [
+        "已有录制/拾取11组集成及19项画布检查；36项VR完整故障/复杂控件矩阵未完成"
+      ]
+    },
+    {
+      "id": "VE026",
+      "title": "跨站点/保留站点和模型配对基准，成功率、耗时与失败归因",
+      "state": "未开始",
+      "estimatedPersonDays": 5,
+      "parents": [
+        "T062",
+        "T119",
+        "T122"
+      ],
+      "evidence": [],
+      "remaining": []
+    },
+    {
+      "id": "VE027",
+      "title": "全工作台交互、DPI/键盘/可访问性、200节点与资源性能收口",
+      "state": "进行中",
+      "estimatedPersonDays": 5,
+      "parents": [
+        "T022",
+        "T042",
+        "T087"
+      ],
+      "evidence": [
+        "docs/32_可视化RPA实施与测试记录.md"
+      ],
+      "remaining": [
+        "已有200节点/DPI目标/键盘基础性能；全工作台多显示器、屏幕阅读、实体IME及资源矩阵未完成"
+      ]
+    },
+    {
+      "id": "VE028",
+      "title": "双配置回归、便携部署/迁移、新手演练、文档与专项交付",
+      "state": "进行中",
+      "estimatedPersonDays": 6,
+      "parents": [
+        "T047",
+        "T061",
+        "T064",
+        "T065",
+        "T096",
+        "T122"
+      ],
+      "evidence": [
+        "docs/32_可视化RPA实施与测试记录.md",
+        "docs/34_项目功能复盘与回归测试报告.md"
+      ],
+      "remaining": [
+        "本机双配置、三轮与便携包正在收口；完整专项矩阵、第二台Windows和独立新用户演练未完成"
+      ]
+    }
+  ]
+}

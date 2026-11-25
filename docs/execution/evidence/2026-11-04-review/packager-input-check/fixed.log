@@ -1,0 +1,5 @@
+Traceback (most recent call last):
+  File "<string>", line 1, in <module>
+  File "E:\project\webexploer_codex\tools\package_portable.py", line 45, in verify_pe
+    raise ValueError(f"Expected x64 PE executable: {path}")
+ValueError: Expected x64 PE executable: E:\project\webexploer_codex\build\evidence\review-20261104\packager-input-check\invalid-x86.exe

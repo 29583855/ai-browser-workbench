@@ -1,0 +1,84 @@
+{
+  "date": "2026-11-05",
+  "result": "passed",
+  "version": "0.1.13-poc",
+  "phase": "final-zip-and-real-browser-relocation-verified",
+  "compiler": "VS2019 v142 14.29.30133 / x64 / C++14",
+  "nativeConfigurations": [
+    "Debug",
+    "Release"
+  ],
+  "cmakeCtest": "Release 3/3",
+  "sharedTools": 97,
+  "reports": {
+    "debug-main.json": {
+      "result": "passed",
+      "httpChecks": 132,
+      "sha256": "eeead80d3fa45f293b4bd712993ce1a2da55e12ad1b3ef812acc13bfe59d7ed6"
+    },
+    "release-main.json": {
+      "result": "passed",
+      "httpChecks": 133,
+      "sha256": "4c2315bd7808006d4e56a8aaaa57f5c736da44cae2be8035223df75b715bd4ad"
+    },
+    "debug-edges.json": {
+      "result": "passed",
+      "httpChecks": 104,
+      "sha256": "ba73052f667a0106e2260330689a6a06969b9214b1cb9da3ef0a72e523bbe968"
+    },
+    "release-edges.json": {
+      "result": "passed",
+      "httpChecks": 104,
+      "sha256": "8c07ac6cd80db3792dbac5309dad834ea04cebd4183dd2658c1e831ed8bee0ae"
+    },
+    "commerce-regression.json": {
+      "result": "passed",
+      "httpChecks": 105,
+      "sha256": "60a1becc465d9904c9df7183e7a6a92f33db9f68378a168ce02be9ea8cec57df"
+    },
+    "commerce-edges-regression.json": {
+      "result": "passed",
+      "httpChecks": 131,
+      "sha256": "ecc8b00a9f4296ca377ef86ff3b07a3d01e4c18599a7e8d08a164ed26b15aba5"
+    },
+    "sdk-regression.json": {
+      "result": "passed",
+      "httpChecks": null,
+      "sha256": "42ba4186f31269e1612699f2e9736319807dd4465dfdbeb0c8eb7f877d941954"
+    },
+    "api-regression.json": {
+      "result": "passed",
+      "httpChecks": null,
+      "sha256": "0f4c4110ee351450d00ae76b8787ce179c4ecc6e3a1fbfdd05c60eaf4ed0a014"
+    }
+  },
+  "physicalSecondMachineTested": false,
+  "liveMerchantTested": false,
+  "liveEnterpriseIdpTested": false,
+  "realTlsMtlsHandshakeTested": false,
+  "portablePackageTested": true,
+  "mtlsPortalManagementRegression": "passed: six protocol actions protected; enrolled node management stays accessible with user authorization",
+  "candidatePackage": "AI-Browser-Workbench-0.1.13-win64-candidate-r2.zip",
+  "candidateArchiveSha256": "53b6d81c0cbef60d5fc2c628d89445327e61a51cc25e944bb5da16b70217747c",
+  "candidateDeploymentChecks": 10,
+  "nodeLauncherChecks": 5,
+  "binariesSha256": {
+    "awb-core-tests.exe": "952145b2fcc4a067d3eaa33e898bd7c218ee1d6403c20ee678c800be76ee4857",
+    "awb-storage-tests.exe": "37fc35c67a6ad157566b805062fe927f881cb145ce43d1f8ff0e05d44e63655b",
+    "workbench-admin.exe": "37f68be1041fac4e0589a91d761c57983f6a951ee330b5a770e0b784c085c700",
+    "workbench-cli.exe": "38ca8c4ac9fdd878ce172fa898ec20be1a4d2936bbb049a38ec53a68648d350b",
+    "workbench-mcp.exe": "592e475342e228b0acf660ead7dbfd6e386dd16942879d54cfa74b3b0aeb94ff",
+    "workbench-node.exe": "9e713b72ed44c667fe6a3835cfc728ce0c97f6aaacfbefeea86e5242b74d427b",
+    "workbench.exe": "5991ead35df9dc67a3457b28ea65a6418aa4e93354a65605ade6a07acda4875f"
+  },
+  "finalArchive": {
+    "file": "AI-Browser-Workbench-0.1.13-win64-integrations-r1.zip",
+    "sha256": "61ac436995d2f630be5d1fbd44dae616a5d474ad8a2bd91e4e42ee01d667c826",
+    "bytes": 233849876
+  },
+  "finalManifestFiles": 2147,
+  "finalDeploymentChecks": 9,
+  "finalNodeLauncherChecks": 5,
+  "finalRealBusinessHttpChecks": 131,
+  "allSevenExecutablesUnchangedFromCandidate": true
+}

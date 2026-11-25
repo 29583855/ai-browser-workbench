@@ -1,0 +1,219 @@
+Microsoft (R) COFF/PE Dumper Version 14.29.30159.0
+Copyright (C) Microsoft Corporation.  All rights reserved.
+
+
+Dump of file E:\project\webexploer_codex\dist\AI-Browser-Workbench-0.1.0-win64-test\awb-storage-tests.exe
+
+PE signature found
+
+File Type: EXECUTABLE IMAGE
+
+FILE HEADER VALUES
+            8664 machine (x64)
+               8 number of sections
+        6AEA0627 time date stamp Wed Nov  4 00:04:55 2026
+               0 file pointer to symbol table
+               0 number of symbols
+              F0 size of optional header
+              22 characteristics
+                   Executable
+                   Application can handle large (>2GB) addresses
+
+OPTIONAL HEADER VALUES
+             20B magic # (PE32+)
+           14.29 linker version
+          185A00 size of code
+           56000 size of initialized data
+               0 size of uninitialized data
+            1AC8 entry point (0000000140001AC8) @ILT+2755(wmainCRTStartup)
+            1000 base of code
+       140000000 image base (0000000140000000 to 00000001401E0FFF)
+            1000 section alignment
+             200 file alignment
+            6.00 operating system version
+            0.00 image version
+            6.00 subsystem version
+               0 Win32 version
+          1E1000 size of image
+             400 size of headers
+               0 checksum
+               3 subsystem (Windows CUI)
+            8160 DLL characteristics
+                   High Entropy Virtual Addresses
+                   Dynamic base
+                   NX compatible
+                   Terminal Server Aware
+          100000 size of stack reserve
+            1000 size of stack commit
+          100000 size of heap reserve
+            1000 size of heap commit
+               0 loader flags
+              10 number of directories
+               0 [       0] RVA [size] of Export Directory
+          1D8E60 [     168] RVA [size] of Import Directory
+          1DD000 [     43C] RVA [size] of Resource Directory
+          1CA000 [    C684] RVA [size] of Exception Directory
+               0 [       0] RVA [size] of Certificates Directory
+          1DE000 [     ACC] RVA [size] of Base Relocation Directory
+          1A2F54 [      38] RVA [size] of Debug Directory
+               0 [       0] RVA [size] of Architecture Directory
+               0 [       0] RVA [size] of Global Pointer Directory
+               0 [       0] RVA [size] of Thread Storage Directory
+          1A2F90 [     138] RVA [size] of Load Configuration Directory
+               0 [       0] RVA [size] of Bound Import Directory
+          1D8000 [     E60] RVA [size] of Import Address Table Directory
+               0 [       0] RVA [size] of Delay Import Directory
+               0 [       0] RVA [size] of COM Descriptor Directory
+               0 [       0] RVA [size] of Reserved Directory
+
+
+SECTION HEADER #1
+   .text name
+  185843 virtual size
+    1000 virtual address (0000000140001000 to 0000000140186842)
+  185A00 size of raw data
+     400 file pointer to raw data (00000400 to 00185DFF)
+       0 file pointer to relocation table
+       0 file pointer to line numbers
+       0 number of relocations
+       0 number of line numbers
+60000020 flags
+         Code
+         Execute Read
+
+SECTION HEADER #2
+  .rdata name
+   3BC12 virtual size
+  187000 virtual address (0000000140187000 to 00000001401C2C11)
+   3BE00 size of raw data
+  185E00 file pointer to raw data (00185E00 to 001C1BFF)
+       0 file pointer to relocation table
+       0 file pointer to line numbers
+       0 number of relocations
+       0 number of line numbers
+40000040 flags
+         Initialized Data
+         Read Only
+
+  Debug Directories
+
+        Time Type        Size      RVA  Pointer
+    -------- ------- -------- -------- --------
+    6AEA0627 cv            6A 001A4E6C   1A3C6C    Format: RSDS, {3BCA67C8-5498-4589-A21B-CF96071E2DD5}, 1, E:\project\webexploer_codex\build\native-vs2019\x64\Release\awb-storage-tests.pdb
+    6AEA0627 feat          14 001A4ED8   1A3CD8    Counts: Pre-VC++ 11.00=0, C/C++=43, /GS=43, /sdl=0, guardN=38
+
+SECTION HEADER #3
+   .data name
+    61D1 virtual size
+  1C3000 virtual address (00000001401C3000 to 00000001401C91D0)
+    4E00 size of raw data
+  1C1C00 file pointer to raw data (001C1C00 to 001C69FF)
+       0 file pointer to relocation table
+       0 file pointer to line numbers
+       0 number of relocations
+       0 number of line numbers
+C0000040 flags
+         Initialized Data
+         Read Write
+
+SECTION HEADER #4
+  .pdata name
+    DB84 virtual size
+  1CA000 virtual address (00000001401CA000 to 00000001401D7B83)
+    DC00 size of raw data
+  1C6A00 file pointer to raw data (001C6A00 to 001D45FF)
+       0 file pointer to relocation table
+       0 file pointer to line numbers
+       0 number of relocations
+       0 number of line numbers
+40000040 flags
+         Initialized Data
+         Read Only
+
+SECTION HEADER #5
+  .idata name
+    39FA virtual size
+  1D8000 virtual address (00000001401D8000 to 00000001401DB9F9)
+    3A00 size of raw data
+  1D4600 file pointer to raw data (001D4600 to 001D7FFF)
+       0 file pointer to relocation table
+       0 file pointer to line numbers
+       0 number of relocations
+       0 number of line numbers
+40000040 flags
+         Initialized Data
+         Read Only
+
+  Image has the following dependencies:
+
+    KERNEL32.dll
+    MSVCP140.dll
+    VCRUNTIME140.dll
+    VCRUNTIME140_1.dll
+    api-ms-win-crt-runtime-l1-1-0.dll
+    api-ms-win-crt-math-l1-1-0.dll
+    api-ms-win-crt-heap-l1-1-0.dll
+    api-ms-win-crt-stdio-l1-1-0.dll
+    api-ms-win-crt-locale-l1-1-0.dll
+    api-ms-win-crt-string-l1-1-0.dll
+    api-ms-win-crt-time-l1-1-0.dll
+    api-ms-win-crt-convert-l1-1-0.dll
+    WINHTTP.dll
+    bcrypt.dll
+    ADVAPI32.dll
+    SHELL32.dll
+    ole32.dll
+
+SECTION HEADER #6
+  .00cfg name
+     151 virtual size
+  1DC000 virtual address (00000001401DC000 to 00000001401DC150)
+     200 size of raw data
+  1D8000 file pointer to raw data (001D8000 to 001D81FF)
+       0 file pointer to relocation table
+       0 file pointer to line numbers
+       0 number of relocations
+       0 number of line numbers
+40000040 flags
+         Initialized Data
+         Read Only
+
+SECTION HEADER #7
+   .rsrc name
+     43C virtual size
+  1DD000 virtual address (00000001401DD000 to 00000001401DD43B)
+     600 size of raw data
+  1D8200 file pointer to raw data (001D8200 to 001D87FF)
+       0 file pointer to relocation table
+       0 file pointer to line numbers
+       0 number of relocations
+       0 number of line numbers
+40000040 flags
+         Initialized Data
+         Read Only
+
+SECTION HEADER #8
+  .reloc name
+    203A virtual size
+  1DE000 virtual address (00000001401DE000 to 00000001401E0039)
+    2200 size of raw data
+  1D8800 file pointer to raw data (001D8800 to 001DA9FF)
+       0 file pointer to relocation table
+       0 file pointer to line numbers
+       0 number of relocations
+       0 number of line numbers
+42000040 flags
+         Initialized Data
+         Discardable
+         Read Only
+
+  Summary
+
+        1000 .00cfg
+        7000 .data
+        4000 .idata
+        E000 .pdata
+       3C000 .rdata
+        3000 .reloc
+        1000 .rsrc
+      186000 .text

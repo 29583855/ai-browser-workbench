@@ -1,0 +1,191 @@
+Microsoft (R) COFF/PE Dumper Version 14.29.30159.0
+Copyright (C) Microsoft Corporation.  All rights reserved.
+
+
+Dump of file E:\project\webexploer_codex\dist\AI-Browser-Workbench-0.1.0-win64-test\msvcp140.dll
+
+PE signature found
+
+File Type: DLL
+
+FILE HEADER VALUES
+            8664 machine (x64)
+               6 number of sections
+        670B5920 time date stamp Sun Oct 13 13:22:40 2024
+               0 file pointer to symbol table
+               0 number of symbols
+              F0 size of optional header
+            2022 characteristics
+                   Executable
+                   Application can handle large (>2GB) addresses
+                   DLL
+
+OPTIONAL HEADER VALUES
+             20B magic # (PE32+)
+           14.29 linker version
+           53E00 size of code
+           35C00 size of initialized data
+               0 size of uninitialized data
+           52A60 entry point (0000000180052A60)
+            1000 base of code
+       180000000 image base (0000000180000000 to 000000018008CFFF)
+            1000 section alignment
+             200 file alignment
+            6.00 operating system version
+           10.00 image version
+            6.00 subsystem version
+               0 Win32 version
+           8D000 size of image
+             400 size of headers
+           8F93D checksum
+               3 subsystem (Windows CUI)
+            4160 DLL characteristics
+                   High Entropy Virtual Addresses
+                   Dynamic base
+                   NX compatible
+                   Control Flow Guard
+          100000 size of stack reserve
+            1000 size of stack commit
+          100000 size of heap reserve
+            1000 size of heap commit
+               0 loader flags
+              10 number of directories
+           635B0 [   1DA68] RVA [size] of Export Directory
+           81018 [     12C] RVA [size] of Import Directory
+           8B000 [     3E8] RVA [size] of Resource Directory
+           87000 [    39B4] RVA [size] of Exception Directory
+           88000 [    2838] RVA [size] of Certificates Directory
+           8C000 [     830] RVA [size] of Base Relocation Directory
+           5B1A8 [      54] RVA [size] of Debug Directory
+               0 [       0] RVA [size] of Architecture Directory
+               0 [       0] RVA [size] of Global Pointer Directory
+               0 [       0] RVA [size] of Thread Storage Directory
+           5B200 [     138] RVA [size] of Load Configuration Directory
+               0 [       0] RVA [size] of Bound Import Directory
+           55000 [     6A8] RVA [size] of Import Address Table Directory
+               0 [       0] RVA [size] of Delay Import Directory
+               0 [       0] RVA [size] of COM Descriptor Directory
+               0 [       0] RVA [size] of Reserved Directory
+
+
+SECTION HEADER #1
+   .text name
+   53C9C virtual size
+    1000 virtual address (0000000180001000 to 0000000180054C9B)
+   53E00 size of raw data
+     400 file pointer to raw data (00000400 to 000541FF)
+       0 file pointer to relocation table
+       0 file pointer to line numbers
+       0 number of relocations
+       0 number of line numbers
+60000020 flags
+         Code
+         Execute Read
+
+SECTION HEADER #2
+  .rdata name
+   2D75A virtual size
+   55000 virtual address (0000000180055000 to 0000000180082759)
+   2D800 size of raw data
+   54200 file pointer to raw data (00054200 to 000819FF)
+       0 file pointer to relocation table
+       0 file pointer to line numbers
+       0 number of relocations
+       0 number of line numbers
+40000040 flags
+         Initialized Data
+         Read Only
+
+  Debug Directories
+
+        Time Type        Size      RVA  Pointer
+    -------- ------- -------- -------- --------
+    670B5920 cv            58 0005EEB4    5E0B4    Format: RSDS, {8F925E66-E686-4E7C-B97F-0E59C8899C91}, 1, D:\a\_work\1\s\\binaries\amd64ret\bin\amd64\\msvcp140.amd64.pdb
+    670B5920 coffgrp      340 0005EF0C    5E10C
+    670B5920 dllchar        4 0005F24C    5E44C
+
+        00000001 extended DLL characteristics
+                   CET compatible
+
+  Image has the following dependencies:
+
+    VCRUNTIME140.dll
+    VCRUNTIME140_1.dll
+    api-ms-win-crt-heap-l1-1-0.dll
+    api-ms-win-crt-runtime-l1-1-0.dll
+    api-ms-win-crt-string-l1-1-0.dll
+    api-ms-win-crt-locale-l1-1-0.dll
+    api-ms-win-crt-stdio-l1-1-0.dll
+    api-ms-win-crt-filesystem-l1-1-0.dll
+    api-ms-win-crt-time-l1-1-0.dll
+    api-ms-win-crt-environment-l1-1-0.dll
+    api-ms-win-crt-math-l1-1-0.dll
+    api-ms-win-crt-convert-l1-1-0.dll
+    api-ms-win-crt-utility-l1-1-0.dll
+    KERNEL32.dll
+
+SECTION HEADER #3
+   .data name
+    3A60 virtual size
+   83000 virtual address (0000000180083000 to 0000000180086A5F)
+    1E00 size of raw data
+   81A00 file pointer to raw data (00081A00 to 000837FF)
+       0 file pointer to relocation table
+       0 file pointer to line numbers
+       0 number of relocations
+       0 number of line numbers
+C0000040 flags
+         Initialized Data
+         Read Write
+
+SECTION HEADER #4
+  .pdata name
+    39B4 virtual size
+   87000 virtual address (0000000180087000 to 000000018008A9B3)
+    3A00 size of raw data
+   83800 file pointer to raw data (00083800 to 000871FF)
+       0 file pointer to relocation table
+       0 file pointer to line numbers
+       0 number of relocations
+       0 number of line numbers
+40000040 flags
+         Initialized Data
+         Read Only
+
+SECTION HEADER #5
+   .rsrc name
+     3E8 virtual size
+   8B000 virtual address (000000018008B000 to 000000018008B3E7)
+     400 size of raw data
+   87200 file pointer to raw data (00087200 to 000875FF)
+       0 file pointer to relocation table
+       0 file pointer to line numbers
+       0 number of relocations
+       0 number of line numbers
+40000040 flags
+         Initialized Data
+         Read Only
+
+SECTION HEADER #6
+  .reloc name
+     830 virtual size
+   8C000 virtual address (000000018008C000 to 000000018008C82F)
+     A00 size of raw data
+   87600 file pointer to raw data (00087600 to 00087FFF)
+       0 file pointer to relocation table
+       0 file pointer to line numbers
+       0 number of relocations
+       0 number of line numbers
+42000040 flags
+         Initialized Data
+         Discardable
+         Read Only
+
+  Summary
+
+        4000 .data
+        4000 .pdata
+       2E000 .rdata
+        1000 .reloc
+        1000 .rsrc
+       54000 .text

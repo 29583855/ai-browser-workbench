@@ -1,0 +1,10 @@
+{
+  "user": "demo-author",
+  "password": "ContentLab-2026!",
+  "taskKey": "lab-article-001",
+  "title": "浏览器自动化：从登录到发布的练习",
+  "body": "这是一篇准备好的本地测试文章。\n第二段用于核对完整正文、中文与换行。",
+  "category": "技术",
+  "keyword": "浏览器自动化",
+  "expectedSearchStatus": "results:4:page:1"
+}

@@ -1,0 +1,53 @@
+{
+  "date": "2026-11-04T10:53:41.308360+08:00",
+  "result": "failed",
+  "binarySha256": "cdca089a79f6403c7cbc0bb09bbb3d8309ab106295939c775e8c813cf03a84c4",
+  "scope": "Unauthenticated SOCKS5; full DNS/WebRTC/IPv6 leak matrix belongs to T091",
+  "commands": [
+    {
+      "sequence": 1,
+      "command": "profile_create",
+      "outcome": "PROXY_UNSUPPORTED"
+    },
+    {
+      "sequence": 2,
+      "command": "profile_create",
+      "outcome": "PROXY_UNSUPPORTED"
+    },
+    {
+      "sequence": 3,
+      "command": "profile_create",
+      "outcome": "PROXY_UNSUPPORTED"
+    },
+    {
+      "sequence": 4,
+      "command": "profile_create",
+      "outcome": "PROXY_UNSUPPORTED"
+    },
+    {
+      "sequence": 5,
+      "command": "profile_create",
+      "outcome": "passed"
+    },
+    {
+      "sequence": 6,
+      "command": "browser_start",
+      "outcome": "passed"
+    },
+    {
+      "sequence": 7,
+      "command": "lease_acquire",
+      "outcome": "passed"
+    },
+    {
+      "sequence": 8,
+      "command": "browser_navigate",
+      "outcome": "passed"
+    },
+    {
+      "sequence": 9,
+      "command": "page_wait_text",
+      "outcome": "passed"
+    }
+  ]
+}

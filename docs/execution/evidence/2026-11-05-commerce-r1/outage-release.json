@@ -1,0 +1,17 @@
+{
+  "date": "2026-11-05",
+  "result": "passed",
+  "browsers": 2,
+  "stopAfterSeconds": 12.219,
+  "pendingSlotsPreserved": true,
+  "sameAddressRestarted": true,
+  "reconciledSlots": 2,
+  "clientChecks": 93,
+  "checks": [
+    "real-two-browser-outage-stop",
+    "no-auto-slot-release",
+    "same-port-restart-retains-admission",
+    "same-account-reauthentication",
+    "confirmed-stop-release"
+  ]
+}

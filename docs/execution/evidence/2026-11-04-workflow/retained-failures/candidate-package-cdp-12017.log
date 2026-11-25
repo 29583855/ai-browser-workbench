@@ -1,0 +1,39 @@
+----------------------------------------
+----------------------------------------
+Exception occurred during processing of request from ('127.0.0.1', 61619)
+Exception occurred during processing of request from ('127.0.0.1', 57837)
+Traceback (most recent call last):
+Traceback (most recent call last):
+  File "E:\usr\Python\3.12.3_64\Lib\socketserver.py", line 692, in process_request_thread
+    self.finish_request(request, client_address)
+  File "E:\usr\Python\3.12.3_64\Lib\socketserver.py", line 692, in process_request_thread
+    self.finish_request(request, client_address)
+  File "E:\usr\Python\3.12.3_64\Lib\socketserver.py", line 362, in finish_request
+    self.RequestHandlerClass(request, client_address, self)
+  File "E:\usr\Python\3.12.3_64\Lib\socketserver.py", line 362, in finish_request
+    self.RequestHandlerClass(request, client_address, self)
+  File "E:\usr\Python\3.12.3_64\Lib\socketserver.py", line 761, in __init__
+    self.handle()
+  File "E:\usr\Python\3.12.3_64\Lib\http\server.py", line 436, in handle
+    self.handle_one_request()
+  File "E:\usr\Python\3.12.3_64\Lib\socketserver.py", line 761, in __init__
+    self.handle()
+  File "E:\usr\Python\3.12.3_64\Lib\http\server.py", line 436, in handle
+    self.handle_one_request()
+  File "E:\usr\Python\3.12.3_64\Lib\http\server.py", line 404, in handle_one_request
+    self.raw_requestline = self.rfile.readline(65537)
+                           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\usr\Python\3.12.3_64\Lib\http\server.py", line 404, in handle_one_request
+    self.raw_requestline = self.rfile.readline(65537)
+                           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\usr\Python\3.12.3_64\Lib\socket.py", line 707, in readinto
+    return self._sock.recv_into(b)
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\usr\Python\3.12.3_64\Lib\socket.py", line 707, in readinto
+    return self._sock.recv_into(b)
+           ^^^^^^^^^^^^^^^^^^^^^^^
+ConnectionResetError: [WinError 10054] 远程主机强迫关闭了一个现有的连接。
+ConnectionResetError: [WinError 10054] 远程主机强迫关闭了一个现有的连接。
+----------------------------------------
+----------------------------------------
+{"result": "failed", "flows": 17, "negativeCases": 34, "checks": 1, "error": "{'error': {'automaticRetryAllowed': False, 'code': 'CDP_TRANSPORT_FAILED', 'message': 'CDP send failed: 12017', 'outcomeUnknown': True}, 'id': 1345, 'ok': False}"}

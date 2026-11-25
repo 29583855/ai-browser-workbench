@@ -1,0 +1,185 @@
+Microsoft (R) COFF/PE Dumper Version 14.29.30159.0
+Copyright (C) Microsoft Corporation.  All rights reserved.
+
+
+Dump of file E:\project\webexploer_codex\dist\AI-Browser-Workbench-0.1.1-win64-reviewed\msvcp140_atomic_wait.dll
+
+PE signature found
+
+File Type: DLL
+
+FILE HEADER VALUES
+            8664 machine (x64)
+               6 number of sections
+        670B592B time date stamp Sun Oct 13 13:22:51 2024
+               0 file pointer to symbol table
+               0 number of symbols
+              F0 size of optional header
+            2022 characteristics
+                   Executable
+                   Application can handle large (>2GB) addresses
+                   DLL
+
+OPTIONAL HEADER VALUES
+             20B magic # (PE32+)
+           14.29 linker version
+            3A00 size of code
+            C000 size of initialized data
+               0 size of uninitialized data
+            3EE0 entry point (0000000180003EE0)
+            1000 base of code
+       180000000 image base (0000000180000000 to 0000000180013FFF)
+            1000 section alignment
+             200 file alignment
+            6.00 operating system version
+           10.00 image version
+            6.00 subsystem version
+               0 Win32 version
+           14000 size of image
+             400 size of headers
+           12449 checksum
+               3 subsystem (Windows CUI)
+            4160 DLL characteristics
+                   High Entropy Virtual Addresses
+                   Dynamic base
+                   NX compatible
+                   Control Flow Guard
+          100000 size of stack reserve
+            1000 size of stack commit
+          100000 size of heap reserve
+            1000 size of heap commit
+               0 loader flags
+              10 number of directories
+            6610 [     544] RVA [size] of Export Directory
+            6B54 [      B4] RVA [size] of Import Directory
+           12000 [     430] RVA [size] of Resource Directory
+           11000 [     450] RVA [size] of Exception Directory
+            B800 [    2820] RVA [size] of Certificates Directory
+           13000 [     478] RVA [size] of Base Relocation Directory
+            5720 [      54] RVA [size] of Debug Directory
+               0 [       0] RVA [size] of Architecture Directory
+               0 [       0] RVA [size] of Global Pointer Directory
+               0 [       0] RVA [size] of Thread Storage Directory
+            5780 [     138] RVA [size] of Load Configuration Directory
+               0 [       0] RVA [size] of Bound Import Directory
+            5000 [     240] RVA [size] of Import Address Table Directory
+               0 [       0] RVA [size] of Delay Import Directory
+               0 [       0] RVA [size] of COM Descriptor Directory
+               0 [       0] RVA [size] of Reserved Directory
+
+
+SECTION HEADER #1
+   .text name
+    399E virtual size
+    1000 virtual address (0000000180001000 to 000000018000499D)
+    3A00 size of raw data
+     400 file pointer to raw data (00000400 to 00003DFF)
+       0 file pointer to relocation table
+       0 file pointer to line numbers
+       0 number of relocations
+       0 number of line numbers
+60000020 flags
+         Code
+         Execute Read
+
+SECTION HEADER #2
+  .rdata name
+    246E virtual size
+    5000 virtual address (0000000180005000 to 000000018000746D)
+    2600 size of raw data
+    3E00 file pointer to raw data (00003E00 to 000063FF)
+       0 file pointer to relocation table
+       0 file pointer to line numbers
+       0 number of relocations
+       0 number of line numbers
+40000040 flags
+         Initialized Data
+         Read Only
+
+  Debug Directories
+
+        Time Type        Size      RVA  Pointer
+    -------- ------- -------- -------- --------
+    670B592B cv            64 00005C9C     4A9C    Format: RSDS, {984BAEA7-C64F-43A6-8097-A19851DD8075}, 1, D:\a\_work\1\s\\binaries\amd64ret\bin\amd64\\msvcp140_atomic_wait.amd64.pdb
+    670B592B coffgrp      304 00005D00     4B00
+    670B592B dllchar        4 00006004     4E04
+
+        00000001 extended DLL characteristics
+                   CET compatible
+
+  Image has the following dependencies:
+
+    MSVCP140.dll
+    VCRUNTIME140_1.dll
+    VCRUNTIME140.dll
+    api-ms-win-crt-runtime-l1-1-0.dll
+    api-ms-win-crt-heap-l1-1-0.dll
+    api-ms-win-crt-locale-l1-1-0.dll
+    ADVAPI32.dll
+    KERNEL32.dll
+
+SECTION HEADER #3
+   .data name
+    87D8 virtual size
+    8000 virtual address (0000000180008000 to 00000001800107D7)
+    4200 size of raw data
+    6400 file pointer to raw data (00006400 to 0000A5FF)
+       0 file pointer to relocation table
+       0 file pointer to line numbers
+       0 number of relocations
+       0 number of line numbers
+C0000040 flags
+         Initialized Data
+         Read Write
+
+SECTION HEADER #4
+  .pdata name
+     450 virtual size
+   11000 virtual address (0000000180011000 to 000000018001144F)
+     600 size of raw data
+    A600 file pointer to raw data (0000A600 to 0000ABFF)
+       0 file pointer to relocation table
+       0 file pointer to line numbers
+       0 number of relocations
+       0 number of line numbers
+40000040 flags
+         Initialized Data
+         Read Only
+
+SECTION HEADER #5
+   .rsrc name
+     430 virtual size
+   12000 virtual address (0000000180012000 to 000000018001242F)
+     600 size of raw data
+    AC00 file pointer to raw data (0000AC00 to 0000B1FF)
+       0 file pointer to relocation table
+       0 file pointer to line numbers
+       0 number of relocations
+       0 number of line numbers
+40000040 flags
+         Initialized Data
+         Read Only
+
+SECTION HEADER #6
+  .reloc name
+     478 virtual size
+   13000 virtual address (0000000180013000 to 0000000180013477)
+     600 size of raw data
+    B200 file pointer to raw data (0000B200 to 0000B7FF)
+       0 file pointer to relocation table
+       0 file pointer to line numbers
+       0 number of relocations
+       0 number of line numbers
+42000040 flags
+         Initialized Data
+         Discardable
+         Read Only
+
+  Summary
+
+        9000 .data
+        1000 .pdata
+        3000 .rdata
+        1000 .reloc
+        1000 .rsrc
+        4000 .text

@@ -1,0 +1,1230 @@
+{
+  "date": "2026-11-04T11:45:54.918808+08:00",
+  "sdk": "mcp==1.12.4",
+  "executableSha256": "e5f914b268f3bc1617174e9672e1b17f0d60a7e4d9487a04b38b2b9b7b3c1a4d",
+  "steps": [
+    {
+      "tool": "capabilities",
+      "outcome": "passed"
+    },
+    {
+      "tool": "profile_list",
+      "outcome": "INVALID_ARGUMENTS"
+    },
+    {
+      "tool": "not_a_tool",
+      "outcome": "UNSUPPORTED_COMMAND"
+    },
+    {
+      "tool": "profile_create",
+      "outcome": "passed"
+    },
+    {
+      "tool": "browser_start",
+      "outcome": "passed"
+    },
+    {
+      "tool": "browser_status",
+      "outcome": "passed"
+    },
+    {
+      "tool": "browser_stop",
+      "outcome": "passed"
+    }
+  ],
+  "result": "passed",
+  "initialize": {
+    "meta": null,
+    "protocolVersion": "2025-03-26",
+    "capabilities": {
+      "experimental": null,
+      "logging": null,
+      "prompts": null,
+      "resources": null,
+      "tools": {
+        "listChanged": false
+      },
+      "completions": null
+    },
+    "serverInfo": {
+      "name": "ai-browser-workbench",
+      "title": null,
+      "version": "0.1.3-poc"
+    },
+    "instructions": "Local development POC. No production quota or commerce. Only experimental unauthenticated HTTP proxy support. Tools share origin and lease checks."
+  },
+  "tools": [
+    {
+      "name": "capabilities",
+      "title": null,
+      "description": "Report implemented technical-preview capabilities and unsupported features",
+      "inputSchema": {
+        "additionalProperties": false,
+        "properties": {},
+        "required": [],
+        "type": "object"
+      },
+      "outputSchema": null,
+      "annotations": null,
+      "meta": null
+    },
+    {
+      "name": "profile_list",
+      "title": null,
+      "description": "List owned profiles; active by default, or choose a lifecycle state",
+      "inputSchema": {
+        "additionalProperties": false,
+        "properties": {
+          "state": {
+            "enum": [
+              "active",
+              "archived",
+              "trashed",
+              "purging",
+              "all"
+            ],
+            "type": "string"
+          }
+        },
+        "required": [],
+        "type": "object"
+      },
+      "outputSchema": null,
+      "annotations": null,
+      "meta": null
+    },
+    {
+      "name": "profile_create",
+      "title": null,
+      "description": "Create an isolated development profile with explicit origin scope",
+      "inputSchema": {
+        "additionalProperties": false,
+        "properties": {
+          "allowedOrigins": {
+            "items": {
+              "maxLength": 8192,
+              "minLength": 1,
+              "type": "string"
+            },
+            "maxItems": 32,
+            "minItems": 1,
+            "type": "array"
+          },
+          "name": {
+            "maxLength": 128,
+            "minLength": 1,
+            "type": "string"
+          },
+          "proxyServer": {
+            "maxLength": 2048,
+            "minLength": 1,
+            "type": "string"
+          },
+          "runtimeSettings": {
+            "additionalProperties": false,
+            "properties": {
+              "languages": {
+                "items": {
+                  "maxLength": 35,
+                  "minLength": 1,
+                  "type": "string"
+                },
+                "maxItems": 8,
+                "minItems": 1,
+                "type": "array"
+              },
+              "timezone": {
+                "maxLength": 128,
+                "minLength": 1,
+                "type": "string"
+              },
+              "userAgent": {
+                "maxLength": 1024,
+                "minLength": 1,
+                "type": "string"
+              }
+            },
+            "required": [],
+            "type": "object"
+          }
+        },
+        "required": [
+          "name",
+          "allowedOrigins"
+        ],
+        "type": "object"
+      },
+      "outputSchema": null,
+      "annotations": null,
+      "meta": null
+    },
+    {
+      "name": "profile_update",
+      "title": null,
+      "description": "Update a stopped profile using optimistic revision control",
+      "inputSchema": {
+        "additionalProperties": false,
+        "properties": {
+          "allowedOrigins": {
+            "items": {
+              "maxLength": 8192,
+              "minLength": 1,
+              "type": "string"
+            },
+            "maxItems": 32,
+            "minItems": 1,
+            "type": "array"
+          },
+          "expectedRevision": {
+            "minimum": 1,
+            "type": "integer"
+          },
+          "name": {
+            "maxLength": 128,
+            "minLength": 1,
+            "type": "string"
+          },
+          "profileId": {
+            "maxLength": 32,
+            "minLength": 1,
+            "type": "string"
+          },
+          "proxyServer": {
+            "maxLength": 2048,
+            "type": "string"
+          },
+          "runtimeSettings": {
+            "additionalProperties": false,
+            "properties": {
+              "languages": {
+                "items": {
+                  "maxLength": 35,
+                  "minLength": 1,
+                  "type": "string"
+                },
+                "maxItems": 8,
+                "minItems": 1,
+                "type": "array"
+              },
+              "timezone": {
+                "maxLength": 128,
+                "minLength": 1,
+                "type": "string"
+              },
+              "userAgent": {
+                "maxLength": 1024,
+                "minLength": 1,
+                "type": "string"
+              }
+            },
+            "required": [],
+            "type": "object"
+          }
+        },
+        "required": [
+          "profileId",
+          "expectedRevision"
+        ],
+        "type": "object"
+      },
+      "outputSchema": null,
+      "annotations": null,
+      "meta": null
+    },
+    {
+      "name": "profile_archive",
+      "title": null,
+      "description": "Archive a stopped, unreferenced active profile without deleting its data",
+      "inputSchema": {
+        "additionalProperties": false,
+        "properties": {
+          "expectedRevision": {
+            "minimum": 1,
+            "type": "integer"
+          },
+          "profileId": {
+            "maxLength": 32,
+            "minLength": 1,
+            "type": "string"
+          }
+        },
+        "required": [
+          "profileId",
+          "expectedRevision"
+        ],
+        "type": "object"
+      },
+      "outputSchema": null,
+      "annotations": null,
+      "meta": null
+    },
+    {
+      "name": "profile_trash",
+      "title": null,
+      "description": "Move a stopped, unreferenced profile into the recycle bin",
+      "inputSchema": {
+        "additionalProperties": false,
+        "properties": {
+          "expectedRevision": {
+            "minimum": 1,
+            "type": "integer"
+          },
+          "profileId": {
+            "maxLength": 32,
+            "minLength": 1,
+            "type": "string"
+          }
+        },
+        "required": [
+          "profileId",
+          "expectedRevision"
+        ],
+        "type": "object"
+      },
+      "outputSchema": null,
+      "annotations": null,
+      "meta": null
+    },
+    {
+      "name": "profile_restore",
+      "title": null,
+      "description": "Restore an archived or recycled profile with its original identity and data",
+      "inputSchema": {
+        "additionalProperties": false,
+        "properties": {
+          "expectedRevision": {
+            "minimum": 1,
+            "type": "integer"
+          },
+          "profileId": {
+            "maxLength": 32,
+            "minLength": 1,
+            "type": "string"
+          }
+        },
+        "required": [
+          "profileId",
+          "expectedRevision"
+        ],
+        "type": "object"
+      },
+      "outputSchema": null,
+      "annotations": null,
+      "meta": null
+    },
+    {
+      "name": "profile_purge",
+      "title": null,
+      "description": "Permanently delete recycled data; repeat the exact profile ID to confirm",
+      "inputSchema": {
+        "additionalProperties": false,
+        "properties": {
+          "confirmProfileId": {
+            "maxLength": 32,
+            "minLength": 1,
+            "type": "string"
+          },
+          "expectedRevision": {
+            "minimum": 1,
+            "type": "integer"
+          },
+          "profileId": {
+            "maxLength": 32,
+            "minLength": 1,
+            "type": "string"
+          }
+        },
+        "required": [
+          "profileId",
+          "expectedRevision",
+          "confirmProfileId"
+        ],
+        "type": "object"
+      },
+      "outputSchema": null,
+      "annotations": null,
+      "meta": null
+    },
+    {
+      "name": "browser_start",
+      "title": null,
+      "description": "Start a new owned browser process tree",
+      "inputSchema": {
+        "additionalProperties": false,
+        "properties": {
+          "headless": {
+            "type": "boolean"
+          },
+          "profileId": {
+            "maxLength": 32,
+            "minLength": 1,
+            "type": "string"
+          }
+        },
+        "required": [
+          "profileId"
+        ],
+        "type": "object"
+      },
+      "outputSchema": null,
+      "annotations": null,
+      "meta": null
+    },
+    {
+      "name": "browser_status",
+      "title": null,
+      "description": "Read process ownership and handshake version",
+      "inputSchema": {
+        "additionalProperties": false,
+        "properties": {
+          "profileId": {
+            "maxLength": 32,
+            "minLength": 1,
+            "type": "string"
+          }
+        },
+        "required": [
+          "profileId"
+        ],
+        "type": "object"
+      },
+      "outputSchema": null,
+      "annotations": null,
+      "meta": null
+    },
+    {
+      "name": "browser_stop",
+      "title": null,
+      "description": "Stop only this managed process tree; no payment or lease required",
+      "inputSchema": {
+        "additionalProperties": false,
+        "properties": {
+          "profileId": {
+            "maxLength": 32,
+            "minLength": 1,
+            "type": "string"
+          }
+        },
+        "required": [
+          "profileId"
+        ],
+        "type": "object"
+      },
+      "outputSchema": null,
+      "annotations": null,
+      "meta": null
+    },
+    {
+      "name": "lease_acquire",
+      "title": null,
+      "description": "Acquire exclusive local automatic control",
+      "inputSchema": {
+        "additionalProperties": false,
+        "properties": {
+          "owner": {
+            "maxLength": 128,
+            "minLength": 1,
+            "type": "string"
+          },
+          "profileId": {
+            "maxLength": 32,
+            "minLength": 1,
+            "type": "string"
+          },
+          "ttlMs": {
+            "maximum": 300000,
+            "minimum": 1,
+            "type": "integer"
+          }
+        },
+        "required": [
+          "profileId",
+          "owner",
+          "ttlMs"
+        ],
+        "type": "object"
+      },
+      "outputSchema": null,
+      "annotations": null,
+      "meta": null
+    },
+    {
+      "name": "lease_revoke",
+      "title": null,
+      "description": "Revoke prior control generation before manual takeover",
+      "inputSchema": {
+        "additionalProperties": false,
+        "properties": {
+          "profileId": {
+            "maxLength": 32,
+            "minLength": 1,
+            "type": "string"
+          }
+        },
+        "required": [
+          "profileId"
+        ],
+        "type": "object"
+      },
+      "outputSchema": null,
+      "annotations": null,
+      "meta": null
+    },
+    {
+      "name": "browser_navigate",
+      "title": null,
+      "description": "Navigate within the explicit profile origin scope",
+      "inputSchema": {
+        "additionalProperties": false,
+        "properties": {
+          "lease": {
+            "additionalProperties": false,
+            "properties": {
+              "generation": {
+                "minimum": 1,
+                "type": "integer"
+              },
+              "owner": {
+                "maxLength": 128,
+                "minLength": 1,
+                "type": "string"
+              },
+              "token": {
+                "maxLength": 32,
+                "minLength": 1,
+                "type": "string"
+              }
+            },
+            "required": [
+              "owner",
+              "token",
+              "generation"
+            ],
+            "type": "object"
+          },
+          "profileId": {
+            "maxLength": 32,
+            "minLength": 1,
+            "type": "string"
+          },
+          "url": {
+            "maxLength": 8192,
+            "minLength": 1,
+            "type": "string"
+          }
+        },
+        "required": [
+          "url",
+          "profileId",
+          "lease"
+        ],
+        "type": "object"
+      },
+      "outputSchema": null,
+      "annotations": null,
+      "meta": null
+    },
+    {
+      "name": "page_snapshot",
+      "title": null,
+      "description": "Read a bounded main-frame accessibility tree with document-bound refs",
+      "inputSchema": {
+        "additionalProperties": false,
+        "properties": {
+          "lease": {
+            "additionalProperties": false,
+            "properties": {
+              "generation": {
+                "minimum": 1,
+                "type": "integer"
+              },
+              "owner": {
+                "maxLength": 128,
+                "minLength": 1,
+                "type": "string"
+              },
+              "token": {
+                "maxLength": 32,
+                "minLength": 1,
+                "type": "string"
+              }
+            },
+            "required": [
+              "owner",
+              "token",
+              "generation"
+            ],
+            "type": "object"
+          },
+          "profileId": {
+            "maxLength": 32,
+            "minLength": 1,
+            "type": "string"
+          }
+        },
+        "required": [
+          "profileId",
+          "lease"
+        ],
+        "type": "object"
+      },
+      "outputSchema": null,
+      "annotations": null,
+      "meta": null
+    },
+    {
+      "name": "page_locate",
+      "title": null,
+      "description": "Locate exactly one CSS element in the main document",
+      "inputSchema": {
+        "additionalProperties": false,
+        "properties": {
+          "lease": {
+            "additionalProperties": false,
+            "properties": {
+              "generation": {
+                "minimum": 1,
+                "type": "integer"
+              },
+              "owner": {
+                "maxLength": 128,
+                "minLength": 1,
+                "type": "string"
+              },
+              "token": {
+                "maxLength": 32,
+                "minLength": 1,
+                "type": "string"
+              }
+            },
+            "required": [
+              "owner",
+              "token",
+              "generation"
+            ],
+            "type": "object"
+          },
+          "profileId": {
+            "maxLength": 32,
+            "minLength": 1,
+            "type": "string"
+          },
+          "selector": {
+            "maxLength": 2048,
+            "minLength": 1,
+            "type": "string"
+          }
+        },
+        "required": [
+          "selector",
+          "profileId",
+          "lease"
+        ],
+        "type": "object"
+      },
+      "outputSchema": null,
+      "annotations": null,
+      "meta": null
+    },
+    {
+      "name": "page_fill",
+      "title": null,
+      "description": "Fill an input without echoing or logging its value",
+      "inputSchema": {
+        "additionalProperties": false,
+        "properties": {
+          "lease": {
+            "additionalProperties": false,
+            "properties": {
+              "generation": {
+                "minimum": 1,
+                "type": "integer"
+              },
+              "owner": {
+                "maxLength": 128,
+                "minLength": 1,
+                "type": "string"
+              },
+              "token": {
+                "maxLength": 32,
+                "minLength": 1,
+                "type": "string"
+              }
+            },
+            "required": [
+              "owner",
+              "token",
+              "generation"
+            ],
+            "type": "object"
+          },
+          "profileId": {
+            "maxLength": 32,
+            "minLength": 1,
+            "type": "string"
+          },
+          "ref": {
+            "maxLength": 64,
+            "minLength": 1,
+            "type": "string"
+          },
+          "value": {
+            "maxLength": 65536,
+            "type": "string"
+          }
+        },
+        "required": [
+          "ref",
+          "value",
+          "profileId",
+          "lease"
+        ],
+        "type": "object"
+      },
+      "outputSchema": null,
+      "annotations": null,
+      "meta": null
+    },
+    {
+      "name": "page_click",
+      "title": null,
+      "description": "Dispatch click; business success must be asserted separately",
+      "inputSchema": {
+        "additionalProperties": false,
+        "properties": {
+          "lease": {
+            "additionalProperties": false,
+            "properties": {
+              "generation": {
+                "minimum": 1,
+                "type": "integer"
+              },
+              "owner": {
+                "maxLength": 128,
+                "minLength": 1,
+                "type": "string"
+              },
+              "token": {
+                "maxLength": 32,
+                "minLength": 1,
+                "type": "string"
+              }
+            },
+            "required": [
+              "owner",
+              "token",
+              "generation"
+            ],
+            "type": "object"
+          },
+          "profileId": {
+            "maxLength": 32,
+            "minLength": 1,
+            "type": "string"
+          },
+          "ref": {
+            "maxLength": 64,
+            "minLength": 1,
+            "type": "string"
+          }
+        },
+        "required": [
+          "ref",
+          "profileId",
+          "lease"
+        ],
+        "type": "object"
+      },
+      "outputSchema": null,
+      "annotations": null,
+      "meta": null
+    },
+    {
+      "name": "page_text",
+      "title": null,
+      "description": "Read bounded element text for assertions",
+      "inputSchema": {
+        "additionalProperties": false,
+        "properties": {
+          "lease": {
+            "additionalProperties": false,
+            "properties": {
+              "generation": {
+                "minimum": 1,
+                "type": "integer"
+              },
+              "owner": {
+                "maxLength": 128,
+                "minLength": 1,
+                "type": "string"
+              },
+              "token": {
+                "maxLength": 32,
+                "minLength": 1,
+                "type": "string"
+              }
+            },
+            "required": [
+              "owner",
+              "token",
+              "generation"
+            ],
+            "type": "object"
+          },
+          "profileId": {
+            "maxLength": 32,
+            "minLength": 1,
+            "type": "string"
+          },
+          "ref": {
+            "maxLength": 64,
+            "minLength": 1,
+            "type": "string"
+          }
+        },
+        "required": [
+          "ref",
+          "profileId",
+          "lease"
+        ],
+        "type": "object"
+      },
+      "outputSchema": null,
+      "annotations": null,
+      "meta": null
+    },
+    {
+      "name": "page_wait_text",
+      "title": null,
+      "description": "Retry read-only observation until exact text matches",
+      "inputSchema": {
+        "additionalProperties": false,
+        "properties": {
+          "expected": {
+            "maxLength": 16384,
+            "type": "string"
+          },
+          "lease": {
+            "additionalProperties": false,
+            "properties": {
+              "generation": {
+                "minimum": 1,
+                "type": "integer"
+              },
+              "owner": {
+                "maxLength": 128,
+                "minLength": 1,
+                "type": "string"
+              },
+              "token": {
+                "maxLength": 32,
+                "minLength": 1,
+                "type": "string"
+              }
+            },
+            "required": [
+              "owner",
+              "token",
+              "generation"
+            ],
+            "type": "object"
+          },
+          "profileId": {
+            "maxLength": 32,
+            "minLength": 1,
+            "type": "string"
+          },
+          "selector": {
+            "maxLength": 2048,
+            "minLength": 1,
+            "type": "string"
+          },
+          "timeoutMs": {
+            "maximum": 10000,
+            "minimum": 1,
+            "type": "integer"
+          }
+        },
+        "required": [
+          "selector",
+          "expected",
+          "timeoutMs",
+          "profileId",
+          "lease"
+        ],
+        "type": "object"
+      },
+      "outputSchema": null,
+      "annotations": null,
+      "meta": null
+    },
+    {
+      "name": "page_screenshot",
+      "title": null,
+      "description": "Capture authorized page as PNG base64",
+      "inputSchema": {
+        "additionalProperties": false,
+        "properties": {
+          "lease": {
+            "additionalProperties": false,
+            "properties": {
+              "generation": {
+                "minimum": 1,
+                "type": "integer"
+              },
+              "owner": {
+                "maxLength": 128,
+                "minLength": 1,
+                "type": "string"
+              },
+              "token": {
+                "maxLength": 32,
+                "minLength": 1,
+                "type": "string"
+              }
+            },
+            "required": [
+              "owner",
+              "token",
+              "generation"
+            ],
+            "type": "object"
+          },
+          "profileId": {
+            "maxLength": 32,
+            "minLength": 1,
+            "type": "string"
+          }
+        },
+        "required": [
+          "profileId",
+          "lease"
+        ],
+        "type": "object"
+      },
+      "outputSchema": null,
+      "annotations": null,
+      "meta": null
+    },
+    {
+      "name": "page_list",
+      "title": null,
+      "description": "List managed pages and adopt authorized popups of managed pages",
+      "inputSchema": {
+        "additionalProperties": false,
+        "properties": {
+          "lease": {
+            "additionalProperties": false,
+            "properties": {
+              "generation": {
+                "minimum": 1,
+                "type": "integer"
+              },
+              "owner": {
+                "maxLength": 128,
+                "minLength": 1,
+                "type": "string"
+              },
+              "token": {
+                "maxLength": 32,
+                "minLength": 1,
+                "type": "string"
+              }
+            },
+            "required": [
+              "owner",
+              "token",
+              "generation"
+            ],
+            "type": "object"
+          },
+          "profileId": {
+            "maxLength": 32,
+            "minLength": 1,
+            "type": "string"
+          }
+        },
+        "required": [
+          "profileId",
+          "lease"
+        ],
+        "type": "object"
+      },
+      "outputSchema": null,
+      "annotations": null,
+      "meta": null
+    },
+    {
+      "name": "page_open",
+      "title": null,
+      "description": "Open and select a managed page inside the allowed origin scope",
+      "inputSchema": {
+        "additionalProperties": false,
+        "properties": {
+          "lease": {
+            "additionalProperties": false,
+            "properties": {
+              "generation": {
+                "minimum": 1,
+                "type": "integer"
+              },
+              "owner": {
+                "maxLength": 128,
+                "minLength": 1,
+                "type": "string"
+              },
+              "token": {
+                "maxLength": 32,
+                "minLength": 1,
+                "type": "string"
+              }
+            },
+            "required": [
+              "owner",
+              "token",
+              "generation"
+            ],
+            "type": "object"
+          },
+          "profileId": {
+            "maxLength": 32,
+            "minLength": 1,
+            "type": "string"
+          },
+          "url": {
+            "maxLength": 8192,
+            "minLength": 1,
+            "type": "string"
+          }
+        },
+        "required": [
+          "url",
+          "profileId",
+          "lease"
+        ],
+        "type": "object"
+      },
+      "outputSchema": null,
+      "annotations": null,
+      "meta": null
+    },
+    {
+      "name": "page_switch",
+      "title": null,
+      "description": "Select a managed page; old element references are invalidated",
+      "inputSchema": {
+        "additionalProperties": false,
+        "properties": {
+          "lease": {
+            "additionalProperties": false,
+            "properties": {
+              "generation": {
+                "minimum": 1,
+                "type": "integer"
+              },
+              "owner": {
+                "maxLength": 128,
+                "minLength": 1,
+                "type": "string"
+              },
+              "token": {
+                "maxLength": 32,
+                "minLength": 1,
+                "type": "string"
+              }
+            },
+            "required": [
+              "owner",
+              "token",
+              "generation"
+            ],
+            "type": "object"
+          },
+          "pageId": {
+            "maxLength": 32,
+            "minLength": 1,
+            "type": "string"
+          },
+          "profileId": {
+            "maxLength": 32,
+            "minLength": 1,
+            "type": "string"
+          }
+        },
+        "required": [
+          "pageId",
+          "profileId",
+          "lease"
+        ],
+        "type": "object"
+      },
+      "outputSchema": null,
+      "annotations": null,
+      "meta": null
+    },
+    {
+      "name": "page_close",
+      "title": null,
+      "description": "Close one managed page without stopping the owned browser",
+      "inputSchema": {
+        "additionalProperties": false,
+        "properties": {
+          "lease": {
+            "additionalProperties": false,
+            "properties": {
+              "generation": {
+                "minimum": 1,
+                "type": "integer"
+              },
+              "owner": {
+                "maxLength": 128,
+                "minLength": 1,
+                "type": "string"
+              },
+              "token": {
+                "maxLength": 32,
+                "minLength": 1,
+                "type": "string"
+              }
+            },
+            "required": [
+              "owner",
+              "token",
+              "generation"
+            ],
+            "type": "object"
+          },
+          "pageId": {
+            "maxLength": 32,
+            "minLength": 1,
+            "type": "string"
+          },
+          "profileId": {
+            "maxLength": 32,
+            "minLength": 1,
+            "type": "string"
+          }
+        },
+        "required": [
+          "pageId",
+          "profileId",
+          "lease"
+        ],
+        "type": "object"
+      },
+      "outputSchema": null,
+      "annotations": null,
+      "meta": null
+    },
+    {
+      "name": "browser_events",
+      "title": null,
+      "description": "Poll bounded metadata events with explicit cursor gaps; no live subscription",
+      "inputSchema": {
+        "additionalProperties": false,
+        "properties": {
+          "after": {
+            "minimum": 0,
+            "type": "integer"
+          },
+          "eventEpoch": {
+            "maxLength": 32,
+            "minLength": 1,
+            "type": "string"
+          },
+          "lease": {
+            "additionalProperties": false,
+            "properties": {
+              "generation": {
+                "minimum": 1,
+                "type": "integer"
+              },
+              "owner": {
+                "maxLength": 128,
+                "minLength": 1,
+                "type": "string"
+              },
+              "token": {
+                "maxLength": 32,
+                "minLength": 1,
+                "type": "string"
+              }
+            },
+            "required": [
+              "owner",
+              "token",
+              "generation"
+            ],
+            "type": "object"
+          },
+          "limit": {
+            "maximum": 100,
+            "minimum": 1,
+            "type": "integer"
+          },
+          "profileId": {
+            "maxLength": 32,
+            "minLength": 1,
+            "type": "string"
+          }
+        },
+        "required": [
+          "profileId",
+          "lease"
+        ],
+        "type": "object"
+      },
+      "outputSchema": null,
+      "annotations": null,
+      "meta": null
+    },
+    {
+      "name": "browser_reconnect",
+      "title": null,
+      "description": "Explicitly reconnect the same owned process without replaying page actions",
+      "inputSchema": {
+        "additionalProperties": false,
+        "properties": {
+          "lease": {
+            "additionalProperties": false,
+            "properties": {
+              "generation": {
+                "minimum": 1,
+                "type": "integer"
+              },
+              "owner": {
+                "maxLength": 128,
+                "minLength": 1,
+                "type": "string"
+              },
+              "token": {
+                "maxLength": 32,
+                "minLength": 1,
+                "type": "string"
+              }
+            },
+            "required": [
+              "owner",
+              "token",
+              "generation"
+            ],
+            "type": "object"
+          },
+          "profileId": {
+            "maxLength": 32,
+            "minLength": 1,
+            "type": "string"
+          }
+        },
+        "required": [
+          "profileId",
+          "lease"
+        ],
+        "type": "object"
+      },
+      "outputSchema": null,
+      "annotations": null,
+      "meta": null
+    }
+  ]
+}

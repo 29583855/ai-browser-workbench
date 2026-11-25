@@ -1,0 +1,99 @@
+{
+  "date": "2026-11-03",
+  "buildRun": "build/evidence/run-20261103-234526",
+  "msvc": "19.29.30159",
+  "toolset": "v142 14.29.30133",
+  "sdk": "10.0.19041.0",
+  "architecture": "x64",
+  "ownLanguageStandard": "C++14",
+  "sqliteLanguage": "C",
+  "cleanMachineVerified": false,
+  "binaries": [
+    {
+      "path": "build/vs2019-x64/Debug/workbench.exe",
+      "sha256": "aca5a429b13a7a64723765606308fdcf420cd5f33cb210a29529188a7dfe9a75",
+      "bytes": 3030528,
+      "peInspection": "Debug-workbench.exe-pe.txt"
+    },
+    {
+      "path": "build/vs2019-x64/Debug/workbench-cli.exe",
+      "sha256": "4a46c525d4533be16790a5dfeb307f668d5dea240e2b72d0c7a696e7ecc78557",
+      "bytes": 2963968,
+      "peInspection": "Debug-workbench-cli.exe-pe.txt"
+    },
+    {
+      "path": "build/vs2019-x64/Debug/workbench-mcp.exe",
+      "sha256": "fbdfda9226664100eeed034614a5136fa336f0b930b2a6e6211c5bf322a35342",
+      "bytes": 2985472,
+      "peInspection": "Debug-workbench-mcp.exe-pe.txt"
+    },
+    {
+      "path": "build/vs2019-x64/Debug/awb-core-tests.exe",
+      "sha256": "6dc26fa14eb4573c554079b9d265c901925c02f2011dd6b1d8dd7e27aa682cd4",
+      "bytes": 3042816,
+      "peInspection": "Debug-awb-core-tests.exe-pe.txt"
+    },
+    {
+      "path": "build/vs2019-x64/Debug/awb-storage-tests.exe",
+      "sha256": "909a2e42797a864b647688e36b5c089a147cb0937aad41d0b5c448a5d660dbb5",
+      "bytes": 2918400,
+      "peInspection": "Debug-awb-storage-tests.exe-pe.txt"
+    },
+    {
+      "path": "build/vs2019-x64/Release/workbench.exe",
+      "sha256": "00f03e1c1b369caa412611d0a1aa99d6e079341a0943903145a1ca61452a506e",
+      "bytes": 1436672,
+      "peInspection": "Release-workbench.exe-pe.txt"
+    },
+    {
+      "path": "build/vs2019-x64/Release/workbench-cli.exe",
+      "sha256": "0424a5da9554a4e23d3c666baf8051fc300edfba5e970f6f7f5cb4512be76e99",
+      "bytes": 1406976,
+      "peInspection": "Release-workbench-cli.exe-pe.txt"
+    },
+    {
+      "path": "build/vs2019-x64/Release/workbench-mcp.exe",
+      "sha256": "0192cc1c8eaac6552bbe4678d666bc49803fe39365bc0f74b8e979d30cef2419",
+      "bytes": 1416704,
+      "peInspection": "Release-workbench-mcp.exe-pe.txt"
+    },
+    {
+      "path": "build/vs2019-x64/Release/awb-core-tests.exe",
+      "sha256": "337db0ab0ed43f279e075ad1769d1a46c30c2c5f47c4263af97c569fd515191e",
+      "bytes": 1441280,
+      "peInspection": "Release-awb-core-tests.exe-pe.txt"
+    },
+    {
+      "path": "build/vs2019-x64/Release/awb-storage-tests.exe",
+      "sha256": "7a324faf36becc19eee72d3ac7bbe941e7256bff088f45fd7a869d202dd95000",
+      "bytes": 1288192,
+      "peInspection": "Release-awb-storage-tests.exe-pe.txt"
+    }
+  ],
+  "sqliteBuild": {
+    "awb_sqlite": {
+      "Debug": {
+        "runtimeLibrary": "MultiThreadedDebugDLL",
+        "definitions": "WIN32;_WINDOWS;SQLITE_THREADSAFE=1;SQLITE_OMIT_LOAD_EXTENSION;SQLITE_DQS=0;SQLITE_DEFAULT_MEMSTATUS=0;CMAKE_INTDIR=\"Debug\";%(PreprocessorDefinitions)",
+        "options": "%(AdditionalOptions) /utf-8"
+      },
+      "Release": {
+        "runtimeLibrary": "MultiThreadedDLL",
+        "definitions": "WIN32;_WINDOWS;NDEBUG;SQLITE_THREADSAFE=1;SQLITE_OMIT_LOAD_EXTENSION;SQLITE_DQS=0;SQLITE_DEFAULT_MEMSTATUS=0;CMAKE_INTDIR=\"Release\";%(PreprocessorDefinitions)",
+        "options": "%(AdditionalOptions) /utf-8"
+      }
+    },
+    "awb_core": {
+      "Debug": {
+        "runtimeLibrary": "MultiThreadedDebugDLL",
+        "definitions": "WIN32;_WINDOWS;UNICODE;_UNICODE;WIN32_LEAN_AND_MEAN;NOMINMAX;CMAKE_INTDIR=\"Debug\";%(PreprocessorDefinitions)",
+        "options": "%(AdditionalOptions) /Zc:__cplusplus /utf-8"
+      },
+      "Release": {
+        "runtimeLibrary": "MultiThreadedDLL",
+        "definitions": "WIN32;_WINDOWS;NDEBUG;UNICODE;_UNICODE;WIN32_LEAN_AND_MEAN;NOMINMAX;CMAKE_INTDIR=\"Release\";%(PreprocessorDefinitions)",
+        "options": "%(AdditionalOptions) /Zc:__cplusplus /utf-8"
+      }
+    }
+  }
+}

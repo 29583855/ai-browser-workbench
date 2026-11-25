@@ -1,0 +1,222 @@
+{
+  "date": "2026-11-04T14:14:51.265140+08:00",
+  "version": "0.1.5-poc",
+  "result": "passed",
+  "scope": "Local bounded workflow implementation; full product and release gates remain open",
+  "nativeEvidence": "build/evidence/native-20261104-141826",
+  "cmakeEvidence": "build/evidence/run-20261104-141037",
+  "tools": 39,
+  "newCommands": [
+    "workflow_validate",
+    "workflow_publish",
+    "workflow_list",
+    "workflow_get",
+    "workflow_run",
+    "workflow_runs",
+    "workflow_status",
+    "workflow_control"
+  ],
+  "completedWholePlanTasksThisIncrement": [
+    "T033",
+    "T034"
+  ],
+  "partialTasks": [
+    "T035",
+    "T040",
+    "T043",
+    "T089"
+  ],
+  "configurations": {
+    "Debug": {
+      "browser": {
+        "result": "passed",
+        "commands": 124
+      },
+      "proxy": {
+        "result": "passed",
+        "commands": 8
+      },
+      "lifecycle": {
+        "result": "passed",
+        "checks": 6
+      },
+      "recovery": {
+        "result": "passed",
+        "checks": 4
+      },
+      "socks": {
+        "result": "passed",
+        "commands": 22
+      },
+      "runtime": {
+        "result": "passed"
+      },
+      "api": {
+        "result": "passed",
+        "requests": 79,
+        "rawRejections": 6
+      },
+      "pages": {
+        "result": "passed",
+        "checks": 6,
+        "commands": 219
+      },
+      "inspector": {
+        "result": "passed",
+        "checks": 6,
+        "commands": 135
+      },
+      "workflow": {
+        "result": "passed",
+        "checks": 13,
+        "flows": 20,
+        "negatives": 34,
+        "commands": 1
+      },
+      "protocol": {
+        "result": "passed",
+        "checks": 24
+      },
+      "mcp": {
+        "result": "passed",
+        "steps": 44
+      },
+      "desktop": {
+        "result": "passed",
+        "checks": 8,
+        "buttonSteps": 104
+      }
+    },
+    "Release": {
+      "browser": {
+        "result": "passed",
+        "commands": 124
+      },
+      "proxy": {
+        "result": "passed",
+        "commands": 8
+      },
+      "lifecycle": {
+        "result": "passed",
+        "checks": 6
+      },
+      "recovery": {
+        "result": "passed",
+        "checks": 4
+      },
+      "socks": {
+        "result": "passed",
+        "commands": 22
+      },
+      "runtime": {
+        "result": "passed"
+      },
+      "api": {
+        "result": "passed",
+        "requests": 82,
+        "rawRejections": 6
+      },
+      "pages": {
+        "result": "passed",
+        "checks": 6,
+        "commands": 220
+      },
+      "inspector": {
+        "result": "passed",
+        "checks": 6,
+        "commands": 135
+      },
+      "workflow": {
+        "result": "passed",
+        "checks": 13,
+        "flows": 20,
+        "negatives": 34,
+        "commands": 1
+      },
+      "protocol": {
+        "result": "passed",
+        "checks": 24
+      },
+      "mcp": {
+        "result": "passed",
+        "steps": 44
+      },
+      "desktop": {
+        "result": "passed",
+        "checks": 8,
+        "buttonSteps": 104
+      }
+    }
+  },
+  "binaries": {
+    "Debug": {
+      "awb-core-tests.exe": "01907d015af606f8f34053a4176f2eb5bd12e9c550ea7ed019f03ccf8db2d54e",
+      "awb-storage-tests.exe": "88ee41d2b5e5a42be67327dc38c267504893f20b361c589ef980c05998e37171",
+      "workbench-cli.exe": "17b23b9abe745eea135537bec4afba7b4c39fb34198941bff5840a5254042a5c",
+      "workbench-mcp.exe": "2207a9e96c72169d8d5e3a5c76b636791b4fb342d0c0e4a9c2cffcbdb3b63f10",
+      "workbench.exe": "d57db4cf61fa847396b91aa588d35e58df04db6116b241c6e510ba1204ccda6a"
+    },
+    "Release": {
+      "awb-core-tests.exe": "abff80a0682f87ecc6e7077dfeb1fc690388409de2cd69528b9e989ff9de3a18",
+      "awb-storage-tests.exe": "6dce32de891ad65787877b1e0180cf8ee3b5881ee9d11d37e2038809801ff1a7",
+      "workbench-cli.exe": "3357c26f970b5a085b5d056c47574730066c5d5f20d328c286a173d97676b611",
+      "workbench-mcp.exe": "d217097587640938767f25e0cd58998ca271eeee16dc431656d600846b5ab4cc",
+      "workbench.exe": "73c9ab7b68fa0c3fa15cb8b1aea812fae0b7bf5b71e1154664acbd8dfcd18c74"
+    }
+  },
+  "secondCleanMachineTested": false,
+  "externalServicesProvided": false,
+  "commercialBackendImplemented": false,
+  "releaseReady": false,
+  "baselineFullRegressionRetained": "pre-r1/summary.json",
+  "finalPatch": "r1: identify exact 74-character interrupted atomic-write temporary record",
+  "candidatePackageTransportFailure": {
+    "error": "CDP_TRANSPORT_FAILED",
+    "systemError": 12017,
+    "during": "read-only verification after a successful run",
+    "cause": "not established; retained for T013/T018 stability follow-up",
+    "automaticRetry": false
+  },
+  "finalPatchRegression": {
+    "nativeBothConfigurations": true,
+    "cmakeBothConfigurations": true,
+    "ctestPerConfiguration": 3,
+    "workflowPositivePerConfiguration": 20,
+    "workflowNegativePerConfiguration": 34,
+    "workflowChecksPerConfiguration": 13,
+    "sourceAudit": "passed",
+    "finalArchiveAcceptance": "passed"
+  },
+  "finalArchive": {
+    "date": "2026-11-04T14:27:38.407956+08:00",
+    "result": "passed",
+    "version": "0.1.5-poc",
+    "archive": {
+      "file": "AI-Browser-Workbench-0.1.5-win64-workflow-r1.zip",
+      "sha256": "5e052460bc0636f507ffae7010826fbbf12eb928f495a1b16799f011b5734fe0",
+      "bytes": 225865047
+    },
+    "manifestFiles": 1013,
+    "deploymentChecks": 9,
+    "packagedSuites": [
+      "browser",
+      "proxy",
+      "lifecycle",
+      "recovery",
+      "socks",
+      "runtime",
+      "api",
+      "pages",
+      "inspector",
+      "workflow",
+      "protocol",
+      "mcp",
+      "desktop"
+    ],
+    "allOriginalFilesReverifiedAfterTests": true,
+    "originalDataEmpty": true,
+    "originalTestResultsAbsent": true,
+    "secondCleanMachineTested": false,
+    "commercialRelease": false
+  }
+}

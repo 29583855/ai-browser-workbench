@@ -1,0 +1,901 @@
+{
+  "date": "2026-11-04T15:40:24.756728+08:00",
+  "result": "failed",
+  "steps": [
+    {
+      "buttonId": 101,
+      "outcome": "passed"
+    },
+    {
+      "buttonId": 101,
+      "outcome": "passed"
+    },
+    {
+      "buttonId": 101,
+      "outcome": "passed"
+    },
+    {
+      "buttonId": 101,
+      "outcome": "passed"
+    },
+    {
+      "buttonId": 101,
+      "outcome": "passed"
+    },
+    {
+      "buttonId": 101,
+      "outcome": "passed"
+    },
+    {
+      "buttonId": 101,
+      "outcome": "passed"
+    },
+    {
+      "buttonId": 101,
+      "outcome": "passed"
+    },
+    {
+      "buttonId": 102,
+      "outcome": "passed"
+    },
+    {
+      "buttonId": 134,
+      "outcome": "passed"
+    },
+    {
+      "buttonId": 104,
+      "outcome": "passed"
+    },
+    {
+      "buttonId": 108,
+      "outcome": "passed"
+    },
+    {
+      "buttonId": 108,
+      "outcome": "passed"
+    },
+    {
+      "buttonId": 109,
+      "outcome": "passed"
+    },
+    {
+      "buttonId": 110,
+      "outcome": "passed"
+    },
+    {
+      "buttonId": 109,
+      "outcome": "passed"
+    },
+    {
+      "buttonId": 110,
+      "outcome": "passed"
+    },
+    {
+      "buttonId": 110,
+      "outcome": "passed"
+    },
+    {
+      "buttonId": 110,
+      "outcome": "passed"
+    },
+    {
+      "buttonId": 110,
+      "outcome": "passed"
+    },
+    {
+      "buttonId": 110,
+      "outcome": "passed"
+    },
+    {
+      "buttonId": 110,
+      "outcome": "passed"
+    },
+    {
+      "buttonId": 110,
+      "outcome": "passed"
+    },
+    {
+      "buttonId": 110,
+      "outcome": "passed"
+    },
+    {
+      "buttonId": 110,
+      "outcome": "passed"
+    },
+    {
+      "buttonId": 110,
+      "outcome": "passed"
+    },
+    {
+      "buttonId": 110,
+      "outcome": "passed"
+    },
+    {
+      "buttonId": 110,
+      "outcome": "passed"
+    },
+    {
+      "buttonId": 110,
+      "outcome": "passed"
+    },
+    {
+      "buttonId": 110,
+      "outcome": "passed"
+    },
+    {
+      "buttonId": 110,
+      "outcome": "passed"
+    },
+    {
+      "buttonId": 110,
+      "outcome": "passed"
+    },
+    {
+      "buttonId": 110,
+      "outcome": "passed"
+    },
+    {
+      "buttonId": 110,
+      "outcome": "passed"
+    },
+    {
+      "buttonId": 110,
+      "outcome": "passed"
+    },
+    {
+      "buttonId": 110,
+      "outcome": "passed"
+    },
+    {
+      "buttonId": 110,
+      "outcome": "passed"
+    },
+    {
+      "buttonId": 110,
+      "outcome": "passed"
+    },
+    {
+      "buttonId": 110,
+      "outcome": "passed"
+    },
+    {
+      "buttonId": 110,
+      "outcome": "passed"
+    },
+    {
+      "buttonId": 110,
+      "outcome": "passed"
+    },
+    {
+      "buttonId": 110,
+      "outcome": "passed"
+    },
+    {
+      "buttonId": 110,
+      "outcome": "passed"
+    },
+    {
+      "buttonId": 110,
+      "outcome": "passed"
+    },
+    {
+      "buttonId": 110,
+      "outcome": "passed"
+    },
+    {
+      "buttonId": 110,
+      "outcome": "passed"
+    },
+    {
+      "buttonId": 110,
+      "outcome": "passed"
+    },
+    {
+      "buttonId": 110,
+      "outcome": "passed"
+    },
+    {
+      "buttonId": 110,
+      "outcome": "passed"
+    },
+    {
+      "buttonId": 110,
+      "outcome": "passed"
+    },
+    {
+      "buttonId": 110,
+      "outcome": "passed"
+    },
+    {
+      "buttonId": 110,
+      "outcome": "passed"
+    },
+    {
+      "buttonId": 110,
+      "outcome": "passed"
+    },
+    {
+      "buttonId": 110,
+      "outcome": "passed"
+    },
+    {
+      "buttonId": 110,
+      "outcome": "passed"
+    },
+    {
+      "buttonId": 110,
+      "outcome": "passed"
+    },
+    {
+      "buttonId": 110,
+      "outcome": "passed"
+    },
+    {
+      "buttonId": 110,
+      "outcome": "passed"
+    },
+    {
+      "buttonId": 110,
+      "outcome": "passed"
+    },
+    {
+      "buttonId": 110,
+      "outcome": "passed"
+    },
+    {
+      "buttonId": 110,
+      "outcome": "passed"
+    },
+    {
+      "buttonId": 110,
+      "outcome": "passed"
+    },
+    {
+      "buttonId": 110,
+      "outcome": "passed"
+    },
+    {
+      "buttonId": 110,
+      "outcome": "passed"
+    },
+    {
+      "buttonId": 110,
+      "outcome": "passed"
+    },
+    {
+      "buttonId": 110,
+      "outcome": "passed"
+    },
+    {
+      "buttonId": 110,
+      "outcome": "passed"
+    },
+    {
+      "buttonId": 110,
+      "outcome": "passed"
+    },
+    {
+      "buttonId": 110,
+      "outcome": "passed"
+    },
+    {
+      "buttonId": 110,
+      "outcome": "passed"
+    },
+    {
+      "buttonId": 110,
+      "outcome": "passed"
+    },
+    {
+      "buttonId": 110,
+      "outcome": "passed"
+    },
+    {
+      "buttonId": 110,
+      "outcome": "passed"
+    },
+    {
+      "buttonId": 110,
+      "outcome": "passed"
+    },
+    {
+      "buttonId": 110,
+      "outcome": "passed"
+    },
+    {
+      "buttonId": 110,
+      "outcome": "passed"
+    },
+    {
+      "buttonId": 110,
+      "outcome": "passed"
+    },
+    {
+      "buttonId": 110,
+      "outcome": "passed"
+    },
+    {
+      "buttonId": 110,
+      "outcome": "passed"
+    },
+    {
+      "buttonId": 110,
+      "outcome": "passed"
+    },
+    {
+      "buttonId": 110,
+      "outcome": "passed"
+    },
+    {
+      "buttonId": 110,
+      "outcome": "passed"
+    },
+    {
+      "buttonId": 110,
+      "outcome": "passed"
+    },
+    {
+      "buttonId": 110,
+      "outcome": "passed"
+    },
+    {
+      "buttonId": 110,
+      "outcome": "passed"
+    },
+    {
+      "buttonId": 110,
+      "outcome": "passed"
+    },
+    {
+      "buttonId": 110,
+      "outcome": "passed"
+    },
+    {
+      "buttonId": 110,
+      "outcome": "passed"
+    },
+    {
+      "buttonId": 110,
+      "outcome": "passed"
+    },
+    {
+      "buttonId": 110,
+      "outcome": "passed"
+    },
+    {
+      "buttonId": 110,
+      "outcome": "passed"
+    },
+    {
+      "buttonId": 110,
+      "outcome": "passed"
+    },
+    {
+      "buttonId": 110,
+      "outcome": "passed"
+    },
+    {
+      "buttonId": 110,
+      "outcome": "passed"
+    },
+    {
+      "buttonId": 110,
+      "outcome": "passed"
+    },
+    {
+      "buttonId": 110,
+      "outcome": "passed"
+    },
+    {
+      "buttonId": 110,
+      "outcome": "passed"
+    },
+    {
+      "buttonId": 110,
+      "outcome": "passed"
+    },
+    {
+      "buttonId": 110,
+      "outcome": "passed"
+    },
+    {
+      "buttonId": 110,
+      "outcome": "passed"
+    },
+    {
+      "buttonId": 110,
+      "outcome": "passed"
+    },
+    {
+      "buttonId": 110,
+      "outcome": "passed"
+    },
+    {
+      "buttonId": 110,
+      "outcome": "passed"
+    },
+    {
+      "buttonId": 110,
+      "outcome": "passed"
+    },
+    {
+      "buttonId": 110,
+      "outcome": "passed"
+    },
+    {
+      "buttonId": 110,
+      "outcome": "passed"
+    },
+    {
+      "buttonId": 110,
+      "outcome": "passed"
+    },
+    {
+      "buttonId": 110,
+      "outcome": "passed"
+    },
+    {
+      "buttonId": 110,
+      "outcome": "passed"
+    },
+    {
+      "buttonId": 110,
+      "outcome": "passed"
+    },
+    {
+      "buttonId": 110,
+      "outcome": "passed"
+    },
+    {
+      "buttonId": 110,
+      "outcome": "passed"
+    },
+    {
+      "buttonId": 110,
+      "outcome": "passed"
+    },
+    {
+      "buttonId": 110,
+      "outcome": "passed"
+    },
+    {
+      "buttonId": 135,
+      "outcome": "passed"
+    }
+  ],
+  "checks": [
+    "eight-new-profiles-select-the-created-profile"
+  ],
+  "binarySha256": "843b3e461c811e53d6f91b2a93aef815dd8ce0a7bf0656928b9a72ec5458a697",
+  "error": "Expected desktop observation: desktop-review-user; observed: anonymous",
+  "failureObservation": {
+    "#result": "network-error",
+    "#identity": "anonymous",
+    "#storage": "{\"local\":null,\"indexed\":null,\"cache\":[]}"
+  },
+  "failureDiagnostics": {
+    "active": true,
+    "bufferLimit": 512,
+    "currentSequence": 22,
+    "cursor": {
+      "after": 22,
+      "epoch": "3bbf1e3f2091ecb7e73ea4c705f0cc7e"
+    },
+    "droppedEvents": 0,
+    "droppedPendingRequests": 0,
+    "events": [
+      {
+        "context": {
+          "actionId": "0f2a5abf3a5a8f4d224152257172b2e0",
+          "command": "browser_navigate"
+        },
+        "correlation": "observed-during-context",
+        "frameId": "8E4B616FCCDCD3F9EA738CACE5F4F26C",
+        "kind": "request-start",
+        "method": "GET",
+        "observedTickMs": 1857149828,
+        "origin": "http://127.0.0.1:54600",
+        "pageId": "e05f94490509eab9da75a766124c483b",
+        "requestId": "857ecedfd73524376c7c7b3e98673491",
+        "resourceType": "Document",
+        "route": "[omitted]",
+        "sequence": 1
+      },
+      {
+        "context": {
+          "actionId": "0f2a5abf3a5a8f4d224152257172b2e0",
+          "command": "browser_navigate"
+        },
+        "correlation": "request-start-context-not-proven-cause",
+        "frameId": "8E4B616FCCDCD3F9EA738CACE5F4F26C",
+        "fromDiskCache": false,
+        "fromServiceWorker": false,
+        "httpError": false,
+        "kind": "response",
+        "method": "GET",
+        "observedTickMs": 1857149828,
+        "origin": "http://127.0.0.1:54600",
+        "pageId": "e05f94490509eab9da75a766124c483b",
+        "requestId": "857ecedfd73524376c7c7b3e98673491",
+        "resourceType": "Document",
+        "route": "[omitted]",
+        "sequence": 2,
+        "status": 200
+      },
+      {
+        "context": {
+          "actionId": "0f2a5abf3a5a8f4d224152257172b2e0",
+          "command": "browser_navigate"
+        },
+        "correlation": "observed-during-context",
+        "frameId": "8E4B616FCCDCD3F9EA738CACE5F4F26C",
+        "kind": "request-start",
+        "method": "GET",
+        "observedTickMs": 1857149843,
+        "origin": "http://127.0.0.1:54600",
+        "pageId": "e05f94490509eab9da75a766124c483b",
+        "requestId": "597f0280b24a3745ba3ce5e27dda8889",
+        "resourceType": "Script",
+        "route": "[omitted]",
+        "sequence": 3
+      },
+      {
+        "context": {
+          "actionId": "0f2a5abf3a5a8f4d224152257172b2e0",
+          "command": "browser_navigate"
+        },
+        "correlation": "request-start-context-not-proven-cause",
+        "frameId": "8E4B616FCCDCD3F9EA738CACE5F4F26C",
+        "kind": "request-finished",
+        "method": "GET",
+        "observedTickMs": 1857149843,
+        "origin": "http://127.0.0.1:54600",
+        "pageId": "e05f94490509eab9da75a766124c483b",
+        "requestId": "857ecedfd73524376c7c7b3e98673491",
+        "resourceType": "Document",
+        "route": "[omitted]",
+        "sequence": 4
+      },
+      {
+        "context": {
+          "actionId": "0f2a5abf3a5a8f4d224152257172b2e0",
+          "command": "browser_navigate"
+        },
+        "correlation": "request-start-context-not-proven-cause",
+        "frameId": "8E4B616FCCDCD3F9EA738CACE5F4F26C",
+        "fromDiskCache": false,
+        "fromServiceWorker": false,
+        "httpError": false,
+        "kind": "response",
+        "method": "GET",
+        "observedTickMs": 1857149859,
+        "origin": "http://127.0.0.1:54600",
+        "pageId": "e05f94490509eab9da75a766124c483b",
+        "requestId": "597f0280b24a3745ba3ce5e27dda8889",
+        "resourceType": "Script",
+        "route": "[omitted]",
+        "sequence": 5,
+        "status": 200
+      },
+      {
+        "context": {
+          "actionId": "0f2a5abf3a5a8f4d224152257172b2e0",
+          "command": "browser_navigate"
+        },
+        "correlation": "request-start-context-not-proven-cause",
+        "frameId": "8E4B616FCCDCD3F9EA738CACE5F4F26C",
+        "kind": "request-finished",
+        "method": "GET",
+        "observedTickMs": 1857149859,
+        "origin": "http://127.0.0.1:54600",
+        "pageId": "e05f94490509eab9da75a766124c483b",
+        "requestId": "597f0280b24a3745ba3ce5e27dda8889",
+        "resourceType": "Script",
+        "route": "[omitted]",
+        "sequence": 6
+      },
+      {
+        "context": {
+          "actionId": "0f2a5abf3a5a8f4d224152257172b2e0",
+          "command": "browser_navigate"
+        },
+        "correlation": "observed-during-context",
+        "frameId": "8E4B616FCCDCD3F9EA738CACE5F4F26C",
+        "kind": "request-start",
+        "method": "GET",
+        "observedTickMs": 1857149859,
+        "origin": "http://127.0.0.1:54600",
+        "pageId": "e05f94490509eab9da75a766124c483b",
+        "requestId": "f267f28f01a5fa9d2dd64762598ea4ea",
+        "resourceType": "Fetch",
+        "route": "[omitted]",
+        "sequence": 7
+      },
+      {
+        "context": {
+          "actionId": "0f2a5abf3a5a8f4d224152257172b2e0",
+          "command": "browser_navigate"
+        },
+        "correlation": "request-start-context-not-proven-cause",
+        "frameId": "8E4B616FCCDCD3F9EA738CACE5F4F26C",
+        "fromDiskCache": false,
+        "fromServiceWorker": false,
+        "httpError": false,
+        "kind": "response",
+        "method": "GET",
+        "observedTickMs": 1857149859,
+        "origin": "http://127.0.0.1:54600",
+        "pageId": "e05f94490509eab9da75a766124c483b",
+        "requestId": "f267f28f01a5fa9d2dd64762598ea4ea",
+        "resourceType": "Fetch",
+        "route": "[omitted]",
+        "sequence": 8,
+        "status": 200
+      },
+      {
+        "context": {
+          "actionId": "0f2a5abf3a5a8f4d224152257172b2e0",
+          "command": "browser_navigate"
+        },
+        "correlation": "request-start-context-not-proven-cause",
+        "frameId": "8E4B616FCCDCD3F9EA738CACE5F4F26C",
+        "kind": "request-finished",
+        "method": "GET",
+        "observedTickMs": 1857149890,
+        "origin": "http://127.0.0.1:54600",
+        "pageId": "e05f94490509eab9da75a766124c483b",
+        "requestId": "f267f28f01a5fa9d2dd64762598ea4ea",
+        "resourceType": "Fetch",
+        "route": "[omitted]",
+        "sequence": 9
+      },
+      {
+        "context": {
+          "actionId": "0f2a5abf3a5a8f4d224152257172b2e0",
+          "command": "browser_navigate"
+        },
+        "correlation": "observed-during-context",
+        "frameId": "8E4B616FCCDCD3F9EA738CACE5F4F26C",
+        "kind": "request-start",
+        "method": "GET",
+        "observedTickMs": 1857149890,
+        "origin": "http://127.0.0.1:54600",
+        "pageId": "e05f94490509eab9da75a766124c483b",
+        "requestId": "2b8131705c208c0b15bc1e5a6ece260c",
+        "resourceType": "Other",
+        "route": "[omitted]",
+        "sequence": 10
+      },
+      {
+        "context": {
+          "actionId": "0f2a5abf3a5a8f4d224152257172b2e0",
+          "command": "browser_navigate"
+        },
+        "correlation": "request-start-context-not-proven-cause",
+        "frameId": "8E4B616FCCDCD3F9EA738CACE5F4F26C",
+        "fromDiskCache": false,
+        "fromServiceWorker": false,
+        "httpError": true,
+        "kind": "response",
+        "method": "GET",
+        "observedTickMs": 1857149890,
+        "origin": "http://127.0.0.1:54600",
+        "pageId": "e05f94490509eab9da75a766124c483b",
+        "requestId": "2b8131705c208c0b15bc1e5a6ece260c",
+        "resourceType": "Other",
+        "route": "[omitted]",
+        "sequence": 11,
+        "status": 404
+      },
+      {
+        "context": {
+          "actionId": "0f2a5abf3a5a8f4d224152257172b2e0",
+          "command": "browser_navigate"
+        },
+        "correlation": "request-start-context-not-proven-cause",
+        "frameId": "8E4B616FCCDCD3F9EA738CACE5F4F26C",
+        "kind": "request-finished",
+        "method": "GET",
+        "observedTickMs": 1857149890,
+        "origin": "http://127.0.0.1:54600",
+        "pageId": "e05f94490509eab9da75a766124c483b",
+        "requestId": "2b8131705c208c0b15bc1e5a6ece260c",
+        "resourceType": "Other",
+        "route": "[omitted]",
+        "sequence": 12
+      },
+      {
+        "context": {
+          "actionId": "ae4f5ca1424040d678ff276741c3a950",
+          "command": "page_click"
+        },
+        "correlation": "observed-during-context",
+        "frameId": "8E4B616FCCDCD3F9EA738CACE5F4F26C",
+        "kind": "request-start",
+        "method": "POST",
+        "observedTickMs": 1857150062,
+        "origin": "http://127.0.0.1:54600",
+        "pageId": "e05f94490509eab9da75a766124c483b",
+        "requestId": "1dc061b852cc9b0dadb9ccc8abf6c882",
+        "resourceType": "Fetch",
+        "route": "[omitted]",
+        "sequence": 13
+      },
+      {
+        "context": {
+          "actionId": "ae4f5ca1424040d678ff276741c3a950",
+          "command": "page_click"
+        },
+        "correlation": "request-start-context-not-proven-cause",
+        "frameId": "8E4B616FCCDCD3F9EA738CACE5F4F26C",
+        "fromDiskCache": false,
+        "fromServiceWorker": false,
+        "httpError": false,
+        "kind": "response",
+        "method": "POST",
+        "observedTickMs": 1857150093,
+        "origin": "http://127.0.0.1:54600",
+        "pageId": "e05f94490509eab9da75a766124c483b",
+        "requestId": "1dc061b852cc9b0dadb9ccc8abf6c882",
+        "resourceType": "Fetch",
+        "route": "[omitted]",
+        "sequence": 14,
+        "status": 201
+      },
+      {
+        "context": {
+          "actionId": "ae4f5ca1424040d678ff276741c3a950",
+          "command": "page_click"
+        },
+        "correlation": "request-start-context-not-proven-cause",
+        "frameId": "8E4B616FCCDCD3F9EA738CACE5F4F26C",
+        "kind": "request-finished",
+        "method": "POST",
+        "observedTickMs": 1857150093,
+        "origin": "http://127.0.0.1:54600",
+        "pageId": "e05f94490509eab9da75a766124c483b",
+        "requestId": "1dc061b852cc9b0dadb9ccc8abf6c882",
+        "resourceType": "Fetch",
+        "route": "[omitted]",
+        "sequence": 15
+      },
+      {
+        "context": {},
+        "correlation": "observed-during-context",
+        "frameId": "8E4B616FCCDCD3F9EA738CACE5F4F26C",
+        "kind": "request-start",
+        "method": "GET",
+        "observedTickMs": 1857150093,
+        "origin": "http://127.0.0.1:54600",
+        "pageId": "e05f94490509eab9da75a766124c483b",
+        "requestId": "4a290b8168edfbed338844a7702e609f",
+        "resourceType": "Fetch",
+        "route": "[omitted]",
+        "sequence": 16
+      },
+      {
+        "context": {},
+        "correlation": "request-start-context-not-proven-cause",
+        "frameId": "8E4B616FCCDCD3F9EA738CACE5F4F26C",
+        "fromDiskCache": false,
+        "fromServiceWorker": false,
+        "httpError": false,
+        "kind": "response",
+        "method": "GET",
+        "observedTickMs": 1857150093,
+        "origin": "http://127.0.0.1:54600",
+        "pageId": "e05f94490509eab9da75a766124c483b",
+        "requestId": "4a290b8168edfbed338844a7702e609f",
+        "resourceType": "Fetch",
+        "route": "[omitted]",
+        "sequence": 17,
+        "status": 200
+      },
+      {
+        "context": {},
+        "correlation": "request-start-context-not-proven-cause",
+        "frameId": "8E4B616FCCDCD3F9EA738CACE5F4F26C",
+        "kind": "request-finished",
+        "method": "GET",
+        "observedTickMs": 1857150093,
+        "origin": "http://127.0.0.1:54600",
+        "pageId": "e05f94490509eab9da75a766124c483b",
+        "requestId": "4a290b8168edfbed338844a7702e609f",
+        "resourceType": "Fetch",
+        "route": "[omitted]",
+        "sequence": 18
+      },
+      {
+        "context": {
+          "actionId": "ef1d67b0e789ecaee89f3af80e95cb2f",
+          "command": "page_click"
+        },
+        "correlation": "observed-during-context",
+        "frameId": "8E4B616FCCDCD3F9EA738CACE5F4F26C",
+        "kind": "request-start",
+        "method": "POST",
+        "observedTickMs": 1857150156,
+        "origin": "http://127.0.0.1:54600",
+        "pageId": "e05f94490509eab9da75a766124c483b",
+        "requestId": "1621630d8842f92e02bc70f179f4ae59",
+        "resourceType": "Fetch",
+        "route": "[omitted]",
+        "sequence": 19
+      },
+      {
+        "context": {
+          "actionId": "ef1d67b0e789ecaee89f3af80e95cb2f",
+          "command": "page_click"
+        },
+        "correlation": "request-start-context-not-proven-cause",
+        "frameId": "8E4B616FCCDCD3F9EA738CACE5F4F26C",
+        "fromDiskCache": false,
+        "fromServiceWorker": false,
+        "httpError": false,
+        "kind": "response",
+        "method": "POST",
+        "observedTickMs": 1857150250,
+        "origin": "http://127.0.0.1:54600",
+        "pageId": "e05f94490509eab9da75a766124c483b",
+        "requestId": "1621630d8842f92e02bc70f179f4ae59",
+        "resourceType": "Fetch",
+        "route": "[omitted]",
+        "sequence": 20,
+        "status": 200
+      },
+      {
+        "context": {
+          "actionId": "ef1d67b0e789ecaee89f3af80e95cb2f",
+          "command": "page_click"
+        },
+        "correlation": "request-start-context-not-proven-cause",
+        "frameId": "8E4B616FCCDCD3F9EA738CACE5F4F26C",
+        "kind": "request-finished",
+        "method": "POST",
+        "observedTickMs": 1857150250,
+        "origin": "http://127.0.0.1:54600",
+        "pageId": "e05f94490509eab9da75a766124c483b",
+        "requestId": "1621630d8842f92e02bc70f179f4ae59",
+        "resourceType": "Fetch",
+        "route": "[omitted]",
+        "sequence": 21
+      },
+      {
+        "argumentCount": 1,
+        "argumentTypes": [
+          "object"
+        ],
+        "contentOmitted": true,
+        "context": {},
+        "correlation": "observed-during-context",
+        "kind": "console",
+        "level": "error",
+        "observedTickMs": 1857150250,
+        "pageId": "e05f94490509eab9da75a766124c483b",
+        "sequence": 22
+      }
+    ],
+    "gap": false,
+    "liveSubscription": false,
+    "more": false,
+    "oldestAvailable": 1,
+    "payloadCapture": false,
+    "pendingLimit": 128,
+    "pendingRequests": 0,
+    "scopeFilteredEvents": 2
+  },
+  "serverFacts": {
+    "registrationCount": 1,
+    "loginCount": 1
+  },
+  "identityObservations": [
+    {
+      "authenticated": false,
+      "tick": 1857149.859
+    },
+    {
+      "authenticated": false,
+      "tick": 1857150.078
+    }
+  ]
+}

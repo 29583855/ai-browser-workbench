@@ -1,0 +1,26 @@
+{
+  "date": "2026-11-05",
+  "result": "passed",
+  "checks": [
+    "unconfigured-fallback-scoped-auth-real-http-valid-draft-and-durable-admission-budget",
+    "eight-failures-no-retry-no-redirect-no-secret-export-and-timeout-reservation",
+    "browser-purpose-secret-denied-before-model-network",
+    "package-preview-cas-immutable-versions-diff-and-exact-export",
+    "nine-package-field-path-capability-secret-and-hash-rejections",
+    "exported-package-workflow-real-browser-replay",
+    "restart-preserves-budgets-and-package-hashes-without-prompts-or-keys"
+  ],
+  "executableSha256": "5eaa69b893f4c8c5d7c6abdb443647bb9646b19ec9ab1c4ac8f004c3de9b4528",
+  "calls": [
+    {
+      "sequence": 1,
+      "command": "model_status",
+      "outcome": "passed"
+    },
+    {
+      "sequence": 2,
+      "command": "site_package_export",
+      "outcome": "passed"
+    }
+  ]
+}

@@ -1,0 +1,270 @@
+{
+  "date": "2026-11-04T15:16:35.627690+08:00",
+  "result": "passed",
+  "checks": [
+    "typed-public-text-attributes-count-checkbox-and-unicode-bounds",
+    "required-and-optional-missing-fields-retain-valid-partial-data",
+    "ambiguous-invalid-selector-secret-controls-oversize-and-invalid-numbers",
+    "schema-type-enum-and-range-counterexamples",
+    "unsupported-schema-dialect-and-binding-fields-rejected",
+    "whole-batch-shape-budget-and-origins-validated-before-first-click",
+    "verified-actions-partial-success-stop-and-explicit-safe-continuation",
+    "postcondition-unconfirmed-forces-stop-without-repeat-or-rollback",
+    "page-mutates-fill-result-stops-following-write",
+    "actual-submit-lost-cdp-receipt-count-one-and-following-write-not-run",
+    "revoked-lease-blocks-both-tools"
+  ],
+  "binarySha256": "c00a5a1d4e8093b29d7e8c1c430ab0a4695f10cd3fcb55c3546db8f1b2fe0bdc",
+  "commands": [
+    {
+      "sequence": 1,
+      "command": "profile_create",
+      "outcome": "passed"
+    },
+    {
+      "sequence": 2,
+      "command": "browser_start",
+      "outcome": "passed"
+    },
+    {
+      "sequence": 3,
+      "command": "lease_acquire",
+      "outcome": "passed"
+    },
+    {
+      "sequence": 4,
+      "command": "browser_navigate",
+      "outcome": "passed"
+    },
+    {
+      "sequence": 5,
+      "command": "page_extract",
+      "outcome": "passed"
+    },
+    {
+      "sequence": 6,
+      "command": "page_extract",
+      "outcome": "passed"
+    },
+    {
+      "sequence": 7,
+      "command": "page_extract",
+      "outcome": "passed"
+    },
+    {
+      "sequence": 8,
+      "command": "page_extract",
+      "outcome": "passed"
+    },
+    {
+      "sequence": 9,
+      "command": "page_extract",
+      "outcome": "passed"
+    },
+    {
+      "sequence": 10,
+      "command": "page_extract",
+      "outcome": "passed"
+    },
+    {
+      "sequence": 11,
+      "command": "page_extract",
+      "outcome": "passed"
+    },
+    {
+      "sequence": 12,
+      "command": "page_extract",
+      "outcome": "passed"
+    },
+    {
+      "sequence": 13,
+      "command": "page_extract",
+      "outcome": "passed"
+    },
+    {
+      "sequence": 14,
+      "command": "page_extract",
+      "outcome": "passed"
+    },
+    {
+      "sequence": 15,
+      "command": "page_extract",
+      "outcome": "passed"
+    },
+    {
+      "sequence": 16,
+      "command": "page_extract",
+      "outcome": "passed"
+    },
+    {
+      "sequence": 17,
+      "command": "page_extract",
+      "outcome": "passed"
+    },
+    {
+      "sequence": 18,
+      "command": "page_extract",
+      "outcome": "INVALID_ARGUMENTS"
+    },
+    {
+      "sequence": 19,
+      "command": "page_extract",
+      "outcome": "INVALID_ARGUMENTS"
+    },
+    {
+      "sequence": 20,
+      "command": "page_extract",
+      "outcome": "INVALID_ARGUMENTS"
+    },
+    {
+      "sequence": 21,
+      "command": "page_extract",
+      "outcome": "INVALID_ARGUMENTS"
+    },
+    {
+      "sequence": 22,
+      "command": "page_extract",
+      "outcome": "INVALID_ARGUMENTS"
+    },
+    {
+      "sequence": 23,
+      "command": "page_extract",
+      "outcome": "INVALID_ARGUMENTS"
+    },
+    {
+      "sequence": 24,
+      "command": "page_extract",
+      "outcome": "INVALID_ARGUMENTS"
+    },
+    {
+      "sequence": 25,
+      "command": "page_extract",
+      "outcome": "INVALID_ARGUMENTS"
+    },
+    {
+      "sequence": 26,
+      "command": "page_batch",
+      "outcome": "INVALID_ARGUMENTS"
+    },
+    {
+      "sequence": 27,
+      "command": "page_batch",
+      "outcome": "INVALID_ARGUMENTS"
+    },
+    {
+      "sequence": 28,
+      "command": "page_batch",
+      "outcome": "INVALID_ARGUMENTS"
+    },
+    {
+      "sequence": 29,
+      "command": "page_batch",
+      "outcome": "ORIGIN_DENIED"
+    },
+    {
+      "sequence": 30,
+      "command": "page_batch",
+      "outcome": "INVALID_ARGUMENTS"
+    },
+    {
+      "sequence": 31,
+      "command": "page_wait_text",
+      "outcome": "passed"
+    },
+    {
+      "sequence": 32,
+      "command": "browser_diagnostics_start",
+      "outcome": "passed"
+    },
+    {
+      "sequence": 33,
+      "command": "page_batch",
+      "outcome": "passed"
+    },
+    {
+      "sequence": 34,
+      "command": "browser_diagnostics_read",
+      "outcome": "passed"
+    },
+    {
+      "sequence": 35,
+      "command": "browser_diagnostics_stop",
+      "outcome": "passed"
+    },
+    {
+      "sequence": 36,
+      "command": "page_batch",
+      "outcome": "passed"
+    },
+    {
+      "sequence": 37,
+      "command": "page_batch",
+      "outcome": "passed"
+    },
+    {
+      "sequence": 38,
+      "command": "page_batch",
+      "outcome": "passed"
+    },
+    {
+      "sequence": 39,
+      "command": "page_wait_text",
+      "outcome": "passed"
+    },
+    {
+      "sequence": 40,
+      "command": "browser_navigate",
+      "outcome": "passed"
+    },
+    {
+      "sequence": 41,
+      "command": "page_batch",
+      "outcome": "passed"
+    },
+    {
+      "sequence": 42,
+      "command": "page_batch",
+      "outcome": "passed"
+    },
+    {
+      "sequence": 43,
+      "command": "browser_stop",
+      "outcome": "passed"
+    },
+    {
+      "sequence": 44,
+      "command": "browser_start",
+      "outcome": "passed"
+    },
+    {
+      "sequence": 45,
+      "command": "lease_acquire",
+      "outcome": "passed"
+    },
+    {
+      "sequence": 46,
+      "command": "browser_navigate",
+      "outcome": "passed"
+    },
+    {
+      "sequence": 47,
+      "command": "lease_revoke",
+      "outcome": "passed"
+    },
+    {
+      "sequence": 48,
+      "command": "page_extract",
+      "outcome": "LEASE_REVOKED"
+    },
+    {
+      "sequence": 49,
+      "command": "page_batch",
+      "outcome": "LEASE_REVOKED"
+    },
+    {
+      "sequence": 50,
+      "command": "browser_stop",
+      "outcome": "passed"
+    }
+  ]
+}

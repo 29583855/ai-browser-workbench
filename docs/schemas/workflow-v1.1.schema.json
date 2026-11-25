@@ -1,0 +1,1345 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "urn:awb:workflow:1.1",
+  "title": "AI Browser Workbench bounded workflow DSL 1.1",
+  "description": "2026-11-05. Structural editor schema only. Shared C++ validator additionally checks types, enum values, graph budgets, recursion, error routes, secret scope and runtime limits.",
+  "type": "object",
+  "properties": {
+    "schemaVersion": {
+      "const": "1.1"
+    },
+    "name": {
+      "type": "string",
+      "minLength": 1,
+      "maxLength": 128
+    },
+    "version": {
+      "type": "integer",
+      "minimum": 1,
+      "maximum": 1000000
+    },
+    "inputSchema": {
+      "allOf": [
+        {
+          "$ref": "#/definitions/inputSchema"
+        },
+        {
+          "properties": {
+            "type": {
+              "const": "object"
+            }
+          }
+        }
+      ]
+    },
+    "policy": {
+      "type": "object",
+      "properties": {
+        "allowedOrigins": {
+          "type": "array",
+          "minItems": 1,
+          "maxItems": 32,
+          "items": {
+            "type": "string",
+            "minLength": 1,
+            "maxLength": 8192
+          }
+        },
+        "maxSteps": {
+          "type": "integer",
+          "minimum": 1,
+          "maximum": 1024
+        },
+        "maxDurationMs": {
+          "type": "integer",
+          "minimum": 1,
+          "maximum": 300000
+        }
+      },
+      "required": [
+        "allowedOrigins",
+        "maxSteps",
+        "maxDurationMs"
+      ],
+      "additionalProperties": false
+    },
+    "entry": {
+      "type": "string",
+      "minLength": 1,
+      "maxLength": 64,
+      "pattern": "^[A-Za-z0-9_-]+$"
+    },
+    "steps": {
+      "type": "array",
+      "minItems": 1,
+      "maxItems": 128,
+      "items": {
+        "$ref": "#/definitions/step"
+      }
+    },
+    "subflows": {
+      "type": "object",
+      "maxProperties": 32,
+      "propertyNames": {
+        "type": "string",
+        "minLength": 1,
+        "maxLength": 64,
+        "pattern": "^[A-Za-z0-9_-]+$"
+      },
+      "additionalProperties": {
+        "$ref": "#/definitions/flow"
+      }
+    },
+    "variables": {
+      "type": "object",
+      "maxProperties": 32,
+      "propertyNames": {
+        "type": "string",
+        "minLength": 1,
+        "maxLength": 64,
+        "pattern": "^[A-Za-z0-9_-]+$"
+      },
+      "additionalProperties": {
+        "type": "object",
+        "properties": {
+          "schema": {
+            "$ref": "#/definitions/inputSchema"
+          },
+          "initial": {
+            "$ref": "#/definitions/expression"
+          },
+          "sensitive": {
+            "type": "boolean"
+          }
+        },
+        "required": [
+          "schema",
+          "initial",
+          "sensitive"
+        ],
+        "additionalProperties": false
+      }
+    }
+  },
+  "required": [
+    "schemaVersion",
+    "name",
+    "version",
+    "inputSchema",
+    "policy",
+    "entry",
+    "steps"
+  ],
+  "additionalProperties": false,
+  "definitions": {
+    "inputRef": {
+      "type": "object",
+      "properties": {
+        "input": {
+          "type": "string",
+          "minLength": 2,
+          "maxLength": 512,
+          "pattern": "^/[A-Za-z0-9_-]+(?:/[A-Za-z0-9_-]+)*$"
+        }
+      },
+      "required": [
+        "input"
+      ],
+      "additionalProperties": false
+    },
+    "expression": {
+      "oneOf": [
+        {
+          "type": "string",
+          "minLength": 0,
+          "maxLength": 65536
+        },
+        {
+          "type": "integer",
+          "minimum": -1000000000,
+          "maximum": 1000000000
+        },
+        {
+          "type": "boolean"
+        },
+        {
+          "$ref": "#/definitions/inputRef"
+        },
+        {
+          "type": "object",
+          "properties": {
+            "var": {
+              "type": "string",
+              "minLength": 1,
+              "maxLength": 64,
+              "pattern": "^[A-Za-z0-9_-]+$"
+            }
+          },
+          "required": [
+            "var"
+          ],
+          "additionalProperties": false
+        },
+        {
+          "type": "object",
+          "properties": {
+            "literal": {},
+            "schema": {
+              "$ref": "#/definitions/inputSchema"
+            }
+          },
+          "required": [
+            "literal",
+            "schema"
+          ],
+          "additionalProperties": false
+        },
+        {
+          "type": "object",
+          "properties": {
+            "op": {
+              "enum": [
+                "add",
+                "sub",
+                "concat",
+                "length",
+                "trim"
+              ]
+            },
+            "args": {
+              "type": "array",
+              "minItems": 1,
+              "maxItems": 8,
+              "items": {
+                "$ref": "#/definitions/expression"
+              }
+            }
+          },
+          "required": [
+            "op",
+            "args"
+          ],
+          "additionalProperties": false
+        }
+      ]
+    },
+    "predicate": {
+      "oneOf": [
+        {
+          "type": "object",
+          "properties": {
+            "op": {
+              "enum": [
+                "eq",
+                "ne",
+                "lt",
+                "le",
+                "gt",
+                "ge"
+              ]
+            },
+            "left": {
+              "$ref": "#/definitions/expression"
+            },
+            "right": {
+              "$ref": "#/definitions/expression"
+            }
+          },
+          "required": [
+            "op",
+            "left",
+            "right"
+          ],
+          "additionalProperties": false
+        },
+        {
+          "type": "object",
+          "properties": {
+            "op": {
+              "const": "not"
+            },
+            "arg": {
+              "$ref": "#/definitions/predicate"
+            }
+          },
+          "required": [
+            "op",
+            "arg"
+          ],
+          "additionalProperties": false
+        },
+        {
+          "type": "object",
+          "properties": {
+            "op": {
+              "enum": [
+                "and",
+                "or"
+              ]
+            },
+            "args": {
+              "type": "array",
+              "minItems": 1,
+              "maxItems": 8,
+              "items": {
+                "$ref": "#/definitions/predicate"
+              }
+            }
+          },
+          "required": [
+            "op",
+            "args"
+          ],
+          "additionalProperties": false
+        }
+      ]
+    },
+    "step": {
+      "oneOf": [
+        {
+          "type": "object",
+          "properties": {
+            "id": {
+              "type": "string",
+              "minLength": 1,
+              "maxLength": 64,
+              "pattern": "^[A-Za-z0-9_-]+$"
+            },
+            "type": {
+              "const": "navigate"
+            },
+            "url": {
+              "type": "string",
+              "minLength": 1,
+              "maxLength": 8192
+            },
+            "next": {
+              "type": "string",
+              "minLength": 1,
+              "maxLength": 64,
+              "pattern": "^[A-Za-z0-9_-]+$"
+            }
+          },
+          "required": [
+            "id",
+            "type",
+            "url",
+            "next"
+          ],
+          "additionalProperties": false
+        },
+        {
+          "type": "object",
+          "properties": {
+            "id": {
+              "type": "string",
+              "minLength": 1,
+              "maxLength": 64,
+              "pattern": "^[A-Za-z0-9_-]+$"
+            },
+            "type": {
+              "const": "fill"
+            },
+            "selector": {
+              "type": "string",
+              "minLength": 1,
+              "maxLength": 2048
+            },
+            "value": {
+              "oneOf": [
+                {
+                  "$ref": "#/definitions/expression"
+                },
+                {
+                  "$ref": "#/definitions/secretRef"
+                }
+              ]
+            },
+            "next": {
+              "type": "string",
+              "minLength": 1,
+              "maxLength": 64,
+              "pattern": "^[A-Za-z0-9_-]+$"
+            }
+          },
+          "required": [
+            "id",
+            "type",
+            "selector",
+            "value",
+            "next"
+          ],
+          "additionalProperties": false
+        },
+        {
+          "type": "object",
+          "properties": {
+            "id": {
+              "type": "string",
+              "minLength": 1,
+              "maxLength": 64,
+              "pattern": "^[A-Za-z0-9_-]+$"
+            },
+            "type": {
+              "const": "click"
+            },
+            "selector": {
+              "type": "string",
+              "minLength": 1,
+              "maxLength": 2048
+            },
+            "postcondition": {
+              "type": "object",
+              "properties": {
+                "selector": {
+                  "type": "string",
+                  "minLength": 1,
+                  "maxLength": 2048
+                },
+                "expected": {
+                  "$ref": "#/definitions/expression"
+                },
+                "timeoutMs": {
+                  "type": "integer",
+                  "minimum": 1,
+                  "maximum": 10000
+                }
+              },
+              "required": [
+                "selector",
+                "expected",
+                "timeoutMs"
+              ],
+              "additionalProperties": false
+            },
+            "next": {
+              "type": "string",
+              "minLength": 1,
+              "maxLength": 64,
+              "pattern": "^[A-Za-z0-9_-]+$"
+            }
+          },
+          "required": [
+            "id",
+            "type",
+            "selector",
+            "postcondition",
+            "next"
+          ],
+          "additionalProperties": false
+        },
+        {
+          "type": "object",
+          "properties": {
+            "id": {
+              "type": "string",
+              "minLength": 1,
+              "maxLength": 64,
+              "pattern": "^[A-Za-z0-9_-]+$"
+            },
+            "type": {
+              "const": "select"
+            },
+            "selector": {
+              "type": "string",
+              "minLength": 1,
+              "maxLength": 2048
+            },
+            "values": {
+              "type": "array",
+              "maxItems": 32,
+              "items": {
+                "$ref": "#/definitions/expression"
+              }
+            },
+            "next": {
+              "type": "string",
+              "minLength": 1,
+              "maxLength": 64,
+              "pattern": "^[A-Za-z0-9_-]+$"
+            }
+          },
+          "required": [
+            "id",
+            "type",
+            "selector",
+            "values",
+            "next"
+          ],
+          "additionalProperties": false
+        },
+        {
+          "type": "object",
+          "properties": {
+            "id": {
+              "type": "string",
+              "minLength": 1,
+              "maxLength": 64,
+              "pattern": "^[A-Za-z0-9_-]+$"
+            },
+            "type": {
+              "const": "assertText"
+            },
+            "selector": {
+              "type": "string",
+              "minLength": 1,
+              "maxLength": 2048
+            },
+            "expected": {
+              "$ref": "#/definitions/expression"
+            },
+            "timeoutMs": {
+              "type": "integer",
+              "minimum": 1,
+              "maximum": 10000
+            },
+            "next": {
+              "type": "string",
+              "minLength": 1,
+              "maxLength": 64,
+              "pattern": "^[A-Za-z0-9_-]+$"
+            },
+            "onError": {
+              "$ref": "#/definitions/errorRoute"
+            }
+          },
+          "required": [
+            "id",
+            "type",
+            "selector",
+            "expected",
+            "timeoutMs",
+            "next"
+          ],
+          "additionalProperties": false
+        },
+        {
+          "type": "object",
+          "properties": {
+            "id": {
+              "type": "string",
+              "minLength": 1,
+              "maxLength": 64,
+              "pattern": "^[A-Za-z0-9_-]+$"
+            },
+            "type": {
+              "const": "condition"
+            },
+            "when": {
+              "$ref": "#/definitions/predicate"
+            },
+            "then": {
+              "type": "string",
+              "minLength": 1,
+              "maxLength": 64,
+              "pattern": "^[A-Za-z0-9_-]+$"
+            },
+            "else": {
+              "type": "string",
+              "minLength": 1,
+              "maxLength": 64,
+              "pattern": "^[A-Za-z0-9_-]+$"
+            }
+          },
+          "required": [
+            "id",
+            "type",
+            "when",
+            "then",
+            "else"
+          ],
+          "additionalProperties": false
+        },
+        {
+          "type": "object",
+          "properties": {
+            "id": {
+              "type": "string",
+              "minLength": 1,
+              "maxLength": 64,
+              "pattern": "^[A-Za-z0-9_-]+$"
+            },
+            "type": {
+              "const": "loop"
+            },
+            "flow": {
+              "type": "string",
+              "minLength": 1,
+              "maxLength": 64,
+              "pattern": "^[A-Za-z0-9_-]+$"
+            },
+            "count": {
+              "$ref": "#/definitions/expression"
+            },
+            "maxIterations": {
+              "type": "integer",
+              "minimum": 0,
+              "maximum": 100
+            },
+            "next": {
+              "type": "string",
+              "minLength": 1,
+              "maxLength": 64,
+              "pattern": "^[A-Za-z0-9_-]+$"
+            }
+          },
+          "required": [
+            "id",
+            "type",
+            "flow",
+            "count",
+            "maxIterations",
+            "next"
+          ],
+          "additionalProperties": false
+        },
+        {
+          "type": "object",
+          "properties": {
+            "id": {
+              "type": "string",
+              "minLength": 1,
+              "maxLength": 64,
+              "pattern": "^[A-Za-z0-9_-]+$"
+            },
+            "type": {
+              "const": "call"
+            },
+            "flow": {
+              "type": "string",
+              "minLength": 1,
+              "maxLength": 64,
+              "pattern": "^[A-Za-z0-9_-]+$"
+            },
+            "next": {
+              "type": "string",
+              "minLength": 1,
+              "maxLength": 64,
+              "pattern": "^[A-Za-z0-9_-]+$"
+            }
+          },
+          "required": [
+            "id",
+            "type",
+            "flow",
+            "next"
+          ],
+          "additionalProperties": false
+        },
+        {
+          "type": "object",
+          "properties": {
+            "id": {
+              "type": "string",
+              "minLength": 1,
+              "maxLength": 64,
+              "pattern": "^[A-Za-z0-9_-]+$"
+            },
+            "type": {
+              "const": "end"
+            }
+          },
+          "required": [
+            "id",
+            "type"
+          ],
+          "additionalProperties": false
+        },
+        {
+          "type": "object",
+          "properties": {
+            "variable": {
+              "type": "string",
+              "minLength": 1,
+              "maxLength": 64,
+              "pattern": "^[A-Za-z0-9_-]+$"
+            },
+            "value": {
+              "$ref": "#/definitions/expression"
+            },
+            "id": {
+              "type": "string",
+              "minLength": 1,
+              "maxLength": 64,
+              "pattern": "^[A-Za-z0-9_-]+$"
+            },
+            "type": {
+              "const": "set"
+            },
+            "next": {
+              "type": "string",
+              "minLength": 1,
+              "maxLength": 64,
+              "pattern": "^[A-Za-z0-9_-]+$"
+            },
+            "onError": {
+              "$ref": "#/definitions/errorRoute"
+            }
+          },
+          "required": [
+            "id",
+            "type",
+            "next",
+            "variable",
+            "value"
+          ],
+          "additionalProperties": false
+        },
+        {
+          "type": "object",
+          "properties": {
+            "selector": {
+              "type": "string",
+              "minLength": 1,
+              "maxLength": 2048
+            },
+            "variable": {
+              "type": "string",
+              "minLength": 1,
+              "maxLength": 64,
+              "pattern": "^[A-Za-z0-9_-]+$"
+            },
+            "id": {
+              "type": "string",
+              "minLength": 1,
+              "maxLength": 64,
+              "pattern": "^[A-Za-z0-9_-]+$"
+            },
+            "type": {
+              "const": "readText"
+            },
+            "next": {
+              "type": "string",
+              "minLength": 1,
+              "maxLength": 64,
+              "pattern": "^[A-Za-z0-9_-]+$"
+            },
+            "onError": {
+              "$ref": "#/definitions/errorRoute"
+            }
+          },
+          "required": [
+            "id",
+            "type",
+            "next",
+            "selector",
+            "variable"
+          ],
+          "additionalProperties": false
+        },
+        {
+          "type": "object",
+          "properties": {
+            "items": {
+              "$ref": "#/definitions/expression"
+            },
+            "item": {
+              "type": "string",
+              "minLength": 1,
+              "maxLength": 64,
+              "pattern": "^[A-Za-z0-9_-]+$"
+            },
+            "maxIterations": {
+              "type": "integer",
+              "minimum": 1,
+              "maximum": 32
+            },
+            "flow": {
+              "type": "string",
+              "minLength": 1,
+              "maxLength": 64,
+              "pattern": "^[A-Za-z0-9_-]+$"
+            },
+            "id": {
+              "type": "string",
+              "minLength": 1,
+              "maxLength": 64,
+              "pattern": "^[A-Za-z0-9_-]+$"
+            },
+            "type": {
+              "const": "foreach"
+            },
+            "next": {
+              "type": "string",
+              "minLength": 1,
+              "maxLength": 64,
+              "pattern": "^[A-Za-z0-9_-]+$"
+            }
+          },
+          "required": [
+            "id",
+            "type",
+            "next",
+            "items",
+            "item",
+            "maxIterations",
+            "flow"
+          ],
+          "additionalProperties": false
+        },
+        {
+          "type": "object",
+          "properties": {
+            "id": {
+              "type": "string",
+              "minLength": 1,
+              "maxLength": 64,
+              "pattern": "^[A-Za-z0-9_-]+$"
+            },
+            "type": {
+              "const": "upload"
+            },
+            "selector": {
+              "type": "string",
+              "minLength": 1,
+              "maxLength": 2048
+            },
+            "path": {
+              "$ref": "#/definitions/expression"
+            },
+            "next": {
+              "type": "string",
+              "minLength": 1,
+              "maxLength": 64,
+              "pattern": "^[A-Za-z0-9_-]+$"
+            }
+          },
+          "required": [
+            "id",
+            "type",
+            "selector",
+            "path",
+            "next"
+          ],
+          "additionalProperties": false
+        },
+        {
+          "type": "object",
+          "properties": {
+            "id": {
+              "type": "string",
+              "minLength": 1,
+              "maxLength": 64,
+              "pattern": "^[A-Za-z0-9_-]+$"
+            },
+            "type": {
+              "const": "downloadConfig"
+            },
+            "directory": {
+              "$ref": "#/definitions/expression"
+            },
+            "next": {
+              "type": "string",
+              "minLength": 1,
+              "maxLength": 64,
+              "pattern": "^[A-Za-z0-9_-]+$"
+            }
+          },
+          "required": [
+            "id",
+            "type",
+            "directory",
+            "next"
+          ],
+          "additionalProperties": false
+        },
+        {
+          "type": "object",
+          "properties": {
+            "id": {
+              "type": "string",
+              "minLength": 1,
+              "maxLength": 64,
+              "pattern": "^[A-Za-z0-9_-]+$"
+            },
+            "type": {
+              "const": "assert"
+            },
+            "assertion": {
+              "$ref": "#/definitions/pageAssertion"
+            },
+            "onError": {
+              "$ref": "#/definitions/errorRoute"
+            },
+            "next": {
+              "type": "string",
+              "minLength": 1,
+              "maxLength": 64,
+              "pattern": "^[A-Za-z0-9_-]+$"
+            }
+          },
+          "required": [
+            "id",
+            "type",
+            "assertion",
+            "next"
+          ],
+          "additionalProperties": false
+        },
+        {
+          "type": "object",
+          "properties": {
+            "id": {
+              "type": "string",
+              "minLength": 1,
+              "maxLength": 64,
+              "pattern": "^[A-Za-z0-9_-]+$"
+            },
+            "type": {
+              "const": "readTexts"
+            },
+            "selector": {
+              "type": "string",
+              "minLength": 1,
+              "maxLength": 2048
+            },
+            "variable": {
+              "type": "string",
+              "minLength": 1,
+              "maxLength": 64,
+              "pattern": "^[A-Za-z0-9_-]+$"
+            },
+            "maxItems": {
+              "type": "integer",
+              "minimum": 0,
+              "maximum": 32
+            },
+            "onError": {
+              "$ref": "#/definitions/errorRoute"
+            },
+            "next": {
+              "type": "string",
+              "minLength": 1,
+              "maxLength": 64,
+              "pattern": "^[A-Za-z0-9_-]+$"
+            }
+          },
+          "required": [
+            "id",
+            "type",
+            "selector",
+            "variable",
+            "maxItems",
+            "next"
+          ],
+          "additionalProperties": false
+        },
+        {
+          "type": "object",
+          "properties": {
+            "id": {
+              "type": "string",
+              "minLength": 1,
+              "maxLength": 64,
+              "pattern": "^[A-Za-z0-9_-]+$"
+            },
+            "type": {
+              "const": "downloadWait"
+            },
+            "next": {
+              "type": "string",
+              "minLength": 1,
+              "maxLength": 64,
+              "pattern": "^[A-Za-z0-9_-]+$"
+            },
+            "fileName": {
+              "type": "string",
+              "minLength": 1,
+              "maxLength": 255
+            },
+            "timeoutMs": {
+              "type": "integer",
+              "minimum": 1,
+              "maximum": 10000
+            }
+          },
+          "required": [
+            "id",
+            "type",
+            "fileName",
+            "timeoutMs",
+            "next"
+          ],
+          "additionalProperties": false
+        }
+      ]
+    },
+    "flow": {
+      "type": "object",
+      "properties": {
+        "entry": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 64,
+          "pattern": "^[A-Za-z0-9_-]+$"
+        },
+        "steps": {
+          "type": "array",
+          "minItems": 1,
+          "maxItems": 128,
+          "items": {
+            "$ref": "#/definitions/step"
+          }
+        }
+      },
+      "required": [
+        "entry",
+        "steps"
+      ],
+      "additionalProperties": false
+    },
+    "inputSchema": {
+      "oneOf": [
+        {
+          "type": "object",
+          "properties": {
+            "$schema": {
+              "const": "http://json-schema.org/draft-07/schema#"
+            },
+            "type": {
+              "const": "object"
+            },
+            "properties": {
+              "type": "object",
+              "maxProperties": 32,
+              "propertyNames": {
+                "type": "string",
+                "minLength": 1,
+                "maxLength": 64,
+                "pattern": "^[A-Za-z0-9_-]+$"
+              },
+              "additionalProperties": {
+                "$ref": "#/definitions/inputSchema"
+              }
+            },
+            "required": {
+              "type": "array",
+              "uniqueItems": true,
+              "items": {
+                "type": "string",
+                "minLength": 1,
+                "maxLength": 64,
+                "pattern": "^[A-Za-z0-9_-]+$"
+              }
+            },
+            "additionalProperties": {
+              "const": false
+            }
+          },
+          "required": [
+            "type",
+            "properties",
+            "required",
+            "additionalProperties"
+          ],
+          "additionalProperties": false
+        },
+        {
+          "type": "object",
+          "properties": {
+            "$schema": {
+              "const": "http://json-schema.org/draft-07/schema#"
+            },
+            "enum": {
+              "type": "array",
+              "minItems": 1,
+              "maxItems": 32,
+              "uniqueItems": true,
+              "items": {
+                "type": [
+                  "string",
+                  "integer",
+                  "boolean"
+                ]
+              }
+            },
+            "type": {
+              "const": "string"
+            },
+            "minLength": {
+              "type": "integer",
+              "minimum": 0,
+              "maximum": 65536
+            },
+            "maxLength": {
+              "type": "integer",
+              "minimum": 0,
+              "maximum": 65536
+            }
+          },
+          "required": [
+            "type",
+            "maxLength"
+          ],
+          "additionalProperties": false
+        },
+        {
+          "type": "object",
+          "properties": {
+            "$schema": {
+              "const": "http://json-schema.org/draft-07/schema#"
+            },
+            "enum": {
+              "type": "array",
+              "minItems": 1,
+              "maxItems": 32,
+              "uniqueItems": true,
+              "items": {
+                "type": [
+                  "string",
+                  "integer",
+                  "boolean"
+                ]
+              }
+            },
+            "type": {
+              "const": "integer"
+            },
+            "minimum": {
+              "type": "integer",
+              "minimum": -1000000000,
+              "maximum": 1000000000
+            },
+            "maximum": {
+              "type": "integer",
+              "minimum": -1000000000,
+              "maximum": 1000000000
+            }
+          },
+          "required": [
+            "type",
+            "minimum",
+            "maximum"
+          ],
+          "additionalProperties": false
+        },
+        {
+          "type": "object",
+          "properties": {
+            "$schema": {
+              "const": "http://json-schema.org/draft-07/schema#"
+            },
+            "enum": {
+              "type": "array",
+              "minItems": 1,
+              "maxItems": 32,
+              "uniqueItems": true,
+              "items": {
+                "type": [
+                  "string",
+                  "integer",
+                  "boolean"
+                ]
+              }
+            },
+            "type": {
+              "const": "boolean"
+            }
+          },
+          "required": [
+            "type"
+          ],
+          "additionalProperties": false
+        },
+        {
+          "type": "object",
+          "properties": {
+            "$schema": {
+              "const": "http://json-schema.org/draft-07/schema#"
+            },
+            "type": {
+              "const": "array"
+            },
+            "items": {
+              "$ref": "#/definitions/inputSchema"
+            },
+            "minItems": {
+              "type": "integer",
+              "minimum": 0,
+              "maximum": 32
+            },
+            "maxItems": {
+              "type": "integer",
+              "minimum": 0,
+              "maximum": 32
+            }
+          },
+          "required": [
+            "type",
+            "items",
+            "maxItems"
+          ],
+          "additionalProperties": false
+        }
+      ]
+    },
+    "secretRef": {
+      "type": "object",
+      "properties": {
+        "secretRef": {
+          "type": "string",
+          "pattern": "^[0-9a-f]{32}$"
+        }
+      },
+      "required": [
+        "secretRef"
+      ],
+      "additionalProperties": false
+    },
+    "errorRoute": {
+      "type": "object",
+      "properties": {
+        "codes": {
+          "type": "array",
+          "minItems": 1,
+          "maxItems": 4,
+          "uniqueItems": true,
+          "items": {
+            "enum": [
+              "ELEMENT_NOT_FOUND",
+              "LOCATOR_AMBIGUOUS",
+              "ASSERTION_TIMEOUT",
+              "WORKFLOW_SCHEMA_INVALID",
+              "ASSERTION_FAILED",
+              "INVALID_SELECTOR",
+              "EXTRACTION_CONSTRAINT_FAILED",
+              "EXTRACTION_SOURCE_DENIED",
+              "EXTRACTION_VALUE_TOO_LARGE"
+            ]
+          }
+        },
+        "next": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 64,
+          "pattern": "^[A-Za-z0-9_-]+$"
+        }
+      },
+      "required": [
+        "codes",
+        "next"
+      ],
+      "additionalProperties": false
+    },
+    "pageAssertion": {
+      "oneOf": [
+        {
+          "type": "object",
+          "properties": {
+            "type": {
+              "const": "urlEquals"
+            },
+            "expected": {
+              "type": "string",
+              "minLength": 0,
+              "maxLength": 8192
+            }
+          },
+          "required": [
+            "type",
+            "expected"
+          ],
+          "additionalProperties": false
+        },
+        {
+          "type": "object",
+          "properties": {
+            "type": {
+              "const": "urlContains"
+            },
+            "expected": {
+              "type": "string",
+              "minLength": 1,
+              "maxLength": 8192
+            }
+          },
+          "required": [
+            "type",
+            "expected"
+          ],
+          "additionalProperties": false
+        },
+        {
+          "type": "object",
+          "properties": {
+            "type": {
+              "const": "text"
+            },
+            "selector": {
+              "type": "string",
+              "minLength": 1,
+              "maxLength": 2048
+            },
+            "expected": {
+              "type": "string",
+              "minLength": 0,
+              "maxLength": 16384
+            }
+          },
+          "required": [
+            "type",
+            "selector",
+            "expected"
+          ],
+          "additionalProperties": false
+        },
+        {
+          "type": "object",
+          "properties": {
+            "type": {
+              "const": "elementCount"
+            },
+            "selector": {
+              "type": "string",
+              "minLength": 1,
+              "maxLength": 2048
+            },
+            "expected": {
+              "type": "integer",
+              "minimum": 0,
+              "maximum": 1000000
+            }
+          },
+          "required": [
+            "type",
+            "selector",
+            "expected"
+          ],
+          "additionalProperties": false
+        },
+        {
+          "type": "object",
+          "properties": {
+            "type": {
+              "const": "elementState"
+            },
+            "selector": {
+              "type": "string",
+              "minLength": 1,
+              "maxLength": 2048
+            },
+            "state": {
+              "enum": [
+                "visible",
+                "enabled",
+                "clickReady",
+                "fillReady",
+                "selectReady",
+                "checked"
+              ]
+            },
+            "expected": {
+              "type": "boolean"
+            }
+          },
+          "required": [
+            "type",
+            "selector",
+            "state"
+          ],
+          "additionalProperties": false
+        }
+      ]
+    }
+  }
+}

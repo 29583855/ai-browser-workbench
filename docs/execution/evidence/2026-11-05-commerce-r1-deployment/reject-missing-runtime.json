@@ -1,0 +1,10 @@
+{
+  "result": "failed",
+  "date": "2026-11-05T15:11:08+08:00",
+  "checks": [],
+  "errors": [
+    "Exception calling \"OpenRead\" with \"1\" argument(s): \"Could not find file 'E:\\project\\webexploer_codex\\build\\commerce-package-validation\\中文 空格部署\\AI-Browser-Workbench-0.1.12-win64-commerce-r1\\msvcp140.dll'.\""
+  ],
+  "root": "E:\\project\\webexploer_codex\\build\\commerce-package-validation\\中文 空格部署\\AI-Browser-Workbench-0.1.12-win64-commerce-r1",
+  "cleanMachine": false
+}

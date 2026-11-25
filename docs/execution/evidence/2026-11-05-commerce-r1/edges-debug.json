@@ -1,0 +1,544 @@
+{
+  "date": "2026-11-05",
+  "result": "passed",
+  "groups": [
+    "registration-input-origin-host-lockout-password-session-revocation",
+    "cross-device-free-capacity-crash-recovery-no-automatic-reuse-suspension-and-resolution",
+    "invitation-expiration-reclaims-reservation-and-subscription-free-fallback",
+    "gateway-amount-currency-merchant-replay-conflicts-refund-credit-note-and-late-payment-review",
+    "time-exhaustion-disconnected-overrun-debt-and-recharge-offset",
+    "native-account-form-masked-password-login-entitlement-query-and-logout"
+  ],
+  "httpChecks": 131,
+  "events": [
+    {
+      "action": "bootstrap",
+      "outcome": "passed"
+    },
+    {
+      "action": "register",
+      "outcome": "passed"
+    },
+    {
+      "action": "register",
+      "outcome": "ACCOUNT_EXISTS"
+    },
+    {
+      "action": "register",
+      "outcome": "PASSWORD_POLICY"
+    },
+    {
+      "action": "status",
+      "outcome": "FORBIDDEN"
+    },
+    {
+      "action": "status",
+      "outcome": "FORBIDDEN"
+    },
+    {
+      "action": "login",
+      "outcome": "UNAUTHORIZED"
+    },
+    {
+      "action": "login",
+      "outcome": "UNAUTHORIZED"
+    },
+    {
+      "action": "login",
+      "outcome": "UNAUTHORIZED"
+    },
+    {
+      "action": "login",
+      "outcome": "UNAUTHORIZED"
+    },
+    {
+      "action": "login",
+      "outcome": "UNAUTHORIZED"
+    },
+    {
+      "action": "login",
+      "outcome": "UNAUTHORIZED"
+    },
+    {
+      "action": "login",
+      "outcome": "passed"
+    },
+    {
+      "action": "password.change",
+      "outcome": "passed"
+    },
+    {
+      "action": "snapshot",
+      "outcome": "UNAUTHORIZED"
+    },
+    {
+      "action": "login",
+      "outcome": "passed"
+    },
+    {
+      "action": "device.register",
+      "outcome": "passed"
+    },
+    {
+      "action": "device.register",
+      "outcome": "passed"
+    },
+    {
+      "action": "environment.reserve",
+      "outcome": "passed"
+    },
+    {
+      "action": "slot.acquire",
+      "outcome": "passed"
+    },
+    {
+      "action": "environment.reserve",
+      "outcome": "passed"
+    },
+    {
+      "action": "slot.acquire",
+      "outcome": "passed"
+    },
+    {
+      "action": "environment.reserve",
+      "outcome": "passed"
+    },
+    {
+      "action": "slot.acquire",
+      "outcome": "passed"
+    },
+    {
+      "action": "environment.reserve",
+      "outcome": "passed"
+    },
+    {
+      "action": "slot.acquire",
+      "outcome": "passed"
+    },
+    {
+      "action": "environment.reserve",
+      "outcome": "passed"
+    },
+    {
+      "action": "slot.acquire",
+      "outcome": "passed"
+    },
+    {
+      "action": "environment.reserve",
+      "outcome": "passed"
+    },
+    {
+      "action": "slot.acquire",
+      "outcome": "passed"
+    },
+    {
+      "action": "environment.reserve",
+      "outcome": "passed"
+    },
+    {
+      "action": "slot.acquire",
+      "outcome": "passed"
+    },
+    {
+      "action": "environment.reserve",
+      "outcome": "passed"
+    },
+    {
+      "action": "slot.acquire",
+      "outcome": "passed"
+    },
+    {
+      "action": "environment.reserve",
+      "outcome": "passed"
+    },
+    {
+      "action": "slot.acquire",
+      "outcome": "passed"
+    },
+    {
+      "action": "environment.reserve",
+      "outcome": "passed"
+    },
+    {
+      "action": "slot.acquire",
+      "outcome": "passed"
+    },
+    {
+      "action": "environment.reserve",
+      "outcome": "ENVIRONMENT_LIMIT"
+    },
+    {
+      "action": "slot.lookup",
+      "outcome": "passed"
+    },
+    {
+      "action": "slot.lookup",
+      "outcome": "passed"
+    },
+    {
+      "action": "slot.acquire",
+      "outcome": "SLOT_BUSY"
+    },
+    {
+      "action": "environment.release",
+      "outcome": "ENVIRONMENT_RUNNING"
+    },
+    {
+      "action": "snapshot",
+      "outcome": "passed"
+    },
+    {
+      "action": "slot.acquire",
+      "outcome": "passed"
+    },
+    {
+      "action": "slot.resolve",
+      "outcome": "CONFIRMATION_REQUIRED"
+    },
+    {
+      "action": "tenant.state",
+      "outcome": "passed"
+    },
+    {
+      "action": "slot.heartbeat",
+      "outcome": "TENANT_SUSPENDED"
+    },
+    {
+      "action": "slot.lookup",
+      "outcome": "passed"
+    },
+    {
+      "action": "slot.resolve",
+      "outcome": "passed"
+    },
+    {
+      "action": "slot.resolve",
+      "outcome": "passed"
+    },
+    {
+      "action": "slot.resolve",
+      "outcome": "passed"
+    },
+    {
+      "action": "slot.resolve",
+      "outcome": "passed"
+    },
+    {
+      "action": "slot.resolve",
+      "outcome": "passed"
+    },
+    {
+      "action": "slot.resolve",
+      "outcome": "passed"
+    },
+    {
+      "action": "slot.resolve",
+      "outcome": "passed"
+    },
+    {
+      "action": "slot.resolve",
+      "outcome": "passed"
+    },
+    {
+      "action": "slot.resolve",
+      "outcome": "passed"
+    },
+    {
+      "action": "slot.resolve",
+      "outcome": "passed"
+    },
+    {
+      "action": "tenant.state",
+      "outcome": "passed"
+    },
+    {
+      "action": "plan.save",
+      "outcome": "passed"
+    },
+    {
+      "action": "order.create",
+      "outcome": "passed"
+    },
+    {
+      "action": "payment.confirm",
+      "outcome": "passed"
+    },
+    {
+      "action": "member.invite",
+      "outcome": "passed"
+    },
+    {
+      "action": "register",
+      "outcome": "passed"
+    },
+    {
+      "action": "member.accept",
+      "outcome": "INVITATION_INVALID"
+    },
+    {
+      "action": "snapshot",
+      "outcome": "passed"
+    },
+    {
+      "action": "register",
+      "outcome": "passed"
+    },
+    {
+      "action": "member.invite",
+      "outcome": "passed"
+    },
+    {
+      "action": "member.accept",
+      "outcome": "passed"
+    },
+    {
+      "action": "order.create",
+      "outcome": "passed"
+    },
+    {
+      "action": "member.invite",
+      "outcome": "FORBIDDEN"
+    },
+    {
+      "action": "platform.snapshot",
+      "outcome": "FORBIDDEN"
+    },
+    {
+      "action": "snapshot",
+      "outcome": "passed"
+    },
+    {
+      "action": "plan.save",
+      "outcome": "passed"
+    },
+    {
+      "action": "order.create",
+      "outcome": "passed"
+    },
+    {
+      "action": "webhook",
+      "outcome": "PAYMENT_SIGNATURE"
+    },
+    {
+      "action": "webhook",
+      "outcome": "PAYMENT_AMOUNT"
+    },
+    {
+      "action": "webhook",
+      "outcome": "PAYMENT_EVENT"
+    },
+    {
+      "action": "webhook",
+      "outcome": "PAYMENT_EVENT"
+    },
+    {
+      "action": "webhook",
+      "outcome": "passed"
+    },
+    {
+      "action": "webhook",
+      "outcome": "PAYMENT_CONFLICT"
+    },
+    {
+      "action": "order.create",
+      "outcome": "passed"
+    },
+    {
+      "action": "webhook",
+      "outcome": "PAYMENT_CONFLICT"
+    },
+    {
+      "action": "invoice.request",
+      "outcome": "passed"
+    },
+    {
+      "action": "invoice.issue",
+      "outcome": "passed"
+    },
+    {
+      "action": "webhook",
+      "outcome": "ORDER_STATE"
+    },
+    {
+      "action": "refund.request",
+      "outcome": "passed"
+    },
+    {
+      "action": "webhook",
+      "outcome": "passed"
+    },
+    {
+      "action": "snapshot",
+      "outcome": "passed"
+    },
+    {
+      "action": "invoice.credit",
+      "outcome": "passed"
+    },
+    {
+      "action": "webhook",
+      "outcome": "passed"
+    },
+    {
+      "action": "webhook",
+      "outcome": "passed"
+    },
+    {
+      "action": "order.cancel",
+      "outcome": "passed"
+    },
+    {
+      "action": "webhook",
+      "outcome": "passed"
+    },
+    {
+      "action": "payment.reconcile",
+      "outcome": "passed"
+    },
+    {
+      "action": "platform.snapshot",
+      "outcome": "passed"
+    },
+    {
+      "action": "register",
+      "outcome": "passed"
+    },
+    {
+      "action": "plan.save",
+      "outcome": "passed"
+    },
+    {
+      "action": "order.create",
+      "outcome": "passed"
+    },
+    {
+      "action": "payment.confirm",
+      "outcome": "passed"
+    },
+    {
+      "action": "device.register",
+      "outcome": "passed"
+    },
+    {
+      "action": "environment.reserve",
+      "outcome": "passed"
+    },
+    {
+      "action": "slot.acquire",
+      "outcome": "passed"
+    },
+    {
+      "action": "environment.reserve",
+      "outcome": "passed"
+    },
+    {
+      "action": "slot.acquire",
+      "outcome": "passed"
+    },
+    {
+      "action": "environment.reserve",
+      "outcome": "passed"
+    },
+    {
+      "action": "slot.acquire",
+      "outcome": "passed"
+    },
+    {
+      "action": "environment.reserve",
+      "outcome": "passed"
+    },
+    {
+      "action": "slot.acquire",
+      "outcome": "passed"
+    },
+    {
+      "action": "environment.reserve",
+      "outcome": "passed"
+    },
+    {
+      "action": "slot.acquire",
+      "outcome": "passed"
+    },
+    {
+      "action": "environment.reserve",
+      "outcome": "passed"
+    },
+    {
+      "action": "slot.acquire",
+      "outcome": "passed"
+    },
+    {
+      "action": "environment.reserve",
+      "outcome": "passed"
+    },
+    {
+      "action": "slot.acquire",
+      "outcome": "passed"
+    },
+    {
+      "action": "environment.reserve",
+      "outcome": "passed"
+    },
+    {
+      "action": "slot.acquire",
+      "outcome": "passed"
+    },
+    {
+      "action": "environment.reserve",
+      "outcome": "passed"
+    },
+    {
+      "action": "slot.acquire",
+      "outcome": "passed"
+    },
+    {
+      "action": "environment.reserve",
+      "outcome": "passed"
+    },
+    {
+      "action": "slot.acquire",
+      "outcome": "passed"
+    },
+    {
+      "action": "environment.reserve",
+      "outcome": "passed"
+    },
+    {
+      "action": "slot.acquire",
+      "outcome": "passed"
+    },
+    {
+      "action": "slot.heartbeat",
+      "outcome": "TIME_EXHAUSTED"
+    },
+    {
+      "action": "slot.release",
+      "outcome": "passed"
+    },
+    {
+      "action": "snapshot",
+      "outcome": "passed"
+    },
+    {
+      "action": "order.create",
+      "outcome": "passed"
+    },
+    {
+      "action": "payment.confirm",
+      "outcome": "passed"
+    },
+    {
+      "action": "snapshot",
+      "outcome": "passed"
+    },
+    {
+      "action": "register",
+      "outcome": "passed"
+    }
+  ],
+  "native": {
+    "result": "passed",
+    "checks": 7,
+    "screenshot": "native-account.png"
+  }
+}

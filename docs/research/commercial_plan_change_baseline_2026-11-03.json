@@ -1,0 +1,41 @@
+{
+  "date": "2026-11-03",
+  "scope": "Before commercial browser automation scope update; documentation only.",
+  "files": [
+    {
+      "path": "README.md",
+      "sha256": "50547671fa8b5ed041252f9e6e382f219d9dc3bf6d68903bb3b9ce59fce54c51",
+      "bytes": 5446,
+      "encoding": "UTF-8 no BOM",
+      "newline": "LF"
+    },
+    {
+      "path": "docs/01_开发计划与技术方案.md",
+      "sha256": "5da127a3ebc04c54786b6af67fc060954b80fcbcdfeafcb840db00d80e6e524d",
+      "bytes": 71477,
+      "encoding": "UTF-8 no BOM",
+      "newline": "LF"
+    },
+    {
+      "path": "docs/03_开发进度与任务清单.md",
+      "sha256": "26061149c9ee964b9c6383438ce7cdbb63f2473881b920fd2cfc0c35599e573e",
+      "bytes": 35532,
+      "encoding": "UTF-8 no BOM",
+      "newline": "LF"
+    },
+    {
+      "path": "docs/06_功能边界与源码补全方案.md",
+      "sha256": "d7a880515b782ba5839fae198bfa978fad5df495fa0aa0748ce7e6a4662cd538",
+      "bytes": 41065,
+      "encoding": "UTF-8 no BOM",
+      "newline": "LF"
+    },
+    {
+      "path": "docs/10_管理后台功能与开发计划.md",
+      "sha256": "3ae1396059b3e54b39da8c06b7f283c436aaff48e1f6610d2b0feaa00a78fe4f",
+      "bytes": 80488,
+      "encoding": "UTF-8 no BOM",
+      "newline": "LF"
+    }
+  ]
+}

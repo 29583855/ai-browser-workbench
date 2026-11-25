@@ -1,0 +1,408 @@
+{
+  "date": "2026-11-05",
+  "result": "passed",
+  "checks": [
+    "encrypted-at-rest-metadata-only-scoped-create-and-cas",
+    "profile-denial-reflection-redaction-and-sticky-screenshot-block",
+    "typed-variables-read-output-foreach-subflow-results-breakpoints-step-and-stepOver",
+    "stepOut-and-cancel-at-exact-depth-boundary",
+    "six-static-type-scope-and-expression-rejections",
+    "expiry-rotation-revision-delete-and-audit",
+    "restart-persistence-and-secret-free-product-checkpoints",
+    "tampered-ciphertext-fails-closed"
+  ],
+  "executableSha256": "470fb0b97387c013db2e305e783e4415f543f50f41e016e4335b38a047033430",
+  "negativeValidation": [
+    {
+      "case": "unknown-variable",
+      "errorCode": "WORKFLOW_TYPE_INVALID"
+    },
+    {
+      "case": "wrong-assignment-type",
+      "errorCode": "WORKFLOW_TYPE_INVALID"
+    },
+    {
+      "case": "list-bound",
+      "errorCode": "WORKFLOW_TYPE_INVALID"
+    },
+    {
+      "case": "secret-expression-escape",
+      "errorCode": "WORKFLOW_SCHEMA_INVALID"
+    },
+    {
+      "case": "host-expression",
+      "errorCode": "WORKFLOW_SCHEMA_INVALID"
+    },
+    {
+      "case": "invalid-initial",
+      "errorCode": "WORKFLOW_TYPE_INVALID"
+    }
+  ],
+  "calls": [
+    {
+      "sequence": 1,
+      "command": "profile_create",
+      "outcome": "passed"
+    },
+    {
+      "sequence": 2,
+      "command": "profile_create",
+      "outcome": "passed"
+    },
+    {
+      "sequence": 3,
+      "command": "credential_create",
+      "outcome": "passed"
+    },
+    {
+      "sequence": 4,
+      "command": "credential_list",
+      "outcome": "passed"
+    },
+    {
+      "sequence": 5,
+      "command": "credential_rotate",
+      "outcome": "REVISION_CONFLICT"
+    },
+    {
+      "sequence": 6,
+      "command": "credential_create",
+      "outcome": "CREDENTIAL_SCOPE_REQUIRED"
+    },
+    {
+      "sequence": 7,
+      "command": "browser_start",
+      "outcome": "passed"
+    },
+    {
+      "sequence": 8,
+      "command": "browser_start",
+      "outcome": "passed"
+    },
+    {
+      "sequence": 9,
+      "command": "lease_acquire",
+      "outcome": "passed"
+    },
+    {
+      "sequence": 10,
+      "command": "lease_acquire",
+      "outcome": "passed"
+    },
+    {
+      "sequence": 11,
+      "command": "browser_navigate",
+      "outcome": "passed"
+    },
+    {
+      "sequence": 12,
+      "command": "browser_navigate",
+      "outcome": "passed"
+    },
+    {
+      "sequence": 13,
+      "command": "page_locate",
+      "outcome": "passed"
+    },
+    {
+      "sequence": 14,
+      "command": "page_fill_secret",
+      "outcome": "CREDENTIAL_SCOPE_DENIED"
+    },
+    {
+      "sequence": 15,
+      "command": "page_screenshot",
+      "outcome": "passed"
+    },
+    {
+      "sequence": 16,
+      "command": "page_locate",
+      "outcome": "passed"
+    },
+    {
+      "sequence": 17,
+      "command": "page_fill_secret",
+      "outcome": "passed"
+    },
+    {
+      "sequence": 18,
+      "command": "page_locate",
+      "outcome": "passed"
+    },
+    {
+      "sequence": 19,
+      "command": "page_text",
+      "outcome": "passed"
+    },
+    {
+      "sequence": 20,
+      "command": "page_snapshot",
+      "outcome": "passed"
+    },
+    {
+      "sequence": 21,
+      "command": "page_screenshot",
+      "outcome": "SENSITIVE_CAPTURE_BLOCKED"
+    },
+    {
+      "sequence": 22,
+      "command": "browser_navigate",
+      "outcome": "passed"
+    },
+    {
+      "sequence": 23,
+      "command": "page_screenshot",
+      "outcome": "SENSITIVE_CAPTURE_BLOCKED"
+    },
+    {
+      "sequence": 24,
+      "command": "workflow_validate",
+      "outcome": "passed"
+    },
+    {
+      "sequence": 25,
+      "command": "workflow_publish",
+      "outcome": "passed"
+    },
+    {
+      "sequence": 26,
+      "command": "workflow_run",
+      "outcome": "passed"
+    },
+    {
+      "sequence": 27,
+      "command": "workflow_status",
+      "outcome": "passed"
+    },
+    {
+      "sequence": 28,
+      "command": "workflow_control",
+      "outcome": "passed"
+    },
+    {
+      "sequence": 29,
+      "command": "workflow_status",
+      "outcome": "passed"
+    },
+    {
+      "sequence": 30,
+      "command": "workflow_status",
+      "outcome": "passed"
+    },
+    {
+      "sequence": 31,
+      "command": "workflow_control",
+      "outcome": "passed"
+    },
+    {
+      "sequence": 32,
+      "command": "workflow_status",
+      "outcome": "passed"
+    },
+    {
+      "sequence": 33,
+      "command": "workflow_status",
+      "outcome": "passed"
+    },
+    {
+      "sequence": 34,
+      "command": "workflow_debug",
+      "outcome": "passed"
+    },
+    {
+      "sequence": 35,
+      "command": "workflow_debug",
+      "outcome": "WORKFLOW_DEBUG_INVALID"
+    },
+    {
+      "sequence": 36,
+      "command": "workflow_control",
+      "outcome": "passed"
+    },
+    {
+      "sequence": 37,
+      "command": "workflow_status",
+      "outcome": "passed"
+    },
+    {
+      "sequence": 38,
+      "command": "workflow_status",
+      "outcome": "passed"
+    },
+    {
+      "sequence": 39,
+      "command": "workflow_status",
+      "outcome": "passed"
+    },
+    {
+      "sequence": 40,
+      "command": "workflow_debug",
+      "outcome": "passed"
+    },
+    {
+      "sequence": 41,
+      "command": "workflow_control",
+      "outcome": "passed"
+    },
+    {
+      "sequence": 42,
+      "command": "workflow_status",
+      "outcome": "passed"
+    },
+    {
+      "sequence": 43,
+      "command": "workflow_debug",
+      "outcome": "passed"
+    },
+    {
+      "sequence": 44,
+      "command": "workflow_control",
+      "outcome": "passed"
+    },
+    {
+      "sequence": 45,
+      "command": "workflow_status",
+      "outcome": "passed"
+    },
+    {
+      "sequence": 46,
+      "command": "workflow_debug",
+      "outcome": "WORKFLOW_CONTROL_INVALID"
+    },
+    {
+      "sequence": 47,
+      "command": "workflow_run",
+      "outcome": "passed"
+    },
+    {
+      "sequence": 48,
+      "command": "workflow_status",
+      "outcome": "passed"
+    },
+    {
+      "sequence": 49,
+      "command": "workflow_status",
+      "outcome": "passed"
+    },
+    {
+      "sequence": 50,
+      "command": "workflow_status",
+      "outcome": "passed"
+    },
+    {
+      "sequence": 51,
+      "command": "workflow_debug",
+      "outcome": "passed"
+    },
+    {
+      "sequence": 52,
+      "command": "workflow_control",
+      "outcome": "passed"
+    },
+    {
+      "sequence": 53,
+      "command": "workflow_status",
+      "outcome": "passed"
+    },
+    {
+      "sequence": 54,
+      "command": "workflow_status",
+      "outcome": "passed"
+    },
+    {
+      "sequence": 55,
+      "command": "workflow_status",
+      "outcome": "passed"
+    },
+    {
+      "sequence": 56,
+      "command": "workflow_control",
+      "outcome": "passed"
+    },
+    {
+      "sequence": 57,
+      "command": "workflow_status",
+      "outcome": "passed"
+    },
+    {
+      "sequence": 58,
+      "command": "workflow_validate",
+      "outcome": "passed"
+    },
+    {
+      "sequence": 59,
+      "command": "workflow_validate",
+      "outcome": "passed"
+    },
+    {
+      "sequence": 60,
+      "command": "workflow_validate",
+      "outcome": "passed"
+    },
+    {
+      "sequence": 61,
+      "command": "workflow_validate",
+      "outcome": "passed"
+    },
+    {
+      "sequence": 62,
+      "command": "workflow_validate",
+      "outcome": "passed"
+    },
+    {
+      "sequence": 63,
+      "command": "workflow_validate",
+      "outcome": "passed"
+    },
+    {
+      "sequence": 64,
+      "command": "credential_create",
+      "outcome": "passed"
+    },
+    {
+      "sequence": 65,
+      "command": "page_locate",
+      "outcome": "passed"
+    },
+    {
+      "sequence": 66,
+      "command": "page_fill_secret",
+      "outcome": "CREDENTIAL_EXPIRED"
+    },
+    {
+      "sequence": 67,
+      "command": "credential_rotate",
+      "outcome": "passed"
+    },
+    {
+      "sequence": 68,
+      "command": "credential_delete",
+      "outcome": "REVISION_CONFLICT"
+    },
+    {
+      "sequence": 69,
+      "command": "credential_delete",
+      "outcome": "passed"
+    },
+    {
+      "sequence": 70,
+      "command": "page_fill_secret",
+      "outcome": "CREDENTIAL_NOT_FOUND"
+    },
+    {
+      "sequence": 71,
+      "command": "credential_audit",
+      "outcome": "passed"
+    },
+    {
+      "sequence": 72,
+      "command": "browser_stop",
+      "outcome": "passed"
+    },
+    {
+      "sequence": 73,
+      "command": "browser_stop",
+      "outcome": "passed"
+    }
+  ]
+}

@@ -1,0 +1,54 @@
+Window: "AI 浏览器工作台", App: workbench.exe.
+	0 窗口 AI 浏览器工作台 Secondary Actions: Raise
+		1 文本 浏览器工作台
+		2 文本 管理独立环境，调试网页与自动化流程
+		3 文本 准备就绪
+		4 文本 3 个环境
+		5 文本 环境库
+		6 列表 环境库
+			7 列表项目 (selectable) 登录注册回归 [0f39847d] 可用
+			8 列表项目 (selectable) 订单流程 · 开发 [c6933f2f] 可用
+			9 列表项目 (selectable) 本地 Web 调试 [f9b4f761] 可用
+		10 文本 环境与导航 ID: 601
+		11 文本 环境名称 ID: 602
+		12 编辑 (settable, string) 环境名称 Description: 输入环境名称 Value: 登录注册回归 ID: 201
+		13 文本 页面地址 ID: 603
+		14 编辑 (settable, string) 页面地址 Value: http://127.0.0.1:3000/login ID: 202
+		15 文本 CSS 选择器
+		16 编辑 (settable, string) CSS 选择器 Description: CSS 选择器或 JSON 文件完整路径 Value: #username ID: 203
+		17 文本 填写 / 选项值
+		18 编辑 (settable, string) 填写 / 选项值 Description: 隐藏输入，提交后清空 ID: 204
+		19 按钮 新建环境 ID: 101
+		20 按钮 启动 ID: 102
+		21 按钮 停止 ID: 103
+		22 按钮 打开地址 ID: 104
+		23 按钮 语义快照 ID: 105
+		24 按钮 接管/撤销 ID: 106
+		25 按钮 定位 ID: 107
+		26 按钮 填写 ID: 108
+		27 按钮 点击 ID: 109
+		28 按钮 读取文本 ID: 110
+		29 按钮 取控制 ID: 111
+		30 按钮 探查高亮 ID: 123
+		31 按钮 清除高亮 ID: 124
+		32 按钮 预览点击 ID: 125
+		33 按钮 选择选项 ID: 126
+		34 按钮 网页操作 ID: 501
+		35 按钮 页面与诊断 ID: 502
+		36 按钮 流程与数据 ID: 503
+		37 按钮 环境管理 ID: 504
+		38 文本 先定位或探查元素，再填写、点击并读取结果。填写值提交后自动清空。
+		39 文本 返回详情 · 可选择复制
+		40 文本 操作结果
+		41 编辑 操作结果 Value: 欢迎使用浏览器工作台。 1. 新建或选择左侧环境 2. 启动浏览器并打开页面地址 3. 定位元素，填写或点击，再检查操作结果 ID: 205
+			42 滚动条 (disabled, settable, float) 垂直滚动条 Value: 0 ID: NonClientVerticalScrollBar
+				43 按钮 (disabled) 上一行 ID: UpButton
+				44 按钮 (disabled) 下一行 ID: DownButton
+		45 标题栏 (settable, string) Value: AI 浏览器工作台
+			46 菜单栏 系统 ID: MenuBar
+				47 菜单项 系统
+			48 按钮 最小化
+			49 按钮 最大化
+			50 按钮 关闭
+
+The focused UI element is 0 窗口 AI 浏览器工作台 Secondary Actions: Raise.

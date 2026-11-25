@@ -1,0 +1,20 @@
+{
+  "date": "2026-11-04T11:17:47.015112+08:00",
+  "result": "passed",
+  "checks": [
+    "archive-and-every-file-verified-pristine-data",
+    "self-test-passes-with-desktop-open-and-keeps-user-catalog-unchanged",
+    "normal-gui-launcher-and-close",
+    "cli-mcp-launchers-no-extra-stdout-and-consistent-version",
+    "api-launcher-from-unrelated-cwd-authentication-and-shutdown",
+    "double-click-self-test-cmd-full-hash-check",
+    "tampered-package-rejected",
+    "missing-crt-rejected-before-starting-executables",
+    "copied-source-vs2019-release-build-and-tests"
+  ],
+  "secondCleanMachineTested": false,
+  "archiveSha256": "a05e3098e8e7f426c7ad2044b6e699be527493a1f67bc8cfe0b5748c57a7e5cf",
+  "copiedFolder": "E:\\project\\webexploer_codex\\build\\evidence\\implementation-20261104\\final-package-r1\\中文 空格部署\\AI-Browser-Workbench-0.1.2-win64-features-r1",
+  "version": "0.1.2-poc",
+  "manifestFiles": 801
+}

@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="zh-CN">
+<meta charset="utf-8">
+<title>录制验收夹具</title>
+<style>body{font:16px system-ui;max-width:720px;margin:40px auto;background:#f4f7fc;color:#183153}label{display:block;margin:14px 0}input,button,select{padding:10px;border:1px solid #abc;border-radius:6px}output{display:block;padding:12px;background:white;margin-top:12px}</style>
+<h1>录制验收夹具</h1>
+<form id="form">
+  <label>帐号 <input id="user" name="username" autocomplete="username"></label>
+  <label>密码 <input id="password" name="password" type="password" autocomplete="current-password"></label>
+  <label>地区 <select id="region"><option value="cn">中国</option><option value="us">美国</option></select></label>
+  <button id="submit" type="submit">提交一次</button>
+</form>
+<button id="plain" type="button">普通点击</button>
+<button id="next" type="button">前往下一文档</button>
+<output id="submits">0</output><output id="clicks">0</output><output id="status">ready</output>
+<script>
+"use strict";
+// 用途：独立计数真实表单提交，检测录制器是否重复派发；日期：2026-11-04。
+document.getElementById("form").addEventListener("submit", event => {
+    event.preventDefault();
+    const output = document.getElementById("submits");
+    output.textContent = String(Number(output.textContent) + 1);
+    document.getElementById("status").textContent = "submitted";
+});
+// 用途：计数普通按钮点击，用于暂停和停止后监听解绑验证；日期：2026-11-04。
+document.getElementById("plain").addEventListener("click", () => {
+    const output = document.getElementById("clicks");
+    output.textContent = String(Number(output.textContent) + 1);
+});
+// 用途：触发实际新文档，检测预注册监听连续性；日期：2026-11-04。
+document.getElementById("next").addEventListener("click", () => { location.href = "/recording-next"; });
+</script>
+</html>

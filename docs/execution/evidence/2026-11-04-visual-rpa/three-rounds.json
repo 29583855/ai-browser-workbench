@@ -1,0 +1,105 @@
+{
+  "date": "2026-11-04",
+  "result": "passed",
+  "runs": [
+    {
+      "configuration": "Debug",
+      "kind": "canvas",
+      "round": 1,
+      "report": "docs/execution/evidence/2026-11-04-visual-rpa/Debug-canvas-verified-1.json",
+      "checks": 19,
+      "paintP95Ms": 17.3661
+    },
+    {
+      "configuration": "Debug",
+      "kind": "recording",
+      "round": 1,
+      "report": "docs/execution/evidence/2026-11-04-visual-rpa/Debug-recording-verified-1/report.json",
+      "checks": 11,
+      "commands": 101
+    },
+    {
+      "configuration": "Debug",
+      "kind": "canvas",
+      "round": 2,
+      "report": "docs/execution/evidence/2026-11-04-visual-rpa/Debug-canvas-verified-2.json",
+      "checks": 19,
+      "paintP95Ms": 17.3174
+    },
+    {
+      "configuration": "Debug",
+      "kind": "recording",
+      "round": 2,
+      "report": "docs/execution/evidence/2026-11-04-visual-rpa/Debug-recording-verified-2/report.json",
+      "checks": 11,
+      "commands": 101
+    },
+    {
+      "configuration": "Debug",
+      "kind": "canvas",
+      "round": 3,
+      "report": "docs/execution/evidence/2026-11-04-visual-rpa/Debug-canvas-verified-3.json",
+      "checks": 19,
+      "paintP95Ms": 17.4092
+    },
+    {
+      "configuration": "Debug",
+      "kind": "recording",
+      "round": 3,
+      "report": "docs/execution/evidence/2026-11-04-visual-rpa/Debug-recording-verified-3/report.json",
+      "checks": 11,
+      "commands": 102
+    },
+    {
+      "configuration": "Release",
+      "kind": "canvas",
+      "round": 1,
+      "report": "docs/execution/evidence/2026-11-04-visual-rpa/Release-canvas-verified-1.json",
+      "checks": 19,
+      "paintP95Ms": 17.417
+    },
+    {
+      "configuration": "Release",
+      "kind": "recording",
+      "round": 1,
+      "report": "docs/execution/evidence/2026-11-04-visual-rpa/Release-recording-verified-1/report.json",
+      "checks": 11,
+      "commands": 106
+    },
+    {
+      "configuration": "Release",
+      "kind": "canvas",
+      "round": 2,
+      "report": "docs/execution/evidence/2026-11-04-visual-rpa/Release-canvas-verified-2.json",
+      "checks": 19,
+      "paintP95Ms": 17.4196
+    },
+    {
+      "configuration": "Release",
+      "kind": "recording",
+      "round": 2,
+      "report": "docs/execution/evidence/2026-11-04-visual-rpa/Release-recording-verified-2/report.json",
+      "checks": 11,
+      "commands": 104
+    },
+    {
+      "configuration": "Release",
+      "kind": "canvas",
+      "round": 3,
+      "report": "docs/execution/evidence/2026-11-04-visual-rpa/Release-canvas-verified-3.json",
+      "checks": 19,
+      "paintP95Ms": 17.429
+    },
+    {
+      "configuration": "Release",
+      "kind": "recording",
+      "round": 3,
+      "report": "docs/execution/evidence/2026-11-04-visual-rpa/Release-recording-verified-3/report.json",
+      "checks": 11,
+      "commands": 106
+    }
+  ],
+  "canvasChecks": 114,
+  "recordingChecks": 66,
+  "recordingCommands": 620
+}

@@ -1,0 +1,102 @@
+{
+  "date": "2026-11-05T09:38:53.254132+08:00",
+  "result": "passed",
+  "runs": [
+    {
+      "configuration": "Debug",
+      "round": 1,
+      "suite": "canvas",
+      "exitCode": 0,
+      "report": "build\\implementation-visual-regression-r3\\Debug-canvas-1.json",
+      "binarySha256": "3fd6025405365b186c2a9b8c2c79ae25376574f5d4d65a00150e93570490b405",
+      "checks": 19,
+      "paintP95Ms": 17.2801
+    },
+    {
+      "configuration": "Debug",
+      "round": 1,
+      "suite": "recovery",
+      "exitCode": 0,
+      "report": "build\\implementation-visual-regression-r3\\Debug-recovery-1\\report.json",
+      "binarySha256": "3fd6025405365b186c2a9b8c2c79ae25376574f5d4d65a00150e93570490b405",
+      "checks": 7
+    },
+    {
+      "configuration": "Debug",
+      "round": 1,
+      "suite": "shutdown",
+      "exitCode": 0,
+      "report": "build\\implementation-visual-regression-r3\\Debug-shutdown-1\\report.json",
+      "binarySha256": "3fd6025405365b186c2a9b8c2c79ae25376574f5d4d65a00150e93570490b405",
+      "checks": 6
+    },
+    {
+      "configuration": "Debug",
+      "round": 1,
+      "suite": "visual_desktop",
+      "exitCode": 0,
+      "report": "build\\implementation-visual-regression-r3\\Debug-visual_desktop-1\\report.json",
+      "binarySha256": "3fd6025405365b186c2a9b8c2c79ae25376574f5d4d65a00150e93570490b405",
+      "checks": 4
+    },
+    {
+      "configuration": "Debug",
+      "round": 1,
+      "suite": "recording",
+      "exitCode": 0,
+      "report": "build\\implementation-visual-regression-r3\\Debug-recording-1\\report.json",
+      "binarySha256": "8bd88d3db99c9b5f2846f2e5a0fa7371df46a15e2952f941c51bbdfe5bd55549",
+      "checks": 11,
+      "commands": 101
+    },
+    {
+      "configuration": "Release",
+      "round": 1,
+      "suite": "canvas",
+      "exitCode": 0,
+      "report": "build\\implementation-visual-regression-r3\\Release-canvas-1.json",
+      "binarySha256": "4d8c17b55b4d5f799210c6ea979f2c675860675b72008a1a304915f16a95a0ff",
+      "checks": 19,
+      "paintP95Ms": 17.5082
+    },
+    {
+      "configuration": "Release",
+      "round": 1,
+      "suite": "recovery",
+      "exitCode": 0,
+      "report": "build\\implementation-visual-regression-r3\\Release-recovery-1\\report.json",
+      "binarySha256": "4d8c17b55b4d5f799210c6ea979f2c675860675b72008a1a304915f16a95a0ff",
+      "checks": 7
+    },
+    {
+      "configuration": "Release",
+      "round": 1,
+      "suite": "shutdown",
+      "exitCode": 0,
+      "report": "build\\implementation-visual-regression-r3\\Release-shutdown-1\\report.json",
+      "binarySha256": "4d8c17b55b4d5f799210c6ea979f2c675860675b72008a1a304915f16a95a0ff",
+      "checks": 6
+    },
+    {
+      "configuration": "Release",
+      "round": 1,
+      "suite": "visual_desktop",
+      "exitCode": 0,
+      "report": "build\\implementation-visual-regression-r3\\Release-visual_desktop-1\\report.json",
+      "binarySha256": "4d8c17b55b4d5f799210c6ea979f2c675860675b72008a1a304915f16a95a0ff",
+      "checks": 4
+    },
+    {
+      "configuration": "Release",
+      "round": 1,
+      "suite": "recording",
+      "exitCode": 0,
+      "report": "build\\implementation-visual-regression-r3\\Release-recording-1\\report.json",
+      "binarySha256": "cf4ac7726dca54c8b3e6085183cf63a237b6bcfe1bbb5b38e2d2df08a7067bd8",
+      "checks": 11,
+      "commands": 105
+    }
+  ],
+  "scope": "Main-document recorder, picker, native canvas, desktop publication and recovery; not the full VR01-VR36 acceptance matrix",
+  "checks": 94
+}

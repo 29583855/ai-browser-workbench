@@ -1,0 +1,41 @@
+{
+  "date": "2026-11-04",
+  "result": "failed",
+  "checks": [],
+  "binarySha256": "a3c7973d5da0674c1416b541d95b25e8a3094fb90f86e88f0301e6b355c986fe",
+  "scope": "Main-document preview; frame/Shadow/picker/real desktop IME not accepted",
+  "error": "{'error': {'automaticRetryAllowed': False, 'code': 'CDP_COMMAND_FAILED', 'message': 'Overlay.setInspectMode: CDP command rejected', 'outcomeUnknown': False}, 'id': 7, 'ok': False}",
+  "calls": [
+    {
+      "sequence": 1,
+      "command": "profile_create",
+      "outcome": "passed"
+    },
+    {
+      "sequence": 2,
+      "command": "browser_start",
+      "outcome": "passed"
+    },
+    {
+      "sequence": 3,
+      "command": "lease_acquire",
+      "outcome": "passed"
+    },
+    {
+      "sequence": 4,
+      "command": "browser_navigate",
+      "outcome": "passed"
+    },
+    {
+      "sequence": 5,
+      "command": "page_pick_start",
+      "outcome": "passed"
+    },
+    {
+      "sequence": 6,
+      "command": "page_pick_read",
+      "outcome": "passed"
+    }
+  ],
+  "commandCount": 6
+}

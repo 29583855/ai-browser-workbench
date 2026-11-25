@@ -1,0 +1,51 @@
+{
+  "date": "2026-11-04T12:13:43.524594+08:00",
+  "version": "0.1.4-poc",
+  "result": "passed",
+  "scope": "Implemented local inspector and form increment; not complete product acceptance",
+  "nativeEvidence": "build/evidence/native-20261104-120804",
+  "cmakeEvidence": "build/evidence/run-20261104-120814",
+  "configurations": [
+    "Debug",
+    "Release"
+  ],
+  "browserCommandsPerConfiguration": 124,
+  "storageChecksPerConfiguration": 29,
+  "apiRequestsPerConfiguration": 54,
+  "apiRawRejectionsPerConfiguration": 5,
+  "pagesChecksPerConfiguration": 6,
+  "inspectorChecksPerConfiguration": 6,
+  "protocolChecksPerConfiguration": 18,
+  "tools": 31,
+  "nativeDesktopChecksPerConfiguration": 7,
+  "nativeDesktopButtonStepsPerConfiguration": 59,
+  "newCommands": [
+    "page_inspect",
+    "page_preview",
+    "page_clear_highlight",
+    "page_select"
+  ],
+  "completedWholePlanTasksThisIncrement": [
+    "T038"
+  ],
+  "T019": "partial",
+  "externalServicesProvided": false,
+  "secondCleanMachineTested": false,
+  "releaseReady": false,
+  "binaries": {
+    "Debug": {
+      "awb-core-tests.exe": "a0be5a961a3ae82c7aea17389c596e425fcb3a97f9aeeade9623ba5575d56782",
+      "awb-storage-tests.exe": "31e52147629f286a2cd88d296b263265c94c7a4012bc9427eedf0df2dafacb24",
+      "workbench-cli.exe": "131c8c28c2a9ea0ec47addcd485952e67dfa70219fe8b1d378e35910af1d1cab",
+      "workbench-mcp.exe": "df0330d110c65d34d3f406ba70d5e748333eefd9f783bc9f86ad90aabef9fd3d",
+      "workbench.exe": "2430cdc3df3dd28be3fe7bd23bc42cd27f809846153a745126697bfd36463aba"
+    },
+    "Release": {
+      "awb-core-tests.exe": "dde928cb9eae56989e77ae878ef4d264402533712b794707b185648332fb8bb5",
+      "awb-storage-tests.exe": "701600048160380e9d05c364816c87b24910aa10d33f71c06d0fe0415a056345",
+      "workbench-cli.exe": "4cba1769d5932bfce33d202cd121fadea1de6dcdab42d2c8f9a0931caaaf8fcd",
+      "workbench-mcp.exe": "b236f1bdbe7734c39c20fffb9c62b50c14bf77619416272fd5232eaa1bf84872",
+      "workbench.exe": "de0b175a5aee207fd9d3f65fdab1cceb3a4b52a1bf5d8ac7ca38876e14bdeb4d"
+    }
+  }
+}

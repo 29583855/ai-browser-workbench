@@ -1,0 +1,107 @@
+{
+  "date": "2026-11-04T11:16:49.082142+08:00",
+  "result": "passed",
+  "checks": [
+    {
+      "name": "cli-invalid-1",
+      "result": "passed",
+      "actual": "INVALID_JSON"
+    },
+    {
+      "name": "cli-invalid-2",
+      "result": "passed",
+      "actual": "INVALID_REQUEST"
+    },
+    {
+      "name": "cli-invalid-3",
+      "result": "passed",
+      "actual": "INVALID_REQUEST"
+    },
+    {
+      "name": "cli-invalid-4",
+      "result": "passed",
+      "actual": "INVALID_REQUEST"
+    },
+    {
+      "name": "cli-invalid-5",
+      "result": "passed",
+      "actual": "INVALID_REQUEST"
+    },
+    {
+      "name": "cli-invalid-6",
+      "result": "passed",
+      "actual": "INVALID_ARGUMENTS"
+    },
+    {
+      "name": "cli-recovers-after-errors",
+      "result": "passed",
+      "actual": true
+    },
+    {
+      "name": "mcp-invalid-1",
+      "result": "passed",
+      "actual": -32700
+    },
+    {
+      "name": "mcp-invalid-2",
+      "result": "passed",
+      "actual": -32600
+    },
+    {
+      "name": "mcp-invalid-3",
+      "result": "passed",
+      "actual": -32600
+    },
+    {
+      "name": "mcp-invalid-4",
+      "result": "passed",
+      "actual": -32600
+    },
+    {
+      "name": "mcp-invalid-5",
+      "result": "passed",
+      "actual": -32600
+    },
+    {
+      "name": "mcp-invalid-6",
+      "result": "passed",
+      "actual": -32002
+    },
+    {
+      "name": "mcp-initialize",
+      "result": "passed",
+      "actual": 3
+    },
+    {
+      "name": "mcp-invalid-params",
+      "result": "passed",
+      "actual": {
+        "code": -32602,
+        "message": "Invalid params"
+      }
+    },
+    {
+      "name": "mcp-recovers-and-lists-current-tools",
+      "result": "passed",
+      "actual": 21
+    },
+    {
+      "name": "mcp-tool-validation",
+      "result": "passed",
+      "actual": "INVALID_ARGUMENTS"
+    },
+    {
+      "name": "mcp-notifications-no-reply-and-ping",
+      "result": "passed",
+      "actual": {
+        "id": 7,
+        "jsonrpc": "2.0",
+        "result": {}
+      }
+    }
+  ],
+  "binarySha256": {
+    "workbench-cli.exe": "8e340239e1e7c4c2c52479bd7f0b66e9501b54bc4d9a5f3ce6ee8bd75a73912b",
+    "workbench-mcp.exe": "64c7c6823b17b21c7c246f145dc85a45928f0de9c9e2c9e0901f13681147e2fb"
+  }
+}

@@ -1,0 +1,7 @@
+Traceback (most recent call last):
+  File "E:\project\webexploer_codex\tests\integration_visual_desktop.py", line 163, in <module>
+    main()
+  File "E:\project\webexploer_codex\tests\integration_visual_desktop.py", line 115, in main
+    assert published["profileId"] == identities[0]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError

@@ -1,0 +1,267 @@
+{
+  "date": "2026-11-05",
+  "result": "passed",
+  "scope": "T052 local library completion; real native desktop, CLI/MCP/HTTP, concurrency/failure/crash regressions; portable delivery verified separately after freeze",
+  "allPlannedWorkComplete": false,
+  "productionReady": false,
+  "toolCount": 92,
+  "catalogSchemaVersion": 7,
+  "reports": [
+    {
+      "name": "storage-debug",
+      "result": "passed",
+      "file": "docs/execution/evidence/2026-11-05-completion-r4/storage-debug-report.json",
+      "source": "build/evidence/native-20261105-130054/Debug-storage-report.json",
+      "sha256": "82fdd8da407ecf27526396663735e9a646ff9350c8cf3f975792f9c3bb2c8349",
+      "checkGroups": 43,
+      "steps": 0,
+      "commandsOrRequests": 0
+    },
+    {
+      "name": "storage-release",
+      "result": "passed",
+      "file": "docs/execution/evidence/2026-11-05-completion-r4/storage-release-report.json",
+      "source": "build/evidence/native-20261105-130054/Release-storage-report.json",
+      "sha256": "82fdd8da407ecf27526396663735e9a646ff9350c8cf3f975792f9c3bb2c8349",
+      "checkGroups": 43,
+      "steps": 0,
+      "commandsOrRequests": 0
+    },
+    {
+      "name": "library-desktop-release",
+      "result": "passed",
+      "file": "docs/execution/evidence/2026-11-05-completion-r4/library-desktop-release-report.json",
+      "source": "build/completion-r4-library-final/report.json",
+      "sha256": "625c17c4a176793022ea01317a2fc73d8bf5763d47fc89ca7df62d74a9cab39f",
+      "checkGroups": 6,
+      "steps": 27,
+      "commandsOrRequests": 0
+    },
+    {
+      "name": "library-desktop-debug",
+      "result": "passed",
+      "file": "docs/execution/evidence/2026-11-05-completion-r4/library-desktop-debug-report.json",
+      "source": "build/completion-r4-library-final-debug/report.json",
+      "sha256": "385b8bf2dc6a849775763144e38df5f5cdc4e76812fce93c7e72aaabccb548f0",
+      "checkGroups": 6,
+      "steps": 27,
+      "commandsOrRequests": 0
+    },
+    {
+      "name": "library",
+      "result": "passed",
+      "file": "docs/execution/evidence/2026-11-05-completion-r4/library-report.json",
+      "source": "build/completion-r4-library/report.json",
+      "sha256": "4c344319148cc130f45cceadca712132d77103c3ae8538a04a02f232d9e21bb8",
+      "checkGroups": 4,
+      "steps": 0,
+      "commandsOrRequests": 16
+    },
+    {
+      "name": "lifecycle",
+      "result": "passed",
+      "file": "docs/execution/evidence/2026-11-05-completion-r4/lifecycle-report.json",
+      "source": "build/completion-r4-lifecycle/report.json",
+      "sha256": "86ccc85b4c6f67738f9ee7a5e6967c29e294c05e1b87960ff58973c6bc861378",
+      "checkGroups": 6,
+      "steps": 0,
+      "commandsOrRequests": 5
+    },
+    {
+      "name": "batch-crash",
+      "result": "passed",
+      "file": "docs/execution/evidence/2026-11-05-completion-r4/batch-crash-report.json",
+      "source": "build/completion-r4-batch-crash/report.json",
+      "sha256": "23afb441fa2776d6b300dc1bf209bd137665eb8d92fbd41c8165723141aa4210",
+      "checkGroups": 4,
+      "steps": 0,
+      "commandsOrRequests": 5
+    },
+    {
+      "name": "protocols",
+      "result": "passed",
+      "file": "docs/execution/evidence/2026-11-05-completion-r4/protocols-report.json",
+      "source": "build/completion-r4-protocols/report.json",
+      "sha256": "24e29712abaa0298c3696394b0bd16f575edd7904c2eb5e0f5025c994e07c00d",
+      "checkGroups": 1,
+      "steps": 0,
+      "commandsOrRequests": 0
+    },
+    {
+      "name": "desktop",
+      "result": "passed",
+      "file": "docs/execution/evidence/2026-11-05-completion-r4/desktop-report.json",
+      "source": "build/completion-r4-desktop-final/report.json",
+      "sha256": "81f84ac60302d2c3c43b801d7199b6919bf9c699e87e9fe6f5ff706b372d761d",
+      "checkGroups": 11,
+      "steps": 113,
+      "commandsOrRequests": 0
+    },
+    {
+      "name": "api",
+      "result": "passed",
+      "file": "docs/execution/evidence/2026-11-05-completion-r4/api-report.json",
+      "source": "build/completion-r4-api/report.json",
+      "sha256": "42427fcbbd3b979877955d29289df5902e09387b8fc9fd4ea230eca9407a0411",
+      "checkGroups": 0,
+      "steps": 0,
+      "commandsOrRequests": 94
+    },
+    {
+      "name": "files",
+      "result": "passed",
+      "file": "docs/execution/evidence/2026-11-05-completion-r4/files-report.json",
+      "source": "build/completion-r4-files/report.json",
+      "sha256": "dcc67af8e7be98ac9932ac6601c8d836e34ee4cf5497fa03346b72c6fd3f521e",
+      "checkGroups": 5,
+      "steps": 0,
+      "commandsOrRequests": 75
+    },
+    {
+      "name": "sdk",
+      "result": "passed",
+      "file": "docs/execution/evidence/2026-11-05-completion-r4/sdk-report.json",
+      "source": "build/completion-r4-sdk/report.json",
+      "sha256": "2141f95eb40f9d9905a98d3954818f821d5d54431790e2e1eefd74192cf2725d",
+      "checkGroups": 7,
+      "steps": 0,
+      "commandsOrRequests": 0
+    },
+    {
+      "name": "source-audit",
+      "result": "passed",
+      "file": "docs/execution/evidence/2026-11-05-completion-r4/source-audit.json",
+      "source": "build/source-audit-r4.json",
+      "sha256": "6cd3dc39b27c2839a9940054566f26ca4586fe8c8ac3eb4ff62f514b694f38a5",
+      "checkGroups": 0,
+      "steps": 0,
+      "commandsOrRequests": 0
+    },
+    {
+      "name": "package",
+      "result": "passed",
+      "file": "docs/execution/evidence/2026-11-05-completion-r4/package-report.json",
+      "source": "build/package-r4/report.json",
+      "sha256": "cc77e85a79d53eb40926ed0a9404430e02c0e05ed60b2eda7b7d5eade08de163",
+      "checkGroups": 9,
+      "steps": 0
+    },
+    {
+      "name": "package-protocols",
+      "result": "passed",
+      "file": "docs/execution/evidence/2026-11-05-completion-r4/package-protocols-report.json",
+      "source": "build/completion-r4-package-protocols/report.json",
+      "sha256": "24e29712abaa0298c3696394b0bd16f575edd7904c2eb5e0f5025c994e07c00d",
+      "checkGroups": 1,
+      "steps": 0
+    },
+    {
+      "name": "package-library-ui",
+      "result": "passed",
+      "file": "docs/execution/evidence/2026-11-05-completion-r4/package-library-ui-report.json",
+      "source": "build/completion-r4-package-library-ui/report.json",
+      "sha256": "38f714570880b9bbb325acb62fd7fd8a725a89400ca67f8b629dfa696157cc4b",
+      "checkGroups": 6,
+      "steps": 27
+    },
+    {
+      "name": "package-crash",
+      "result": "passed",
+      "file": "docs/execution/evidence/2026-11-05-completion-r4/package-crash-report.json",
+      "source": "build/completion-r4-package-crash/report.json",
+      "sha256": "b113e7859ec9b0f438c53d665ddf6043f6c9c3f4eefb20d43debbe7282b6be16",
+      "checkGroups": 4,
+      "steps": 0
+    }
+  ],
+  "nativeEvidence": "build/evidence/native-20261105-130054",
+  "binaries": {
+    "Debug": {
+      "awb-core-tests.exe": "52c082d679e487c04b591f2a34a8d8018c3cc46fd6e3e47807b89527214a27a0",
+      "awb-storage-tests.exe": "94338441db5f1f0b2065446118697b1e006c71026de19a7e95d9c80f45d25405",
+      "workbench-cli.exe": "f9f7067d13231c26bffe9fedf5b230da54262d9bf2621d390e43dc6e10a6db43",
+      "workbench-mcp.exe": "be25c2dd515c7a8dd22df6a558ada96314f5d16d71f407b6039a6dfb3ad8d926",
+      "workbench.exe": "1bf7821098a1da454e6e9674ed202a23356539a53809cd1c66c5f4bfe58459f4"
+    },
+    "Release": {
+      "awb-core-tests.exe": "fa92b02fef7fdcde885b0c05f89a64206d5c9ab0143396cdf27f992df47b3972",
+      "awb-storage-tests.exe": "50dcb32600373646ff2b0d0ea40e2c89e1fb8193f26ee52ef0ea9849716b2845",
+      "workbench-cli.exe": "e48a5dc0a3d79f17efc8d275e6e31c2a0b1712e70395218093ad5a46f6ce41f9",
+      "workbench-mcp.exe": "461d6d9edbefa61c2a184a839510c104f3584bea398fe30009a487fba33caec8",
+      "workbench.exe": "f664104be38b532cc29a23ec4453c1a265e54d973e63ff639ca25b01d5fdee8a"
+    }
+  },
+  "deliveryStatus": "passed",
+  "notCompleted": [
+    "central tenants/roles/seats/nodes/global quota grants",
+    "orders/payments/usage/renewal/ledger",
+    "authenticated HTTPS/SSH proxies and leak matrix",
+    "cross-frame/OOPIF/complex recording and structured workflow property forms",
+    "timezone scheduling and diagnostic evidence packages",
+    "signed installer/update, independent clean machine and long-run acceptance"
+  ],
+  "planStatus": {
+    "local": {
+      "tasks": 110,
+      "states": {
+        "完成": 25,
+        "进行中": 38,
+        "未开始": 47
+      },
+      "completedBaselineDays": 54.0,
+      "baselineDays": 317,
+      "weightedTaskAcceptancePercent": 17.03
+    },
+    "admin": {
+      "tasks": 48,
+      "states": {
+        "未开始": 48
+      },
+      "completedBaselineDays": 0,
+      "baselineDays": 252,
+      "weightedTaskAcceptancePercent": 0.0
+    },
+    "commerce": {
+      "tasks": 40,
+      "states": {
+        "未开始": 40
+      },
+      "completedBaselineDays": 0,
+      "baselineDays": 223,
+      "weightedTaskAcceptancePercent": 0.0
+    }
+  },
+  "visualPlanStatus": {
+    "completed": 6,
+    "inProgress": 19,
+    "unstarted": 3
+  },
+  "cmakeCtest": {
+    "configuration": "Release",
+    "result": "passed",
+    "tests": 3,
+    "log": "docs/execution/evidence/2026-11-05-completion-r4/r4-ctest.log"
+  },
+  "auditOwnSources": 102,
+  "finalDelivery": {
+    "archive": "dist/AI-Browser-Workbench-0.1.11-win64-automation-r4.zip",
+    "bytes": 230109028,
+    "sha256": "f341d0d712754ead661e9e8e0be11a5247b1ddc8a49a818dd92db21a58d1f1f9",
+    "manifestFiles": 2022,
+    "deploymentChecks": 9,
+    "transportChannels": 3,
+    "libraryDesktopChecks": 6,
+    "libraryDesktopSteps": 27,
+    "realProcessCrashChecks": 4,
+    "sourceFrozenBeforeDeploymentTests": true,
+    "cleanMachine": false,
+    "deploymentReport": "docs/execution/evidence/2026-11-05-completion-r4/package-report.json",
+    "transportReport": "docs/execution/evidence/2026-11-05-completion-r4/package-protocols-report.json",
+    "libraryReport": "docs/execution/evidence/2026-11-05-completion-r4/package-library-ui-report.json"
+  },
+  "migrationPreservation": {
+    "result": "passed",
+    "file": "docs/execution/evidence/2026-11-05-completion-r4/migration-preservation.json",
+    "priorSixRawSqlByteStringsUnchanged": true
+  }
+}

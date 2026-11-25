@@ -1,0 +1,391 @@
+{
+  "date": "2026-11-04",
+  "version": "0.1.10-poc",
+  "result": "passed",
+  "scope": "Local implemented feature regression; not full product acceptance or second-machine verification",
+  "builds": {
+    "native": "native-final",
+    "cmake": "cmake-final"
+  },
+  "cmakeSuites": [
+    {
+      "suite": "Debug-api",
+      "report": "cmake-final/Debug-api/report.json",
+      "result": "passed",
+      "sha256": "8c5092193270dd17636dd06d9d1be29687a9921d5816598167209deab334348b"
+    },
+    {
+      "suite": "Debug-browser",
+      "report": "cmake-final/Debug-browser/report.json",
+      "result": "passed",
+      "sha256": "49e94441c059c89da6809fd1f42e0a2948d47ace36b2eb856f94362809a41c26"
+    },
+    {
+      "suite": "Debug-diagnostics",
+      "report": "cmake-final/Debug-diagnostics/report.json",
+      "result": "passed",
+      "sha256": "818f04bda90d877403c5c9870d63205973494b6887e9efd0743c21cbc5480eb9"
+    },
+    {
+      "suite": "Debug-extraction",
+      "report": "cmake-final/Debug-extraction/report.json",
+      "result": "passed",
+      "sha256": "1c04650b896ff643080d2ffa67073ca2848e8b7da8df64560bcacd5f474e941e"
+    },
+    {
+      "suite": "Debug-inspector",
+      "report": "cmake-final/Debug-inspector/report.json",
+      "result": "passed",
+      "sha256": "c01b5a6f1f5550f547f20586bc75e585deedd502802f462b65237d7323dbfdc5"
+    },
+    {
+      "suite": "Debug-lifecycle",
+      "report": "cmake-final/Debug-lifecycle/report.json",
+      "result": "passed",
+      "sha256": "36134cba80ad93a5b9e8de7ab2fd7b17d52145e2f875c459060494032c8feaa0"
+    },
+    {
+      "suite": "Debug-mcp",
+      "report": "cmake-final/Debug-mcp/report.json",
+      "result": "passed",
+      "sha256": "579267fbc5a9c9fbcb3f98cc274033a7aa53f0548b60065e32b719b6ca5b22be"
+    },
+    {
+      "suite": "Debug-pages",
+      "report": "cmake-final/Debug-pages/report.json",
+      "result": "passed",
+      "sha256": "610dce6698f2a1deb8e440b642e8ec02a131315ebafc215edc3088f17bda1c31"
+    },
+    {
+      "suite": "Debug-protocol",
+      "report": "cmake-final/Debug-protocol/report.json",
+      "result": "passed",
+      "sha256": "7762d029690589eac32bf1d1381145240760f7b773866d9593db68ce26e80fc8"
+    },
+    {
+      "suite": "Debug-proxy",
+      "report": "cmake-final/Debug-proxy/report.json",
+      "result": "passed",
+      "sha256": "549d359e62c39d8b612a8d9dce5bc8ff58cbd658ab8e5ee99a7be90c25de1e85"
+    },
+    {
+      "suite": "Debug-recovery",
+      "report": "cmake-final/Debug-recovery/report.json",
+      "result": "passed",
+      "sha256": "174386e62c318b27cd4c8e8a6a31db33dd0cc4eafe4fd2abe8a3be94db79d284"
+    },
+    {
+      "suite": "Debug-runtime",
+      "report": "cmake-final/Debug-runtime/report.json",
+      "result": "passed",
+      "sha256": "6b4d76559693ebc01acd7c92b991ef55295e647ee26a8a560fef38493faf7317"
+    },
+    {
+      "suite": "Debug-socks",
+      "report": "cmake-final/Debug-socks/report.json",
+      "result": "passed",
+      "sha256": "a05fdbc0f01334738d205e15747b9ee7f10d08ddfb5f092c7576837e738a0d40"
+    },
+    {
+      "suite": "Debug-storage_paths",
+      "report": "cmake-final/Debug-storage_paths/report.json",
+      "result": "passed",
+      "sha256": "0085f3da7d4e34fbdd1a395a00d6b850de4bc5f101225e2ca8c44dcda65d075a"
+    },
+    {
+      "suite": "Debug-workflow",
+      "report": "cmake-final/Debug-workflow/report.json",
+      "result": "passed",
+      "sha256": "8584ac541931d3a0357449e7ec86ebac121b2ee711b364da51e252bdf13f0990"
+    },
+    {
+      "suite": "Release-api",
+      "report": "cmake-final/Release-api/report.json",
+      "result": "passed",
+      "sha256": "9b7d192fc25abe99a95f0343b5457fe52bc8350e5b9851fa0b5bd56c3417369e"
+    },
+    {
+      "suite": "Release-browser",
+      "report": "cmake-final/Release-browser/report.json",
+      "result": "passed",
+      "sha256": "7f2d4586b32872dd6a483e4be76c3c37248856a5551cc6d5e01005840e2920cc"
+    },
+    {
+      "suite": "Release-diagnostics",
+      "report": "cmake-final/Release-diagnostics/report.json",
+      "result": "passed",
+      "sha256": "fb6549611c5e076178acf8d1efea3fcab6502d3b4abe44a2dc885782441cb451"
+    },
+    {
+      "suite": "Release-extraction",
+      "report": "cmake-final/Release-extraction/report.json",
+      "result": "passed",
+      "sha256": "f40a2051cc9da3fd7e400e67e7586a712612b44c6ffda58eb0eb6c19cf861d93"
+    },
+    {
+      "suite": "Release-inspector",
+      "report": "cmake-final/Release-inspector/report.json",
+      "result": "passed",
+      "sha256": "8d03ed57e5454cd053eb5920aafbc6949ebd00ab8220a7efb90c7d4bfece02b4"
+    },
+    {
+      "suite": "Release-lifecycle",
+      "report": "cmake-final/Release-lifecycle/report.json",
+      "result": "passed",
+      "sha256": "b61584425283fe63736b26e07a149c2d870df70aea8c1fd150da39526198161b"
+    },
+    {
+      "suite": "Release-mcp",
+      "report": "cmake-final/Release-mcp/report.json",
+      "result": "passed",
+      "sha256": "0704d0b30eb0d2bff949f31a123d6dd44713f5bb128d16a53188ee7cc49f1f4c"
+    },
+    {
+      "suite": "Release-pages",
+      "report": "cmake-final/Release-pages/report.json",
+      "result": "passed",
+      "sha256": "bf4fc8691e96434690e89a40b3249c8d782fac676dcdb0f015a8d2350effa572"
+    },
+    {
+      "suite": "Release-protocol",
+      "report": "cmake-final/Release-protocol/report.json",
+      "result": "passed",
+      "sha256": "9d18dd52091390b94e74120843b1c83fc1c19b824ba411cd0e4c5a382fd29775"
+    },
+    {
+      "suite": "Release-proxy",
+      "report": "cmake-final/Release-proxy/report.json",
+      "result": "passed",
+      "sha256": "5629e668b5f63536669f2769e7f5ca1f1835e6d57ebfbff4e5d5063ba9a0b626"
+    },
+    {
+      "suite": "Release-recovery",
+      "report": "cmake-final/Release-recovery/report.json",
+      "result": "passed",
+      "sha256": "8df00d07c1edc130d3287dceedfaab6364765a5329541e0b0b5648f7527a7cd0"
+    },
+    {
+      "suite": "Release-runtime",
+      "report": "cmake-final/Release-runtime/report.json",
+      "result": "passed",
+      "sha256": "fcd727a17d8643f76e29baf8e08dfb282b8f74a7b6cbdf625d0f3432d6981b51"
+    },
+    {
+      "suite": "Release-socks",
+      "report": "cmake-final/Release-socks/report.json",
+      "result": "passed",
+      "sha256": "87c151423e6bcbced686858c36e1808f7bf312ee35e7c1d3f1ee5bb398fb9eba"
+    },
+    {
+      "suite": "Release-storage_paths",
+      "report": "cmake-final/Release-storage_paths/report.json",
+      "result": "passed",
+      "sha256": "92b224da8d00a3b95b7108bb2dde0b15caa18bad844248ac5701fb81547b360b"
+    },
+    {
+      "suite": "Release-workflow",
+      "report": "cmake-final/Release-workflow/report.json",
+      "result": "passed",
+      "sha256": "92761e66dc177a6c0a0322181697053fb8ded82c08b68f1cfe8bffd1ea14b8f2"
+    }
+  ],
+  "desktop": [
+    {
+      "configuration": "Debug",
+      "result": "passed",
+      "checks": 11,
+      "report": "Debug-desktop-r2/report.json",
+      "binarySha256": "686075329f524b19a6ad7ce1b461425d88bfbf9a0a5fcf6d2bbac3eee31599db"
+    },
+    {
+      "configuration": "Release",
+      "result": "passed",
+      "checks": 11,
+      "report": "Release-desktop-r2/report.json",
+      "binarySha256": "e9f76e7994c42d705f738ad9d738a8afafad10d5e8ba9f601c2be010c9488777"
+    }
+  ],
+  "contentLab": [
+    {
+      "configuration": "Debug",
+      "result": "passed",
+      "checks": 15,
+      "report": "Debug-content-lab/report.json",
+      "binarySha256": "f0e1034d6909e7dc6ebaca99794621c95b36ee4f4e511b7f45f1be51ea74525c"
+    },
+    {
+      "configuration": "Release",
+      "result": "passed",
+      "checks": 15,
+      "report": "Release-content-lab/report.json",
+      "binarySha256": "4b116358109893539e5df7bd569c3ab7da43389fc346143a4b5dfe1fc4debb5e"
+    }
+  ],
+  "visual": {
+    "date": "2026-11-04T23:46:01.613538+08:00",
+    "result": "passed",
+    "runs": [
+      {
+        "configuration": "Debug",
+        "round": 1,
+        "suite": "canvas",
+        "exitCode": 0,
+        "report": "docs\\execution\\evidence\\2026-11-04-review-0.1.10\\visual-final\\Debug-canvas-1.json",
+        "binarySha256": "686075329f524b19a6ad7ce1b461425d88bfbf9a0a5fcf6d2bbac3eee31599db",
+        "checks": 19,
+        "paintP95Ms": 17.4236
+      },
+      {
+        "configuration": "Debug",
+        "round": 1,
+        "suite": "recovery",
+        "exitCode": 0,
+        "report": "docs\\execution\\evidence\\2026-11-04-review-0.1.10\\visual-final\\Debug-recovery-1\\report.json",
+        "binarySha256": "686075329f524b19a6ad7ce1b461425d88bfbf9a0a5fcf6d2bbac3eee31599db",
+        "checks": 6
+      },
+      {
+        "configuration": "Debug",
+        "round": 1,
+        "suite": "shutdown",
+        "exitCode": 0,
+        "report": "docs\\execution\\evidence\\2026-11-04-review-0.1.10\\visual-final\\Debug-shutdown-1\\report.json",
+        "binarySha256": "686075329f524b19a6ad7ce1b461425d88bfbf9a0a5fcf6d2bbac3eee31599db",
+        "checks": 6
+      },
+      {
+        "configuration": "Debug",
+        "round": 1,
+        "suite": "visual_desktop",
+        "exitCode": 0,
+        "report": "docs\\execution\\evidence\\2026-11-04-review-0.1.10\\visual-final\\Debug-visual_desktop-1\\report.json",
+        "binarySha256": "686075329f524b19a6ad7ce1b461425d88bfbf9a0a5fcf6d2bbac3eee31599db",
+        "checks": 4
+      },
+      {
+        "configuration": "Debug",
+        "round": 1,
+        "suite": "recording",
+        "exitCode": 0,
+        "report": "docs\\execution\\evidence\\2026-11-04-review-0.1.10\\visual-final\\Debug-recording-1\\report.json",
+        "binarySha256": "f0e1034d6909e7dc6ebaca99794621c95b36ee4f4e511b7f45f1be51ea74525c",
+        "checks": 11,
+        "commands": 103
+      },
+      {
+        "configuration": "Release",
+        "round": 1,
+        "suite": "canvas",
+        "exitCode": 0,
+        "report": "docs\\execution\\evidence\\2026-11-04-review-0.1.10\\visual-final\\Release-canvas-1.json",
+        "binarySha256": "e9f76e7994c42d705f738ad9d738a8afafad10d5e8ba9f601c2be010c9488777",
+        "checks": 19,
+        "paintP95Ms": 17.5481
+      },
+      {
+        "configuration": "Release",
+        "round": 1,
+        "suite": "recovery",
+        "exitCode": 0,
+        "report": "docs\\execution\\evidence\\2026-11-04-review-0.1.10\\visual-final\\Release-recovery-1\\report.json",
+        "binarySha256": "e9f76e7994c42d705f738ad9d738a8afafad10d5e8ba9f601c2be010c9488777",
+        "checks": 6
+      },
+      {
+        "configuration": "Release",
+        "round": 1,
+        "suite": "shutdown",
+        "exitCode": 0,
+        "report": "docs\\execution\\evidence\\2026-11-04-review-0.1.10\\visual-final\\Release-shutdown-1\\report.json",
+        "binarySha256": "e9f76e7994c42d705f738ad9d738a8afafad10d5e8ba9f601c2be010c9488777",
+        "checks": 6
+      },
+      {
+        "configuration": "Release",
+        "round": 1,
+        "suite": "visual_desktop",
+        "exitCode": 0,
+        "report": "docs\\execution\\evidence\\2026-11-04-review-0.1.10\\visual-final\\Release-visual_desktop-1\\report.json",
+        "binarySha256": "e9f76e7994c42d705f738ad9d738a8afafad10d5e8ba9f601c2be010c9488777",
+        "checks": 4
+      },
+      {
+        "configuration": "Release",
+        "round": 1,
+        "suite": "recording",
+        "exitCode": 0,
+        "report": "docs\\execution\\evidence\\2026-11-04-review-0.1.10\\visual-final\\Release-recording-1\\report.json",
+        "binarySha256": "4b116358109893539e5df7bd569c3ab7da43389fc346143a4b5dfe1fc4debb5e",
+        "checks": 11,
+        "commands": 105
+      }
+    ],
+    "scope": "Main-document recorder, picker, native canvas, desktop publication and recovery; not the full VR01-VR36 acceptance matrix",
+    "checks": 92
+  },
+  "binaries": [
+    {
+      "configuration": "Debug",
+      "path": "build/native-vs2019/x64/Debug/workbench.exe",
+      "sha256": "686075329f524b19a6ad7ce1b461425d88bfbf9a0a5fcf6d2bbac3eee31599db"
+    },
+    {
+      "configuration": "Debug",
+      "path": "build/native-vs2019/x64/Debug/workbench-cli.exe",
+      "sha256": "f0e1034d6909e7dc6ebaca99794621c95b36ee4f4e511b7f45f1be51ea74525c"
+    },
+    {
+      "configuration": "Debug",
+      "path": "build/native-vs2019/x64/Debug/workbench-mcp.exe",
+      "sha256": "21d998ceba815b299082ab0d01f4eb587aa5e414c186ed184c84ef0b372612d0"
+    },
+    {
+      "configuration": "Debug",
+      "path": "build/native-vs2019/x64/Debug/awb-core-tests.exe",
+      "sha256": "18a1439ef05d0752c1b271f252c8c9cd1c50c7e2b5f85c57b862a2a104734472"
+    },
+    {
+      "configuration": "Debug",
+      "path": "build/native-vs2019/x64/Debug/awb-storage-tests.exe",
+      "sha256": "bf9ece32dbf55551bab7281da716eedce392ce83f2ea0493d1a5cfe441601ac7"
+    },
+    {
+      "configuration": "Release",
+      "path": "build/native-vs2019/x64/Release/workbench.exe",
+      "sha256": "e9f76e7994c42d705f738ad9d738a8afafad10d5e8ba9f601c2be010c9488777"
+    },
+    {
+      "configuration": "Release",
+      "path": "build/native-vs2019/x64/Release/workbench-cli.exe",
+      "sha256": "4b116358109893539e5df7bd569c3ab7da43389fc346143a4b5dfe1fc4debb5e"
+    },
+    {
+      "configuration": "Release",
+      "path": "build/native-vs2019/x64/Release/workbench-mcp.exe",
+      "sha256": "e308f54ee1bc5f2f51bc282cbf8423f4f87a90608409e859f282d5029bde4b95"
+    },
+    {
+      "configuration": "Release",
+      "path": "build/native-vs2019/x64/Release/awb-core-tests.exe",
+      "sha256": "03b5b870a058e62a8be153e026f4316f2ae9001bbd91a144a34921619ab6cff7"
+    },
+    {
+      "configuration": "Release",
+      "path": "build/native-vs2019/x64/Release/awb-storage-tests.exe",
+      "sha256": "6818881809fd38448f4b16ad141594836239ee3ebf940738d908b57e70dc45be"
+    }
+  ],
+  "issues": [
+    "R01: block shutdown if any open draft recovery cannot be written",
+    "R02: recreate missing recovery file for unchanged model",
+    "R03: test only; assert final revoked batch rather than transient UI text",
+    "R04: test only; initialize managed root before fault injection"
+  ],
+  "remaining": "All unimplemented task states are retained; administration and commerce remain unstarted",
+  "sourceAudit": "source-final.json",
+  "progress": "progress-final.json",
+  "visualPlan": "plan-final.json",
+  "documentation": "documentation-final.json",
+  "releaseVerification": "release-verification.json",
+  "allReportedLocalChecksPassed": true
+}

@@ -1,0 +1,60 @@
+{
+  "date": "2026-11-04T14:55:42.839116+08:00",
+  "result": "passed",
+  "scope": "unauthenticated HTTP proxy only",
+  "binarySha256": "ec523feb93297ac72f443bf3d003d9185100a4c6375b63bccce14cccdbeadb58",
+  "forwarded": [
+    {
+      "path": "/health",
+      "status": 200
+    },
+    {
+      "path": "/favicon.ico",
+      "status": 404
+    }
+  ],
+  "proxyFailure": "NAVIGATION_FAILED",
+  "noSilentDirectFallback": true,
+  "commands": [
+    {
+      "sequence": 1,
+      "command": "profile_create",
+      "outcome": "PROXY_UNSUPPORTED"
+    },
+    {
+      "sequence": 2,
+      "command": "profile_create",
+      "outcome": "passed"
+    },
+    {
+      "sequence": 3,
+      "command": "browser_start",
+      "outcome": "passed"
+    },
+    {
+      "sequence": 4,
+      "command": "lease_acquire",
+      "outcome": "passed"
+    },
+    {
+      "sequence": 5,
+      "command": "browser_navigate",
+      "outcome": "passed"
+    },
+    {
+      "sequence": 6,
+      "command": "page_wait_text",
+      "outcome": "passed"
+    },
+    {
+      "sequence": 7,
+      "command": "browser_navigate",
+      "outcome": "NAVIGATION_FAILED"
+    },
+    {
+      "sequence": 8,
+      "command": "browser_stop",
+      "outcome": "passed"
+    }
+  ]
+}

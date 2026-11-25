@@ -1,0 +1,156 @@
+{
+  "validationDate": "2026-11-03",
+  "documentVersion": "管理后台专项 1.0 / 主计划 v1.3 补充",
+  "scope": "Documentation consistency only. No product build/runtime acceptance, upstream dependency verification, or proof of a resource-balanced 20-week delivery schedule. Historical reports remain unchanged.",
+  "result": "passed",
+  "errors": [],
+  "checks": {
+    "markdownFiles": 11,
+    "codeFences": 31,
+    "jsonExamples": 20,
+    "markdownTables": 102,
+    "relativeLinks": 58,
+    "researchJsonFilesParsedBeforeThisReport": 7,
+    "encoding": "UTF-8 no BOM / LF",
+    "adminFeatures": 36,
+    "adminAcceptanceCases": 36,
+    "adminWorkPackages": 48,
+    "adminDependencyEdges": 134,
+    "adminAcyclic": true,
+    "adminGroupNetDays": [
+      37,
+      41,
+      47,
+      41,
+      38,
+      48
+    ],
+    "adminBaselineNetDays": 252,
+    "adminPlannedNetDays": [
+      282,
+      302
+    ],
+    "adminImplementedNetDays": 0,
+    "mainTaskIdsPreserved": 122,
+    "localTasksUnchangedCount": 110,
+    "localBaselineNetDays": 317,
+    "localDependencyEdges": 327,
+    "localAcyclic": true,
+    "parentTeamDaysReplaced": 75,
+    "followupCurrentBaselineNetDays": [
+      401,
+      441
+    ],
+    "followupIncludingAdminAllowanceNetDays": [
+      431,
+      491
+    ],
+    "basicBTExecutionsPlanned": 108,
+    "remoteWTExecutionsPlanned": 288,
+    "serialTaskAssumptionCriticalPathEffectiveDays": 104,
+    "serialTaskAssumptionCriticalPath": [
+      "ADM001",
+      "ADM003",
+      "ADM005",
+      "ADM006",
+      "ADM007",
+      "ADM009",
+      "ADM010",
+      "ADM011",
+      "ADM013",
+      "ADM017",
+      "ADM020",
+      "ADM021",
+      "ADM019",
+      "ADM028",
+      "ADM029",
+      "ADM037",
+      "ADM040",
+      "ADM046",
+      "ADM048"
+    ],
+    "serialTaskAssumptionWeeksAt75PercentEfficiency": 27.733333333333334,
+    "parallelScheduleTargetWeeks": 20,
+    "resourceBalancedScheduleProven": false,
+    "FTEAssumption": 4.5,
+    "targetTotalEffectiveCapacityDays": 337.5,
+    "targetTotalCapacityRemainingAfterUpperEstimate": 35.5,
+    "calendarExamples": [
+      {
+        "start": "2027-05-31",
+        "end": "2027-10-17",
+        "weeks": 20.0,
+        "status": "uncommitted parallel target pending resource-level schedule"
+      },
+      {
+        "start": "2027-07-26",
+        "end": "2027-12-12",
+        "weeks": 20.0,
+        "status": "uncommitted parallel target pending resource-level schedule"
+      }
+    ],
+    "preEditHashesMatchHistoricalManifest": true,
+    "productCompiledOrTested": false,
+    "newSourceDependencyResearchPerformed": false,
+    "fullCustomKernelProductionIncluded": false
+  },
+  "checkedMarkdownFiles": [
+    {
+      "path": "README.md",
+      "sha256": "50547671fa8b5ed041252f9e6e382f219d9dc3bf6d68903bb3b9ce59fce54c51",
+      "bytes": 5446
+    },
+    {
+      "path": "docs/01_开发计划与技术方案.md",
+      "sha256": "5da127a3ebc04c54786b6af67fc060954b80fcbcdfeafcb840db00d80e6e524d",
+      "bytes": 71477
+    },
+    {
+      "path": "docs/02_竞品分析与开源项目调研.md",
+      "sha256": "2a6f50acc65e4b417c8b9ce3bee18dc3300070f03969ee7f429fb17e90c4987b",
+      "bytes": 30155
+    },
+    {
+      "path": "docs/03_开发进度与任务清单.md",
+      "sha256": "26061149c9ee964b9c6383438ce7cdbb63f2473881b920fd2cfc0c35599e573e",
+      "bytes": 35532
+    },
+    {
+      "path": "docs/04_AI接口与流程设计样例.md",
+      "sha256": "d268083215c06f175eda3e27665b4af3fe8d1ea2a30fd0b57d1827a19ac1da00",
+      "bytes": 42252
+    },
+    {
+      "path": "docs/05_Web功能测试与便捷操作设计.md",
+      "sha256": "f1ba9b96ae9cebe98ae8c2232f97eb4d9b23c88baf4ed1f9593315bbba108731",
+      "bytes": 27460
+    },
+    {
+      "path": "docs/06_功能边界与源码补全方案.md",
+      "sha256": "d7a880515b782ba5839fae198bfa978fad5df495fa0aa0748ce7e6a4662cd538",
+      "bytes": 41065
+    },
+    {
+      "path": "docs/07_补充源码选型与验证清单.md",
+      "sha256": "7c8687f4428e38cf0331f73454087564548d72e7bc215af7d58bf33519554981",
+      "bytes": 19214
+    },
+    {
+      "path": "docs/08_参考文档对照与功能增强.md",
+      "sha256": "6bb9a6c813c446910cb5ab00546db7aad765420b0c9341e168f9a4b615a59751",
+      "bytes": 30447
+    },
+    {
+      "path": "docs/09_VC2019工程与依赖构建方案.md",
+      "sha256": "a2ff31867b1b525a0dd1dffde0bc8f693b748a7cf3320398666e037747869977",
+      "bytes": 17984
+    },
+    {
+      "path": "docs/10_管理后台功能与开发计划.md",
+      "sha256": "3ae1396059b3e54b39da8c06b7f283c436aaff48e1f6610d2b0feaa00a78fe4f",
+      "bytes": 80488
+    }
+  ],
+  "preEditBaseline": "docs/research/admin_plan_change_baseline_2026-11-03.json",
+  "historicalValidation": "docs/research/plan_validation_v1.3_2026-11-03.json"
+}

@@ -1,0 +1,60 @@
+{
+  "date": "2026-11-03",
+  "buildRun": "build/evidence/run-20261103-231504",
+  "msvc": "19.29.30159",
+  "toolset": "v142 14.29.30133",
+  "sdk": "10.0.19041.0",
+  "architecture": "x64",
+  "ownLanguageStandard": "C++14",
+  "cleanMachineVerified": false,
+  "binaries": [
+    {
+      "path": "build/vs2019-x64/Debug/workbench.exe",
+      "sha256": "724cc189fffb2493f6134a659cb452369d6b7d307fa20fb7d0b57f4c255ff92f",
+      "bytes": 1268736,
+      "peInspection": "Debug-workbench.exe-pe.txt"
+    },
+    {
+      "path": "build/vs2019-x64/Debug/workbench-cli.exe",
+      "sha256": "2d3c3864a9e815b81bfec56ed9e767d1edd1b3144991b4627ad0cbfa41dc32a2",
+      "bytes": 1202688,
+      "peInspection": "Debug-workbench-cli.exe-pe.txt"
+    },
+    {
+      "path": "build/vs2019-x64/Debug/workbench-mcp.exe",
+      "sha256": "ba4eefb6f7d299c8d9a541d59927e218220a6ff4d49b5826d9e6b2b7835da4c3",
+      "bytes": 1223168,
+      "peInspection": "Debug-workbench-mcp.exe-pe.txt"
+    },
+    {
+      "path": "build/vs2019-x64/Debug/awb-core-tests.exe",
+      "sha256": "2cb778bbf3564bd8a31441a14935e7f29ed1c5ee56211679590cea266e245b85",
+      "bytes": 1266176,
+      "peInspection": "Debug-awb-core-tests.exe-pe.txt"
+    },
+    {
+      "path": "build/vs2019-x64/Release/workbench.exe",
+      "sha256": "350979be473d1655dd21dd7418e63db3334e9d6b02eef4c82cc3d807b3b2979f",
+      "bytes": 343552,
+      "peInspection": "Release-workbench.exe-pe.txt"
+    },
+    {
+      "path": "build/vs2019-x64/Release/workbench-cli.exe",
+      "sha256": "23a1ed2710b42ab6b92586ab318e7e8f74fa21040b3a045d935b11ed28a431a8",
+      "bytes": 314368,
+      "peInspection": "Release-workbench-cli.exe-pe.txt"
+    },
+    {
+      "path": "build/vs2019-x64/Release/workbench-mcp.exe",
+      "sha256": "ad04b0c6d14ec013ca0854c8b2b8c5df5024318655e9a229a74e4e91b467788b",
+      "bytes": 323584,
+      "peInspection": "Release-workbench-mcp.exe-pe.txt"
+    },
+    {
+      "path": "build/vs2019-x64/Release/awb-core-tests.exe",
+      "sha256": "29b071afac733ad31b1893cc61ca82d92927e55a6a6a10030bb9ecf8009524a0",
+      "bytes": 339968,
+      "peInspection": "Release-awb-core-tests.exe-pe.txt"
+    }
+  ]
+}

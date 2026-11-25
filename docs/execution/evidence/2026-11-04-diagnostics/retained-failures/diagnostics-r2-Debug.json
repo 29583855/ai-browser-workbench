@@ -1,0 +1,928 @@
+{
+  "date": "2026-11-04T14:36:48.077262+08:00",
+  "result": "failed",
+  "checks": [
+    "real-console-exception-http404-redirect-transport-failure-and-action-association",
+    "pagination-strict-sequence-and-invalid-cursor-rejection",
+    "late-response-keeps-originating-run-step-ordinal-with-causality-limitation",
+    "new-managed-page-inherits-observer-and-foreign-origin-metadata-filtered",
+    "512-record-bound-and-explicit-overflow-gap"
+  ],
+  "executableSha256": "51986a89af49d2fb52af7c0f0baabe5eb9a3cbd8f69f72704bbf422dd657648f",
+  "sampleEvents": [
+    {
+      "context": {
+        "actionId": "c571761c57bcb699fe923b53b8f6e465",
+        "command": "browser_navigate"
+      },
+      "correlation": "observed-during-context",
+      "frameId": "3339E7EBE187A7D434839351C315B11B",
+      "kind": "request-start",
+      "method": "GET",
+      "observedTickMs": 1853332765,
+      "origin": "http://127.0.0.1:52091",
+      "pageId": "784184b404bb86bd20ca3eb8a8d41624",
+      "requestId": "33673da0cb27d0bb257e368c29eab219",
+      "resourceType": "Document",
+      "route": "[omitted]",
+      "sequence": 1
+    },
+    {
+      "context": {
+        "actionId": "c571761c57bcb699fe923b53b8f6e465",
+        "command": "browser_navigate"
+      },
+      "correlation": "request-start-context-not-proven-cause",
+      "frameId": "3339E7EBE187A7D434839351C315B11B",
+      "fromDiskCache": false,
+      "fromServiceWorker": false,
+      "httpError": false,
+      "kind": "response",
+      "method": "GET",
+      "observedTickMs": 1853332765,
+      "origin": "http://127.0.0.1:52091",
+      "pageId": "784184b404bb86bd20ca3eb8a8d41624",
+      "requestId": "33673da0cb27d0bb257e368c29eab219",
+      "resourceType": "Document",
+      "route": "[omitted]",
+      "sequence": 2,
+      "status": 200
+    },
+    {
+      "context": {
+        "actionId": "c571761c57bcb699fe923b53b8f6e465",
+        "command": "browser_navigate"
+      },
+      "correlation": "request-start-context-not-proven-cause",
+      "frameId": "3339E7EBE187A7D434839351C315B11B",
+      "kind": "request-finished",
+      "method": "GET",
+      "observedTickMs": 1853332781,
+      "origin": "http://127.0.0.1:52091",
+      "pageId": "784184b404bb86bd20ca3eb8a8d41624",
+      "requestId": "33673da0cb27d0bb257e368c29eab219",
+      "resourceType": "Document",
+      "route": "[omitted]",
+      "sequence": 3
+    },
+    {
+      "context": {
+        "actionId": "c571761c57bcb699fe923b53b8f6e465",
+        "command": "browser_navigate"
+      },
+      "correlation": "observed-during-context",
+      "frameId": "3339E7EBE187A7D434839351C315B11B",
+      "kind": "request-start",
+      "method": "GET",
+      "observedTickMs": 1853332781,
+      "origin": "http://127.0.0.1:52091",
+      "pageId": "784184b404bb86bd20ca3eb8a8d41624",
+      "requestId": "46494876470379156a2ac695bb7c7c81",
+      "resourceType": "Other",
+      "route": "[omitted]",
+      "sequence": 4
+    },
+    {
+      "context": {
+        "actionId": "c571761c57bcb699fe923b53b8f6e465",
+        "command": "browser_navigate"
+      },
+      "correlation": "request-start-context-not-proven-cause",
+      "frameId": "3339E7EBE187A7D434839351C315B11B",
+      "fromDiskCache": false,
+      "fromServiceWorker": false,
+      "httpError": true,
+      "kind": "response",
+      "method": "GET",
+      "observedTickMs": 1853332796,
+      "origin": "http://127.0.0.1:52091",
+      "pageId": "784184b404bb86bd20ca3eb8a8d41624",
+      "requestId": "46494876470379156a2ac695bb7c7c81",
+      "resourceType": "Other",
+      "route": "[omitted]",
+      "sequence": 5,
+      "status": 404
+    },
+    {
+      "context": {
+        "actionId": "c571761c57bcb699fe923b53b8f6e465",
+        "command": "browser_navigate"
+      },
+      "correlation": "request-start-context-not-proven-cause",
+      "frameId": "3339E7EBE187A7D434839351C315B11B",
+      "kind": "request-finished",
+      "method": "GET",
+      "observedTickMs": 1853332796,
+      "origin": "http://127.0.0.1:52091",
+      "pageId": "784184b404bb86bd20ca3eb8a8d41624",
+      "requestId": "46494876470379156a2ac695bb7c7c81",
+      "resourceType": "Other",
+      "route": "[omitted]",
+      "sequence": 6
+    },
+    {
+      "argumentCount": 2,
+      "argumentTypes": [
+        "string",
+        "object"
+      ],
+      "contentOmitted": true,
+      "context": {
+        "actionId": "481b5f5bf9dd537e79a5f73d194ebf82",
+        "command": "page_click"
+      },
+      "correlation": "observed-during-context",
+      "kind": "console",
+      "level": "error",
+      "observedTickMs": 1853332812,
+      "pageId": "784184b404bb86bd20ca3eb8a8d41624",
+      "sequence": 7
+    },
+    {
+      "context": {
+        "actionId": "481b5f5bf9dd537e79a5f73d194ebf82",
+        "command": "page_click"
+      },
+      "correlation": "observed-during-context",
+      "frameId": "3339E7EBE187A7D434839351C315B11B",
+      "kind": "request-start",
+      "method": "GET",
+      "observedTickMs": 1853332812,
+      "origin": "http://127.0.0.1:52091",
+      "pageId": "784184b404bb86bd20ca3eb8a8d41624",
+      "requestId": "14beac433938e84be49448b53d81ac20",
+      "resourceType": "Fetch",
+      "route": "/diag404",
+      "sequence": 8
+    },
+    {
+      "context": {
+        "actionId": "481b5f5bf9dd537e79a5f73d194ebf82",
+        "command": "page_click"
+      },
+      "correlation": "observed-during-context",
+      "frameId": "3339E7EBE187A7D434839351C315B11B",
+      "kind": "request-start",
+      "method": "GET",
+      "observedTickMs": 1853332812,
+      "origin": "http://127.0.0.1:52091",
+      "pageId": "784184b404bb86bd20ca3eb8a8d41624",
+      "requestId": "f5abc8ae41f8261fa3ce0b7fb227dcd6",
+      "resourceType": "Fetch",
+      "route": "/diag-redirect",
+      "sequence": 9
+    },
+    {
+      "context": {
+        "actionId": "481b5f5bf9dd537e79a5f73d194ebf82",
+        "command": "page_click"
+      },
+      "correlation": "observed-during-context",
+      "frameId": "3339E7EBE187A7D434839351C315B11B",
+      "kind": "request-start",
+      "method": "GET",
+      "observedTickMs": 1853332812,
+      "origin": "http://127.0.0.1:52091",
+      "pageId": "784184b404bb86bd20ca3eb8a8d41624",
+      "requestId": "367b431f83307a272da99deec6aa029f",
+      "resourceType": "Fetch",
+      "route": "/diag-fail",
+      "sequence": 10
+    },
+    {
+      "columnNumber": 27,
+      "contentOmitted": true,
+      "context": {},
+      "correlation": "observed-during-context",
+      "exceptionClass": "TypeError",
+      "kind": "exception",
+      "lineNumber": 12,
+      "observedTickMs": 1853332875,
+      "pageId": "784184b404bb86bd20ca3eb8a8d41624",
+      "sequence": 11
+    },
+    {
+      "context": {
+        "actionId": "481b5f5bf9dd537e79a5f73d194ebf82",
+        "command": "page_click"
+      },
+      "correlation": "request-start-context-not-proven-cause",
+      "frameId": "3339E7EBE187A7D434839351C315B11B",
+      "fromDiskCache": false,
+      "fromServiceWorker": false,
+      "httpError": true,
+      "kind": "response",
+      "method": "GET",
+      "observedTickMs": 1853332875,
+      "origin": "http://127.0.0.1:52091",
+      "pageId": "784184b404bb86bd20ca3eb8a8d41624",
+      "requestId": "14beac433938e84be49448b53d81ac20",
+      "resourceType": "Fetch",
+      "route": "/diag404",
+      "sequence": 12,
+      "status": 404
+    },
+    {
+      "context": {
+        "actionId": "481b5f5bf9dd537e79a5f73d194ebf82",
+        "command": "page_click"
+      },
+      "correlation": "observed-during-context",
+      "frameId": "3339E7EBE187A7D434839351C315B11B",
+      "kind": "request-redirect",
+      "method": "GET",
+      "observedTickMs": 1853332875,
+      "origin": "http://127.0.0.1:52091",
+      "pageId": "784184b404bb86bd20ca3eb8a8d41624",
+      "requestId": "f5abc8ae41f8261fa3ce0b7fb227dcd6",
+      "resourceType": "Fetch",
+      "route": "/diag-redirect",
+      "sequence": 13,
+      "status": 302
+    },
+    {
+      "context": {},
+      "correlation": "observed-during-context",
+      "frameId": "3339E7EBE187A7D434839351C315B11B",
+      "kind": "request-start",
+      "method": "GET",
+      "observedTickMs": 1853332875,
+      "origin": "http://127.0.0.1:52091",
+      "pageId": "784184b404bb86bd20ca3eb8a8d41624",
+      "redirectFrom": "f5abc8ae41f8261fa3ce0b7fb227dcd6",
+      "requestId": "4796126f89173b1505354f0730cef3f5",
+      "resourceType": "Fetch",
+      "route": "/diag404",
+      "sequence": 14
+    },
+    {
+      "cancelled": false,
+      "context": {
+        "actionId": "481b5f5bf9dd537e79a5f73d194ebf82",
+        "command": "page_click"
+      },
+      "correlation": "request-start-context-not-proven-cause",
+      "failure": "other",
+      "frameId": "3339E7EBE187A7D434839351C315B11B",
+      "kind": "request-failed",
+      "method": "GET",
+      "observedTickMs": 1853332875,
+      "origin": "http://127.0.0.1:52091",
+      "pageId": "784184b404bb86bd20ca3eb8a8d41624",
+      "requestId": "367b431f83307a272da99deec6aa029f",
+      "resourceType": "Fetch",
+      "route": "/diag-fail",
+      "sequence": 15
+    },
+    {
+      "context": {},
+      "correlation": "request-start-context-not-proven-cause",
+      "frameId": "3339E7EBE187A7D434839351C315B11B",
+      "fromDiskCache": false,
+      "fromServiceWorker": false,
+      "httpError": true,
+      "kind": "response",
+      "method": "GET",
+      "observedTickMs": 1853332875,
+      "origin": "http://127.0.0.1:52091",
+      "pageId": "784184b404bb86bd20ca3eb8a8d41624",
+      "redirectFrom": "f5abc8ae41f8261fa3ce0b7fb227dcd6",
+      "requestId": "4796126f89173b1505354f0730cef3f5",
+      "resourceType": "Fetch",
+      "route": "/diag404",
+      "sequence": 16,
+      "status": 404
+    }
+  ],
+  "lateResponse": {
+    "context": {
+      "flow": "main",
+      "ordinal": 0,
+      "runId": "7a8d01a96deb42e7f86d6e2ce02e03de",
+      "stepId": "submit"
+    },
+    "correlation": "request-start-context-not-proven-cause",
+    "frameId": "3339E7EBE187A7D434839351C315B11B",
+    "fromDiskCache": false,
+    "fromServiceWorker": false,
+    "httpError": true,
+    "kind": "response",
+    "method": "GET",
+    "observedTickMs": 1853333578,
+    "origin": "http://127.0.0.1:52091",
+    "pageId": "784184b404bb86bd20ca3eb8a8d41624",
+    "requestId": "9154aeddeac767939f201096f39f3385",
+    "resourceType": "Fetch",
+    "route": "/diag-delay",
+    "sequence": 21,
+    "status": 503
+  },
+  "error": "",
+  "commands": [
+    {
+      "sequence": 1,
+      "command": "profile_create",
+      "outcome": "passed"
+    },
+    {
+      "sequence": 2,
+      "command": "browser_start",
+      "outcome": "passed"
+    },
+    {
+      "sequence": 3,
+      "command": "lease_acquire",
+      "outcome": "passed"
+    },
+    {
+      "sequence": 4,
+      "command": "browser_diagnostics_start",
+      "outcome": "INVALID_ARGUMENTS"
+    },
+    {
+      "sequence": 5,
+      "command": "browser_diagnostics_start",
+      "outcome": "passed"
+    },
+    {
+      "sequence": 6,
+      "command": "browser_diagnostics_start",
+      "outcome": "DIAGNOSTICS_ALREADY_ACTIVE"
+    },
+    {
+      "sequence": 7,
+      "command": "browser_navigate",
+      "outcome": "passed"
+    },
+    {
+      "sequence": 8,
+      "command": "page_locate",
+      "outcome": "passed"
+    },
+    {
+      "sequence": 9,
+      "command": "page_click",
+      "outcome": "passed"
+    },
+    {
+      "sequence": 10,
+      "command": "page_wait_text",
+      "outcome": "passed"
+    },
+    {
+      "sequence": 11,
+      "command": "browser_diagnostics_read",
+      "outcome": "passed"
+    },
+    {
+      "sequence": 12,
+      "command": "browser_diagnostics_read",
+      "outcome": "passed"
+    },
+    {
+      "sequence": 13,
+      "command": "browser_diagnostics_read",
+      "outcome": "DIAGNOSTIC_CURSOR_INVALID"
+    },
+    {
+      "sequence": 14,
+      "command": "browser_diagnostics_read",
+      "outcome": "DIAGNOSTIC_CURSOR_INVALID"
+    },
+    {
+      "sequence": 15,
+      "command": "browser_navigate",
+      "outcome": "passed"
+    },
+    {
+      "sequence": 16,
+      "command": "workflow_validate",
+      "outcome": "passed"
+    },
+    {
+      "sequence": 17,
+      "command": "workflow_publish",
+      "outcome": "passed"
+    },
+    {
+      "sequence": 18,
+      "command": "workflow_run",
+      "outcome": "passed"
+    },
+    {
+      "sequence": 19,
+      "command": "workflow_status",
+      "outcome": "passed"
+    },
+    {
+      "sequence": 20,
+      "command": "workflow_status",
+      "outcome": "passed"
+    },
+    {
+      "sequence": 21,
+      "command": "workflow_status",
+      "outcome": "passed"
+    },
+    {
+      "sequence": 22,
+      "command": "workflow_status",
+      "outcome": "passed"
+    },
+    {
+      "sequence": 23,
+      "command": "workflow_status",
+      "outcome": "passed"
+    },
+    {
+      "sequence": 24,
+      "command": "workflow_status",
+      "outcome": "passed"
+    },
+    {
+      "sequence": 25,
+      "command": "workflow_status",
+      "outcome": "passed"
+    },
+    {
+      "sequence": 26,
+      "command": "workflow_status",
+      "outcome": "passed"
+    },
+    {
+      "sequence": 27,
+      "command": "workflow_status",
+      "outcome": "passed"
+    },
+    {
+      "sequence": 28,
+      "command": "workflow_status",
+      "outcome": "passed"
+    },
+    {
+      "sequence": 29,
+      "command": "workflow_status",
+      "outcome": "passed"
+    },
+    {
+      "sequence": 30,
+      "command": "workflow_status",
+      "outcome": "passed"
+    },
+    {
+      "sequence": 31,
+      "command": "workflow_status",
+      "outcome": "passed"
+    },
+    {
+      "sequence": 32,
+      "command": "workflow_status",
+      "outcome": "passed"
+    },
+    {
+      "sequence": 33,
+      "command": "workflow_status",
+      "outcome": "passed"
+    },
+    {
+      "sequence": 34,
+      "command": "workflow_status",
+      "outcome": "passed"
+    },
+    {
+      "sequence": 35,
+      "command": "workflow_status",
+      "outcome": "passed"
+    },
+    {
+      "sequence": 36,
+      "command": "workflow_status",
+      "outcome": "passed"
+    },
+    {
+      "sequence": 37,
+      "command": "workflow_status",
+      "outcome": "passed"
+    },
+    {
+      "sequence": 38,
+      "command": "workflow_status",
+      "outcome": "passed"
+    },
+    {
+      "sequence": 39,
+      "command": "workflow_status",
+      "outcome": "passed"
+    },
+    {
+      "sequence": 40,
+      "command": "workflow_status",
+      "outcome": "passed"
+    },
+    {
+      "sequence": 41,
+      "command": "browser_diagnostics_read",
+      "outcome": "passed"
+    },
+    {
+      "sequence": 42,
+      "command": "browser_diagnostics_read",
+      "outcome": "passed"
+    },
+    {
+      "sequence": 43,
+      "command": "page_open",
+      "outcome": "passed"
+    },
+    {
+      "sequence": 44,
+      "command": "page_locate",
+      "outcome": "passed"
+    },
+    {
+      "sequence": 45,
+      "command": "page_click",
+      "outcome": "passed"
+    },
+    {
+      "sequence": 46,
+      "command": "page_wait_text",
+      "outcome": "passed"
+    },
+    {
+      "sequence": 47,
+      "command": "browser_diagnostics_read",
+      "outcome": "passed"
+    },
+    {
+      "sequence": 48,
+      "command": "browser_diagnostics_read",
+      "outcome": "passed"
+    },
+    {
+      "sequence": 49,
+      "command": "page_locate",
+      "outcome": "passed"
+    },
+    {
+      "sequence": 50,
+      "command": "page_click",
+      "outcome": "passed"
+    },
+    {
+      "sequence": 51,
+      "command": "page_wait_text",
+      "outcome": "passed"
+    },
+    {
+      "sequence": 52,
+      "command": "browser_diagnostics_read",
+      "outcome": "passed"
+    },
+    {
+      "sequence": 53,
+      "command": "browser_diagnostics_read",
+      "outcome": "passed"
+    },
+    {
+      "sequence": 54,
+      "command": "browser_diagnostics_read",
+      "outcome": "passed"
+    },
+    {
+      "sequence": 55,
+      "command": "page_locate",
+      "outcome": "passed"
+    },
+    {
+      "sequence": 56,
+      "command": "page_click",
+      "outcome": "passed"
+    },
+    {
+      "sequence": 57,
+      "command": "page_wait_text",
+      "outcome": "passed"
+    },
+    {
+      "sequence": 58,
+      "command": "browser_diagnostics_read",
+      "outcome": "passed"
+    },
+    {
+      "sequence": 59,
+      "command": "browser_diagnostics_read",
+      "outcome": "passed"
+    },
+    {
+      "sequence": 60,
+      "command": "browser_diagnostics_read",
+      "outcome": "passed"
+    },
+    {
+      "sequence": 61,
+      "command": "browser_diagnostics_read",
+      "outcome": "passed"
+    },
+    {
+      "sequence": 62,
+      "command": "browser_diagnostics_read",
+      "outcome": "passed"
+    },
+    {
+      "sequence": 63,
+      "command": "browser_diagnostics_read",
+      "outcome": "passed"
+    },
+    {
+      "sequence": 64,
+      "command": "browser_diagnostics_read",
+      "outcome": "passed"
+    },
+    {
+      "sequence": 65,
+      "command": "browser_diagnostics_read",
+      "outcome": "passed"
+    },
+    {
+      "sequence": 66,
+      "command": "browser_diagnostics_read",
+      "outcome": "passed"
+    },
+    {
+      "sequence": 67,
+      "command": "browser_diagnostics_read",
+      "outcome": "passed"
+    },
+    {
+      "sequence": 68,
+      "command": "browser_diagnostics_read",
+      "outcome": "passed"
+    },
+    {
+      "sequence": 69,
+      "command": "browser_diagnostics_read",
+      "outcome": "passed"
+    },
+    {
+      "sequence": 70,
+      "command": "browser_diagnostics_read",
+      "outcome": "passed"
+    },
+    {
+      "sequence": 71,
+      "command": "browser_diagnostics_read",
+      "outcome": "passed"
+    },
+    {
+      "sequence": 72,
+      "command": "browser_diagnostics_read",
+      "outcome": "passed"
+    },
+    {
+      "sequence": 73,
+      "command": "browser_diagnostics_read",
+      "outcome": "passed"
+    },
+    {
+      "sequence": 74,
+      "command": "browser_diagnostics_read",
+      "outcome": "passed"
+    },
+    {
+      "sequence": 75,
+      "command": "browser_diagnostics_read",
+      "outcome": "passed"
+    },
+    {
+      "sequence": 76,
+      "command": "browser_diagnostics_read",
+      "outcome": "passed"
+    },
+    {
+      "sequence": 77,
+      "command": "browser_diagnostics_read",
+      "outcome": "passed"
+    },
+    {
+      "sequence": 78,
+      "command": "browser_diagnostics_read",
+      "outcome": "passed"
+    },
+    {
+      "sequence": 79,
+      "command": "browser_diagnostics_read",
+      "outcome": "passed"
+    },
+    {
+      "sequence": 80,
+      "command": "browser_diagnostics_read",
+      "outcome": "passed"
+    },
+    {
+      "sequence": 81,
+      "command": "browser_diagnostics_read",
+      "outcome": "passed"
+    },
+    {
+      "sequence": 82,
+      "command": "browser_diagnostics_read",
+      "outcome": "passed"
+    },
+    {
+      "sequence": 83,
+      "command": "browser_diagnostics_read",
+      "outcome": "passed"
+    },
+    {
+      "sequence": 84,
+      "command": "browser_diagnostics_read",
+      "outcome": "passed"
+    },
+    {
+      "sequence": 85,
+      "command": "browser_diagnostics_read",
+      "outcome": "passed"
+    },
+    {
+      "sequence": 86,
+      "command": "browser_diagnostics_read",
+      "outcome": "passed"
+    },
+    {
+      "sequence": 87,
+      "command": "browser_diagnostics_read",
+      "outcome": "passed"
+    },
+    {
+      "sequence": 88,
+      "command": "browser_diagnostics_read",
+      "outcome": "passed"
+    },
+    {
+      "sequence": 89,
+      "command": "browser_diagnostics_read",
+      "outcome": "passed"
+    },
+    {
+      "sequence": 90,
+      "command": "browser_reconnect",
+      "outcome": "passed"
+    },
+    {
+      "sequence": 91,
+      "command": "browser_diagnostics_read",
+      "outcome": "passed"
+    },
+    {
+      "sequence": 92,
+      "command": "browser_diagnostics_read",
+      "outcome": "passed"
+    },
+    {
+      "sequence": 93,
+      "command": "browser_diagnostics_read",
+      "outcome": "passed"
+    },
+    {
+      "sequence": 94,
+      "command": "browser_diagnostics_read",
+      "outcome": "passed"
+    },
+    {
+      "sequence": 95,
+      "command": "browser_diagnostics_read",
+      "outcome": "passed"
+    },
+    {
+      "sequence": 96,
+      "command": "browser_diagnostics_read",
+      "outcome": "passed"
+    },
+    {
+      "sequence": 97,
+      "command": "browser_diagnostics_read",
+      "outcome": "passed"
+    },
+    {
+      "sequence": 98,
+      "command": "browser_diagnostics_read",
+      "outcome": "passed"
+    },
+    {
+      "sequence": 99,
+      "command": "browser_diagnostics_read",
+      "outcome": "passed"
+    },
+    {
+      "sequence": 100,
+      "command": "browser_diagnostics_read",
+      "outcome": "passed"
+    },
+    {
+      "sequence": 101,
+      "command": "browser_diagnostics_read",
+      "outcome": "passed"
+    },
+    {
+      "sequence": 102,
+      "command": "browser_diagnostics_read",
+      "outcome": "passed"
+    },
+    {
+      "sequence": 103,
+      "command": "browser_diagnostics_read",
+      "outcome": "passed"
+    },
+    {
+      "sequence": 104,
+      "command": "browser_diagnostics_read",
+      "outcome": "passed"
+    },
+    {
+      "sequence": 105,
+      "command": "browser_diagnostics_read",
+      "outcome": "passed"
+    },
+    {
+      "sequence": 106,
+      "command": "browser_diagnostics_read",
+      "outcome": "passed"
+    },
+    {
+      "sequence": 107,
+      "command": "browser_diagnostics_read",
+      "outcome": "passed"
+    },
+    {
+      "sequence": 108,
+      "command": "browser_diagnostics_read",
+      "outcome": "passed"
+    },
+    {
+      "sequence": 109,
+      "command": "browser_diagnostics_read",
+      "outcome": "passed"
+    },
+    {
+      "sequence": 110,
+      "command": "browser_diagnostics_read",
+      "outcome": "passed"
+    },
+    {
+      "sequence": 111,
+      "command": "browser_diagnostics_read",
+      "outcome": "passed"
+    },
+    {
+      "sequence": 112,
+      "command": "browser_diagnostics_read",
+      "outcome": "passed"
+    },
+    {
+      "sequence": 113,
+      "command": "browser_diagnostics_read",
+      "outcome": "passed"
+    },
+    {
+      "sequence": 114,
+      "command": "browser_diagnostics_read",
+      "outcome": "passed"
+    },
+    {
+      "sequence": 115,
+      "command": "browser_diagnostics_read",
+      "outcome": "passed"
+    },
+    {
+      "sequence": 116,
+      "command": "browser_diagnostics_read",
+      "outcome": "passed"
+    },
+    {
+      "sequence": 117,
+      "command": "browser_diagnostics_read",
+      "outcome": "passed"
+    },
+    {
+      "sequence": 118,
+      "command": "browser_diagnostics_read",
+      "outcome": "passed"
+    },
+    {
+      "sequence": 119,
+      "command": "browser_diagnostics_read",
+      "outcome": "passed"
+    },
+    {
+      "sequence": 120,
+      "command": "browser_diagnostics_read",
+      "outcome": "passed"
+    },
+    {
+      "sequence": 121,
+      "command": "browser_diagnostics_read",
+      "outcome": "passed"
+    }
+  ]
+}

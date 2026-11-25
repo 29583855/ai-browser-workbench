@@ -1,0 +1,9 @@
+{
+  "result": "passed",
+  "date": "2026-11-04",
+  "oldSha256": "451ff51c4096fef6deb081a4c1b4f68f8d12f87fa8a19ee0475d4fcec9e2977a",
+  "newSha256": "d5740f7c23481a6357a4d850c982bd442d84cbc9c0afe6ca09e3609ffb6940f0",
+  "profileLength": 107,
+  "originalRegistrationAndLoginOnly": true,
+  "oldStoragePreserved": true
+}

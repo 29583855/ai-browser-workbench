@@ -1,0 +1,110 @@
+-- Configuring done
+-- Generating done
+-- Build files have been written to: E:/project/webexploer_codex/build/vs2019-x64
+用于 .NET Framework 的 Microsoft (R) 生成引擎版本 16.11.6+a918ceb31
+版权所有(C) Microsoft Corporation。保留所有权利。
+
+  awb_sqlite.vcxproj -> E:\project\webexploer_codex\build\vs2019-x64\Debug\awb_sqlite.lib
+  service.cpp
+  awb_core.vcxproj -> E:\project\webexploer_codex\build\vs2019-x64\Debug\awb_core.lib
+  awb-storage-tests.vcxproj -> E:\project\webexploer_codex\build\vs2019-x64\Debug\awb-storage-tests.exe
+  workbench-cli.vcxproj -> E:\project\webexploer_codex\build\vs2019-x64\Debug\workbench-cli.exe
+  flow_editor.cpp
+  main.cpp
+  awb-core-tests.vcxproj -> E:\project\webexploer_codex\build\vs2019-x64\Debug\awb-core-tests.exe
+  main.cpp
+  workbench-mcp.vcxproj -> E:\project\webexploer_codex\build\vs2019-x64\Debug\workbench-mcp.exe
+  正在生成代码...
+  workbench.vcxproj -> E:\project\webexploer_codex\build\vs2019-x64\Debug\workbench.exe
+Internal ctest changing into directory: E:/project/webexploer_codex/build/vs2019-x64
+Test project E:/project/webexploer_codex/build/vs2019-x64
+    Start 1: core
+1/3 Test #1: core .............................   Passed   27.32 sec
+    Start 2: storage
+2/3 Test #2: storage ..........................   Passed    2.95 sec
+    Start 3: win32-shell
+3/3 Test #3: win32-shell ......................   Passed    0.23 sec
+
+100% tests passed, 0 tests failed out of 3
+
+Total Test time (real) =  30.51 sec
+{"result": "passed", "commands": 124, "report": "E:\\project\\webexploer_codex\\build\\evidence\\run-20261104-234424\\Debug-browser\\report.json"}
+{"result": "passed", "report": "E:\\project\\webexploer_codex\\build\\evidence\\run-20261104-234424\\Debug-proxy\\report.json"}
+{"result": "passed", "checks": 6, "report": "E:\\project\\webexploer_codex\\build\\evidence\\run-20261104-234424\\Debug-lifecycle\\report.json"}
+{"result": "passed", "checks": 4, "report": "E:\\project\\webexploer_codex\\build\\evidence\\run-20261104-234424\\Debug-recovery\\report.json"}
+{"result": "passed", "report": "E:\\project\\webexploer_codex\\build\\evidence\\run-20261104-234424\\Debug-socks\\report.json"}
+{"result": "passed", "report": "E:\\project\\webexploer_codex\\build\\evidence\\run-20261104-234424\\Debug-runtime\\report.json"}
+{"result": "passed", "requests": 89, "report": "E:\\project\\webexploer_codex\\build\\evidence\\run-20261104-234424\\Debug-api\\report.json"}
+{"result": "passed", "checks": 6, "report": "E:\\project\\webexploer_codex\\build\\evidence\\run-20261104-234424\\Debug-pages\\report.json"}
+{"result": "passed", "checks": 6, "error": null}
+{"result": "passed", "flows": 20, "negativeCases": 34, "checks": 13, "error": null}
+{"result": "passed", "checks": ["real-console-exception-http404-redirect-transport-failure-and-action-association", "pagination-strict-sequence-and-invalid-cursor-rejection", "late-response-keeps-originating-run-step-ordinal-with-causality-limitation", "paused-workflow-allows-lease-checked-read-only-diagnostics", "new-managed-page-inherits-observer-and-foreign-origin-metadata-filtered", "512-record-bound-and-explicit-overflow-gap", "128-pending-request-bound-reports-discarded-correlations", "explicit-reconnect-gap-no-replay-stop-retains-records-without-collecting", "diagnostic-cursor-cannot-cross-profile-instance", "new-epoch-invalidates-old-cursor-and-all-diagnostic-tools-enforce-lease", "console-content-url-query-response-body-and-lease-canaries-absent"], "error": null}
+{"result": "passed", "checks": 11, "commands": 51}
+{"result": "passed", "checks": 3, "error": null}
+{"result": "passed", "checks": 24, "failures": []}
+{"result": "passed", "tools": 50, "report": "E:\\project\\webexploer_codex\\build\\evidence\\run-20261104-234424\\Debug-mcp\\report.json"}
+用于 .NET Framework 的 Microsoft (R) 生成引擎版本 16.11.6+a918ceb31
+版权所有(C) Microsoft Corporation。保留所有权利。
+
+  awb_sqlite.vcxproj -> E:\project\webexploer_codex\build\vs2019-x64\Release\awb_sqlite.lib
+  service.cpp
+  awb_core.vcxproj -> E:\project\webexploer_codex\build\vs2019-x64\Release\awb_core.lib
+  main.cpp
+  awb-storage-tests.vcxproj -> E:\project\webexploer_codex\build\vs2019-x64\Release\awb-storage-tests.exe
+  workbench-cli.vcxproj -> E:\project\webexploer_codex\build\vs2019-x64\Release\workbench-cli.exe
+  flow_editor.cpp
+  awb-core-tests.vcxproj -> E:\project\webexploer_codex\build\vs2019-x64\Release\awb-core-tests.exe
+  main.cpp
+  workbench-mcp.vcxproj -> E:\project\webexploer_codex\build\vs2019-x64\Release\workbench-mcp.exe
+  正在生成代码...
+  workbench.vcxproj -> E:\project\webexploer_codex\build\vs2019-x64\Release\workbench.exe
+Internal ctest changing into directory: E:/project/webexploer_codex/build/vs2019-x64
+Test project E:/project/webexploer_codex/build/vs2019-x64
+    Start 1: core
+1/3 Test #1: core .............................   Passed    2.93 sec
+    Start 2: storage
+2/3 Test #2: storage ..........................   Passed    2.87 sec
+    Start 3: win32-shell
+3/3 Test #3: win32-shell ......................   Passed    0.18 sec
+
+100% tests passed, 0 tests failed out of 3
+
+Total Test time (real) =   5.98 sec
+{"result": "passed", "commands": 124, "report": "E:\\project\\webexploer_codex\\build\\evidence\\run-20261104-234424\\Release-browser\\report.json"}
+----------------------------------------
+Exception occurred during processing of request from ('127.0.0.1', 52703)
+Traceback (most recent call last):
+  File "E:\usr\Python\3.12.3_64\Lib\socketserver.py", line 692, in process_request_thread
+    self.finish_request(request, client_address)
+  File "E:\usr\Python\3.12.3_64\Lib\socketserver.py", line 362, in finish_request
+    self.RequestHandlerClass(request, client_address, self)
+  File "E:\usr\Python\3.12.3_64\Lib\socketserver.py", line 761, in __init__
+    self.handle()
+  File "E:\usr\Python\3.12.3_64\Lib\http\server.py", line 436, in handle
+    self.handle_one_request()
+  File "E:\usr\Python\3.12.3_64\Lib\http\server.py", line 424, in handle_one_request
+    method()
+  File "E:\project\webexploer_codex\tests\fixtures\http_proxy.py", line 48, in do_CONNECT
+    self.send_error(501, "CONNECT is outside this fixture")
+  File "E:\usr\Python\3.12.3_64\Lib\http\server.py", line 491, in send_error
+    self.wfile.write(body)
+  File "E:\usr\Python\3.12.3_64\Lib\socketserver.py", line 840, in write
+    self._sock.sendall(b)
+ConnectionAbortedError: [WinError 10053] ��������е�������ֹ��һ���ѽ��������ӡ�
+----------------------------------------
+{"result": "passed", "report": "E:\\project\\webexploer_codex\\build\\evidence\\run-20261104-234424\\Release-proxy\\report.json"}
+{"result": "passed", "checks": 6, "report": "E:\\project\\webexploer_codex\\build\\evidence\\run-20261104-234424\\Release-lifecycle\\report.json"}
+{"result": "passed", "checks": 4, "report": "E:\\project\\webexploer_codex\\build\\evidence\\run-20261104-234424\\Release-recovery\\report.json"}
+{"result": "passed", "report": "E:\\project\\webexploer_codex\\build\\evidence\\run-20261104-234424\\Release-socks\\report.json"}
+{"result": "passed", "report": "E:\\project\\webexploer_codex\\build\\evidence\\run-20261104-234424\\Release-runtime\\report.json"}
+{"result": "passed", "requests": 90, "report": "E:\\project\\webexploer_codex\\build\\evidence\\run-20261104-234424\\Release-api\\report.json"}
+{"result": "passed", "checks": 6, "report": "E:\\project\\webexploer_codex\\build\\evidence\\run-20261104-234424\\Release-pages\\report.json"}
+{"result": "passed", "checks": 6, "error": null}
+{"result": "passed", "flows": 20, "negativeCases": 34, "checks": 13, "error": null}
+{"result": "passed", "checks": ["real-console-exception-http404-redirect-transport-failure-and-action-association", "pagination-strict-sequence-and-invalid-cursor-rejection", "late-response-keeps-originating-run-step-ordinal-with-causality-limitation", "paused-workflow-allows-lease-checked-read-only-diagnostics", "new-managed-page-inherits-observer-and-foreign-origin-metadata-filtered", "512-record-bound-and-explicit-overflow-gap", "128-pending-request-bound-reports-discarded-correlations", "explicit-reconnect-gap-no-replay-stop-retains-records-without-collecting", "diagnostic-cursor-cannot-cross-profile-instance", "new-epoch-invalidates-old-cursor-and-all-diagnostic-tools-enforce-lease", "console-content-url-query-response-body-and-lease-canaries-absent"], "error": null}
+{"result": "passed", "checks": 11, "commands": 51}
+{"result": "passed", "checks": 3, "error": null}
+{"result": "passed", "checks": 24, "failures": []}
+{"result": "passed", "tools": 50, "report": "E:\\project\\webexploer_codex\\build\\evidence\\run-20261104-234424\\Release-mcp\\report.json"}
+{"result": "passed", "ownSourceFiles": 71, "placeholderMarkersFound": 0, "errors": []}
+Evidence: E:\project\webexploer_codex\build\evidence\run-20261104-234424

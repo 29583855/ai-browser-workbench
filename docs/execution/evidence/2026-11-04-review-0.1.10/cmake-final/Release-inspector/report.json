@@ -1,0 +1,696 @@
+{
+  "date": "2026-11-04T23:48:19.711452+08:00",
+  "result": "passed",
+  "checks": [
+    "unique-inspection-native-highlight-clear-and-secret-free-drafts",
+    "read-only-preview-no-click-focus-or-scroll-and-recheck-before-dispatch",
+    "hidden-transparent-disabled-fieldset-inert-readonly-and-file-blocked-before-fill",
+    "single-multiple-empty-and-secret-selection-exact-events-negative-cases-atomic",
+    "reactive-selection-and-fill-postcondition-failure-unknown-no-event-retry",
+    "removed-navigation-page-switch-ref-invalidation-and-lease-fencing"
+  ],
+  "binarySha256": "d72e1fa64abd72217ba6a59ca305bae82c751af04c9cc6049d8560f3070b55eb",
+  "highlightPixelDifferenceBounds": [
+    24,
+    24,
+    201,
+    54
+  ],
+  "commands": [
+    {
+      "sequence": 1,
+      "command": "profile_create",
+      "outcome": "passed"
+    },
+    {
+      "sequence": 2,
+      "command": "browser_start",
+      "outcome": "passed"
+    },
+    {
+      "sequence": 3,
+      "command": "lease_acquire",
+      "outcome": "passed"
+    },
+    {
+      "sequence": 4,
+      "command": "browser_navigate",
+      "outcome": "passed"
+    },
+    {
+      "sequence": 5,
+      "command": "page_inspect",
+      "outcome": "passed"
+    },
+    {
+      "sequence": 6,
+      "command": "page_screenshot",
+      "outcome": "passed"
+    },
+    {
+      "sequence": 7,
+      "command": "page_clear_highlight",
+      "outcome": "passed"
+    },
+    {
+      "sequence": 8,
+      "command": "page_screenshot",
+      "outcome": "passed"
+    },
+    {
+      "sequence": 9,
+      "command": "page_inspect",
+      "outcome": "LOCATOR_AMBIGUOUS"
+    },
+    {
+      "sequence": 10,
+      "command": "page_inspect",
+      "outcome": "ELEMENT_NOT_FOUND"
+    },
+    {
+      "sequence": 11,
+      "command": "page_locate",
+      "outcome": "passed"
+    },
+    {
+      "sequence": 12,
+      "command": "page_preview",
+      "outcome": "passed"
+    },
+    {
+      "sequence": 13,
+      "command": "page_locate",
+      "outcome": "passed"
+    },
+    {
+      "sequence": 14,
+      "command": "page_text",
+      "outcome": "passed"
+    },
+    {
+      "sequence": 15,
+      "command": "page_locate",
+      "outcome": "passed"
+    },
+    {
+      "sequence": 16,
+      "command": "page_text",
+      "outcome": "passed"
+    },
+    {
+      "sequence": 17,
+      "command": "page_locate",
+      "outcome": "passed"
+    },
+    {
+      "sequence": 18,
+      "command": "page_preview",
+      "outcome": "passed"
+    },
+    {
+      "sequence": 19,
+      "command": "page_locate",
+      "outcome": "passed"
+    },
+    {
+      "sequence": 20,
+      "command": "page_preview",
+      "outcome": "passed"
+    },
+    {
+      "sequence": 21,
+      "command": "page_locate",
+      "outcome": "passed"
+    },
+    {
+      "sequence": 22,
+      "command": "page_preview",
+      "outcome": "passed"
+    },
+    {
+      "sequence": 23,
+      "command": "page_locate",
+      "outcome": "passed"
+    },
+    {
+      "sequence": 24,
+      "command": "page_text",
+      "outcome": "passed"
+    },
+    {
+      "sequence": 25,
+      "command": "page_locate",
+      "outcome": "passed"
+    },
+    {
+      "sequence": 26,
+      "command": "page_text",
+      "outcome": "passed"
+    },
+    {
+      "sequence": 27,
+      "command": "page_locate",
+      "outcome": "passed"
+    },
+    {
+      "sequence": 28,
+      "command": "page_text",
+      "outcome": "passed"
+    },
+    {
+      "sequence": 29,
+      "command": "page_locate",
+      "outcome": "passed"
+    },
+    {
+      "sequence": 30,
+      "command": "page_click",
+      "outcome": "ELEMENT_NOT_ACTIONABLE"
+    },
+    {
+      "sequence": 31,
+      "command": "page_locate",
+      "outcome": "passed"
+    },
+    {
+      "sequence": 32,
+      "command": "page_click",
+      "outcome": "ELEMENT_NOT_ACTIONABLE"
+    },
+    {
+      "sequence": 33,
+      "command": "page_click",
+      "outcome": "passed"
+    },
+    {
+      "sequence": 34,
+      "command": "page_locate",
+      "outcome": "passed"
+    },
+    {
+      "sequence": 35,
+      "command": "page_text",
+      "outcome": "passed"
+    },
+    {
+      "sequence": 36,
+      "command": "page_inspect",
+      "outcome": "passed"
+    },
+    {
+      "sequence": 37,
+      "command": "page_preview",
+      "outcome": "passed"
+    },
+    {
+      "sequence": 38,
+      "command": "page_fill",
+      "outcome": "ELEMENT_NOT_EDITABLE"
+    },
+    {
+      "sequence": 39,
+      "command": "page_inspect",
+      "outcome": "passed"
+    },
+    {
+      "sequence": 40,
+      "command": "page_preview",
+      "outcome": "passed"
+    },
+    {
+      "sequence": 41,
+      "command": "page_fill",
+      "outcome": "ELEMENT_NOT_EDITABLE"
+    },
+    {
+      "sequence": 42,
+      "command": "page_inspect",
+      "outcome": "passed"
+    },
+    {
+      "sequence": 43,
+      "command": "page_preview",
+      "outcome": "passed"
+    },
+    {
+      "sequence": 44,
+      "command": "page_fill",
+      "outcome": "ELEMENT_NOT_EDITABLE"
+    },
+    {
+      "sequence": 45,
+      "command": "page_inspect",
+      "outcome": "passed"
+    },
+    {
+      "sequence": 46,
+      "command": "page_preview",
+      "outcome": "passed"
+    },
+    {
+      "sequence": 47,
+      "command": "page_fill",
+      "outcome": "ELEMENT_NOT_EDITABLE"
+    },
+    {
+      "sequence": 48,
+      "command": "page_inspect",
+      "outcome": "passed"
+    },
+    {
+      "sequence": 49,
+      "command": "page_preview",
+      "outcome": "passed"
+    },
+    {
+      "sequence": 50,
+      "command": "page_fill",
+      "outcome": "ELEMENT_NOT_EDITABLE"
+    },
+    {
+      "sequence": 51,
+      "command": "page_inspect",
+      "outcome": "passed"
+    },
+    {
+      "sequence": 52,
+      "command": "page_preview",
+      "outcome": "passed"
+    },
+    {
+      "sequence": 53,
+      "command": "page_fill",
+      "outcome": "ELEMENT_NOT_EDITABLE"
+    },
+    {
+      "sequence": 54,
+      "command": "page_inspect",
+      "outcome": "passed"
+    },
+    {
+      "sequence": 55,
+      "command": "page_preview",
+      "outcome": "passed"
+    },
+    {
+      "sequence": 56,
+      "command": "page_fill",
+      "outcome": "ELEMENT_NOT_EDITABLE"
+    },
+    {
+      "sequence": 57,
+      "command": "page_locate",
+      "outcome": "passed"
+    },
+    {
+      "sequence": 58,
+      "command": "page_text",
+      "outcome": "passed"
+    },
+    {
+      "sequence": 59,
+      "command": "page_fill",
+      "outcome": "passed"
+    },
+    {
+      "sequence": 60,
+      "command": "page_locate",
+      "outcome": "passed"
+    },
+    {
+      "sequence": 61,
+      "command": "page_text",
+      "outcome": "passed"
+    },
+    {
+      "sequence": 62,
+      "command": "page_inspect",
+      "outcome": "passed"
+    },
+    {
+      "sequence": 63,
+      "command": "page_preview",
+      "outcome": "passed"
+    },
+    {
+      "sequence": 64,
+      "command": "page_select",
+      "outcome": "passed"
+    },
+    {
+      "sequence": 65,
+      "command": "page_locate",
+      "outcome": "passed"
+    },
+    {
+      "sequence": 66,
+      "command": "page_text",
+      "outcome": "passed"
+    },
+    {
+      "sequence": 67,
+      "command": "page_locate",
+      "outcome": "passed"
+    },
+    {
+      "sequence": 68,
+      "command": "page_text",
+      "outcome": "passed"
+    },
+    {
+      "sequence": 69,
+      "command": "page_select",
+      "outcome": "OPTION_NOT_FOUND"
+    },
+    {
+      "sequence": 70,
+      "command": "page_select",
+      "outcome": "OPTION_AMBIGUOUS"
+    },
+    {
+      "sequence": 71,
+      "command": "page_select",
+      "outcome": "OPTION_DISABLED"
+    },
+    {
+      "sequence": 72,
+      "command": "page_select",
+      "outcome": "OPTION_DISABLED"
+    },
+    {
+      "sequence": 73,
+      "command": "page_select",
+      "outcome": "SELECTION_COUNT_INVALID"
+    },
+    {
+      "sequence": 74,
+      "command": "page_select",
+      "outcome": "SELECTION_COUNT_INVALID"
+    },
+    {
+      "sequence": 75,
+      "command": "page_select",
+      "outcome": "INVALID_ARGUMENTS"
+    },
+    {
+      "sequence": 76,
+      "command": "page_locate",
+      "outcome": "passed"
+    },
+    {
+      "sequence": 77,
+      "command": "page_text",
+      "outcome": "passed"
+    },
+    {
+      "sequence": 78,
+      "command": "page_locate",
+      "outcome": "passed"
+    },
+    {
+      "sequence": 79,
+      "command": "page_text",
+      "outcome": "passed"
+    },
+    {
+      "sequence": 80,
+      "command": "page_inspect",
+      "outcome": "passed"
+    },
+    {
+      "sequence": 81,
+      "command": "page_select",
+      "outcome": "passed"
+    },
+    {
+      "sequence": 82,
+      "command": "page_locate",
+      "outcome": "passed"
+    },
+    {
+      "sequence": 83,
+      "command": "page_text",
+      "outcome": "passed"
+    },
+    {
+      "sequence": 84,
+      "command": "page_select",
+      "outcome": "OPTION_NOT_FOUND"
+    },
+    {
+      "sequence": 85,
+      "command": "page_locate",
+      "outcome": "passed"
+    },
+    {
+      "sequence": 86,
+      "command": "page_text",
+      "outcome": "passed"
+    },
+    {
+      "sequence": 87,
+      "command": "page_locate",
+      "outcome": "passed"
+    },
+    {
+      "sequence": 88,
+      "command": "page_text",
+      "outcome": "passed"
+    },
+    {
+      "sequence": 89,
+      "command": "page_select",
+      "outcome": "INVALID_ARGUMENTS"
+    },
+    {
+      "sequence": 90,
+      "command": "page_preview",
+      "outcome": "INVALID_ARGUMENTS"
+    },
+    {
+      "sequence": 91,
+      "command": "page_select",
+      "outcome": "passed"
+    },
+    {
+      "sequence": 92,
+      "command": "page_locate",
+      "outcome": "passed"
+    },
+    {
+      "sequence": 93,
+      "command": "page_text",
+      "outcome": "passed"
+    },
+    {
+      "sequence": 94,
+      "command": "page_locate",
+      "outcome": "passed"
+    },
+    {
+      "sequence": 95,
+      "command": "page_text",
+      "outcome": "passed"
+    },
+    {
+      "sequence": 96,
+      "command": "page_locate",
+      "outcome": "passed"
+    },
+    {
+      "sequence": 97,
+      "command": "page_select",
+      "outcome": "ELEMENT_NOT_SELECTABLE"
+    },
+    {
+      "sequence": 98,
+      "command": "page_select",
+      "outcome": "passed"
+    },
+    {
+      "sequence": 99,
+      "command": "page_inspect",
+      "outcome": "passed"
+    },
+    {
+      "sequence": 100,
+      "command": "page_locate",
+      "outcome": "passed"
+    },
+    {
+      "sequence": 101,
+      "command": "page_select",
+      "outcome": "ACTION_POSTCONDITION_FAILED"
+    },
+    {
+      "sequence": 102,
+      "command": "page_locate",
+      "outcome": "passed"
+    },
+    {
+      "sequence": 103,
+      "command": "page_text",
+      "outcome": "passed"
+    },
+    {
+      "sequence": 104,
+      "command": "page_locate",
+      "outcome": "passed"
+    },
+    {
+      "sequence": 105,
+      "command": "page_text",
+      "outcome": "passed"
+    },
+    {
+      "sequence": 106,
+      "command": "page_locate",
+      "outcome": "passed"
+    },
+    {
+      "sequence": 107,
+      "command": "page_fill",
+      "outcome": "ACTION_POSTCONDITION_FAILED"
+    },
+    {
+      "sequence": 108,
+      "command": "page_locate",
+      "outcome": "passed"
+    },
+    {
+      "sequence": 109,
+      "command": "page_text",
+      "outcome": "passed"
+    },
+    {
+      "sequence": 110,
+      "command": "page_locate",
+      "outcome": "passed"
+    },
+    {
+      "sequence": 111,
+      "command": "page_click",
+      "outcome": "passed"
+    },
+    {
+      "sequence": 112,
+      "command": "page_locate",
+      "outcome": "passed"
+    },
+    {
+      "sequence": 113,
+      "command": "page_text",
+      "outcome": "passed"
+    },
+    {
+      "sequence": 114,
+      "command": "page_locate",
+      "outcome": "passed"
+    },
+    {
+      "sequence": 115,
+      "command": "page_text",
+      "outcome": "passed"
+    },
+    {
+      "sequence": 116,
+      "command": "page_locate",
+      "outcome": "passed"
+    },
+    {
+      "sequence": 117,
+      "command": "page_click",
+      "outcome": "passed"
+    },
+    {
+      "sequence": 118,
+      "command": "page_preview",
+      "outcome": "STALE_ELEMENT_REFERENCE"
+    },
+    {
+      "sequence": 119,
+      "command": "browser_navigate",
+      "outcome": "passed"
+    },
+    {
+      "sequence": 120,
+      "command": "page_preview",
+      "outcome": "STALE_ELEMENT_REFERENCE"
+    },
+    {
+      "sequence": 121,
+      "command": "page_inspect",
+      "outcome": "passed"
+    },
+    {
+      "sequence": 122,
+      "command": "page_open",
+      "outcome": "passed"
+    },
+    {
+      "sequence": 123,
+      "command": "page_preview",
+      "outcome": "STALE_ELEMENT_REFERENCE"
+    },
+    {
+      "sequence": 124,
+      "command": "page_inspect",
+      "outcome": "passed"
+    },
+    {
+      "sequence": 125,
+      "command": "profile_create",
+      "outcome": "passed"
+    },
+    {
+      "sequence": 126,
+      "command": "browser_start",
+      "outcome": "passed"
+    },
+    {
+      "sequence": 127,
+      "command": "lease_acquire",
+      "outcome": "passed"
+    },
+    {
+      "sequence": 128,
+      "command": "page_preview",
+      "outcome": "STALE_ELEMENT_REFERENCE"
+    },
+    {
+      "sequence": 129,
+      "command": "browser_stop",
+      "outcome": "passed"
+    },
+    {
+      "sequence": 130,
+      "command": "lease_revoke",
+      "outcome": "passed"
+    },
+    {
+      "sequence": 131,
+      "command": "page_inspect",
+      "outcome": "LEASE_REVOKED"
+    },
+    {
+      "sequence": 132,
+      "command": "page_preview",
+      "outcome": "LEASE_REVOKED"
+    },
+    {
+      "sequence": 133,
+      "command": "page_clear_highlight",
+      "outcome": "LEASE_REVOKED"
+    },
+    {
+      "sequence": 134,
+      "command": "page_select",
+      "outcome": "LEASE_REVOKED"
+    },
+    {
+      "sequence": 135,
+      "command": "browser_stop",
+      "outcome": "passed"
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "date": "2026-11-04",
+  "result": "passed",
+  "checks": [
+    {
+      "version": "baseline",
+      "optimizedPython": true,
+      "acceptedInvalidX86": true,
+      "exitCode": 0
+    },
+    {
+      "version": "fixed",
+      "optimizedPython": true,
+      "acceptedInvalidX86": false,
+      "exitCode": 1
+    }
+  ]
+}

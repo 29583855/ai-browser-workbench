@@ -1,0 +1,17 @@
+{
+  "date": "2026-11-05",
+  "result": "passed",
+  "checks": [
+    "python-complete-schema-handshake-real-crud-and-business-errors",
+    "typescript-strict-compiled-contract-handshake-shared-state-and-business-errors",
+    "full-contract-drift-rejected",
+    "redirect-both-clients-refuse-without-retry",
+    "large-both-clients-refuse-without-retry"
+  ],
+  "typescript": {
+    "result": "passed",
+    "contract": true,
+    "sharedProfile": true,
+    "businessError": true
+  }
+}

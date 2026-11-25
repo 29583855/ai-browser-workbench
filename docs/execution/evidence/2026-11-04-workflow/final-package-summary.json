@@ -1,0 +1,32 @@
+{
+  "date": "2026-11-04T14:27:38.407956+08:00",
+  "result": "passed",
+  "version": "0.1.5-poc",
+  "archive": {
+    "file": "AI-Browser-Workbench-0.1.5-win64-workflow-r1.zip",
+    "sha256": "5e052460bc0636f507ffae7010826fbbf12eb928f495a1b16799f011b5734fe0",
+    "bytes": 225865047
+  },
+  "manifestFiles": 1013,
+  "deploymentChecks": 9,
+  "packagedSuites": [
+    "browser",
+    "proxy",
+    "lifecycle",
+    "recovery",
+    "socks",
+    "runtime",
+    "api",
+    "pages",
+    "inspector",
+    "workflow",
+    "protocol",
+    "mcp",
+    "desktop"
+  ],
+  "allOriginalFilesReverifiedAfterTests": true,
+  "originalDataEmpty": true,
+  "originalTestResultsAbsent": true,
+  "secondCleanMachineTested": false,
+  "commercialRelease": false
+}

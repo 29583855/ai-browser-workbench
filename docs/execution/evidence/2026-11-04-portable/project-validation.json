@@ -1,0 +1,107 @@
+{
+  "date": "2026-11-04",
+  "result": "passed",
+  "relativeMarkdownLinks": 170,
+  "nativeProjects": 7,
+  "peFiles": [
+    {
+      "file": "awb-core-tests.exe",
+      "machine": "x64",
+      "ASLR": true,
+      "DEP": true,
+      "highEntropyVA": true
+    },
+    {
+      "file": "awb-storage-tests.exe",
+      "machine": "x64",
+      "ASLR": true,
+      "DEP": true,
+      "highEntropyVA": true
+    },
+    {
+      "file": "concrt140.dll",
+      "machine": "x64",
+      "ASLR": true,
+      "DEP": true,
+      "highEntropyVA": true
+    },
+    {
+      "file": "msvcp140.dll",
+      "machine": "x64",
+      "ASLR": true,
+      "DEP": true,
+      "highEntropyVA": true
+    },
+    {
+      "file": "msvcp140_1.dll",
+      "machine": "x64",
+      "ASLR": true,
+      "DEP": true,
+      "highEntropyVA": true
+    },
+    {
+      "file": "msvcp140_2.dll",
+      "machine": "x64",
+      "ASLR": true,
+      "DEP": true,
+      "highEntropyVA": true
+    },
+    {
+      "file": "msvcp140_atomic_wait.dll",
+      "machine": "x64",
+      "ASLR": true,
+      "DEP": true,
+      "highEntropyVA": true
+    },
+    {
+      "file": "msvcp140_codecvt_ids.dll",
+      "machine": "x64",
+      "ASLR": true,
+      "DEP": true,
+      "highEntropyVA": true
+    },
+    {
+      "file": "vccorlib140.dll",
+      "machine": "x64",
+      "ASLR": true,
+      "DEP": true,
+      "highEntropyVA": true
+    },
+    {
+      "file": "vcruntime140.dll",
+      "machine": "x64",
+      "ASLR": true,
+      "DEP": true,
+      "highEntropyVA": true
+    },
+    {
+      "file": "vcruntime140_1.dll",
+      "machine": "x64",
+      "ASLR": true,
+      "DEP": true,
+      "highEntropyVA": true
+    },
+    {
+      "file": "workbench-cli.exe",
+      "machine": "x64",
+      "ASLR": true,
+      "DEP": true,
+      "highEntropyVA": true
+    },
+    {
+      "file": "workbench-mcp.exe",
+      "machine": "x64",
+      "ASLR": true,
+      "DEP": true,
+      "highEntropyVA": true
+    },
+    {
+      "file": "workbench.exe",
+      "machine": "x64",
+      "ASLR": true,
+      "DEP": true,
+      "highEntropyVA": true
+    }
+  ],
+  "errors": []
+}

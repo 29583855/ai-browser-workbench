@@ -1,0 +1,15 @@
+{
+  "date": "2026-11-04T15:50:45.287258+08:00",
+  "result": "failed",
+  "checks": [],
+  "paths": [],
+  "binarySha256": "2c2c36b6f3f629b20e988a58af96b5cc20cd6f7d53705e5abab08897d584cd65",
+  "error": "{'error': {'automaticRetryAllowed': False, 'code': 'ASSERTION_TIMEOUT', 'message': 'Expected text was not observed', 'outcomeUnknown': False}, 'id': 5, 'ok': False}",
+  "failureObservation": {
+    "#result": "ready",
+    "#identity": "anonymous",
+    "#storage": "storage-loading",
+    "#fixture-diagnostic": "not-submitted",
+    "#sw": "sw-error:AbortError"
+  }
+}

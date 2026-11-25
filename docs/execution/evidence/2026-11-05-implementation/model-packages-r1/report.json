@@ -1,0 +1,210 @@
+{
+  "date": "2026-11-05",
+  "result": "failed",
+  "checks": [
+    "unconfigured-fallback-scoped-auth-real-http-valid-draft-and-durable-admission-budget"
+  ],
+  "executableSha256": "32db6ca44dc8fac70d42396f40adeaffcf52a3b4165a5fcf35f99b15a836528c",
+  "calls": [
+    {
+      "sequence": 1,
+      "command": "model_status",
+      "outcome": "passed"
+    },
+    {
+      "sequence": 2,
+      "command": "model_generate_workflow",
+      "outcome": "MODEL_NOT_CONFIGURED"
+    },
+    {
+      "sequence": 3,
+      "command": "credential_create",
+      "outcome": "passed"
+    },
+    {
+      "sequence": 4,
+      "command": "model_status",
+      "outcome": "passed"
+    },
+    {
+      "sequence": 5,
+      "command": "model_configure",
+      "outcome": "passed"
+    },
+    {
+      "sequence": 6,
+      "command": "model_configure",
+      "outcome": "REVISION_CONFLICT"
+    },
+    {
+      "sequence": 7,
+      "command": "model_generate_workflow",
+      "outcome": "passed"
+    },
+    {
+      "sequence": 8,
+      "command": "model_generate_workflow",
+      "outcome": "passed"
+    },
+    {
+      "sequence": 9,
+      "command": "model_generate_workflow",
+      "outcome": "MODEL_BUDGET_EXCEEDED"
+    },
+    {
+      "sequence": 10,
+      "command": "workflow_list",
+      "outcome": "passed"
+    },
+    {
+      "sequence": 11,
+      "command": "model_status",
+      "outcome": "passed"
+    },
+    {
+      "sequence": 12,
+      "command": "model_configure",
+      "outcome": "passed"
+    },
+    {
+      "sequence": 13,
+      "command": "model_generate_workflow",
+      "outcome": "MODEL_REDIRECT_DENIED"
+    },
+    {
+      "sequence": 14,
+      "command": "model_status",
+      "outcome": "passed"
+    },
+    {
+      "sequence": 15,
+      "command": "model_status",
+      "outcome": "passed"
+    },
+    {
+      "sequence": 16,
+      "command": "model_configure",
+      "outcome": "passed"
+    },
+    {
+      "sequence": 17,
+      "command": "model_generate_workflow",
+      "outcome": "MODEL_HTTP_ERROR"
+    },
+    {
+      "sequence": 18,
+      "command": "model_status",
+      "outcome": "passed"
+    },
+    {
+      "sequence": 19,
+      "command": "model_status",
+      "outcome": "passed"
+    },
+    {
+      "sequence": 20,
+      "command": "model_configure",
+      "outcome": "passed"
+    },
+    {
+      "sequence": 21,
+      "command": "model_generate_workflow",
+      "outcome": "MODEL_DRAFT_INVALID"
+    },
+    {
+      "sequence": 22,
+      "command": "model_status",
+      "outcome": "passed"
+    },
+    {
+      "sequence": 23,
+      "command": "model_status",
+      "outcome": "passed"
+    },
+    {
+      "sequence": 24,
+      "command": "model_configure",
+      "outcome": "passed"
+    },
+    {
+      "sequence": 25,
+      "command": "model_generate_workflow",
+      "outcome": "MODEL_RESPONSE_INVALID"
+    },
+    {
+      "sequence": 26,
+      "command": "model_status",
+      "outcome": "passed"
+    },
+    {
+      "sequence": 27,
+      "command": "model_status",
+      "outcome": "passed"
+    },
+    {
+      "sequence": 28,
+      "command": "model_configure",
+      "outcome": "passed"
+    },
+    {
+      "sequence": 29,
+      "command": "model_generate_workflow",
+      "outcome": "MODEL_RESPONSE_INVALID"
+    },
+    {
+      "sequence": 30,
+      "command": "model_status",
+      "outcome": "passed"
+    },
+    {
+      "sequence": 31,
+      "command": "model_status",
+      "outcome": "passed"
+    },
+    {
+      "sequence": 32,
+      "command": "model_configure",
+      "outcome": "passed"
+    },
+    {
+      "sequence": 33,
+      "command": "model_generate_workflow",
+      "outcome": "MODEL_DRAFT_SCOPE_MISMATCH"
+    },
+    {
+      "sequence": 34,
+      "command": "model_status",
+      "outcome": "passed"
+    },
+    {
+      "sequence": 35,
+      "command": "model_status",
+      "outcome": "passed"
+    },
+    {
+      "sequence": 36,
+      "command": "model_configure",
+      "outcome": "passed"
+    },
+    {
+      "sequence": 37,
+      "command": "model_generate_workflow",
+      "outcome": "MODEL_DRAFT_SECRET_DETECTED"
+    },
+    {
+      "sequence": 38,
+      "command": "model_status",
+      "outcome": "passed"
+    },
+    {
+      "sequence": 39,
+      "command": "model_status",
+      "outcome": "passed"
+    },
+    {
+      "sequence": 40,
+      "command": "model_configure",
+      "outcome": "passed"
+    }
+  ]
+}

@@ -1,0 +1,48 @@
+{
+  "date": "2026-11-04T11:09:56.906135+08:00",
+  "version": "0.1.2-poc",
+  "result": "passed",
+  "scope": "Local implemented feature acceptance; not commercial readiness",
+  "nativeEvidence": "build/evidence/native-20261104-111454",
+  "cmakeBrowserEvidence": "build/evidence/run-20261104-111533",
+  "cmakeStorageEvidence": "build/evidence/run-20261104-111533",
+  "configurations": [
+    "Debug",
+    "Release"
+  ],
+  "browserCommandsPerConfiguration": 124,
+  "storageChecksPerConfiguration": 29,
+  "apiRequestsPerConfiguration": 42,
+  "apiRawRejectionsPerConfiguration": 5,
+  "protocolChecksPerConfiguration": 18,
+  "tools": 21,
+  "completedThisIteration": [
+    "T016",
+    "T017",
+    "T021",
+    "T037"
+  ],
+  "T036": "partial; product exit detector remains unfinished",
+  "externalServicesProvided": false,
+  "secondCleanMachineTested": false,
+  "releaseReady": false,
+  "failuresPreserved": true,
+  "binaries": {
+    "Debug": {
+      "awb-core-tests.exe": "d04cd95afe5e5709de1e6f8b9d3bd9c733c6c2ec9abda559094c0eacf88e3715",
+      "awb-storage-tests.exe": "ecd0c13db9f9b814399e97d9acd8df183dda7d65308ba5d7e02ec5fe67da4620",
+      "workbench-cli.exe": "a2c1f1865e7bd1b5d531dd7f88903d088a18fbba032fd7b9caa01bd407a4c6ca",
+      "workbench-mcp.exe": "5dacfeaba9635f3e85ee3e679245b73e8b76a1a0c551e848812c0b66c0b8aaec",
+      "workbench.exe": "03aef23048382e7df2558642ec5a9b4ea350ad7e5c7b2f222716739e071a9fbc"
+    },
+    "Release": {
+      "awb-core-tests.exe": "da937c68087192f15930dd4061df1e72b11228717c8c6d9f183ebd8c0ccfd6d4",
+      "awb-storage-tests.exe": "af76b1c4a49c707fae00a8c3eccfb84de53cc9225965ec6f687b43a155a6fad4",
+      "workbench-cli.exe": "6de403f1a7ddaaf527365067d0ae7100c6785b30884e90fa5d9ea0f6d5af1529",
+      "workbench-mcp.exe": "98f09f8a970287b791b467a836091b68a47cf01f741b33f7ff5a1c2cd5e5baa9",
+      "workbench.exe": "701656b3f42ae5255fe710b8792c20abce596de8b12ee7c02de0c37d2e027aff"
+    }
+  },
+  "longPathAtomicReadWriteTested": true,
+  "initialPackageRejected": true
+}

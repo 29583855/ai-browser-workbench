@@ -1,0 +1,494 @@
+{
+  "date": "2026-11-04",
+  "result": "passed",
+  "transports": [
+    {
+      "transport": "CLI",
+      "binarySha256": "16cf501ded774faed02434fc9135d1e94b2985c9eea1fe47e76b726aec94639b",
+      "checks": [
+        "shared-registry-and-capability-discovery",
+        "all-picker-tools-no-business-submit",
+        "all-recorder-tools-parameterized-secret-free-draft",
+        "same-argument-and-revoked-lease-rejections"
+      ],
+      "result": "passed",
+      "calls": [
+        {
+          "sequence": 1,
+          "command": "capabilities",
+          "outcome": "passed"
+        },
+        {
+          "sequence": 2,
+          "command": "profile_create",
+          "outcome": "passed"
+        },
+        {
+          "sequence": 3,
+          "command": "browser_start",
+          "outcome": "passed"
+        },
+        {
+          "sequence": 4,
+          "command": "lease_acquire",
+          "outcome": "passed"
+        },
+        {
+          "sequence": 5,
+          "command": "browser_navigate",
+          "outcome": "passed"
+        },
+        {
+          "sequence": 6,
+          "command": "page_pick_start",
+          "outcome": "passed"
+        },
+        {
+          "sequence": 7,
+          "command": "page_pick_read",
+          "outcome": "passed"
+        },
+        {
+          "sequence": 8,
+          "command": "page_pick_read",
+          "outcome": "passed"
+        },
+        {
+          "sequence": 9,
+          "command": "page_pick_stop",
+          "outcome": "passed"
+        },
+        {
+          "sequence": 10,
+          "command": "page_locate",
+          "outcome": "passed"
+        },
+        {
+          "sequence": 11,
+          "command": "page_text",
+          "outcome": "passed"
+        },
+        {
+          "sequence": 12,
+          "command": "recorder_start",
+          "outcome": "passed"
+        },
+        {
+          "sequence": 13,
+          "command": "recorder_control",
+          "outcome": "passed"
+        },
+        {
+          "sequence": 14,
+          "command": "recorder_control",
+          "outcome": "passed"
+        },
+        {
+          "sequence": 15,
+          "command": "page_locate",
+          "outcome": "passed"
+        },
+        {
+          "sequence": 16,
+          "command": "page_fill",
+          "outcome": "passed"
+        },
+        {
+          "sequence": 17,
+          "command": "page_locate",
+          "outcome": "passed"
+        },
+        {
+          "sequence": 18,
+          "command": "page_click",
+          "outcome": "passed"
+        },
+        {
+          "sequence": 19,
+          "command": "recorder_read",
+          "outcome": "passed"
+        },
+        {
+          "sequence": 20,
+          "command": "recorder_control",
+          "outcome": "passed"
+        },
+        {
+          "sequence": 21,
+          "command": "recorder_start",
+          "outcome": "INVALID_ARGUMENTS"
+        },
+        {
+          "sequence": 22,
+          "command": "recorder_start",
+          "outcome": "passed"
+        },
+        {
+          "sequence": 23,
+          "command": "lease_revoke",
+          "outcome": "passed"
+        },
+        {
+          "sequence": 24,
+          "command": "recorder_read",
+          "outcome": "LEASE_REVOKED"
+        },
+        {
+          "sequence": 25,
+          "command": "lease_acquire",
+          "outcome": "passed"
+        },
+        {
+          "sequence": 26,
+          "command": "recorder_control",
+          "outcome": "passed"
+        },
+        {
+          "sequence": 27,
+          "command": "browser_stop",
+          "outcome": "passed"
+        }
+      ]
+    },
+    {
+      "transport": "MCP",
+      "binarySha256": "511238a1dc2e829c0ce35da8494b38b764004e570bb2eeb707f217bf0ada572d",
+      "checks": [
+        "shared-registry-and-capability-discovery",
+        "all-picker-tools-no-business-submit",
+        "all-recorder-tools-parameterized-secret-free-draft",
+        "same-argument-and-revoked-lease-rejections"
+      ],
+      "result": "passed",
+      "calls": [
+        {
+          "command": "profile_create",
+          "outcome": "passed"
+        },
+        {
+          "command": "browser_start",
+          "outcome": "passed"
+        },
+        {
+          "command": "lease_acquire",
+          "outcome": "passed"
+        },
+        {
+          "command": "browser_navigate",
+          "outcome": "passed"
+        },
+        {
+          "command": "page_pick_start",
+          "outcome": "passed"
+        },
+        {
+          "command": "page_pick_read",
+          "outcome": "passed"
+        },
+        {
+          "command": "page_pick_read",
+          "outcome": "passed"
+        },
+        {
+          "command": "page_pick_stop",
+          "outcome": "passed"
+        },
+        {
+          "command": "page_locate",
+          "outcome": "passed"
+        },
+        {
+          "command": "page_text",
+          "outcome": "passed"
+        },
+        {
+          "command": "recorder_start",
+          "outcome": "passed"
+        },
+        {
+          "command": "recorder_control",
+          "outcome": "passed"
+        },
+        {
+          "command": "recorder_control",
+          "outcome": "passed"
+        },
+        {
+          "command": "page_locate",
+          "outcome": "passed"
+        },
+        {
+          "command": "page_fill",
+          "outcome": "passed"
+        },
+        {
+          "command": "page_locate",
+          "outcome": "passed"
+        },
+        {
+          "command": "page_click",
+          "outcome": "passed"
+        },
+        {
+          "command": "recorder_read",
+          "outcome": "passed"
+        },
+        {
+          "command": "recorder_control",
+          "outcome": "passed"
+        },
+        {
+          "command": "recorder_start",
+          "outcome": "INVALID_ARGUMENTS"
+        },
+        {
+          "command": "recorder_start",
+          "outcome": "passed"
+        },
+        {
+          "command": "lease_revoke",
+          "outcome": "passed"
+        },
+        {
+          "command": "recorder_read",
+          "outcome": "LEASE_REVOKED"
+        },
+        {
+          "command": "lease_acquire",
+          "outcome": "passed"
+        },
+        {
+          "command": "recorder_control",
+          "outcome": "passed"
+        },
+        {
+          "command": "browser_stop",
+          "outcome": "passed"
+        }
+      ]
+    },
+    {
+      "transport": "HTTP",
+      "binarySha256": "16cf501ded774faed02434fc9135d1e94b2985c9eea1fe47e76b726aec94639b",
+      "checks": [
+        "shared-registry-and-capability-discovery",
+        "all-picker-tools-no-business-submit",
+        "all-recorder-tools-parameterized-secret-free-draft",
+        "same-argument-and-revoked-lease-rejections"
+      ],
+      "result": "passed",
+      "requests": [
+        {
+          "method": "GET",
+          "path": "/v1/tools",
+          "status": 200,
+          "requestId": "0783b9d8508035b6a4d925c078177508",
+          "outcome": "passed"
+        },
+        {
+          "method": "POST",
+          "path": "/v1/tools/profile_create",
+          "status": 200,
+          "requestId": "eddd9ba07b665766aad077bf1ea58e53",
+          "outcome": "passed"
+        },
+        {
+          "method": "POST",
+          "path": "/v1/tools/browser_start",
+          "status": 200,
+          "requestId": "8465b5d2bab55ad3bc86fdbf37e78f73",
+          "outcome": "passed"
+        },
+        {
+          "method": "POST",
+          "path": "/v1/tools/lease_acquire",
+          "status": 200,
+          "requestId": "d564b3f505b1a7368f2e59df7a17d8b9",
+          "outcome": "passed"
+        },
+        {
+          "method": "POST",
+          "path": "/v1/tools/browser_navigate",
+          "status": 200,
+          "requestId": "a4ce03215dff04bd4a721ac94dcfd268",
+          "outcome": "passed"
+        },
+        {
+          "method": "POST",
+          "path": "/v1/tools/page_pick_start",
+          "status": 200,
+          "requestId": "87947ea38d77c6b8ce1f6cbdbb850cf3",
+          "outcome": "passed"
+        },
+        {
+          "method": "POST",
+          "path": "/v1/tools/page_pick_read",
+          "status": 200,
+          "requestId": "04b7f5b567803043740cb9c7dabd00ee",
+          "outcome": "passed"
+        },
+        {
+          "method": "POST",
+          "path": "/v1/tools/page_pick_read",
+          "status": 200,
+          "requestId": "d09300e6cf7ebc8e17ed96db7108a792",
+          "outcome": "passed"
+        },
+        {
+          "method": "POST",
+          "path": "/v1/tools/page_pick_stop",
+          "status": 200,
+          "requestId": "1b4349a79547c8bbaaf7c413ca81b759",
+          "outcome": "passed"
+        },
+        {
+          "method": "POST",
+          "path": "/v1/tools/page_locate",
+          "status": 200,
+          "requestId": "d80399a48fc1a2cfa45a7cea1107b4cf",
+          "outcome": "passed"
+        },
+        {
+          "method": "POST",
+          "path": "/v1/tools/page_text",
+          "status": 200,
+          "requestId": "76bc034b7438704588b53537a118311a",
+          "outcome": "passed"
+        },
+        {
+          "method": "POST",
+          "path": "/v1/tools/recorder_start",
+          "status": 200,
+          "requestId": "cc92a0291fcf9632d9ea22f9382c2d1b",
+          "outcome": "passed"
+        },
+        {
+          "method": "POST",
+          "path": "/v1/tools/recorder_control",
+          "status": 200,
+          "requestId": "a64df533e9163de68b6ecc9978c3fe11",
+          "outcome": "passed"
+        },
+        {
+          "method": "POST",
+          "path": "/v1/tools/recorder_control",
+          "status": 200,
+          "requestId": "3a8d60652a97b150eb51e90ee067ff13",
+          "outcome": "passed"
+        },
+        {
+          "method": "POST",
+          "path": "/v1/tools/page_locate",
+          "status": 200,
+          "requestId": "74fe29084f55691d0ab931a15c14f1e9",
+          "outcome": "passed"
+        },
+        {
+          "method": "POST",
+          "path": "/v1/tools/page_fill",
+          "status": 200,
+          "requestId": "01e1aea70e6a6085ac4cb564a04c7404",
+          "outcome": "passed"
+        },
+        {
+          "method": "POST",
+          "path": "/v1/tools/page_locate",
+          "status": 200,
+          "requestId": "d5d78e6a07dc668f9595e83a1e59450c",
+          "outcome": "passed"
+        },
+        {
+          "method": "POST",
+          "path": "/v1/tools/page_click",
+          "status": 200,
+          "requestId": "d9b67d1faf7c845825e49432becf6e5e",
+          "outcome": "passed"
+        },
+        {
+          "method": "POST",
+          "path": "/v1/tools/recorder_read",
+          "status": 200,
+          "requestId": "8189dd7c829bc7a8d473f635d4333e6d",
+          "outcome": "passed"
+        },
+        {
+          "method": "POST",
+          "path": "/v1/tools/recorder_control",
+          "status": 200,
+          "requestId": "27f7fa6f16c756aa5f98b1217bfb4673",
+          "outcome": "passed"
+        },
+        {
+          "method": "POST",
+          "path": "/v1/tools/recorder_start",
+          "status": 400,
+          "requestId": "f7b273a6c142e70d29fb15868a0da577",
+          "outcome": "INVALID_ARGUMENTS"
+        },
+        {
+          "method": "POST",
+          "path": "/v1/tools/recorder_start",
+          "status": 200,
+          "requestId": "75605e9a4478d90c34b7f54ce1775c9e",
+          "outcome": "passed"
+        },
+        {
+          "method": "POST",
+          "path": "/v1/tools/lease_revoke",
+          "status": 200,
+          "requestId": "e99cee27d66be1210b36730ff28c9d04",
+          "outcome": "passed"
+        },
+        {
+          "method": "POST",
+          "path": "/v1/tools/recorder_read",
+          "status": 422,
+          "requestId": "5897ccbacc6348bcafbd0f187e840152",
+          "outcome": "LEASE_REVOKED"
+        },
+        {
+          "method": "POST",
+          "path": "/v1/tools/lease_acquire",
+          "status": 200,
+          "requestId": "f8d3714c8a227fbc3687eb76b2ca035e",
+          "outcome": "passed"
+        },
+        {
+          "method": "POST",
+          "path": "/v1/tools/recorder_control",
+          "status": 200,
+          "requestId": "50df25452d925960801ed29bef27539d",
+          "outcome": "passed"
+        },
+        {
+          "method": "POST",
+          "path": "/v1/tools/browser_stop",
+          "status": 200,
+          "requestId": "af3cfcdc016437b88c214153ae52e6ee",
+          "outcome": "passed"
+        },
+        {
+          "method": "POST",
+          "path": "/v1/shutdown",
+          "status": 200,
+          "requestId": "402fea54c016c3ef59e10e129299645c",
+          "outcome": "passed"
+        }
+      ]
+    }
+  ],
+  "checks": [
+    "CLI:shared-registry-and-capability-discovery",
+    "CLI:all-picker-tools-no-business-submit",
+    "CLI:all-recorder-tools-parameterized-secret-free-draft",
+    "CLI:same-argument-and-revoked-lease-rejections",
+    "MCP:shared-registry-and-capability-discovery",
+    "MCP:all-picker-tools-no-business-submit",
+    "MCP:all-recorder-tools-parameterized-secret-free-draft",
+    "MCP:same-argument-and-revoked-lease-rejections",
+    "HTTP:shared-registry-and-capability-discovery",
+    "HTTP:all-picker-tools-no-business-submit",
+    "HTTP:all-recorder-tools-parameterized-secret-free-draft",
+    "HTTP:same-argument-and-revoked-lease-rejections"
+  ]
+}

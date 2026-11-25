@@ -1,0 +1,30 @@
+# 用途：示例HTTPS入口，替换域名、CA文件和私有环境变量后由管理员部署；日期：2026-11-05。
+# 后台server-config.json.publicOrigin必须设为 https://portal.example.test。
+# 节点启用mTLS时，requireNodeTransportProof=true，nodeTransportSecret与环境变量一致。
+portal.example.test {
+    @node path /api/node.enroll /api/node.open /api/node.poll /api/node.ack /api/node.complete /api/node.event
+    respond @node "Use the authenticated node endpoint" 403
+    reverse_proxy 127.0.0.1:17861 {
+        header_up -X-AWB-Node-Transport
+    }
+}
+nodes.example.test {
+    tls {
+        client_auth {
+            mode require_and_verify
+            trust_pool file {
+                pem_file D:/WorkbenchGateway/node-client-ca.pem
+            }
+        }
+    }
+    @node path /api/node.enroll /api/node.open /api/node.poll /api/node.ack /api/node.complete /api/node.event
+    handle @node {
+        reverse_proxy 127.0.0.1:17861 {
+            header_up Host portal.example.test
+            header_up X-AWB-Node-Transport {$AWB_NODE_PROXY_SECRET}
+        }
+    }
+    handle {
+        respond "Not found" 404
+    }
+}

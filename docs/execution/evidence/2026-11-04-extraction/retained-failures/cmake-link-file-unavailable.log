@@ -1,0 +1,34 @@
+-- Configuring done
+-- Generating done
+-- Build files have been written to: E:/project/webexploer_codex/build/vs2019-x64
+用于 .NET Framework 的 Microsoft (R) 生成引擎版本 16.11.6+a918ceb31
+版权所有(C) Microsoft Corporation。保留所有权利。
+
+  awb_sqlite.vcxproj -> E:\project\webexploer_codex\build\vs2019-x64\Debug\awb_sqlite.lib
+  browser.cpp
+  diagnostics.cpp
+  extraction.cpp
+  catalog.cpp
+  local_api.cpp
+  service.cpp
+  workflow.cpp
+  platform.cpp
+  正在生成代码...
+  awb_core.vcxproj -> E:\project\webexploer_codex\build\vs2019-x64\Debug\awb_core.lib
+  storage_tests.cpp
+  main.cpp
+  main.cpp
+  main.cpp
+  core_tests.cpp
+  workbench-cli.vcxproj -> E:\project\webexploer_codex\build\vs2019-x64\Debug\workbench-cli.exe
+LINK : fatal error LNK1104: 无法打开文件“E:\project\webexploer_codex\build\vs2019-x64\Debug\awb-storage-tests.exe” [E:\project\webexploer_codex\build\vs2019-x64\awb-storage-tests.vcxproj]
+  workbench-mcp.vcxproj -> E:\project\webexploer_codex\build\vs2019-x64\Debug\workbench-mcp.exe
+  awb-core-tests.vcxproj -> E:\project\webexploer_codex\build\vs2019-x64\Debug\awb-core-tests.exe
+  workbench.vcxproj -> E:\project\webexploer_codex\build\vs2019-x64\Debug\workbench.exe
+Build failed
+At E:\project\webexploer_codex\tools\build.ps1:27 char:36
++         if ($LASTEXITCODE -ne 0) { throw 'Build failed' }
++                                    ~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : OperationStopped: (Build failed:String) [], RuntimeException
+    + FullyQualifiedErrorId : Build failed
+ 

@@ -1,0 +1,39 @@
+{
+  "schemaVersion": "1.0",
+  "name": "desktop-workflow",
+  "version": 1,
+  "inputSchema": {
+    "type": "object",
+    "properties": {},
+    "required": [],
+    "additionalProperties": false
+  },
+  "policy": {
+    "allowedOrigins": [
+      "http://127.0.0.1:54601"
+    ],
+    "maxSteps": 128,
+    "maxDurationMs": 60000
+  },
+  "entry": "open",
+  "steps": [
+    {
+      "id": "open",
+      "type": "navigate",
+      "url": "http://127.0.0.1:54601/workflow",
+      "next": "ready"
+    },
+    {
+      "id": "ready",
+      "type": "assertText",
+      "selector": "#ready",
+      "expected": "ready",
+      "timeoutMs": 5000,
+      "next": "done"
+    },
+    {
+      "id": "done",
+      "type": "end"
+    }
+  ]
+}

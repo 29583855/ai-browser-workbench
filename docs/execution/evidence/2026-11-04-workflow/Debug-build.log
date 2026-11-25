@@ -1,0 +1,22 @@
+用于 .NET Framework 的 Microsoft (R) 生成引擎版本 16.11.6+a918ceb31
+版权所有(C) Microsoft Corporation。保留所有权利。
+
+  awb_sqlite.vcxproj -> E:\project\webexploer_codex\build\vs2019-x64\Debug\awb_sqlite.lib
+  browser.cpp
+  catalog.cpp
+  local_api.cpp
+  service.cpp
+  workflow.cpp
+  platform.cpp
+  正在生成代码...
+  awb_core.vcxproj -> E:\project\webexploer_codex\build\vs2019-x64\Debug\awb_core.lib
+  main.cpp
+  storage_tests.cpp
+  main.cpp
+  core_tests.cpp
+  main.cpp
+  workbench-mcp.vcxproj -> E:\project\webexploer_codex\build\vs2019-x64\Debug\workbench-mcp.exe
+  workbench-cli.vcxproj -> E:\project\webexploer_codex\build\vs2019-x64\Debug\workbench-cli.exe
+  awb-storage-tests.vcxproj -> E:\project\webexploer_codex\build\vs2019-x64\Debug\awb-storage-tests.exe
+  awb-core-tests.vcxproj -> E:\project\webexploer_codex\build\vs2019-x64\Debug\awb-core-tests.exe
+  workbench.vcxproj -> E:\project\webexploer_codex\build\vs2019-x64\Debug\workbench.exe

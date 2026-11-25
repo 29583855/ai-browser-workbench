@@ -1,0 +1,102 @@
+{
+  "date": "2026-11-04T23:46:01.613538+08:00",
+  "result": "passed",
+  "runs": [
+    {
+      "configuration": "Debug",
+      "round": 1,
+      "suite": "canvas",
+      "exitCode": 0,
+      "report": "docs\\execution\\evidence\\2026-11-04-review-0.1.10\\visual-final\\Debug-canvas-1.json",
+      "binarySha256": "686075329f524b19a6ad7ce1b461425d88bfbf9a0a5fcf6d2bbac3eee31599db",
+      "checks": 19,
+      "paintP95Ms": 17.4236
+    },
+    {
+      "configuration": "Debug",
+      "round": 1,
+      "suite": "recovery",
+      "exitCode": 0,
+      "report": "docs\\execution\\evidence\\2026-11-04-review-0.1.10\\visual-final\\Debug-recovery-1\\report.json",
+      "binarySha256": "686075329f524b19a6ad7ce1b461425d88bfbf9a0a5fcf6d2bbac3eee31599db",
+      "checks": 6
+    },
+    {
+      "configuration": "Debug",
+      "round": 1,
+      "suite": "shutdown",
+      "exitCode": 0,
+      "report": "docs\\execution\\evidence\\2026-11-04-review-0.1.10\\visual-final\\Debug-shutdown-1\\report.json",
+      "binarySha256": "686075329f524b19a6ad7ce1b461425d88bfbf9a0a5fcf6d2bbac3eee31599db",
+      "checks": 6
+    },
+    {
+      "configuration": "Debug",
+      "round": 1,
+      "suite": "visual_desktop",
+      "exitCode": 0,
+      "report": "docs\\execution\\evidence\\2026-11-04-review-0.1.10\\visual-final\\Debug-visual_desktop-1\\report.json",
+      "binarySha256": "686075329f524b19a6ad7ce1b461425d88bfbf9a0a5fcf6d2bbac3eee31599db",
+      "checks": 4
+    },
+    {
+      "configuration": "Debug",
+      "round": 1,
+      "suite": "recording",
+      "exitCode": 0,
+      "report": "docs\\execution\\evidence\\2026-11-04-review-0.1.10\\visual-final\\Debug-recording-1\\report.json",
+      "binarySha256": "f0e1034d6909e7dc6ebaca99794621c95b36ee4f4e511b7f45f1be51ea74525c",
+      "checks": 11,
+      "commands": 103
+    },
+    {
+      "configuration": "Release",
+      "round": 1,
+      "suite": "canvas",
+      "exitCode": 0,
+      "report": "docs\\execution\\evidence\\2026-11-04-review-0.1.10\\visual-final\\Release-canvas-1.json",
+      "binarySha256": "e9f76e7994c42d705f738ad9d738a8afafad10d5e8ba9f601c2be010c9488777",
+      "checks": 19,
+      "paintP95Ms": 17.5481
+    },
+    {
+      "configuration": "Release",
+      "round": 1,
+      "suite": "recovery",
+      "exitCode": 0,
+      "report": "docs\\execution\\evidence\\2026-11-04-review-0.1.10\\visual-final\\Release-recovery-1\\report.json",
+      "binarySha256": "e9f76e7994c42d705f738ad9d738a8afafad10d5e8ba9f601c2be010c9488777",
+      "checks": 6
+    },
+    {
+      "configuration": "Release",
+      "round": 1,
+      "suite": "shutdown",
+      "exitCode": 0,
+      "report": "docs\\execution\\evidence\\2026-11-04-review-0.1.10\\visual-final\\Release-shutdown-1\\report.json",
+      "binarySha256": "e9f76e7994c42d705f738ad9d738a8afafad10d5e8ba9f601c2be010c9488777",
+      "checks": 6
+    },
+    {
+      "configuration": "Release",
+      "round": 1,
+      "suite": "visual_desktop",
+      "exitCode": 0,
+      "report": "docs\\execution\\evidence\\2026-11-04-review-0.1.10\\visual-final\\Release-visual_desktop-1\\report.json",
+      "binarySha256": "e9f76e7994c42d705f738ad9d738a8afafad10d5e8ba9f601c2be010c9488777",
+      "checks": 4
+    },
+    {
+      "configuration": "Release",
+      "round": 1,
+      "suite": "recording",
+      "exitCode": 0,
+      "report": "docs\\execution\\evidence\\2026-11-04-review-0.1.10\\visual-final\\Release-recording-1\\report.json",
+      "binarySha256": "4b116358109893539e5df7bd569c3ab7da43389fc346143a4b5dfe1fc4debb5e",
+      "checks": 11,
+      "commands": 105
+    }
+  ],
+  "scope": "Main-document recorder, picker, native canvas, desktop publication and recovery; not the full VR01-VR36 acceptance matrix",
+  "checks": 92
+}

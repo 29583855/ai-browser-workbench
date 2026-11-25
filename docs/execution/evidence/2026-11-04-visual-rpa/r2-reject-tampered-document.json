@@ -1,0 +1,10 @@
+{
+  "result": "failed",
+  "date": "2026-11-04T22:53:39+08:00",
+  "checks": [],
+  "errors": [
+    "Package checksum mismatch: 使用说明.md"
+  ],
+  "root": "E:\\project\\webexploer_codex\\build\\evidence\\visual-rpa-package-delivery-r2\\中文 空格部署\\AI-Browser-Workbench-0.1.9-win64-visual-rpa-r2",
+  "cleanMachine": false
+}

@@ -1,0 +1,8 @@
+Traceback (most recent call last):
+  File "E:\project\webexploer_codex\tests\integration_mcp.py", line 15, in <module>
+    from integration_extraction import extraction_spec, batch_spec
+  File "E:\project\webexploer_codex\tests\integration_extraction.py", line 10, in <module>
+    from integration_browser import Client, FixtureServer
+  File "E:\project\webexploer_codex\tests\integration_browser.py", line 14, in <module>
+    from PIL import Image
+ModuleNotFoundError: No module named 'PIL'

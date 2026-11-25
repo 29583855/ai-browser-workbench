@@ -1,0 +1,418 @@
+{
+  "date": "2026-11-04T12:17:57.408539+08:00",
+  "result": "passed",
+  "requests": [
+    {
+      "method": "GET",
+      "path": "/v1/health",
+      "status": 401,
+      "requestId": "25af8df3bbe8fd6aa4a3a199f83cf457",
+      "outcome": "API_UNAUTHORIZED"
+    },
+    {
+      "method": "GET",
+      "path": "/v1/health",
+      "status": 403,
+      "requestId": "31fd9a328c04fb608a3dbddcc95faf46",
+      "outcome": "API_ORIGIN_DENIED"
+    },
+    {
+      "method": "GET",
+      "path": "/v1/health",
+      "status": 403,
+      "requestId": "8fffad304ffbae0cc099dda5f28a6796",
+      "outcome": "API_ORIGIN_DENIED"
+    },
+    {
+      "method": "GET",
+      "path": "/v1/health",
+      "status": 403,
+      "requestId": "fdddb2515923fae016500ab6a521d5f9",
+      "outcome": "API_HOST_DENIED"
+    },
+    {
+      "method": "GET",
+      "path": "/v1/health",
+      "status": 200,
+      "requestId": "cd6358ae7d709371a2f9ebf6995fbed7",
+      "outcome": "passed"
+    },
+    {
+      "method": "GET",
+      "path": "/v1/tools",
+      "status": 200,
+      "requestId": "0e19b7350739c769cf1a4f54c808fe5e",
+      "outcome": "passed"
+    },
+    {
+      "method": "GET",
+      "path": "/v1/profiles",
+      "status": 200,
+      "requestId": "3b16ccda5e683bae7136769bf11e9af8",
+      "outcome": "passed"
+    },
+    {
+      "method": "DELETE",
+      "path": "/v1/profiles",
+      "status": 405,
+      "requestId": "e792fcf1e336cf5b1765cbd8bb0ea0fb",
+      "outcome": "API_METHOD_NOT_ALLOWED"
+    },
+    {
+      "method": "POST",
+      "path": "/v1/profiles",
+      "status": 415,
+      "requestId": "db773fc736656dd8a6f1a13431d72d3b",
+      "outcome": "API_CONTENT_TYPE"
+    },
+    {
+      "method": "POST",
+      "path": "/v1/profiles",
+      "status": 400,
+      "requestId": "e1296a9ede19a655fe4260070d639a4f",
+      "outcome": "INVALID_ARGUMENTS"
+    },
+    {
+      "method": "GET",
+      "path": "/unregistered",
+      "status": 404,
+      "requestId": "046d455841c223d0493e3ce911fcde5e",
+      "outcome": "API_NOT_FOUND"
+    },
+    {
+      "method": "POST",
+      "path": "/v1/profiles",
+      "status": 200,
+      "requestId": "2b087451ac52eb93076540ab917e3826",
+      "outcome": "passed"
+    },
+    {
+      "method": "PATCH",
+      "path": "/v1/profiles/5242a5613ca763706c4a5911fa9d21c9",
+      "status": 428,
+      "requestId": "a44cdb91f9e0e5fda4af25a854b59a72",
+      "outcome": "API_PRECONDITION_REQUIRED"
+    },
+    {
+      "method": "PATCH",
+      "path": "/v1/profiles/5242a5613ca763706c4a5911fa9d21c9",
+      "status": 200,
+      "requestId": "3ce23036534aa948b6807d0af49b0b08",
+      "outcome": "passed"
+    },
+    {
+      "method": "PATCH",
+      "path": "/v1/profiles/5242a5613ca763706c4a5911fa9d21c9",
+      "status": 409,
+      "requestId": "097aded9c10555a8340e051ce2fc4adb",
+      "outcome": "REVISION_CONFLICT"
+    },
+    {
+      "method": "POST",
+      "path": "/v1/tools/browser_start",
+      "status": 200,
+      "requestId": "894667c2822e848e39f2f225c55db8ae",
+      "outcome": "passed"
+    },
+    {
+      "method": "POST",
+      "path": "/v1/tools/lease_acquire",
+      "status": 200,
+      "requestId": "a21f5a370ee7a6461bd33690aea662f0",
+      "outcome": "passed"
+    },
+    {
+      "method": "POST",
+      "path": "/v1/tools/page_list",
+      "status": 200,
+      "requestId": "631e885abfcbe437a3e1f4ccb62753db",
+      "outcome": "passed"
+    },
+    {
+      "method": "POST",
+      "path": "/v1/tools/page_open",
+      "status": 200,
+      "requestId": "4c909f5394faee73ddf07e96a429c073",
+      "outcome": "passed"
+    },
+    {
+      "method": "POST",
+      "path": "/v1/tools/page_switch",
+      "status": 200,
+      "requestId": "cb2873b757690663abb213d119980f69",
+      "outcome": "passed"
+    },
+    {
+      "method": "POST",
+      "path": "/v1/tools/page_close",
+      "status": 200,
+      "requestId": "46c3509c3b71647eb58277aeb3f07e2c",
+      "outcome": "passed"
+    },
+    {
+      "method": "POST",
+      "path": "/v1/tools/browser_events",
+      "status": 200,
+      "requestId": "98a6cc5cd5fc63a2f87bf0c154132e38",
+      "outcome": "passed"
+    },
+    {
+      "method": "POST",
+      "path": "/v1/tools/browser_navigate",
+      "status": 200,
+      "requestId": "6f9c9750e1ddc9d5c0f1b9313f809f1b",
+      "outcome": "passed"
+    },
+    {
+      "method": "POST",
+      "path": "/v1/tools/page_inspect",
+      "status": 200,
+      "requestId": "f14dee1d84180337a16b626193fe8066",
+      "outcome": "passed"
+    },
+    {
+      "method": "POST",
+      "path": "/v1/tools/page_preview",
+      "status": 200,
+      "requestId": "b42303e4104d16c09baee0c656b4c627",
+      "outcome": "passed"
+    },
+    {
+      "method": "POST",
+      "path": "/v1/tools/page_clear_highlight",
+      "status": 200,
+      "requestId": "7acdfe2031c3ebce0560c2265a0c16fe",
+      "outcome": "passed"
+    },
+    {
+      "method": "POST",
+      "path": "/v1/tools/page_locate",
+      "status": 200,
+      "requestId": "9754303ce57674758992528e4e3594cf",
+      "outcome": "passed"
+    },
+    {
+      "method": "POST",
+      "path": "/v1/tools/page_fill",
+      "status": 200,
+      "requestId": "fc01bf2e46ff1ef84f6b3b5d80c48464",
+      "outcome": "passed"
+    },
+    {
+      "method": "POST",
+      "path": "/v1/tools/page_locate",
+      "status": 200,
+      "requestId": "dfaa679d1a6ca074abdb9ddb19165121",
+      "outcome": "passed"
+    },
+    {
+      "method": "POST",
+      "path": "/v1/tools/page_fill",
+      "status": 200,
+      "requestId": "4820e7fb0389ebd6414c35f777d5c063",
+      "outcome": "passed"
+    },
+    {
+      "method": "POST",
+      "path": "/v1/tools/page_locate",
+      "status": 200,
+      "requestId": "d4fa11a6101d03e2b60ca6fabfc75ea7",
+      "outcome": "passed"
+    },
+    {
+      "method": "POST",
+      "path": "/v1/tools/page_click",
+      "status": 200,
+      "requestId": "a86ddc8f3a24347a8f7444b199a07b50",
+      "outcome": "passed"
+    },
+    {
+      "method": "POST",
+      "path": "/v1/tools/page_wait_text",
+      "status": 200,
+      "requestId": "2cae69bae6a4239d4ed8279302038e53",
+      "outcome": "passed"
+    },
+    {
+      "method": "POST",
+      "path": "/v1/tools/page_locate",
+      "status": 200,
+      "requestId": "1353da8db851c5c3f13599ce59cee3ad",
+      "outcome": "passed"
+    },
+    {
+      "method": "POST",
+      "path": "/v1/tools/page_click",
+      "status": 200,
+      "requestId": "ddc1b5577436d610d77b9698e78edeee",
+      "outcome": "passed"
+    },
+    {
+      "method": "POST",
+      "path": "/v1/tools/page_wait_text",
+      "status": 200,
+      "requestId": "38b2cbf7aeafe540db0b99ec946f5f94",
+      "outcome": "passed"
+    },
+    {
+      "method": "POST",
+      "path": "/v1/tools/browser_navigate",
+      "status": 200,
+      "requestId": "441729fe286ef08221c61d96cc77ffe2",
+      "outcome": "passed"
+    },
+    {
+      "method": "POST",
+      "path": "/v1/tools/page_inspect",
+      "status": 200,
+      "requestId": "3afba1dc8c16584fd422392c74c235bc",
+      "outcome": "passed"
+    },
+    {
+      "method": "POST",
+      "path": "/v1/tools/page_select",
+      "status": 200,
+      "requestId": "547547bdae0c96da45f6aed367ca5a10",
+      "outcome": "passed"
+    },
+    {
+      "method": "POST",
+      "path": "/v1/tools/page_wait_text",
+      "status": 200,
+      "requestId": "0567e54f0cf1ccb41c09ab2a66bbc2bf",
+      "outcome": "passed"
+    },
+    {
+      "method": "POST",
+      "path": "/v1/profiles",
+      "status": 422,
+      "requestId": "a0f218c592b867fd3d6fe3db1da3aa26",
+      "outcome": "AUDIT_WRITE_FAILED"
+    },
+    {
+      "method": "GET",
+      "path": "/v1/profiles",
+      "status": 200,
+      "requestId": "d8114e0451e6bb57e2723c5c1a1b366c",
+      "outcome": "passed"
+    },
+    {
+      "method": "POST",
+      "path": "/v1/tools/browser_navigate",
+      "status": 200,
+      "requestId": "e7a3a8aad998e283af285fc03c4f960f",
+      "outcome": "passed"
+    },
+    {
+      "method": "POST",
+      "path": "/v1/tools/page_locate",
+      "status": 200,
+      "requestId": "6775019f0b5cea9fd104652a4c9963ea",
+      "outcome": "passed"
+    },
+    {
+      "method": "POST",
+      "path": "/v1/tools/page_click",
+      "status": 422,
+      "requestId": "e362c4e9f84c866f8fa50baf89b24e2e",
+      "outcome": "AUDIT_WRITE_FAILED"
+    },
+    {
+      "method": "POST",
+      "path": "/v1/tools/page_wait_text",
+      "status": 200,
+      "requestId": "d2c2061e83792dd44a18707742c85dbe",
+      "outcome": "passed"
+    },
+    {
+      "method": "POST",
+      "path": "/v1/tools/browser_stop",
+      "status": 200,
+      "requestId": "54f1e548a433c61b10f60739cd57353e",
+      "outcome": "passed"
+    },
+    {
+      "method": "POST",
+      "path": "/v1/profiles/5242a5613ca763706c4a5911fa9d21c9/archive",
+      "status": 200,
+      "requestId": "042de090a0da592e73df221c26e7200f",
+      "outcome": "passed"
+    },
+    {
+      "method": "GET",
+      "path": "/v1/profiles?state=archived",
+      "status": 200,
+      "requestId": "222ff4f455c5fef6587a054a63ca4947",
+      "outcome": "passed"
+    },
+    {
+      "method": "POST",
+      "path": "/v1/profiles/5242a5613ca763706c4a5911fa9d21c9/restore",
+      "status": 200,
+      "requestId": "b9de6b6ad6c48c6abcfb5f5fc30edc3a",
+      "outcome": "passed"
+    },
+    {
+      "method": "POST",
+      "path": "/v1/shutdown",
+      "status": 200,
+      "requestId": "ac7e80c94eba48d86fff1bd807ca1d1e",
+      "outcome": "passed"
+    },
+    {
+      "method": "GET",
+      "path": "/v1/profiles",
+      "status": 401,
+      "requestId": "2a63a81e1e2b71a65ea915ffb48dcfcc",
+      "outcome": "API_UNAUTHORIZED"
+    },
+    {
+      "method": "POST",
+      "path": "/v1/tools/browser_start",
+      "status": 200,
+      "requestId": "803a0a61d74310f60a60449ec2283894",
+      "outcome": "passed"
+    },
+    {
+      "method": "POST",
+      "path": "/v1/shutdown",
+      "status": 200,
+      "requestId": "5c0f5c60af2127a2271d69c5d2165e18",
+      "outcome": "passed"
+    }
+  ],
+  "rawRejections": [
+    {
+      "code": "INVALID_REQUEST",
+      "requestId": "bad6310e3172e6b6da6a6086007ab587"
+    },
+    {
+      "code": "INVALID_REQUEST",
+      "requestId": "97ba189aaea017f3c0c03172bad40a86"
+    },
+    {
+      "code": "INPUT_TOO_LARGE",
+      "requestId": "04f14135644298d9b6fb13afbbe3fbd3"
+    },
+    {
+      "code": "INVALID_JSON",
+      "requestId": "d1713ecac2acf7f3668e0855e1c70b87"
+    },
+    {
+      "code": "INVALID_REQUEST",
+      "requestId": "3d7d91fa6bce85f96dbceb983471b632"
+    }
+  ],
+  "binarySha256": "4cba1769d5932bfce33d202cd121fadea1de6dcdab42d2c8f9a0931caaaf8fcd",
+  "auditFailureBoundaries": {
+    "acceptedFailureBlocksCreate": true,
+    "completedFailureOutcomeUnknown": true,
+    "actualCommitCount": 1
+  },
+  "registrationCount": 1,
+  "loginCount": 1,
+  "tokenRotated": true,
+  "portOwnershipExclusive": true,
+  "auditHasNoSecrets": true,
+  "shutdownJobCleaned": true
+}

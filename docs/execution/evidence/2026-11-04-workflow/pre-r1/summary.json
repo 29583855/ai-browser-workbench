@@ -1,0 +1,171 @@
+{
+  "date": "2026-11-04T14:14:51.265140+08:00",
+  "version": "0.1.5-poc",
+  "result": "passed",
+  "scope": "Local bounded workflow implementation; full product and release gates remain open",
+  "nativeEvidence": "build/evidence/native-20261104-141027",
+  "cmakeEvidence": "build/evidence/run-20261104-141037",
+  "tools": 39,
+  "newCommands": [
+    "workflow_validate",
+    "workflow_publish",
+    "workflow_list",
+    "workflow_get",
+    "workflow_run",
+    "workflow_runs",
+    "workflow_status",
+    "workflow_control"
+  ],
+  "completedWholePlanTasksThisIncrement": [
+    "T033",
+    "T034"
+  ],
+  "partialTasks": [
+    "T035",
+    "T040",
+    "T043",
+    "T089"
+  ],
+  "configurations": {
+    "Debug": {
+      "browser": {
+        "result": "passed",
+        "commands": 124
+      },
+      "proxy": {
+        "result": "passed",
+        "commands": 8
+      },
+      "lifecycle": {
+        "result": "passed",
+        "checks": 6
+      },
+      "recovery": {
+        "result": "passed",
+        "checks": 4
+      },
+      "socks": {
+        "result": "passed",
+        "commands": 22
+      },
+      "runtime": {
+        "result": "passed"
+      },
+      "api": {
+        "result": "passed",
+        "requests": 79,
+        "rawRejections": 6
+      },
+      "pages": {
+        "result": "passed",
+        "checks": 6,
+        "commands": 219
+      },
+      "inspector": {
+        "result": "passed",
+        "checks": 6,
+        "commands": 135
+      },
+      "workflow": {
+        "result": "passed",
+        "checks": 12,
+        "flows": 20,
+        "negatives": 34,
+        "commands": 1
+      },
+      "protocol": {
+        "result": "passed",
+        "checks": 24
+      },
+      "mcp": {
+        "result": "passed",
+        "steps": 44
+      },
+      "desktop": {
+        "result": "passed",
+        "checks": 8,
+        "buttonSteps": 104
+      }
+    },
+    "Release": {
+      "browser": {
+        "result": "passed",
+        "commands": 124
+      },
+      "proxy": {
+        "result": "passed",
+        "commands": 8
+      },
+      "lifecycle": {
+        "result": "passed",
+        "checks": 6
+      },
+      "recovery": {
+        "result": "passed",
+        "checks": 4
+      },
+      "socks": {
+        "result": "passed",
+        "commands": 22
+      },
+      "runtime": {
+        "result": "passed"
+      },
+      "api": {
+        "result": "passed",
+        "requests": 82,
+        "rawRejections": 6
+      },
+      "pages": {
+        "result": "passed",
+        "checks": 6,
+        "commands": 220
+      },
+      "inspector": {
+        "result": "passed",
+        "checks": 6,
+        "commands": 135
+      },
+      "workflow": {
+        "result": "passed",
+        "checks": 12,
+        "flows": 20,
+        "negatives": 34,
+        "commands": 1
+      },
+      "protocol": {
+        "result": "passed",
+        "checks": 24
+      },
+      "mcp": {
+        "result": "passed",
+        "steps": 44
+      },
+      "desktop": {
+        "result": "passed",
+        "checks": 8,
+        "buttonSteps": 104
+      }
+    }
+  },
+  "binaries": {
+    "Debug": {
+      "awb-core-tests.exe": "4bd3f3f9ba87d78aa12d6ff0ace70b7a9efbd313ba3b7a404340077532520fae",
+      "awb-storage-tests.exe": "445dd2216f89828bdfd83b210b13e7ca72064e0536a2be5070db23144a2dc50c",
+      "workbench-cli.exe": "959a192e8faeede2961987fee120d3512ea7264e3c464cefb6c104aec48997ea",
+      "workbench-mcp.exe": "3a2b79b840884a1d0692c93eb82077b82683ec96d68b1f83889937c7e09e9dbf",
+      "workbench.exe": "c5828b7294858e2a02ed63e14df7f19973ba63f8693aad5d1813c70b700cd4b3"
+    },
+    "Release": {
+      "awb-core-tests.exe": "da8124fbe763caa9cf6d6ab0c6abfa71f3b9d48eb012ae73c4ff5785846636dd",
+      "awb-storage-tests.exe": "ec2add7d341e75fa59b1eeb8c28cedbecf34ef3fa80158a1acd8fa05dc0d3ed6",
+      "workbench-cli.exe": "bc11cdec177a6b6012731899b2321586e4614856f6635cf00d297d8d5ae1e30f",
+      "workbench-mcp.exe": "5ca332eb70dbff5b0bba1fcf1a0c30167dc26592fd64c2ffd68eadcada3b8200",
+      "workbench.exe": "e35e130550ddcb7a3fd8124e89cdd2ae3dee1c444ff5c8504ddc4e0a0ba026f0"
+    }
+  },
+  "secondCleanMachineTested": false,
+  "externalServicesProvided": false,
+  "commercialBackendImplemented": false,
+  "releaseReady": false
+}

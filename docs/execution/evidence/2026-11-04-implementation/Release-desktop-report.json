@@ -1,0 +1,186 @@
+{
+  "date": "2026-11-04T11:08:35.938304+08:00",
+  "result": "passed",
+  "steps": [
+    {
+      "buttonId": 101,
+      "outcome": "passed"
+    },
+    {
+      "buttonId": 101,
+      "outcome": "passed"
+    },
+    {
+      "buttonId": 101,
+      "outcome": "passed"
+    },
+    {
+      "buttonId": 101,
+      "outcome": "passed"
+    },
+    {
+      "buttonId": 101,
+      "outcome": "passed"
+    },
+    {
+      "buttonId": 101,
+      "outcome": "passed"
+    },
+    {
+      "buttonId": 101,
+      "outcome": "passed"
+    },
+    {
+      "buttonId": 101,
+      "outcome": "passed"
+    },
+    {
+      "buttonId": 102,
+      "outcome": "passed"
+    },
+    {
+      "buttonId": 104,
+      "outcome": "passed"
+    },
+    {
+      "buttonId": 108,
+      "outcome": "passed"
+    },
+    {
+      "buttonId": 108,
+      "outcome": "passed"
+    },
+    {
+      "buttonId": 109,
+      "outcome": "passed"
+    },
+    {
+      "buttonId": 110,
+      "outcome": "passed"
+    },
+    {
+      "buttonId": 109,
+      "outcome": "passed"
+    },
+    {
+      "buttonId": 110,
+      "outcome": "passed"
+    },
+    {
+      "buttonId": 105,
+      "outcome": "passed"
+    },
+    {
+      "buttonId": 107,
+      "outcome": "LOCATOR_AMBIGUOUS"
+    },
+    {
+      "buttonId": 110,
+      "outcome": "LEASE_REQUIRED"
+    },
+    {
+      "buttonId": 111,
+      "outcome": "passed"
+    },
+    {
+      "buttonId": 110,
+      "outcome": "passed"
+    },
+    {
+      "buttonId": 103,
+      "outcome": "passed"
+    },
+    {
+      "buttonId": 102,
+      "outcome": "passed"
+    },
+    {
+      "buttonId": 104,
+      "outcome": "passed"
+    },
+    {
+      "buttonId": 110,
+      "outcome": "passed"
+    },
+    {
+      "buttonId": 103,
+      "outcome": "passed"
+    },
+    {
+      "buttonId": 102,
+      "outcome": "passed"
+    },
+    {
+      "buttonId": 104,
+      "outcome": "passed"
+    },
+    {
+      "buttonId": 110,
+      "outcome": "passed"
+    },
+    {
+      "buttonId": 103,
+      "outcome": "passed"
+    },
+    {
+      "buttonId": 112,
+      "outcome": "passed"
+    },
+    {
+      "buttonId": 113,
+      "outcome": "passed"
+    },
+    {
+      "buttonId": 102,
+      "outcome": "PROFILE_STATE_INVALID"
+    },
+    {
+      "buttonId": 114,
+      "outcome": "passed"
+    },
+    {
+      "buttonId": 115,
+      "outcome": "passed"
+    },
+    {
+      "buttonId": 102,
+      "outcome": "passed"
+    },
+    {
+      "buttonId": 104,
+      "outcome": "passed"
+    },
+    {
+      "buttonId": 110,
+      "outcome": "passed"
+    },
+    {
+      "buttonId": 103,
+      "outcome": "passed"
+    },
+    {
+      "buttonId": 101,
+      "outcome": "passed"
+    },
+    {
+      "buttonId": 114,
+      "outcome": "passed"
+    },
+    {
+      "buttonId": 116,
+      "outcome": "passed"
+    }
+  ],
+  "checks": [
+    "eight-new-profiles-select-the-created-profile",
+    "register-login-fill-clear-snapshot-ambiguity-revoke-reacquire-stop",
+    "second-profile-isolated-first-profile-login-persists-after-restart",
+    "desktop-update-archive-trash-restore-preserves-login-and-id",
+    "desktop-permanent-delete-confirmation-and-list-refresh"
+  ],
+  "binarySha256": "4ee5aa3e0addb0adc0f623548e14999cbf6b4ac9669dee362eeb813d615825e2",
+  "serverFacts": {
+    "registrationCount": 1,
+    "loginCount": 1
+  }
+}

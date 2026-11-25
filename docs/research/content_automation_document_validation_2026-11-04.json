@@ -1,0 +1,39 @@
+{
+  "date": "2026-11-04",
+  "result": "passed",
+  "markdownFiles": 51,
+  "localLinksChecked": 395,
+  "generatedTemplateMappings": [
+    {
+      "template": "tools/portable/使用说明.md",
+      "target": "文档入口.md",
+      "verifiedGeneratedFile": "dist/AI-Browser-Workbench-0.1.8-win64-ui-r1/文档入口.md"
+    }
+  ],
+  "errors": [],
+  "scope": "documentation-and-design-only",
+  "businessCasesExecuted": 0,
+  "businessCaseStatus": "CA01-CA20-not-executed",
+  "productCodeModified": false,
+  "checks": {
+    "designDocumentType": true,
+    "designVersion": true,
+    "notExecutable": true,
+    "exampleOriginOnly": true,
+    "publishConfigured": true,
+    "searchBounded": true,
+    "explicitInteractionTargets": true,
+    "boundedTargets": true,
+    "sameOriginTargets": true,
+    "articleIdentityBound": true,
+    "replyParentBound": true,
+    "likePreservesSatisfiedState": true,
+    "unknownOutcomeReconciles": true,
+    "boundedDuration": true,
+    "twentyUnexecutedScenarios": true,
+    "helpTaskStillInProgress": true,
+    "newDocumentsTrackedAsEvidence": true,
+    "newFilesUtf8WithoutBomLf": true,
+    "ledgerUtf8WithoutBomLf": true
+  }
+}

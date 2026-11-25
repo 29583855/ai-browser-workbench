@@ -1,0 +1,15 @@
+{
+  "date": "2026-11-05",
+  "result": "passed",
+  "restartCycles": 4,
+  "checks": [
+    "Start-Admin.ps1 -Port 0 -NoBrowser from unrelated cwd",
+    "anonymous backend status",
+    "Stop-Admin.ps1 private shutdown and process exit",
+    "restart with stale endpoint and 1.5 second read contention",
+    "Test-Admin.ps1 real registration product order payment entitlement seats ledger"
+  ],
+  "runtime": "system Windows PowerShell 5.1",
+  "fixtureOnly": true,
+  "externalPaymentTested": false
+}

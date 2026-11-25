@@ -1,0 +1,10 @@
+Traceback (most recent call last):
+  File "E:\project\webexploer_codex\tests\integration_library_desktop.py", line 282, in <module>
+    main()
+  File "E:\project\webexploer_codex\tests\integration_library_desktop.py", line 191, in main
+    exported = file_action(process, first, 1250, output / "中文 配置导出.json", report)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\project\webexploer_codex\tests\integration_library_desktop.py", line 117, in file_action
+    assert len(edits) == 1, [(USER.GetDlgCtrlID(item), kind(item)) for item in windows(dialog)]
+           ^^^^^^^^^^^^^^^
+AssertionError: [(1092, 'Static'), (1091, 'Static'), (1093, 'Static'), (1120, 'ListBox'), (1095, 'Static'), (1028, 'Button'), (1, 'Button'), (2, 'Button'), (1038, 'Button'), (-1, 'ScrollBar'), (0, 'ToolbarWindow32'), (0, 'WorkerW'), (40965, 'ReBarWindow32'), (0, 'TravelBand'), (0, 'ToolbarWindow32')]

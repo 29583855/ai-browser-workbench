@@ -1,0 +1,173 @@
+{
+  "date": "2026-11-04T15:20:53.864866+08:00",
+  "result": "passed",
+  "checks": [
+    {
+      "name": "cli-invalid-1",
+      "result": "passed",
+      "actual": "INVALID_JSON"
+    },
+    {
+      "name": "cli-invalid-2",
+      "result": "passed",
+      "actual": "INVALID_REQUEST"
+    },
+    {
+      "name": "cli-invalid-3",
+      "result": "passed",
+      "actual": "INVALID_REQUEST"
+    },
+    {
+      "name": "cli-invalid-4",
+      "result": "passed",
+      "actual": "INVALID_REQUEST"
+    },
+    {
+      "name": "cli-invalid-5",
+      "result": "passed",
+      "actual": "INVALID_REQUEST"
+    },
+    {
+      "name": "cli-invalid-6",
+      "result": "passed",
+      "actual": "INVALID_ARGUMENTS"
+    },
+    {
+      "name": "cli-recovers-after-errors",
+      "result": "passed",
+      "actual": true
+    },
+    {
+      "name": "cli-depth-before-schema",
+      "result": "passed",
+      "actual": {
+        "error": {
+          "automaticRetryAllowed": false,
+          "code": "INPUT_TOO_DEEP",
+          "message": "External JSON nesting exceeds parsing budget",
+          "outcomeUnknown": false
+        },
+        "id": null,
+        "ok": false
+      }
+    },
+    {
+      "name": "cli-duplicate-fields-rejected",
+      "result": "passed",
+      "actual": {
+        "error": {
+          "automaticRetryAllowed": false,
+          "code": "INVALID_JSON",
+          "message": "Duplicate object fields are not allowed",
+          "outcomeUnknown": false
+        },
+        "id": null,
+        "ok": false
+      }
+    },
+    {
+      "name": "cli-recovers-after-json-budget-rejection",
+      "result": "passed",
+      "actual": true
+    },
+    {
+      "name": "mcp-invalid-1",
+      "result": "passed",
+      "actual": -32700
+    },
+    {
+      "name": "mcp-invalid-2",
+      "result": "passed",
+      "actual": -32600
+    },
+    {
+      "name": "mcp-invalid-3",
+      "result": "passed",
+      "actual": -32600
+    },
+    {
+      "name": "mcp-invalid-4",
+      "result": "passed",
+      "actual": -32600
+    },
+    {
+      "name": "mcp-invalid-5",
+      "result": "passed",
+      "actual": -32600
+    },
+    {
+      "name": "mcp-invalid-6",
+      "result": "passed",
+      "actual": -32002
+    },
+    {
+      "name": "mcp-initialize",
+      "result": "passed",
+      "actual": 3
+    },
+    {
+      "name": "mcp-invalid-params",
+      "result": "passed",
+      "actual": {
+        "code": -32602,
+        "message": "Invalid params"
+      }
+    },
+    {
+      "name": "mcp-recovers-and-lists-current-tools",
+      "result": "passed",
+      "actual": 44
+    },
+    {
+      "name": "mcp-tool-validation",
+      "result": "passed",
+      "actual": "INVALID_ARGUMENTS"
+    },
+    {
+      "name": "mcp-notifications-no-reply-and-ping",
+      "result": "passed",
+      "actual": {
+        "id": 7,
+        "jsonrpc": "2.0",
+        "result": {}
+      }
+    },
+    {
+      "name": "mcp-depth-rejected-before-tool",
+      "result": "passed",
+      "actual": {
+        "error": {
+          "code": -32602,
+          "message": "Invalid params"
+        },
+        "id": null,
+        "jsonrpc": "2.0"
+      }
+    },
+    {
+      "name": "mcp-duplicate-fields-rejected",
+      "result": "passed",
+      "actual": {
+        "error": {
+          "code": -32602,
+          "message": "Invalid params"
+        },
+        "id": null,
+        "jsonrpc": "2.0"
+      }
+    },
+    {
+      "name": "mcp-recovers-after-json-budget-rejection",
+      "result": "passed",
+      "actual": {
+        "id": 10,
+        "jsonrpc": "2.0",
+        "result": {}
+      }
+    }
+  ],
+  "binarySha256": {
+    "workbench-cli.exe": "28b8236d1981ab1c40970359f30f43f743486546c2af8f8e5d70495e3a5e6be6",
+    "workbench-mcp.exe": "3a65197819f7d3f5c3dff0a06ffd61d0d9e716d10b473a1110f9bd13ade37c07"
+  }
+}

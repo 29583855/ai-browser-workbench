@@ -1,0 +1,156 @@
+{
+  "date": "2026-11-03",
+  "result": "passed",
+  "errors": [],
+  "ownSourceFiles": 29,
+  "chineseDatedCppAnnotations": 223,
+  "files": [
+    {
+      "path": "include/awb/browser.hpp",
+      "sha256": "3cb7e0689348a8cb7be9b7aea55f38b40e9744a82463baf64c8b16f5f815bee4",
+      "bytes": 4774
+    },
+    {
+      "path": "include/awb/catalog.hpp",
+      "sha256": "b6da5641b2d7a26aad9815537d48b51afd50f8cc381b69335f12a6b0bd158aa3",
+      "bytes": 1448
+    },
+    {
+      "path": "include/awb/platform.hpp",
+      "sha256": "66471bac998649315bf100f0e9330cc6c18b6441e446657cbedcd6ff0fe917fe",
+      "bytes": 3041
+    },
+    {
+      "path": "include/awb/service.hpp",
+      "sha256": "3fe2d03904d89ea9980eefa8617d7e07242d5a9522c17eb36dac43978832ef72",
+      "bytes": 2163
+    },
+    {
+      "path": "src/browser/browser.cpp",
+      "sha256": "0255d0e7ec9dad8ee0c0bfb094b8882e5ed04be290824ab2430ec2ff9d8a7b2d",
+      "bytes": 27375
+    },
+    {
+      "path": "src/cli/main.cpp",
+      "sha256": "8b0e527f3a238aaf250a9c336d746b28a6eaf41576fcebc8a965fa7451a9b5bc",
+      "bytes": 2078
+    },
+    {
+      "path": "src/core/catalog.cpp",
+      "sha256": "01b2d8d700857203549ee52b6f38dd4a85a1ed53f7d4638a61d8e77f12c6592a",
+      "bytes": 25020
+    },
+    {
+      "path": "src/core/service.cpp",
+      "sha256": "45e76239b8b07f4ffe04f637a8880eab2e9fa2efcc1715175abdc36402215cd4",
+      "bytes": 18591
+    },
+    {
+      "path": "src/mcp/main.cpp",
+      "sha256": "f581b211a9f1c8bf4a69cbaf926c66cbac2e82d3050dc2441fb4d9dddb0a0fd0",
+      "bytes": 5238
+    },
+    {
+      "path": "src/platform/windows/platform.cpp",
+      "sha256": "2e11b40f5d96b441f2ef9a76f3978dbc3fb489d93f44346cba841a6867754658",
+      "bytes": 13325
+    },
+    {
+      "path": "src/ui/main.cpp",
+      "sha256": "16b6e23ec8608ec22d7d5fd97929f30641377e0a7ba36107b2907a63d5ba6d5d",
+      "bytes": 18643
+    },
+    {
+      "path": "tests/core_tests.cpp",
+      "sha256": "5614b0e2a74c5380693536cc6ba0fd33d634e5dc99766ecab03e8a8fdc2d4eef",
+      "bytes": 9954
+    },
+    {
+      "path": "tests/fixtures/fixture.js",
+      "sha256": "0839c05e79139e2841fc9cb9787c2fc65538590cea105368379e63c6bb70def4",
+      "bytes": 5435
+    },
+    {
+      "path": "tests/fixtures/http_proxy.py",
+      "sha256": "8654471fa16cddc5ff4d1bd5da2d1c7d27ac9c605a1c45997c4cbe592bd77d80",
+      "bytes": 2177
+    },
+    {
+      "path": "tests/fixtures/sw.js",
+      "sha256": "f4dc80c0a6a4ff05eb66eae68abaaa9b8eb269695bc6d6c99521a16d4cd72d3b",
+      "bytes": 321
+    },
+    {
+      "path": "tests/fixtures/web_app.py",
+      "sha256": "f0c10d3e3de5de014f77827f0f6ed147f2ed502310e12b8f249188681f6e75bb",
+      "bytes": 9695
+    },
+    {
+      "path": "tests/integration_browser.py",
+      "sha256": "709eccedb79c17309bda99e8021f488c5a37a3a22ff851ae80e9fb74b0d549aa",
+      "bytes": 19827
+    },
+    {
+      "path": "tests/integration_mcp.py",
+      "sha256": "c54067b657bb7f6b326f86dbb6add60d7a909551b772883a424bd6cd74e89d98",
+      "bytes": 3545
+    },
+    {
+      "path": "tests/integration_proxy.py",
+      "sha256": "485a216912ea9db8ee82803eecfe5ae15234ffb586f69835998c5f7633feb66b",
+      "bytes": 3466
+    },
+    {
+      "path": "tests/record_cdp.mjs",
+      "sha256": "34166c3a8f840c29100c70f8a23c5798ee9429d04018dcb3a138c69bc5102117",
+      "bytes": 5898
+    },
+    {
+      "path": "tests/storage_tests.cpp",
+      "sha256": "abed4ad09253df11bc79800c574f173141f01fa7d59be25694c8c98ab857c3cd",
+      "bytes": 27879
+    },
+    {
+      "path": "tools/audit_source.py",
+      "sha256": "231c4a144c81bffa95592f61dd404365883c531ca55105b4c9fd461241f42466",
+      "bytes": 4972
+    },
+    {
+      "path": "tools/build-vs2019.ps1",
+      "sha256": "88768bafb56a6e9421b00da5aaa662a538f043f7cad3e0cf07561581791e7783",
+      "bytes": 2372
+    },
+    {
+      "path": "tools/build.ps1",
+      "sha256": "341b631892a33137b74ebdaf54e210f9f93bca3310e7c3fc6bd9200699fb7ea4",
+      "bytes": 3701
+    },
+    {
+      "path": "tools/package-portable.ps1",
+      "sha256": "95f633eb69d26bd0739267cf6332ed0b0b462d49249a746da5934094750a9854",
+      "bytes": 1219
+    },
+    {
+      "path": "tools/package_portable.py",
+      "sha256": "6e9ce3603ac9283c3ab8ca2129871aeb7c82df44e751b7a009a84d69660363d7",
+      "bytes": 7691
+    },
+    {
+      "path": "tools/portable/Self-Test.ps1",
+      "sha256": "373be1f69a285e5add7bff6863b5bd1fd4bfca1fee9c426e9b2ad8a4e62eacde",
+      "bytes": 8870
+    },
+    {
+      "path": "tools/portable/Smoke-Server.ps1",
+      "sha256": "4bc58babe5052ed9d2e4ec0921ea18e67be4648813dee93cb2a48225ddc53caf",
+      "bytes": 3089
+    },
+    {
+      "path": "tools/verify_progress.py",
+      "sha256": "6100477317f359083f1c433bcfe9e173dd96a7bde4d50c8c54b38f0b0b033a4b",
+      "bytes": 4000
+    }
+  ],
+  "placeholderMarkersFound": 0,
+  "scope": "Static source check only; full feature completion requires task acceptance evidence"
+}

@@ -1,0 +1,16 @@
+{
+  "date": "2026-11-05",
+  "result": "failed",
+  "steps": [
+    {
+      "menuId": 916,
+      "outcome": "passed"
+    },
+    {
+      "buttonId": 101,
+      "outcome": "passed"
+    }
+  ],
+  "checks": [],
+  "executableSha256": "5c33c5f3ce25f762e0f716003e25472c55089348719e481ac9a440f2224dcb16"
+}

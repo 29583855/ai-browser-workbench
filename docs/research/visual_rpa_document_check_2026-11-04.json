@@ -1,0 +1,14 @@
+{
+  "date": "2026-11-04",
+  "result": "passed",
+  "markdownFiles": 59,
+  "localLinksChecked": 493,
+  "generatedTemplateMappings": [
+    {
+      "template": "tools/portable/使用说明.md",
+      "target": "文档入口.md",
+      "verifiedGeneratedFile": "dist/AI-Browser-Workbench-0.1.9-win64-visual-rpa-r2/文档入口.md"
+    }
+  ],
+  "errors": []
+}

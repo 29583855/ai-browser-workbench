@@ -1,0 +1,43 @@
+{
+  "date": "2026-11-05",
+  "payments": {
+    "tamperRejected": 3,
+    "wrongWechatSerial": "rejected",
+    "badAesTag": "rejected",
+    "oldStripeSignature": "rejected",
+    "prepaidRefundReservation": "no-double-debit"
+  },
+  "oidc": {
+    "browserBinding": "enforced",
+    "cookieCsrf": "rejected",
+    "jwksRotation": "passed",
+    "disabledIdentity": "rejected",
+    "rpLogout": "local-session-revoked"
+  },
+  "scheduler": {
+    "sequenceReplay": "cached",
+    "conflictingReplay": "rejected",
+    "userAsNode": "rejected",
+    "outboxRetry": "same-command",
+    "localCapacity": "one-per-node",
+    "unknownSlotHeld": true,
+    "stopBeforeResolve": "required",
+    "completionDedup": "passed",
+    "scopeRemoval": "fenced"
+  },
+  "outage": {
+    "stopAfterSeconds": 3.657,
+    "coordinatorRestart": "epoch-increased",
+    "oldTask": "unknown-stopped-no-replay",
+    "gracefulStop": "passed"
+  },
+  "result": "passed",
+  "transport": {
+    "publicHostAllowlist": true,
+    "nodeProxyProofRequired": true,
+    "portalNodeManagement": "passed-without-node-certificate",
+    "secureHttpOnlyCookie": true,
+    "realTlsHandshakeTested": false
+  },
+  "httpChecks": 104
+}

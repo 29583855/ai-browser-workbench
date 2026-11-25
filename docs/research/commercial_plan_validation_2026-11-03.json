@@ -1,0 +1,205 @@
+{
+  "validationDate": "2026-11-03",
+  "scope": "Documentation consistency for commercial browser automation scope only. No product implementation, payment transaction, provider/SDK source verification, build/runtime acceptance, notification, deployment or resource-balanced schedule proof.",
+  "versions": {
+    "main": "v1.3 commercial scope supplement",
+    "admin": "1.1",
+    "commerce": "1.0"
+  },
+  "result": "passed",
+  "errors": [],
+  "checks": {
+    "markdownFiles": 12,
+    "relativeLinks": 74,
+    "markdownTables": 124,
+    "codeFences": 33,
+    "jsonExamples": 21,
+    "encoding": "UTF-8 no BOM / LF",
+    "commercialFeatures": 32,
+    "commercialTasks": 40,
+    "commercialCases": 40,
+    "businessAutomationCases": 8,
+    "commercialCaseExecutionsPlanned": 120,
+    "businessCaseExecutionsPlanned": 48,
+    "adminTaskCount": 48,
+    "combinedTaskCount": 88,
+    "combinedDependencyEdges": 260,
+    "acyclic": true,
+    "adminGroupDays": [
+      37,
+      41,
+      47,
+      41,
+      38,
+      48
+    ],
+    "commercialGroupDays": [
+      40,
+      48,
+      45,
+      44,
+      46
+    ],
+    "adminBaselineDays": 252,
+    "commercialBaselineDays": 223,
+    "combinedBaselineDays": 475,
+    "commercialPlannedDays": [
+      258,
+      278
+    ],
+    "combinedPlannedDays": [
+      540,
+      580
+    ],
+    "followupBaselineDays": [
+      624,
+      664
+    ],
+    "followupWithBackendAllowanceDays": [
+      689,
+      769
+    ],
+    "localTaskCount": 110,
+    "localNetDays": 317,
+    "allProductTasksUnstarted": true,
+    "serialTaskAssumptionCriticalDays": {
+      "admin": 104,
+      "commercialADMAlreadyReady": 136,
+      "combinedLOCALAlreadyReady": 171
+    },
+    "commercialSerialTaskAssumptionCriticalPath": [
+      "COM001",
+      "COM003",
+      "COM004",
+      "COM005",
+      "COM006",
+      "COM007",
+      "COM008",
+      "COM009",
+      "COM010",
+      "COM011",
+      "COM012",
+      "COM014",
+      "COM015",
+      "COM016",
+      "COM017",
+      "COM018",
+      "COM020",
+      "COM021",
+      "COM022",
+      "COM023",
+      "COM026",
+      "COM035",
+      "COM038",
+      "COM040"
+    ],
+    "combinedSerialTaskAssumptionCriticalPath": [
+      "ADM001",
+      "ADM003",
+      "ADM005",
+      "ADM006",
+      "ADM007",
+      "ADM009",
+      "ADM010",
+      "ADM011",
+      "ADM013",
+      "ADM017",
+      "ADM020",
+      "ADM021",
+      "ADM019",
+      "ADM023",
+      "COM010",
+      "COM011",
+      "COM012",
+      "COM014",
+      "COM015",
+      "COM016",
+      "COM017",
+      "COM018",
+      "COM020",
+      "COM021",
+      "COM022",
+      "COM023",
+      "COM026",
+      "COM035",
+      "COM038",
+      "COM040"
+    ],
+    "commercialParallelTargetWeeks": 24,
+    "resourceBalancedDeliveryScheduleProven": false,
+    "commercialFTEAssumption": 4.3,
+    "commercialTargetCapacityDaysAt75Percent": 387,
+    "meteringExamplesChecked": true,
+    "preEditHashesMatchPriorManifest": true,
+    "unrelatedMarkdownUnchanged": true,
+    "researchJsonFilesParsedExcludingThisReport": 9,
+    "newSourceResearchPerformed": false,
+    "productImplementationOrTestsPerformed": false,
+    "actualFinancialOrExternalActionsPerformed": false,
+    "commercialReferenceLabelCorrectionVerified": true
+  },
+  "checkedMarkdownFiles": [
+    {
+      "path": "README.md",
+      "sha256": "5cb49f46c3d79f710bfe4e7f8714f2a741b96f45c205afef4c5a7a996fc6a671",
+      "bytes": 6220
+    },
+    {
+      "path": "docs/01_开发计划与技术方案.md",
+      "sha256": "17d4aa04fa1a2c88373b1edb47ea5c8d38cef3391ddb79b7e9d183f33e6d2a07",
+      "bytes": 73109
+    },
+    {
+      "path": "docs/02_竞品分析与开源项目调研.md",
+      "sha256": "2a6f50acc65e4b417c8b9ce3bee18dc3300070f03969ee7f429fb17e90c4987b",
+      "bytes": 30155
+    },
+    {
+      "path": "docs/03_开发进度与任务清单.md",
+      "sha256": "5bf6000c82d757bf35e29c9a36fb585d37aeea9dac368b0fd3c42b92853dce19",
+      "bytes": 36953
+    },
+    {
+      "path": "docs/04_AI接口与流程设计样例.md",
+      "sha256": "d268083215c06f175eda3e27665b4af3fe8d1ea2a30fd0b57d1827a19ac1da00",
+      "bytes": 42252
+    },
+    {
+      "path": "docs/05_Web功能测试与便捷操作设计.md",
+      "sha256": "f1ba9b96ae9cebe98ae8c2232f97eb4d9b23c88baf4ed1f9593315bbba108731",
+      "bytes": 27460
+    },
+    {
+      "path": "docs/06_功能边界与源码补全方案.md",
+      "sha256": "e824835fde85d80a38c9cdd07b54e5576e0b66320818b2305b83240d07282af2",
+      "bytes": 41951
+    },
+    {
+      "path": "docs/07_补充源码选型与验证清单.md",
+      "sha256": "7c8687f4428e38cf0331f73454087564548d72e7bc215af7d58bf33519554981",
+      "bytes": 19214
+    },
+    {
+      "path": "docs/08_参考文档对照与功能增强.md",
+      "sha256": "6bb9a6c813c446910cb5ab00546db7aad765420b0c9341e168f9a4b615a59751",
+      "bytes": 30447
+    },
+    {
+      "path": "docs/09_VC2019工程与依赖构建方案.md",
+      "sha256": "a2ff31867b1b525a0dd1dffde0bc8f693b748a7cf3320398666e037747869977",
+      "bytes": 17984
+    },
+    {
+      "path": "docs/10_管理后台功能与开发计划.md",
+      "sha256": "1972c227d1f79bc334a7b1160ef3db790b76c2ae5bcd3043e81a4e9f72b14659",
+      "bytes": 83013
+    },
+    {
+      "path": "docs/11_环境销售计费与商业运营后台计划.md",
+      "sha256": "05f5e6ab040986799d9be452f46c92498e4c37d9336f13db27caad6033023d39",
+      "bytes": 57326
+    }
+  ],
+  "preEditBaseline": "docs/research/commercial_plan_change_baseline_2026-11-03.json",
+  "priorHistoricalReport": "docs/research/admin_plan_validation_2026-11-03.json"
+}

@@ -1,0 +1,199 @@
+{
+  "date": "2026-11-04T12:09:48.304454+08:00",
+  "result": "passed",
+  "checks": [
+    "revision-cas-validation-and-proxy-clear",
+    "all-five-mutations-refused-while-real-browser-running",
+    "archive-recycle-restore-preserves-identity-and-files",
+    "restart-state-confirmation-and-traversal-refusal",
+    "junction-and-hardlink-refused-external-data-intact",
+    "busy-purge-restart-retry-long-path-delete-and-no-external-damage"
+  ],
+  "binarySha256": "8f7f886a4fbc200e9ad62cfe7dabdbe80f8c6ff2a03e71737e59a0539ed358e3",
+  "eventsBeforeRestart": [
+    {
+      "sequence": 1,
+      "command": "profile_create",
+      "outcome": "passed"
+    },
+    {
+      "sequence": 2,
+      "command": "profile_update",
+      "outcome": "passed"
+    },
+    {
+      "sequence": 3,
+      "command": "profile_update",
+      "outcome": "REVISION_CONFLICT"
+    },
+    {
+      "sequence": 4,
+      "command": "profile_update",
+      "outcome": "INVALID_ARGUMENTS"
+    },
+    {
+      "sequence": 5,
+      "command": "profile_update",
+      "outcome": "INVALID_ARGUMENTS"
+    },
+    {
+      "sequence": 6,
+      "command": "profile_update",
+      "outcome": "ORIGIN_DENIED"
+    },
+    {
+      "sequence": 7,
+      "command": "profile_update",
+      "outcome": "passed"
+    },
+    {
+      "sequence": 8,
+      "command": "browser_start",
+      "outcome": "passed"
+    },
+    {
+      "sequence": 9,
+      "command": "profile_update",
+      "outcome": "PROFILE_RUNNING"
+    },
+    {
+      "sequence": 10,
+      "command": "profile_archive",
+      "outcome": "PROFILE_RUNNING"
+    },
+    {
+      "sequence": 11,
+      "command": "profile_trash",
+      "outcome": "PROFILE_RUNNING"
+    },
+    {
+      "sequence": 12,
+      "command": "profile_restore",
+      "outcome": "PROFILE_RUNNING"
+    },
+    {
+      "sequence": 13,
+      "command": "profile_purge",
+      "outcome": "PROFILE_RUNNING"
+    },
+    {
+      "sequence": 14,
+      "command": "browser_stop",
+      "outcome": "passed"
+    },
+    {
+      "sequence": 15,
+      "command": "profile_archive",
+      "outcome": "passed"
+    },
+    {
+      "sequence": 16,
+      "command": "profile_list",
+      "outcome": "passed"
+    },
+    {
+      "sequence": 17,
+      "command": "profile_list",
+      "outcome": "passed"
+    },
+    {
+      "sequence": 18,
+      "command": "browser_start",
+      "outcome": "PROFILE_STATE_INVALID"
+    },
+    {
+      "sequence": 19,
+      "command": "lease_acquire",
+      "outcome": "PROFILE_STATE_INVALID"
+    },
+    {
+      "sequence": 20,
+      "command": "profile_restore",
+      "outcome": "passed"
+    },
+    {
+      "sequence": 21,
+      "command": "profile_trash",
+      "outcome": "passed"
+    },
+    {
+      "sequence": 22,
+      "command": "profile_update",
+      "outcome": "PROFILE_STATE_INVALID"
+    }
+  ],
+  "eventsBeforePurgeRestart": [
+    {
+      "sequence": 1,
+      "command": "profile_list",
+      "outcome": "passed"
+    },
+    {
+      "sequence": 2,
+      "command": "profile_restore",
+      "outcome": "passed"
+    },
+    {
+      "sequence": 3,
+      "command": "profile_trash",
+      "outcome": "passed"
+    },
+    {
+      "sequence": 4,
+      "command": "profile_purge",
+      "outcome": "PROFILE_CONFIRMATION_REQUIRED"
+    },
+    {
+      "sequence": 5,
+      "command": "profile_purge",
+      "outcome": "PROFILE_NOT_FOUND"
+    },
+    {
+      "sequence": 6,
+      "command": "profile_purge",
+      "outcome": "PATH_REPARSE_POINT"
+    },
+    {
+      "sequence": 7,
+      "command": "profile_list",
+      "outcome": "passed"
+    },
+    {
+      "sequence": 8,
+      "command": "profile_purge",
+      "outcome": "PATH_INVALID"
+    },
+    {
+      "sequence": 9,
+      "command": "profile_purge",
+      "outcome": "PROFILE_DIRECTORY_BUSY"
+    }
+  ],
+  "events": [
+    {
+      "sequence": 1,
+      "command": "profile_list",
+      "outcome": "passed"
+    },
+    {
+      "sequence": 2,
+      "command": "profile_purge",
+      "outcome": "passed"
+    },
+    {
+      "sequence": 3,
+      "command": "profile_list",
+      "outcome": "passed"
+    },
+    {
+      "sequence": 4,
+      "command": "browser_status",
+      "outcome": "PROFILE_NOT_FOUND"
+    },
+    {
+      "sequence": 5,
+      "command": "profile_list",
+      "outcome": "INVALID_ARGUMENTS"
+    }
+  ]
+}
